@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Rubik, Secular_One } from "next/font/google";
+import { Be_Vietnam_Pro, Inter } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { AppShell } from "@/components/shell";
 
-const display = Secular_One({
-  subsets: ["latin", "hebrew"],
-  weight: ["400"],
+const display = Be_Vietnam_Pro({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "800"],
   variable: "--font-display"
 });
 
-const body = Rubik({
-  subsets: ["latin", "hebrew"],
-  weight: ["400", "500", "700"],
+const body = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-body"
 });
 
