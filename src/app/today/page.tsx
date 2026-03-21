@@ -1582,41 +1582,34 @@ export default function TodayPage() {
     };
   }, [todayFoodSelected, selectedTodayIngredient, todayFoodQuantity, todayFoodUnit]);
   const topNutritionTargets = useMemo(() => {
-    if (!journal) return [] as Array<{
-      key: string;
-      label: string;
-      actualLabel: string;
-      targetLabel: string;
-      pct: number;
-      tone: "low" | "mid" | "good";
-    }>;
-    const proteinTarget = Math.max(1, journal.nutrition.target.proteinG);
-    const carbsTarget = Math.max(1, journal.nutrition.target.carbsG || 300);
-    const fatTarget = Math.max(1, journal.nutrition.target.fatG);
+    // Use journal data if available, otherwise use defaults for display
+    const proteinTarget = journal ? Math.max(1, journal.nutrition.target.proteinG) : 180;
+    const carbsTarget = journal ? Math.max(1, journal.nutrition.target.carbsG || 300) : 250;
+    const fatTarget = journal ? Math.max(1, journal.nutrition.target.fatG) : 70;
 
     const rows = [
       {
         key: "protein",
         label: "חלבון",
-        actual: journal.nutrition.totals.proteinG,
+        actual: journal ? journal.nutrition.totals.proteinG : 0,
         target: proteinTarget,
-        actualLabel: `${Math.round(journal.nutrition.totals.proteinG)}G`,
+        actualLabel: `${Math.round(journal ? journal.nutrition.totals.proteinG : 0)}G`,
         targetLabel: `${Math.round(proteinTarget)}G`
       },
       {
         key: "carbs",
         label: "פחמימות",
-        actual: journal.nutrition.totals.carbsG || 0,
+        actual: journal ? (journal.nutrition.totals.carbsG || 0) : 0,
         target: carbsTarget,
-        actualLabel: `${Math.round(journal.nutrition.totals.carbsG || 0)}G`,
+        actualLabel: `${Math.round(journal ? (journal.nutrition.totals.carbsG || 0) : 0)}G`,
         targetLabel: `${Math.round(carbsTarget)}G`
       },
       {
         key: "fat",
         label: "שומנים",
-        actual: journal.nutrition.totals.fatG,
+        actual: journal ? journal.nutrition.totals.fatG : 0,
         target: fatTarget,
-        actualLabel: `${Math.round(journal.nutrition.totals.fatG)}G`,
+        actualLabel: `${Math.round(journal ? journal.nutrition.totals.fatG : 0)}G`,
         targetLabel: `${Math.round(fatTarget)}G`
       }
     ];
@@ -3014,12 +3007,6 @@ export default function TodayPage() {
             </div>
 
             <div className="today-food-targets" aria-label="יעדים">
-              {topNutritionTargets.length === 0 ? (
-                <div style={{ textAlign: "center", padding: "1rem", opacity: 0.6 }}>
-                  טוען נתונים...
-                </div>
-              ) : (
-              <>
               {topNutritionTargets.map((row) => (
                 <div key={row.key} className="today-macro-row" data-tone={row.tone}>
                   <div className="today-macro-side" aria-label="אחוז ויעד">
@@ -3037,8 +3024,6 @@ export default function TodayPage() {
                   </div>
                 </div>
               ))}
-              </>
-              )}
             </div>
           </div>
         </div>
