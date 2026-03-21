@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { recalculateNutritionFrom } from "@/lib/nutrition-engine";
+export const dynamic = "force-dynamic";
 
 export async function POST(request: NextRequest) {
   const body = (await request.json().catch(() => ({}))) as { days?: number };

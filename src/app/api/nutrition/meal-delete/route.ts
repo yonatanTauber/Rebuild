@@ -3,6 +3,7 @@ import { z } from "zod";
 import { deleteNutritionMeal } from "@/lib/nutrition-engine";
 import { getDbProvider } from "@/lib/db-driver";
 import { cloudDeleteNutritionMeal } from "@/lib/nutrition-cloud-meals";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#6bfe9c",
+              "on-error-container": "#ffa8a3",
+              "on-secondary-fixed-variant": "#7c4100",
+              "primary-fixed": "#00d2ff",
+              "on-secondary-container": "#fff6f1",
+              "error-container": "#9f0519",
+              "on-tertiary": "#006834",
+              "surface-container": "#1a1a1a",
+              "on-error": "#490006",
+              "tertiary-dim": "#5bef90",
+              "surface-container-low": "#131313",
+              "primary-fixed-dim": "#00c3ed",
+              "surface-container-highest": "#262626",
+              "on-secondary": "#442100",
+              "surface-dim": "#0e0e0e",
+              "surface-variant": "#262626",
+              "tertiary-fixed-dim": "#5bef90",
+              "secondary-fixed-dim": "#ffb375",
+              "on-secondary-fixed": "#532a00",
+              "primary-container": "#00d2ff",
+              "on-tertiary-fixed-variant": "#006a35",
+              "on-primary-fixed": "#002c38",
+              "on-surface": "#ffffff",
+              "inverse-surface": "#fcf9f8",
+              "tertiary": "#c3ffcd",
+              "error": "#ff716c",
+              "outline": "#767575",
+              "secondary-fixed": "#ffc69a",
+              "background": "#0e0e0e",
+              "surface-container-high": "#20201f",
+              "primary-dim": "#00c3ed",
+              "on-background": "#ffffff",
+              "surface-container-lowest": "#000000",
+              "tertiary-container": "#6bfe9c",
+              "secondary": "#fd8b00",
+              "inverse-on-surface": "#565555",
+              "on-primary-container": "#004253",
+              "on-primary": "#004c5e",
+              "outline-variant": "#484847",
+              "error-dim": "#d7383b",
+              "on-tertiary-container": "#005f2f",
+              "on-surface-variant": "#adaaaa",
+              "surface": "#0e0e0e",
+              "on-primary-fixed-variant": "#004c5e",
+              "inverse-primary": "#00687f",
+              "secondary-container": "#904d00",
+              "primary": "#72dcff",
+              "on-tertiary-fixed": "#004a23",
+              "surface-tint": "#72dcff",
+              "surface-bright": "#2c2c2c",
+              "secondary-dim": "#ed8200"
+            },
+            fontFamily: {
+              "headline": ["Be Vietnam Pro"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "md": "0.75rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .be-vietnam { font-family: 'Be Vietnam Pro', sans-serif; }
+        .glass-card {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #72dcff 0%, #00c3ed 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="bg-[#0e0e0e] text-[#72dcff] docked full-width top-0 z-50 sticky">
+<div class="flex flex-row-reverse justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-3">
+<span class="font-['Be_Vietnam_Pro'] text-on-surface font-bold text-lg text-right">יום חמישי, 24 באוקטובר</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden border border-outline-variant/20">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="Close up of a professional athlete face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL1y0n0NdXfYj7Of2c-PPxArX0_Jl9xOxz6o1BUQqWcBiGw7FUOZaavO6gcvZwTcjaRvsY2R20N2mGvRiDg1H8oDXIMTZ2tOZjy86Bw9UEUhiYgsyYGvAvM_m4bbFP4-EMMcXpodwuc9Pgp7F7aq--5GWBAV8sMPbT5a3LIP-LaL6JFDRwjTil7nCzMfVGNT_fmwGGH6N2vOb_IZGC19aDRpXJC_p818fxBG-M15iSVnjJ4lxCYWxsBUaiWX3VI3f0FOYqVNwmbCo"/>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-2xl hover:bg-[#262626] transition-colors p-2 rounded-full Active: scale-95 duration-150" data-icon="bolt">bolt</button>
+<button class="material-symbols-outlined text-2xl hover:bg-[#262626] transition-colors p-2 rounded-full Active: scale-95 duration-150" data-icon="arrow_forward">arrow_forward</button>
+</div>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-6 pb-32 pt-4 space-y-10">
+<!-- Hero Section: Title & Map Asymmetric Layout -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 items-end">
+<div class="md:col-span-5 space-y-2">
+<span class="text-secondary font-semibold tracking-wider text-sm be-vietnam uppercase">SESSION OVERVIEW</span>
+<h1 class="text-5xl font-extrabold be-vietnam tracking-tight leading-none">פרטי אימון</h1>
+<p class="text-on-surface-variant text-lg">ריצת בוקר - פארק הירקון</p>
+</div>
+<div class="md:col-span-7 h-64 bg-surface-container rounded-lg overflow-hidden relative group">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent z-10"></div>
+<img alt="Workout Map" class="w-full h-full object-cover grayscale contrast-125 opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Topographic dark mode map with an electric blue neon route line" data-location="Tel Aviv" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDAoXhfVQb-OGweq0QYiA1bFdJR9-kVsy2Ju-TNaCA1ke5TBocFZ3P4xtkxM7TSSamXq_PBQdNSIfigKc0sq-eJFjL3dP2osVDkf1LljHQ9_iExEfP846nHlWd0PFCjGRpu1tCh5Y8sUcIrQgCVa0x_FUV9KODChsXJi9zILhMPeDdnGgGlAQsLVilCDWoLhcDdiCbrj9jnBK-Fl-_C1M8F9tbzdXKgHu_NkTSMOkIlFB-qPkl_8YFuvzfiynYtZBFGscjGN1Wmio"/>
+<div class="absolute bottom-4 right-4 z-20 flex gap-2">
+<span class="bg-surface-container-highest/80 backdrop-blur px-3 py-1 rounded-full text-xs font-bold border border-outline-variant/20">GPS: 100% SIGNAL</span>
+</div>
+</div>
+</section>
+<!-- Bento Grid Metrics -->
+<section class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-surface-container-low p-6 rounded-lg flex flex-col justify-between min-h-[140px]">
+<span class="text-on-surface-variant text-sm font-medium">מרחק</span>
+<div>
+<span class="text-4xl font-extrabold be-vietnam text-primary">12.4</span>
+<span class="text-on-surface-variant text-sm mr-1 be-vietnam">KM</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg flex flex-col justify-between min-h-[140px]">
+<span class="text-on-surface-variant text-sm font-medium">זמן כולל</span>
+<div>
+<span class="text-4xl font-extrabold be-vietnam">01:04</span>
+<span class="text-on-surface-variant text-sm mr-1 be-vietnam">HRS</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg flex flex-col justify-between min-h-[140px]">
+<span class="text-on-surface-variant text-sm font-medium">דופק ממוצע</span>
+<div>
+<span class="text-4xl font-extrabold be-vietnam text-secondary">158</span>
+<span class="text-on-surface-variant text-sm mr-1 be-vietnam">BPM</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg flex flex-col justify-between min-h-[140px]">
+<span class="text-on-surface-variant text-sm font-medium">קלוריות</span>
+<div>
+<span class="text-4xl font-extrabold be-vietnam text-tertiary">842</span>
+<span class="text-on-surface-variant text-sm mr-1 be-vietnam">KCAL</span>
+</div>
+</div>
+</section>
+<!-- HR Chart over Time -->
+<section class="space-y-4">
+<div class="flex justify-between items-baseline">
+<h2 class="text-xl font-bold be-vietnam">ניתוח דופק (HR)</h2>
+<span class="text-on-surface-variant text-xs">עומס אימון: גבוה (Aerobic)</span>
+</div>
+<div class="bg-surface-container p-6 rounded-lg h-64 relative flex flex-col justify-end overflow-hidden">
+<!-- Mock Chart using gradients and divs -->
+<div class="absolute inset-0 flex items-end px-6 pb-6 gap-1 opacity-40">
+<div class="flex-1 bg-secondary-dim/20 rounded-t h-[40%]"></div>
+<div class="flex-1 bg-secondary-dim/30 rounded-t h-[55%]"></div>
+<div class="flex-1 bg-secondary/40 rounded-t h-[70%]"></div>
+<div class="flex-1 bg-secondary/50 rounded-t h-[85%]"></div>
+<div class="flex-1 bg-secondary/60 rounded-t h-[75%]"></div>
+<div class="flex-1 bg-secondary/70 rounded-t h-[90%]"></div>
+<div class="flex-1 bg-secondary/80 rounded-t h-[95%]"></div>
+<div class="flex-1 bg-secondary/90 rounded-t h-[80%]"></div>
+<div class="flex-1 bg-secondary rounded-t h-[88%]"></div>
+<div class="flex-1 bg-secondary/90 rounded-t h-[70%]"></div>
+</div>
+<!-- Highlight line -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" preserveaspectratio="none">
+<polyline class="opacity-80" fill="none" points="0,200 100,180 200,140 300,60 400,80 500,40 600,30 700,90 800,50 900,100" stroke="#fd8b00" stroke-width="3"></polyline>
+</svg>
+<div class="flex justify-between text-[10px] text-on-surface-variant font-medium mt-2 z-10 border-t border-outline-variant/10 pt-2">
+<span>0:00</span>
+<span>15:00</span>
+<span>30:00</span>
+<span>45:00</span>
+<span>1:00</span>
+</div>
+</div>
+</section>
+<!-- Splits/Segments Table -->
+<section class="space-y-4">
+<h2 class="text-xl font-bold be-vietnam">סגמנטים (Splits)</h2>
+<div class="bg-surface-container rounded-lg overflow-hidden">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-highest/30 text-on-surface-variant text-xs font-bold uppercase tracking-widest">
+<th class="px-6 py-4">ק״מ</th>
+<th class="px-6 py-4">קצב (Pace)</th>
+<th class="px-6 py-4">דופק ממוצע</th>
+<th class="px-6 py-4">טיפוס</th>
+</tr>
+</thead>
+<tbody class="text-sm">
+<tr class="border-b border-outline-variant/5 hover:bg-surface-bright/5 transition-colors">
+<td class="px-6 py-4 font-bold be-vietnam">1</td>
+<td class="px-6 py-4 font-medium">5:12</td>
+<td class="px-6 py-4">142 bpm</td>
+<td class="px-6 py-4 text-tertiary">+2m</td>
+</tr>
+<tr class="border-b border-outline-variant/5 bg-surface-container-high/40">
+<td class="px-6 py-4 font-bold be-vietnam">2</td>
+<td class="px-6 py-4 font-medium text-primary">4:58</td>
+<td class="px-6 py-4">155 bpm</td>
+<td class="px-6 py-4 text-tertiary">+8m</td>
+</tr>
+<tr class="border-b border-outline-variant/5">
+<td class="px-6 py-4 font-bold be-vietnam">3</td>
+<td class="px-6 py-4 font-medium">5:05</td>
+<td class="px-6 py-4">161 bpm</td>
+<td class="px-6 py-4 text-error-dim">-4m</td>
+</tr>
+<tr class="border-b border-outline-variant/5">
+<td class="px-6 py-4 font-bold be-vietnam">4</td>
+<td class="px-6 py-4 font-medium">5:10</td>
+<td class="px-6 py-4">164 bpm</td>
+<td class="px-6 py-4 text-on-surface-variant">0m</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Feedback: RPE & Notes -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<h2 class="text-xl font-bold be-vietnam">תחושת מאמץ (RPE)</h2>
+<div class="flex justify-between items-center bg-surface-container p-6 rounded-lg">
+<div class="flex gap-2">
+<!-- Rating Dots -->
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">8</div>
+<div class="flex items-center gap-1">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-surface-container-highest"></div>
+<div class="w-2 h-2 rounded-full bg-surface-container-highest"></div>
+</div>
+</div>
+<span class="text-sm font-medium text-primary">קשה מאוד</span>
+</div>
+</div>
+<div class="space-y-4">
+<h2 class="text-xl font-bold be-vietnam">הערות אישיות</h2>
+<div class="bg-surface-container p-1 rounded-lg">
+<textarea class="w-full bg-transparent border-none focus:ring-0 text-sm p-4 placeholder:text-on-surface-variant/50" placeholder="איך היה האימון? הוסף הערות על נעליים, מזג אוויר או תחושה כללית..." rows="3"></textarea>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full rounded-t-[1rem] z-50 bg-[#1a1a1a]/60 backdrop-blur-xl shadow-[0_-4px_20px_0_rgba(0,0,0,0.5)]">
+<div class="flex flex-row-reverse justify-around items-center w-full px-4 pb-safe pt-2 h-16">
+<div class="flex flex-col items-center justify-center text-[#72dcff] font-bold font-['Inter'] text-[10px] hover:text-white transition-all Active: transform scale-90 duration-200 cursor-pointer">
+<span class="material-symbols-outlined mb-1" data-icon="dashboard">dashboard</span>
+<span>היום</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#72dcff] font-bold font-['Inter'] text-[10px] hover:text-white transition-all Active: transform scale-90 duration-200 cursor-pointer">
+<span class="material-symbols-outlined mb-1" data-icon="fitness_center" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+<span>אימונים</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#adaaaa] font-['Inter'] text-[10px] hover:text-white transition-all Active: transform scale-90 duration-200 cursor-pointer">
+<span class="material-symbols-outlined mb-1" data-icon="nutrition">nutrition</span>
+<span>תזונה</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#adaaaa] font-['Inter'] text-[10px] hover:text-white transition-all Active: transform scale-90 duration-200 cursor-pointer">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+<span>הגדרות</span>
+</div>
+</div>
+</nav>
+</body></html>

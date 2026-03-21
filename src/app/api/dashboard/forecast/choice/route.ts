@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { setForecastOverride } from "@/lib/db";
+export const dynamic = "force-dynamic";
 
 const optionSchema = z.object({
   id: z.string(),

@@ -6,6 +6,7 @@ import {
   upsertWorkoutFeedback
 } from "@/lib/db";
 import { cloudEnabled, cloudGetWorkoutFeedback, cloudUpsertWorkoutFeedback } from "@/lib/cloud-db";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

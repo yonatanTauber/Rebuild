@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { addPainArea, listPainAreas } from "@/lib/db";
 import { cloudAddPainArea, cloudEnabled, cloudListPainAreas } from "@/lib/cloud-db";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

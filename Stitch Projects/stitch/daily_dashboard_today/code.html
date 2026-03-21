@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#6bfe9c",
+              "on-error-container": "#ffa8a3",
+              "on-secondary-fixed-variant": "#7c4100",
+              "primary-fixed": "#00d2ff",
+              "on-secondary-container": "#fff6f1",
+              "error-container": "#9f0519",
+              "on-tertiary": "#006834",
+              "surface-container": "#1a1a1a",
+              "on-error": "#490006",
+              "tertiary-dim": "#5bef90",
+              "surface-container-low": "#131313",
+              "primary-fixed-dim": "#00c3ed",
+              "surface-container-highest": "#262626",
+              "on-secondary": "#442100",
+              "surface-dim": "#0e0e0e",
+              "surface-variant": "#262626",
+              "tertiary-fixed-dim": "#5bef90",
+              "secondary-fixed-dim": "#ffb375",
+              "on-secondary-fixed": "#532a00",
+              "primary-container": "#00d2ff",
+              "on-tertiary-fixed-variant": "#006a35",
+              "on-primary-fixed": "#002c38",
+              "on-surface": "#ffffff",
+              "inverse-surface": "#fcf9f8",
+              "tertiary": "#c3ffcd",
+              "error": "#ff716c",
+              "outline": "#767575",
+              "secondary-fixed": "#ffc69a",
+              "background": "#0e0e0e",
+              "surface-container-high": "#20201f",
+              "primary-dim": "#00c3ed",
+              "on-background": "#ffffff",
+              "surface-container-lowest": "#000000",
+              "tertiary-container": "#6bfe9c",
+              "secondary": "#fd8b00",
+              "inverse-on-surface": "#565555",
+              "on-primary-container": "#004253",
+              "on-primary": "#004c5e",
+              "outline-variant": "#484847",
+              "error-dim": "#d7383b",
+              "on-tertiary-container": "#005f2f",
+              "on-surface-variant": "#adaaaa",
+              "surface": "#0e0e0e",
+              "on-primary-fixed-variant": "#004c5e",
+              "inverse-primary": "#00687f",
+              "secondary-container": "#904d00",
+              "primary": "#72dcff",
+              "on-tertiary-fixed": "#004a23",
+              "surface-tint": "#72dcff",
+              "surface-bright": "#2c2c2c",
+              "secondary-dim": "#ed8200"
+            },
+            fontFamily: {
+              "headline": ["Be Vietnam Pro"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.25rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .kinetic-ring {
+            transform: rotate(-90deg);
+        }
+        .glass-card {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-[#0e0e0e] fixed top-0 w-full z-50 flex flex-row-reverse justify-between items-center px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/30">
+<img alt="פרופיל" data-alt="User profile avatar photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx6zfi2eCZ3dZAGZoV_bERP-LO5RGNQ3SjPiy7afZ-h3UkczjBdZvXGg9THKnB9bQ9Or5AtvaJkBpn-bJ8XhARRb4Qj-Pqjy_DNSM-jVl4w9Y55Tjv3CJK1NaEKZi8aada_n8rJ03zvkVxJv-c34GDcXsX35gSZ6yGojhY_aK0AqnzLzFVQ_EhSYVdBhxIYKAu7-eDK60YMPDQQ4Bqls3yJlA-tZWAxnMRBSjHYeNaOczcd_4Gja9oa1X5gqe5MTgMWglTs1C3_dA"/>
+</div>
+<div class="text-right">
+<p class="text-[10px] text-on-surface-variant font-medium">בוקר טוב, ספורטאי</p>
+<h1 class="font-headline text-on-surface font-bold text-lg text-right">יום חמישי, 24 באוקטובר</h1>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#72dcff] hover:bg-[#262626] transition-colors p-2 rounded-full active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-6 space-y-10 max-w-2xl mx-auto">
+<!-- Today Recommendation -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-low p-6">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-tertiary"></div>
+<div class="flex flex-row-reverse items-start gap-4">
+<div class="p-3 bg-tertiary/10 rounded-lg">
+<span class="material-symbols-outlined text-tertiary" data-icon="lightbulb" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<div class="text-right flex-1">
+<h2 class="text-on-surface font-headline font-bold text-xl mb-1">המלצה להיום</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed">המוכנות שלך בשיאה. זמן מצוין לאימון בעצימות גבוהה או לשיפור שיא אישי בריצה.</p>
+</div>
+</div>
+</section>
+<!-- Scores Section: Bento Grid -->
+<section class="grid grid-cols-2 gap-4">
+<!-- Hero Score: Readiness -->
+<div class="col-span-2 bg-surface-container-high rounded-xl p-6 flex flex-row-reverse items-center justify-between overflow-hidden relative">
+<div class="relative z-10 text-right">
+<h3 class="text-on-surface-variant text-xs font-bold uppercase tracking-wider mb-1">מוכנות</h3>
+<div class="flex items-baseline gap-1 flex-row-reverse">
+<span class="text-5xl font-headline font-extrabold text-tertiary">92</span>
+<span class="text-tertiary/60 text-sm">/100</span>
+</div>
+<p class="text-tertiary-dim text-xs mt-2 font-medium">מצב אופטימלי</p>
+</div>
+<div class="relative">
+<svg class="w-24 h-24 kinetic-ring">
+<circle class="text-surface-container-highest" cx="48" cy="48" fill="transparent" r="40" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-tertiary" cx="48" cy="48" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="251.2" stroke-dashoffset="20" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="auto_awesome" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+</div>
+<!-- Ambient Glow -->
+<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-tertiary/5 blur-[40px] rounded-full"></div>
+</div>
+<!-- Fatigue Score -->
+<div class="bg-surface-container rounded-xl p-5 text-right flex flex-col justify-between h-40">
+<div>
+<h3 class="text-on-surface-variant text-xs font-bold mb-2">עייפות</h3>
+<div class="flex items-baseline gap-1 flex-row-reverse">
+<span class="text-3xl font-headline font-bold text-secondary">42</span>
+<span class="text-secondary/60 text-xs">%</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[42%]"></div>
+</div>
+</div>
+<!-- Fitness Score -->
+<div class="bg-surface-container rounded-xl p-5 text-right flex flex-col justify-between h-40">
+<div>
+<h3 class="text-on-surface-variant text-xs font-bold mb-2">כושר</h3>
+<div class="flex items-baseline gap-1 flex-row-reverse">
+<span class="text-3xl font-headline font-bold text-primary">78</span>
+<span class="text-primary/60 text-xs">VO2</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[78%]"></div>
+</div>
+</div>
+</section>
+<!-- Day Journal: Morning Check-in -->
+<section class="space-y-4">
+<h3 class="text-on-surface font-headline font-bold text-lg text-right">צ'ק-אין בוקר</h3>
+<div class="bg-surface-container-low rounded-xl p-6">
+<p class="text-on-surface text-sm mb-4 text-right">איך הרגשת כשהתעוררת הבוקר?</p>
+<div class="flex flex-row-reverse justify-between gap-2">
+<button class="flex-1 bg-surface-container-highest p-3 rounded-lg border border-transparent hover:border-primary/50 transition-all active:scale-95">
+<span class="material-symbols-outlined text-on-surface-variant text-2xl mb-1" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
+</button>
+<button class="flex-1 bg-surface-container-highest p-3 rounded-lg border border-transparent hover:border-primary/50 transition-all active:scale-95">
+<span class="material-symbols-outlined text-on-surface-variant text-2xl mb-1" data-icon="sentiment_satisfied">sentiment_satisfied</span>
+</button>
+<button class="flex-1 bg-surface-container-highest p-3 rounded-lg border border-primary text-primary bg-primary/5 transition-all active:scale-95">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="sentiment_neutral">sentiment_neutral</span>
+</button>
+<button class="flex-1 bg-surface-container-highest p-3 rounded-lg border border-transparent hover:border-primary/50 transition-all active:scale-95">
+<span class="material-symbols-outlined text-on-surface-variant text-2xl mb-1" data-icon="sentiment_dissatisfied">sentiment_dissatisfied</span>
+</button>
+<button class="flex-1 bg-surface-container-highest p-3 rounded-lg border border-transparent hover:border-primary/50 transition-all active:scale-95">
+<span class="material-symbols-outlined text-on-surface-variant text-2xl mb-1" data-icon="sentiment_very_dissatisfied">sentiment_very_dissatisfied</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Water & Nutrition -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Water Intake -->
+<div class="bg-surface-container-low rounded-xl p-6 space-y-4">
+<div class="flex flex-row-reverse justify-between items-center">
+<h3 class="text-on-surface font-headline font-bold">שתיית מים</h3>
+<span class="text-primary font-bold">1.8 / 3.0L</span>
+</div>
+<div class="w-full bg-surface-container-highest h-3 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[60%] shadow-[0_0_10px_rgba(114,220,255,0.3)]"></div>
+</div>
+<button class="w-full py-3 bg-surface-container-highest rounded-full flex flex-row-reverse items-center justify-center gap-2 hover:bg-[#262626] transition-all active:scale-95">
+<span class="material-symbols-outlined text-primary" data-icon="add">add</span>
+<span class="text-on-surface text-sm font-medium">הוסף כוס (250ml)</span>
+</button>
+</div>
+<!-- Nutrition Summary -->
+<div class="bg-surface-container-low rounded-xl p-6 space-y-4">
+<div class="flex flex-row-reverse justify-between items-center">
+<h3 class="text-on-surface font-headline font-bold">תזונה</h3>
+<span class="text-on-surface-variant text-sm font-medium">1,420 קלוריות נותרו</span>
+</div>
+<div class="space-y-3">
+<!-- Protein -->
+<div class="space-y-1">
+<div class="flex flex-row-reverse justify-between text-[10px] text-on-surface-variant font-bold uppercase">
+<span>חלבון</span>
+<span>120g / 180g</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[66%]"></div>
+</div>
+</div>
+<!-- Carbs -->
+<div class="space-y-1">
+<div class="flex flex-row-reverse justify-between text-[10px] text-on-surface-variant font-bold uppercase">
+<span>פחמימות</span>
+<span>150g / 250g</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[60%]"></div>
+</div>
+</div>
+<!-- Fats -->
+<div class="space-y-1">
+<div class="flex flex-row-reverse justify-between text-[10px] text-on-surface-variant font-bold uppercase">
+<span>שומנים</span>
+<span>45g / 70g</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[64%]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full rounded-t-[1rem] z-50 bg-[#1a1a1a]/60 backdrop-blur-xl shadow-[0_-4px_20px_0_rgba(0,0,0,0.5)]">
+<div class="flex flex-row-reverse justify-around items-center w-full px-4 pb-6 pt-3">
+<!-- Active Tab: היום -->
+<a class="flex flex-col items-center justify-center text-[#72dcff] font-bold group" href="#">
+<span class="material-symbols-outlined mb-1 group-active:scale-90 transition-transform" data-icon="dashboard" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-['Inter'] text-[10px] font-medium">היום</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] hover:text-white transition-all group" href="#">
+<span class="material-symbols-outlined mb-1 group-active:scale-90 transition-transform" data-icon="fitness_center">fitness_center</span>
+<span class="font-['Inter'] text-[10px] font-medium">אימונים</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] hover:text-white transition-all group" href="#">
+<span class="material-symbols-outlined mb-1 group-active:scale-90 transition-transform" data-icon="nutrition">nutrition</span>
+<span class="font-['Inter'] text-[10px] font-medium">תזונה</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] hover:text-white transition-all group" href="#">
+<span class="material-symbols-outlined mb-1 group-active:scale-90 transition-transform" data-icon="settings">settings</span>
+<span class="font-['Inter'] text-[10px] font-medium">הגדרות</span>
+</a>
+</div>
+</nav>
+<!-- FAB Suppression: This is a Dashboard screen, but the prompt didn't specify a primary FAB action. 
+         Based on the "Task-Focused" rule, we keep focus on the data dashboard. -->
+</body></html>

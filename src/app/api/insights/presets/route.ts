@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 import { getPresetInsights } from '@/lib/insights';
+export const dynamic = "force-dynamic";
 
 const schema = z.object({
   range: z.enum(['30d', '12w', '365d', 'all']).default('12w'),

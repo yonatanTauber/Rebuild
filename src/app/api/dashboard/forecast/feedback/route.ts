@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { setForecastFeedback } from "@/lib/db";
+export const dynamic = "force-dynamic";
 
 const schema = z.object({
   date: z.string(),

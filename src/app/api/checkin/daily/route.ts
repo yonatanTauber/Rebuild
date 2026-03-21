@@ -20,6 +20,7 @@ import {
   cloudUpsertRecovery
 } from "@/lib/cloud-db";
 import { formatISODate } from "@/lib/date";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

@@ -3,6 +3,7 @@ import { z } from "zod";
 import { formatISODate } from "@/lib/date";
 import { getWeeklyPlan, setWeeklyPlan, unlockWeeklyPlan } from "@/lib/db";
 import { recalculateNutritionFrom } from "@/lib/nutrition-engine";
+export const dynamic = "force-dynamic";
 
 const schema = z.object({
   profile: z.enum(["free", "balanced", "busy", "vacation"]).optional(),

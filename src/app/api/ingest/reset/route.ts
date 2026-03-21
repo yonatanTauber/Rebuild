@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { resetIngestData } from "@/lib/db";
 import { runIngest } from "@/lib/ingest";
+export const dynamic = "force-dynamic";
 
 export async function POST() {
   resetIngestData();

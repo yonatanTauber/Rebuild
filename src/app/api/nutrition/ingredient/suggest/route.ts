@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { suggestNutritionIngredientFromText } from "@/lib/nutrition-engine";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

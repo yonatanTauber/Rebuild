@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { buildAnalytics } from "@/lib/analytics";
 import { z } from "zod";
+export const dynamic = "force-dynamic";
 
 const schema = z.object({
   sport: z.enum(["run", "bike", "swim"]).default("run"),

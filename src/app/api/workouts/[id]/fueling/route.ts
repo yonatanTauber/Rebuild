@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { getWorkoutById, getWorkoutFueling, replaceWorkoutFueling } from "@/lib/db";
+export const dynamic = "force-dynamic";
 
 const itemSchema = z.object({
   itemName: z.string().min(1).max(80),

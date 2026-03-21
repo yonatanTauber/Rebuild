@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#6bfe9c",
+              "on-error-container": "#ffa8a3",
+              "on-secondary-fixed-variant": "#7c4100",
+              "primary-fixed": "#00d2ff",
+              "on-secondary-container": "#fff6f1",
+              "error-container": "#9f0519",
+              "on-tertiary": "#006834",
+              "surface-container": "#1a1a1a",
+              "on-error": "#490006",
+              "tertiary-dim": "#5bef90",
+              "surface-container-low": "#131313",
+              "primary-fixed-dim": "#00c3ed",
+              "surface-container-highest": "#262626",
+              "on-secondary": "#442100",
+              "surface-dim": "#0e0e0e",
+              "surface-variant": "#262626",
+              "tertiary-fixed-dim": "#5bef90",
+              "secondary-fixed-dim": "#ffb375",
+              "on-secondary-fixed": "#532a00",
+              "primary-container": "#00d2ff",
+              "on-tertiary-fixed-variant": "#006a35",
+              "on-primary-fixed": "#002c38",
+              "on-surface": "#ffffff",
+              "inverse-surface": "#fcf9f8",
+              "tertiary": "#c3ffcd",
+              "error": "#ff716c",
+              "outline": "#767575",
+              "secondary-fixed": "#ffc69a",
+              "background": "#0e0e0e",
+              "surface-container-high": "#20201f",
+              "primary-dim": "#00c3ed",
+              "on-background": "#ffffff",
+              "surface-container-lowest": "#000000",
+              "tertiary-container": "#6bfe9c",
+              "secondary": "#fd8b00",
+              "inverse-on-surface": "#565555",
+              "on-primary-container": "#004253",
+              "on-primary": "#004c5e",
+              "outline-variant": "#484847",
+              "error-dim": "#d7383b",
+              "on-tertiary-container": "#005f2f",
+              "on-surface-variant": "#adaaaa",
+              "surface": "#0e0e0e",
+              "on-primary-fixed-variant": "#004c5e",
+              "inverse-primary": "#00687f",
+              "secondary-container": "#904d00",
+              "primary": "#72dcff",
+              "on-tertiary-fixed": "#004a23",
+              "surface-tint": "#72dcff",
+              "surface-bright": "#2c2c2c",
+              "secondary-dim": "#ed8200"
+            },
+            fontFamily: {
+              "headline": ["Be Vietnam Pro"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.25rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #0e0e0e;
+        color: #ffffff;
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-24">
+<!-- Top Navigation Anchor -->
+<header class="bg-[#0e0e0e] text-on-surface font-['Be_Vietnam_Pro'] font-bold text-lg text-right docked full-width top-0 z-50">
+<div class="flex flex-row-reverse justify-between items-center w-full px-6 py-4 bg-[#131313]">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden border border-outline-variant/10">
+<img class="w-full h-full object-cover" data-alt="Athlete profile picture professional headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtTUC-QPKOqPRT9Iw6gIXLTc2BStZRVxyaOlpD0O-elHSHwzXfP54FYSL-CvAPw4CVkgoSFGccvtbvdzto8oQ4fdWnPqvSUa6qSLnTmvaWahekz6rlujlkTaljo-tmHAJwnl8WdDty9Mij6xqzkkHM596BOYndfUyp493IHPK7-Pb1Hbr03BWWB0uam_ejPxpWmnfJkfK1QUcQCcDdZzZNLrmR0vnbcdNCY8UwZ2_NWw-JvuxwyCZi-BSlqu7ys30sR00w4aMMX5U"/>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-xs font-normal text-on-surface-variant">יום חמישי, 24 באוקטובר</span>
+<span class="text-[#72dcff] text-xl font-bold">מזווה ומועדפים</span>
+</div>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#262626] transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-[#72dcff]" data-icon="bolt">bolt</span>
+</button>
+</div>
+</header>
+<main class="px-6 pt-6 space-y-10">
+<!-- Search Bar Section -->
+<section class="relative">
+<div class="flex items-center bg-surface-container rounded-xl px-4 py-3 focus-within:ring-1 ring-primary/30 transition-all">
+<span class="material-symbols-outlined text-on-surface-variant ml-3" data-icon="search">search</span>
+<input class="bg-transparent border-none text-on-surface placeholder:text-on-surface-variant focus:ring-0 w-full text-right font-body" placeholder="חפש מאכלים או מנות..." type="text"/>
+<span class="material-symbols-outlined text-on-surface-variant mr-3" data-icon="barcode_scanner">barcode_scanner</span>
+</div>
+</section>
+<!-- Favorites: Asymmetric Layout -->
+<section class="space-y-4">
+<div class="flex justify-between items-end">
+<a class="text-primary text-sm font-medium" href="#">הצג הכל</a>
+<h2 class="font-headline text-xl font-bold tracking-tight">מועדפים</h2>
+</div>
+<div class="grid grid-cols-12 gap-4">
+<!-- Hero Favorite Card -->
+<div class="col-span-12 md:col-span-8 bg-surface-container rounded-lg p-5 relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-l from-surface-container via-transparent to-transparent z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="Healthy salmon poke bowl with vegetables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4aNJr6cAc3RtENQS7qpxZ9SY3clA3sktPzv-yqcv5Q6qgU5a-HSkxRSfqoZpS03CESqIh0QEbkMu33LTMOymJBZGZWiQSshpBOZ3jsiTitVVOTgrPLTfeKtMaADkjD9yt8qGZbOLgTKKCqi1S7wCkurPZriKFdU9vtmlTDAsorAr4aG90LS-0dH5Lm1N57yaUeGyxh9U6LWlJ66Xf476RHh1v000JWFLh5t6vkrHd9bxot37kvN4eqXkQcFpfjiSonGt8nQ__Ucw"/>
+<div class="relative z-20 h-full flex flex-col justify-end">
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-tertiary-container/20 text-tertiary text-[10px] px-2 py-0.5 rounded-full font-bold">RECOVERY</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-1">קערת סלמון וקינואה</h3>
+<div class="flex gap-4 text-xs text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]" data-icon="local_fire_department">local_fire_department</span> 450 קלוריות</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]" data-icon="timer">timer</span> 15 דק׳</span>
+</div>
+<button class="mt-4 bg-primary text-on-primary-container font-bold py-2 px-6 rounded-full w-fit active:scale-95 transition-transform">הוסף לתפריט</button>
+</div>
+</div>
+<!-- Secondary Favorite -->
+<div class="col-span-12 md:col-span-4 bg-surface-container rounded-lg p-5 flex flex-col justify-between border-r-4 border-secondary">
+<div>
+<h3 class="font-headline font-bold text-lg leading-tight">שייק חלבון בננה וחמאת בוטנים</h3>
+<p class="text-on-surface-variant text-xs mt-2">32 גרם חלבון | 280 קל׳</p>
+</div>
+<div class="mt-6 flex justify-between items-center">
+<span class="material-symbols-outlined text-secondary" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<button class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Pantry: Bento Grid Style -->
+<section class="space-y-4">
+<div class="flex justify-between items-end">
+<span class="text-on-surface-variant text-xs">24 פריטים במזווה</span>
+<h2 class="font-headline text-xl font-bold tracking-tight">המזווה שלי</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+<!-- Pantry Item 1 -->
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col items-center text-center group hover:bg-surface-container transition-colors">
+<div class="w-12 h-12 bg-surface-container-highest rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary" data-icon="egg">egg</span>
+</div>
+<span class="text-sm font-medium mb-1">ביצים (L)</span>
+<span class="text-[10px] text-on-surface-variant mb-3">12 יחידות נותרו</span>
+<button class="w-full py-1.5 rounded-md bg-surface-container-highest text-xs font-bold text-primary active:scale-95 transition-all">הוסף מהר</button>
+</div>
+<!-- Pantry Item 2 -->
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col items-center text-center group hover:bg-surface-container transition-colors">
+<div class="w-12 h-12 bg-surface-container-highest rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" data-icon="opacity">opacity</span>
+</div>
+<span class="text-sm font-medium mb-1">חלב שקדים</span>
+<span class="text-[10px] text-on-surface-variant mb-3">800 מ"ל נותרו</span>
+<button class="w-full py-1.5 rounded-md bg-surface-container-highest text-xs font-bold text-primary active:scale-95 transition-all">הוסף מהר</button>
+</div>
+<!-- Pantry Item 3 -->
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col items-center text-center group hover:bg-surface-container transition-colors">
+<div class="w-12 h-12 bg-surface-container-highest rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary" data-icon="icecream">icecream</span>
+</div>
+<span class="text-sm font-medium mb-1">יוגורט יווני</span>
+<span class="text-[10px] text-on-surface-variant mb-3">3 גביעים נותרו</span>
+<button class="w-full py-1.5 rounded-md bg-surface-container-highest text-xs font-bold text-primary active:scale-95 transition-all">הוסף מהר</button>
+</div>
+<!-- Pantry Item 4 -->
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col items-center text-center group hover:bg-surface-container transition-colors">
+<div class="w-12 h-12 bg-surface-container-highest rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary" data-icon="nutrition">nutrition</span>
+</div>
+<span class="text-sm font-medium mb-1">חזה עוף</span>
+<span class="text-[10px] text-on-surface-variant mb-3">500 גרם נותרו</span>
+<button class="w-full py-1.5 rounded-md bg-surface-container-highest text-xs font-bold text-primary active:scale-95 transition-all">הוסף מהר</button>
+</div>
+</div>
+</section>
+<!-- Quick Stats Overlay (Atmospheric Depth) -->
+<section class="bg-gradient-to-br from-surface-container to-surface-container-low rounded-xl p-6 border border-white/5 relative overflow-hidden">
+<div class="absolute -top-12 -left-12 w-32 h-32 bg-primary/10 blur-[60px] rounded-full"></div>
+<div class="relative z-10 flex justify-between items-center">
+<div class="space-y-1">
+<p class="text-on-surface-variant text-xs">צריכה יומית ממוצעת מהמזווה</p>
+<p class="text-2xl font-headline font-extrabold text-tertiary">1,240 <span class="text-xs font-normal text-on-surface-variant">קק"ל</span></p>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-tertiary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="analytics">analytics</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 w-full rounded-t-[1rem] z-50 bg-[#1a1a1a]/60 backdrop-blur-xl shadow-[0_-4px_20px_0_rgba(0,0,0,0.5)]">
+<div class="flex flex-row-reverse justify-around items-center w-full px-4 pb-6 pt-2">
+<!-- Settings -->
+<a class="flex flex-col items-center justify-center text-[#adaaaa] hover:text-white transition-all transform active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+<span class="font-['Inter'] text-[10px] font-medium">הגדרות</span>
+</a>
+<!-- Pantry (Active) -->
+<a class="flex flex-col items-center justify-center text-[#72dcff] font-bold transform active:scale-90 duration-200" href="#">
+<div class="bg-[#72dcff]/10 p-2 rounded-xl mb-1">
+<span class="material-symbols-outlined" data-icon="nutrition" style="font-variation-settings: 'FILL' 1;">nutrition</span>
+</div>
+<span class="font-['Inter'] text-[10px]">תזונה</span>
+</a>
+<!-- Workouts -->
+<a class="flex flex-col items-center justify-center text-[#adaaaa] hover:text-white transition-all transform active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="fitness_center">fitness_center</span>
+<span class="font-['Inter'] text-[10px] font-medium">אימונים</span>
+</a>
+<!-- Today -->
+<a class="flex flex-col items-center justify-center text-[#adaaaa] hover:text-white transition-all transform active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="dashboard">dashboard</span>
+<span class="font-['Inter'] text-[10px] font-medium">היום</span>
+</a>
+</div>
+</nav>
+</body></html>

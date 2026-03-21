@@ -3,6 +3,7 @@ import { z } from "zod";
 import { listRunningShoes, setDefaultRunningShoe } from "@/lib/db";
 import { cloudEnabled } from "@/lib/cloud-db";
 import { cloudListRunningShoes, cloudSetDefaultRunningShoe } from "@/lib/cloud-shoes";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

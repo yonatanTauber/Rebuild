@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sql } from "@vercel/postgres";
 import { ensureStravaTables, getStravaEnv, getStravaVerifyToken } from "@/app/api/strava/_lib";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

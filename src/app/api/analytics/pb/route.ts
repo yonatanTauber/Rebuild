@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getTopEfforts } from "@/lib/db";
 import { PB_DISTANCES } from "@/lib/pb-engine";
+export const dynamic = "force-dynamic";
 
 const keys = new Set(PB_DISTANCES.map((d) => d.key));
 

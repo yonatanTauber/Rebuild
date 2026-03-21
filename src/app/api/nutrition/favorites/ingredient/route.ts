@@ -4,6 +4,7 @@ import { toggleIngredientFavorite } from "@/lib/nutrition-engine";
 import { getDbProvider, dbQuery, dbQueryOne } from "@/lib/db-driver";
 import { migrateDb } from "@/lib/db-migrate";
 import { ensureCloudNutritionSeed } from "@/lib/nutrition-cloud";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

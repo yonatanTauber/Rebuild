@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { dismissWorkoutFeedback } from "@/lib/db";
 import { cloudDismissWorkoutFeedback, cloudEnabled } from "@/lib/cloud-db";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

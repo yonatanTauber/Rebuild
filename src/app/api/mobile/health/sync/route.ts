@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { hasWorkoutByCanonicalKey, upsertWorkout } from "@/lib/db";
 import type { Sport, Workout } from "@/lib/types";
+export const dynamic = "force-dynamic";
 
 const workoutSchema = z.object({
   externalId: z.string().min(1).max(200),

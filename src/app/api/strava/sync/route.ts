@@ -11,6 +11,7 @@ import {
 export const runtime = "nodejs";
 
 import type { StravaActivity } from "@/app/api/strava/_lib";
+export const dynamic = "force-dynamic";
 
 function parsePositiveInt(raw: string | null, fallback: number) {
   const n = Number(raw);

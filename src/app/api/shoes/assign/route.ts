@@ -3,6 +3,7 @@ import { z } from "zod";
 import { assignShoeToWorkout } from "@/lib/db";
 import { cloudEnabled } from "@/lib/cloud-db";
 import { cloudAssignShoeToWorkout } from "@/lib/cloud-shoes";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

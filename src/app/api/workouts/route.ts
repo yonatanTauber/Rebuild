@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getWorkoutsBetween } from "@/lib/db";
 import { formatLocalISODate, parseLocalISODate } from "@/lib/date";
 import { sql } from "@vercel/postgres";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

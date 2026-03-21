@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { formatISODate } from "@/lib/date";
 import { buildJournalDayBundle } from "@/lib/journal-day";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

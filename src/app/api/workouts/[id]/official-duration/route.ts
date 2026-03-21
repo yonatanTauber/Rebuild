@@ -7,6 +7,7 @@ import {
   cloudUpsertWorkoutOfficialDurationSec
 } from "@/lib/cloud-db";
 import { decodeRouteParam } from "@/lib/url";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

@@ -4,6 +4,7 @@ import { addDaysISO, formatISODate } from "@/lib/date";
 import { getWorkoutsBetween } from "@/lib/db";
 import { buildDailyCoach } from "@/lib/smart-coach";
 import { getNutritionDayBundle } from "@/lib/nutrition-engine";
+export const dynamic = "force-dynamic";
 
 export async function GET(request: NextRequest) {
   const date = request.nextUrl.searchParams.get("date") ?? formatISODate();

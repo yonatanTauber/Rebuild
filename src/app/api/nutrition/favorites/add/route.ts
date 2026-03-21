@@ -4,6 +4,7 @@ import { formatISODate } from "@/lib/date";
 import { addFavoriteToNutritionDay } from "@/lib/nutrition-engine";
 import { getDbProvider } from "@/lib/db-driver";
 import { cloudAddFavoriteToNutritionDay } from "@/lib/nutrition-cloud-meals";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

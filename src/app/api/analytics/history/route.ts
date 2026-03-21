@@ -4,6 +4,7 @@ import { addDaysISO } from "@/lib/date";
 import { getWorkoutsBetween } from "@/lib/db";
 import { getWorkoutDetailData } from "@/lib/workout-detail";
 import type { Workout } from "@/lib/types";
+export const dynamic = "force-dynamic";
 
 const schema = z.object({
   from: z.string().datetime({ offset: true }).optional(),

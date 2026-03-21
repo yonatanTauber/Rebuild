@@ -4,6 +4,7 @@ import { getWorkoutDetailData, mapBounds } from "@/lib/workout-detail";
 import { cloudEnabled, cloudGetWorkoutById } from "@/lib/cloud-db";
 import { decodeRouteParam } from "@/lib/url";
 import { getCloudWorkoutDetailData } from "@/lib/strava-workout-detail";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

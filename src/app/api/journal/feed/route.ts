@@ -3,6 +3,7 @@ import { z } from "zod";
 import { addDaysISO, formatISODate } from "@/lib/date";
 import { getDb } from "@/lib/db";
 import { buildJournalDayBundle } from "@/lib/journal-day";
+export const dynamic = "force-dynamic";
 
 const querySchema = z.object({
   anchorDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),

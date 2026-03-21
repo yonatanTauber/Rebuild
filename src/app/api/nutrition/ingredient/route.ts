@@ -5,6 +5,7 @@ import { getDbProvider, dbQueryOne, dbQuery } from "@/lib/db-driver";
 import { migrateDb } from "@/lib/db-migrate";
 import { ensureCloudNutritionSeed } from "@/lib/nutrition-cloud";
 import { randomUUID } from "node:crypto";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

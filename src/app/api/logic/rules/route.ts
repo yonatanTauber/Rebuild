@@ -3,6 +3,7 @@ import { z } from "zod";
 import { getRules, upsertRules } from "@/lib/db";
 import { getDbProvider, dbQueryOne, dbQuery } from "@/lib/db-driver";
 import { migrateDb } from "@/lib/db-migrate";
+export const dynamic = "force-dynamic";
 
 const schema = z.object({
   weeklyTimeBudgetHours: z.number().min(2).max(20),

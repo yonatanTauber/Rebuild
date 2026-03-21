@@ -3,6 +3,7 @@ import { z } from "zod";
 import { setMealFeedback } from "@/lib/nutrition-engine";
 import { getDbProvider } from "@/lib/db-driver";
 import { cloudSetNutritionMealFeedback } from "@/lib/nutrition-cloud-meals";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

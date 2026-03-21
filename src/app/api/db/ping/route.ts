@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { sql } from "@vercel/postgres";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

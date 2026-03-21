@@ -3,6 +3,7 @@ import { listFavoriteIngredientIds, listNutritionFavorites } from "@/lib/nutriti
 import { getDbProvider, dbQuery } from "@/lib/db-driver";
 import { migrateDb } from "@/lib/db-migrate";
 import { ensureCloudNutritionSeed } from "@/lib/nutrition-cloud";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

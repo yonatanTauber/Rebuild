@@ -3,6 +3,7 @@ import { formatISODate } from "@/lib/date";
 import { computeScores, forecast, recommendToday } from "@/lib/engine";
 import { getNutritionToday } from "@/lib/nutrition-engine";
 import { getPendingWorkoutFeedback, getWeeklyPlan } from "@/lib/db";
+export const dynamic = "force-dynamic";
 
 export async function GET() {
   const today = formatISODate();

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { forecast } from "@/lib/engine";
 import { formatISODate } from "@/lib/date";
 import { getWeeklyPlan } from "@/lib/db";
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 

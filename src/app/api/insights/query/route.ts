@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 import { runInsightQuery } from '@/lib/insights';
+export const dynamic = "force-dynamic";
 
 const schema = z.object({
   entity: z.enum(['day', 'workout']),
