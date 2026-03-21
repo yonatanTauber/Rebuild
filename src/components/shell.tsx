@@ -7,11 +7,11 @@ import { useEffect, useRef, type ReactNode } from "react";
 import { RebuildLogo } from "@/components/logo";
 
 const navItems: Array<{ href: Route; label: string; icon: string }> = [
-  { href: "/today", label: "היום", icon: "🏠" },
-  { href: "/log", label: "אימונים", icon: "📋" },
-  { href: "/journal", label: "תזונה", icon: "🥗" },
-  { href: "/analytics", label: "נתונים", icon: "📊" },
-  { href: "/settings", label: "הגדרות", icon: "⚙️" }
+  { href: "/today", label: "היום", icon: "dashboard" },
+  { href: "/log", label: "אימונים", icon: "fitness_center" },
+  { href: "/journal", label: "תזונה", icon: "nutrition" },
+  { href: "/analytics", label: "נתונים", icon: "bar_chart" },
+  { href: "/settings", label: "הגדרות", icon: "settings" }
 ];
 
 const secondaryRoutes: Array<Route> = [
@@ -58,7 +58,7 @@ export function AppShell({ children }: { children: ReactNode }) {
                 : "bottom-nav-item"
             }
           >
-            <span className="bottom-nav-icon" aria-hidden="true">
+            <span className="material-symbols-outlined bottom-nav-icon" aria-hidden="true">
               {item.icon}
             </span>
             {item.label}
