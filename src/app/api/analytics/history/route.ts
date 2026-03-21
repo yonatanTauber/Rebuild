@@ -1,1 +1,159 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAibmV4dC9zZXJ2ZXIiOwppbXBvcnQgeyB6IH0gZnJvbSAiem9kIjsKaW1wb3J0IHsgYWRkRGF5c0lTTyB9IGZyb20gIkAvbGliL2RhdGUiOwppbXBvcnQgeyBnZXRXb3Jrb3V0c0JldHdlZW4gfSBmcm9tICJAL2xpYi9kYiI7CmltcG9ydCB7IGdldFdvcmtvdXREZXRhaWxEYXRhIH0gZnJvbSAiQC9saWIvd29ya291dC1kZXRhaWwiOwppbXBvcnQgdHlwZSB7IFdvcmtvdXQgfSBmcm9tICJAL2xpYi90eXBlcyI7Cgpjb25zdCBzY2hlbWEgPSB6Lm9iamVjdCh7CiAgZnJvbTogei5zdHJpbmcoKS5kYXRldGltZSh7IG9mZnNldDogdHJ1ZSB9KS5vcHRpb25hbCgpLAogIHRvOiB6LnN0cmluZygpLmRhdGV0aW1lKHsgb2Zmc2V0OiB0cnVlIH0pLm9wdGlvbmFsKCksCiAgbWluRGlzdGFuY2U6IHoubnVtYmVyKCkubWluKDApLm9wdGlvbmFsKCksCiAgbWF4RGlzdGFuY2U6IHoubnVtYmVyKCkubWluKDApLm9wdGlvbmFsKCksCiAgbWluUGFjZTogei5udW1iZXIoKS5taW4oMSkub3B0aW9uYWwoKSwKICBtYXhQYWNlOiB6Lm51bWJlcigpLm1pbigxKS5vcHRpb25hbCgpLAogIHNwb3J0OiB6LmVudW0oWyJydW4iLCAiYmlrZSIsICJzd2ltIl0pLm9wdGlvbmFsKCkKfSk7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKHJlcXVlc3Q6IFJlcXVlc3QpIHsKICBjb25zdCB1cmwgPSBuZXcgVVJMKHJlcXVlc3QudXJsKTsKICBjb25zdCBwYXJhbXM6IFJlY29yZDxzdHJpbmcsIHVua25vd24+ID0ge307CiAgZm9yIChjb25zdCBba2V5LCB2YWx1ZV0gb2YgdXJsLnNlYXJjaFBhcmFtcy5lbnRyaWVzKCkpIHsKICAgIGlmICghdmFsdWUpIGNvbnRpbnVlOwogICAgaWYgKGtleSA9PT0gInNwb3J0IikgewogICAgICBwYXJhbXNba2V5XSA9IHZhbHVlOwogICAgICBjb250aW51ZTsKICAgIH0KICAgIGNvbnN0IG51bSA9IE51bWJlcih2YWx1ZSk7CiAgICBwYXJhbXNba2V5XSA9IE51bWJlci5pc05hTihudW0pID8gdmFsdWUgOiBudW07CiAgfQoKICBjb25zdCBwYXJzZWQgPSBzY2hlbWEuc2FmZVBhcnNlKHBhcmFtcyk7CiAgY29uc3QgeyBmcm9tLCB0bywgbWluRGlzdGFuY2UsIG1heERpc3RhbmNlLCBtaW5QYWNlLCBtYXhQYWNlLCBzcG9ydCB9ID0KICAgIHBhcnNlZC5zdWNjZXNzCiAgICAgID8gcGFyc2VkLmRhdGEKICAgICAgOiB7CiAgICAgICAgICBmcm9tOiBwYXJhbXMuZnJvbSBhcyBzdHJpbmcgfCB1bmRlZmluZWQsCiAgICAgICAgICB0bzogcGFyYW1zLnRvIGFzIHN0cmluZyB8IHVuZGVmaW5lZCwKICAgICAgICAgIG1pbkRpc3RhbmNlOiB0eXBlb2YgcGFyYW1zLm1pbkRpc3RhbmNlID09PSAibnVtYmVyIiA/IHBhcmFtcy5taW5EaXN0YW5jZSA6IHVuZGVmaW5lZCwKICAgICAgICAgIG1heERpc3RhbmNlOiB0eXBlb2YgcGFyYW1zLm1heERpc3RhbmNlID09PSAibnVtYmVyIiA/IHBhcmFtcy5tYXhEaXN0YW5jZSA6IHVuZGVmaW5lZCwKICAgICAgICAgIG1pblBhY2U6IHR5cGVvZiBwYXJhbXMubWluUGFjZSA9PT0gIm51bWJlciIgPyBwYXJhbXMubWluUGFjZSA6IHVuZGVmaW5lZCwKICAgICAgICAgIG1heFBhY2U6IHR5cGVvZiBwYXJhbXMubWF4UGFjZSA9PT0gIm51bWJlciIgPyBwYXJhbXMubWF4UGFjZSA6IHVuZGVmaW5lZCwKICAgICAgICAgIHNwb3J0OiBwYXJhbXMuc3BvcnQgYXMgInJ1biIgfCAiYmlrZSIgfCAic3dpbSIgfCB1bmRlZmluZWQKICAgICAgICB9OwoKICBjb25zdCBkZWZhdWx0U3RhcnQgPSBgJHthZGREYXlzSVNPKG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKS5zbGljZSgwLCAxMCksIC0zNjUpfVQwMDowMDowMC4wMDBaYDsKICBjb25zdCBkZWZhdWx0RW5kID0gYCR7bmV3IERhdGUoKS50b0lTT1N0cmluZygpLnNsaWNlKDAsIDEwKX1UMjM6NTk6NTkuOTk5WmA7CiAgY29uc3Qgc3RhcnQgPSBmcm9tID8gbmV3IERhdGUoZnJvbSkudG9JU09TdHJpbmcoKSA6IGRlZmF1bHRTdGFydDsKICBjb25zdCBlbmQgPSB0byA/IG5ldyBEYXRlKHRvKS50b0lTT1N0cmluZygpIDogZGVmYXVsdEVuZDsKICBjb25zdCB3b3Jrb3V0cyA9IGdldFdvcmtvdXRzQmV0d2VlbihzdGFydCwgZW5kKTsKCiAgdHlwZSBEaXNwbGF5TWV0cmljcyA9IHsKICAgIGRpc3RhbmNlRGlzcGxheUttOiBudW1iZXI7CiAgICBkaXN0YW5jZVJhd0ttOiBudW1iZXIgfCBudWxsOwogICAgZGlzdGFuY2VPZmZpY2lhbEttOiBudW1iZXIgfCBudWxsOwogICAgZHVyYXRpb25Gb3JQYWNlU2VjOiBudW1iZXI7CiAgICBtb3ZpbmdEdXJhdGlvblNlYzogbnVtYmVyIHwgbnVsbDsKICAgIHBhdXNlRHVyYXRpb25TZWM6IG51bWJlciB8IG51bGw7CiAgICBwYWNlTWluUGVyS206IG51bWJlciB8IG51bGw7CiAgfTsKCiAgY29uc3QgbWV0cmljc0NhY2hlID0gbmV3IE1hcDxzdHJpbmcsIERpc3BsYXlNZXRyaWNzPigpOwogIGNvbnN0IG1ldHJpY3NGb3IgPSAod29ya291dDogV29ya291dCk6IERpc3BsYXlNZXRyaWNzID0+IHsKICAgIGNvbnN0IGNhY2hlZCA9IG1ldHJpY3NDYWNoZS5nZXQod29ya291dC5pZCk7CiAgICBpZiAoY2FjaGVkKSByZXR1cm4gY2FjaGVkOwoKICAgIGNvbnN0IHJhd0ttID0KICAgICAgd29ya291dC5kaXN0YW5jZU0gIT0gbnVsbCAmJiBOdW1iZXIuaXNGaW5pdGUod29ya291dC5kaXN0YW5jZU0pCiAgICAgICAgPyBNYXRoLm1heCgwLCB3b3Jrb3V0LmRpc3RhbmNlTSAvIDEwMDApCiAgICAgICAgOiBudWxsOwoKICAgIGlmICh3b3Jrb3V0LnNwb3J0ICE9PSAicnVuIikgewogICAgICBjb25zdCBtZXRyaWM6IERpc3BsYXlNZXRyaWNzID0gewogICAgICAgIGRpc3RhbmNlRGlzcGxheUttOiByYXdLbSA/PyAwLAogICAgICAgIGRpc3RhbmNlUmF3S206IHJhd0ttLAogICAgICAgIGRpc3RhbmNlT2ZmaWNpYWxLbTogbnVsbCwKICAgICAgICBkdXJhdGlvbkZvclBhY2VTZWM6IHdvcmtvdXQuZHVyYXRpb25TZWMsCiAgICAgICAgbW92aW5nRHVyYXRpb25TZWM6IG51bGwsCiAgICAgICAgcGF1c2VEdXJhdGlvblNlYzogbnVsbCwKICAgICAgICBwYWNlTWluUGVyS206CiAgICAgICAgICByYXdLbSAmJiByYXdLbSA+IDAgJiYgd29ya291dC5kdXJhdGlvblNlYyA+IDAKICAgICAgICAgICAgPyB3b3Jrb3V0LmR1cmF0aW9uU2VjIC8gNjAgLyByYXdLbQogICAgICAgICAgICA6IG51bGwKICAgICAgfTsKICAgICAgbWV0cmljc0NhY2hlLnNldCh3b3Jrb3V0LmlkLCBtZXRyaWMpOwogICAgICByZXR1cm4gbWV0cmljOwogICAgfQoKICAgIGNvbnN0IGRldGFpbCA9IGdldFdvcmtvdXREZXRhaWxEYXRhKHdvcmtvdXQpOwogICAgY29uc3QgZGlzdGFuY2VSYXdLbSA9IGRldGFpbC5kaXN0YW5jZVJhd0ttID8/IHJhd0ttOwogICAgY29uc3QgZGlzdGFuY2VPZmZpY2lhbEttID0gZGV0YWlsLmRpc3RhbmNlT2ZmaWNpYWxLbSA/PyBudWxsOwogICAgY29uc3QgZGlzdGFuY2VEaXNwbGF5S20gPSBkaXN0YW5jZU9mZmljaWFsS20gPz8gZGlzdGFuY2VSYXdLbSA/PyAwOwogICAgY29uc3QgZHVyYXRpb25Gb3JQYWNlU2VjID0KICAgICAgZGV0YWlsLm1vdmluZ0R1cmF0aW9uU2VjICE9IG51bGwgJiYgZGV0YWlsLm1vdmluZ0R1cmF0aW9uU2VjID4gMAogICAgICAgID8gZGV0YWlsLm1vdmluZ0R1cmF0aW9uU2VjCiAgICAgICAgOiB3b3Jrb3V0LmR1cmF0aW9uU2VjOwogICAgY29uc3QgcGFjZU1pblBlckttID0KICAgICAgZGlzdGFuY2VEaXNwbGF5S20gPiAwICYmIGR1cmF0aW9uRm9yUGFjZVNlYyA+IDAKICAgICAgICA/IGR1cmF0aW9uRm9yUGFjZVNlYyAvIDYwIC8gZGlzdGFuY2VEaXNwbGF5S20KICAgICAgICA6IG51bGw7CgogICAgY29uc3QgbWV0cmljOiBEaXNwbGF5TWV0cmljcyA9IHsKICAgICAgZGlzdGFuY2VEaXNwbGF5S20sCiAgICAgIGRpc3RhbmNlUmF3S206IGRpc3RhbmNlUmF3S20gPz8gbnVsbCwKICAgICAgZGlzdGFuY2VPZmZpY2lhbEttLAogICAgICBkdXJhdGlvbkZvclBhY2VTZWMsCiAgICAgIG1vdmluZ0R1cmF0aW9uU2VjOiBkZXRhaWwubW92aW5nRHVyYXRpb25TZWMsCiAgICAgIHBhdXNlRHVyYXRpb25TZWM6IGRldGFpbC5wYXVzZUR1cmF0aW9uU2VjLAogICAgICBwYWNlTWluUGVyS20KICAgIH07CiAgICBtZXRyaWNzQ2FjaGUuc2V0KHdvcmtvdXQuaWQsIG1ldHJpYyk7CiAgICByZXR1cm4gbWV0cmljOwogIH07CgogIGNvbnN0IGZpbHRlcmVkID0gd29ya291dHMuZmlsdGVyKCh3KSA9PiB7CiAgICBpZiAoc3BvcnQgJiYgdy5zcG9ydCAhPT0gc3BvcnQpIHJldHVybiBmYWxzZTsKICAgIGNvbnN0IG1ldHJpYyA9IG1ldHJpY3NGb3Iodyk7CiAgICBjb25zdCBkaXN0YW5jZUttID0gbWV0cmljLmRpc3RhbmNlRGlzcGxheUttOwogICAgaWYgKG1pbkRpc3RhbmNlICE9PSB1bmRlZmluZWQgJiYgZGlzdGFuY2VLbSA8IG1pbkRpc3RhbmNlKSByZXR1cm4gZmFsc2U7CiAgICBpZiAobWF4RGlzdGFuY2UgIT09IHVuZGVmaW5lZCAmJiBkaXN0YW5jZUttID4gbWF4RGlzdGFuY2UpIHJldHVybiBmYWxzZTsKICAgIGNvbnN0IHBhY2VNaW5QZXJLbSA9IG1ldHJpYy5wYWNlTWluUGVyS20gPz8gTnVtYmVyLlBPU0lUSVZFX0lORklOSVRZOwogICAgaWYgKG1pblBhY2UgIT09IHVuZGVmaW5lZCAmJiBwYWNlTWluUGVyS20gPCBtaW5QYWNlKSByZXR1cm4gZmFsc2U7CiAgICBpZiAobWF4UGFjZSAhPT0gdW5kZWZpbmVkICYmIHBhY2VNaW5QZXJLbSA+IG1heFBhY2UpIHJldHVybiBmYWxzZTsKICAgIHJldHVybiB0cnVlOwogIH0pOwoKICBjb25zdCB0b3RhbERpc3RhbmNlS20gPSBmaWx0ZXJlZC5yZWR1Y2UoKHN1bSwgdykgPT4gc3VtICsgbWV0cmljc0Zvcih3KS5kaXN0YW5jZURpc3BsYXlLbSwgMCk7CiAgY29uc3QgdG90YWxQYWNlRHVyYXRpb25TZWMgPSBmaWx0ZXJlZC5yZWR1Y2UoKHN1bSwgdykgPT4gc3VtICsgbWV0cmljc0Zvcih3KS5kdXJhdGlvbkZvclBhY2VTZWMsIDApOwogIGNvbnN0IGVucmljaGVkV29ya291dHMgPSBmaWx0ZXJlZC5tYXAoKHcpID0+IHsKICAgIGNvbnN0IG1ldHJpYyA9IG1ldHJpY3NGb3Iodyk7CiAgICByZXR1cm4gewogICAgICAuLi53LAogICAgICBkaXN0YW5jZURpc3BsYXlLbTogTWF0aC5yb3VuZChtZXRyaWMuZGlzdGFuY2VEaXNwbGF5S20gKiAxMDApIC8gMTAwLAogICAgICBkaXN0YW5jZVJhd0ttOiBtZXRyaWMuZGlzdGFuY2VSYXdLbSAhPSBudWxsID8gTWF0aC5yb3VuZChtZXRyaWMuZGlzdGFuY2VSYXdLbSAqIDEwMCkgLyAxMDAgOiBudWxsLAogICAgICBkaXN0YW5jZU9mZmljaWFsS206IG1ldHJpYy5kaXN0YW5jZU9mZmljaWFsS20sCiAgICAgIGR1cmF0aW9uRm9yUGFjZVNlYzogTWF0aC5yb3VuZChtZXRyaWMuZHVyYXRpb25Gb3JQYWNlU2VjKSwKICAgICAgbW92aW5nRHVyYXRpb25TZWM6IG1ldHJpYy5tb3ZpbmdEdXJhdGlvblNlYyAhPSBudWxsID8gTWF0aC5yb3VuZChtZXRyaWMubW92aW5nRHVyYXRpb25TZWMpIDogbnVsbCwKICAgICAgcGF1c2VEdXJhdGlvblNlYzogbWV0cmljLnBhdXNlRHVyYXRpb25TZWMgIT0gbnVsbCA/IE1hdGgucm91bmQobWV0cmljLnBhdXNlRHVyYXRpb25TZWMpIDogbnVsbCwKICAgICAgcGFjZU1pblBlckttOiBtZXRyaWMucGFjZU1pblBlckttICE9IG51bGwgPyBNYXRoLnJvdW5kKG1ldHJpYy5wYWNlTWluUGVyS20gKiAxMDAwKSAvIDEwMDAgOiBudWxsCiAgICB9OwogIH0pOwoKICBjb25zdCBiZXN0UGFjZSA9IGVucmljaGVkV29ya291dHMucmVkdWNlPG51bWJlciB8IG51bGw+KChiZXN0LCB3KSA9PiB7CiAgICBjb25zdCBwYWNlID0gdy5wYWNlTWluUGVyS207CiAgICBpZiAocGFjZSA9PSBudWxsKSByZXR1cm4gYmVzdDsKICAgIHJldHVybiBiZXN0ID09PSBudWxsID8gcGFjZSA6IE1hdGgubWluKGJlc3QsIHBhY2UpOwogIH0sIG51bGwpOwoKICBjb25zdCBzdW1tYXJ5ID0gewogICAgdG90YWxDb3VudDogZmlsdGVyZWQubGVuZ3RoLAogICAgdG90YWxLbTogTWF0aC5yb3VuZCh0b3RhbERpc3RhbmNlS20gKiAxMCkgLyAxMCwKICAgIGF2Z1BhY2U6CiAgICAgIGZpbHRlcmVkLmxlbmd0aCAmJiB0b3RhbERpc3RhbmNlS20gPiAwCiAgICAgICAgPyBNYXRoLnJvdW5kKCh0b3RhbFBhY2VEdXJhdGlvblNlYyAvIDYwIC8gdG90YWxEaXN0YW5jZUttKSAqIDEwKSAvIDEwCiAgICAgICAgOiBudWxsLAogICAgYmVzdFBhY2U6IGJlc3RQYWNlID8gTWF0aC5yb3VuZChiZXN0UGFjZSAqIDEwMCkgLyAxMDAgOiBudWxsCiAgfTsKCiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZmlsdGVyczogeyBmcm9tOiBzdGFydCwgdG86IGVuZCwgc3BvcnQgfSwgc3VtbWFyeSwgd29ya291dHM6IGVucmljaGVkV29ya291dHMgfSk7Cn0K"}
+import { NextResponse } from "next/server";
+import { z } from "zod";
+import { addDaysISO } from "@/lib/date";
+import { getWorkoutsBetween } from "@/lib/db";
+import { getWorkoutDetailData } from "@/lib/workout-detail";
+import type { Workout } from "@/lib/types";
+
+const schema = z.object({
+  from: z.string().datetime({ offset: true }).optional(),
+  to: z.string().datetime({ offset: true }).optional(),
+  minDistance: z.number().min(0).optional(),
+  maxDistance: z.number().min(0).optional(),
+  minPace: z.number().min(1).optional(),
+  maxPace: z.number().min(1).optional(),
+  sport: z.enum(["run", "bike", "swim"]).optional()
+});
+
+export async function GET(request: Request) {
+  const url = new URL(request.url);
+  const params: Record<string, unknown> = {};
+  for (const [key, value] of url.searchParams.entries()) {
+    if (!value) continue;
+    if (key === "sport") {
+      params[key] = value;
+      continue;
+    }
+    const num = Number(value);
+    params[key] = Number.isNaN(num) ? value : num;
+  }
+
+  const parsed = schema.safeParse(params);
+  const { from, to, minDistance, maxDistance, minPace, maxPace, sport } =
+    parsed.success
+      ? parsed.data
+      : {
+          from: params.from as string | undefined,
+          to: params.to as string | undefined,
+          minDistance: typeof params.minDistance === "number" ? params.minDistance : undefined,
+          maxDistance: typeof params.maxDistance === "number" ? params.maxDistance : undefined,
+          minPace: typeof params.minPace === "number" ? params.minPace : undefined,
+          maxPace: typeof params.maxPace === "number" ? params.maxPace : undefined,
+          sport: params.sport as "run" | "bike" | "swim" | undefined
+        };
+
+  const defaultStart = `${addDaysISO(new Date().toISOString().slice(0, 10), -365)}T00:00:00.000Z`;
+  const defaultEnd = `${new Date().toISOString().slice(0, 10)}T23:59:59.999Z`;
+  const start = from ? new Date(from).toISOString() : defaultStart;
+  const end = to ? new Date(to).toISOString() : defaultEnd;
+  const workouts = getWorkoutsBetween(start, end);
+
+  type DisplayMetrics = {
+    distanceDisplayKm: number;
+    distanceRawKm: number | null;
+    distanceOfficialKm: number | null;
+    durationForPaceSec: number;
+    movingDurationSec: number | null;
+    pauseDurationSec: number | null;
+    paceMinPerKm: number | null;
+  };
+
+  const metricsCache = new Map<string, DisplayMetrics>();
+  const metricsFor = (workout: Workout): DisplayMetrics => {
+    const cached = metricsCache.get(workout.id);
+    if (cached) return cached;
+
+    const rawKm =
+      workout.distanceM != null && Number.isFinite(workout.distanceM)
+        ? Math.max(0, workout.distanceM / 1000)
+        : null;
+
+    if (workout.sport !== "run") {
+      const metric: DisplayMetrics = {
+        distanceDisplayKm: rawKm ?? 0,
+        distanceRawKm: rawKm,
+        distanceOfficialKm: null,
+        durationForPaceSec: workout.durationSec,
+        movingDurationSec: null,
+        pauseDurationSec: null,
+        paceMinPerKm:
+          rawKm && rawKm > 0 && workout.durationSec > 0
+            ? workout.durationSec / 60 / rawKm
+            : null
+      };
+      metricsCache.set(workout.id, metric);
+      return metric;
+    }
+
+    const detail = getWorkoutDetailData(workout);
+    const distanceRawKm = detail.distanceRawKm ?? rawKm;
+    const distanceOfficialKm = detail.distanceOfficialKm ?? null;
+    const distanceDisplayKm = distanceOfficialKm ?? distanceRawKm ?? 0;
+    const durationForPaceSec =
+      detail.movingDurationSec != null && detail.movingDurationSec > 0
+        ? detail.movingDurationSec
+        : workout.durationSec;
+    const paceMinPerKm =
+      distanceDisplayKm > 0 && durationForPaceSec > 0
+        ? durationForPaceSec / 60 / distanceDisplayKm
+        : null;
+
+    const metric: DisplayMetrics = {
+      distanceDisplayKm,
+      distanceRawKm: distanceRawKm ?? null,
+      distanceOfficialKm,
+      durationForPaceSec,
+      movingDurationSec: detail.movingDurationSec,
+      pauseDurationSec: detail.pauseDurationSec,
+      paceMinPerKm
+    };
+    metricsCache.set(workout.id, metric);
+    return metric;
+  };
+
+  const filtered = workouts.filter((w) => {
+    if (sport && w.sport !== sport) return false;
+    const metric = metricsFor(w);
+    const distanceKm = metric.distanceDisplayKm;
+    if (minDistance !== undefined && distanceKm < minDistance) return false;
+    if (maxDistance !== undefined && distanceKm > maxDistance) return false;
+    const paceMinPerKm = metric.paceMinPerKm ?? Number.POSITIVE_INFINITY;
+    if (minPace !== undefined && paceMinPerKm < minPace) return false;
+    if (maxPace !== undefined && paceMinPerKm > maxPace) return false;
+    return true;
+  });
+
+  const totalDistanceKm = filtered.reduce((sum, w) => sum + metricsFor(w).distanceDisplayKm, 0);
+  const totalPaceDurationSec = filtered.reduce((sum, w) => sum + metricsFor(w).durationForPaceSec, 0);
+  const enrichedWorkouts = filtered.map((w) => {
+    const metric = metricsFor(w);
+    return {
+      ...w,
+      distanceDisplayKm: Math.round(metric.distanceDisplayKm * 100) / 100,
+      distanceRawKm: metric.distanceRawKm != null ? Math.round(metric.distanceRawKm * 100) / 100 : null,
+      distanceOfficialKm: metric.distanceOfficialKm,
+      durationForPaceSec: Math.round(metric.durationForPaceSec),
+      movingDurationSec: metric.movingDurationSec != null ? Math.round(metric.movingDurationSec) : null,
+      pauseDurationSec: metric.pauseDurationSec != null ? Math.round(metric.pauseDurationSec) : null,
+      paceMinPerKm: metric.paceMinPerKm != null ? Math.round(metric.paceMinPerKm * 1000) / 1000 : null
+    };
+  });
+
+  const bestPace = enrichedWorkouts.reduce<number | null>((best, w) => {
+    const pace = w.paceMinPerKm;
+    if (pace == null) return best;
+    return best === null ? pace : Math.min(best, pace);
+  }, null);
+
+  const summary = {
+    totalCount: filtered.length,
+    totalKm: Math.round(totalDistanceKm * 10) / 10,
+    avgPace:
+      filtered.length && totalDistanceKm > 0
+        ? Math.round((totalPaceDurationSec / 60 / totalDistanceKm) * 10) / 10
+        : null,
+    bestPace: bestPace ? Math.round(bestPace * 100) / 100 : null
+  };
+
+  return NextResponse.json({ filters: { from: start, to: end, sport }, summary, workouts: enrichedWorkouts });
+}

@@ -1,1 +1,25 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IGFzc2lnblNob2VUb1dvcmtvdXQgfSBmcm9tICJAL2xpYi9kYiI7CmltcG9ydCB7IGNsb3VkRW5hYmxlZCB9IGZyb20gIkAvbGliL2Nsb3VkLWRiIjsKaW1wb3J0IHsgY2xvdWRBc3NpZ25TaG9lVG9Xb3Jrb3V0IH0gZnJvbSAiQC9saWIvY2xvdWQtc2hvZXMiOwoKZXhwb3J0IGNvbnN0IHJ1bnRpbWUgPSAibm9kZWpzIjsKCmNvbnN0IHNjaGVtYSA9IHoub2JqZWN0KHsKICB3b3Jrb3V0SWQ6IHouc3RyaW5nKCkubWluKDEpLAogIHNob2VJZDogei5zdHJpbmcoKS5taW4oMSkubnVsbGFibGUoKS5vcHRpb25hbCgpCn0pOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBib2R5ID0gYXdhaXQgcmVxdWVzdC5qc29uKCk7CiAgY29uc3QgcGFyc2VkID0gc2NoZW1hLnNhZmVQYXJzZShib2R5KTsKICBpZiAoIXBhcnNlZC5zdWNjZXNzKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogcGFyc2VkLmVycm9yLmZsYXR0ZW4oKSB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgY29uc3Qgc2hvZUttQXRBc3NpZ24gPSBjbG91ZEVuYWJsZWQoKQogICAgPyBhd2FpdCBjbG91ZEFzc2lnblNob2VUb1dvcmtvdXQocGFyc2VkLmRhdGEud29ya291dElkLCBwYXJzZWQuZGF0YS5zaG9lSWQgPz8gbnVsbCkKICAgIDogYXNzaWduU2hvZVRvV29ya291dChwYXJzZWQuZGF0YS53b3Jrb3V0SWQsIHBhcnNlZC5kYXRhLnNob2VJZCA/PyBudWxsKTsKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBzYXZlZDogdHJ1ZSwgc2hvZUttQXRBc3NpZ24gfSk7Cn0K"}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { assignShoeToWorkout } from "@/lib/db";
+import { cloudEnabled } from "@/lib/cloud-db";
+import { cloudAssignShoeToWorkout } from "@/lib/cloud-shoes";
+
+export const runtime = "nodejs";
+
+const schema = z.object({
+  workoutId: z.string().min(1),
+  shoeId: z.string().min(1).nullable().optional()
+});
+
+export async function POST(request: NextRequest) {
+  const body = await request.json();
+  const parsed = schema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  const shoeKmAtAssign = cloudEnabled()
+    ? await cloudAssignShoeToWorkout(parsed.data.workoutId, parsed.data.shoeId ?? null)
+    : assignShoeToWorkout(parsed.data.workoutId, parsed.data.shoeId ?? null);
+  return NextResponse.json({ saved: true, shoeKmAtAssign });
+}

@@ -1,1 +1,18 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgZm9yZWNhc3QgfSBmcm9tICJAL2xpYi9lbmdpbmUiOwppbXBvcnQgeyBmb3JtYXRJU09EYXRlIH0gZnJvbSAiQC9saWIvZGF0ZSI7CmltcG9ydCB7IGdldFdlZWtseVBsYW4gfSBmcm9tICJAL2xpYi9kYiI7CgpleHBvcnQgY29uc3QgcnVudGltZSA9ICJub2RlanMiOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IGRheXNSYXcgPSByZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zLmdldCgiZGF5cyIpOwogIGNvbnN0IGRhdGUgPSByZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zLmdldCgiZGF0ZSIpID8/IGZvcm1hdElTT0RhdGUoKTsKICBjb25zdCBkYXlzID0gTnVtYmVyKGRheXNSYXcgPz8gIjciKTsKICBjb25zdCBzYWZlRGF5cyA9IE51bWJlci5pc0Zpbml0ZShkYXlzKSA/IE1hdGgubWF4KDEsIE1hdGgubWluKGRheXMsIDE0KSkgOiA3OwoKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgZGF5czogZm9yZWNhc3Qoc2FmZURheXMsIGRhdGUpLAogICAgd2Vla2x5UGxhbjogZ2V0V2Vla2x5UGxhbihkYXRlKQogIH0pOwp9Cg=="}
+import { NextRequest, NextResponse } from "next/server";
+import { forecast } from "@/lib/engine";
+import { formatISODate } from "@/lib/date";
+import { getWeeklyPlan } from "@/lib/db";
+
+export const runtime = "nodejs";
+
+export async function GET(request: NextRequest) {
+  const daysRaw = request.nextUrl.searchParams.get("days");
+  const date = request.nextUrl.searchParams.get("date") ?? formatISODate();
+  const days = Number(daysRaw ?? "7");
+  const safeDays = Number.isFinite(days) ? Math.max(1, Math.min(days, 14)) : 7;
+
+  return NextResponse.json({
+    days: forecast(safeDays, date),
+    weeklyPlan: getWeeklyPlan(date)
+  });
+}

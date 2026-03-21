@@ -1,1 +1,5 @@
-{"data":"aW1wb3J0IHsgY29tcHV0ZVNjb3JlcywgcmVjb21tZW5kVG9kYXksIGZvcmVjYXN0IH0gZnJvbSAiLi4vc3JjL2xpYi9lbmdpbmUiOwoKY29uc29sZS5sb2coIlNjb3JlcyIsIGNvbXB1dGVTY29yZXMoKSk7CmNvbnNvbGUubG9nKCJSZWNvbW1lbmRhdGlvbiIsIHJlY29tbWVuZFRvZGF5KCkpOwpjb25zb2xlLmxvZygiRm9yZWNhc3QiLCBmb3JlY2FzdCg3KSk7Cg=="}
+import { computeScores, recommendToday, forecast } from "../src/lib/engine";
+
+console.log("Scores", computeScores());
+console.log("Recommendation", recommendToday());
+console.log("Forecast", forecast(7));

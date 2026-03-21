@@ -1,1 +1,196 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VNZW1vLCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHR5cGUgeyBXb3Jrb3V0RnVlbGluZ0VudHJ5IH0gZnJvbSAiQC9saWIvdHlwZXMiOwoKdHlwZSBGdWVsUm93ID0gewogIGl0ZW1OYW1lOiBzdHJpbmc7CiAgcXVhbnRpdHk6IG51bWJlcjsKICB1bml0TGFiZWw6IHN0cmluZzsKICBjYXJic0c6IG51bWJlcjsKICBrY2FsOiBzdHJpbmc7CiAgY2FmZmVpbmVNZzogc3RyaW5nOwogIG5vdGVzOiBzdHJpbmc7Cn07CgpmdW5jdGlvbiBlbXB0eVJvdygpOiBGdWVsUm93IHsKICByZXR1cm4gewogICAgaXRlbU5hbWU6ICIiLAogICAgcXVhbnRpdHk6IDEsCiAgICB1bml0TGFiZWw6ICLXmdeX17MiLAogICAgY2FyYnNHOiAyNSwKICAgIGtjYWw6ICIiLAogICAgY2FmZmVpbmVNZzogIiIsCiAgICBub3RlczogIiIKICB9Owp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBXb3Jrb3V0RnVlbGluZ0lubGluZSh7IHdvcmtvdXRJZCB9OiB7IHdvcmtvdXRJZDogc3RyaW5nIH0pIHsKICBjb25zdCBbcm93cywgc2V0Um93c10gPSB1c2VTdGF0ZTxGdWVsUm93W10+KFtdKTsKICBjb25zdCBbZWRpdGluZywgc2V0RWRpdGluZ10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW3NhdmluZywgc2V0U2F2aW5nXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbc3RhdHVzLCBzZXRTdGF0dXNdID0gdXNlU3RhdGUoIiIpOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgdm9pZCBmZXRjaChgL2FwaS93b3Jrb3V0cy8ke3dvcmtvdXRJZH0vZnVlbGluZ2ApCiAgICAgIC50aGVuKChyZXMpID0+IHJlcy5qc29uKCkpCiAgICAgIC50aGVuKChwYXlsb2FkKSA9PiB7CiAgICAgICAgY29uc3QgaXRlbXMgPSAoKHBheWxvYWQuaXRlbXMgPz8gW10pIGFzIFdvcmtvdXRGdWVsaW5nRW50cnlbXSkubWFwKChpdGVtKSA9PiAoewogICAgICAgICAgaXRlbU5hbWU6IGl0ZW0uaXRlbU5hbWUsCiAgICAgICAgICBxdWFudGl0eTogTnVtYmVyKGl0ZW0ucXVhbnRpdHkpLAogICAgICAgICAgdW5pdExhYmVsOiBpdGVtLnVuaXRMYWJlbCwKICAgICAgICAgIGNhcmJzRzogTnVtYmVyKGl0ZW0uY2FyYnNHKSwKICAgICAgICAgIGtjYWw6IGl0ZW0ua2NhbCA9PSBudWxsID8gIiIgOiBTdHJpbmcoaXRlbS5rY2FsKSwKICAgICAgICAgIGNhZmZlaW5lTWc6IGl0ZW0uY2FmZmVpbmVNZyA9PSBudWxsID8gIiIgOiBTdHJpbmcoaXRlbS5jYWZmZWluZU1nKSwKICAgICAgICAgIG5vdGVzOiBpdGVtLm5vdGVzID8/ICIiCiAgICAgICAgfSkpOwogICAgICAgIHNldFJvd3MoaXRlbXMpOwogICAgICAgIHNldEVkaXRpbmcoaXRlbXMubGVuZ3RoID4gMCk7CiAgICAgIH0pOwogIH0sIFt3b3Jrb3V0SWRdKTsKCiAgY29uc3QgdG90YWxDYXJicyA9IHVzZU1lbW8oKCkgPT4gcm93cy5yZWR1Y2UoKHN1bSwgcm93KSA9PiBzdW0gKyAoTnVtYmVyLmlzRmluaXRlKHJvdy5jYXJic0cpID8gcm93LmNhcmJzRyA6IDApLCAwKSwgW3Jvd3NdKTsKICBjb25zdCB0b3RhbEtjYWwgPSB1c2VNZW1vKAogICAgKCkgPT4gcm93cy5yZWR1Y2UoKHN1bSwgcm93KSA9PiBzdW0gKyAocm93LmtjYWwudHJpbSgpID8gTnVtYmVyKHJvdy5rY2FsKSB8fCAwIDogMCksIDApLAogICAgW3Jvd3NdCiAgKTsKCiAgZnVuY3Rpb24gdXBkYXRlUm93KGluZGV4OiBudW1iZXIsIHBhdGNoOiBQYXJ0aWFsPEZ1ZWxSb3c+KSB7CiAgICBzZXRSb3dzKChwcmV2KSA9PiBwcmV2Lm1hcCgocm93LCBpZHgpID0+IChpZHggPT09IGluZGV4ID8geyAuLi5yb3csIC4uLnBhdGNoIH0gOiByb3cpKSk7CiAgfQoKICBmdW5jdGlvbiBhZGRSb3coKSB7CiAgICBzZXRFZGl0aW5nKHRydWUpOwogICAgc2V0Um93cygocHJldikgPT4gWy4uLnByZXYsIGVtcHR5Um93KCldKTsKICB9CgogIGZ1bmN0aW9uIHJlbW92ZVJvdyhpbmRleDogbnVtYmVyKSB7CiAgICBzZXRSb3dzKChwcmV2KSA9PiB7CiAgICAgIGNvbnN0IG5leHQgPSBwcmV2LmZpbHRlcigoXywgaWR4KSA9PiBpZHggIT09IGluZGV4KTsKICAgICAgaWYgKG5leHQubGVuZ3RoID09PSAwKSB7CiAgICAgICAgc2V0RWRpdGluZyhmYWxzZSk7CiAgICAgIH0KICAgICAgcmV0dXJuIG5leHQ7CiAgICB9KTsKICB9CgogIGFzeW5jIGZ1bmN0aW9uIHNhdmUoKSB7CiAgICBjb25zdCBpdGVtcyA9IHJvd3MKICAgICAgLm1hcCgocm93KSA9PiAoewogICAgICAgIGl0ZW1OYW1lOiByb3cuaXRlbU5hbWUudHJpbSgpLAogICAgICAgIHF1YW50aXR5OiBOdW1iZXIocm93LnF1YW50aXR5KSwKICAgICAgICB1bml0TGFiZWw6IHJvdy51bml0TGFiZWwudHJpbSgpIHx8ICLXmdeX17MiLAogICAgICAgIGNhcmJzRzogTnVtYmVyKHJvdy5jYXJic0cpLAogICAgICAgIGtjYWw6IHJvdy5rY2FsLnRyaW0oKSA/IE51bWJlcihyb3cua2NhbCkgOiBudWxsLAogICAgICAgIGNhZmZlaW5lTWc6IHJvdy5jYWZmZWluZU1nLnRyaW0oKSA/IE51bWJlcihyb3cuY2FmZmVpbmVNZykgOiBudWxsLAogICAgICAgIG5vdGVzOiByb3cubm90ZXMudHJpbSgpIHx8IG51bGwKICAgICAgfSkpCiAgICAgIC5maWx0ZXIoKHJvdykgPT4gcm93Lml0ZW1OYW1lICYmIE51bWJlci5pc0Zpbml0ZShyb3cucXVhbnRpdHkpICYmIHJvdy5xdWFudGl0eSA+IDAgJiYgTnVtYmVyLmlzRmluaXRlKHJvdy5jYXJic0cpKTsKCiAgICBzZXRTYXZpbmcodHJ1ZSk7CiAgICB0cnkgewogICAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChgL2FwaS93b3Jrb3V0cy8ke3dvcmtvdXRJZH0vZnVlbGluZ2AsIHsKICAgICAgICBtZXRob2Q6ICJQT1NUIiwKICAgICAgICBoZWFkZXJzOiB7ICJDb250ZW50LVR5cGUiOiAiYXBwbGljYXRpb24vanNvbiIgfSwKICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeSh7IGl0ZW1zIH0pCiAgICAgIH0pOwogICAgICBpZiAoIXJlcy5vaykgewogICAgICAgIHNldFN0YXR1cygi16nXnteZ16jXqiDXqteW15XXoNeqINeU15DXmdee15XXnyDXoNeb16nXnNeULiIpOwogICAgICAgIHJldHVybjsKICAgICAgfQogICAgICBjb25zdCBwYXlsb2FkID0gKGF3YWl0IHJlcy5qc29uKCkpIGFzIHsgaXRlbXM/OiBXb3Jrb3V0RnVlbGluZ0VudHJ5W10gfTsKICAgICAgY29uc3Qgc2F2ZWRSb3dzID0gKChwYXlsb2FkLml0ZW1zID8/IFtdKSBhcyBXb3Jrb3V0RnVlbGluZ0VudHJ5W10pLm1hcCgoaXRlbSkgPT4gKHsKICAgICAgICBpdGVtTmFtZTogaXRlbS5pdGVtTmFtZSwKICAgICAgICBxdWFudGl0eTogTnVtYmVyKGl0ZW0ucXVhbnRpdHkpLAogICAgICAgIHVuaXRMYWJlbDogaXRlbS51bml0TGFiZWwsCiAgICAgICAgY2FyYnNHOiBOdW1iZXIoaXRlbS5jYXJic0cpLAogICAgICAgIGtjYWw6IGl0ZW0ua2NhbCA9PSBudWxsID8gIiIgOiBTdHJpbmcoaXRlbS5rY2FsKSwKICAgICAgICBjYWZmZWluZU1nOiBpdGVtLmNhZmZlaW5lTWcgPT0gbnVsbCA/ICIiIDogU3RyaW5nKGl0ZW0uY2FmZmVpbmVNZyksCiAgICAgICAgbm90ZXM6IGl0ZW0ubm90ZXMgPz8gIiIKICAgICAgfSkpOwogICAgICBzZXRSb3dzKHNhdmVkUm93cyk7CiAgICAgIHNldEVkaXRpbmcoc2F2ZWRSb3dzLmxlbmd0aCA+IDApOwogICAgICBzZXRTdGF0dXMoc2F2ZWRSb3dzLmxlbmd0aCA+IDAgPyAi16rXlteV16DXqiDXlNeQ15nXnteV158g16DXqdee16jXlC4iIDogIteQ15nXnyDXqteW15XXoNeUINee16rXldei15PXqiDXnNeQ15nXnteV158g15TXlteULiIpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0U2F2aW5nKGZhbHNlKTsKICAgICAgc2V0VGltZW91dCgoKSA9PiBzZXRTdGF0dXMoIiIpLCAyMjAwKTsKICAgIH0KICB9CgogIGZ1bmN0aW9uIHN0YXJ0RWRpdGluZygpIHsKICAgIHNldEVkaXRpbmcodHJ1ZSk7CiAgICBpZiAocm93cy5sZW5ndGggPT09IDApIHsKICAgICAgc2V0Um93cyhbZW1wdHlSb3coKV0pOwogICAgfQogIH0KCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJ3b3Jrb3V0LWZ1ZWxpbmctYm94Ij4KICAgICAgPGRpdiBjbGFzc05hbWU9IndvcmtvdXQtZnVlbGluZy1oZWFkIj4KICAgICAgICA8c3Ryb25nPteq15bXldeg15Qg16rXldeaINeb15PXmTwvc3Ryb25nPgogICAgICAgIDxzcGFuIGNsYXNzTmFtZT0ibm90ZSI+16HXlNe015sge01hdGgucm91bmQodG90YWxDYXJicyl915LXsyDXpNeX157Xmdee15R7dG90YWxLY2FsID4gMCA/IGAgwrcgJHtNYXRoLnJvdW5kKHRvdGFsS2NhbCl9INen16fXtNecYCA6ICIifTwvc3Bhbj4KICAgICAgPC9kaXY+CiAgICAgIHshZWRpdGluZyAmJiByb3dzLmxlbmd0aCA9PT0gMCA/ICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0id29ya291dC1mdWVsaW5nLWVtcHR5Ij4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0ibm90ZSI+15DXmdefINeq15bXldeg15Qg157XqteV16LXk9eqINec15DXmdee15XXnyDXlNeW15QuPC9wPgogICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9ImNob2ljZS1idG4iIG9uQ2xpY2s9e3N0YXJ0RWRpdGluZ30+15TXldeh16Mg16rXlteV16DXlCDXkdeQ15nXnteV1588L2J1dHRvbj4KICAgICAgICA8L2Rpdj4KICAgICAgKSA6ICgKICAgICAgICA8PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9IndvcmtvdXQtZnVlbGluZy1saXN0Ij4KICAgICAgICAgICAge3Jvd3MubWFwKChyb3csIGluZGV4KSA9PiAoCiAgICAgICAgICAgICAgPGRpdiBrZXk9e2BmdWVsLSR7aW5kZXh9YH0gY2xhc3NOYW1lPSJ3b3Jrb3V0LWZ1ZWxpbmctcm93Ij4KICAgICAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgICAgICB2YWx1ZT17cm93Lml0ZW1OYW1lfQogICAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGV2ZW50KSA9PiB1cGRhdGVSb3coaW5kZXgsIHsgaXRlbU5hbWU6IGV2ZW50LnRhcmdldC52YWx1ZSB9KX0KICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9Itec157XqdecINeS17PXnCAvINeQ15nXlteV15jXldeg15kgLyDXqtee16giCiAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAgPGlucHV0CiAgICAgICAgICAgICAgICAgIHR5cGU9Im51bWJlciIKICAgICAgICAgICAgICAgICAgbWluPXswfQogICAgICAgICAgICAgICAgICBzdGVwPXswLjF9CiAgICAgICAgICAgICAgICAgIHZhbHVlPXtyb3cucXVhbnRpdHl9CiAgICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZXZlbnQpID0+IHVwZGF0ZVJvdyhpbmRleCwgeyBxdWFudGl0eTogTnVtYmVyKGV2ZW50LnRhcmdldC52YWx1ZSkgfSl9CiAgICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPSLXm9ee15XXqiIKICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICAgICAgdmFsdWU9e3Jvdy51bml0TGFiZWx9CiAgICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZXZlbnQpID0+IHVwZGF0ZVJvdyhpbmRleCwgeyB1bml0TGFiZWw6IGV2ZW50LnRhcmdldC52YWx1ZSB9KX0KICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9IteZ15fXsyAvINee17TXnCIKICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICAgICAgdHlwZT0ibnVtYmVyIgogICAgICAgICAgICAgICAgICBtaW49ezB9CiAgICAgICAgICAgICAgICAgIHN0ZXA9ezAuMX0KICAgICAgICAgICAgICAgICAgdmFsdWU9e3Jvdy5jYXJic0d9CiAgICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZXZlbnQpID0+IHVwZGF0ZVJvdyhpbmRleCwgeyBjYXJic0c6IE51bWJlcihldmVudC50YXJnZXQudmFsdWUpIH0pfQogICAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcj0i16TXl9ee15nXnteUIgogICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgICAgICB0eXBlPSJudW1iZXIiCiAgICAgICAgICAgICAgICAgIG1pbj17MH0KICAgICAgICAgICAgICAgICAgc3RlcD17MX0KICAgICAgICAgICAgICAgICAgdmFsdWU9e3Jvdy5rY2FsfQogICAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGV2ZW50KSA9PiB1cGRhdGVSb3coaW5kZXgsIHsga2NhbDogZXZlbnQudGFyZ2V0LnZhbHVlIH0pfQogICAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcj0i16fXp9e015wiCiAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9Imljb24tYnRuIiBvbkNsaWNrPXsoKSA9PiByZW1vdmVSb3coaW5kZXgpfSBhcmlhLWxhYmVsPSLXlNeh16gg16jXm9eZ15Eg16rXlteV16DXlCIgdGl0bGU9IteU16HXqCDXqNeb15nXkSDXqteW15XXoNeUIj4KICAgICAgICAgICAgICAgICAg4pyVCiAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgKSl9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyb3ciPgogICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0iaWNvbi1idG4iIG9uQ2xpY2s9e2FkZFJvd30gYXJpYS1sYWJlbD0i15TXldeh16Mg16jXm9eZ15Eg16rXlteV16DXlCIgdGl0bGU9IteU15XXodejINeo15vXmdeRINeq15bXldeg15QiPgogICAgICAgICAgICAgIO+8iwogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9ImNob2ljZS1idG4iIG9uQ2xpY2s9eygpID0+IHZvaWQgc2F2ZSgpfSBkaXNhYmxlZD17c2F2aW5nfT4KICAgICAgICAgICAgICB7c2F2aW5nID8gItep15XXnteoLi4uIiA6ICLXqdee15XXqCDXqteW15XXoNeqINeQ15nXnteV158ifQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvPgogICAgICApfQogICAgICB7c3RhdHVzICYmIDxwIGNsYXNzTmFtZT0ibm90ZSI+e3N0YXR1c308L3A+fQogICAgPC9kaXY+CiAgKTsKfQo="}
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+import type { WorkoutFuelingEntry } from "@/lib/types";
+
+type FuelRow = {
+  itemName: string;
+  quantity: number;
+  unitLabel: string;
+  carbsG: number;
+  kcal: string;
+  caffeineMg: string;
+  notes: string;
+};
+
+function emptyRow(): FuelRow {
+  return {
+    itemName: "",
+    quantity: 1,
+    unitLabel: "יח׳",
+    carbsG: 25,
+    kcal: "",
+    caffeineMg: "",
+    notes: ""
+  };
+}
+
+export default function WorkoutFuelingInline({ workoutId }: { workoutId: string }) {
+  const [rows, setRows] = useState<FuelRow[]>([]);
+  const [editing, setEditing] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [status, setStatus] = useState("");
+
+  useEffect(() => {
+    void fetch(`/api/workouts/${workoutId}/fueling`)
+      .then((res) => res.json())
+      .then((payload) => {
+        const items = ((payload.items ?? []) as WorkoutFuelingEntry[]).map((item) => ({
+          itemName: item.itemName,
+          quantity: Number(item.quantity),
+          unitLabel: item.unitLabel,
+          carbsG: Number(item.carbsG),
+          kcal: item.kcal == null ? "" : String(item.kcal),
+          caffeineMg: item.caffeineMg == null ? "" : String(item.caffeineMg),
+          notes: item.notes ?? ""
+        }));
+        setRows(items);
+        setEditing(items.length > 0);
+      });
+  }, [workoutId]);
+
+  const totalCarbs = useMemo(() => rows.reduce((sum, row) => sum + (Number.isFinite(row.carbsG) ? row.carbsG : 0), 0), [rows]);
+  const totalKcal = useMemo(
+    () => rows.reduce((sum, row) => sum + (row.kcal.trim() ? Number(row.kcal) || 0 : 0), 0),
+    [rows]
+  );
+
+  function updateRow(index: number, patch: Partial<FuelRow>) {
+    setRows((prev) => prev.map((row, idx) => (idx === index ? { ...row, ...patch } : row)));
+  }
+
+  function addRow() {
+    setEditing(true);
+    setRows((prev) => [...prev, emptyRow()]);
+  }
+
+  function removeRow(index: number) {
+    setRows((prev) => {
+      const next = prev.filter((_, idx) => idx !== index);
+      if (next.length === 0) {
+        setEditing(false);
+      }
+      return next;
+    });
+  }
+
+  async function save() {
+    const items = rows
+      .map((row) => ({
+        itemName: row.itemName.trim(),
+        quantity: Number(row.quantity),
+        unitLabel: row.unitLabel.trim() || "יח׳",
+        carbsG: Number(row.carbsG),
+        kcal: row.kcal.trim() ? Number(row.kcal) : null,
+        caffeineMg: row.caffeineMg.trim() ? Number(row.caffeineMg) : null,
+        notes: row.notes.trim() || null
+      }))
+      .filter((row) => row.itemName && Number.isFinite(row.quantity) && row.quantity > 0 && Number.isFinite(row.carbsG));
+
+    setSaving(true);
+    try {
+      const res = await fetch(`/api/workouts/${workoutId}/fueling`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ items })
+      });
+      if (!res.ok) {
+        setStatus("שמירת תזונת האימון נכשלה.");
+        return;
+      }
+      const payload = (await res.json()) as { items?: WorkoutFuelingEntry[] };
+      const savedRows = ((payload.items ?? []) as WorkoutFuelingEntry[]).map((item) => ({
+        itemName: item.itemName,
+        quantity: Number(item.quantity),
+        unitLabel: item.unitLabel,
+        carbsG: Number(item.carbsG),
+        kcal: item.kcal == null ? "" : String(item.kcal),
+        caffeineMg: item.caffeineMg == null ? "" : String(item.caffeineMg),
+        notes: item.notes ?? ""
+      }));
+      setRows(savedRows);
+      setEditing(savedRows.length > 0);
+      setStatus(savedRows.length > 0 ? "תזונת האימון נשמרה." : "אין תזונה מתועדת לאימון הזה.");
+    } finally {
+      setSaving(false);
+      setTimeout(() => setStatus(""), 2200);
+    }
+  }
+
+  function startEditing() {
+    setEditing(true);
+    if (rows.length === 0) {
+      setRows([emptyRow()]);
+    }
+  }
+
+  return (
+    <div className="workout-fueling-box">
+      <div className="workout-fueling-head">
+        <strong>תזונה תוך כדי</strong>
+        <span className="note">סה״כ {Math.round(totalCarbs)}ג׳ פחמימה{totalKcal > 0 ? ` · ${Math.round(totalKcal)} קק״ל` : ""}</span>
+      </div>
+      {!editing && rows.length === 0 ? (
+        <div className="workout-fueling-empty">
+          <p className="note">אין תזונה מתועדת לאימון הזה.</p>
+          <button className="choice-btn" onClick={startEditing}>הוסף תזונה באימון</button>
+        </div>
+      ) : (
+        <>
+          <div className="workout-fueling-list">
+            {rows.map((row, index) => (
+              <div key={`fuel-${index}`} className="workout-fueling-row">
+                <input
+                  value={row.itemName}
+                  onChange={(event) => updateRow(index, { itemName: event.target.value })}
+                  placeholder="למשל ג׳ל / איזוטוני / תמר"
+                />
+                <input
+                  type="number"
+                  min={0}
+                  step={0.1}
+                  value={row.quantity}
+                  onChange={(event) => updateRow(index, { quantity: Number(event.target.value) })}
+                  placeholder="כמות"
+                />
+                <input
+                  value={row.unitLabel}
+                  onChange={(event) => updateRow(index, { unitLabel: event.target.value })}
+                  placeholder="יח׳ / מ״ל"
+                />
+                <input
+                  type="number"
+                  min={0}
+                  step={0.1}
+                  value={row.carbsG}
+                  onChange={(event) => updateRow(index, { carbsG: Number(event.target.value) })}
+                  placeholder="פחמימה"
+                />
+                <input
+                  type="number"
+                  min={0}
+                  step={1}
+                  value={row.kcal}
+                  onChange={(event) => updateRow(index, { kcal: event.target.value })}
+                  placeholder="קק״ל"
+                />
+                <button className="icon-btn" onClick={() => removeRow(index)} aria-label="הסר רכיב תזונה" title="הסר רכיב תזונה">
+                  ✕
+                </button>
+              </div>
+            ))}
+          </div>
+          <div className="row">
+            <button className="icon-btn" onClick={addRow} aria-label="הוסף רכיב תזונה" title="הוסף רכיב תזונה">
+              ＋
+            </button>
+            <button className="choice-btn" onClick={() => void save()} disabled={saving}>
+              {saving ? "שומר..." : "שמור תזונת אימון"}
+            </button>
+          </div>
+        </>
+      )}
+      {status && <p className="note">{status}</p>}
+    </div>
+  );
+}

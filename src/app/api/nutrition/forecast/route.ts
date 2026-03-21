@@ -1,1 +1,8 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgZ2V0TnV0cml0aW9uRm9yZWNhc3QgfSBmcm9tICJAL2xpYi9udXRyaXRpb24tZW5naW5lIjsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBkYXlzUmF3ID0gTnVtYmVyKHJlcXVlc3QubmV4dFVybC5zZWFyY2hQYXJhbXMuZ2V0KCJkYXlzIikgPz8gIjciKTsKICBjb25zdCBkYXlzID0gTnVtYmVyLmlzRmluaXRlKGRheXNSYXcpID8gTWF0aC5tYXgoMSwgTWF0aC5taW4oMTQsIE1hdGgucm91bmQoZGF5c1JhdykpKSA6IDc7CiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZGF5czogZ2V0TnV0cml0aW9uRm9yZWNhc3QodW5kZWZpbmVkLCBkYXlzKSB9KTsKfQo="}
+import { NextRequest, NextResponse } from "next/server";
+import { getNutritionForecast } from "@/lib/nutrition-engine";
+
+export async function GET(request: NextRequest) {
+  const daysRaw = Number(request.nextUrl.searchParams.get("days") ?? "7");
+  const days = Number.isFinite(daysRaw) ? Math.max(1, Math.min(14, Math.round(daysRaw))) : 7;
+  return NextResponse.json({ days: getNutritionForecast(undefined, days) });
+}

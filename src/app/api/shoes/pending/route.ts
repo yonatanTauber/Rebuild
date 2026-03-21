@@ -1,1 +1,13 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAibmV4dC9zZXJ2ZXIiOwppbXBvcnQgeyBnZXRQZW5kaW5nUnVuU2hvZUFzc2lnbm1lbnRzIH0gZnJvbSAiQC9saWIvZGIiOwppbXBvcnQgeyBjbG91ZEVuYWJsZWQgfSBmcm9tICJAL2xpYi9jbG91ZC1kYiI7CmltcG9ydCB7IGNsb3VkR2V0UGVuZGluZ1J1blNob2VBc3NpZ25tZW50cyB9IGZyb20gIkAvbGliL2Nsb3VkLXNob2VzIjsKCmV4cG9ydCBjb25zdCBydW50aW1lID0gIm5vZGVqcyI7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKCkgewogIGlmIChjbG91ZEVuYWJsZWQoKSkgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgcGVuZGluZzogYXdhaXQgY2xvdWRHZXRQZW5kaW5nUnVuU2hvZUFzc2lnbm1lbnRzKDYpIH0pOwogIH0KICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBwZW5kaW5nOiBnZXRQZW5kaW5nUnVuU2hvZUFzc2lnbm1lbnRzKDYpIH0pOwp9Cg=="}
+import { NextResponse } from "next/server";
+import { getPendingRunShoeAssignments } from "@/lib/db";
+import { cloudEnabled } from "@/lib/cloud-db";
+import { cloudGetPendingRunShoeAssignments } from "@/lib/cloud-shoes";
+
+export const runtime = "nodejs";
+
+export async function GET() {
+  if (cloudEnabled()) {
+    return NextResponse.json({ pending: await cloudGetPendingRunShoeAssignments(6) });
+  }
+  return NextResponse.json({ pending: getPendingRunShoeAssignments(6) });
+}

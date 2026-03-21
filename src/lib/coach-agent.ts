@@ -1,1 +1,71 @@
-{"data":"aW1wb3J0IHsgZm9ybWF0SVNPRGF0ZSwgYWRkRGF5c0lTTyB9IGZyb20gIkAvbGliL2RhdGUiOwppbXBvcnQgeyBjb21wdXRlU2NvcmVzLCByZWNvbW1lbmRUb2RheSB9IGZyb20gIkAvbGliL2VuZ2luZSI7CmltcG9ydCB7IGdldFJlY292ZXJ5LCBnZXRXZWVrbHlQbGFuLCBnZXRXb3Jrb3V0c0JldHdlZW4gfSBmcm9tICJAL2xpYi9kYiI7CmltcG9ydCB7IGdldE51dHJpdGlvbkRheUJ1bmRsZSwgZ2V0TnV0cml0aW9uUGFudHJ5QnVuZGxlIH0gZnJvbSAiQC9saWIvbnV0cml0aW9uLWVuZ2luZSI7CmltcG9ydCB7IG51dHJpdGlvblVuaXRMYWJlbCB9IGZyb20gIkAvbGliL251dHJpdGlvbi11bml0cyI7CmltcG9ydCB0eXBlIHsgUmVjb21tZW5kYXRpb24gfSBmcm9tICJAL2xpYi90eXBlcyI7CgpmdW5jdGlvbiBzdW1tYXJpemVIaXN0b3J5KHdvcmtvdXRzOiBSZXR1cm5UeXBlPHR5cGVvZiBnZXRXb3Jrb3V0c0JldHdlZW4+KSB7CiAgaWYgKHdvcmtvdXRzLmxlbmd0aCA9PT0gMCkgcmV0dXJuICLXkNeZ158g15DXmdee15XXoNeZ150g15HXldec15jXmdedINeR1r43MiDXlNep16LXldeqINeU15DXl9eo15XXoNeV16ouIjsKICBjb25zdCB0b3AgPSB3b3Jrb3V0cy5zbGljZSgtMyk7CiAgcmV0dXJuIHRvcAogICAgLm1hcCgodykgPT4gewogICAgICBjb25zdCBkaXN0ID0gdy5kaXN0YW5jZU0gPyBgJHtNYXRoLnJvdW5kKCh3LmRpc3RhbmNlTSAvIDEwMDApICogMTApIC8gMTB9INenXCLXnmAgOiAi157XqNeX16cg15zXkCDXmdeT15XXoiI7CiAgICAgIGNvbnN0IHNwb3J0TGFiZWwgPSB3LnNwb3J0ID09PSAicnVuIiA/ICLXqNeZ16bXlCIgOiB3LnNwb3J0ID09PSAiYmlrZSIgPyAi15DXldek16DXmdeZ150iIDogdy5zcG9ydCA9PT0gInN3aW0iID8gItep15fXmdeZ15QiIDogIteb15XXlyI7CiAgICAgIHJldHVybiBgJHtzcG9ydExhYmVsfSAke2Rpc3R9IMK3ICR7TWF0aC5yb3VuZCh3LnRzc0xpa2UpfSBUU1NgOwogICAgfSkKICAgIC5qb2luKCIgwrcgIik7Cn0KCmV4cG9ydCB0eXBlIENvYWNoQWdlbnRSZXBvcnQgPSB7CiAgZGFpbHlOYXJyYXRpdmU6IHN0cmluZzsKICByZWFzb25pbmc6IHN0cmluZ1tdOwogIGFkanVzdG1lbnRzOiBzdHJpbmdbXTsKICBwcmlvcml0eTogUmVjb21tZW5kYXRpb247CiAgbnV0cml0aW9uUGxhbjogUmV0dXJuVHlwZTx0eXBlb2YgZ2V0TnV0cml0aW9uRGF5QnVuZGxlPlsicGxhbiJdOwogIHBhbnRyeVN1bW1hcnk6IHN0cmluZzsKfTsKCmV4cG9ydCBmdW5jdGlvbiBidWlsZENvYWNoQWdlbnRSZXBvcnQoZGF0ZSA9IGZvcm1hdElTT0RhdGUoKSk6IENvYWNoQWdlbnRSZXBvcnQgewogIGNvbnN0IHNjb3JlcyA9IGNvbXB1dGVTY29yZXMoZGF0ZSk7CiAgY29uc3QgcmVjb21tZW5kYXRpb24gPSByZWNvbW1lbmRUb2RheShkYXRlKTsKICBjb25zdCBudXRyaXRpb24gPSBnZXROdXRyaXRpb25EYXlCdW5kbGUoZGF0ZSk7CiAgY29uc3QgcGFudHJ5ID0gZ2V0TnV0cml0aW9uUGFudHJ5QnVuZGxlKGRhdGUpOwogIGNvbnN0IHdlZWtseVBsYW4gPSBnZXRXZWVrbHlQbGFuKCk7CiAgY29uc3QgcmVjb3ZlcnkgPSBnZXRSZWNvdmVyeShkYXRlKTsKICBjb25zdCBoaXN0b3J5ID0gZ2V0V29ya291dHNCZXR3ZWVuKGAke2FkZERheXNJU08oZGF0ZSwgLTMpfVQwMDowMDowMC4wMDBaYCwgYCR7YWRkRGF5c0lTTyhkYXRlLCAxKX1UMDA6MDA6MDAuMDAwWmApOwoKICBjb25zdCByZWFzb25pbmcgPSBbCiAgICBg16TXqNeV16TXmdecINep15HXldei15k6ICR7d2Vla2x5UGxhbi5wcm9maWxlfSAoJHt3ZWVrbHlQbGFuLmF2YWlsYWJpbGl0eX0pYCwKICAgIGDXodeY15jXldehINem17PXpy3XkNeZ1586ICR7cmVjb3ZlcnkgPyBgUlBFICR7cmVjb3ZlcnkucnBlfWAgOiAi15DXmdefINeg16rXldeg15nXnSJ9YCwKICAgIGDXkNeZ157Xldeg15nXnSDXkNeX16jXldeg15nXnTogJHtzdW1tYXJpemVIaXN0b3J5KGhpc3RvcnkpfWAKICBdOwoKICBjb25zdCBhZGp1c3RtZW50czogc3RyaW5nW10gPSBbXTsKICBpZiAoc2NvcmVzLmZhdGlndWVTY29yZSA+PSA3MCkgYWRqdXN0bWVudHMucHVzaCgi16LXk9eZ16Mg16LXldee16Eg157XqteV158gKyDXlNeq15DXldep16nXldeqINeQ16fXmNeZ15HXmdeqLiIpOwogIGlmIChzY29yZXMucmVhZGluZXNzU2NvcmUgPj0gODUpIGFkanVzdG1lbnRzLnB1c2goIteQ16TXqdeoINec16nXp9eV15wg15DXmdee15XXnyDXkNeZ15vXldeqINec16TXmSDXlNeh16TXldeo15gg16nXoNeR15fXqCDXlNeZ15XXnS4iKTsKICBpZiAod2Vla2x5UGxhbi5wcm9maWxlID09PSAidmFjYXRpb24iKSBhZGp1c3RtZW50cy5wdXNoKCLXkdep15HXldeiINeX15XXpNep15Q6INei15PXmdejIDIg15DXmdee15XXoNeZ150g16fXpteo15nXnSDXkNeZ15vXldeq15nXmdedINeV15zXkCDXoNek15cg15LXkdeV15QuIik7CiAgaWYgKHJlY292ZXJ5Py5zb3JlbmVzc0dsb2JhbCAmJiByZWNvdmVyeS5zb3JlbmVzc0dsb2JhbCA+PSA2KSBhZGp1c3RtZW50cy5wdXNoKCLXlNeV16HXoyDXnteV15HXmdec15nXmNeZINeV15fXmdee15XXnSDXkNeo15XXmiDXnNek16DXmSDXm9ecINeQ15nXnteV158uIik7CgogIGNvbnN0IHBhbnRyeVN1bW1hcnkgPQogICAgcGFudHJ5Lml0ZW1zLmxlbmd0aCA+IDAKICAgICAgPyBg157Xpteo15vXmdedINeW157Xmdeg15nXnTogJHtwYW50cnkuaXRlbXMKICAgICAgICAgIC5tYXAoKGl0ZW0pID0+IGAke2l0ZW0uaW5ncmVkaWVudE5hbWV9ICR7aXRlbS5xdWFudGl0eX0ke251dHJpdGlvblVuaXRMYWJlbChpdGVtLnVuaXQpfWApCiAgICAgICAgICAuam9pbigiLCAiKX1gCiAgICAgIDogItec15Ag15TXldeW16DXlSDXntem16jXm9eZ150g15bXnteZ16DXmdedINec15TXmdeV150uIjsKCiAgY29uc3QgbmFycmF0aXZlID0gWwogICAgYFJlYnVpbGQgQ29hY2g6ICR7cmVjb21tZW5kYXRpb24ucHJpbWFyeVNlc3Npb24uc2Vzc2lvbk5hbWV9INeRLSR7cmVjb21tZW5kYXRpb24uaW50ZW5zaXR5Wm9uZX0uYCwKICAgIGDXnteT15PXmdedINeg15XXm9eX15nXmdedOiBSZWFkaW5lc3MgJHtzY29yZXMucmVhZGluZXNzU2NvcmV9LCBGYXRpZ3VlICR7c2NvcmVzLmZhdGlndWVTY29yZX0sIEZpdG5lc3MgJHtzY29yZXMuZml0bmVzc1Njb3JlfS5gLAogICAgIteU15TXntec16bXlCDXlNeq15bXldeg16rXmdeqINee16rXoteT15vXoNeqINec16TXmSDXoteV157XoSDXlNeQ15nXnteV158g15XXntec15DXmSDXlNee16bXqNeb15nXnS4iCiAgXS5qb2luKCIgIik7CgogIHJldHVybiB7CiAgICBkYWlseU5hcnJhdGl2ZTogbmFycmF0aXZlLAogICAgcmVhc29uaW5nLAogICAgYWRqdXN0bWVudHMsCiAgICBwcmlvcml0eTogcmVjb21tZW5kYXRpb24sCiAgICBudXRyaXRpb25QbGFuOiBudXRyaXRpb24ucGxhbiwKICAgIHBhbnRyeVN1bW1hcnkKICB9Owp9Cg=="}
+import { formatISODate, addDaysISO } from "@/lib/date";
+import { computeScores, recommendToday } from "@/lib/engine";
+import { getRecovery, getWeeklyPlan, getWorkoutsBetween } from "@/lib/db";
+import { getNutritionDayBundle, getNutritionPantryBundle } from "@/lib/nutrition-engine";
+import { nutritionUnitLabel } from "@/lib/nutrition-units";
+import type { Recommendation } from "@/lib/types";
+
+function summarizeHistory(workouts: ReturnType<typeof getWorkoutsBetween>) {
+  if (workouts.length === 0) return "אין אימונים בולטים ב־72 השעות האחרונות.";
+  const top = workouts.slice(-3);
+  return top
+    .map((w) => {
+      const dist = w.distanceM ? `${Math.round((w.distanceM / 1000) * 10) / 10} ק\"מ` : "מרחק לא ידוע";
+      const sportLabel = w.sport === "run" ? "ריצה" : w.sport === "bike" ? "אופניים" : w.sport === "swim" ? "שחייה" : "כוח";
+      return `${sportLabel} ${dist} · ${Math.round(w.tssLike)} TSS`;
+    })
+    .join(" · ");
+}
+
+export type CoachAgentReport = {
+  dailyNarrative: string;
+  reasoning: string[];
+  adjustments: string[];
+  priority: Recommendation;
+  nutritionPlan: ReturnType<typeof getNutritionDayBundle>["plan"];
+  pantrySummary: string;
+};
+
+export function buildCoachAgentReport(date = formatISODate()): CoachAgentReport {
+  const scores = computeScores(date);
+  const recommendation = recommendToday(date);
+  const nutrition = getNutritionDayBundle(date);
+  const pantry = getNutritionPantryBundle(date);
+  const weeklyPlan = getWeeklyPlan();
+  const recovery = getRecovery(date);
+  const history = getWorkoutsBetween(`${addDaysISO(date, -3)}T00:00:00.000Z`, `${addDaysISO(date, 1)}T00:00:00.000Z`);
+
+  const reasoning = [
+    `פרופיל שבועי: ${weeklyPlan.profile} (${weeklyPlan.availability})`,
+    `סטטוס צ׳ק-אין: ${recovery ? `RPE ${recovery.rpe}` : "אין נתונים"}`,
+    `אימונים אחרונים: ${summarizeHistory(history)}`
+  ];
+
+  const adjustments: string[] = [];
+  if (scores.fatigueScore >= 70) adjustments.push("עדיף עומס מתון + התאוששות אקטיבית.");
+  if (scores.readinessScore >= 85) adjustments.push("אפשר לשקול אימון איכות לפי הספורט שנבחר היום.");
+  if (weeklyPlan.profile === "vacation") adjustments.push("בשבוע חופשה: עדיף 2 אימונים קצרים איכותיים ולא נפח גבוה.");
+  if (recovery?.sorenessGlobal && recovery.sorenessGlobal >= 6) adjustments.push("הוסף מוביליטי וחימום ארוך לפני כל אימון.");
+
+  const pantrySummary =
+    pantry.items.length > 0
+      ? `מצרכים זמינים: ${pantry.items
+          .map((item) => `${item.ingredientName} ${item.quantity}${nutritionUnitLabel(item.unit)}`)
+          .join(", ")}`
+      : "לא הוזנו מצרכים זמינים להיום.";
+
+  const narrative = [
+    `Rebuild Coach: ${recommendation.primarySession.sessionName} ב-${recommendation.intensityZone}.`,
+    `מדדים נוכחיים: Readiness ${scores.readinessScore}, Fatigue ${scores.fatigueScore}, Fitness ${scores.fitnessScore}.`,
+    "ההמלצה התזונתית מתעדכנת לפי עומס האימון ומלאי המצרכים."
+  ].join(" ");
+
+  return {
+    dailyNarrative: narrative,
+    reasoning,
+    adjustments,
+    priority: recommendation,
+    nutritionPlan: nutrition.plan,
+    pantrySummary
+  };
+}

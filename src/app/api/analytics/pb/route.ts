@@ -1,1 +1,20 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgZ2V0VG9wRWZmb3J0cyB9IGZyb20gIkAvbGliL2RiIjsKaW1wb3J0IHsgUEJfRElTVEFOQ0VTIH0gZnJvbSAiQC9saWIvcGItZW5naW5lIjsKCmNvbnN0IGtleXMgPSBuZXcgU2V0KFBCX0RJU1RBTkNFUy5tYXAoKGQpID0+IGQua2V5KSk7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgY29uc3QgZGlzdGFuY2UgPSAocmVxdWVzdC5uZXh0VXJsLnNlYXJjaFBhcmFtcy5nZXQoImRpc3RhbmNlIikgPz8gIjVrIikgYXMgc3RyaW5nOwogIGNvbnN0IGxpbWl0UmF3ID0gTnVtYmVyKHJlcXVlc3QubmV4dFVybC5zZWFyY2hQYXJhbXMuZ2V0KCJsaW1pdCIpID8/ICI1Iik7CiAgY29uc3QgbGltaXQgPSBOdW1iZXIuaXNGaW5pdGUobGltaXRSYXcpID8gTWF0aC5tYXgoMSwgTWF0aC5taW4oMjAsIE1hdGgucm91bmQobGltaXRSYXcpKSkgOiA1OwogIGNvbnN0IGluY2x1ZGVTZWdtZW50cyA9IHJlcXVlc3QubmV4dFVybC5zZWFyY2hQYXJhbXMuZ2V0KCJpbmNsdWRlU2VnbWVudHMiKSA9PT0gIjEiOwogIGlmICgha2V5cy5oYXMoZGlzdGFuY2UgYXMgYW55KSkgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICJkaXN0YW5jZSBub3Qgc3VwcG9ydGVkIiB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsKICAgIGRpc3RhbmNlLAogICAgdG9wOiBnZXRUb3BFZmZvcnRzKGRpc3RhbmNlLCBsaW1pdCwgaW5jbHVkZVNlZ21lbnRzKQogIH0pOwp9Cg=="}
+import { NextRequest, NextResponse } from "next/server";
+import { getTopEfforts } from "@/lib/db";
+import { PB_DISTANCES } from "@/lib/pb-engine";
+
+const keys = new Set(PB_DISTANCES.map((d) => d.key));
+
+export async function GET(request: NextRequest) {
+  const distance = (request.nextUrl.searchParams.get("distance") ?? "5k") as string;
+  const limitRaw = Number(request.nextUrl.searchParams.get("limit") ?? "5");
+  const limit = Number.isFinite(limitRaw) ? Math.max(1, Math.min(20, Math.round(limitRaw))) : 5;
+  const includeSegments = request.nextUrl.searchParams.get("includeSegments") === "1";
+  if (!keys.has(distance as any)) {
+    return NextResponse.json({ error: "distance not supported" }, { status: 400 });
+  }
+
+  return NextResponse.json({
+    distance,
+    top: getTopEfforts(distance, limit, includeSegments)
+  });
+}

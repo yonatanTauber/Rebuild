@@ -1,1 +1,62 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAibmV4dC9zZXJ2ZXIiOwppbXBvcnQgeyBnZXRXb3Jrb3V0QnlJZCwgZ2V0V29ya291dE9mZmljaWFsRHVyYXRpb25TZWMsIHVwc2VydFdvcmtvdXRPZmZpY2lhbER1cmF0aW9uU2VjIH0gZnJvbSAiQC9saWIvZGIiOwppbXBvcnQgewogIGNsb3VkRW5hYmxlZCwKICBjbG91ZEdldFdvcmtvdXRCeUlkLAogIGNsb3VkR2V0V29ya291dE9mZmljaWFsRHVyYXRpb25TZWMsCiAgY2xvdWRVcHNlcnRXb3Jrb3V0T2ZmaWNpYWxEdXJhdGlvblNlYwp9IGZyb20gIkAvbGliL2Nsb3VkLWRiIjsKaW1wb3J0IHsgZGVjb2RlUm91dGVQYXJhbSB9IGZyb20gIkAvbGliL3VybCI7CgpleHBvcnQgY29uc3QgcnVudGltZSA9ICJub2RlanMiOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVChfOiBSZXF1ZXN0LCB7IHBhcmFtcyB9OiB7IHBhcmFtczogUHJvbWlzZTx7IGlkOiBzdHJpbmcgfT4gfSkgewogIGNvbnN0IHsgaWQgfSA9IGF3YWl0IHBhcmFtczsKICBjb25zdCB3b3Jrb3V0SWQgPSBkZWNvZGVSb3V0ZVBhcmFtKGlkKTsKICBjb25zdCB3b3Jrb3V0ID0gY2xvdWRFbmFibGVkKCkgPyBhd2FpdCBjbG91ZEdldFdvcmtvdXRCeUlkKHdvcmtvdXRJZCkgOiBnZXRXb3Jrb3V0QnlJZCh3b3Jrb3V0SWQpOwogIGlmICghd29ya291dCkgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICJXb3Jrb3V0IG5vdCBmb3VuZCIgfSwgeyBzdGF0dXM6IDQwNCB9KTsKICB9CgogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7CiAgICB3b3Jrb3V0SWQsCiAgICBvZmZpY2lhbER1cmF0aW9uU2VjOiBjbG91ZEVuYWJsZWQoKQogICAgICA/IGF3YWl0IGNsb3VkR2V0V29ya291dE9mZmljaWFsRHVyYXRpb25TZWMod29ya291dElkKQogICAgICA6IGdldFdvcmtvdXRPZmZpY2lhbER1cmF0aW9uU2VjKHdvcmtvdXRJZCkKICB9KTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogUmVxdWVzdCwgeyBwYXJhbXMgfTogeyBwYXJhbXM6IFByb21pc2U8eyBpZDogc3RyaW5nIH0+IH0pIHsKICBjb25zdCB7IGlkIH0gPSBhd2FpdCBwYXJhbXM7CiAgY29uc3Qgd29ya291dElkID0gZGVjb2RlUm91dGVQYXJhbShpZCk7CiAgY29uc3Qgd29ya291dCA9IGNsb3VkRW5hYmxlZCgpID8gYXdhaXQgY2xvdWRHZXRXb3Jrb3V0QnlJZCh3b3Jrb3V0SWQpIDogZ2V0V29ya291dEJ5SWQod29ya291dElkKTsKICBpZiAoIXdvcmtvdXQpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAiV29ya291dCBub3QgZm91bmQiIH0sIHsgc3RhdHVzOiA0MDQgfSk7CiAgfQoKICBjb25zdCBib2R5ID0gKGF3YWl0IHJlcXVlc3QuanNvbigpLmNhdGNoKCgpID0+ICh7fSkpKSBhcyB7CiAgICBvZmZpY2lhbER1cmF0aW9uU2VjPzogbnVtYmVyIHwgbnVsbDsKICB9OwoKICBjb25zdCByYXdWYWx1ZSA9IGJvZHkub2ZmaWNpYWxEdXJhdGlvblNlYzsKICBpZiAocmF3VmFsdWUgPT0gbnVsbCkgewogICAgaWYgKGNsb3VkRW5hYmxlZCgpKSB7CiAgICAgIGF3YWl0IGNsb3VkVXBzZXJ0V29ya291dE9mZmljaWFsRHVyYXRpb25TZWMod29ya291dElkLCBudWxsKTsKICAgIH0gZWxzZSB7CiAgICAgIHVwc2VydFdvcmtvdXRPZmZpY2lhbER1cmF0aW9uU2VjKHdvcmtvdXRJZCwgbnVsbCk7CiAgICB9CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBvazogdHJ1ZSwgb2ZmaWNpYWxEdXJhdGlvblNlYzogbnVsbCB9KTsKICB9CgogIGNvbnN0IHBhcnNlZCA9IE51bWJlcihyYXdWYWx1ZSk7CiAgaWYgKCFOdW1iZXIuaXNGaW5pdGUocGFyc2VkKSB8fCBwYXJzZWQgPCA2MCB8fCBwYXJzZWQgPiAxMiAqIDM2MDApIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAib2ZmaWNpYWxEdXJhdGlvblNlYyBvdXQgb2YgcmFuZ2UiIH0sIHsgc3RhdHVzOiA0MDAgfSk7CiAgfQoKICBpZiAoY2xvdWRFbmFibGVkKCkpIHsKICAgIGF3YWl0IGNsb3VkVXBzZXJ0V29ya291dE9mZmljaWFsRHVyYXRpb25TZWMod29ya291dElkLCBNYXRoLnJvdW5kKHBhcnNlZCkpOwogIH0gZWxzZSB7CiAgICB1cHNlcnRXb3Jrb3V0T2ZmaWNpYWxEdXJhdGlvblNlYyh3b3Jrb3V0SWQsIE1hdGgucm91bmQocGFyc2VkKSk7CiAgfQogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlLCBvZmZpY2lhbER1cmF0aW9uU2VjOiBNYXRoLnJvdW5kKHBhcnNlZCkgfSk7Cn0K"}
+import { NextResponse } from "next/server";
+import { getWorkoutById, getWorkoutOfficialDurationSec, upsertWorkoutOfficialDurationSec } from "@/lib/db";
+import {
+  cloudEnabled,
+  cloudGetWorkoutById,
+  cloudGetWorkoutOfficialDurationSec,
+  cloudUpsertWorkoutOfficialDurationSec
+} from "@/lib/cloud-db";
+import { decodeRouteParam } from "@/lib/url";
+
+export const runtime = "nodejs";
+
+export async function GET(_: Request, { params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const workoutId = decodeRouteParam(id);
+  const workout = cloudEnabled() ? await cloudGetWorkoutById(workoutId) : getWorkoutById(workoutId);
+  if (!workout) {
+    return NextResponse.json({ error: "Workout not found" }, { status: 404 });
+  }
+
+  return NextResponse.json({
+    workoutId,
+    officialDurationSec: cloudEnabled()
+      ? await cloudGetWorkoutOfficialDurationSec(workoutId)
+      : getWorkoutOfficialDurationSec(workoutId)
+  });
+}
+
+export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const workoutId = decodeRouteParam(id);
+  const workout = cloudEnabled() ? await cloudGetWorkoutById(workoutId) : getWorkoutById(workoutId);
+  if (!workout) {
+    return NextResponse.json({ error: "Workout not found" }, { status: 404 });
+  }
+
+  const body = (await request.json().catch(() => ({}))) as {
+    officialDurationSec?: number | null;
+  };
+
+  const rawValue = body.officialDurationSec;
+  if (rawValue == null) {
+    if (cloudEnabled()) {
+      await cloudUpsertWorkoutOfficialDurationSec(workoutId, null);
+    } else {
+      upsertWorkoutOfficialDurationSec(workoutId, null);
+    }
+    return NextResponse.json({ ok: true, officialDurationSec: null });
+  }
+
+  const parsed = Number(rawValue);
+  if (!Number.isFinite(parsed) || parsed < 60 || parsed > 12 * 3600) {
+    return NextResponse.json({ error: "officialDurationSec out of range" }, { status: 400 });
+  }
+
+  if (cloudEnabled()) {
+    await cloudUpsertWorkoutOfficialDurationSec(workoutId, Math.round(parsed));
+  } else {
+    upsertWorkoutOfficialDurationSec(workoutId, Math.round(parsed));
+  }
+  return NextResponse.json({ ok: true, officialDurationSec: Math.round(parsed) });
+}

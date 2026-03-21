@@ -1,1 +1,361 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgYWRkRGF5c0lTTywgZm9ybWF0SVNPRGF0ZSB9IGZyb20gIkAvbGliL2RhdGUiOwppbXBvcnQgeyBTZWN0aW9uIH0gZnJvbSAiQC9jb21wb25lbnRzL2NhcmRzIjsKCnR5cGUgQ2hvaWNlID0geyBpZDogc3RyaW5nOyBsYWJlbDogc3RyaW5nIH07Cgp0eXBlIE9wdGlvbnNQYXlsb2FkID0gewogIG9wdGlvbnM6IHsKICAgIGV4ZXJ0aW9uOiBDaG9pY2VbXTsKICAgIHNsZWVwOiBDaG9pY2VbXTsKICAgIGhydjogQ2hvaWNlW107CiAgICByZXN0aW5nSHI6IENob2ljZVtdOwogICAgbW9vZDogQ2hvaWNlW107CiAgICBzb3JlbmVzc0xldmVsOiBDaG9pY2VbXTsKICB9OwogIHBhaW5BcmVhczogQXJyYXk8eyBpZDogc3RyaW5nOyBuYW1lOiBzdHJpbmcgfT47Cn07Cgpjb25zdCBsYWJlbHMgPSB7CiAgZXhlcnRpb246ICLXqteX15XXqdeqINee15DXntelINeb15zXnNeZ16oiLAogIHNsZWVwOiAi15DXmdeaINeU15nXmdeq15Qg15TXqdeZ16DXlCIsCiAgaHJ2OiAi16HXmNeY15XXoSBIUlYiLAogIHJlc3RpbmdIcjogIteT15XXpNenINee16DXldeX15QiLAogIG1vb2Q6ICLXntem15Eg16jXldeXIiwKICBzb3JlbmVzc0xldmVsOiAi16jXnteqINeb15DXkS/Xqdeo15nXqNeZ15XXqiIKfSBhcyBjb25zdDsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIENoZWNraW5QYWdlKCkgewogIGNvbnN0IFtzdGF0dXMsIHNldFN0YXR1c10gPSB1c2VTdGF0ZTxzdHJpbmc+KCIiKTsKICBjb25zdCBbb3B0aW9ucywgc2V0T3B0aW9uc10gPSB1c2VTdGF0ZTxPcHRpb25zUGF5bG9hZCB8IG51bGw+KG51bGwpOwogIGNvbnN0IFtuZXdBcmVhLCBzZXROZXdBcmVhXSA9IHVzZVN0YXRlKCIiKTsKICBjb25zdCBbc2F2ZWRFeGlzdHMsIHNldFNhdmVkRXhpc3RzXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbaXNFZGl0aW5nLCBzZXRJc0VkaXRpbmddID0gdXNlU3RhdGUodHJ1ZSk7CgogIGNvbnN0IFtmb3JtLCBzZXRGb3JtXSA9IHVzZVN0YXRlKHsKICAgIGRhdGU6IGZvcm1hdElTT0RhdGUoKSwKICAgIGV4ZXJ0aW9uOiAibW9kZXJhdGUiLAogICAgc2xlZXA6ICJnb29kIiwKICAgIGhydjogIm5vcm1hbCIsCiAgICByZXN0aW5nSHI6ICJub3JtYWwiLAogICAgbW9vZDogImdvb2QiLAogICAgc29yZW5lc3NMZXZlbDogImxpZ2h0IiwKICAgIHBhaW5BcmVhczogW10gYXMgc3RyaW5nW10sCiAgICBzbGVlcEhvdXJzQWN0dWFsOiAiIiBhcyBzdHJpbmcsCiAgICBocnZBY3R1YWw6ICIiIGFzIHN0cmluZywKICAgIHJlc3RpbmdIckFjdHVhbDogIiIgYXMgc3RyaW5nCiAgfSk7CgogIGZ1bmN0aW9uIHNoaWZ0RGF0ZShkYXlzOiBudW1iZXIpIHsKICAgIGNvbnN0IGlzbyA9IGFkZERheXNJU08oZm9ybS5kYXRlLCBkYXlzKTsKICAgIHNldEZvcm0oKHApID0+ICh7IC4uLnAsIGRhdGU6IGlzbyB9KSk7CiAgICBzZXRTdGF0dXMoIiIpOwogIH0KCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIHZvaWQgbG9hZE9wdGlvbnMoKTsKICB9LCBbXSk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAoIW9wdGlvbnMpIHJldHVybjsKICAgIHZvaWQgbG9hZERhaWx5KGZvcm0uZGF0ZSk7CiAgfSwgW29wdGlvbnMsIGZvcm0uZGF0ZV0pOwoKICBhc3luYyBmdW5jdGlvbiBsb2FkT3B0aW9ucygpIHsKICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKCIvYXBpL2NoZWNraW4vb3B0aW9ucyIpOwogICAgY29uc3QgZGF0YSA9IChhd2FpdCByZXMuanNvbigpKSBhcyBPcHRpb25zUGF5bG9hZDsKICAgIHNldE9wdGlvbnMoZGF0YSk7CiAgfQoKICBmdW5jdGlvbiB0b0Nob2ljZUlkRnJvbVJlY292ZXJ5KGZpZWxkOiBrZXlvZiBPcHRpb25zUGF5bG9hZFsib3B0aW9ucyJdLCB2YWx1ZTogbnVtYmVyIHwgbnVsbCB8IHVuZGVmaW5lZCkgewogICAgaWYgKHZhbHVlID09IG51bGwpIHJldHVybiBudWxsOwoKICAgIGlmIChmaWVsZCA9PT0gImV4ZXJ0aW9uIikgewogICAgICBpZiAodmFsdWUgPD0gMi41KSByZXR1cm4gInZlcnlfZWFzeSI7CiAgICAgIGlmICh2YWx1ZSA8PSA0LjUpIHJldHVybiAiZWFzeSI7CiAgICAgIGlmICh2YWx1ZSA8PSA2LjUpIHJldHVybiAibW9kZXJhdGUiOwogICAgICBpZiAodmFsdWUgPD0gOC41KSByZXR1cm4gImhhcmQiOwogICAgICByZXR1cm4gIm1heCI7CiAgICB9CiAgICBpZiAoZmllbGQgPT09ICJzbGVlcCIpIHsKICAgICAgaWYgKHZhbHVlIDwgNikgcmV0dXJuICJwb29yIjsKICAgICAgaWYgKHZhbHVlIDwgNykgcmV0dXJuICJvayI7CiAgICAgIGlmICh2YWx1ZSA8IDgpIHJldHVybiAiZ29vZCI7CiAgICAgIHJldHVybiAiZ3JlYXQiOwogICAgfQogICAgaWYgKGZpZWxkID09PSAiaHJ2IikgewogICAgICBpZiAodmFsdWUgPCA0MCkgcmV0dXJuICJsb3ciOwogICAgICBpZiAodmFsdWUgPiA1NSkgcmV0dXJuICJoaWdoIjsKICAgICAgcmV0dXJuICJub3JtYWwiOwogICAgfQogICAgaWYgKGZpZWxkID09PSAicmVzdGluZ0hyIikgewogICAgICBpZiAodmFsdWUgPCA1NCkgcmV0dXJuICJsb3ciOwogICAgICBpZiAodmFsdWUgPiA2MikgcmV0dXJuICJoaWdoIjsKICAgICAgcmV0dXJuICJub3JtYWwiOwogICAgfQogICAgaWYgKGZpZWxkID09PSAibW9vZCIpIHsKICAgICAgaWYgKHZhbHVlIDw9IDEuNSkgcmV0dXJuICJsb3ciOwogICAgICBpZiAodmFsdWUgPD0gMy41KSByZXR1cm4gIm9rIjsKICAgICAgaWYgKHZhbHVlIDw9IDQuNSkgcmV0dXJuICJnb29kIjsKICAgICAgcmV0dXJuICJncmVhdCI7CiAgICB9CiAgICBpZiAoZmllbGQgPT09ICJzb3JlbmVzc0xldmVsIikgewogICAgICBpZiAodmFsdWUgPD0gMS41KSByZXR1cm4gIm5vbmUiOwogICAgICBpZiAodmFsdWUgPD0gMy41KSByZXR1cm4gImxpZ2h0IjsKICAgICAgaWYgKHZhbHVlIDw9IDYuNSkgcmV0dXJuICJtZWRpdW0iOwogICAgICByZXR1cm4gImhpZ2giOwogICAgfQogICAgcmV0dXJuIG51bGw7CiAgfQoKICBhc3luYyBmdW5jdGlvbiBsb2FkRGFpbHkoZGF0ZTogc3RyaW5nKSB7CiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChgL2FwaS9jaGVja2luL2RhaWx5P2RhdGU9JHtkYXRlfWApOwogICAgY29uc3QgZGF0YSA9IChhd2FpdCByZXMuanNvbigpKSBhcyB7CiAgICAgIGV4aXN0czogYm9vbGVhbjsKICAgICAgcmVjb3Zlcnk/OiB7CiAgICAgICAgcnBlPzogbnVtYmVyIHwgbnVsbDsKICAgICAgICBzbGVlcEhvdXJzPzogbnVtYmVyIHwgbnVsbDsKICAgICAgICBocnY/OiBudW1iZXIgfCBudWxsOwogICAgICAgIHJlc3RpbmdIcj86IG51bWJlciB8IG51bGw7CiAgICAgICAgbW9vZD86IG51bWJlciB8IG51bGw7CiAgICAgICAgc29yZW5lc3NHbG9iYWw/OiBudW1iZXIgfCBudWxsOwogICAgICAgIHNvcmVuZXNzQnlBcmVhPzogc3RyaW5nIHwgbnVsbDsKICAgICAgfSB8IG51bGw7CiAgICB9OwoKICAgIHNldFNhdmVkRXhpc3RzKEJvb2xlYW4oZGF0YS5leGlzdHMpKTsKICAgIHNldElzRWRpdGluZyghZGF0YS5leGlzdHMpOwoKICAgIGlmICghZGF0YS5leGlzdHMgfHwgIWRhdGEucmVjb3ZlcnkpIHsKICAgICAgcmV0dXJuOwogICAgfQoKICAgIGNvbnN0IHJlY292ZXJ5ID0gZGF0YS5yZWNvdmVyeTsKICAgIGxldCBwYXJzZWRBcmVhczogc3RyaW5nW10gPSBbXTsKICAgIGlmIChyZWNvdmVyeS5zb3JlbmVzc0J5QXJlYSkgewogICAgICB0cnkgewogICAgICAgIGNvbnN0IGFyciA9IEpTT04ucGFyc2UocmVjb3Zlcnkuc29yZW5lc3NCeUFyZWEpIGFzIHN0cmluZ1tdOwogICAgICAgIGlmIChBcnJheS5pc0FycmF5KGFycikpIHBhcnNlZEFyZWFzID0gYXJyOwogICAgICB9IGNhdGNoIHsKICAgICAgICBwYXJzZWRBcmVhcyA9IFtdOwogICAgICB9CiAgICB9CgogICAgc2V0Rm9ybSgocHJldikgPT4gKHsKICAgICAgLi4ucHJldiwKICAgICAgZGF0ZSwKICAgICAgZXhlcnRpb246IHRvQ2hvaWNlSWRGcm9tUmVjb3ZlcnkoImV4ZXJ0aW9uIiwgcmVjb3ZlcnkucnBlKSA/PyBwcmV2LmV4ZXJ0aW9uLAogICAgICBzbGVlcDogdG9DaG9pY2VJZEZyb21SZWNvdmVyeSgic2xlZXAiLCByZWNvdmVyeS5zbGVlcEhvdXJzKSA/PyBwcmV2LnNsZWVwLAogICAgICBocnY6IHRvQ2hvaWNlSWRGcm9tUmVjb3ZlcnkoImhydiIsIHJlY292ZXJ5LmhydikgPz8gcHJldi5ocnYsCiAgICAgIHJlc3RpbmdIcjogdG9DaG9pY2VJZEZyb21SZWNvdmVyeSgicmVzdGluZ0hyIiwgcmVjb3ZlcnkucmVzdGluZ0hyKSA/PyBwcmV2LnJlc3RpbmdIciwKICAgICAgbW9vZDogdG9DaG9pY2VJZEZyb21SZWNvdmVyeSgibW9vZCIsIHJlY292ZXJ5Lm1vb2QpID8/IHByZXYubW9vZCwKICAgICAgc29yZW5lc3NMZXZlbDogdG9DaG9pY2VJZEZyb21SZWNvdmVyeSgic29yZW5lc3NMZXZlbCIsIHJlY292ZXJ5LnNvcmVuZXNzR2xvYmFsKSA/PyBwcmV2LnNvcmVuZXNzTGV2ZWwsCiAgICAgIHBhaW5BcmVhczogcGFyc2VkQXJlYXMsCiAgICAgIHNsZWVwSG91cnNBY3R1YWw6IHJlY292ZXJ5LnNsZWVwSG91cnMgIT0gbnVsbCA/IFN0cmluZyhyZWNvdmVyeS5zbGVlcEhvdXJzKSA6ICIiLAogICAgICBocnZBY3R1YWw6IHJlY292ZXJ5LmhydiAhPSBudWxsID8gU3RyaW5nKHJlY292ZXJ5LmhydikgOiAiIiwKICAgICAgcmVzdGluZ0hyQWN0dWFsOiByZWNvdmVyeS5yZXN0aW5nSHIgIT0gbnVsbCA/IFN0cmluZyhyZWNvdmVyeS5yZXN0aW5nSHIpIDogIiIKICAgIH0pKTsKICB9CgogIGZ1bmN0aW9uIHRvZ2dsZVBhaW5BcmVhKGFyZWFOYW1lOiBzdHJpbmcpIHsKICAgIHNldEZvcm0oKHByZXYpID0+ICh7CiAgICAgIC4uLnByZXYsCiAgICAgIHBhaW5BcmVhczogcHJldi5wYWluQXJlYXMuaW5jbHVkZXMoYXJlYU5hbWUpID8gcHJldi5wYWluQXJlYXMuZmlsdGVyKCh4KSA9PiB4ICE9PSBhcmVhTmFtZSkgOiBbLi4ucHJldi5wYWluQXJlYXMsIGFyZWFOYW1lXQogICAgfSkpOwogIH0KCiAgYXN5bmMgZnVuY3Rpb24gYWRkQXJlYSgpIHsKICAgIGlmICghbmV3QXJlYS50cmltKCkpIHJldHVybjsKCiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaCgiL2FwaS9jaGVja2luL29wdGlvbnMiLCB7CiAgICAgIG1ldGhvZDogIlBPU1QiLAogICAgICBoZWFkZXJzOiB7ICJDb250ZW50LVR5cGUiOiAiYXBwbGljYXRpb24vanNvbiIgfSwKICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkoeyBuYW1lOiBuZXdBcmVhIH0pCiAgICB9KTsKCiAgICBpZiAoIXJlcy5vaykgewogICAgICBzZXRTdGF0dXMoItec15Ag15TXptec15fXoNeVINec15TXldeh15nXoyDXkNeW15XXqCDXl9eT16kuIik7CiAgICAgIHJldHVybjsKICAgIH0KCiAgICBjb25zdCBkYXRhID0gKGF3YWl0IHJlcy5qc29uKCkpIGFzIHsgcGFpbkFyZWFzOiBBcnJheTx7IGlkOiBzdHJpbmc7IG5hbWU6IHN0cmluZyB9PiB9OwogICAgc2V0T3B0aW9ucygocHJldikgPT4gKHByZXYgPyB7IC4uLnByZXYsIHBhaW5BcmVhczogZGF0YS5wYWluQXJlYXMgfSA6IHByZXYpKTsKICAgIHNldEZvcm0oKHByZXYpID0+ICh7IC4uLnByZXYsIHBhaW5BcmVhczogWy4uLnByZXYucGFpbkFyZWFzLCBuZXdBcmVhLnRyaW0oKV0gfSkpOwogICAgc2V0TmV3QXJlYSgiIik7CiAgICBzZXRTdGF0dXMoIteQ15bXldeoINeg15XXodejINeV16DXqdee16gg15HXntei16jXm9eqLiIpOwogIH0KCiAgYXN5bmMgZnVuY3Rpb24gc3VibWl0KCkgewogICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goIi9hcGkvY2hlY2tpbi9kYWlseSIsIHsKICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgIGhlYWRlcnM6IHsgIkNvbnRlbnQtVHlwZSI6ICJhcHBsaWNhdGlvbi9qc29uIiB9LAogICAgICBib2R5OiBKU09OLnN0cmluZ2lmeSh7CiAgICAgICAgLi4uZm9ybSwKICAgICAgICBzbGVlcEhvdXJzQWN0dWFsOiBmb3JtLnNsZWVwSG91cnNBY3R1YWwgPyBOdW1iZXIoZm9ybS5zbGVlcEhvdXJzQWN0dWFsKSA6IG51bGwsCiAgICAgICAgaHJ2QWN0dWFsOiBmb3JtLmhydkFjdHVhbCA/IE51bWJlcihmb3JtLmhydkFjdHVhbCkgOiBudWxsLAogICAgICAgIHJlc3RpbmdIckFjdHVhbDogZm9ybS5yZXN0aW5nSHJBY3R1YWwgPyBOdW1iZXIoZm9ybS5yZXN0aW5nSHJBY3R1YWwpIDogbnVsbAogICAgICB9KQogICAgfSk7CgogICAgaWYgKHJlcy5vaykgewogICAgICBzZXRTdGF0dXMoItemJ9enLdeQ15nXnyDXoNep157XqCDXkdeU16bXnNeX15QuIik7CiAgICAgIHNldFNhdmVkRXhpc3RzKHRydWUpOwogICAgICBzZXRJc0VkaXRpbmcoZmFsc2UpOwogICAgICByZXR1cm47CiAgICB9CgogICAgY29uc3QgZXJyID0gYXdhaXQgcmVzLmpzb24oKTsKICAgIHNldFN0YXR1cyhg16nXnteZ16jXlCDXoNeb16nXnNeUOiAke0pTT04uc3RyaW5naWZ5KGVyci5lcnJvcil9YCk7CiAgfQoKICBmdW5jdGlvbiBjaG9pY2VHcm91cChmaWVsZDoga2V5b2YgT3B0aW9uc1BheWxvYWRbIm9wdGlvbnMiXSkgewogICAgY29uc3QgbGlzdCA9IG9wdGlvbnM/Lm9wdGlvbnNbZmllbGRdID8/IFtdOwogICAgY29uc3Qgc2VsZWN0ZWRWYWx1ZSA9IGZvcm1bZmllbGRdIGFzIHN0cmluZzsKCiAgICByZXR1cm4gKAogICAgICA8ZGl2IGNsYXNzTmFtZT0iY2hvaWNlLWdyb3VwIiBrZXk9e2ZpZWxkfT4KICAgICAgICA8cD57bGFiZWxzW2ZpZWxkXX08L3A+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImNob2ljZS1yb3ciPgogICAgICAgICAge2xpc3QubWFwKChjaG9pY2UpID0+IHsKICAgICAgICAgICAgY29uc3Qgc2VsZWN0ZWQgPSBzZWxlY3RlZFZhbHVlID09PSBjaG9pY2UuaWQ7CiAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAga2V5PXtjaG9pY2UuaWR9CiAgICAgICAgICAgICAgICB0eXBlPSJidXR0b24iCiAgICAgICAgICAgICAgICBjbGFzc05hbWU9e3NlbGVjdGVkID8gImNob2ljZS1idG4gc2VsZWN0ZWQiIDogImNob2ljZS1idG4ifQogICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0Rm9ybSgocHJldikgPT4gKHsgLi4ucHJldiwgW2ZpZWxkXTogY2hvaWNlLmlkIH0pKX0KICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICB7Y2hvaWNlLmxhYmVsfQogICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICApOwogICAgICAgICAgfSl9CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgKTsKICB9CgogIGZ1bmN0aW9uIGxhYmVsRm9yKGZpZWxkOiBrZXlvZiBPcHRpb25zUGF5bG9hZFsib3B0aW9ucyJdLCBpZDogc3RyaW5nKSB7CiAgICByZXR1cm4gb3B0aW9ucz8ub3B0aW9uc1tmaWVsZF0uZmluZCgoYykgPT4gYy5pZCA9PT0gaWQpPy5sYWJlbCA/PyBpZDsKICB9CgogIHJldHVybiAoCiAgICA8PgogICAgICA8aGVhZGVyIGNsYXNzTmFtZT0icGFnZS1oZWFkZXIiPgogICAgICAgIDxoMT7XpifXpy3XkNeZ158g15nXldee15k8L2gxPgogICAgICAgIDxwPteR15fXmdeo15Qg157XlNeZ16jXlCDXnteq15XXmiDXkNek16nXqNeV15nXldeqINeb15PXmSDXnNeT15nXmdenINeQ16og15TXntec16bXqiDXlNeQ15nXnteV158uPC9wPgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxTZWN0aW9uIHRpdGxlPSLXntem15Eg15nXldee15kiIHN1YnRpdGxlPSLXnNec15Ag15TXlteg16og157Xodek16jXmdedINeZ15PXoNeZ16oiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyb3ciPgogICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iZmllbGQiPgogICAgICAgICAgICDXqteQ16jXmdeaCiAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJkYXRlIiB2YWx1ZT17Zm9ybS5kYXRlfSBvbkNoYW5nZT17KGUpID0+IHNldEZvcm0oKHApID0+ICh7IC4uLnAsIGRhdGU6IGUudGFyZ2V0LnZhbHVlIH0pKX0gLz4KICAgICAgICAgIDwvbGFiZWw+CiAgICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgY2xhc3NOYW1lPSJjaG9pY2UtYnRuIiBvbkNsaWNrPXsoKSA9PiBzaGlmdERhdGUoLTEpfT4KICAgICAgICAgICAg15nXldedINen15XXk9edCiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDxidXR0b24gdHlwZT0iYnV0dG9uIiBjbGFzc05hbWU9ImNob2ljZS1idG4iIG9uQ2xpY2s9eygpID0+IHNldEZvcm0oKHApID0+ICh7IC4uLnAsIGRhdGU6IGZvcm1hdElTT0RhdGUoKSB9KSl9PgogICAgICAgICAgICDXlNeZ15XXnQogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgY2xhc3NOYW1lPSJjaG9pY2UtYnRuIiBvbkNsaWNrPXsoKSA9PiBzaGlmdERhdGUoMSl9PgogICAgICAgICAgICDXmdeV150g15TXkdeQCiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgeyFpc0VkaXRpbmcgJiYgc2F2ZWRFeGlzdHMgPyAoCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iY2hlY2tpbi1zdW1tYXJ5LWNhcmQiPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iY2hlY2tpbi1zdW1tYXJ5LWdyaWQiPgogICAgICAgICAgICAgIDxkaXY+PHNwYW4+e2xhYmVscy5leGVydGlvbn08L3NwYW4+PHN0cm9uZz57bGFiZWxGb3IoImV4ZXJ0aW9uIiwgZm9ybS5leGVydGlvbil9PC9zdHJvbmc+PC9kaXY+CiAgICAgICAgICAgICAgPGRpdj48c3Bhbj57bGFiZWxzLnNsZWVwfTwvc3Bhbj48c3Ryb25nPntsYWJlbEZvcigic2xlZXAiLCBmb3JtLnNsZWVwKX08L3N0cm9uZz48L2Rpdj4KICAgICAgICAgICAgICA8ZGl2PjxzcGFuPntsYWJlbHMuaHJ2fTwvc3Bhbj48c3Ryb25nPntsYWJlbEZvcigiaHJ2IiwgZm9ybS5ocnYpfTwvc3Ryb25nPjwvZGl2PgogICAgICAgICAgICAgIDxkaXY+PHNwYW4+e2xhYmVscy5yZXN0aW5nSHJ9PC9zcGFuPjxzdHJvbmc+e2xhYmVsRm9yKCJyZXN0aW5nSHIiLCBmb3JtLnJlc3RpbmdIcil9PC9zdHJvbmc+PC9kaXY+CiAgICAgICAgICAgICAgPGRpdj48c3Bhbj57bGFiZWxzLm1vb2R9PC9zcGFuPjxzdHJvbmc+e2xhYmVsRm9yKCJtb29kIiwgZm9ybS5tb29kKX08L3N0cm9uZz48L2Rpdj4KICAgICAgICAgICAgICA8ZGl2PjxzcGFuPntsYWJlbHMuc29yZW5lc3NMZXZlbH08L3NwYW4+PHN0cm9uZz57bGFiZWxGb3IoInNvcmVuZXNzTGV2ZWwiLCBmb3JtLnNvcmVuZXNzTGV2ZWwpfTwvc3Ryb25nPjwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJub3RlIj7XkNeW15XXqNeZINeb15DXkToge2Zvcm0ucGFpbkFyZWFzLmxlbmd0aCA/IGZvcm0ucGFpbkFyZWFzLmpvaW4oIiwgIikgOiAi15zXnNeQIn08L3A+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyb3ciPgogICAgICAgICAgICAgIDxidXR0b24gdHlwZT0iYnV0dG9uIiBjbGFzc05hbWU9ImNob2ljZS1idG4iIG9uQ2xpY2s9eygpID0+IHNldElzRWRpdGluZyh0cnVlKX0+CiAgICAgICAgICAgICAgICDXoteo15nXm9eUCiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgKSA6ICgKICAgICAgICAgIDw+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJjaGVja2luLWNvbXBhY3QtZ3JpZCI+CiAgICAgICAgICAgICAgeyhbImV4ZXJ0aW9uIiwgInNsZWVwIiwgImhydiIsICJyZXN0aW5nSHIiLCAibW9vZCIsICJzb3JlbmVzc0xldmVsIl0gYXMgY29uc3QpLm1hcCgoZmllbGQpID0+IGNob2ljZUdyb3VwKGZpZWxkKSl9CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImNob2ljZS1ncm91cCI+CiAgICAgICAgICAgICAgPHA+15DXlteV16jXmSDXm9eQ15Eg15HXkteV16M8L3A+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImNob2ljZS1yb3ciPgogICAgICAgICAgICAgICAgeyhvcHRpb25zPy5wYWluQXJlYXMgPz8gW10pLm1hcCgoYXJlYSkgPT4gewogICAgICAgICAgICAgICAgICBjb25zdCBzZWxlY3RlZCA9IGZvcm0ucGFpbkFyZWFzLmluY2x1ZGVzKGFyZWEubmFtZSk7CiAgICAgICAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgICAgICAga2V5PXthcmVhLmlkfQogICAgICAgICAgICAgICAgICAgICAgdHlwZT0iYnV0dG9uIgogICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtzZWxlY3RlZCA/ICJjaG9pY2UtYnRuIHNlbGVjdGVkIiA6ICJjaG9pY2UtYnRuIn0KICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHRvZ2dsZVBhaW5BcmVhKGFyZWEubmFtZSl9CiAgICAgICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICAgICAge2FyZWEubmFtZX0KICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICAgICAgKTsKICAgICAgICAgICAgICAgIH0pfQogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyb3ciPgogICAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iZmllbGQiPgogICAgICAgICAgICAgICAgICDXlNeV16HXoyDXkNeW15XXqCDXm9eQ15Eg15fXk9epCiAgICAgICAgICAgICAgICAgIDxpbnB1dCB2YWx1ZT17bmV3QXJlYX0gb25DaGFuZ2U9eyhlKSA9PiBzZXROZXdBcmVhKGUudGFyZ2V0LnZhbHVlKX0gcGxhY2Vob2xkZXI9Itec157XqdecOiDXm9eq16Mg15nXnteZ158iIC8+CiAgICAgICAgICAgICAgICA8L2xhYmVsPgogICAgICAgICAgICAgICAgPGJ1dHRvbiB0eXBlPSJidXR0b24iIGNsYXNzTmFtZT0iYWx0IiBvbkNsaWNrPXthZGRBcmVhfT4KICAgICAgICAgICAgICAgICAg15TXldeh16Mg15DXlteV16gKICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIDxkZXRhaWxzIGNsYXNzTmFtZT0iZXhwYW5kLWJsb2NrIj4KICAgICAgICAgICAgICA8c3VtbWFyeT7XpNeo15jXmdedINeQ15XXpNem15nXldeg15zXmdeZ150gKNeQ150g15nXqSDXnNeaINeg16rXldefINee15PXldeZ16cpPC9zdW1tYXJ5PgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyb3ciPgogICAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iZmllbGQiPgogICAgICAgICAgICAgICAgICDXqdei15XXqiDXqdeZ16DXlCDXkdek15XXotecCiAgICAgICAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgICAgICAgIHR5cGU9Im51bWJlciIKICAgICAgICAgICAgICAgICAgICBzdGVwPSIwLjEiCiAgICAgICAgICAgICAgICAgICAgdmFsdWU9e2Zvcm0uc2xlZXBIb3Vyc0FjdHVhbH0KICAgICAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldEZvcm0oKHApID0+ICh7IC4uLnAsIHNsZWVwSG91cnNBY3R1YWw6IGUudGFyZ2V0LnZhbHVlIH0pKX0KICAgICAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcj0i15zXntep15wgNy40IgogICAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAgPC9sYWJlbD4KICAgICAgICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9ImZpZWxkIj4KICAgICAgICAgICAgICAgICAgSFJWINeR16TXldei15wKICAgICAgICAgICAgICAgICAgPGlucHV0CiAgICAgICAgICAgICAgICAgICAgdHlwZT0ibnVtYmVyIgogICAgICAgICAgICAgICAgICAgIHZhbHVlPXtmb3JtLmhydkFjdHVhbH0KICAgICAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldEZvcm0oKHApID0+ICh7IC4uLnAsIGhydkFjdHVhbDogZS50YXJnZXQudmFsdWUgfSkpfQogICAgICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPSLXnNee16nXnCA0OCIKICAgICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICAgIDwvbGFiZWw+CiAgICAgICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJmaWVsZCI+CiAgICAgICAgICAgICAgICAgINeT15XXpNenINee16DXldeX15Qg15HXpNeV16LXnAogICAgICAgICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICAgICAgICB0eXBlPSJudW1iZXIiCiAgICAgICAgICAgICAgICAgICAgdmFsdWU9e2Zvcm0ucmVzdGluZ0hyQWN0dWFsfQogICAgICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gc2V0Rm9ybSgocCkgPT4gKHsgLi4ucCwgcmVzdGluZ0hyQWN0dWFsOiBlLnRhcmdldC52YWx1ZSB9KSl9CiAgICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9Itec157XqdecIDU2IgogICAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAgPC9sYWJlbD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kZXRhaWxzPgoKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InJvdyI+CiAgICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXtzdWJtaXR9Ptep157XldeoINemJ9enLdeQ15nXnzwvYnV0dG9uPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvPgogICAgICAgICl9CiAgICAgICAge3N0YXR1cyAmJiA8cCBjbGFzc05hbWU9Im5vdGUiPntzdGF0dXN9PC9wPn0KICAgICAgPC9TZWN0aW9uPgogICAgPC8+CiAgKTsKfQo="}
+"use client";
+
+import { useEffect, useState } from "react";
+import { addDaysISO, formatISODate } from "@/lib/date";
+import { Section } from "@/components/cards";
+
+type Choice = { id: string; label: string };
+
+type OptionsPayload = {
+  options: {
+    exertion: Choice[];
+    sleep: Choice[];
+    hrv: Choice[];
+    restingHr: Choice[];
+    mood: Choice[];
+    sorenessLevel: Choice[];
+  };
+  painAreas: Array<{ id: string; name: string }>;
+};
+
+const labels = {
+  exertion: "תחושת מאמץ כללית",
+  sleep: "איך הייתה השינה",
+  hrv: "סטטוס HRV",
+  restingHr: "דופק מנוחה",
+  mood: "מצב רוח",
+  sorenessLevel: "רמת כאב/שריריות"
+} as const;
+
+export default function CheckinPage() {
+  const [status, setStatus] = useState<string>("");
+  const [options, setOptions] = useState<OptionsPayload | null>(null);
+  const [newArea, setNewArea] = useState("");
+  const [savedExists, setSavedExists] = useState(false);
+  const [isEditing, setIsEditing] = useState(true);
+
+  const [form, setForm] = useState({
+    date: formatISODate(),
+    exertion: "moderate",
+    sleep: "good",
+    hrv: "normal",
+    restingHr: "normal",
+    mood: "good",
+    sorenessLevel: "light",
+    painAreas: [] as string[],
+    sleepHoursActual: "" as string,
+    hrvActual: "" as string,
+    restingHrActual: "" as string
+  });
+
+  function shiftDate(days: number) {
+    const iso = addDaysISO(form.date, days);
+    setForm((p) => ({ ...p, date: iso }));
+    setStatus("");
+  }
+
+  useEffect(() => {
+    void loadOptions();
+  }, []);
+
+  useEffect(() => {
+    if (!options) return;
+    void loadDaily(form.date);
+  }, [options, form.date]);
+
+  async function loadOptions() {
+    const res = await fetch("/api/checkin/options");
+    const data = (await res.json()) as OptionsPayload;
+    setOptions(data);
+  }
+
+  function toChoiceIdFromRecovery(field: keyof OptionsPayload["options"], value: number | null | undefined) {
+    if (value == null) return null;
+
+    if (field === "exertion") {
+      if (value <= 2.5) return "very_easy";
+      if (value <= 4.5) return "easy";
+      if (value <= 6.5) return "moderate";
+      if (value <= 8.5) return "hard";
+      return "max";
+    }
+    if (field === "sleep") {
+      if (value < 6) return "poor";
+      if (value < 7) return "ok";
+      if (value < 8) return "good";
+      return "great";
+    }
+    if (field === "hrv") {
+      if (value < 40) return "low";
+      if (value > 55) return "high";
+      return "normal";
+    }
+    if (field === "restingHr") {
+      if (value < 54) return "low";
+      if (value > 62) return "high";
+      return "normal";
+    }
+    if (field === "mood") {
+      if (value <= 1.5) return "low";
+      if (value <= 3.5) return "ok";
+      if (value <= 4.5) return "good";
+      return "great";
+    }
+    if (field === "sorenessLevel") {
+      if (value <= 1.5) return "none";
+      if (value <= 3.5) return "light";
+      if (value <= 6.5) return "medium";
+      return "high";
+    }
+    return null;
+  }
+
+  async function loadDaily(date: string) {
+    const res = await fetch(`/api/checkin/daily?date=${date}`);
+    const data = (await res.json()) as {
+      exists: boolean;
+      recovery?: {
+        rpe?: number | null;
+        sleepHours?: number | null;
+        hrv?: number | null;
+        restingHr?: number | null;
+        mood?: number | null;
+        sorenessGlobal?: number | null;
+        sorenessByArea?: string | null;
+      } | null;
+    };
+
+    setSavedExists(Boolean(data.exists));
+    setIsEditing(!data.exists);
+
+    if (!data.exists || !data.recovery) {
+      return;
+    }
+
+    const recovery = data.recovery;
+    let parsedAreas: string[] = [];
+    if (recovery.sorenessByArea) {
+      try {
+        const arr = JSON.parse(recovery.sorenessByArea) as string[];
+        if (Array.isArray(arr)) parsedAreas = arr;
+      } catch {
+        parsedAreas = [];
+      }
+    }
+
+    setForm((prev) => ({
+      ...prev,
+      date,
+      exertion: toChoiceIdFromRecovery("exertion", recovery.rpe) ?? prev.exertion,
+      sleep: toChoiceIdFromRecovery("sleep", recovery.sleepHours) ?? prev.sleep,
+      hrv: toChoiceIdFromRecovery("hrv", recovery.hrv) ?? prev.hrv,
+      restingHr: toChoiceIdFromRecovery("restingHr", recovery.restingHr) ?? prev.restingHr,
+      mood: toChoiceIdFromRecovery("mood", recovery.mood) ?? prev.mood,
+      sorenessLevel: toChoiceIdFromRecovery("sorenessLevel", recovery.sorenessGlobal) ?? prev.sorenessLevel,
+      painAreas: parsedAreas,
+      sleepHoursActual: recovery.sleepHours != null ? String(recovery.sleepHours) : "",
+      hrvActual: recovery.hrv != null ? String(recovery.hrv) : "",
+      restingHrActual: recovery.restingHr != null ? String(recovery.restingHr) : ""
+    }));
+  }
+
+  function togglePainArea(areaName: string) {
+    setForm((prev) => ({
+      ...prev,
+      painAreas: prev.painAreas.includes(areaName) ? prev.painAreas.filter((x) => x !== areaName) : [...prev.painAreas, areaName]
+    }));
+  }
+
+  async function addArea() {
+    if (!newArea.trim()) return;
+
+    const res = await fetch("/api/checkin/options", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: newArea })
+    });
+
+    if (!res.ok) {
+      setStatus("לא הצלחנו להוסיף אזור חדש.");
+      return;
+    }
+
+    const data = (await res.json()) as { painAreas: Array<{ id: string; name: string }> };
+    setOptions((prev) => (prev ? { ...prev, painAreas: data.painAreas } : prev));
+    setForm((prev) => ({ ...prev, painAreas: [...prev.painAreas, newArea.trim()] }));
+    setNewArea("");
+    setStatus("אזור נוסף ונשמר במערכת.");
+  }
+
+  async function submit() {
+    const res = await fetch("/api/checkin/daily", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        ...form,
+        sleepHoursActual: form.sleepHoursActual ? Number(form.sleepHoursActual) : null,
+        hrvActual: form.hrvActual ? Number(form.hrvActual) : null,
+        restingHrActual: form.restingHrActual ? Number(form.restingHrActual) : null
+      })
+    });
+
+    if (res.ok) {
+      setStatus("צ'ק-אין נשמר בהצלחה.");
+      setSavedExists(true);
+      setIsEditing(false);
+      return;
+    }
+
+    const err = await res.json();
+    setStatus(`שמירה נכשלה: ${JSON.stringify(err.error)}`);
+  }
+
+  function choiceGroup(field: keyof OptionsPayload["options"]) {
+    const list = options?.options[field] ?? [];
+    const selectedValue = form[field] as string;
+
+    return (
+      <div className="choice-group" key={field}>
+        <p>{labels[field]}</p>
+        <div className="choice-row">
+          {list.map((choice) => {
+            const selected = selectedValue === choice.id;
+            return (
+              <button
+                key={choice.id}
+                type="button"
+                className={selected ? "choice-btn selected" : "choice-btn"}
+                onClick={() => setForm((prev) => ({ ...prev, [field]: choice.id }))}
+              >
+                {choice.label}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  function labelFor(field: keyof OptionsPayload["options"], id: string) {
+    return options?.options[field].find((c) => c.id === id)?.label ?? id;
+  }
+
+  return (
+    <>
+      <header className="page-header">
+        <h1>צ'ק-אין יומי</h1>
+        <p>בחירה מהירה מתוך אפשרויות כדי לדייק את המלצת האימון.</p>
+      </header>
+
+      <Section title="מצב יומי" subtitle="ללא הזנת מספרים ידנית">
+        <div className="row">
+          <label className="field">
+            תאריך
+            <input type="date" value={form.date} onChange={(e) => setForm((p) => ({ ...p, date: e.target.value }))} />
+          </label>
+          <button type="button" className="choice-btn" onClick={() => shiftDate(-1)}>
+            יום קודם
+          </button>
+          <button type="button" className="choice-btn" onClick={() => setForm((p) => ({ ...p, date: formatISODate() }))}>
+            היום
+          </button>
+          <button type="button" className="choice-btn" onClick={() => shiftDate(1)}>
+            יום הבא
+          </button>
+        </div>
+
+        {!isEditing && savedExists ? (
+          <div className="checkin-summary-card">
+            <div className="checkin-summary-grid">
+              <div><span>{labels.exertion}</span><strong>{labelFor("exertion", form.exertion)}</strong></div>
+              <div><span>{labels.sleep}</span><strong>{labelFor("sleep", form.sleep)}</strong></div>
+              <div><span>{labels.hrv}</span><strong>{labelFor("hrv", form.hrv)}</strong></div>
+              <div><span>{labels.restingHr}</span><strong>{labelFor("restingHr", form.restingHr)}</strong></div>
+              <div><span>{labels.mood}</span><strong>{labelFor("mood", form.mood)}</strong></div>
+              <div><span>{labels.sorenessLevel}</span><strong>{labelFor("sorenessLevel", form.sorenessLevel)}</strong></div>
+            </div>
+            <p className="note">אזורי כאב: {form.painAreas.length ? form.painAreas.join(", ") : "ללא"}</p>
+            <div className="row">
+              <button type="button" className="choice-btn" onClick={() => setIsEditing(true)}>
+                עריכה
+              </button>
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="checkin-compact-grid">
+              {(["exertion", "sleep", "hrv", "restingHr", "mood", "sorenessLevel"] as const).map((field) => choiceGroup(field))}
+            </div>
+
+            <div className="choice-group">
+              <p>אזורי כאב בגוף</p>
+              <div className="choice-row">
+                {(options?.painAreas ?? []).map((area) => {
+                  const selected = form.painAreas.includes(area.name);
+                  return (
+                    <button
+                      key={area.id}
+                      type="button"
+                      className={selected ? "choice-btn selected" : "choice-btn"}
+                      onClick={() => togglePainArea(area.name)}
+                    >
+                      {area.name}
+                    </button>
+                  );
+                })}
+              </div>
+              <div className="row">
+                <label className="field">
+                  הוסף אזור כאב חדש
+                  <input value={newArea} onChange={(e) => setNewArea(e.target.value)} placeholder="למשל: כתף ימין" />
+                </label>
+                <button type="button" className="alt" onClick={addArea}>
+                  הוסף אזור
+                </button>
+              </div>
+            </div>
+
+            <details className="expand-block">
+              <summary>פרטים אופציונליים (אם יש לך נתון מדויק)</summary>
+              <div className="row">
+                <label className="field">
+                  שעות שינה בפועל
+                  <input
+                    type="number"
+                    step="0.1"
+                    value={form.sleepHoursActual}
+                    onChange={(e) => setForm((p) => ({ ...p, sleepHoursActual: e.target.value }))}
+                    placeholder="למשל 7.4"
+                  />
+                </label>
+                <label className="field">
+                  HRV בפועל
+                  <input
+                    type="number"
+                    value={form.hrvActual}
+                    onChange={(e) => setForm((p) => ({ ...p, hrvActual: e.target.value }))}
+                    placeholder="למשל 48"
+                  />
+                </label>
+                <label className="field">
+                  דופק מנוחה בפועל
+                  <input
+                    type="number"
+                    value={form.restingHrActual}
+                    onChange={(e) => setForm((p) => ({ ...p, restingHrActual: e.target.value }))}
+                    placeholder="למשל 56"
+                  />
+                </label>
+              </div>
+            </details>
+
+            <div className="row">
+              <button onClick={submit}>שמור צ'ק-אין</button>
+            </div>
+          </>
+        )}
+        {status && <p className="note">{status}</p>}
+      </Section>
+    </>
+  );
+}

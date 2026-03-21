@@ -1,1 +1,64 @@
-{"data":"aW1wb3J0IHR5cGUgeyBOdXRyaXRpb25JbmdyZWRpZW50LCBOdXRyaXRpb25Vbml0IH0gZnJvbSAiQC9saWIvdHlwZXMiOwoKZXhwb3J0IGNvbnN0IG51dHJpdGlvblVuaXRPcHRpb25zOiBBcnJheTx7IHZhbHVlOiBOdXRyaXRpb25Vbml0OyBsYWJlbDogc3RyaW5nIH0+ID0gWwogIHsgdmFsdWU6ICJnIiwgbGFiZWw6ICLXkteo150iIH0sCiAgeyB2YWx1ZTogIm1sIiwgbGFiZWw6ICLXnte015wiIH0sCiAgeyB2YWx1ZTogInVuaXQiLCBsYWJlbDogIteZ15fXsyIgfSwKICB7IHZhbHVlOiAidGJzcCIsIGxhYmVsOiAi15vXoyIgfSwKICB7IHZhbHVlOiAidHNwIiwgbGFiZWw6ICLXm9ek15nXqiIgfQpdOwoKZnVuY3Rpb24gbG93ZXJOYW1lKG5hbWU6IHN0cmluZyB8IG51bGwgfCB1bmRlZmluZWQpIHsKICByZXR1cm4gKG5hbWUgPz8gIiIpLnRyaW0oKS50b0xvd2VyQ2FzZSgpOwp9CgpmdW5jdGlvbiBzcHJlYWRTcG9vbkdyYW1zQnlOYW1lKG5hbWU6IHN0cmluZykgewogIGlmICghbmFtZSkgcmV0dXJuIG51bGw7CiAgaWYgKG5hbWUuaW5jbHVkZXMoIteT15HXqSIpKSByZXR1cm4geyB0YnNwOiAyMSwgdHNwOiA3IH07CiAgaWYgKG5hbWUuaW5jbHVkZXMoIteY15fXmdeg15QiKSkgcmV0dXJuIHsgdGJzcDogMTMsIHRzcDogNC4zIH07CiAgaWYgKG5hbWUuaW5jbHVkZXMoIten15XXmNeSIikpIHJldHVybiB7IHRic3A6IDE1LCB0c3A6IDUgfTsKICBpZiAobmFtZS5pbmNsdWRlcygi15fXldee15XXoSIpKSByZXR1cm4geyB0YnNwOiAxNSwgdHNwOiA1IH07CiAgcmV0dXJuIG51bGw7Cn0KCmZ1bmN0aW9uIGdlbmVyaWNTcG9vbkdyYW1zKHVuaXQ6IE51dHJpdGlvblVuaXQpIHsKICBpZiAodW5pdCA9PT0gInRic3AiKSByZXR1cm4gMTU7CiAgaWYgKHVuaXQgPT09ICJ0c3AiKSByZXR1cm4gNTsKICByZXR1cm4gMDsKfQoKZXhwb3J0IGZ1bmN0aW9uIG5vcm1hbGl6ZU51dHJpdGlvblVuaXQodW5pdDogc3RyaW5nKTogTnV0cml0aW9uVW5pdCB7CiAgaWYgKHVuaXQgPT09ICJtbCIpIHJldHVybiAibWwiOwogIGlmICh1bml0ID09PSAidW5pdCIpIHJldHVybiAidW5pdCI7CiAgaWYgKHVuaXQgPT09ICJ0YnNwIikgcmV0dXJuICJ0YnNwIjsKICBpZiAodW5pdCA9PT0gInRzcCIpIHJldHVybiAidHNwIjsKICByZXR1cm4gImciOwp9CgpleHBvcnQgZnVuY3Rpb24gbnV0cml0aW9uVW5pdExhYmVsKHVuaXQ6IE51dHJpdGlvblVuaXQpIHsKICBpZiAodW5pdCA9PT0gInVuaXQiKSByZXR1cm4gIteZ15fXsyI7CiAgaWYgKHVuaXQgPT09ICJ0YnNwIikgcmV0dXJuICLXm9ejIjsKICBpZiAodW5pdCA9PT0gInRzcCIpIHJldHVybiAi15vXpNeZ16oiOwogIGlmICh1bml0ID09PSAibWwiKSByZXR1cm4gItee17TXnCI7CiAgcmV0dXJuICLXkteo150iOwp9CgpleHBvcnQgZnVuY3Rpb24gbnV0cml0aW9uUXVhbnRpdHlUb0dyYW1zKAogIHF1YW50aXR5OiBudW1iZXIsCiAgdW5pdDogTnV0cml0aW9uVW5pdCwKICBpbmdyZWRpZW50OiBQaWNrPE51dHJpdGlvbkluZ3JlZGllbnQsICJuYW1lIiB8ICJncmFtc1BlclVuaXQiPgopIHsKICBjb25zdCBzYWZlUXVhbnRpdHkgPSBOdW1iZXIocXVhbnRpdHkpOwogIGlmICghTnVtYmVyLmlzRmluaXRlKHNhZmVRdWFudGl0eSkgfHwgc2FmZVF1YW50aXR5IDw9IDApIHJldHVybiAwOwoKICBpZiAodW5pdCA9PT0gImciKSByZXR1cm4gc2FmZVF1YW50aXR5OwogIGlmICh1bml0ID09PSAibWwiKSByZXR1cm4gc2FmZVF1YW50aXR5OwogIGlmICh1bml0ID09PSAidW5pdCIpIHJldHVybiBzYWZlUXVhbnRpdHkgKiBNYXRoLm1heCgxLCBOdW1iZXIoaW5ncmVkaWVudC5ncmFtc1BlclVuaXQpKTsKCiAgY29uc3Qgc3Bvb25zID0gc3ByZWFkU3Bvb25HcmFtc0J5TmFtZShsb3dlck5hbWUoaW5ncmVkaWVudC5uYW1lKSk7CiAgaWYgKHNwb29ucykgewogICAgcmV0dXJuIHNhZmVRdWFudGl0eSAqICh1bml0ID09PSAidGJzcCIgPyBzcG9vbnMudGJzcCA6IHNwb29ucy50c3ApOwogIH0KCiAgcmV0dXJuIHNhZmVRdWFudGl0eSAqIGdlbmVyaWNTcG9vbkdyYW1zKHVuaXQpOwp9Cg=="}
+import type { NutritionIngredient, NutritionUnit } from "@/lib/types";
+
+export const nutritionUnitOptions: Array<{ value: NutritionUnit; label: string }> = [
+  { value: "g", label: "גרם" },
+  { value: "ml", label: "מ״ל" },
+  { value: "unit", label: "יח׳" },
+  { value: "tbsp", label: "כף" },
+  { value: "tsp", label: "כפית" }
+];
+
+function lowerName(name: string | null | undefined) {
+  return (name ?? "").trim().toLowerCase();
+}
+
+function spreadSpoonGramsByName(name: string) {
+  if (!name) return null;
+  if (name.includes("דבש")) return { tbsp: 21, tsp: 7 };
+  if (name.includes("טחינה")) return { tbsp: 13, tsp: 4.3 };
+  if (name.includes("קוטג")) return { tbsp: 15, tsp: 5 };
+  if (name.includes("חומוס")) return { tbsp: 15, tsp: 5 };
+  return null;
+}
+
+function genericSpoonGrams(unit: NutritionUnit) {
+  if (unit === "tbsp") return 15;
+  if (unit === "tsp") return 5;
+  return 0;
+}
+
+export function normalizeNutritionUnit(unit: string): NutritionUnit {
+  if (unit === "ml") return "ml";
+  if (unit === "unit") return "unit";
+  if (unit === "tbsp") return "tbsp";
+  if (unit === "tsp") return "tsp";
+  return "g";
+}
+
+export function nutritionUnitLabel(unit: NutritionUnit) {
+  if (unit === "unit") return "יח׳";
+  if (unit === "tbsp") return "כף";
+  if (unit === "tsp") return "כפית";
+  if (unit === "ml") return "מ״ל";
+  return "גרם";
+}
+
+export function nutritionQuantityToGrams(
+  quantity: number,
+  unit: NutritionUnit,
+  ingredient: Pick<NutritionIngredient, "name" | "gramsPerUnit">
+) {
+  const safeQuantity = Number(quantity);
+  if (!Number.isFinite(safeQuantity) || safeQuantity <= 0) return 0;
+
+  if (unit === "g") return safeQuantity;
+  if (unit === "ml") return safeQuantity;
+  if (unit === "unit") return safeQuantity * Math.max(1, Number(ingredient.gramsPerUnit));
+
+  const spoons = spreadSpoonGramsByName(lowerName(ingredient.name));
+  if (spoons) {
+    return safeQuantity * (unit === "tbsp" ? spoons.tbsp : spoons.tsp);
+  }
+
+  return safeQuantity * genericSpoonGrams(unit);
+}

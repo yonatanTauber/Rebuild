@@ -1,1 +1,120 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IExpbmsgZnJvbSAibmV4dC9saW5rIjsKaW1wb3J0IHsgdXNlUGFyYW1zIH0gZnJvbSAibmV4dC9uYXZpZ2F0aW9uIjsKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgU2VjdGlvbiB9IGZyb20gIkAvY29tcG9uZW50cy9jYXJkcyI7CmltcG9ydCB7IGZvcm1hdERpc3BsYXlEYXRlIH0gZnJvbSAiQC9saWIvZGF0ZSI7CmltcG9ydCB7IHdvcmtvdXREZXRhaWxQYXRoIH0gZnJvbSAiQC9saWIvdXJsIjsKCnR5cGUgVG9wRWZmb3J0ID0gewogIGlkOiBzdHJpbmc7CiAgZGlzdGFuY2VLZXk6IHN0cmluZzsKICBkaXN0YW5jZUttOiBudW1iZXI7CiAgdGltZVNlYzogbnVtYmVyOwogIHBhY2VNaW5QZXJLbTogbnVtYmVyOwogIHdvcmtvdXRJZDogc3RyaW5nOwogIHdvcmtvdXRTdGFydEF0OiBzdHJpbmc7CiAgc291cmNlOiAid2hvbGVfd29ya291dCIgfCAicm9sbGluZ19zZWdtZW50IjsKICBzZWdtZW50U3RhcnRTZWM6IG51bWJlciB8IG51bGw7CiAgc2VnbWVudEVuZFNlYzogbnVtYmVyIHwgbnVsbDsKfTsKCmZ1bmN0aW9uIGZvcm1hdER1cmF0aW9uKHNlYzogbnVtYmVyKSB7CiAgY29uc3QgaG91cnMgPSBNYXRoLmZsb29yKHNlYyAvIDM2MDApOwogIGNvbnN0IG1pbnV0ZXMgPSBNYXRoLmZsb29yKChzZWMgJSAzNjAwKSAvIDYwKTsKICBjb25zdCBzZWNvbmRzID0gTWF0aC5yb3VuZChzZWMgJSA2MCk7CiAgaWYgKGhvdXJzID4gMCkgcmV0dXJuIGAke2hvdXJzfToke1N0cmluZyhtaW51dGVzKS5wYWRTdGFydCgyLCAiMCIpfToke1N0cmluZyhzZWNvbmRzKS5wYWRTdGFydCgyLCAiMCIpfWA7CiAgcmV0dXJuIGAke21pbnV0ZXN9OiR7U3RyaW5nKHNlY29uZHMpLnBhZFN0YXJ0KDIsICIwIil9YDsKfQoKZnVuY3Rpb24gZm9ybWF0UGFjZShwYWNlOiBudW1iZXIpIHsKICBjb25zdCBtID0gTWF0aC5mbG9vcihwYWNlKTsKICBjb25zdCBzID0gTWF0aC5yb3VuZCgocGFjZSAtIG0pICogNjApOwogIHJldHVybiBgJHttfToke1N0cmluZyhzKS5wYWRTdGFydCgyLCAiMCIpfWA7Cn0KCmZ1bmN0aW9uIGRpc3RhbmNlVGl0bGUoa2V5OiBzdHJpbmcpIHsKICBjb25zdCBtYXA6IFJlY29yZDxzdHJpbmcsIHN0cmluZz4gPSB7CiAgICAiMWsiOiAnMSDXpyLXnicsCiAgICAiM2siOiAnMyDXpyLXnicsCiAgICAiNWsiOiAnNSDXpyLXnicsCiAgICAiMTBrIjogJzEwINenIteeJywKICAgICIxNWsiOiAnMTUg16ci154nLAogICAgaGFsZjogIteX16bXmSDXnteo16rXldefIiwKICAgICIyNWsiOiAnMjUg16ci154nLAogICAgIjMwayI6ICczMCDXpyLXnicKICB9OwogIHJldHVybiBtYXBba2V5XSA/PyBrZXk7Cn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFBiRGlzdGFuY2VQYWdlKCkgewogIGNvbnN0IHBhcmFtcyA9IHVzZVBhcmFtczx7IGRpc3RhbmNlOiBzdHJpbmcgfT4oKTsKICBjb25zdCBkaXN0YW5jZSA9IHR5cGVvZiBwYXJhbXM/LmRpc3RhbmNlID09PSAic3RyaW5nIiA/IHBhcmFtcy5kaXN0YW5jZSA6ICIiOwogIGNvbnN0IFt0b3AsIHNldFRvcF0gPSB1c2VTdGF0ZTxUb3BFZmZvcnRbXT4oW10pOwogIGNvbnN0IFtlcnJvciwgc2V0RXJyb3JdID0gdXNlU3RhdGU8c3RyaW5nPigiIik7CiAgY29uc3QgW2luY2x1ZGVTZWdtZW50cywgc2V0SW5jbHVkZVNlZ21lbnRzXSA9IHVzZVN0YXRlKHRydWUpOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgaWYgKCFkaXN0YW5jZSkgcmV0dXJuOwogICAgY29uc3Qgc2VnbWVudHNQYXJhbSA9IGluY2x1ZGVTZWdtZW50cyA/ICImaW5jbHVkZVNlZ21lbnRzPTEiIDogIiI7CiAgICB2b2lkIGZldGNoKGAvYXBpL2FuYWx5dGljcy9wYj9kaXN0YW5jZT0ke2Rpc3RhbmNlfSZsaW1pdD04JHtzZWdtZW50c1BhcmFtfWApCiAgICAgIC50aGVuKChyKSA9PiByLmpzb24oKSkKICAgICAgLnRoZW4oKHBheWxvYWQpID0+IHsKICAgICAgICBpZiAocGF5bG9hZC5lcnJvcikgewogICAgICAgICAgc2V0RXJyb3IocGF5bG9hZC5lcnJvcik7CiAgICAgICAgICByZXR1cm47CiAgICAgICAgfQogICAgICAgIHNldFRvcChwYXlsb2FkLnRvcCBhcyBUb3BFZmZvcnRbXSk7CiAgICAgIH0pOwogIH0sIFtkaXN0YW5jZSwgaW5jbHVkZVNlZ21lbnRzXSk7CgogIHJldHVybiAoCiAgICA8PgogICAgICA8aGVhZGVyIGNsYXNzTmFtZT0icGFnZS1oZWFkZXIiPgogICAgICAgIDxoMT44INeU16rXldem15DXldeqINeU15jXldeR15XXqiDCtyB7ZGlzdGFuY2VUaXRsZShkaXN0YW5jZSl9PC9oMT4KICAgICAgICA8cD57aW5jbHVkZVNlZ21lbnRzID8gIteb15XXnNecINeS150g15fXnNen15nXnSDXnteq15XXmiDXqNeZ16bXldeqINeQ15fXqNeV16ouIiA6ICLXqNenINeo15nXpteV16og15nXmdei15XXk9eZ15XXqiDXnNee16jXl9enINeU15bXlC4ifTwvcD4KICAgICAgPC9oZWFkZXI+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0icm93Ij4KICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgY2xhc3NOYW1lPSJjaG9pY2UtYnRuIiBvbkNsaWNrPXsoKSA9PiBzZXRJbmNsdWRlU2VnbWVudHMoKHByZXYpID0+ICFwcmV2KX0+CiAgICAgICAgICB7aW5jbHVkZVNlZ21lbnRzID8gIteU16bXkiDXqNenINeo15nXpteV16og15nXmdei15XXk9eZ15XXqiIgOiAi15TXqNeX15E6INeb15zXldecINeS150g16HXktee16DXmNeZ150g157XqNeZ16bXldeqINeQ16jXldeb15XXqiJ9CiAgICAgICAgPC9idXR0b24+CiAgICAgIDwvZGl2PgoKICAgICAgPFNlY3Rpb24gdGl0bGU9Iteq15XXpteQ15XXqiDXnteV15HXmdec15XXqiIgc3VidGl0bGU9Iteb15XXnNecINeh15XXkiDXnten15XXqCDXldeg15nXldeV15gg15zXkNeZ157XldefINeU157Xp9eV16jXmSI+CiAgICAgICAgPHVsIGNsYXNzTmFtZT0ibGlzdCI+CiAgICAgICAgICB7dG9wLm1hcCgoZWZmb3J0LCBpZHgpID0+ICgKICAgICAgICAgICAgPGxpIGtleT17ZWZmb3J0LmlkfSBjbGFzc05hbWU9InBiLXJvdyI+CiAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgIDxzdHJvbmc+I3tpZHggKyAxfSDCtyB7Zm9ybWF0RHVyYXRpb24oZWZmb3J0LnRpbWVTZWMpfTwvc3Ryb25nPgogICAgICAgICAgICAgICAgPHA+CiAgICAgICAgICAgICAgICAgINen16bXkSB7Zm9ybWF0UGFjZShlZmZvcnQucGFjZU1pblBlckttKX0g15PXpycv16ci154gwrcg157Xp9eV16g6IHtlZmZvcnQuc291cmNlID09PSAicm9sbGluZ19zZWdtZW50IiA/ICLXl9ec16cg157XqNeZ16bXlCIgOiAi16jXmdem15QifQogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+CiAgICAgICAgICAgICAgICAgINeq15DXqNeZ15o6IHtmb3JtYXREaXNwbGF5RGF0ZShlZmZvcnQud29ya291dFN0YXJ0QXQuc2xpY2UoMCwgMTApKX0KICAgICAgICAgICAgICAgICAge2VmZm9ydC5zb3VyY2UgPT09ICJyb2xsaW5nX3NlZ21lbnQiICYmIGVmZm9ydC5zZWdtZW50U3RhcnRTZWMgIT0gbnVsbCAmJiBlZmZvcnQuc2VnbWVudEVuZFNlYyAhPSBudWxsCiAgICAgICAgICAgICAgICAgICAgPyBgIMK3INeh15LXnteg15g6ICR7Zm9ybWF0RHVyYXRpb24oZWZmb3J0LnNlZ21lbnRTdGFydFNlYyl9LSR7Zm9ybWF0RHVyYXRpb24oZWZmb3J0LnNlZ21lbnRFbmRTZWMpfWAKICAgICAgICAgICAgICAgICAgICA6ICIifQogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyb3ciPgogICAgICAgICAgICAgICAgPExpbmsgaHJlZj17d29ya291dERldGFpbFBhdGgoZWZmb3J0LndvcmtvdXRJZCl9IGNsYXNzTmFtZT0iaW5saW5lLWN0YS1saW5rIHN1YnRsZS1saW5rIj4KICAgICAgICAgICAgICAgICAg15DXmdee15XXnyDXnten15XXqAogICAgICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2xpPgogICAgICAgICAgKSl9CiAgICAgICAgICB7ISFlcnJvciAmJiA8bGk+e2Vycm9yfTwvbGk+fQogICAgICAgICAgeyFlcnJvciAmJiB0b3AubGVuZ3RoID09PSAwICYmIDxsaT7XkNeZ158g16DXqteV16DXmdedINeW157Xmdeg15nXnSDXm9eo15LXoiDXnNee16jXl9enINeU15bXlC48L2xpPn0KICAgICAgICA8L3VsPgogICAgICA8L1NlY3Rpb24+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0icm93Ij4KICAgICAgICA8TGluayBocmVmPSIvYW5hbHl0aWNzIiBjbGFzc05hbWU9ImlubGluZS1jdGEtbGluayBzdWJ0bGUtbGluayI+CiAgICAgICAgICDXl9eW16jXlCDXnNeg16rXldeg15nXnSDXldeU15nXodeY15XXqNeZ15QKICAgICAgICA8L0xpbms+CiAgICAgIDwvZGl2PgogICAgPC8+CiAgKTsKfQo="}
+"use client";
+
+import Link from "next/link";
+import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
+import { Section } from "@/components/cards";
+import { formatDisplayDate } from "@/lib/date";
+import { workoutDetailPath } from "@/lib/url";
+
+type TopEffort = {
+  id: string;
+  distanceKey: string;
+  distanceKm: number;
+  timeSec: number;
+  paceMinPerKm: number;
+  workoutId: string;
+  workoutStartAt: string;
+  source: "whole_workout" | "rolling_segment";
+  segmentStartSec: number | null;
+  segmentEndSec: number | null;
+};
+
+function formatDuration(sec: number) {
+  const hours = Math.floor(sec / 3600);
+  const minutes = Math.floor((sec % 3600) / 60);
+  const seconds = Math.round(sec % 60);
+  if (hours > 0) return `${hours}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  return `${minutes}:${String(seconds).padStart(2, "0")}`;
+}
+
+function formatPace(pace: number) {
+  const m = Math.floor(pace);
+  const s = Math.round((pace - m) * 60);
+  return `${m}:${String(s).padStart(2, "0")}`;
+}
+
+function distanceTitle(key: string) {
+  const map: Record<string, string> = {
+    "1k": '1 ק"מ',
+    "3k": '3 ק"מ',
+    "5k": '5 ק"מ',
+    "10k": '10 ק"מ',
+    "15k": '15 ק"מ',
+    half: "חצי מרתון",
+    "25k": '25 ק"מ',
+    "30k": '30 ק"מ'
+  };
+  return map[key] ?? key;
+}
+
+export default function PbDistancePage() {
+  const params = useParams<{ distance: string }>();
+  const distance = typeof params?.distance === "string" ? params.distance : "";
+  const [top, setTop] = useState<TopEffort[]>([]);
+  const [error, setError] = useState<string>("");
+  const [includeSegments, setIncludeSegments] = useState(true);
+
+  useEffect(() => {
+    if (!distance) return;
+    const segmentsParam = includeSegments ? "&includeSegments=1" : "";
+    void fetch(`/api/analytics/pb?distance=${distance}&limit=8${segmentsParam}`)
+      .then((r) => r.json())
+      .then((payload) => {
+        if (payload.error) {
+          setError(payload.error);
+          return;
+        }
+        setTop(payload.top as TopEffort[]);
+      });
+  }, [distance, includeSegments]);
+
+  return (
+    <>
+      <header className="page-header">
+        <h1>8 התוצאות הטובות · {distanceTitle(distance)}</h1>
+        <p>{includeSegments ? "כולל גם חלקים מתוך ריצות אחרות." : "רק ריצות ייעודיות למרחק הזה."}</p>
+      </header>
+
+      <div className="row">
+        <button type="button" className="choice-btn" onClick={() => setIncludeSegments((prev) => !prev)}>
+          {includeSegments ? "הצג רק ריצות ייעודיות" : "הרחב: כלול גם סגמנטים מריצות ארוכות"}
+        </button>
+      </div>
+
+      <Section title="תוצאות מובילות" subtitle="כולל סוג מקור וניווט לאימון המקורי">
+        <ul className="list">
+          {top.map((effort, idx) => (
+            <li key={effort.id} className="pb-row">
+              <div>
+                <strong>#{idx + 1} · {formatDuration(effort.timeSec)}</strong>
+                <p>
+                  קצב {formatPace(effort.paceMinPerKm)} דק'/ק"מ · מקור: {effort.source === "rolling_segment" ? "חלק מריצה" : "ריצה"}
+                </p>
+                <p>
+                  תאריך: {formatDisplayDate(effort.workoutStartAt.slice(0, 10))}
+                  {effort.source === "rolling_segment" && effort.segmentStartSec != null && effort.segmentEndSec != null
+                    ? ` · סגמנט: ${formatDuration(effort.segmentStartSec)}-${formatDuration(effort.segmentEndSec)}`
+                    : ""}
+                </p>
+              </div>
+              <div className="row">
+                <Link href={workoutDetailPath(effort.workoutId)} className="inline-cta-link subtle-link">
+                  אימון מקור
+                </Link>
+              </div>
+            </li>
+          ))}
+          {!!error && <li>{error}</li>}
+          {!error && top.length === 0 && <li>אין נתונים זמינים כרגע למרחק הזה.</li>}
+        </ul>
+      </Section>
+
+      <div className="row">
+        <Link href="/analytics" className="inline-cta-link subtle-link">
+          חזרה לנתונים והיסטוריה
+        </Link>
+      </div>
+    </>
+  );
+}

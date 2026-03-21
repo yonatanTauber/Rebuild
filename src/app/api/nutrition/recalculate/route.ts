@@ -1,1 +1,10 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgcmVjYWxjdWxhdGVOdXRyaXRpb25Gcm9tIH0gZnJvbSAiQC9saWIvbnV0cml0aW9uLWVuZ2luZSI7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gUE9TVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IGJvZHkgPSAoYXdhaXQgcmVxdWVzdC5qc29uKCkuY2F0Y2goKCkgPT4gKHt9KSkpIGFzIHsgZGF5cz86IG51bWJlciB9OwogIGNvbnN0IGRheXNSYXcgPSBOdW1iZXIoYm9keS5kYXlzID8/IDgpOwogIGNvbnN0IGRheXMgPSBOdW1iZXIuaXNGaW5pdGUoZGF5c1JhdykgPyBNYXRoLm1heCgxLCBNYXRoLm1pbigyMSwgTWF0aC5yb3VuZChkYXlzUmF3KSkpIDogODsKICBjb25zdCBwbGFucyA9IHJlY2FsY3VsYXRlTnV0cml0aW9uRnJvbSh1bmRlZmluZWQsIGRheXMpOwogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlLCBjb3VudDogcGxhbnMubGVuZ3RoIH0pOwp9Cg=="}
+import { NextRequest, NextResponse } from "next/server";
+import { recalculateNutritionFrom } from "@/lib/nutrition-engine";
+
+export async function POST(request: NextRequest) {
+  const body = (await request.json().catch(() => ({}))) as { days?: number };
+  const daysRaw = Number(body.days ?? 8);
+  const days = Number.isFinite(daysRaw) ? Math.max(1, Math.min(21, Math.round(daysRaw))) : 8;
+  const plans = recalculateNutritionFrom(undefined, days);
+  return NextResponse.json({ ok: true, count: plans.length });
+}

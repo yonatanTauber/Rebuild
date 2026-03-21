@@ -1,1 +1,169 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IFVpU2VsZWN0IGZyb20gIkAvY29tcG9uZW50cy91aS1zZWxlY3QiOwoKZXhwb3J0IHR5cGUgU3RyZW5ndGhGb2N1c0FyZWEgPSAiZnVsbF9ib2R5IiB8ICJ1cHBlcl9ib2R5IiB8ICJsb3dlcl9ib2R5IiB8ICJjb3JlIjsKCmV4cG9ydCB0eXBlIFN0cmVuZ3RoRmVlZGJhY2tWYWx1ZXMgPSB7CiAgc3RyZW5ndGhFZmZvcnRTY29yZTogMSB8IDIgfCAzIHwgNCB8IDU7CiAgc3RyZW5ndGhNdXNjbGVMb2FkU2NvcmU6IDEgfCAyIHwgMyB8IDQgfCA1OwogIHN0cmVuZ3RoVGVjaG5pcXVlU2NvcmU6IDEgfCAyIHwgMyB8IDQgfCA1OwogIHN0cmVuZ3RoRmFpbHVyZVByb3hpbWl0eVNjb3JlOiAxIHwgMiB8IDMgfCA0IHwgNTsKICBzdHJlbmd0aFBhaW5TY29yZTogMSB8IDIgfCAzIHwgNCB8IDU7CiAgc3RyZW5ndGhSZWNvdmVyeVNjb3JlOiAxIHwgMiB8IDMgfCA0IHwgNTsKICBzdHJlbmd0aEZvY3VzQXJlYTogU3RyZW5ndGhGb2N1c0FyZWE7CiAgc3RyZW5ndGhQYWluQXJlYTogc3RyaW5nOwogIHN0cmVuZ3RoT3Blbk5vdGU6IHN0cmluZzsKfTsKCnR5cGUgUHJvcHMgPSB7CiAgdmFsdWU6IFN0cmVuZ3RoRmVlZGJhY2tWYWx1ZXM7CiAgb25DaGFuZ2U6IChuZXh0OiBTdHJlbmd0aEZlZWRiYWNrVmFsdWVzKSA9PiB2b2lkOwogIHBhaW5BcmVhcz86IHN0cmluZ1tdOwogIGNvbXBhY3Q/OiBib29sZWFuOwp9OwoKY29uc3Qgc2NvcmVTZXRzOiBBcnJheTx7CiAga2V5OiBrZXlvZiBQaWNrPAogICAgU3RyZW5ndGhGZWVkYmFja1ZhbHVlcywKICAgIHwgInN0cmVuZ3RoRWZmb3J0U2NvcmUiCiAgICB8ICJzdHJlbmd0aE11c2NsZUxvYWRTY29yZSIKICAgIHwgInN0cmVuZ3RoVGVjaG5pcXVlU2NvcmUiCiAgICB8ICJzdHJlbmd0aEZhaWx1cmVQcm94aW1pdHlTY29yZSIKICAgIHwgInN0cmVuZ3RoUGFpblNjb3JlIgogICAgfCAic3RyZW5ndGhSZWNvdmVyeVNjb3JlIgogID47CiAgdGl0bGU6IHN0cmluZzsKICBvcHRpb25zOiBbc3RyaW5nLCBzdHJpbmcsIHN0cmluZywgc3RyaW5nLCBzdHJpbmddOwp9PiA9IFsKICB7CiAgICBrZXk6ICJzdHJlbmd0aEVmZm9ydFNjb3JlIiwKICAgIHRpdGxlOiAi157XkNee16Ug15vXnNec15kg15HXkNeZ157XldefIiwKICAgIG9wdGlvbnM6IFsi16fXnCDXnteQ15XXkyIsICLXp9ecIiwgIteR15nXoNeV16DXmSIsICLXp9ep15QiLCAi16fXqdeUINee15DXldeTIl0KICB9LAogIHsKICAgIGtleTogInN0cmVuZ3RoTXVzY2xlTG9hZFNjb3JlIiwKICAgIHRpdGxlOiAi16LXldee16Eg16nXqNeZ16jXmSDXkdeQ15nXnteV158iLAogICAgb3B0aW9uczogWyLXp9ecINee15DXldeTIiwgIten15wiLCAi15HXmdeg15XXoNeZIiwgIteb15HXkyIsICLXm9eR15Mg157XkNeV15MiXQogIH0sCiAgewogICAga2V5OiAic3RyZW5ndGhUZWNobmlxdWVTY29yZSIsCiAgICB0aXRsZTogIteQ15nXm9eV16og15jXm9eg15nXqiIsCiAgICBvcHRpb25zOiBbIteg16fXmdeZ15Qg157XkNeV15MiLCAi16DXp9eZ15nXlCIsICLXodeR15nXqNeUIiwgIteZ15XXqNeT16oiLCAi157Xqtek16jXp9eqIl0KICB9LAogIHsKICAgIGtleTogInN0cmVuZ3RoRmFpbHVyZVByb3hpbWl0eVNjb3JlIiwKICAgIHRpdGxlOiAi16fXqNeR15Qg15zXm9ep15wiLAogICAgb3B0aW9uczogWyLXqNeX15XXpyDXnteb16nXnCIsICLXoteV15Mg157XqNeV15XXlyIsICLXkdeZ16DXldeg15kiLCAi16fXqNeV15Eg15zXm9ep15wiLCAi15vXntei15gg15vXqdecIl0KICB9LAogIHsKICAgIGtleTogInN0cmVuZ3RoUGFpblNjb3JlIiwKICAgIHRpdGxlOiAi15vXkNeRL9eo15LXmdep15XXqiIsCiAgICBvcHRpb25zOiBbItec15zXkCDXm9eQ15EiLCAi16jXkteZ16nXldeqINen15zXlCIsICLXm9eQ15Eg16fXnCIsICLXm9eQ15Eg157Xldeo15LXqSIsICLXm9eQ15Eg157Xqdee16LXldeq15kiXQogIH0sCiAgewogICAga2V5OiAic3RyZW5ndGhSZWNvdmVyeVNjb3JlIiwKICAgIHRpdGxlOiAi16rXl9eV16nXqiDXlNeq15DXldep16nXldeqINei15vXqdeZ15UiLAogICAgb3B0aW9uczogWyLXqNei16DXnyDXnteQ15XXkyIsICLXqNei16DXnyIsICLXkdeh15PXqCIsICLXoteZ15nXoyIsICLXnteV16rXqSJdCiAgfQpdOwoKY29uc3QgZm9jdXNPcHRpb25zOiBBcnJheTx7IHZhbHVlOiBTdHJlbmd0aEZvY3VzQXJlYTsgbGFiZWw6IHN0cmluZyB9PiA9IFsKICB7IHZhbHVlOiAiZnVsbF9ib2R5IiwgbGFiZWw6ICLXm9ecINeU15LXldejIiB9LAogIHsgdmFsdWU6ICJ1cHBlcl9ib2R5IiwgbGFiZWw6ICLXpNec15Ig15LXldejINei15zXmdeV158iIH0sCiAgeyB2YWx1ZTogImxvd2VyX2JvZHkiLCBsYWJlbDogItek15zXkiDXkteV16Mg16rXl9eq15XXnyIgfSwKICB7IHZhbHVlOiAiY29yZSIsIGxhYmVsOiAi15zXmdeR15QiIH0KXTsKCmV4cG9ydCBmdW5jdGlvbiBkZWZhdWx0U3RyZW5ndGhGZWVkYmFja1ZhbHVlcygpOiBTdHJlbmd0aEZlZWRiYWNrVmFsdWVzIHsKICByZXR1cm4gewogICAgc3RyZW5ndGhFZmZvcnRTY29yZTogMywKICAgIHN0cmVuZ3RoTXVzY2xlTG9hZFNjb3JlOiAzLAogICAgc3RyZW5ndGhUZWNobmlxdWVTY29yZTogMiwKICAgIHN0cmVuZ3RoRmFpbHVyZVByb3hpbWl0eVNjb3JlOiAzLAogICAgc3RyZW5ndGhQYWluU2NvcmU6IDEsCiAgICBzdHJlbmd0aFJlY292ZXJ5U2NvcmU6IDMsCiAgICBzdHJlbmd0aEZvY3VzQXJlYTogImZ1bGxfYm9keSIsCiAgICBzdHJlbmd0aFBhaW5BcmVhOiAiIiwKICAgIHN0cmVuZ3RoT3Blbk5vdGU6ICIiCiAgfTsKfQoKZnVuY3Rpb24gc2NvcmVCdXR0b25zKAogIHRpdGxlOiBzdHJpbmcsCiAgbGFiZWxzOiBbc3RyaW5nLCBzdHJpbmcsIHN0cmluZywgc3RyaW5nLCBzdHJpbmddLAogIHZhbHVlOiAxIHwgMiB8IDMgfCA0IHwgNSwKICBvblBpY2s6IChzY29yZTogMSB8IDIgfCAzIHwgNCB8IDUpID0+IHZvaWQKKSB7CiAgcmV0dXJuICgKICAgIDxhcnRpY2xlIGNsYXNzTmFtZT0icnVuLWZlZWRiYWNrLXF1ZXN0aW9uIiBrZXk9e3RpdGxlfT4KICAgICAgPHA+e3RpdGxlfTwvcD4KICAgICAgPGRpdiBjbGFzc05hbWU9InJ1bi1zY29yZS1yb3ciPgogICAgICAgIHtsYWJlbHMubWFwKChsYWJlbCwgaW5kZXgpID0+IHsKICAgICAgICAgIGNvbnN0IHNjb3JlID0gKGluZGV4ICsgMSkgYXMgMSB8IDIgfCAzIHwgNCB8IDU7CiAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAga2V5PXtsYWJlbH0KICAgICAgICAgICAgICB0eXBlPSJidXR0b24iCiAgICAgICAgICAgICAgY2xhc3NOYW1lPXt2YWx1ZSA9PT0gc2NvcmUgPyAicnVuLW9wdGlvbi1idG4gc2VsZWN0ZWQiIDogInJ1bi1vcHRpb24tYnRuIn0KICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBvblBpY2soc2NvcmUpfQogICAgICAgICAgICA+CiAgICAgICAgICAgICAge2xhYmVsfQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICk7CiAgICAgICAgfSl9CiAgICAgIDwvZGl2PgogICAgPC9hcnRpY2xlPgogICk7Cn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFN0cmVuZ3RoRmVlZGJhY2tGb3JtKHsgdmFsdWUsIG9uQ2hhbmdlLCBwYWluQXJlYXMgPSBbXSwgY29tcGFjdCA9IGZhbHNlIH06IFByb3BzKSB7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPXtjb21wYWN0ID8gInJ1bi1mZWVkYmFjay1mb3JtIGNvbXBhY3QiIDogInJ1bi1mZWVkYmFjay1mb3JtIn0+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJydW4tZmVlZGJhY2stZ3JpZCI+CiAgICAgICAge3Njb3JlU2V0cy5tYXAoKGl0ZW0pID0+CiAgICAgICAgICBzY29yZUJ1dHRvbnMoaXRlbS50aXRsZSwgaXRlbS5vcHRpb25zLCB2YWx1ZVtpdGVtLmtleV0sIChzY29yZSkgPT4gb25DaGFuZ2UoeyAuLi52YWx1ZSwgW2l0ZW0ua2V5XTogc2NvcmUgfSkpCiAgICAgICAgKX0KICAgICAgPC9kaXY+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0iam91cm5hbC1mb3JtLWdyaWQiPgogICAgICAgIDxsYWJlbCBjbGFzc05hbWU9ImZpZWxkIj4KICAgICAgICAgINek15XXp9eV16Eg16LXmden16jXmQogICAgICAgICAgPFVpU2VsZWN0CiAgICAgICAgICAgIHZhbHVlPXt2YWx1ZS5zdHJlbmd0aEZvY3VzQXJlYX0KICAgICAgICAgICAgb25DaGFuZ2U9eyhuZXh0VmFsdWUpID0+IG9uQ2hhbmdlKHsgLi4udmFsdWUsIHN0cmVuZ3RoRm9jdXNBcmVhOiBuZXh0VmFsdWUgYXMgU3RyZW5ndGhGb2N1c0FyZWEgfSl9CiAgICAgICAgICAgIG9wdGlvbnM9e2ZvY3VzT3B0aW9uc30KICAgICAgICAgIC8+CiAgICAgICAgPC9sYWJlbD4KICAgICAgICB7dmFsdWUuc3RyZW5ndGhQYWluU2NvcmUgPj0gMiA/ICgKICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9ImZpZWxkIj4KICAgICAgICAgICAg15DXlteV16gg15vXkNeRICjXkNedINen15nXmdedKQogICAgICAgICAgICB7cGFpbkFyZWFzLmxlbmd0aCA+IDAgPyAoCiAgICAgICAgICAgICAgPFVpU2VsZWN0CiAgICAgICAgICAgICAgICB2YWx1ZT17dmFsdWUuc3RyZW5ndGhQYWluQXJlYX0KICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsobmV4dFZhbHVlKSA9PiBvbkNoYW5nZSh7IC4uLnZhbHVlLCBzdHJlbmd0aFBhaW5BcmVhOiBuZXh0VmFsdWUgfSl9CiAgICAgICAgICAgICAgICBvcHRpb25zPXtbeyB2YWx1ZTogIiIsIGxhYmVsOiAi15HXl9eoINeQ15bXldeoIiB9LCAuLi5wYWluQXJlYXMubWFwKChhcmVhKSA9PiAoeyB2YWx1ZTogYXJlYSwgbGFiZWw6IGFyZWEgfSkpXX0KICAgICAgICAgICAgICAvPgogICAgICAgICAgICApIDogKAogICAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgICAgdmFsdWU9e3ZhbHVlLnN0cmVuZ3RoUGFpbkFyZWF9CiAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGV2ZW50KSA9PiBvbkNoYW5nZSh7IC4uLnZhbHVlLCBzdHJlbmd0aFBhaW5BcmVhOiBldmVudC50YXJnZXQudmFsdWUgfSl9CiAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcj0i15zXntep15w6INeb16rXoyDXmdee15nXnyIKICAgICAgICAgICAgICAvPgogICAgICAgICAgICApfQogICAgICAgICAgPC9sYWJlbD4KICAgICAgICApIDogbnVsbH0KICAgICAgPC9kaXY+CgogICAgICA8bGFiZWwgY2xhc3NOYW1lPSJmaWVsZCI+CiAgICAgICAg15TXoteo15Qg15fXldek16nXmdeqICjXkNeV16TXpteZ15XXoNec15kpCiAgICAgICAgPHRleHRhcmVhCiAgICAgICAgICByb3dzPXtjb21wYWN0ID8gMiA6IDN9CiAgICAgICAgICB2YWx1ZT17dmFsdWUuc3RyZW5ndGhPcGVuTm90ZX0KICAgICAgICAgIG9uQ2hhbmdlPXsoZXZlbnQpID0+IG9uQ2hhbmdlKHsgLi4udmFsdWUsIHN0cmVuZ3RoT3Blbk5vdGU6IGV2ZW50LnRhcmdldC52YWx1ZSB9KX0KICAgICAgICAgIHBsYWNlaG9sZGVyPSLXnNee16nXnDog16fXmNec15HXnCAyNCDXp9e015IsINeh15jXmdedINeb15HXk9eZ150sINei15nXmdek15XXqiDXkdeZ15PXmdeZ150iCiAgICAgICAgLz4KICAgICAgPC9sYWJlbD4KICAgIDwvZGl2PgogICk7Cn0K"}
+"use client";
+
+import UiSelect from "@/components/ui-select";
+
+export type StrengthFocusArea = "full_body" | "upper_body" | "lower_body" | "core";
+
+export type StrengthFeedbackValues = {
+  strengthEffortScore: 1 | 2 | 3 | 4 | 5;
+  strengthMuscleLoadScore: 1 | 2 | 3 | 4 | 5;
+  strengthTechniqueScore: 1 | 2 | 3 | 4 | 5;
+  strengthFailureProximityScore: 1 | 2 | 3 | 4 | 5;
+  strengthPainScore: 1 | 2 | 3 | 4 | 5;
+  strengthRecoveryScore: 1 | 2 | 3 | 4 | 5;
+  strengthFocusArea: StrengthFocusArea;
+  strengthPainArea: string;
+  strengthOpenNote: string;
+};
+
+type Props = {
+  value: StrengthFeedbackValues;
+  onChange: (next: StrengthFeedbackValues) => void;
+  painAreas?: string[];
+  compact?: boolean;
+};
+
+const scoreSets: Array<{
+  key: keyof Pick<
+    StrengthFeedbackValues,
+    | "strengthEffortScore"
+    | "strengthMuscleLoadScore"
+    | "strengthTechniqueScore"
+    | "strengthFailureProximityScore"
+    | "strengthPainScore"
+    | "strengthRecoveryScore"
+  >;
+  title: string;
+  options: [string, string, string, string, string];
+}> = [
+  {
+    key: "strengthEffortScore",
+    title: "מאמץ כללי באימון",
+    options: ["קל מאוד", "קל", "בינוני", "קשה", "קשה מאוד"]
+  },
+  {
+    key: "strengthMuscleLoadScore",
+    title: "עומס שרירי באימון",
+    options: ["קל מאוד", "קל", "בינוני", "כבד", "כבד מאוד"]
+  },
+  {
+    key: "strengthTechniqueScore",
+    title: "איכות טכנית",
+    options: ["נקייה מאוד", "נקייה", "סבירה", "יורדת", "מתפרקת"]
+  },
+  {
+    key: "strengthFailureProximityScore",
+    title: "קרבה לכשל",
+    options: ["רחוק מכשל", "עוד מרווח", "בינוני", "קרוב לכשל", "כמעט כשל"]
+  },
+  {
+    key: "strengthPainScore",
+    title: "כאב/רגישות",
+    options: ["ללא כאב", "רגישות קלה", "כאב קל", "כאב מורגש", "כאב משמעותי"]
+  },
+  {
+    key: "strengthRecoveryScore",
+    title: "תחושת התאוששות עכשיו",
+    options: ["רענן מאוד", "רענן", "בסדר", "עייף", "מותש"]
+  }
+];
+
+const focusOptions: Array<{ value: StrengthFocusArea; label: string }> = [
+  { value: "full_body", label: "כל הגוף" },
+  { value: "upper_body", label: "פלג גוף עליון" },
+  { value: "lower_body", label: "פלג גוף תחתון" },
+  { value: "core", label: "ליבה" }
+];
+
+export function defaultStrengthFeedbackValues(): StrengthFeedbackValues {
+  return {
+    strengthEffortScore: 3,
+    strengthMuscleLoadScore: 3,
+    strengthTechniqueScore: 2,
+    strengthFailureProximityScore: 3,
+    strengthPainScore: 1,
+    strengthRecoveryScore: 3,
+    strengthFocusArea: "full_body",
+    strengthPainArea: "",
+    strengthOpenNote: ""
+  };
+}
+
+function scoreButtons(
+  title: string,
+  labels: [string, string, string, string, string],
+  value: 1 | 2 | 3 | 4 | 5,
+  onPick: (score: 1 | 2 | 3 | 4 | 5) => void
+) {
+  return (
+    <article className="run-feedback-question" key={title}>
+      <p>{title}</p>
+      <div className="run-score-row">
+        {labels.map((label, index) => {
+          const score = (index + 1) as 1 | 2 | 3 | 4 | 5;
+          return (
+            <button
+              key={label}
+              type="button"
+              className={value === score ? "run-option-btn selected" : "run-option-btn"}
+              onClick={() => onPick(score)}
+            >
+              {label}
+            </button>
+          );
+        })}
+      </div>
+    </article>
+  );
+}
+
+export default function StrengthFeedbackForm({ value, onChange, painAreas = [], compact = false }: Props) {
+  return (
+    <div className={compact ? "run-feedback-form compact" : "run-feedback-form"}>
+      <div className="run-feedback-grid">
+        {scoreSets.map((item) =>
+          scoreButtons(item.title, item.options, value[item.key], (score) => onChange({ ...value, [item.key]: score }))
+        )}
+      </div>
+
+      <div className="journal-form-grid">
+        <label className="field">
+          פוקוס עיקרי
+          <UiSelect
+            value={value.strengthFocusArea}
+            onChange={(nextValue) => onChange({ ...value, strengthFocusArea: nextValue as StrengthFocusArea })}
+            options={focusOptions}
+          />
+        </label>
+        {value.strengthPainScore >= 2 ? (
+          <label className="field">
+            אזור כאב (אם קיים)
+            {painAreas.length > 0 ? (
+              <UiSelect
+                value={value.strengthPainArea}
+                onChange={(nextValue) => onChange({ ...value, strengthPainArea: nextValue })}
+                options={[{ value: "", label: "בחר אזור" }, ...painAreas.map((area) => ({ value: area, label: area }))]}
+              />
+            ) : (
+              <input
+                value={value.strengthPainArea}
+                onChange={(event) => onChange({ ...value, strengthPainArea: event.target.value })}
+                placeholder="למשל: כתף ימין"
+              />
+            )}
+          </label>
+        ) : null}
+      </div>
+
+      <label className="field">
+        הערה חופשית (אופציונלי)
+        <textarea
+          rows={compact ? 2 : 3}
+          value={value.strengthOpenNote}
+          onChange={(event) => onChange({ ...value, strengthOpenNote: event.target.value })}
+          placeholder="למשל: קטלבל 24 ק״ג, סטים כבדים, עייפות בידיים"
+        />
+      </label>
+    </div>
+  );
+}

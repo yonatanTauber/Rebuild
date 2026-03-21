@@ -1,1 +1,21 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsKaW1wb3J0IHsgeiB9IGZyb20gJ3pvZCc7CmltcG9ydCB7IGdldFByZXNldEluc2lnaHRzIH0gZnJvbSAnQC9saWIvaW5zaWdodHMnOwoKY29uc3Qgc2NoZW1hID0gei5vYmplY3QoewogIHJhbmdlOiB6LmVudW0oWyczMGQnLCAnMTJ3JywgJzM2NWQnLCAnYWxsJ10pLmRlZmF1bHQoJzEydycpLAogIHNwb3J0OiB6LmVudW0oWydydW4nLCAnYmlrZScsICdzd2ltJywgJ2FsbCddKS5kZWZhdWx0KCdydW4nKQp9KTsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBwYXJzZWQgPSBzY2hlbWEuc2FmZVBhcnNlKHsKICAgIHJhbmdlOiByZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zLmdldCgncmFuZ2UnKSA/PyAnMTJ3JywKICAgIHNwb3J0OiByZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zLmdldCgnc3BvcnQnKSA/PyAncnVuJwogIH0pOwoKICBpZiAoIXBhcnNlZC5zdWNjZXNzKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogcGFyc2VkLmVycm9yLmZsYXR0ZW4oKSB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgcHJlc2V0czogZ2V0UHJlc2V0SW5zaWdodHMocGFyc2VkLmRhdGEucmFuZ2UsIHBhcnNlZC5kYXRhLnNwb3J0KSB9KTsKfQo="}
+import { NextRequest, NextResponse } from 'next/server';
+import { z } from 'zod';
+import { getPresetInsights } from '@/lib/insights';
+
+const schema = z.object({
+  range: z.enum(['30d', '12w', '365d', 'all']).default('12w'),
+  sport: z.enum(['run', 'bike', 'swim', 'all']).default('run')
+});
+
+export async function GET(request: NextRequest) {
+  const parsed = schema.safeParse({
+    range: request.nextUrl.searchParams.get('range') ?? '12w',
+    sport: request.nextUrl.searchParams.get('sport') ?? 'run'
+  });
+
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  return NextResponse.json({ presets: getPresetInsights(parsed.data.range, parsed.data.sport) });
+}

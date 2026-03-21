@@ -1,1 +1,221 @@
-{"data":"aW1wb3J0IHsgcmFuZG9tVVVJRCB9IGZyb20gIm5vZGU6Y3J5cHRvIjsKaW1wb3J0IHsgZGJRdWVyeSwgZGJRdWVyeU9uZSwgZ2V0RGJQcm92aWRlciB9IGZyb20gIkAvbGliL2RiLWRyaXZlciI7CmltcG9ydCB7IG1pZ3JhdGVEYiB9IGZyb20gIkAvbGliL2RiLW1pZ3JhdGUiOwoKdHlwZSBSdW5uaW5nU2hvZVJvdyA9IHsKICBpZDogc3RyaW5nOwogIG5hbWU6IHN0cmluZzsKICBicmFuZDogc3RyaW5nOwogIHN0YXJ0a206IG51bWJlcjsKICB0YXJnZXRrbTogbnVtYmVyOwogIGlzZGVmYXVsdDogbnVtYmVyOwogIGFjdGl2ZTogbnVtYmVyOwogIGNyZWF0ZWRhdDogc3RyaW5nOwogIHVwZGF0ZWRhdDogc3RyaW5nOwogIHVzZWRrbTogbnVtYmVyOwp9OwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGVuc3VyZUNsb3VkU2hvZXNSZWFkeSgpIHsKICBpZiAoZ2V0RGJQcm92aWRlcigpICE9PSAicG9zdGdyZXMiKSByZXR1cm47CiAgYXdhaXQgbWlncmF0ZURiKCk7Cn0KCmZ1bmN0aW9uIG1hcFNob2Uocm93OiBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPikgewogIGNvbnN0IGdldCA9IDxUPihrZXk6IHN0cmluZykgPT4gcm93W2tleV0gYXMgVDsKICBjb25zdCBzdGFydEttID0gTnVtYmVyKGdldCgic3RhcnRrbSIpID8/IGdldCgic3RhcnRLbSIpID8/IDApOwogIGNvbnN0IHRhcmdldEttID0gTnVtYmVyKGdldCgidGFyZ2V0a20iKSA/PyBnZXQoInRhcmdldEttIikgPz8gNzAwKTsKICBjb25zdCB1c2VkS20gPSBOdW1iZXIoZ2V0KCJ1c2Vka20iKSA/PyBnZXQoInVzZWRLbSIpID8/IDApOwogIGNvbnN0IHRvdGFsS20gPSBNYXRoLnJvdW5kKChzdGFydEttICsgdXNlZEttKSAqIDEwMCkgLyAxMDA7CiAgcmV0dXJuIHsKICAgIGlkOiBTdHJpbmcoZ2V0KCJpZCIpKSwKICAgIG5hbWU6IFN0cmluZyhnZXQoIm5hbWUiKSksCiAgICBicmFuZDogU3RyaW5nKGdldCgiYnJhbmQiKSksCiAgICBzdGFydEttLAogICAgdGFyZ2V0S20sCiAgICBpc0RlZmF1bHQ6IEJvb2xlYW4oTnVtYmVyKGdldCgiaXNkZWZhdWx0IikgPz8gZ2V0KCJpc0RlZmF1bHQiKSA/PyAwKSksCiAgICBhY3RpdmU6IEJvb2xlYW4oTnVtYmVyKGdldCgiYWN0aXZlIikgPz8gMSkpLAogICAgY3JlYXRlZEF0OiBTdHJpbmcoZ2V0KCJjcmVhdGVkYXQiKSA/PyBnZXQoImNyZWF0ZWRBdCIpID8/ICIiKSwKICAgIHVwZGF0ZWRBdDogU3RyaW5nKGdldCgidXBkYXRlZGF0IikgPz8gZ2V0KCJ1cGRhdGVkQXQiKSA/PyAiIiksCiAgICB1c2VkS206IE1hdGgucm91bmQodXNlZEttICogMTAwKSAvIDEwMCwKICAgIHRvdGFsS20sCiAgICByZW1haW5pbmdLbTogTWF0aC5yb3VuZCgodGFyZ2V0S20gLSAoc3RhcnRLbSArIHVzZWRLbSkpICogMTAwKSAvIDEwMAogIH07Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBjbG91ZExpc3RSdW5uaW5nU2hvZXMoKSB7CiAgYXdhaXQgZW5zdXJlQ2xvdWRTaG9lc1JlYWR5KCk7CiAgY29uc3QgcmVzID0gYXdhaXQgZGJRdWVyeTxSdW5uaW5nU2hvZVJvdz4oCiAgICBgCiAgICBTRUxFQ1QKICAgICAgcy4qLAogICAgICBDT0FMRVNDRShTVU0oQ0FTRSBXSEVOIHcuc3BvcnQgPSAncnVuJyBUSEVOIENPQUxFU0NFKHcuZGlzdGFuY2VNLCAwKSBFTFNFIDAgRU5EKSwgMCkgLyAxMDAwLjAgYXMgdXNlZEttCiAgICBGUk9NIHJ1bm5pbmdfc2hvZXMgcwogICAgTEVGVCBKT0lOIHdvcmtvdXRzIHcgT04gdy5zaG9lSWQgPSBzLmlkCiAgICBXSEVSRSBzLmFjdGl2ZSA9IDEKICAgIEdST1VQIEJZIHMuaWQKICAgIE9SREVSIEJZIHMuaXNEZWZhdWx0IERFU0MsIHMudXBkYXRlZEF0IERFU0MKICAgIGAKICApOwogIHJldHVybiByZXMucm93cy5tYXAoKHJvdykgPT4gbWFwU2hvZShyb3cgYXMgdW5rbm93biBhcyBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPikpOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gY2xvdWRMaXN0UnVubmluZ1Nob2VCcmFuZHMoKSB7CiAgYXdhaXQgZW5zdXJlQ2xvdWRTaG9lc1JlYWR5KCk7CiAgY29uc3QgcmVzID0gYXdhaXQgZGJRdWVyeTx7IG5hbWU6IHN0cmluZyB9PihgU0VMRUNUIG5hbWUgRlJPTSBydW5uaW5nX3Nob2VfYnJhbmRzIE9SREVSIEJZIExPV0VSKG5hbWUpIEFTQ2ApOwogIHJldHVybiByZXMucm93cy5tYXAoKHJvdykgPT4gU3RyaW5nKChyb3cgYXMgYW55KS5uYW1lKSk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBjbG91ZENyZWF0ZVJ1bm5pbmdTaG9lQnJhbmQobmFtZVJhdzogc3RyaW5nKSB7CiAgYXdhaXQgZW5zdXJlQ2xvdWRTaG9lc1JlYWR5KCk7CiAgY29uc3QgdHJpbW1lZCA9IFN0cmluZyhuYW1lUmF3IHx8ICIiKS50cmltKCk7CiAgaWYgKCF0cmltbWVkKSByZXR1cm4gbnVsbDsKICBjb25zdCBleGlzdGluZyA9IGF3YWl0IGRiUXVlcnlPbmU8eyBuYW1lOiBzdHJpbmcgfT4oCiAgICAiU0VMRUNUIG5hbWUgRlJPTSBydW5uaW5nX3Nob2VfYnJhbmRzIFdIRVJFIExPV0VSKG5hbWUpID0gTE9XRVIoJDEpIExJTUlUIDEiLAogICAgW3RyaW1tZWRdCiAgKTsKICBpZiAoZXhpc3Rpbmc/Lm5hbWUpIHJldHVybiBleGlzdGluZy5uYW1lOwogIGNvbnN0IGlkID0gcmFuZG9tVVVJRCgpOwogIGNvbnN0IG5vdyA9IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKTsKICBhd2FpdCBkYlF1ZXJ5KCJJTlNFUlQgSU5UTyBydW5uaW5nX3Nob2VfYnJhbmRzIChpZCwgbmFtZSwgY3JlYXRlZEF0KSBWQUxVRVMgKCQxLCQyLCQzKSIsIFtpZCwgdHJpbW1lZCwgbm93XSk7CiAgcmV0dXJuIHRyaW1tZWQ7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBjbG91ZENyZWF0ZVJ1bm5pbmdTaG9lKGlucHV0OiB7CiAgbmFtZTogc3RyaW5nOwogIGJyYW5kOiBzdHJpbmc7CiAgc3RhcnRLbT86IG51bWJlcjsKICB0YXJnZXRLbTogbnVtYmVyOwogIGlzRGVmYXVsdD86IGJvb2xlYW47Cn0pIHsKICBhd2FpdCBlbnN1cmVDbG91ZFNob2VzUmVhZHkoKTsKICBhd2FpdCBjbG91ZENyZWF0ZVJ1bm5pbmdTaG9lQnJhbmQoaW5wdXQuYnJhbmQpOwogIGNvbnN0IGlkID0gcmFuZG9tVVVJRCgpOwogIGNvbnN0IG5vdyA9IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKTsKICBpZiAoaW5wdXQuaXNEZWZhdWx0KSB7CiAgICBhd2FpdCBkYlF1ZXJ5KCJVUERBVEUgcnVubmluZ19zaG9lcyBTRVQgaXNEZWZhdWx0ID0gMCwgdXBkYXRlZEF0ID0gJDEgV0hFUkUgaXNEZWZhdWx0ID0gMSIsIFtub3ddKTsKICB9CiAgYXdhaXQgZGJRdWVyeSgKICAgIGAKICAgIElOU0VSVCBJTlRPIHJ1bm5pbmdfc2hvZXMgKGlkLCBuYW1lLCBicmFuZCwgc3RhcnRLbSwgdGFyZ2V0S20sIGlzRGVmYXVsdCwgYWN0aXZlLCBjcmVhdGVkQXQsIHVwZGF0ZWRBdCkKICAgIFZBTFVFUyAoJDEsJDIsJDMsJDQsJDUsJDYsMSwkNywkNykKICAgIGAsCiAgICBbCiAgICAgIGlkLAogICAgICBTdHJpbmcoaW5wdXQubmFtZSB8fCAiIikudHJpbSgpLAogICAgICBTdHJpbmcoaW5wdXQuYnJhbmQgfHwgIiIpLnRyaW0oKSwKICAgICAgTWF0aC5tYXgoMCwgTnVtYmVyKGlucHV0LnN0YXJ0S20gPz8gMCkpLAogICAgICBNYXRoLm1heCgxLCBOdW1iZXIoaW5wdXQudGFyZ2V0S20pKSwKICAgICAgaW5wdXQuaXNEZWZhdWx0ID8gMSA6IDAsCiAgICAgIG5vdwogICAgXQogICk7CiAgcmV0dXJuIGlkOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gY2xvdWRVcGRhdGVSdW5uaW5nU2hvZShpbnB1dDogewogIGlkOiBzdHJpbmc7CiAgbmFtZTogc3RyaW5nOwogIGJyYW5kOiBzdHJpbmc7CiAgc3RhcnRLbTogbnVtYmVyOwogIHRhcmdldEttOiBudW1iZXI7CiAgaXNEZWZhdWx0PzogYm9vbGVhbjsKfSkgewogIGF3YWl0IGVuc3VyZUNsb3VkU2hvZXNSZWFkeSgpOwogIGF3YWl0IGNsb3VkQ3JlYXRlUnVubmluZ1Nob2VCcmFuZChpbnB1dC5icmFuZCk7CiAgY29uc3Qgbm93ID0gbmV3IERhdGUoKS50b0lTT1N0cmluZygpOwogIGlmIChpbnB1dC5pc0RlZmF1bHQpIHsKICAgIGF3YWl0IGRiUXVlcnkoIlVQREFURSBydW5uaW5nX3Nob2VzIFNFVCBpc0RlZmF1bHQgPSAwLCB1cGRhdGVkQXQgPSAkMSBXSEVSRSBpc0RlZmF1bHQgPSAxIiwgW25vd10pOwogIH0KICBhd2FpdCBkYlF1ZXJ5KAogICAgYAogICAgVVBEQVRFIHJ1bm5pbmdfc2hvZXMKICAgIFNFVCBuYW1lID0gJDEsCiAgICAgICAgYnJhbmQgPSAkMiwKICAgICAgICBzdGFydEttID0gJDMsCiAgICAgICAgdGFyZ2V0S20gPSAkNCwKICAgICAgICBpc0RlZmF1bHQgPSBDQVNFIFdIRU4gJDUgVEhFTiAxIEVMU0UgaXNEZWZhdWx0IEVORCwKICAgICAgICB1cGRhdGVkQXQgPSAkNgogICAgV0hFUkUgaWQgPSAkNwogICAgYCwKICAgIFsKICAgICAgU3RyaW5nKGlucHV0Lm5hbWUgfHwgIiIpLnRyaW0oKSwKICAgICAgU3RyaW5nKGlucHV0LmJyYW5kIHx8ICIiKS50cmltKCksCiAgICAgIE1hdGgubWF4KDAsIE51bWJlcihpbnB1dC5zdGFydEttID8/IDApKSwKICAgICAgTWF0aC5tYXgoMSwgTnVtYmVyKGlucHV0LnRhcmdldEttID8/IDcwMCkpLAogICAgICBCb29sZWFuKGlucHV0LmlzRGVmYXVsdCksCiAgICAgIG5vdywKICAgICAgaW5wdXQuaWQKICAgIF0KICApOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gY2xvdWRTZXREZWZhdWx0UnVubmluZ1Nob2Uoc2hvZUlkOiBzdHJpbmcpIHsKICBhd2FpdCBlbnN1cmVDbG91ZFNob2VzUmVhZHkoKTsKICBjb25zdCBub3cgPSBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCk7CiAgYXdhaXQgZGJRdWVyeSgiVVBEQVRFIHJ1bm5pbmdfc2hvZXMgU0VUIGlzRGVmYXVsdCA9IDAsIHVwZGF0ZWRBdCA9ICQxIFdIRVJFIGlzRGVmYXVsdCA9IDEiLCBbbm93XSk7CiAgYXdhaXQgZGJRdWVyeSgiVVBEQVRFIHJ1bm5pbmdfc2hvZXMgU0VUIGlzRGVmYXVsdCA9IDEsIHVwZGF0ZWRBdCA9ICQxIFdIRVJFIGlkID0gJDIiLCBbbm93LCBzaG9lSWRdKTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGNsb3VkQXNzaWduU2hvZVRvV29ya291dCh3b3Jrb3V0SWQ6IHN0cmluZywgc2hvZUlkOiBzdHJpbmcgfCBudWxsKTogUHJvbWlzZTxudW1iZXIgfCBudWxsPiB7CiAgYXdhaXQgZW5zdXJlQ2xvdWRTaG9lc1JlYWR5KCk7CiAgaWYgKCFzaG9lSWQpIHsKICAgIGF3YWl0IGRiUXVlcnkoIlVQREFURSB3b3Jrb3V0cyBTRVQgc2hvZUlkID0gTlVMTCwgc2hvZUttQXRBc3NpZ24gPSBOVUxMIFdIRVJFIGlkID0gJDEiLCBbd29ya291dElkXSk7CiAgICByZXR1cm4gbnVsbDsKICB9CgogIGNvbnN0IHdvcmtvdXQgPSBhd2FpdCBkYlF1ZXJ5T25lPHsgc3BvcnQ6IHN0cmluZzsgZGlzdGFuY2VtOiBudW1iZXIgfT4oCiAgICBgU0VMRUNUIHNwb3J0LCBDT0FMRVNDRShkaXN0YW5jZU0sIDApIEFTIGRpc3RhbmNlTSBGUk9NIHdvcmtvdXRzIFdIRVJFIGlkID0gJDEgTElNSVQgMWAsCiAgICBbd29ya291dElkXQogICk7CiAgaWYgKCF3b3Jrb3V0KSByZXR1cm4gbnVsbDsKCiAgY29uc3Qgc2hvZSA9IGF3YWl0IGRiUXVlcnlPbmU8eyBzdGFydGttOiBudW1iZXIgfT4oCiAgICBgU0VMRUNUIHN0YXJ0S20gRlJPTSBydW5uaW5nX3Nob2VzIFdIRVJFIGlkID0gJDEgTElNSVQgMWAsCiAgICBbc2hvZUlkXQogICk7CiAgaWYgKCFzaG9lKSByZXR1cm4gbnVsbDsKCiAgY29uc3QgdXNhZ2UgPSBhd2FpdCBkYlF1ZXJ5T25lPHsgdXNlZGttOiBudW1iZXIgfT4oCiAgICBgCiAgICBTRUxFQ1QgQ09BTEVTQ0UoU1VNKENBU0UgV0hFTiBzcG9ydCA9ICdydW4nIFRIRU4gQ09BTEVTQ0UoZGlzdGFuY2VNLCAwKSBFTFNFIDAgRU5EKSwgMCkgLyAxMDAwLjAgQVMgdXNlZEttCiAgICBGUk9NIHdvcmtvdXRzCiAgICBXSEVSRSBzaG9lSWQgPSAkMQogICAgICBBTkQgaWQgPD4gJDIKICAgIGAsCiAgICBbc2hvZUlkLCB3b3Jrb3V0SWRdCiAgKTsKCiAgY29uc3Qgc3BvcnQgPSBTdHJpbmcoKHdvcmtvdXQgYXMgYW55KS5zcG9ydCk7CiAgY29uc3QgZGlzdGFuY2VNID0gTnVtYmVyKCh3b3Jrb3V0IGFzIGFueSkuZGlzdGFuY2VtID8/ICh3b3Jrb3V0IGFzIGFueSkuZGlzdGFuY2VNID8/IDApOwogIGNvbnN0IHN0YXJ0S20gPSBOdW1iZXIoKHNob2UgYXMgYW55KS5zdGFydGttID8/IChzaG9lIGFzIGFueSkuc3RhcnRLbSA/PyAwKTsKICBjb25zdCB1c2VkS20gPSBOdW1iZXIoKHVzYWdlIGFzIGFueSk/LnVzZWRrbSA/PyAodXNhZ2UgYXMgYW55KT8udXNlZEttID8/IDApOwogIGNvbnN0IHdvcmtvdXREaXN0YW5jZUttID0gc3BvcnQgPT09ICJydW4iID8gTWF0aC5tYXgoMCwgZGlzdGFuY2VNIC8gMTAwMC4wKSA6IDA7CiAgY29uc3Qgc2hvZUttQXRBc3NpZ24gPSBOdW1iZXIoKHN0YXJ0S20gKyB1c2VkS20gKyB3b3Jrb3V0RGlzdGFuY2VLbSkudG9GaXhlZCgzKSk7CgogIGF3YWl0IGRiUXVlcnkoIlVQREFURSB3b3Jrb3V0cyBTRVQgc2hvZUlkID0gJDEsIHNob2VLbUF0QXNzaWduID0gJDIgV0hFUkUgaWQgPSAkMyIsIFtzaG9lSWQsIHNob2VLbUF0QXNzaWduLCB3b3Jrb3V0SWRdKTsKICByZXR1cm4gc2hvZUttQXRBc3NpZ247Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBjbG91ZEdldFBlbmRpbmdSdW5TaG9lQXNzaWdubWVudHMobGltaXQgPSA2KSB7CiAgYXdhaXQgZW5zdXJlQ2xvdWRTaG9lc1JlYWR5KCk7CiAgY29uc3Qgc2luY2UgPSBuZXcgRGF0ZShEYXRlLm5vdygpIC0gMjEgKiAyNCAqIDYwICogNjAgKiAxMDAwKS50b0lTT1N0cmluZygpOwogIGNvbnN0IHJlcyA9IGF3YWl0IGRiUXVlcnk8UmVjb3JkPHN0cmluZywgdW5rbm93bj4+KAogICAgYAogICAgU0VMRUNUIGlkIGFzIHdvcmtvdXRJZCwgc3RhcnRBdCwgZGlzdGFuY2VNLCBkdXJhdGlvblNlYwogICAgRlJPTSB3b3Jrb3V0cwogICAgV0hFUkUgc3BvcnQgPSAncnVuJwogICAgICBBTkQgc2hvZUlkIElTIE5VTEwKICAgICAgQU5EIHN0YXJ0QXQgPj0gJDEKICAgIE9SREVSIEJZIHN0YXJ0QXQgREVTQwogICAgTElNSVQgJDIKICAgIGAsCiAgICBbc2luY2UsIGxpbWl0XQogICk7CiAgcmV0dXJuIHJlcy5yb3dzLm1hcCgocm93KSA9PiAoewogICAgd29ya291dElkOiBTdHJpbmcoKHJvdyBhcyBhbnkpLndvcmtvdXRpZCA/PyAocm93IGFzIGFueSkud29ya291dElkID8/IChyb3cgYXMgYW55KS5pZCksCiAgICBzdGFydEF0OiBTdHJpbmcoKHJvdyBhcyBhbnkpLnN0YXJ0YXQgPz8gKHJvdyBhcyBhbnkpLnN0YXJ0QXQpLAogICAgZGlzdGFuY2VNOiAocm93IGFzIGFueSkuZGlzdGFuY2VtID09IG51bGwgJiYgKHJvdyBhcyBhbnkpLmRpc3RhbmNlTSA9PSBudWxsID8gbnVsbCA6IE51bWJlcigocm93IGFzIGFueSkuZGlzdGFuY2VtID8/IChyb3cgYXMgYW55KS5kaXN0YW5jZU0pLAogICAgZHVyYXRpb25TZWM6IE51bWJlcigocm93IGFzIGFueSkuZHVyYXRpb25zZWMgPz8gKHJvdyBhcyBhbnkpLmR1cmF0aW9uU2VjID8/IDApCiAgfSkpOwp9Cgo="}
+import { randomUUID } from "node:crypto";
+import { dbQuery, dbQueryOne, getDbProvider } from "@/lib/db-driver";
+import { migrateDb } from "@/lib/db-migrate";
+
+type RunningShoeRow = {
+  id: string;
+  name: string;
+  brand: string;
+  startkm: number;
+  targetkm: number;
+  isdefault: number;
+  active: number;
+  createdat: string;
+  updatedat: string;
+  usedkm: number;
+};
+
+export async function ensureCloudShoesReady() {
+  if (getDbProvider() !== "postgres") return;
+  await migrateDb();
+}
+
+function mapShoe(row: Record<string, unknown>) {
+  const get = <T>(key: string) => row[key] as T;
+  const startKm = Number(get("startkm") ?? get("startKm") ?? 0);
+  const targetKm = Number(get("targetkm") ?? get("targetKm") ?? 700);
+  const usedKm = Number(get("usedkm") ?? get("usedKm") ?? 0);
+  const totalKm = Math.round((startKm + usedKm) * 100) / 100;
+  return {
+    id: String(get("id")),
+    name: String(get("name")),
+    brand: String(get("brand")),
+    startKm,
+    targetKm,
+    isDefault: Boolean(Number(get("isdefault") ?? get("isDefault") ?? 0)),
+    active: Boolean(Number(get("active") ?? 1)),
+    createdAt: String(get("createdat") ?? get("createdAt") ?? ""),
+    updatedAt: String(get("updatedat") ?? get("updatedAt") ?? ""),
+    usedKm: Math.round(usedKm * 100) / 100,
+    totalKm,
+    remainingKm: Math.round((targetKm - (startKm + usedKm)) * 100) / 100
+  };
+}
+
+export async function cloudListRunningShoes() {
+  await ensureCloudShoesReady();
+  const res = await dbQuery<RunningShoeRow>(
+    `
+    SELECT
+      s.*,
+      COALESCE(SUM(CASE WHEN w.sport = 'run' THEN COALESCE(w.distanceM, 0) ELSE 0 END), 0) / 1000.0 as usedKm
+    FROM running_shoes s
+    LEFT JOIN workouts w ON w.shoeId = s.id
+    WHERE s.active = 1
+    GROUP BY s.id
+    ORDER BY s.isDefault DESC, s.updatedAt DESC
+    `
+  );
+  return res.rows.map((row) => mapShoe(row as unknown as Record<string, unknown>));
+}
+
+export async function cloudListRunningShoeBrands() {
+  await ensureCloudShoesReady();
+  const res = await dbQuery<{ name: string }>(`SELECT name FROM running_shoe_brands ORDER BY LOWER(name) ASC`);
+  return res.rows.map((row) => String((row as any).name));
+}
+
+export async function cloudCreateRunningShoeBrand(nameRaw: string) {
+  await ensureCloudShoesReady();
+  const trimmed = String(nameRaw || "").trim();
+  if (!trimmed) return null;
+  const existing = await dbQueryOne<{ name: string }>(
+    "SELECT name FROM running_shoe_brands WHERE LOWER(name) = LOWER($1) LIMIT 1",
+    [trimmed]
+  );
+  if (existing?.name) return existing.name;
+  const id = randomUUID();
+  const now = new Date().toISOString();
+  await dbQuery("INSERT INTO running_shoe_brands (id, name, createdAt) VALUES ($1,$2,$3)", [id, trimmed, now]);
+  return trimmed;
+}
+
+export async function cloudCreateRunningShoe(input: {
+  name: string;
+  brand: string;
+  startKm?: number;
+  targetKm: number;
+  isDefault?: boolean;
+}) {
+  await ensureCloudShoesReady();
+  await cloudCreateRunningShoeBrand(input.brand);
+  const id = randomUUID();
+  const now = new Date().toISOString();
+  if (input.isDefault) {
+    await dbQuery("UPDATE running_shoes SET isDefault = 0, updatedAt = $1 WHERE isDefault = 1", [now]);
+  }
+  await dbQuery(
+    `
+    INSERT INTO running_shoes (id, name, brand, startKm, targetKm, isDefault, active, createdAt, updatedAt)
+    VALUES ($1,$2,$3,$4,$5,$6,1,$7,$7)
+    `,
+    [
+      id,
+      String(input.name || "").trim(),
+      String(input.brand || "").trim(),
+      Math.max(0, Number(input.startKm ?? 0)),
+      Math.max(1, Number(input.targetKm)),
+      input.isDefault ? 1 : 0,
+      now
+    ]
+  );
+  return id;
+}
+
+export async function cloudUpdateRunningShoe(input: {
+  id: string;
+  name: string;
+  brand: string;
+  startKm: number;
+  targetKm: number;
+  isDefault?: boolean;
+}) {
+  await ensureCloudShoesReady();
+  await cloudCreateRunningShoeBrand(input.brand);
+  const now = new Date().toISOString();
+  if (input.isDefault) {
+    await dbQuery("UPDATE running_shoes SET isDefault = 0, updatedAt = $1 WHERE isDefault = 1", [now]);
+  }
+  await dbQuery(
+    `
+    UPDATE running_shoes
+    SET name = $1,
+        brand = $2,
+        startKm = $3,
+        targetKm = $4,
+        isDefault = CASE WHEN $5 THEN 1 ELSE isDefault END,
+        updatedAt = $6
+    WHERE id = $7
+    `,
+    [
+      String(input.name || "").trim(),
+      String(input.brand || "").trim(),
+      Math.max(0, Number(input.startKm ?? 0)),
+      Math.max(1, Number(input.targetKm ?? 700)),
+      Boolean(input.isDefault),
+      now,
+      input.id
+    ]
+  );
+}
+
+export async function cloudSetDefaultRunningShoe(shoeId: string) {
+  await ensureCloudShoesReady();
+  const now = new Date().toISOString();
+  await dbQuery("UPDATE running_shoes SET isDefault = 0, updatedAt = $1 WHERE isDefault = 1", [now]);
+  await dbQuery("UPDATE running_shoes SET isDefault = 1, updatedAt = $1 WHERE id = $2", [now, shoeId]);
+}
+
+export async function cloudAssignShoeToWorkout(workoutId: string, shoeId: string | null): Promise<number | null> {
+  await ensureCloudShoesReady();
+  if (!shoeId) {
+    await dbQuery("UPDATE workouts SET shoeId = NULL, shoeKmAtAssign = NULL WHERE id = $1", [workoutId]);
+    return null;
+  }
+
+  const workout = await dbQueryOne<{ sport: string; distancem: number }>(
+    `SELECT sport, COALESCE(distanceM, 0) AS distanceM FROM workouts WHERE id = $1 LIMIT 1`,
+    [workoutId]
+  );
+  if (!workout) return null;
+
+  const shoe = await dbQueryOne<{ startkm: number }>(
+    `SELECT startKm FROM running_shoes WHERE id = $1 LIMIT 1`,
+    [shoeId]
+  );
+  if (!shoe) return null;
+
+  const usage = await dbQueryOne<{ usedkm: number }>(
+    `
+    SELECT COALESCE(SUM(CASE WHEN sport = 'run' THEN COALESCE(distanceM, 0) ELSE 0 END), 0) / 1000.0 AS usedKm
+    FROM workouts
+    WHERE shoeId = $1
+      AND id <> $2
+    `,
+    [shoeId, workoutId]
+  );
+
+  const sport = String((workout as any).sport);
+  const distanceM = Number((workout as any).distancem ?? (workout as any).distanceM ?? 0);
+  const startKm = Number((shoe as any).startkm ?? (shoe as any).startKm ?? 0);
+  const usedKm = Number((usage as any)?.usedkm ?? (usage as any)?.usedKm ?? 0);
+  const workoutDistanceKm = sport === "run" ? Math.max(0, distanceM / 1000.0) : 0;
+  const shoeKmAtAssign = Number((startKm + usedKm + workoutDistanceKm).toFixed(3));
+
+  await dbQuery("UPDATE workouts SET shoeId = $1, shoeKmAtAssign = $2 WHERE id = $3", [shoeId, shoeKmAtAssign, workoutId]);
+  return shoeKmAtAssign;
+}
+
+export async function cloudGetPendingRunShoeAssignments(limit = 6) {
+  await ensureCloudShoesReady();
+  const since = new Date(Date.now() - 21 * 24 * 60 * 60 * 1000).toISOString();
+  const res = await dbQuery<Record<string, unknown>>(
+    `
+    SELECT id as workoutId, startAt, distanceM, durationSec
+    FROM workouts
+    WHERE sport = 'run'
+      AND shoeId IS NULL
+      AND startAt >= $1
+    ORDER BY startAt DESC
+    LIMIT $2
+    `,
+    [since, limit]
+  );
+  return res.rows.map((row) => ({
+    workoutId: String((row as any).workoutid ?? (row as any).workoutId ?? (row as any).id),
+    startAt: String((row as any).startat ?? (row as any).startAt),
+    distanceM: (row as any).distancem == null && (row as any).distanceM == null ? null : Number((row as any).distancem ?? (row as any).distanceM),
+    durationSec: Number((row as any).durationsec ?? (row as any).durationSec ?? 0)
+  }));
+}
+

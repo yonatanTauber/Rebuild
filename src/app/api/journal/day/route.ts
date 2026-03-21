@@ -1,1 +1,24 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IGZvcm1hdElTT0RhdGUgfSBmcm9tICJAL2xpYi9kYXRlIjsKaW1wb3J0IHsgYnVpbGRKb3VybmFsRGF5QnVuZGxlIH0gZnJvbSAiQC9saWIvam91cm5hbC1kYXkiOwoKZXhwb3J0IGNvbnN0IHJ1bnRpbWUgPSAibm9kZWpzIjsKCmNvbnN0IHF1ZXJ5U2NoZW1hID0gei5vYmplY3QoewogIGRhdGU6IHouc3RyaW5nKCkucmVnZXgoL15cZHs0fS1cZHsyfS1cZHsyfSQvKS5vcHRpb25hbCgpCn0pOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IHBhcnNlZCA9IHF1ZXJ5U2NoZW1hLnNhZmVQYXJzZSh7CiAgICBkYXRlOiByZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zLmdldCgiZGF0ZSIpID8/IGZvcm1hdElTT0RhdGUoKQogIH0pOwoKICBpZiAoIXBhcnNlZC5zdWNjZXNzKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogcGFyc2VkLmVycm9yLmZsYXR0ZW4oKSB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgY29uc3QgZGF0ZSA9IHBhcnNlZC5kYXRhLmRhdGUgPz8gZm9ybWF0SVNPRGF0ZSgpOwogIGNvbnN0IGJ1bmRsZSA9IGF3YWl0IGJ1aWxkSm91cm5hbERheUJ1bmRsZShkYXRlLCB7IGluY2x1ZGVDb2FjaDogdHJ1ZSB9KTsKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oYnVuZGxlKTsKfQo="}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { formatISODate } from "@/lib/date";
+import { buildJournalDayBundle } from "@/lib/journal-day";
+
+export const runtime = "nodejs";
+
+const querySchema = z.object({
+  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional()
+});
+
+export async function GET(request: NextRequest) {
+  const parsed = querySchema.safeParse({
+    date: request.nextUrl.searchParams.get("date") ?? formatISODate()
+  });
+
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  const date = parsed.data.date ?? formatISODate();
+  const bundle = await buildJournalDayBundle(date, { includeCoach: true });
+  return NextResponse.json(bundle);
+}

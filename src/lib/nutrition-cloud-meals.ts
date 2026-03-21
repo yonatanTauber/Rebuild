@@ -1,1 +1,601 @@
-{"data":"aW1wb3J0IHsgcmFuZG9tVVVJRCB9IGZyb20gIm5vZGU6Y3J5cHRvIjsKaW1wb3J0IHsgZm9ybWF0SVNPRGF0ZSB9IGZyb20gIkAvbGliL2RhdGUiOwppbXBvcnQgeyBkYlF1ZXJ5LCBkYlF1ZXJ5T25lLCBnZXREYlByb3ZpZGVyIH0gZnJvbSAiQC9saWIvZGItZHJpdmVyIjsKaW1wb3J0IHsgbWlncmF0ZURiIH0gZnJvbSAiQC9saWIvZGItbWlncmF0ZSI7CmltcG9ydCB7IGVuc3VyZUNsb3VkTnV0cml0aW9uU2VlZCB9IGZyb20gIkAvbGliL251dHJpdGlvbi1jbG91ZCI7CmltcG9ydCB7IG51dHJpdGlvblF1YW50aXR5VG9HcmFtcywgbm9ybWFsaXplTnV0cml0aW9uVW5pdCB9IGZyb20gIkAvbGliL251dHJpdGlvbi11bml0cyI7CmltcG9ydCB0eXBlIHsgTWVhbFNsb3QsIE51dHJpdGlvbkRhaWx5UGxhbiwgTnV0cml0aW9uSW5ncmVkaWVudCwgTnV0cml0aW9uTWVhbCwgTnV0cml0aW9uTWVhbEl0ZW0sIE51dHJpdGlvblVuaXQgfSBmcm9tICJAL2xpYi90eXBlcyI7CmltcG9ydCB7IGdldE51dHJpdGlvbkZhdm9yaXRlVGVtcGxhdGVCeUlkIH0gZnJvbSAiQC9saWIvbnV0cml0aW9uLWVuZ2luZSI7CgpmdW5jdGlvbiBtZWFsVGl0bGUoc2xvdDogTWVhbFNsb3QpIHsKICBpZiAoc2xvdCA9PT0gImJyZWFrZmFzdCIpIHJldHVybiAi15DXqNeV15fXqiDXkdeV16fXqCI7CiAgaWYgKHNsb3QgPT09ICJsdW5jaCIpIHJldHVybiAi15DXqNeV15fXqiDXpteU16jXmdeZ150iOwogIGlmIChzbG90ID09PSAiZGlubmVyIikgcmV0dXJuICLXkNeo15XXl9eqINei16jXkSI7CiAgaWYgKHNsb3QgPT09ICJzbmFjayIpIHJldHVybiAi16DXqdeg15XXqSI7CiAgaWYgKHNsb3QgPT09ICJwcmVfcnVuIikgcmV0dXJuICLXnteW15XXnyDXnNek16DXmSDXqNeZ16bXlCI7CiAgaWYgKHNsb3QgPT09ICJkcmlua3MiKSByZXR1cm4gItep16rXmdeZ15QiOwogIHJldHVybiAi15DXqNeV15fXlCI7Cn0KCmZ1bmN0aW9uIHJvdW5kMSh2YWx1ZTogbnVtYmVyKSB7CiAgcmV0dXJuIE1hdGgucm91bmQodmFsdWUgKiAxMCkgLyAxMDsKfQoKZnVuY3Rpb24gcm91bmQwKHZhbHVlOiBudW1iZXIpIHsKICByZXR1cm4gTWF0aC5yb3VuZCh2YWx1ZSk7Cn0KCmZ1bmN0aW9uIGNvbXB1dGVNZWFsSXRlbXMoaW5wdXQ6IHsKICBpbmdyZWRpZW50QnlJZDogTWFwPAogICAgc3RyaW5nLAogICAgUGljazxOdXRyaXRpb25JbmdyZWRpZW50LCAiaWQiIHwgIm5hbWUiIHwgImtjYWxQZXIxMDAiIHwgInByb3RlaW5QZXIxMDAiIHwgImNhcmJzUGVyMTAwIiB8ICJmYXRQZXIxMDAiIHwgImdyYW1zUGVyVW5pdCI+CiAgPjsKICBpdGVtczogQXJyYXk8eyBpbmdyZWRpZW50SWQ6IHN0cmluZzsgcXVhbnRpdHk6IG51bWJlcjsgdW5pdDogTnV0cml0aW9uVW5pdCB9PjsKfSk6IHsgaXRlbXM6IE51dHJpdGlvbk1lYWxJdGVtW107IHRvdGFsczogUGljazxOdXRyaXRpb25NZWFsLCAidG90YWxLY2FsIiB8ICJwcm90ZWluRyIgfCAiY2FyYnNHIiB8ICJmYXRHIj4gfSB7CiAgY29uc3QgaXRlbXM6IE51dHJpdGlvbk1lYWxJdGVtW10gPSBbXTsKICBsZXQgdG90YWxLY2FsID0gMDsKICBsZXQgcHJvdGVpbkcgPSAwOwogIGxldCBjYXJic0cgPSAwOwogIGxldCBmYXRHID0gMDsKCiAgZm9yIChjb25zdCBlbnRyeSBvZiBpbnB1dC5pdGVtcykgewogICAgY29uc3QgaW5nID0gaW5wdXQuaW5ncmVkaWVudEJ5SWQuZ2V0KGVudHJ5LmluZ3JlZGllbnRJZCk7CiAgICBpZiAoIWluZykgY29udGludWU7CiAgICBjb25zdCBxdWFudGl0eSA9IE51bWJlcihlbnRyeS5xdWFudGl0eSk7CiAgICBpZiAoIU51bWJlci5pc0Zpbml0ZShxdWFudGl0eSkgfHwgcXVhbnRpdHkgPD0gMCkgY29udGludWU7CiAgICBjb25zdCB1bml0ID0gbm9ybWFsaXplTnV0cml0aW9uVW5pdChlbnRyeS51bml0KTsKICAgIGNvbnN0IGdyYW1zID0gbnV0cml0aW9uUXVhbnRpdHlUb0dyYW1zKHF1YW50aXR5LCB1bml0LCB7IG5hbWU6IGluZy5uYW1lLCBncmFtc1BlclVuaXQ6IGluZy5ncmFtc1BlclVuaXQgfSk7CiAgICBjb25zdCBmYWN0b3IgPSBncmFtcyAvIDEwMDsKICAgIGNvbnN0IGtjYWwgPSByb3VuZDAoaW5nLmtjYWxQZXIxMDAgKiBmYWN0b3IpOwogICAgY29uc3QgcCA9IHJvdW5kMShpbmcucHJvdGVpblBlcjEwMCAqIGZhY3Rvcik7CiAgICBjb25zdCBjID0gcm91bmQxKGluZy5jYXJic1BlcjEwMCAqIGZhY3Rvcik7CiAgICBjb25zdCBmID0gcm91bmQxKGluZy5mYXRQZXIxMDAgKiBmYWN0b3IpOwoKICAgIGl0ZW1zLnB1c2goewogICAgICBpbmdyZWRpZW50SWQ6IGluZy5pZCwKICAgICAgbmFtZTogaW5nLm5hbWUsCiAgICAgIGdyYW1zOiByb3VuZDEoZ3JhbXMpLAogICAgICBxdWFudGl0eTogcm91bmQxKHF1YW50aXR5KSwKICAgICAgdW5pdCwKICAgICAga2NhbCwKICAgICAgcHJvdGVpbkc6IHAsCiAgICAgIGNhcmJzRzogYywKICAgICAgZmF0RzogZgogICAgfSk7CgogICAgdG90YWxLY2FsICs9IGtjYWw7CiAgICBwcm90ZWluRyArPSBwOwogICAgY2FyYnNHICs9IGM7CiAgICBmYXRHICs9IGY7CiAgfQoKICByZXR1cm4gewogICAgaXRlbXMsCiAgICB0b3RhbHM6IHsKICAgICAgdG90YWxLY2FsOiByb3VuZDAodG90YWxLY2FsKSwKICAgICAgcHJvdGVpbkc6IHJvdW5kMShwcm90ZWluRyksCiAgICAgIGNhcmJzRzogcm91bmQxKGNhcmJzRyksCiAgICAgIGZhdEc6IHJvdW5kMShmYXRHKQogICAgfQogIH07Cn0KCmFzeW5jIGZ1bmN0aW9uIGVuc3VyZUNsb3VkTnV0cml0aW9uUmVhZHkoKSB7CiAgaWYgKGdldERiUHJvdmlkZXIoKSAhPT0gInBvc3RncmVzIikgcmV0dXJuOwogIGF3YWl0IG1pZ3JhdGVEYigpOwogIGF3YWl0IGVuc3VyZUNsb3VkTnV0cml0aW9uU2VlZCgpOwp9CgpmdW5jdGlvbiBwYXJzZUluZ3JlZGllbnRGYXZvcml0ZUlkKGZhdm9yaXRlSWQ6IHN0cmluZykgewogIGlmICghZmF2b3JpdGVJZCkgcmV0dXJuIG51bGw7CiAgaWYgKCFmYXZvcml0ZUlkLnN0YXJ0c1dpdGgoImluZ3JlZGllbnQ6IikpIHJldHVybiBudWxsOwogIGNvbnN0IGlkID0gZmF2b3JpdGVJZC5zbGljZSgiaW5ncmVkaWVudDoiLmxlbmd0aCkudHJpbSgpOwogIHJldHVybiBpZC5sZW5ndGggPyBpZCA6IG51bGw7Cn0KCmZ1bmN0aW9uIG1lcmdlTWVhbEl0ZW1zQnlJbmdyZWRpZW50KGl0ZW1zOiBOdXRyaXRpb25NZWFsSXRlbVtdKSB7CiAgY29uc3QgbWVyZ2VkID0gbmV3IE1hcDxzdHJpbmcsIE51dHJpdGlvbk1lYWxJdGVtPigpOwogIGZvciAoY29uc3QgaXRlbSBvZiBpdGVtcykgewogICAgY29uc3Qga2V5ID0gYCR7aXRlbS5pbmdyZWRpZW50SWR9fCR7aXRlbS51bml0fWA7CiAgICBjb25zdCBleGlzdGluZyA9IG1lcmdlZC5nZXQoa2V5KTsKICAgIGlmICghZXhpc3RpbmcpIHsKICAgICAgbWVyZ2VkLnNldChrZXksIHsgLi4uaXRlbSB9KTsKICAgICAgY29udGludWU7CiAgICB9CiAgICBtZXJnZWQuc2V0KGtleSwgewogICAgICAuLi5leGlzdGluZywKICAgICAgZ3JhbXM6IHJvdW5kMShOdW1iZXIoZXhpc3RpbmcuZ3JhbXMpICsgTnVtYmVyKGl0ZW0uZ3JhbXMpKSwKICAgICAgcXVhbnRpdHk6IHJvdW5kMShOdW1iZXIoZXhpc3RpbmcucXVhbnRpdHkpICsgTnVtYmVyKGl0ZW0ucXVhbnRpdHkpKSwKICAgICAga2NhbDogcm91bmQwKE51bWJlcihleGlzdGluZy5rY2FsKSArIE51bWJlcihpdGVtLmtjYWwpKSwKICAgICAgcHJvdGVpbkc6IHJvdW5kMShOdW1iZXIoZXhpc3RpbmcucHJvdGVpbkcpICsgTnVtYmVyKGl0ZW0ucHJvdGVpbkcpKSwKICAgICAgY2FyYnNHOiByb3VuZDEoTnVtYmVyKGV4aXN0aW5nLmNhcmJzRykgKyBOdW1iZXIoaXRlbS5jYXJic0cpKSwKICAgICAgZmF0Rzogcm91bmQxKE51bWJlcihleGlzdGluZy5mYXRHKSArIE51bWJlcihpdGVtLmZhdEcpKQogICAgfSk7CiAgfQogIHJldHVybiBBcnJheS5mcm9tKG1lcmdlZC52YWx1ZXMoKSk7Cn0KCmFzeW5jIGZ1bmN0aW9uIGNsb3VkRW5zdXJlSW5ncmVkaWVudEJ5TmFtZShpbnB1dDogewogIG5hbWU6IHN0cmluZzsKICBjYXRlZ29yeTogTnV0cml0aW9uSW5ncmVkaWVudFsiY2F0ZWdvcnkiXTsKICBrY2FsUGVyMTAwOiBudW1iZXI7CiAgcHJvdGVpblBlcjEwMDogbnVtYmVyOwogIGNhcmJzUGVyMTAwOiBudW1iZXI7CiAgZmF0UGVyMTAwOiBudW1iZXI7CiAgZGVmYXVsdFVuaXQ6IE51dHJpdGlvblVuaXQ7CiAgZ3JhbXNQZXJVbml0OiBudW1iZXI7Cn0pOiBQcm9taXNlPE51dHJpdGlvbkluZ3JlZGllbnQgfCBudWxsPiB7CiAgYXdhaXQgZW5zdXJlQ2xvdWROdXRyaXRpb25SZWFkeSgpOwogIGNvbnN0IGV4aXN0aW5nID0gYXdhaXQgZGJRdWVyeU9uZTxSZWNvcmQ8c3RyaW5nLCB1bmtub3duPj4oCiAgICAiU0VMRUNUIGlkLCBuYW1lLCBjYXRlZ29yeSwga2NhbFBlcjEwMCwgcHJvdGVpblBlcjEwMCwgY2FyYnNQZXIxMDAsIGZhdFBlcjEwMCwgZGVmYXVsdFVuaXQsIGdyYW1zUGVyVW5pdCwgaXNCdWlsdEluLCBjcmVhdGVkQXQsIHVwZGF0ZWRBdCBGUk9NIG51dHJpdGlvbl9pbmdyZWRpZW50cyBXSEVSRSBuYW1lID0gJDEgTElNSVQgMSIsCiAgICBbaW5wdXQubmFtZV0KICApOwogIGlmIChleGlzdGluZykgewogICAgcmV0dXJuIHsKICAgICAgaWQ6IFN0cmluZygoZXhpc3RpbmcgYXMgYW55KS5pZCksCiAgICAgIG5hbWU6IFN0cmluZygoZXhpc3RpbmcgYXMgYW55KS5uYW1lKSwKICAgICAgY2F0ZWdvcnk6IFN0cmluZygoZXhpc3RpbmcgYXMgYW55KS5jYXRlZ29yeSkgYXMgYW55LAogICAgICBrY2FsUGVyMTAwOiBOdW1iZXIoKGV4aXN0aW5nIGFzIGFueSkua2NhbHBlcjEwMCA/PyAoZXhpc3RpbmcgYXMgYW55KS5rY2FsUGVyMTAwID8/IDApLAogICAgICBwcm90ZWluUGVyMTAwOiBOdW1iZXIoKGV4aXN0aW5nIGFzIGFueSkucHJvdGVpbnBlcjEwMCA/PyAoZXhpc3RpbmcgYXMgYW55KS5wcm90ZWluUGVyMTAwID8/IDApLAogICAgICBjYXJic1BlcjEwMDogTnVtYmVyKChleGlzdGluZyBhcyBhbnkpLmNhcmJzcGVyMTAwID8/IChleGlzdGluZyBhcyBhbnkpLmNhcmJzUGVyMTAwID8/IDApLAogICAgICBmYXRQZXIxMDA6IE51bWJlcigoZXhpc3RpbmcgYXMgYW55KS5mYXRwZXIxMDAgPz8gKGV4aXN0aW5nIGFzIGFueSkuZmF0UGVyMTAwID8/IDApLAogICAgICBkZWZhdWx0VW5pdDogU3RyaW5nKChleGlzdGluZyBhcyBhbnkpLmRlZmF1bHR1bml0ID8/IChleGlzdGluZyBhcyBhbnkpLmRlZmF1bHRVbml0ID8/ICJnIikgYXMgTnV0cml0aW9uVW5pdCwKICAgICAgZ3JhbXNQZXJVbml0OiBOdW1iZXIoKGV4aXN0aW5nIGFzIGFueSkuZ3JhbXNwZXJ1bml0ID8/IChleGlzdGluZyBhcyBhbnkpLmdyYW1zUGVyVW5pdCA/PyAxKSwKICAgICAgaXNCdWlsdEluOiBCb29sZWFuKChleGlzdGluZyBhcyBhbnkpLmlzYnVpbHRpbiA/PyAoZXhpc3RpbmcgYXMgYW55KS5pc0J1aWx0SW4pLAogICAgICBjcmVhdGVkQXQ6IFN0cmluZygoZXhpc3RpbmcgYXMgYW55KS5jcmVhdGVkYXQgPz8gKGV4aXN0aW5nIGFzIGFueSkuY3JlYXRlZEF0ID8/ICIiKSwKICAgICAgdXBkYXRlZEF0OiBTdHJpbmcoKGV4aXN0aW5nIGFzIGFueSkudXBkYXRlZGF0ID8/IChleGlzdGluZyBhcyBhbnkpLnVwZGF0ZWRBdCA/PyAiIikKICAgIH07CiAgfQoKICBjb25zdCBub3cgPSBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCk7CiAgY29uc3QgaWQgPSByYW5kb21VVUlEKCk7CiAgYXdhaXQgZGJRdWVyeSgKICAgIGAKICAgIElOU0VSVCBJTlRPIG51dHJpdGlvbl9pbmdyZWRpZW50cwogICAgICAoaWQsIG5hbWUsIGNhdGVnb3J5LCBrY2FsUGVyMTAwLCBwcm90ZWluUGVyMTAwLCBjYXJic1BlcjEwMCwgZmF0UGVyMTAwLCBkZWZhdWx0VW5pdCwgZ3JhbXNQZXJVbml0LCBpc0J1aWx0SW4sIGNyZWF0ZWRBdCwgdXBkYXRlZEF0KQogICAgVkFMVUVTCiAgICAgICgkMSwkMiwkMywkNCwkNSwkNiwkNywkOCwkOSwwLCQxMCwkMTApCiAgICBgLAogICAgWwogICAgICBpZCwKICAgICAgaW5wdXQubmFtZSwKICAgICAgaW5wdXQuY2F0ZWdvcnksCiAgICAgIGlucHV0LmtjYWxQZXIxMDAsCiAgICAgIGlucHV0LnByb3RlaW5QZXIxMDAsCiAgICAgIGlucHV0LmNhcmJzUGVyMTAwLAogICAgICBpbnB1dC5mYXRQZXIxMDAsCiAgICAgIGlucHV0LmRlZmF1bHRVbml0LAogICAgICBpbnB1dC5ncmFtc1BlclVuaXQsCiAgICAgIG5vdwogICAgXQogICk7CiAgcmV0dXJuIHsKICAgIGlkLAogICAgbmFtZTogaW5wdXQubmFtZSwKICAgIGNhdGVnb3J5OiBpbnB1dC5jYXRlZ29yeSwKICAgIGtjYWxQZXIxMDA6IGlucHV0LmtjYWxQZXIxMDAsCiAgICBwcm90ZWluUGVyMTAwOiBpbnB1dC5wcm90ZWluUGVyMTAwLAogICAgY2FyYnNQZXIxMDA6IGlucHV0LmNhcmJzUGVyMTAwLAogICAgZmF0UGVyMTAwOiBpbnB1dC5mYXRQZXIxMDAsCiAgICBkZWZhdWx0VW5pdDogaW5wdXQuZGVmYXVsdFVuaXQsCiAgICBncmFtc1BlclVuaXQ6IGlucHV0LmdyYW1zUGVyVW5pdCwKICAgIGlzQnVpbHRJbjogZmFsc2UsCiAgICBjcmVhdGVkQXQ6IG5vdywKICAgIHVwZGF0ZWRBdDogbm93CiAgfTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGNsb3VkQWRkRmF2b3JpdGVUb051dHJpdGlvbkRheSgKICBkYXRlOiBzdHJpbmcsCiAgZmF2b3JpdGVJZDogc3RyaW5nLAogIHNsb3Q/OiBNZWFsU2xvdCwKICBvcHRpb25zPzogeyBxdWFudGl0eT86IG51bWJlcjsgdW5pdD86IE51dHJpdGlvblVuaXQgfQopOiBQcm9taXNlPAogIHwgbnVsbAogIHwgewogICAgICBkYXRlOiBzdHJpbmc7CiAgICAgIHNsb3Q6IE1lYWxTbG90OwogICAgICBtZWFsOiBOdXRyaXRpb25NZWFsIHwgbnVsbDsKICAgICAgdG90YWxzOiB7IGtjYWw6IG51bWJlcjsgcHJvdGVpbkc6IG51bWJlcjsgY2FyYnNHOiBudW1iZXI7IGZhdEc6IG51bWJlciB9OwogICAgfQo+IHsKICBhd2FpdCBlbnN1cmVDbG91ZE51dHJpdGlvblJlYWR5KCk7CgogIGNvbnN0IGluZ3JlZGllbnRJZCA9IHBhcnNlSW5ncmVkaWVudEZhdm9yaXRlSWQoZmF2b3JpdGVJZCk7CiAgY29uc3QgdGFyZ2V0U2xvdCA9IHNsb3QgPz8gImJyZWFrZmFzdCI7CgogIGlmIChpbmdyZWRpZW50SWQpIHsKICAgIGNvbnN0IGluZyA9IGF3YWl0IGRiUXVlcnlPbmU8UmVjb3JkPHN0cmluZywgdW5rbm93bj4+KAogICAgICBgCiAgICAgIFNFTEVDVCBpZCwgbmFtZSwga2NhbFBlcjEwMCwgcHJvdGVpblBlcjEwMCwgY2FyYnNQZXIxMDAsIGZhdFBlcjEwMCwgZGVmYXVsdFVuaXQsIGdyYW1zUGVyVW5pdAogICAgICBGUk9NIG51dHJpdGlvbl9pbmdyZWRpZW50cwogICAgICBXSEVSRSBpZCA9ICQxCiAgICAgIExJTUlUIDEKICAgICAgYCwKICAgICAgW2luZ3JlZGllbnRJZF0KICAgICk7CiAgICBpZiAoIWluZykgcmV0dXJuIG51bGw7CgogICAgY29uc3QgaW5ncmVkaWVudCA9IHsKICAgICAgaWQ6IFN0cmluZygoaW5nIGFzIGFueSkuaWQpLAogICAgICBuYW1lOiBTdHJpbmcoKGluZyBhcyBhbnkpLm5hbWUpLAogICAgICBrY2FsUGVyMTAwOiBOdW1iZXIoKGluZyBhcyBhbnkpLmtjYWxwZXIxMDAgPz8gKGluZyBhcyBhbnkpLmtjYWxQZXIxMDAgPz8gMCksCiAgICAgIHByb3RlaW5QZXIxMDA6IE51bWJlcigoaW5nIGFzIGFueSkucHJvdGVpbnBlcjEwMCA/PyAoaW5nIGFzIGFueSkucHJvdGVpblBlcjEwMCA/PyAwKSwKICAgICAgY2FyYnNQZXIxMDA6IE51bWJlcigoaW5nIGFzIGFueSkuY2FyYnNwZXIxMDAgPz8gKGluZyBhcyBhbnkpLmNhcmJzUGVyMTAwID8/IDApLAogICAgICBmYXRQZXIxMDA6IE51bWJlcigoaW5nIGFzIGFueSkuZmF0cGVyMTAwID8/IChpbmcgYXMgYW55KS5mYXRQZXIxMDAgPz8gMCksCiAgICAgIGRlZmF1bHRVbml0OiBTdHJpbmcoKGluZyBhcyBhbnkpLmRlZmF1bHR1bml0ID8/IChpbmcgYXMgYW55KS5kZWZhdWx0VW5pdCA/PyAiZyIpIGFzIE51dHJpdGlvblVuaXQsCiAgICAgIGdyYW1zUGVyVW5pdDogTnVtYmVyKChpbmcgYXMgYW55KS5ncmFtc3BlcnVuaXQgPz8gKGluZyBhcyBhbnkpLmdyYW1zUGVyVW5pdCA/PyAxKQogICAgfTsKCiAgICBjb25zdCBtZWFsID0gYXdhaXQgY2xvdWRDcmVhdGVOdXRyaXRpb25NZWFsRm9yU2xvdChkYXRlLCB0YXJnZXRTbG90KTsKICAgIGlmICghbWVhbCkgcmV0dXJuIG51bGw7CgogICAgY29uc3QgdW5pdCA9IG5vcm1hbGl6ZU51dHJpdGlvblVuaXQob3B0aW9ucz8udW5pdCA/PyBpbmdyZWRpZW50LmRlZmF1bHRVbml0KTsKICAgIGNvbnN0IGZhbGxiYWNrUXVhbnRpdHkgPSB1bml0ID09PSAidW5pdCIgfHwgdW5pdCA9PT0gInRic3AiIHx8IHVuaXQgPT09ICJ0c3AiID8gMSA6IHVuaXQgPT09ICJtbCIgPyA1MCA6IDEwMDsKICAgIGNvbnN0IHF1YW50aXR5ID0KICAgICAgb3B0aW9ucz8ucXVhbnRpdHkgIT0gbnVsbCAmJiBOdW1iZXIuaXNGaW5pdGUob3B0aW9ucy5xdWFudGl0eSkgJiYgb3B0aW9ucy5xdWFudGl0eSA+IDAgPyBvcHRpb25zLnF1YW50aXR5IDogZmFsbGJhY2tRdWFudGl0eTsKICAgIGNvbnN0IGdyYW1zID0gbnV0cml0aW9uUXVhbnRpdHlUb0dyYW1zKE51bWJlcihxdWFudGl0eSksIHVuaXQsIHsgbmFtZTogaW5ncmVkaWVudC5uYW1lLCBncmFtc1BlclVuaXQ6IGluZ3JlZGllbnQuZ3JhbXNQZXJVbml0IH0pOwogICAgY29uc3QgZmFjdG9yID0gZ3JhbXMgLyAxMDA7CiAgICBjb25zdCBpdGVtOiBOdXRyaXRpb25NZWFsSXRlbSA9IHsKICAgICAgaW5ncmVkaWVudElkOiBpbmdyZWRpZW50LmlkLAogICAgICBuYW1lOiBpbmdyZWRpZW50Lm5hbWUsCiAgICAgIGdyYW1zOiByb3VuZDEoZ3JhbXMpLAogICAgICBxdWFudGl0eTogcm91bmQxKE51bWJlcihxdWFudGl0eSkpLAogICAgICB1bml0LAogICAgICBrY2FsOiByb3VuZDAoaW5ncmVkaWVudC5rY2FsUGVyMTAwICogZmFjdG9yKSwKICAgICAgcHJvdGVpbkc6IHJvdW5kMShpbmdyZWRpZW50LnByb3RlaW5QZXIxMDAgKiBmYWN0b3IpLAogICAgICBjYXJic0c6IHJvdW5kMShpbmdyZWRpZW50LmNhcmJzUGVyMTAwICogZmFjdG9yKSwKICAgICAgZmF0Rzogcm91bmQxKGluZ3JlZGllbnQuZmF0UGVyMTAwICogZmFjdG9yKQogICAgfTsKCiAgICBjb25zdCBtZXJnZWRJdGVtcyA9IG1lcmdlTWVhbEl0ZW1zQnlJbmdyZWRpZW50KFsuLi4obWVhbC5pdGVtcyA/PyBbXSksIGl0ZW1dKTsKICAgIGNvbnN0IHRvdGFscyA9IG1lcmdlZEl0ZW1zLnJlZHVjZSgKICAgICAgKGFjYywgcm93KSA9PiB7CiAgICAgICAgYWNjLmtjYWwgKz0gTnVtYmVyKHJvdy5rY2FsID8/IDApOwogICAgICAgIGFjYy5wcm90ZWluRyArPSBOdW1iZXIocm93LnByb3RlaW5HID8/IDApOwogICAgICAgIGFjYy5jYXJic0cgKz0gTnVtYmVyKHJvdy5jYXJic0cgPz8gMCk7CiAgICAgICAgYWNjLmZhdEcgKz0gTnVtYmVyKHJvdy5mYXRHID8/IDApOwogICAgICAgIHJldHVybiBhY2M7CiAgICAgIH0sCiAgICAgIHsga2NhbDogMCwgcHJvdGVpbkc6IDAsIGNhcmJzRzogMCwgZmF0RzogMCB9CiAgICApOwoKICAgIGF3YWl0IGRiUXVlcnkoCiAgICAgIGAKICAgICAgVVBEQVRFIG51dHJpdGlvbl9tZWFsX2hpc3RvcnkKICAgICAgU0VUIGl0ZW1zSnNvbiA9ICQxLCB0b3RhbEtjYWwgPSAkMiwgcHJvdGVpbkcgPSAkMywgY2FyYnNHID0gJDQsIGZhdEcgPSAkNSwgYWNjZXB0ZWQgPSAxCiAgICAgIFdIRVJFIGlkID0gJDYKICAgICAgYCwKICAgICAgWwogICAgICAgIEpTT04uc3RyaW5naWZ5KG1lcmdlZEl0ZW1zKSwKICAgICAgICByb3VuZDAodG90YWxzLmtjYWwpLAogICAgICAgIHJvdW5kMSh0b3RhbHMucHJvdGVpbkcpLAogICAgICAgIHJvdW5kMSh0b3RhbHMuY2FyYnNHKSwKICAgICAgICByb3VuZDEodG90YWxzLmZhdEcpLAogICAgICAgIG1lYWwuaWQKICAgICAgXQogICAgKTsKCiAgICBjb25zdCByZWZyZXNoZWRNZWFscyA9IGF3YWl0IGNsb3VkR2V0TWVhbHNCeURhdGUoZGF0ZSk7CiAgICBjb25zdCByZWZyZXNoZWRNZWFsID0gcmVmcmVzaGVkTWVhbHMuZmluZCgobSkgPT4gbS5pZCA9PT0gbWVhbC5pZCkgPz8gbnVsbDsKICAgIGNvbnN0IGFjY2VwdGVkVG90YWxzID0gcmVmcmVzaGVkTWVhbHMKICAgICAgLmZpbHRlcigobSkgPT4gbS5hY2NlcHRlZCA9PT0gdHJ1ZSkKICAgICAgLnJlZHVjZSgKICAgICAgICAoYWNjLCBtKSA9PiB7CiAgICAgICAgICBhY2Mua2NhbCArPSBtLnRvdGFsS2NhbCA/PyAwOwogICAgICAgICAgYWNjLnByb3RlaW5HICs9IG0ucHJvdGVpbkcgPz8gMDsKICAgICAgICAgIGFjYy5jYXJic0cgKz0gbS5jYXJic0cgPz8gMDsKICAgICAgICAgIGFjYy5mYXRHICs9IG0uZmF0RyA/PyAwOwogICAgICAgICAgcmV0dXJuIGFjYzsKICAgICAgICB9LAogICAgICAgIHsga2NhbDogMCwgcHJvdGVpbkc6IDAsIGNhcmJzRzogMCwgZmF0RzogMCB9CiAgICAgICk7CgogICAgcmV0dXJuIHsgZGF0ZSwgc2xvdDogdGFyZ2V0U2xvdCwgbWVhbDogcmVmcmVzaGVkTWVhbCwgdG90YWxzOiBhY2NlcHRlZFRvdGFscyB9OwogIH0KCiAgY29uc3QgdGVtcGxhdGUgPSBnZXROdXRyaXRpb25GYXZvcml0ZVRlbXBsYXRlQnlJZChmYXZvcml0ZUlkKTsKICBpZiAoIXRlbXBsYXRlKSByZXR1cm4gbnVsbDsKICBjb25zdCBwb3J0aW9uRmFjdG9yID0KICAgIG9wdGlvbnM/LnF1YW50aXR5ICE9IG51bGwgJiYgTnVtYmVyLmlzRmluaXRlKG9wdGlvbnMucXVhbnRpdHkpICYmIG9wdGlvbnMucXVhbnRpdHkgPiAwID8gTnVtYmVyKG9wdGlvbnMucXVhbnRpdHkpIDogMTsKICBjb25zdCB0ZW1wbGF0ZVNsb3QgPSBzbG90ID8/ICh0ZW1wbGF0ZS5wcmVmZXJyZWRTbG90IGFzIE1lYWxTbG90IHwgdW5kZWZpbmVkKSA/PyB0YXJnZXRTbG90OwoKICBjb25zdCBtZWFsID0gYXdhaXQgY2xvdWRDcmVhdGVOdXRyaXRpb25NZWFsRm9yU2xvdChkYXRlLCB0ZW1wbGF0ZVNsb3QpOwogIGlmICghbWVhbCkgcmV0dXJuIG51bGw7CgogIGNvbnN0IG1hcHBlZEl0ZW1zOiBOdXRyaXRpb25NZWFsSXRlbVtdID0gW107CiAgZm9yIChjb25zdCBzb3VyY2Ugb2YgdGVtcGxhdGUuaXRlbXMpIHsKICAgIGNvbnN0IGluZ3JlZGllbnQgPSBhd2FpdCBjbG91ZEVuc3VyZUluZ3JlZGllbnRCeU5hbWUoewogICAgICBuYW1lOiBzb3VyY2UubmFtZSwKICAgICAgY2F0ZWdvcnk6IHNvdXJjZS5jYXRlZ29yeSwKICAgICAga2NhbFBlcjEwMDogc291cmNlLmtjYWxQZXIxMDAsCiAgICAgIHByb3RlaW5QZXIxMDA6IHNvdXJjZS5wcm90ZWluUGVyMTAwLAogICAgICBjYXJic1BlcjEwMDogc291cmNlLmNhcmJzUGVyMTAwLAogICAgICBmYXRQZXIxMDA6IHNvdXJjZS5mYXRQZXIxMDAsCiAgICAgIGRlZmF1bHRVbml0OiBzb3VyY2UuZGVmYXVsdFVuaXQsCiAgICAgIGdyYW1zUGVyVW5pdDogc291cmNlLmdyYW1zUGVyVW5pdAogICAgfSk7CiAgICBpZiAoIWluZ3JlZGllbnQpIGNvbnRpbnVlOwogICAgY29uc3Qgc2NhbGVkUXVhbnRpdHkgPSBzb3VyY2UucXVhbnRpdHkgKiBwb3J0aW9uRmFjdG9yOwogICAgY29uc3QgdW5pdCA9IG5vcm1hbGl6ZU51dHJpdGlvblVuaXQoc291cmNlLnVuaXQpOwogICAgY29uc3QgZ3JhbXMgPSBudXRyaXRpb25RdWFudGl0eVRvR3JhbXMoc2NhbGVkUXVhbnRpdHksIHVuaXQsIHsgbmFtZTogaW5ncmVkaWVudC5uYW1lLCBncmFtc1BlclVuaXQ6IGluZ3JlZGllbnQuZ3JhbXNQZXJVbml0IH0pOwogICAgY29uc3QgZmFjdG9yID0gZ3JhbXMgLyAxMDA7CiAgICBtYXBwZWRJdGVtcy5wdXNoKHsKICAgICAgaW5ncmVkaWVudElkOiBpbmdyZWRpZW50LmlkLAogICAgICBuYW1lOiBpbmdyZWRpZW50Lm5hbWUsCiAgICAgIGdyYW1zOiByb3VuZDEoZ3JhbXMpLAogICAgICBxdWFudGl0eTogcm91bmQxKHNjYWxlZFF1YW50aXR5KSwKICAgICAgdW5pdCwKICAgICAga2NhbDogcm91bmQwKGluZ3JlZGllbnQua2NhbFBlcjEwMCAqIGZhY3RvciksCiAgICAgIHByb3RlaW5HOiByb3VuZDEoaW5ncmVkaWVudC5wcm90ZWluUGVyMTAwICogZmFjdG9yKSwKICAgICAgY2FyYnNHOiByb3VuZDEoaW5ncmVkaWVudC5jYXJic1BlcjEwMCAqIGZhY3RvciksCiAgICAgIGZhdEc6IHJvdW5kMShpbmdyZWRpZW50LmZhdFBlcjEwMCAqIGZhY3RvcikKICAgIH0pOwogIH0KICBpZiAoIW1hcHBlZEl0ZW1zLmxlbmd0aCkgcmV0dXJuIG51bGw7CgogIGNvbnN0IG1lcmdlZEl0ZW1zID0gbWVyZ2VNZWFsSXRlbXNCeUluZ3JlZGllbnQoWy4uLihtZWFsLml0ZW1zID8/IFtdKSwgLi4ubWFwcGVkSXRlbXNdKTsKICBjb25zdCB0b3RhbHMgPSBtZXJnZWRJdGVtcy5yZWR1Y2UoCiAgICAoYWNjLCByb3cpID0+IHsKICAgICAgYWNjLmtjYWwgKz0gTnVtYmVyKHJvdy5rY2FsID8/IDApOwogICAgICBhY2MucHJvdGVpbkcgKz0gTnVtYmVyKHJvdy5wcm90ZWluRyA/PyAwKTsKICAgICAgYWNjLmNhcmJzRyArPSBOdW1iZXIocm93LmNhcmJzRyA/PyAwKTsKICAgICAgYWNjLmZhdEcgKz0gTnVtYmVyKHJvdy5mYXRHID8/IDApOwogICAgICByZXR1cm4gYWNjOwogICAgfSwKICAgIHsga2NhbDogMCwgcHJvdGVpbkc6IDAsIGNhcmJzRzogMCwgZmF0RzogMCB9CiAgKTsKCiAgYXdhaXQgZGJRdWVyeSgKICAgIGAKICAgIFVQREFURSBudXRyaXRpb25fbWVhbF9oaXN0b3J5CiAgICBTRVQgaXRlbXNKc29uID0gJDEsIHRvdGFsS2NhbCA9ICQyLCBwcm90ZWluRyA9ICQzLCBjYXJic0cgPSAkNCwgZmF0RyA9ICQ1LCBhY2NlcHRlZCA9IDEKICAgIFdIRVJFIGlkID0gJDYKICAgIGAsCiAgICBbCiAgICAgIEpTT04uc3RyaW5naWZ5KG1lcmdlZEl0ZW1zKSwKICAgICAgcm91bmQwKHRvdGFscy5rY2FsKSwKICAgICAgcm91bmQxKHRvdGFscy5wcm90ZWluRyksCiAgICAgIHJvdW5kMSh0b3RhbHMuY2FyYnNHKSwKICAgICAgcm91bmQxKHRvdGFscy5mYXRHKSwKICAgICAgbWVhbC5pZAogICAgXQogICk7CgogIGNvbnN0IHJlZnJlc2hlZE1lYWxzID0gYXdhaXQgY2xvdWRHZXRNZWFsc0J5RGF0ZShkYXRlKTsKICBjb25zdCByZWZyZXNoZWRNZWFsID0gcmVmcmVzaGVkTWVhbHMuZmluZCgobSkgPT4gbS5pZCA9PT0gbWVhbC5pZCkgPz8gbnVsbDsKICBjb25zdCBhY2NlcHRlZFRvdGFscyA9IHJlZnJlc2hlZE1lYWxzCiAgICAuZmlsdGVyKChtKSA9PiBtLmFjY2VwdGVkID09PSB0cnVlKQogICAgLnJlZHVjZSgKICAgICAgKGFjYywgbSkgPT4gewogICAgICAgIGFjYy5rY2FsICs9IG0udG90YWxLY2FsID8/IDA7CiAgICAgICAgYWNjLnByb3RlaW5HICs9IG0ucHJvdGVpbkcgPz8gMDsKICAgICAgICBhY2MuY2FyYnNHICs9IG0uY2FyYnNHID8/IDA7CiAgICAgICAgYWNjLmZhdEcgKz0gbS5mYXRHID8/IDA7CiAgICAgICAgcmV0dXJuIGFjYzsKICAgICAgfSwKICAgICAgeyBrY2FsOiAwLCBwcm90ZWluRzogMCwgY2FyYnNHOiAwLCBmYXRHOiAwIH0KICAgICk7CgogIHJldHVybiB7IGRhdGUsIHNsb3Q6IHRlbXBsYXRlU2xvdCwgbWVhbDogcmVmcmVzaGVkTWVhbCwgdG90YWxzOiBhY2NlcHRlZFRvdGFscyB9Owp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gY2xvdWRHZXROdXRyaXRpb25QbGFuKGRhdGUgPSBmb3JtYXRJU09EYXRlKCkpOiBQcm9taXNlPE51dHJpdGlvbkRhaWx5UGxhbj4gewogIGF3YWl0IGVuc3VyZUNsb3VkTnV0cml0aW9uUmVhZHkoKTsKICBjb25zdCBleGlzdGluZyA9IGF3YWl0IGRiUXVlcnlPbmU8UmVjb3JkPHN0cmluZywgdW5rbm93bj4+KCJTRUxFQ1QgKiBGUk9NIG51dHJpdGlvbl9kYWlseV9wbGFuIFdIRVJFIGRhdGUgPSAkMSBMSU1JVCAxIiwgW2RhdGVdKTsKICBpZiAoZXhpc3RpbmcpIHsKICAgIHJldHVybiB7CiAgICAgIGRhdGU6IFN0cmluZygoZXhpc3RpbmcgYXMgYW55KS5kYXRlKSwKICAgICAgY2FyYnNHOiBOdW1iZXIoKGV4aXN0aW5nIGFzIGFueSkuY2FyYnNnID8/IChleGlzdGluZyBhcyBhbnkpLmNhcmJzRyA/PyAwKSwKICAgICAgcHJvdGVpbkc6IE51bWJlcigoZXhpc3RpbmcgYXMgYW55KS5wcm90ZWluZyA/PyAoZXhpc3RpbmcgYXMgYW55KS5wcm90ZWluRyA/PyAwKSwKICAgICAgZmF0RzogTnVtYmVyKChleGlzdGluZyBhcyBhbnkpLmZhdGcgPz8gKGV4aXN0aW5nIGFzIGFueSkuZmF0RyA/PyAwKSwKICAgICAgaHlkcmF0aW9uTWw6IE51bWJlcigoZXhpc3RpbmcgYXMgYW55KS5oeWRyYXRpb25tbCA/PyAoZXhpc3RpbmcgYXMgYW55KS5oeWRyYXRpb25NbCA/PyAwKSwKICAgICAgcHJlV29ya291dE5vdGU6IFN0cmluZygoZXhpc3RpbmcgYXMgYW55KS5wcmV3b3Jrb3V0bm90ZSA/PyAoZXhpc3RpbmcgYXMgYW55KS5wcmVXb3Jrb3V0Tm90ZSA/PyAiIiksCiAgICAgIHBvc3RXb3Jrb3V0Tm90ZTogU3RyaW5nKChleGlzdGluZyBhcyBhbnkpLnBvc3R3b3Jrb3V0bm90ZSA/PyAoZXhpc3RpbmcgYXMgYW55KS5wb3N0V29ya291dE5vdGUgPz8gIiIpLAogICAgICByYXRpb25hbGVKc29uOiBTdHJpbmcoKGV4aXN0aW5nIGFzIGFueSkucmF0aW9uYWxlanNvbiA/PyAoZXhpc3RpbmcgYXMgYW55KS5yYXRpb25hbGVKc29uID8/ICJ7fSIpLAogICAgICB1cGRhdGVkQXQ6IFN0cmluZygoZXhpc3RpbmcgYXMgYW55KS51cGRhdGVkYXQgPz8gKGV4aXN0aW5nIGFzIGFueSkudXBkYXRlZEF0ID8/ICIiKQogICAgfTsKICB9CgogIGNvbnN0IG5vdyA9IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKTsKICBjb25zdCBmYWxsYmFjazogTnV0cml0aW9uRGFpbHlQbGFuID0gewogICAgZGF0ZSwKICAgIGNhcmJzRzogMjMwLAogICAgcHJvdGVpbkc6IDEzMCwKICAgIGZhdEc6IDg1LAogICAgaHlkcmF0aW9uTWw6IDI0NTAsCiAgICBwcmVXb3Jrb3V0Tm90ZTogIiIsCiAgICBwb3N0V29ya291dE5vdGU6ICIiLAogICAgcmF0aW9uYWxlSnNvbjogSlNPTi5zdHJpbmdpZnkoewogICAgICB0YXJnZXRLY2FsOiAyMjA1LAogICAgICB0YXJnZXRQcm90ZWluRzogMTMwLAogICAgICB0YXJnZXRDYXJic0c6IDIzMCwKICAgICAgdGFyZ2V0RmF0RzogODUsCiAgICAgIG5vdGU6ICLXkdeo15nXqNeqINee15fXk9ecICjXoteTINep15nXldeS15PXqCDXpNeo15XXpNeZ15wg16rXlteV16DXlCDXntec15ApLiIKICAgIH0pLAogICAgdXBkYXRlZEF0OiBub3cKICB9OwoKICBhd2FpdCBkYlF1ZXJ5KAogICAgYAogICAgSU5TRVJUIElOVE8gbnV0cml0aW9uX2RhaWx5X3BsYW4KICAgICAgKGRhdGUsIGNhcmJzRywgcHJvdGVpbkcsIGZhdEcsIGh5ZHJhdGlvbk1sLCBwcmVXb3Jrb3V0Tm90ZSwgcG9zdFdvcmtvdXROb3RlLCByYXRpb25hbGVKc29uLCB1cGRhdGVkQXQpCiAgICBWQUxVRVMKICAgICAgKCQxLCQyLCQzLCQ0LCQ1LCQ2LCQ3LCQ4LCQ5KQogICAgYCwKICAgIFsKICAgICAgZmFsbGJhY2suZGF0ZSwKICAgICAgZmFsbGJhY2suY2FyYnNHLAogICAgICBmYWxsYmFjay5wcm90ZWluRywKICAgICAgZmFsbGJhY2suZmF0RywKICAgICAgZmFsbGJhY2suaHlkcmF0aW9uTWwsCiAgICAgIGZhbGxiYWNrLnByZVdvcmtvdXROb3RlLAogICAgICBmYWxsYmFjay5wb3N0V29ya291dE5vdGUsCiAgICAgIGZhbGxiYWNrLnJhdGlvbmFsZUpzb24sCiAgICAgIGZhbGxiYWNrLnVwZGF0ZWRBdAogICAgXQogICk7CgogIHJldHVybiBmYWxsYmFjazsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGNsb3VkR2V0TWVhbHNCeURhdGUoZGF0ZSA9IGZvcm1hdElTT0RhdGUoKSk6IFByb21pc2U8TnV0cml0aW9uTWVhbFtdPiB7CiAgYXdhaXQgZW5zdXJlQ2xvdWROdXRyaXRpb25SZWFkeSgpOwogIGNvbnN0IHJlcyA9IGF3YWl0IGRiUXVlcnk8UmVjb3JkPHN0cmluZywgdW5rbm93bj4+KAogICAgYAogICAgU0VMRUNUIGlkLCBkYXRlLCBtZWFsU2xvdCwgdGl0bGUsIGl0ZW1zSnNvbiwgdG90YWxLY2FsLCBwcm90ZWluRywgY2FyYnNHLCBmYXRHLCBjb21wcm9taXNlTm90ZSwgYWNjZXB0ZWQsIGNyZWF0ZWRBdAogICAgRlJPTSBudXRyaXRpb25fbWVhbF9oaXN0b3J5CiAgICBXSEVSRSBkYXRlID0gJDEKICAgIE9SREVSIEJZIGNyZWF0ZWRBdCBBU0MKICAgIGAsCiAgICBbZGF0ZV0KICApOwoKICByZXR1cm4gcmVzLnJvd3MubWFwKChyb3cpID0+IHsKICAgIGNvbnN0IGl0ZW1zID0gKCgpID0+IHsKICAgICAgdHJ5IHsKICAgICAgICBjb25zdCBwYXJzZWQgPSBKU09OLnBhcnNlKFN0cmluZygocm93IGFzIGFueSkuaXRlbXNqc29uID8/IChyb3cgYXMgYW55KS5pdGVtc0pzb24gPz8gIltdIikpIGFzIE51dHJpdGlvbk1lYWxJdGVtW107CiAgICAgICAgcmV0dXJuIEFycmF5LmlzQXJyYXkocGFyc2VkKSA/IHBhcnNlZCA6IFtdOwogICAgICB9IGNhdGNoIHsKICAgICAgICByZXR1cm4gW107CiAgICAgIH0KICAgIH0pKCk7CgogICAgY29uc3QgYWNjZXB0ZWRSYXcgPSAocm93IGFzIGFueSkuYWNjZXB0ZWQ7CiAgICBjb25zdCBhY2NlcHRlZCA9IGFjY2VwdGVkUmF3ID09IG51bGwgPyBudWxsIDogQm9vbGVhbihOdW1iZXIoYWNjZXB0ZWRSYXcpKTsKCiAgICByZXR1cm4gewogICAgICBpZDogU3RyaW5nKChyb3cgYXMgYW55KS5pZCksCiAgICAgIGRhdGU6IFN0cmluZygocm93IGFzIGFueSkuZGF0ZSksCiAgICAgIHNsb3Q6IFN0cmluZygocm93IGFzIGFueSkubWVhbHNsb3QgPz8gKHJvdyBhcyBhbnkpLm1lYWxTbG90KSBhcyBNZWFsU2xvdCwKICAgICAgdGl0bGU6IFN0cmluZygocm93IGFzIGFueSkudGl0bGUpLAogICAgICBpdGVtcywKICAgICAgdG90YWxLY2FsOiBOdW1iZXIoKHJvdyBhcyBhbnkpLnRvdGFsa2NhbCA/PyAocm93IGFzIGFueSkudG90YWxLY2FsID8/IDApLAogICAgICBwcm90ZWluRzogTnVtYmVyKChyb3cgYXMgYW55KS5wcm90ZWluZyA/PyAocm93IGFzIGFueSkucHJvdGVpbkcgPz8gMCksCiAgICAgIGNhcmJzRzogTnVtYmVyKChyb3cgYXMgYW55KS5jYXJic2cgPz8gKHJvdyBhcyBhbnkpLmNhcmJzRyA/PyAwKSwKICAgICAgZmF0RzogTnVtYmVyKChyb3cgYXMgYW55KS5mYXRnID8/IChyb3cgYXMgYW55KS5mYXRHID8/IDApLAogICAgICBjb21wcm9taXNlTm90ZTogKCgpOiBzdHJpbmcgfCB1bmRlZmluZWQgPT4gewogICAgICAgIGNvbnN0IG5vdGUgPSAocm93IGFzIGFueSkuY29tcHJvbWlzZW5vdGUgPz8gKHJvdyBhcyBhbnkpLmNvbXByb21pc2VOb3RlID8/IG51bGw7CiAgICAgICAgcmV0dXJuIG5vdGUgPT0gbnVsbCA/IHVuZGVmaW5lZCA6IFN0cmluZyhub3RlKTsKICAgICAgfSkoKSwKICAgICAgYWNjZXB0ZWQKICAgIH07CiAgfSk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBjbG91ZENyZWF0ZU51dHJpdGlvbk1lYWxGb3JTbG90KGRhdGU6IHN0cmluZywgc2xvdDogTWVhbFNsb3QpOiBQcm9taXNlPE51dHJpdGlvbk1lYWwgfCBudWxsPiB7CiAgYXdhaXQgZW5zdXJlQ2xvdWROdXRyaXRpb25SZWFkeSgpOwogIGNvbnN0IGV4aXN0aW5nID0gYXdhaXQgZGJRdWVyeU9uZTxSZWNvcmQ8c3RyaW5nLCB1bmtub3duPj4oCiAgICBgCiAgICBTRUxFQ1QgaWQKICAgIEZST00gbnV0cml0aW9uX21lYWxfaGlzdG9yeQogICAgV0hFUkUgZGF0ZSA9ICQxIEFORCBtZWFsU2xvdCA9ICQyCiAgICBPUkRFUiBCWSBjcmVhdGVkQXQgREVTQwogICAgTElNSVQgMQogICAgYCwKICAgIFtkYXRlLCBzbG90XQogICk7CgogIGNvbnN0IG5vdyA9IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKTsKICBhd2FpdCBkYlF1ZXJ5KAogICAgYAogICAgSU5TRVJUIElOVE8gbnV0cml0aW9uX21lYWxfYWN0aXZhdGlvbiAoZGF0ZSwgbWVhbFNsb3QsIGNyZWF0ZWRBdCkKICAgIFZBTFVFUyAoJDEsJDIsJDMpCiAgICBPTiBDT05GTElDVChkYXRlLCBtZWFsU2xvdCkgRE8gTk9USElORwogICAgYCwKICAgIFtkYXRlLCBzbG90LCBub3ddCiAgKTsKCiAgaWYgKGV4aXN0aW5nPy5pZCkgewogICAgY29uc3QgbWVhbElkID0gU3RyaW5nKChleGlzdGluZyBhcyBhbnkpLmlkKTsKICAgIGNvbnN0IG1lYWxSb3cgPSBhd2FpdCBkYlF1ZXJ5T25lPFJlY29yZDxzdHJpbmcsIHVua25vd24+PigiU0VMRUNUICogRlJPTSBudXRyaXRpb25fbWVhbF9oaXN0b3J5IFdIRVJFIGlkID0gJDEgTElNSVQgMSIsIFttZWFsSWRdKTsKICAgIGlmICghbWVhbFJvdykgcmV0dXJuIG51bGw7CiAgICByZXR1cm4gKGF3YWl0IGNsb3VkR2V0TWVhbHNCeURhdGUoZGF0ZSkpLmZpbmQoKG1lYWwpID0+IG1lYWwuaWQgPT09IG1lYWxJZCkgPz8gbnVsbDsKICB9CgogIGNvbnN0IGlkID0gcmFuZG9tVVVJRCgpOwogIGF3YWl0IGRiUXVlcnkoCiAgICBgCiAgICBJTlNFUlQgSU5UTyBudXRyaXRpb25fbWVhbF9oaXN0b3J5CiAgICAgIChpZCwgZGF0ZSwgbWVhbFNsb3QsIHRpdGxlLCBpdGVtc0pzb24sIHRvdGFsS2NhbCwgcHJvdGVpbkcsIGNhcmJzRywgZmF0RywgY29tcHJvbWlzZU5vdGUsIGFjY2VwdGVkLCBjcmVhdGVkQXQpCiAgICBWQUxVRVMKICAgICAgKCQxLCQyLCQzLCQ0LCdbXScsMCwwLDAsMCxOVUxMLE5VTEwsJDUpCiAgICBgLAogICAgW2lkLCBkYXRlLCBzbG90LCBtZWFsVGl0bGUoc2xvdCksIG5vd10KICApOwoKICByZXR1cm4gKGF3YWl0IGNsb3VkR2V0TWVhbHNCeURhdGUoZGF0ZSkpLmZpbmQoKG1lYWwpID0+IG1lYWwuaWQgPT09IGlkKSA/PyBudWxsOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gY2xvdWRFZGl0TnV0cml0aW9uTWVhbCgKICBtZWFsSWQ6IHN0cmluZywKICBpdGVtczogQXJyYXk8eyBpbmdyZWRpZW50SWQ6IHN0cmluZzsgcXVhbnRpdHk6IG51bWJlcjsgdW5pdDogTnV0cml0aW9uVW5pdCB9PgopOiBQcm9taXNlPHsgb2s6IGJvb2xlYW47IG1lYWw/OiBOdXRyaXRpb25NZWFsIH0+IHsKICBhd2FpdCBlbnN1cmVDbG91ZE51dHJpdGlvblJlYWR5KCk7CiAgY29uc3QgbWVhbFJvdyA9IGF3YWl0IGRiUXVlcnlPbmU8UmVjb3JkPHN0cmluZywgdW5rbm93bj4+KCJTRUxFQ1QgaWQsIGRhdGUgRlJPTSBudXRyaXRpb25fbWVhbF9oaXN0b3J5IFdIRVJFIGlkID0gJDEgTElNSVQgMSIsIFttZWFsSWRdKTsKICBpZiAoIW1lYWxSb3cpIHJldHVybiB7IG9rOiBmYWxzZSB9OwogIGNvbnN0IGRhdGUgPSBTdHJpbmcoKG1lYWxSb3cgYXMgYW55KS5kYXRlKTsKCiAgY29uc3QgaW5ncmVkaWVudElkcyA9IEFycmF5LmZyb20obmV3IFNldChpdGVtcy5tYXAoKGl0ZW0pID0+IGl0ZW0uaW5ncmVkaWVudElkKS5maWx0ZXIoQm9vbGVhbikpKTsKICBpZiAoIWluZ3JlZGllbnRJZHMubGVuZ3RoKSByZXR1cm4geyBvazogZmFsc2UgfTsKCiAgY29uc3QgaW5QYXJhbXMgPSBpbmdyZWRpZW50SWRzLm1hcCgoXywgaWR4KSA9PiBgJCR7aWR4ICsgMX1gKS5qb2luKCIsIik7CiAgY29uc3QgaW5nUmVzID0gYXdhaXQgZGJRdWVyeTxSZWNvcmQ8c3RyaW5nLCB1bmtub3duPj4oCiAgICBgCiAgICBTRUxFQ1QgaWQsIG5hbWUsIGtjYWxQZXIxMDAsIHByb3RlaW5QZXIxMDAsIGNhcmJzUGVyMTAwLCBmYXRQZXIxMDAsIGdyYW1zUGVyVW5pdAogICAgRlJPTSBudXRyaXRpb25faW5ncmVkaWVudHMKICAgIFdIRVJFIGlkIElOICgke2luUGFyYW1zfSkKICAgIGAsCiAgICBpbmdyZWRpZW50SWRzCiAgKTsKICBjb25zdCBpbmdyZWRpZW50QnlJZCA9IG5ldyBNYXA8c3RyaW5nLCBhbnk+KCk7CiAgZm9yIChjb25zdCByb3cgb2YgaW5nUmVzLnJvd3MpIHsKICAgIGluZ3JlZGllbnRCeUlkLnNldChTdHJpbmcoKHJvdyBhcyBhbnkpLmlkKSwgewogICAgICBpZDogU3RyaW5nKChyb3cgYXMgYW55KS5pZCksCiAgICAgIG5hbWU6IFN0cmluZygocm93IGFzIGFueSkubmFtZSksCiAgICAgIGtjYWxQZXIxMDA6IE51bWJlcigocm93IGFzIGFueSkua2NhbHBlcjEwMCA/PyAocm93IGFzIGFueSkua2NhbFBlcjEwMCA/PyAwKSwKICAgICAgcHJvdGVpblBlcjEwMDogTnVtYmVyKChyb3cgYXMgYW55KS5wcm90ZWlucGVyMTAwID8/IChyb3cgYXMgYW55KS5wcm90ZWluUGVyMTAwID8/IDApLAogICAgICBjYXJic1BlcjEwMDogTnVtYmVyKChyb3cgYXMgYW55KS5jYXJic3BlcjEwMCA/PyAocm93IGFzIGFueSkuY2FyYnNQZXIxMDAgPz8gMCksCiAgICAgIGZhdFBlcjEwMDogTnVtYmVyKChyb3cgYXMgYW55KS5mYXRwZXIxMDAgPz8gKHJvdyBhcyBhbnkpLmZhdFBlcjEwMCA/PyAwKSwKICAgICAgZ3JhbXNQZXJVbml0OiBOdW1iZXIoKHJvdyBhcyBhbnkpLmdyYW1zcGVydW5pdCA/PyAocm93IGFzIGFueSkuZ3JhbXNQZXJVbml0ID8/IDEpCiAgICB9KTsKICB9CgogIGNvbnN0IGNvbXB1dGVkID0gY29tcHV0ZU1lYWxJdGVtcyh7IGluZ3JlZGllbnRCeUlkLCBpdGVtcyB9KTsKICBjb25zdCBpdGVtc0pzb24gPSBKU09OLnN0cmluZ2lmeShjb21wdXRlZC5pdGVtcyk7CiAgYXdhaXQgZGJRdWVyeSgKICAgIGAKICAgIFVQREFURSBudXRyaXRpb25fbWVhbF9oaXN0b3J5CiAgICBTRVQgaXRlbXNKc29uID0gJDIsCiAgICAgICAgdG90YWxLY2FsID0gJDMsCiAgICAgICAgcHJvdGVpbkcgPSAkNCwKICAgICAgICBjYXJic0cgPSAkNSwKICAgICAgICBmYXRHID0gJDYKICAgIFdIRVJFIGlkID0gJDEKICAgIGAsCiAgICBbbWVhbElkLCBpdGVtc0pzb24sIGNvbXB1dGVkLnRvdGFscy50b3RhbEtjYWwsIGNvbXB1dGVkLnRvdGFscy5wcm90ZWluRywgY29tcHV0ZWQudG90YWxzLmNhcmJzRywgY29tcHV0ZWQudG90YWxzLmZhdEddCiAgKTsKCiAgY29uc3QgbWVhbCA9IChhd2FpdCBjbG91ZEdldE1lYWxzQnlEYXRlKGRhdGUpKS5maW5kKChlbnRyeSkgPT4gZW50cnkuaWQgPT09IG1lYWxJZCkgPz8gbnVsbDsKICBpZiAoIW1lYWwpIHJldHVybiB7IG9rOiBmYWxzZSB9OwogIHJldHVybiB7IG9rOiB0cnVlLCBtZWFsIH07Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBjbG91ZERlbGV0ZU51dHJpdGlvbk1lYWwobWVhbElkOiBzdHJpbmcpOiBQcm9taXNlPHsgb2s6IGJvb2xlYW47IGRhdGU/OiBzdHJpbmc7IHNsb3Q/OiBNZWFsU2xvdCB9PiB7CiAgYXdhaXQgZW5zdXJlQ2xvdWROdXRyaXRpb25SZWFkeSgpOwogIGNvbnN0IG1lYWxSb3cgPSBhd2FpdCBkYlF1ZXJ5T25lPFJlY29yZDxzdHJpbmcsIHVua25vd24+PigiU0VMRUNUIGRhdGUsIG1lYWxTbG90IEZST00gbnV0cml0aW9uX21lYWxfaGlzdG9yeSBXSEVSRSBpZCA9ICQxIExJTUlUIDEiLCBbbWVhbElkXSk7CiAgaWYgKCFtZWFsUm93KSByZXR1cm4geyBvazogZmFsc2UgfTsKICBjb25zdCBkYXRlID0gU3RyaW5nKChtZWFsUm93IGFzIGFueSkuZGF0ZSk7CiAgY29uc3Qgc2xvdCA9IFN0cmluZygobWVhbFJvdyBhcyBhbnkpLm1lYWxzbG90ID8/IChtZWFsUm93IGFzIGFueSkubWVhbFNsb3QpIGFzIE1lYWxTbG90OwogIGF3YWl0IGRiUXVlcnkoIkRFTEVURSBGUk9NIG51dHJpdGlvbl9tZWFsX2hpc3RvcnkgV0hFUkUgaWQgPSAkMSIsIFttZWFsSWRdKTsKICBhd2FpdCBkYlF1ZXJ5KCJERUxFVEUgRlJPTSBudXRyaXRpb25fbWVhbF9hY3RpdmF0aW9uIFdIRVJFIGRhdGUgPSAkMSBBTkQgbWVhbFNsb3QgPSAkMiIsIFtkYXRlLCBzbG90XSk7CiAgcmV0dXJuIHsgb2s6IHRydWUsIGRhdGUsIHNsb3QgfTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGNsb3VkU2V0TnV0cml0aW9uTWVhbEZlZWRiYWNrKG1lYWxJZDogc3RyaW5nLCBhY2NlcHRlZDogYm9vbGVhbiB8IG51bGwpOiBQcm9taXNlPHsgb2s6IGJvb2xlYW4gfT4gewogIGF3YWl0IGVuc3VyZUNsb3VkTnV0cml0aW9uUmVhZHkoKTsKICBjb25zdCBleGlzdHMgPSBhd2FpdCBkYlF1ZXJ5T25lPFJlY29yZDxzdHJpbmcsIHVua25vd24+PigiU0VMRUNUIGlkIEZST00gbnV0cml0aW9uX21lYWxfaGlzdG9yeSBXSEVSRSBpZCA9ICQxIExJTUlUIDEiLCBbbWVhbElkXSk7CiAgaWYgKCFleGlzdHMpIHJldHVybiB7IG9rOiBmYWxzZSB9OwogIGF3YWl0IGRiUXVlcnkoIlVQREFURSBudXRyaXRpb25fbWVhbF9oaXN0b3J5IFNFVCBhY2NlcHRlZCA9ICQyIFdIRVJFIGlkID0gJDEiLCBbbWVhbElkLCBhY2NlcHRlZCA9PSBudWxsID8gbnVsbCA6IGFjY2VwdGVkID8gMSA6IDBdKTsKICByZXR1cm4geyBvazogdHJ1ZSB9Owp9Cg=="}
+import { randomUUID } from "node:crypto";
+import { formatISODate } from "@/lib/date";
+import { dbQuery, dbQueryOne, getDbProvider } from "@/lib/db-driver";
+import { migrateDb } from "@/lib/db-migrate";
+import { ensureCloudNutritionSeed } from "@/lib/nutrition-cloud";
+import { nutritionQuantityToGrams, normalizeNutritionUnit } from "@/lib/nutrition-units";
+import type { MealSlot, NutritionDailyPlan, NutritionIngredient, NutritionMeal, NutritionMealItem, NutritionUnit } from "@/lib/types";
+import { getNutritionFavoriteTemplateById } from "@/lib/nutrition-engine";
+
+function mealTitle(slot: MealSlot) {
+  if (slot === "breakfast") return "ארוחת בוקר";
+  if (slot === "lunch") return "ארוחת צהריים";
+  if (slot === "dinner") return "ארוחת ערב";
+  if (slot === "snack") return "נשנוש";
+  if (slot === "pre_run") return "מזון לפני ריצה";
+  if (slot === "drinks") return "שתייה";
+  return "ארוחה";
+}
+
+function round1(value: number) {
+  return Math.round(value * 10) / 10;
+}
+
+function round0(value: number) {
+  return Math.round(value);
+}
+
+function computeMealItems(input: {
+  ingredientById: Map<
+    string,
+    Pick<NutritionIngredient, "id" | "name" | "kcalPer100" | "proteinPer100" | "carbsPer100" | "fatPer100" | "gramsPerUnit">
+  >;
+  items: Array<{ ingredientId: string; quantity: number; unit: NutritionUnit }>;
+}): { items: NutritionMealItem[]; totals: Pick<NutritionMeal, "totalKcal" | "proteinG" | "carbsG" | "fatG"> } {
+  const items: NutritionMealItem[] = [];
+  let totalKcal = 0;
+  let proteinG = 0;
+  let carbsG = 0;
+  let fatG = 0;
+
+  for (const entry of input.items) {
+    const ing = input.ingredientById.get(entry.ingredientId);
+    if (!ing) continue;
+    const quantity = Number(entry.quantity);
+    if (!Number.isFinite(quantity) || quantity <= 0) continue;
+    const unit = normalizeNutritionUnit(entry.unit);
+    const grams = nutritionQuantityToGrams(quantity, unit, { name: ing.name, gramsPerUnit: ing.gramsPerUnit });
+    const factor = grams / 100;
+    const kcal = round0(ing.kcalPer100 * factor);
+    const p = round1(ing.proteinPer100 * factor);
+    const c = round1(ing.carbsPer100 * factor);
+    const f = round1(ing.fatPer100 * factor);
+
+    items.push({
+      ingredientId: ing.id,
+      name: ing.name,
+      grams: round1(grams),
+      quantity: round1(quantity),
+      unit,
+      kcal,
+      proteinG: p,
+      carbsG: c,
+      fatG: f
+    });
+
+    totalKcal += kcal;
+    proteinG += p;
+    carbsG += c;
+    fatG += f;
+  }
+
+  return {
+    items,
+    totals: {
+      totalKcal: round0(totalKcal),
+      proteinG: round1(proteinG),
+      carbsG: round1(carbsG),
+      fatG: round1(fatG)
+    }
+  };
+}
+
+async function ensureCloudNutritionReady() {
+  if (getDbProvider() !== "postgres") return;
+  await migrateDb();
+  await ensureCloudNutritionSeed();
+}
+
+function parseIngredientFavoriteId(favoriteId: string) {
+  if (!favoriteId) return null;
+  if (!favoriteId.startsWith("ingredient:")) return null;
+  const id = favoriteId.slice("ingredient:".length).trim();
+  return id.length ? id : null;
+}
+
+function mergeMealItemsByIngredient(items: NutritionMealItem[]) {
+  const merged = new Map<string, NutritionMealItem>();
+  for (const item of items) {
+    const key = `${item.ingredientId}|${item.unit}`;
+    const existing = merged.get(key);
+    if (!existing) {
+      merged.set(key, { ...item });
+      continue;
+    }
+    merged.set(key, {
+      ...existing,
+      grams: round1(Number(existing.grams) + Number(item.grams)),
+      quantity: round1(Number(existing.quantity) + Number(item.quantity)),
+      kcal: round0(Number(existing.kcal) + Number(item.kcal)),
+      proteinG: round1(Number(existing.proteinG) + Number(item.proteinG)),
+      carbsG: round1(Number(existing.carbsG) + Number(item.carbsG)),
+      fatG: round1(Number(existing.fatG) + Number(item.fatG))
+    });
+  }
+  return Array.from(merged.values());
+}
+
+async function cloudEnsureIngredientByName(input: {
+  name: string;
+  category: NutritionIngredient["category"];
+  kcalPer100: number;
+  proteinPer100: number;
+  carbsPer100: number;
+  fatPer100: number;
+  defaultUnit: NutritionUnit;
+  gramsPerUnit: number;
+}): Promise<NutritionIngredient | null> {
+  await ensureCloudNutritionReady();
+  const existing = await dbQueryOne<Record<string, unknown>>(
+    "SELECT id, name, category, kcalPer100, proteinPer100, carbsPer100, fatPer100, defaultUnit, gramsPerUnit, isBuiltIn, createdAt, updatedAt FROM nutrition_ingredients WHERE name = $1 LIMIT 1",
+    [input.name]
+  );
+  if (existing) {
+    return {
+      id: String((existing as any).id),
+      name: String((existing as any).name),
+      category: String((existing as any).category) as any,
+      kcalPer100: Number((existing as any).kcalper100 ?? (existing as any).kcalPer100 ?? 0),
+      proteinPer100: Number((existing as any).proteinper100 ?? (existing as any).proteinPer100 ?? 0),
+      carbsPer100: Number((existing as any).carbsper100 ?? (existing as any).carbsPer100 ?? 0),
+      fatPer100: Number((existing as any).fatper100 ?? (existing as any).fatPer100 ?? 0),
+      defaultUnit: String((existing as any).defaultunit ?? (existing as any).defaultUnit ?? "g") as NutritionUnit,
+      gramsPerUnit: Number((existing as any).gramsperunit ?? (existing as any).gramsPerUnit ?? 1),
+      isBuiltIn: Boolean((existing as any).isbuiltin ?? (existing as any).isBuiltIn),
+      createdAt: String((existing as any).createdat ?? (existing as any).createdAt ?? ""),
+      updatedAt: String((existing as any).updatedat ?? (existing as any).updatedAt ?? "")
+    };
+  }
+
+  const now = new Date().toISOString();
+  const id = randomUUID();
+  await dbQuery(
+    `
+    INSERT INTO nutrition_ingredients
+      (id, name, category, kcalPer100, proteinPer100, carbsPer100, fatPer100, defaultUnit, gramsPerUnit, isBuiltIn, createdAt, updatedAt)
+    VALUES
+      ($1,$2,$3,$4,$5,$6,$7,$8,$9,0,$10,$10)
+    `,
+    [
+      id,
+      input.name,
+      input.category,
+      input.kcalPer100,
+      input.proteinPer100,
+      input.carbsPer100,
+      input.fatPer100,
+      input.defaultUnit,
+      input.gramsPerUnit,
+      now
+    ]
+  );
+  return {
+    id,
+    name: input.name,
+    category: input.category,
+    kcalPer100: input.kcalPer100,
+    proteinPer100: input.proteinPer100,
+    carbsPer100: input.carbsPer100,
+    fatPer100: input.fatPer100,
+    defaultUnit: input.defaultUnit,
+    gramsPerUnit: input.gramsPerUnit,
+    isBuiltIn: false,
+    createdAt: now,
+    updatedAt: now
+  };
+}
+
+export async function cloudAddFavoriteToNutritionDay(
+  date: string,
+  favoriteId: string,
+  slot?: MealSlot,
+  options?: { quantity?: number; unit?: NutritionUnit }
+): Promise<
+  | null
+  | {
+      date: string;
+      slot: MealSlot;
+      meal: NutritionMeal | null;
+      totals: { kcal: number; proteinG: number; carbsG: number; fatG: number };
+    }
+> {
+  await ensureCloudNutritionReady();
+
+  const ingredientId = parseIngredientFavoriteId(favoriteId);
+  const targetSlot = slot ?? "breakfast";
+
+  if (ingredientId) {
+    const ing = await dbQueryOne<Record<string, unknown>>(
+      `
+      SELECT id, name, kcalPer100, proteinPer100, carbsPer100, fatPer100, defaultUnit, gramsPerUnit
+      FROM nutrition_ingredients
+      WHERE id = $1
+      LIMIT 1
+      `,
+      [ingredientId]
+    );
+    if (!ing) return null;
+
+    const ingredient = {
+      id: String((ing as any).id),
+      name: String((ing as any).name),
+      kcalPer100: Number((ing as any).kcalper100 ?? (ing as any).kcalPer100 ?? 0),
+      proteinPer100: Number((ing as any).proteinper100 ?? (ing as any).proteinPer100 ?? 0),
+      carbsPer100: Number((ing as any).carbsper100 ?? (ing as any).carbsPer100 ?? 0),
+      fatPer100: Number((ing as any).fatper100 ?? (ing as any).fatPer100 ?? 0),
+      defaultUnit: String((ing as any).defaultunit ?? (ing as any).defaultUnit ?? "g") as NutritionUnit,
+      gramsPerUnit: Number((ing as any).gramsperunit ?? (ing as any).gramsPerUnit ?? 1)
+    };
+
+    const meal = await cloudCreateNutritionMealForSlot(date, targetSlot);
+    if (!meal) return null;
+
+    const unit = normalizeNutritionUnit(options?.unit ?? ingredient.defaultUnit);
+    const fallbackQuantity = unit === "unit" || unit === "tbsp" || unit === "tsp" ? 1 : unit === "ml" ? 50 : 100;
+    const quantity =
+      options?.quantity != null && Number.isFinite(options.quantity) && options.quantity > 0 ? options.quantity : fallbackQuantity;
+    const grams = nutritionQuantityToGrams(Number(quantity), unit, { name: ingredient.name, gramsPerUnit: ingredient.gramsPerUnit });
+    const factor = grams / 100;
+    const item: NutritionMealItem = {
+      ingredientId: ingredient.id,
+      name: ingredient.name,
+      grams: round1(grams),
+      quantity: round1(Number(quantity)),
+      unit,
+      kcal: round0(ingredient.kcalPer100 * factor),
+      proteinG: round1(ingredient.proteinPer100 * factor),
+      carbsG: round1(ingredient.carbsPer100 * factor),
+      fatG: round1(ingredient.fatPer100 * factor)
+    };
+
+    const mergedItems = mergeMealItemsByIngredient([...(meal.items ?? []), item]);
+    const totals = mergedItems.reduce(
+      (acc, row) => {
+        acc.kcal += Number(row.kcal ?? 0);
+        acc.proteinG += Number(row.proteinG ?? 0);
+        acc.carbsG += Number(row.carbsG ?? 0);
+        acc.fatG += Number(row.fatG ?? 0);
+        return acc;
+      },
+      { kcal: 0, proteinG: 0, carbsG: 0, fatG: 0 }
+    );
+
+    await dbQuery(
+      `
+      UPDATE nutrition_meal_history
+      SET itemsJson = $1, totalKcal = $2, proteinG = $3, carbsG = $4, fatG = $5, accepted = 1
+      WHERE id = $6
+      `,
+      [
+        JSON.stringify(mergedItems),
+        round0(totals.kcal),
+        round1(totals.proteinG),
+        round1(totals.carbsG),
+        round1(totals.fatG),
+        meal.id
+      ]
+    );
+
+    const refreshedMeals = await cloudGetMealsByDate(date);
+    const refreshedMeal = refreshedMeals.find((m) => m.id === meal.id) ?? null;
+    const acceptedTotals = refreshedMeals
+      .filter((m) => m.accepted === true)
+      .reduce(
+        (acc, m) => {
+          acc.kcal += m.totalKcal ?? 0;
+          acc.proteinG += m.proteinG ?? 0;
+          acc.carbsG += m.carbsG ?? 0;
+          acc.fatG += m.fatG ?? 0;
+          return acc;
+        },
+        { kcal: 0, proteinG: 0, carbsG: 0, fatG: 0 }
+      );
+
+    return { date, slot: targetSlot, meal: refreshedMeal, totals: acceptedTotals };
+  }
+
+  const template = getNutritionFavoriteTemplateById(favoriteId);
+  if (!template) return null;
+  const portionFactor =
+    options?.quantity != null && Number.isFinite(options.quantity) && options.quantity > 0 ? Number(options.quantity) : 1;
+  const templateSlot = slot ?? (template.preferredSlot as MealSlot | undefined) ?? targetSlot;
+
+  const meal = await cloudCreateNutritionMealForSlot(date, templateSlot);
+  if (!meal) return null;
+
+  const mappedItems: NutritionMealItem[] = [];
+  for (const source of template.items) {
+    const ingredient = await cloudEnsureIngredientByName({
+      name: source.name,
+      category: source.category,
+      kcalPer100: source.kcalPer100,
+      proteinPer100: source.proteinPer100,
+      carbsPer100: source.carbsPer100,
+      fatPer100: source.fatPer100,
+      defaultUnit: source.defaultUnit,
+      gramsPerUnit: source.gramsPerUnit
+    });
+    if (!ingredient) continue;
+    const scaledQuantity = source.quantity * portionFactor;
+    const unit = normalizeNutritionUnit(source.unit);
+    const grams = nutritionQuantityToGrams(scaledQuantity, unit, { name: ingredient.name, gramsPerUnit: ingredient.gramsPerUnit });
+    const factor = grams / 100;
+    mappedItems.push({
+      ingredientId: ingredient.id,
+      name: ingredient.name,
+      grams: round1(grams),
+      quantity: round1(scaledQuantity),
+      unit,
+      kcal: round0(ingredient.kcalPer100 * factor),
+      proteinG: round1(ingredient.proteinPer100 * factor),
+      carbsG: round1(ingredient.carbsPer100 * factor),
+      fatG: round1(ingredient.fatPer100 * factor)
+    });
+  }
+  if (!mappedItems.length) return null;
+
+  const mergedItems = mergeMealItemsByIngredient([...(meal.items ?? []), ...mappedItems]);
+  const totals = mergedItems.reduce(
+    (acc, row) => {
+      acc.kcal += Number(row.kcal ?? 0);
+      acc.proteinG += Number(row.proteinG ?? 0);
+      acc.carbsG += Number(row.carbsG ?? 0);
+      acc.fatG += Number(row.fatG ?? 0);
+      return acc;
+    },
+    { kcal: 0, proteinG: 0, carbsG: 0, fatG: 0 }
+  );
+
+  await dbQuery(
+    `
+    UPDATE nutrition_meal_history
+    SET itemsJson = $1, totalKcal = $2, proteinG = $3, carbsG = $4, fatG = $5, accepted = 1
+    WHERE id = $6
+    `,
+    [
+      JSON.stringify(mergedItems),
+      round0(totals.kcal),
+      round1(totals.proteinG),
+      round1(totals.carbsG),
+      round1(totals.fatG),
+      meal.id
+    ]
+  );
+
+  const refreshedMeals = await cloudGetMealsByDate(date);
+  const refreshedMeal = refreshedMeals.find((m) => m.id === meal.id) ?? null;
+  const acceptedTotals = refreshedMeals
+    .filter((m) => m.accepted === true)
+    .reduce(
+      (acc, m) => {
+        acc.kcal += m.totalKcal ?? 0;
+        acc.proteinG += m.proteinG ?? 0;
+        acc.carbsG += m.carbsG ?? 0;
+        acc.fatG += m.fatG ?? 0;
+        return acc;
+      },
+      { kcal: 0, proteinG: 0, carbsG: 0, fatG: 0 }
+    );
+
+  return { date, slot: templateSlot, meal: refreshedMeal, totals: acceptedTotals };
+}
+
+export async function cloudGetNutritionPlan(date = formatISODate()): Promise<NutritionDailyPlan> {
+  await ensureCloudNutritionReady();
+  const existing = await dbQueryOne<Record<string, unknown>>("SELECT * FROM nutrition_daily_plan WHERE date = $1 LIMIT 1", [date]);
+  if (existing) {
+    return {
+      date: String((existing as any).date),
+      carbsG: Number((existing as any).carbsg ?? (existing as any).carbsG ?? 0),
+      proteinG: Number((existing as any).proteing ?? (existing as any).proteinG ?? 0),
+      fatG: Number((existing as any).fatg ?? (existing as any).fatG ?? 0),
+      hydrationMl: Number((existing as any).hydrationml ?? (existing as any).hydrationMl ?? 0),
+      preWorkoutNote: String((existing as any).preworkoutnote ?? (existing as any).preWorkoutNote ?? ""),
+      postWorkoutNote: String((existing as any).postworkoutnote ?? (existing as any).postWorkoutNote ?? ""),
+      rationaleJson: String((existing as any).rationalejson ?? (existing as any).rationaleJson ?? "{}"),
+      updatedAt: String((existing as any).updatedat ?? (existing as any).updatedAt ?? "")
+    };
+  }
+
+  const now = new Date().toISOString();
+  const fallback: NutritionDailyPlan = {
+    date,
+    carbsG: 230,
+    proteinG: 130,
+    fatG: 85,
+    hydrationMl: 2450,
+    preWorkoutNote: "",
+    postWorkoutNote: "",
+    rationaleJson: JSON.stringify({
+      targetKcal: 2205,
+      targetProteinG: 130,
+      targetCarbsG: 230,
+      targetFatG: 85,
+      note: "ברירת מחדל (עד שיוגדר פרופיל תזונה מלא)."
+    }),
+    updatedAt: now
+  };
+
+  await dbQuery(
+    `
+    INSERT INTO nutrition_daily_plan
+      (date, carbsG, proteinG, fatG, hydrationMl, preWorkoutNote, postWorkoutNote, rationaleJson, updatedAt)
+    VALUES
+      ($1,$2,$3,$4,$5,$6,$7,$8,$9)
+    `,
+    [
+      fallback.date,
+      fallback.carbsG,
+      fallback.proteinG,
+      fallback.fatG,
+      fallback.hydrationMl,
+      fallback.preWorkoutNote,
+      fallback.postWorkoutNote,
+      fallback.rationaleJson,
+      fallback.updatedAt
+    ]
+  );
+
+  return fallback;
+}
+
+export async function cloudGetMealsByDate(date = formatISODate()): Promise<NutritionMeal[]> {
+  await ensureCloudNutritionReady();
+  const res = await dbQuery<Record<string, unknown>>(
+    `
+    SELECT id, date, mealSlot, title, itemsJson, totalKcal, proteinG, carbsG, fatG, compromiseNote, accepted, createdAt
+    FROM nutrition_meal_history
+    WHERE date = $1
+    ORDER BY createdAt ASC
+    `,
+    [date]
+  );
+
+  return res.rows.map((row) => {
+    const items = (() => {
+      try {
+        const parsed = JSON.parse(String((row as any).itemsjson ?? (row as any).itemsJson ?? "[]")) as NutritionMealItem[];
+        return Array.isArray(parsed) ? parsed : [];
+      } catch {
+        return [];
+      }
+    })();
+
+    const acceptedRaw = (row as any).accepted;
+    const accepted = acceptedRaw == null ? null : Boolean(Number(acceptedRaw));
+
+    return {
+      id: String((row as any).id),
+      date: String((row as any).date),
+      slot: String((row as any).mealslot ?? (row as any).mealSlot) as MealSlot,
+      title: String((row as any).title),
+      items,
+      totalKcal: Number((row as any).totalkcal ?? (row as any).totalKcal ?? 0),
+      proteinG: Number((row as any).proteing ?? (row as any).proteinG ?? 0),
+      carbsG: Number((row as any).carbsg ?? (row as any).carbsG ?? 0),
+      fatG: Number((row as any).fatg ?? (row as any).fatG ?? 0),
+      compromiseNote: ((): string | undefined => {
+        const note = (row as any).compromisenote ?? (row as any).compromiseNote ?? null;
+        return note == null ? undefined : String(note);
+      })(),
+      accepted
+    };
+  });
+}
+
+export async function cloudCreateNutritionMealForSlot(date: string, slot: MealSlot): Promise<NutritionMeal | null> {
+  await ensureCloudNutritionReady();
+  const existing = await dbQueryOne<Record<string, unknown>>(
+    `
+    SELECT id
+    FROM nutrition_meal_history
+    WHERE date = $1 AND mealSlot = $2
+    ORDER BY createdAt DESC
+    LIMIT 1
+    `,
+    [date, slot]
+  );
+
+  const now = new Date().toISOString();
+  await dbQuery(
+    `
+    INSERT INTO nutrition_meal_activation (date, mealSlot, createdAt)
+    VALUES ($1,$2,$3)
+    ON CONFLICT(date, mealSlot) DO NOTHING
+    `,
+    [date, slot, now]
+  );
+
+  if (existing?.id) {
+    const mealId = String((existing as any).id);
+    const mealRow = await dbQueryOne<Record<string, unknown>>("SELECT * FROM nutrition_meal_history WHERE id = $1 LIMIT 1", [mealId]);
+    if (!mealRow) return null;
+    return (await cloudGetMealsByDate(date)).find((meal) => meal.id === mealId) ?? null;
+  }
+
+  const id = randomUUID();
+  await dbQuery(
+    `
+    INSERT INTO nutrition_meal_history
+      (id, date, mealSlot, title, itemsJson, totalKcal, proteinG, carbsG, fatG, compromiseNote, accepted, createdAt)
+    VALUES
+      ($1,$2,$3,$4,'[]',0,0,0,0,NULL,NULL,$5)
+    `,
+    [id, date, slot, mealTitle(slot), now]
+  );
+
+  return (await cloudGetMealsByDate(date)).find((meal) => meal.id === id) ?? null;
+}
+
+export async function cloudEditNutritionMeal(
+  mealId: string,
+  items: Array<{ ingredientId: string; quantity: number; unit: NutritionUnit }>
+): Promise<{ ok: boolean; meal?: NutritionMeal }> {
+  await ensureCloudNutritionReady();
+  const mealRow = await dbQueryOne<Record<string, unknown>>("SELECT id, date FROM nutrition_meal_history WHERE id = $1 LIMIT 1", [mealId]);
+  if (!mealRow) return { ok: false };
+  const date = String((mealRow as any).date);
+
+  const ingredientIds = Array.from(new Set(items.map((item) => item.ingredientId).filter(Boolean)));
+  if (!ingredientIds.length) return { ok: false };
+
+  const inParams = ingredientIds.map((_, idx) => `$${idx + 1}`).join(",");
+  const ingRes = await dbQuery<Record<string, unknown>>(
+    `
+    SELECT id, name, kcalPer100, proteinPer100, carbsPer100, fatPer100, gramsPerUnit
+    FROM nutrition_ingredients
+    WHERE id IN (${inParams})
+    `,
+    ingredientIds
+  );
+  const ingredientById = new Map<string, any>();
+  for (const row of ingRes.rows) {
+    ingredientById.set(String((row as any).id), {
+      id: String((row as any).id),
+      name: String((row as any).name),
+      kcalPer100: Number((row as any).kcalper100 ?? (row as any).kcalPer100 ?? 0),
+      proteinPer100: Number((row as any).proteinper100 ?? (row as any).proteinPer100 ?? 0),
+      carbsPer100: Number((row as any).carbsper100 ?? (row as any).carbsPer100 ?? 0),
+      fatPer100: Number((row as any).fatper100 ?? (row as any).fatPer100 ?? 0),
+      gramsPerUnit: Number((row as any).gramsperunit ?? (row as any).gramsPerUnit ?? 1)
+    });
+  }
+
+  const computed = computeMealItems({ ingredientById, items });
+  const itemsJson = JSON.stringify(computed.items);
+  await dbQuery(
+    `
+    UPDATE nutrition_meal_history
+    SET itemsJson = $2,
+        totalKcal = $3,
+        proteinG = $4,
+        carbsG = $5,
+        fatG = $6
+    WHERE id = $1
+    `,
+    [mealId, itemsJson, computed.totals.totalKcal, computed.totals.proteinG, computed.totals.carbsG, computed.totals.fatG]
+  );
+
+  const meal = (await cloudGetMealsByDate(date)).find((entry) => entry.id === mealId) ?? null;
+  if (!meal) return { ok: false };
+  return { ok: true, meal };
+}
+
+export async function cloudDeleteNutritionMeal(mealId: string): Promise<{ ok: boolean; date?: string; slot?: MealSlot }> {
+  await ensureCloudNutritionReady();
+  const mealRow = await dbQueryOne<Record<string, unknown>>("SELECT date, mealSlot FROM nutrition_meal_history WHERE id = $1 LIMIT 1", [mealId]);
+  if (!mealRow) return { ok: false };
+  const date = String((mealRow as any).date);
+  const slot = String((mealRow as any).mealslot ?? (mealRow as any).mealSlot) as MealSlot;
+  await dbQuery("DELETE FROM nutrition_meal_history WHERE id = $1", [mealId]);
+  await dbQuery("DELETE FROM nutrition_meal_activation WHERE date = $1 AND mealSlot = $2", [date, slot]);
+  return { ok: true, date, slot };
+}
+
+export async function cloudSetNutritionMealFeedback(mealId: string, accepted: boolean | null): Promise<{ ok: boolean }> {
+  await ensureCloudNutritionReady();
+  const exists = await dbQueryOne<Record<string, unknown>>("SELECT id FROM nutrition_meal_history WHERE id = $1 LIMIT 1", [mealId]);
+  if (!exists) return { ok: false };
+  await dbQuery("UPDATE nutrition_meal_history SET accepted = $2 WHERE id = $1", [mealId, accepted == null ? null : accepted ? 1 : 0]);
+  return { ok: true };
+}

@@ -1,1 +1,131 @@
-{"data":"aW1wb3J0IHsgcmFuZG9tVVVJRCB9IGZyb20gIm5vZGU6Y3J5cHRvIjsKaW1wb3J0IHsgZGJRdWVyeSwgZGJRdWVyeU9uZSB9IGZyb20gIkAvbGliL2RiLWRyaXZlciI7CmltcG9ydCB0eXBlIHsgTnV0cml0aW9uSW5ncmVkaWVudCwgTnV0cml0aW9uSW5ncmVkaWVudENhdGVnb3J5LCBOdXRyaXRpb25Vbml0IH0gZnJvbSAiQC9saWIvdHlwZXMiOwoKdHlwZSBTZWVkSW5ncmVkaWVudCA9IHsKICBuYW1lOiBzdHJpbmc7CiAgY2F0ZWdvcnk6IE51dHJpdGlvbkluZ3JlZGllbnRDYXRlZ29yeTsKICBrY2FsUGVyMTAwOiBudW1iZXI7CiAgcHJvdGVpblBlcjEwMDogbnVtYmVyOwogIGNhcmJzUGVyMTAwOiBudW1iZXI7CiAgZmF0UGVyMTAwOiBudW1iZXI7CiAgZGVmYXVsdFVuaXQ6IE51dHJpdGlvblVuaXQ7CiAgZ3JhbXNQZXJVbml0OiBudW1iZXI7Cn07Cgpjb25zdCBzZWVkSW5ncmVkaWVudHM6IFNlZWRJbmdyZWRpZW50W10gPSBbCiAgLy8gSHlkcmF0aW9uIC8gY29mZmVlCiAgeyBuYW1lOiAi157XmdedIiwgY2F0ZWdvcnk6ICJoeWRyYXRpb24iLCBrY2FsUGVyMTAwOiAwLCBwcm90ZWluUGVyMTAwOiAwLCBjYXJic1BlcjEwMDogMCwgZmF0UGVyMTAwOiAwLCBkZWZhdWx0VW5pdDogIm1sIiwgZ3JhbXNQZXJVbml0OiAxIH0sCiAgeyBuYW1lOiAi15DXodek16jXodeVINeb16TXldecIiwgY2F0ZWdvcnk6ICJoeWRyYXRpb24iLCBrY2FsUGVyMTAwOiA5LCBwcm90ZWluUGVyMTAwOiAwLjEsIGNhcmJzUGVyMTAwOiAxLjcsIGZhdFBlcjEwMDogMC4yLCBkZWZhdWx0VW5pdDogIm1sIiwgZ3JhbXNQZXJVbml0OiA2MCB9LAogIHsgbmFtZTogIteX15zXkSAzJSDXqteg15XXkdeUIiwgY2F0ZWdvcnk6ICJkYWlyeSIsIGtjYWxQZXIxMDA6IDYwLCBwcm90ZWluUGVyMTAwOiAzLjMsIGNhcmJzUGVyMTAwOiA0LjcsIGZhdFBlcjEwMDogMy4wLCBkZWZhdWx0VW5pdDogIm1sIiwgZ3JhbXNQZXJVbml0OiAxIH0sCiAgeyBuYW1lOiAi15DXodek16jXodeVINeb16TXldecINei150g15fXnNeRIiwgY2F0ZWdvcnk6ICJkYWlyeSIsIGtjYWxQZXIxMDA6IDYwLCBwcm90ZWluUGVyMTAwOiAzLjMsIGNhcmJzUGVyMTAwOiA0LjcsIGZhdFBlcjEwMDogMy4wLCBkZWZhdWx0VW5pdDogIm1sIiwgZ3JhbXNQZXJVbml0OiA1MCB9LAoKICAvLyBEYWlyeQogIHsgbmFtZTogIten15XXmNeS17MgNSUg16rXoNeV15HXlCIsIGNhdGVnb3J5OiAiZGFpcnkiLCBrY2FsUGVyMTAwOiA5NSwgcHJvdGVpblBlcjEwMDogMTEuMCwgY2FyYnNQZXIxMDA6IDEuNSwgZmF0UGVyMTAwOiA1LjAsIGRlZmF1bHRVbml0OiAiZyIsIGdyYW1zUGVyVW5pdDogMTAwIH0sCiAgeyBuYW1lOiAi15nXldeS15XXqNeYIDQlINeq16DXldeR15QiLCBjYXRlZ29yeTogImRhaXJ5Iiwga2NhbFBlcjEwMDogNjMsIHByb3RlaW5QZXIxMDA6IDMuMiwgY2FyYnNQZXIxMDA6IDMuNSwgZmF0UGVyMTAwOiA0LjAsIGRlZmF1bHRVbml0OiAiZyIsIGdyYW1zUGVyVW5pdDogMTAwIH0sCiAgeyBuYW1lOiAi15nXldeS15XXqNeYINeT16DXldeg15QgUFJPIDEuNSUgKDIwMCDXkteo150pIiwgY2F0ZWdvcnk6ICJkYWlyeSIsIGtjYWxQZXIxMDA6IDcwLCBwcm90ZWluUGVyMTAwOiAxMC4wLCBjYXJic1BlcjEwMDogMy40LCBmYXRQZXIxMDA6IDEuNSwgZGVmYXVsdFVuaXQ6ICJ1bml0IiwgZ3JhbXNQZXJVbml0OiAyMDAgfSwKICB7IG5hbWU6ICLXmdeV15LXldeo15gg15PXoNeV16DXlCBQUk8gMCUgKDIwMCDXkteo150pIiwgY2F0ZWdvcnk6ICJkYWlyeSIsIGtjYWxQZXIxMDA6IDY1LCBwcm90ZWluUGVyMTAwOiAxMC4wLCBjYXJic1BlcjEwMDogNS42LCBmYXRQZXIxMDA6IDAuMCwgZGVmYXVsdFVuaXQ6ICJ1bml0IiwgZ3JhbXNQZXJVbml0OiAyMDAgfSwKCiAgLy8gRnJ1aXQgLyBiYXNpY3MKICB7IG5hbWU6ICLXkdeg16DXlCIsIGNhdGVnb3J5OiAiZnJ1aXQiLCBrY2FsUGVyMTAwOiA4OSwgcHJvdGVpblBlcjEwMDogMS4xLCBjYXJic1BlcjEwMDogMjMsIGZhdFBlcjEwMDogMC4zLCBkZWZhdWx0VW5pdDogInVuaXQiLCBncmFtc1BlclVuaXQ6IDEyMCB9LAogIHsgbmFtZTogIteq16TXldeXIiwgY2F0ZWdvcnk6ICJmcnVpdCIsIGtjYWxQZXIxMDA6IDUyLCBwcm90ZWluUGVyMTAwOiAwLjMsIGNhcmJzUGVyMTAwOiAxNCwgZmF0UGVyMTAwOiAwLjIsIGRlZmF1bHRVbml0OiAidW5pdCIsIGdyYW1zUGVyVW5pdDogMTUwIH0sCiAgeyBuYW1lOiAi16rXnteoINee15LXs9eU15XXnCIsIGNhdGVnb3J5OiAiZnJ1aXQiLCBrY2FsUGVyMTAwOiAyNzcsIHByb3RlaW5QZXIxMDA6IDEuOCwgY2FyYnNQZXIxMDA6IDc1LCBmYXRQZXIxMDA6IDAuMiwgZGVmYXVsdFVuaXQ6ICJ1bml0IiwgZ3JhbXNQZXJVbml0OiAyNCB9LAogIHsgbmFtZTogIteT15HXqSIsIGNhdGVnb3J5OiAic3dlZXQiLCBrY2FsUGVyMTAwOiAzMDQsIHByb3RlaW5QZXIxMDA6IDAuMywgY2FyYnNQZXIxMDA6IDgyLjQsIGZhdFBlcjEwMDogMCwgZGVmYXVsdFVuaXQ6ICJ0YnNwIiwgZ3JhbXNQZXJVbml0OiAyMSB9LAoKICAvLyBTcHJlYWRzIC8gZmF0cwogIHsgbmFtZTogIteY15fXmdeg15Qg15LXldec157XmdeqIiwgY2F0ZWdvcnk6ICJmYXQiLCBrY2FsUGVyMTAwOiA1OTUsIHByb3RlaW5QZXIxMDA6IDE3LjAsIGNhcmJzUGVyMTAwOiAyMS4wLCBmYXRQZXIxMDA6IDUzLjAsIGRlZmF1bHRVbml0OiAidGJzcCIsIGdyYW1zUGVyVW5pdDogMTUgfSwKICB7IG5hbWU6ICLXl9eV157XldehICjXntee16jXlykiLCBjYXRlZ29yeTogImZhdCIsIGtjYWxQZXIxMDA6IDIzNywgcHJvdGVpblBlcjEwMDogNy45LCBjYXJic1BlcjEwMDogMTQuMywgZmF0UGVyMTAwOiAxNy44LCBkZWZhdWx0VW5pdDogImciLCBncmFtc1BlclVuaXQ6IDMwIH0sCgogIC8vIE1lYWxzIC8gY2FyYnMKICB7IG5hbWU6ICLXqdeZ15HXldec16og16nXldei15wiLCBjYXRlZ29yeTogImNhcmIiLCBrY2FsUGVyMTAwOiAzODksIHByb3RlaW5QZXIxMDA6IDE2LjksIGNhcmJzUGVyMTAwOiA2Ni4zLCBmYXRQZXIxMDA6IDYuOSwgZGVmYXVsdFVuaXQ6ICJnIiwgZ3JhbXNQZXJVbml0OiA0MCB9LAogIHsgbmFtZTogIten15nXoNeV15DXlCDXnteR15XXqdec16oiLCBjYXRlZ29yeTogImNhcmIiLCBrY2FsUGVyMTAwOiAxMjAsIHByb3RlaW5QZXIxMDA6IDQuNCwgY2FyYnNQZXIxMDA6IDIxLjMsIGZhdFBlcjEwMDogMS45LCBkZWZhdWx0VW5pdDogImciLCBncmFtc1BlclVuaXQ6IDE2MCB9LAogIHsgbmFtZTogIteb15XXodee16og157XkdeV16nXnNeqIiwgY2F0ZWdvcnk6ICJjYXJiIiwga2NhbFBlcjEwMDogOTIsIHByb3RlaW5QZXIxMDA6IDMuNCwgY2FyYnNQZXIxMDA6IDE5LjksIGZhdFBlcjEwMDogMC42LCBkZWZhdWx0VW5pdDogImciLCBncmFtc1BlclVuaXQ6IDE2MCB9LAogIHsgbmFtZTogItek16HXmNeUINeR16jXldeY15Eg16LXkteR16DXmdeV16oiLCBjYXRlZ29yeTogImNhcmIiLCBrY2FsUGVyMTAwOiAxMzUsIHByb3RlaW5QZXIxMDA6IDQuNSwgY2FyYnNQZXIxMDA6IDI0LjAsIGZhdFBlcjEwMDogMi41LCBkZWZhdWx0VW5pdDogInVuaXQiLCBncmFtc1BlclVuaXQ6IDI1MCB9LAogIHsgbmFtZTogItec15bXoNeZ15Qg16bXnteX15XXoNeZ16oiLCBjYXRlZ29yeTogImNhcmIiLCBrY2FsUGVyMTAwOiAxMzAsIHByb3RlaW5QZXIxMDA6IDUuNiwgY2FyYnNQZXIxMDA6IDEyLjAsIGZhdFBlcjEwMDogNC42LCBkZWZhdWx0VW5pdDogInVuaXQiLCBncmFtc1BlclVuaXQ6IDI1MCB9LAoKICAvLyBTdHJlZXQgZm9vZCAvIHN3ZWV0cwogIHsgbmFtZTogItek15zXkNek15wiLCBjYXRlZ29yeTogImNhcmIiLCBrY2FsUGVyMTAwOiAzMzMsIHByb3RlaW5QZXIxMDA6IDEzLjMsIGNhcmJzUGVyMTAwOiAzMS44LCBmYXRQZXIxMDA6IDE3LjgsIGRlZmF1bHRVbml0OiAidW5pdCIsIGdyYW1zUGVyVW5pdDogMTcgfSwKICB7IG5hbWU6ICJLaW5kZXIgSGFwcHkgSGlwcG8iLCBjYXRlZ29yeTogInN3ZWV0Iiwga2NhbFBlcjEwMDogNTY1LCBwcm90ZWluUGVyMTAwOiA4LjIsIGNhcmJzUGVyMTAwOiA1Mi4wLCBmYXRQZXIxMDA6IDM2LjAsIGRlZmF1bHRVbml0OiAidW5pdCIsIGdyYW1zUGVyVW5pdDogMjEgfSwKICB7IG5hbWU6ICLXpNeh16cg15bXntefIiwgY2F0ZWdvcnk6ICJzd2VldCIsIGtjYWxQZXIxMDA6IDUyMCwgcHJvdGVpblBlcjEwMDogNi41LCBjYXJic1BlcjEwMDogNTguMCwgZmF0UGVyMTAwOiAyOS4wLCBkZWZhdWx0VW5pdDogInVuaXQiLCBncmFtc1BlclVuaXQ6IDQ1IH0KXTsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBlbnN1cmVDbG91ZE51dHJpdGlvblNlZWQoKSB7CiAgY29uc3QgY291bnRSb3cgPSBhd2FpdCBkYlF1ZXJ5T25lPHsgY291bnQ6IG51bWJlciB9PigiU0VMRUNUIENPVU5UKCopOjppbnQgQVMgY291bnQgRlJPTSBudXRyaXRpb25faW5ncmVkaWVudHMiKTsKICBpZiAoKGNvdW50Um93Py5jb3VudCA/PyAwKSA+IDApIHJldHVybjsKCiAgY29uc3Qgbm93ID0gbmV3IERhdGUoKS50b0lTT1N0cmluZygpOwogIGZvciAoY29uc3QgaXRlbSBvZiBzZWVkSW5ncmVkaWVudHMpIHsKICAgIGF3YWl0IGRiUXVlcnkoCiAgICAgIGAKICAgICAgSU5TRVJUIElOVE8gbnV0cml0aW9uX2luZ3JlZGllbnRzCiAgICAgICAgKGlkLCBuYW1lLCBjYXRlZ29yeSwga2NhbFBlcjEwMCwgcHJvdGVpblBlcjEwMCwgY2FyYnNQZXIxMDAsIGZhdFBlcjEwMCwgZGVmYXVsdFVuaXQsIGdyYW1zUGVyVW5pdCwgaXNCdWlsdEluLCBjcmVhdGVkQXQsIHVwZGF0ZWRBdCkKICAgICAgVkFMVUVTCiAgICAgICAgKCQxLCQyLCQzLCQ0LCQ1LCQ2LCQ3LCQ4LCQ5LDEsJDEwLCQxMCkKICAgICAgT04gQ09ORkxJQ1QobmFtZSkgRE8gTk9USElORwogICAgICBgLAogICAgICBbCiAgICAgICAgcmFuZG9tVVVJRCgpLAogICAgICAgIGl0ZW0ubmFtZSwKICAgICAgICBpdGVtLmNhdGVnb3J5LAogICAgICAgIGl0ZW0ua2NhbFBlcjEwMCwKICAgICAgICBpdGVtLnByb3RlaW5QZXIxMDAsCiAgICAgICAgaXRlbS5jYXJic1BlcjEwMCwKICAgICAgICBpdGVtLmZhdFBlcjEwMCwKICAgICAgICBpdGVtLmRlZmF1bHRVbml0LAogICAgICAgIGl0ZW0uZ3JhbXNQZXJVbml0LAogICAgICAgIG5vdwogICAgICBdCiAgICApOwogIH0KfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGNsb3VkTGlzdE51dHJpdGlvbkluZ3JlZGllbnRzKCk6IFByb21pc2U8TnV0cml0aW9uSW5ncmVkaWVudFtdPiB7CiAgY29uc3QgcmVzID0gYXdhaXQgZGJRdWVyeTx7CiAgICBpZDogc3RyaW5nOwogICAgbmFtZTogc3RyaW5nOwogICAgY2F0ZWdvcnk6IE51dHJpdGlvbkluZ3JlZGllbnRDYXRlZ29yeTsKICAgIGtjYWxwZXIxMDA6IG51bWJlcjsKICAgIHByb3RlaW5wZXIxMDA6IG51bWJlcjsKICAgIGNhcmJzcGVyMTAwOiBudW1iZXI7CiAgICBmYXRwZXIxMDA6IG51bWJlcjsKICAgIGRlZmF1bHR1bml0OiBOdXRyaXRpb25Vbml0OwogICAgZ3JhbXNwZXJ1bml0OiBudW1iZXI7CiAgICBpc2J1aWx0aW46IG51bWJlciB8IGJvb2xlYW47CiAgICBjcmVhdGVkYXQ6IHN0cmluZzsKICAgIHVwZGF0ZWRhdDogc3RyaW5nOwogIH0+KAogICAgYAogICAgU0VMRUNUCiAgICAgIGlkLCBuYW1lLCBjYXRlZ29yeSwga2NhbFBlcjEwMCwgcHJvdGVpblBlcjEwMCwgY2FyYnNQZXIxMDAsIGZhdFBlcjEwMCwKICAgICAgZGVmYXVsdFVuaXQsIGdyYW1zUGVyVW5pdCwgaXNCdWlsdEluLCBjcmVhdGVkQXQsIHVwZGF0ZWRBdAogICAgRlJPTSBudXRyaXRpb25faW5ncmVkaWVudHMKICAgIE9SREVSIEJZCiAgICAgIENBU0UgY2F0ZWdvcnkKICAgICAgICBXSEVOICdkYWlyeScgVEhFTiAxCiAgICAgICAgV0hFTiAncHJvdGVpbicgVEhFTiAyCiAgICAgICAgV0hFTiAnY2FyYicgVEhFTiAzCiAgICAgICAgV0hFTiAndmVnZXRhYmxlJyBUSEVOIDQKICAgICAgICBXSEVOICdmcnVpdCcgVEhFTiA1CiAgICAgICAgV0hFTiAnZmF0JyBUSEVOIDYKICAgICAgICBXSEVOICdoeWRyYXRpb24nIFRIRU4gNwogICAgICAgIEVMU0UgOAogICAgICBFTkQgQVNDLAogICAgICBuYW1lIEFTQwogICAgYAogICk7CiAgcmV0dXJuIHJlcy5yb3dzLm1hcCgocm93KSA9PiAoewogICAgaWQ6IFN0cmluZyhyb3cuaWQpLAogICAgbmFtZTogU3RyaW5nKHJvdy5uYW1lKSwKICAgIGNhdGVnb3J5OiByb3cuY2F0ZWdvcnksCiAgICBrY2FsUGVyMTAwOiBOdW1iZXIoKHJvdyBhcyBhbnkpLmtjYWxwZXIxMDAgPz8gKHJvdyBhcyBhbnkpLmtjYWxQZXIxMDAgPz8gMCksCiAgICBwcm90ZWluUGVyMTAwOiBOdW1iZXIoKHJvdyBhcyBhbnkpLnByb3RlaW5wZXIxMDAgPz8gKHJvdyBhcyBhbnkpLnByb3RlaW5QZXIxMDAgPz8gMCksCiAgICBjYXJic1BlcjEwMDogTnVtYmVyKChyb3cgYXMgYW55KS5jYXJic3BlcjEwMCA/PyAocm93IGFzIGFueSkuY2FyYnNQZXIxMDAgPz8gMCksCiAgICBmYXRQZXIxMDA6IE51bWJlcigocm93IGFzIGFueSkuZmF0cGVyMTAwID8/IChyb3cgYXMgYW55KS5mYXRQZXIxMDAgPz8gMCksCiAgICBkZWZhdWx0VW5pdDogKFN0cmluZygocm93IGFzIGFueSkuZGVmYXVsdHVuaXQgPz8gKHJvdyBhcyBhbnkpLmRlZmF1bHRVbml0KSBhcyBOdXRyaXRpb25Vbml0KSA/PyAiZyIsCiAgICBncmFtc1BlclVuaXQ6IE51bWJlcigocm93IGFzIGFueSkuZ3JhbXNwZXJ1bml0ID8/IChyb3cgYXMgYW55KS5ncmFtc1BlclVuaXQgPz8gMSksCiAgICBpc0J1aWx0SW46IEJvb2xlYW4oKHJvdyBhcyBhbnkpLmlzYnVpbHRpbiA/PyAocm93IGFzIGFueSkuaXNCdWlsdEluKSwKICAgIGNyZWF0ZWRBdDogU3RyaW5nKChyb3cgYXMgYW55KS5jcmVhdGVkYXQgPz8gKHJvdyBhcyBhbnkpLmNyZWF0ZWRBdCA/PyAiIiksCiAgICB1cGRhdGVkQXQ6IFN0cmluZygocm93IGFzIGFueSkudXBkYXRlZGF0ID8/IChyb3cgYXMgYW55KS51cGRhdGVkQXQgPz8gIiIpCiAgfSkpOwp9Cgo="}
+import { randomUUID } from "node:crypto";
+import { dbQuery, dbQueryOne } from "@/lib/db-driver";
+import type { NutritionIngredient, NutritionIngredientCategory, NutritionUnit } from "@/lib/types";
+
+type SeedIngredient = {
+  name: string;
+  category: NutritionIngredientCategory;
+  kcalPer100: number;
+  proteinPer100: number;
+  carbsPer100: number;
+  fatPer100: number;
+  defaultUnit: NutritionUnit;
+  gramsPerUnit: number;
+};
+
+const seedIngredients: SeedIngredient[] = [
+  // Hydration / coffee
+  { name: "מים", category: "hydration", kcalPer100: 0, proteinPer100: 0, carbsPer100: 0, fatPer100: 0, defaultUnit: "ml", gramsPerUnit: 1 },
+  { name: "אספרסו כפול", category: "hydration", kcalPer100: 9, proteinPer100: 0.1, carbsPer100: 1.7, fatPer100: 0.2, defaultUnit: "ml", gramsPerUnit: 60 },
+  { name: "חלב 3% תנובה", category: "dairy", kcalPer100: 60, proteinPer100: 3.3, carbsPer100: 4.7, fatPer100: 3.0, defaultUnit: "ml", gramsPerUnit: 1 },
+  { name: "אספרסו כפול עם חלב", category: "dairy", kcalPer100: 60, proteinPer100: 3.3, carbsPer100: 4.7, fatPer100: 3.0, defaultUnit: "ml", gramsPerUnit: 50 },
+
+  // Dairy
+  { name: "קוטג׳ 5% תנובה", category: "dairy", kcalPer100: 95, proteinPer100: 11.0, carbsPer100: 1.5, fatPer100: 5.0, defaultUnit: "g", gramsPerUnit: 100 },
+  { name: "יוגורט 4% תנובה", category: "dairy", kcalPer100: 63, proteinPer100: 3.2, carbsPer100: 3.5, fatPer100: 4.0, defaultUnit: "g", gramsPerUnit: 100 },
+  { name: "יוגורט דנונה PRO 1.5% (200 גרם)", category: "dairy", kcalPer100: 70, proteinPer100: 10.0, carbsPer100: 3.4, fatPer100: 1.5, defaultUnit: "unit", gramsPerUnit: 200 },
+  { name: "יוגורט דנונה PRO 0% (200 גרם)", category: "dairy", kcalPer100: 65, proteinPer100: 10.0, carbsPer100: 5.6, fatPer100: 0.0, defaultUnit: "unit", gramsPerUnit: 200 },
+
+  // Fruit / basics
+  { name: "בננה", category: "fruit", kcalPer100: 89, proteinPer100: 1.1, carbsPer100: 23, fatPer100: 0.3, defaultUnit: "unit", gramsPerUnit: 120 },
+  { name: "תפוח", category: "fruit", kcalPer100: 52, proteinPer100: 0.3, carbsPer100: 14, fatPer100: 0.2, defaultUnit: "unit", gramsPerUnit: 150 },
+  { name: "תמר מג׳הול", category: "fruit", kcalPer100: 277, proteinPer100: 1.8, carbsPer100: 75, fatPer100: 0.2, defaultUnit: "unit", gramsPerUnit: 24 },
+  { name: "דבש", category: "sweet", kcalPer100: 304, proteinPer100: 0.3, carbsPer100: 82.4, fatPer100: 0, defaultUnit: "tbsp", gramsPerUnit: 21 },
+
+  // Spreads / fats
+  { name: "טחינה גולמית", category: "fat", kcalPer100: 595, proteinPer100: 17.0, carbsPer100: 21.0, fatPer100: 53.0, defaultUnit: "tbsp", gramsPerUnit: 15 },
+  { name: "חומוס (ממרח)", category: "fat", kcalPer100: 237, proteinPer100: 7.9, carbsPer100: 14.3, fatPer100: 17.8, defaultUnit: "g", gramsPerUnit: 30 },
+
+  // Meals / carbs
+  { name: "שיבולת שועל", category: "carb", kcalPer100: 389, proteinPer100: 16.9, carbsPer100: 66.3, fatPer100: 6.9, defaultUnit: "g", gramsPerUnit: 40 },
+  { name: "קינואה מבושלת", category: "carb", kcalPer100: 120, proteinPer100: 4.4, carbsPer100: 21.3, fatPer100: 1.9, defaultUnit: "g", gramsPerUnit: 160 },
+  { name: "כוסמת מבושלת", category: "carb", kcalPer100: 92, proteinPer100: 3.4, carbsPer100: 19.9, fatPer100: 0.6, defaultUnit: "g", gramsPerUnit: 160 },
+  { name: "פסטה ברוטב עגבניות", category: "carb", kcalPer100: 135, proteinPer100: 4.5, carbsPer100: 24.0, fatPer100: 2.5, defaultUnit: "unit", gramsPerUnit: 250 },
+  { name: "לזניה צמחונית", category: "carb", kcalPer100: 130, proteinPer100: 5.6, carbsPer100: 12.0, fatPer100: 4.6, defaultUnit: "unit", gramsPerUnit: 250 },
+
+  // Street food / sweets
+  { name: "פלאפל", category: "carb", kcalPer100: 333, proteinPer100: 13.3, carbsPer100: 31.8, fatPer100: 17.8, defaultUnit: "unit", gramsPerUnit: 17 },
+  { name: "Kinder Happy Hippo", category: "sweet", kcalPer100: 565, proteinPer100: 8.2, carbsPer100: 52.0, fatPer100: 36.0, defaultUnit: "unit", gramsPerUnit: 21 },
+  { name: "פסק זמן", category: "sweet", kcalPer100: 520, proteinPer100: 6.5, carbsPer100: 58.0, fatPer100: 29.0, defaultUnit: "unit", gramsPerUnit: 45 }
+];
+
+export async function ensureCloudNutritionSeed() {
+  const countRow = await dbQueryOne<{ count: number }>("SELECT COUNT(*)::int AS count FROM nutrition_ingredients");
+  if ((countRow?.count ?? 0) > 0) return;
+
+  const now = new Date().toISOString();
+  for (const item of seedIngredients) {
+    await dbQuery(
+      `
+      INSERT INTO nutrition_ingredients
+        (id, name, category, kcalPer100, proteinPer100, carbsPer100, fatPer100, defaultUnit, gramsPerUnit, isBuiltIn, createdAt, updatedAt)
+      VALUES
+        ($1,$2,$3,$4,$5,$6,$7,$8,$9,1,$10,$10)
+      ON CONFLICT(name) DO NOTHING
+      `,
+      [
+        randomUUID(),
+        item.name,
+        item.category,
+        item.kcalPer100,
+        item.proteinPer100,
+        item.carbsPer100,
+        item.fatPer100,
+        item.defaultUnit,
+        item.gramsPerUnit,
+        now
+      ]
+    );
+  }
+}
+
+export async function cloudListNutritionIngredients(): Promise<NutritionIngredient[]> {
+  const res = await dbQuery<{
+    id: string;
+    name: string;
+    category: NutritionIngredientCategory;
+    kcalper100: number;
+    proteinper100: number;
+    carbsper100: number;
+    fatper100: number;
+    defaultunit: NutritionUnit;
+    gramsperunit: number;
+    isbuiltin: number | boolean;
+    createdat: string;
+    updatedat: string;
+  }>(
+    `
+    SELECT
+      id, name, category, kcalPer100, proteinPer100, carbsPer100, fatPer100,
+      defaultUnit, gramsPerUnit, isBuiltIn, createdAt, updatedAt
+    FROM nutrition_ingredients
+    ORDER BY
+      CASE category
+        WHEN 'dairy' THEN 1
+        WHEN 'protein' THEN 2
+        WHEN 'carb' THEN 3
+        WHEN 'vegetable' THEN 4
+        WHEN 'fruit' THEN 5
+        WHEN 'fat' THEN 6
+        WHEN 'hydration' THEN 7
+        ELSE 8
+      END ASC,
+      name ASC
+    `
+  );
+  return res.rows.map((row) => ({
+    id: String(row.id),
+    name: String(row.name),
+    category: row.category,
+    kcalPer100: Number((row as any).kcalper100 ?? (row as any).kcalPer100 ?? 0),
+    proteinPer100: Number((row as any).proteinper100 ?? (row as any).proteinPer100 ?? 0),
+    carbsPer100: Number((row as any).carbsper100 ?? (row as any).carbsPer100 ?? 0),
+    fatPer100: Number((row as any).fatper100 ?? (row as any).fatPer100 ?? 0),
+    defaultUnit: (String((row as any).defaultunit ?? (row as any).defaultUnit) as NutritionUnit) ?? "g",
+    gramsPerUnit: Number((row as any).gramsperunit ?? (row as any).gramsPerUnit ?? 1),
+    isBuiltIn: Boolean((row as any).isbuiltin ?? (row as any).isBuiltIn),
+    createdAt: String((row as any).createdat ?? (row as any).createdAt ?? ""),
+    updatedAt: String((row as any).updatedat ?? (row as any).updatedAt ?? "")
+  }));
+}
+

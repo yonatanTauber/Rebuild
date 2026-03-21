@@ -1,1 +1,46 @@
-{"data":"aW1wb3J0IGZzIGZyb20gIm5vZGU6ZnMiOwppbXBvcnQgcGF0aCBmcm9tICJub2RlOnBhdGgiOwoKY29uc3QgZGF0YURpciA9IHBhdGguam9pbihwcm9jZXNzLmN3ZCgpLCAiZGF0YSIpOwpjb25zdCBkYkZpbGVzID0gWyJyZWJ1aWxkLmRiIiwgInJlYnVpbGQuZGItc2htIiwgInJlYnVpbGQuZGItd2FsIl07CmNvbnN0IGltcG9ydERpciA9IHBhdGguam9pbihkYXRhRGlyLCAiaW1wb3J0Iik7CmNvbnN0IHNtYXNocnVuRGlyID0gcGF0aC5qb2luKGRhdGFEaXIsICJzbWFzaHJ1bi1leHBvcnQiKTsKCmZ1bmN0aW9uIHJlbW92ZUZpbGUoZmlsZXBhdGg6IHN0cmluZykgewogIGlmICghZnMuZXhpc3RzU3luYyhmaWxlcGF0aCkpIHJldHVybiBmYWxzZTsKICBmcy51bmxpbmtTeW5jKGZpbGVwYXRoKTsKICByZXR1cm4gdHJ1ZTsKfQoKZnVuY3Rpb24gZW1wdHlEaXJlY3RvcnkoZGlyOiBzdHJpbmcpIHsKICBpZiAoIWZzLmV4aXN0c1N5bmMoZGlyKSkgcmV0dXJuOwogIGZvciAoY29uc3QgZW50cnkgb2YgZnMucmVhZGRpclN5bmMoZGlyKSkgewogICAgY29uc3QgZW50cnlQYXRoID0gcGF0aC5qb2luKGRpciwgZW50cnkpOwogICAgZnMucm1TeW5jKGVudHJ5UGF0aCwgeyByZWN1cnNpdmU6IHRydWUsIGZvcmNlOiB0cnVlIH0pOwogIH0KfQoKZnVuY3Rpb24gZW5zdXJlRGlyZWN0b3J5KGRpcjogc3RyaW5nKSB7CiAgaWYgKCFmcy5leGlzdHNTeW5jKGRpcikpIGZzLm1rZGlyU3luYyhkaXIsIHsgcmVjdXJzaXZlOiB0cnVlIH0pOwp9CgpmdW5jdGlvbiBtYWluKCkgewogIGNvbnNvbGUubG9nKCJSZXNldHRpbmcgbG9jYWwgaGlzdG9yeS4uLiIpOwoKICBsZXQgZGVsZXRlZERiID0gMDsKICBmb3IgKGNvbnN0IGZpbGVuYW1lIG9mIGRiRmlsZXMpIHsKICAgIGNvbnN0IHJlbW92ZWQgPSByZW1vdmVGaWxlKHBhdGguam9pbihkYXRhRGlyLCBmaWxlbmFtZSkpOwogICAgaWYgKHJlbW92ZWQpIGRlbGV0ZWREYiArPSAxOwogIH0KCiAgZW1wdHlEaXJlY3RvcnkoaW1wb3J0RGlyKTsKICBlbXB0eURpcmVjdG9yeShzbWFzaHJ1bkRpcik7CgogIGVuc3VyZURpcmVjdG9yeShpbXBvcnREaXIpOwogIGVuc3VyZURpcmVjdG9yeShzbWFzaHJ1bkRpcik7CgogIGNvbnNvbGUubG9nKGBSZW1vdmVkICR7ZGVsZXRlZERifSBkYXRhYmFzZSBmaWxlcyBhbmQgY2xlYXJlZCBpbXBvcnQvc21hc2hydW4gZm9sZGVycy5gKTsKICBjb25zb2xlLmxvZygiWW91IGNhbiBub3cgZHJvcCB0aGUgbmV3IFNtYXNocnVuIFRDWCBmaWxlcyBpbnRvIGRhdGEvc21hc2hydW4tZXhwb3J0IGFuZCByZXJ1biBpbmdlc3Rpb24uIik7Cn0KCm1haW4oKTsK"}
+import fs from "node:fs";
+import path from "node:path";
+
+const dataDir = path.join(process.cwd(), "data");
+const dbFiles = ["rebuild.db", "rebuild.db-shm", "rebuild.db-wal"];
+const importDir = path.join(dataDir, "import");
+const smashrunDir = path.join(dataDir, "smashrun-export");
+
+function removeFile(filepath: string) {
+  if (!fs.existsSync(filepath)) return false;
+  fs.unlinkSync(filepath);
+  return true;
+}
+
+function emptyDirectory(dir: string) {
+  if (!fs.existsSync(dir)) return;
+  for (const entry of fs.readdirSync(dir)) {
+    const entryPath = path.join(dir, entry);
+    fs.rmSync(entryPath, { recursive: true, force: true });
+  }
+}
+
+function ensureDirectory(dir: string) {
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+}
+
+function main() {
+  console.log("Resetting local history...");
+
+  let deletedDb = 0;
+  for (const filename of dbFiles) {
+    const removed = removeFile(path.join(dataDir, filename));
+    if (removed) deletedDb += 1;
+  }
+
+  emptyDirectory(importDir);
+  emptyDirectory(smashrunDir);
+
+  ensureDirectory(importDir);
+  ensureDirectory(smashrunDir);
+
+  console.log(`Removed ${deletedDb} database files and cleared import/smashrun folders.`);
+  console.log("You can now drop the new Smashrun TCX files into data/smashrun-export and rerun ingestion.");
+}
+
+main();

@@ -1,1 +1,16 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAibmV4dC9zZXJ2ZXIiOwppbXBvcnQgeyBnZXRQZW5kaW5nV29ya291dEZlZWRiYWNrIH0gZnJvbSAiQC9saWIvZGIiOwppbXBvcnQgeyBjbG91ZEVuYWJsZWQsIGNsb3VkR2V0UGVuZGluZ1dvcmtvdXRGZWVkYmFjayB9IGZyb20gIkAvbGliL2Nsb3VkLWRiIjsKCmV4cG9ydCBjb25zdCBydW50aW1lID0gIm5vZGVqcyI7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKCkgewogIGlmIChjbG91ZEVuYWJsZWQoKSkgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsKICAgICAgcGVuZGluZzogYXdhaXQgY2xvdWRHZXRQZW5kaW5nV29ya291dEZlZWRiYWNrKDIpCiAgICB9KTsKICB9CiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsKICAgIHBlbmRpbmc6IGdldFBlbmRpbmdXb3Jrb3V0RmVlZGJhY2soMikKICB9KTsKfQo="}
+import { NextResponse } from "next/server";
+import { getPendingWorkoutFeedback } from "@/lib/db";
+import { cloudEnabled, cloudGetPendingWorkoutFeedback } from "@/lib/cloud-db";
+
+export const runtime = "nodejs";
+
+export async function GET() {
+  if (cloudEnabled()) {
+    return NextResponse.json({
+      pending: await cloudGetPendingWorkoutFeedback(2)
+    });
+  }
+  return NextResponse.json({
+    pending: getPendingWorkoutFeedback(2)
+  });
+}

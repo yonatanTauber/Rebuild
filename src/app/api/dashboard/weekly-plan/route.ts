@@ -1,1 +1,37 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IGZvcm1hdElTT0RhdGUgfSBmcm9tICJAL2xpYi9kYXRlIjsKaW1wb3J0IHsgZ2V0V2Vla2x5UGxhbiwgc2V0V2Vla2x5UGxhbiwgdW5sb2NrV2Vla2x5UGxhbiB9IGZyb20gIkAvbGliL2RiIjsKaW1wb3J0IHsgcmVjYWxjdWxhdGVOdXRyaXRpb25Gcm9tIH0gZnJvbSAiQC9saWIvbnV0cml0aW9uLWVuZ2luZSI7Cgpjb25zdCBzY2hlbWEgPSB6Lm9iamVjdCh7CiAgcHJvZmlsZTogei5lbnVtKFsiZnJlZSIsICJiYWxhbmNlZCIsICJidXN5IiwgInZhY2F0aW9uIl0pLm9wdGlvbmFsKCksCiAgdW5sb2NrOiB6LmJvb2xlYW4oKS5vcHRpb25hbCgpLAogIGRhdGU6IHouc3RyaW5nKCkub3B0aW9uYWwoKQp9KTsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBkYXRlID0gcmVxdWVzdC5uZXh0VXJsLnNlYXJjaFBhcmFtcy5nZXQoImRhdGUiKSA/PyBmb3JtYXRJU09EYXRlKCk7CiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKGdldFdlZWtseVBsYW4oZGF0ZSkpOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gUE9TVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IHBheWxvYWQgPSBhd2FpdCByZXF1ZXN0Lmpzb24oKTsKICBjb25zdCBwYXJzZWQgPSBzY2hlbWEuc2FmZVBhcnNlKHBheWxvYWQpOwogIGlmICghcGFyc2VkLnN1Y2Nlc3MpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiBwYXJzZWQuZXJyb3IuZmxhdHRlbigpIH0sIHsgc3RhdHVzOiA0MDAgfSk7CiAgfQoKICBjb25zdCBkYXRlID0gcGFyc2VkLmRhdGEuZGF0ZSA/PyBmb3JtYXRJU09EYXRlKCk7CiAgaWYgKHBhcnNlZC5kYXRhLnVubG9jaykgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgc2F2ZWQ6IHRydWUsIC4uLnVubG9ja1dlZWtseVBsYW4oZGF0ZSkgfSk7CiAgfQoKICBpZiAoIXBhcnNlZC5kYXRhLnByb2ZpbGUpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAibWlzc2luZyBwcm9maWxlIiB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgc2V0V2Vla2x5UGxhbihwYXJzZWQuZGF0YS5wcm9maWxlLCBkYXRlKTsKICByZWNhbGN1bGF0ZU51dHJpdGlvbkZyb20odW5kZWZpbmVkLCA4KTsKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBzYXZlZDogdHJ1ZSwgLi4uZ2V0V2Vla2x5UGxhbihkYXRlKSB9KTsKfQo="}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { formatISODate } from "@/lib/date";
+import { getWeeklyPlan, setWeeklyPlan, unlockWeeklyPlan } from "@/lib/db";
+import { recalculateNutritionFrom } from "@/lib/nutrition-engine";
+
+const schema = z.object({
+  profile: z.enum(["free", "balanced", "busy", "vacation"]).optional(),
+  unlock: z.boolean().optional(),
+  date: z.string().optional()
+});
+
+export async function GET(request: NextRequest) {
+  const date = request.nextUrl.searchParams.get("date") ?? formatISODate();
+  return NextResponse.json(getWeeklyPlan(date));
+}
+
+export async function POST(request: NextRequest) {
+  const payload = await request.json();
+  const parsed = schema.safeParse(payload);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  const date = parsed.data.date ?? formatISODate();
+  if (parsed.data.unlock) {
+    return NextResponse.json({ saved: true, ...unlockWeeklyPlan(date) });
+  }
+
+  if (!parsed.data.profile) {
+    return NextResponse.json({ error: "missing profile" }, { status: 400 });
+  }
+
+  setWeeklyPlan(parsed.data.profile, date);
+  recalculateNutritionFrom(undefined, 8);
+  return NextResponse.json({ saved: true, ...getWeeklyPlan(date) });
+}

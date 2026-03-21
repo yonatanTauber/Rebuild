@@ -1,1 +1,548 @@
-{"data":"aW1wb3J0IGZzIGZyb20gIm5vZGU6ZnMiOwppbXBvcnQgcGF0aCBmcm9tICJub2RlOnBhdGgiOwppbXBvcnQgdHlwZSB7IFdvcmtvdXQgfSBmcm9tICJAL2xpYi90eXBlcyI7Cgpjb25zdCBERUZBVUxUX0hFQUxUSEZJVF9ESVIgPSAiL1VzZXJzL1kuVC5wL0xpYnJhcnkvTW9iaWxlIERvY3VtZW50cy9pQ2xvdWR+Y29tfmFsdGlmb25kb35IZWFsdGhGaXQvRG9jdW1lbnRzIjsKCmV4cG9ydCB0eXBlIFJvdXRlUG9pbnQgPSB7IGxhdDogbnVtYmVyOyBsb246IG51bWJlciB9OwpleHBvcnQgdHlwZSBSb3V0ZVNlZ21lbnQgPSBSb3V0ZVBvaW50W107CgpleHBvcnQgdHlwZSBXb3Jrb3V0VHJhY2tQb2ludCA9IHsKICBsYXQ6IG51bWJlcjsKICBsb246IG51bWJlcjsKICBzZWM6IG51bWJlcjsKICBkaXN0TTogbnVtYmVyOwogIGhyOiBudW1iZXIgfCBudWxsOwogIHNlZ21lbnRJbmRleDogbnVtYmVyOwp9OwoKZXhwb3J0IHR5cGUgV29ya291dEttU3BsaXQgPSB7CiAga206IG51bWJlcjsKICBzcGxpdFNlYzogbnVtYmVyOwogIGN1bXVsYXRpdmVTZWM6IG51bWJlcjsKICBwYWNlTWluUGVyS206IG51bWJlcjsKICBhdmdIcjogbnVtYmVyIHwgbnVsbDsKfTsKCmV4cG9ydCB0eXBlIFdvcmtvdXRIZWFydFJhdGVTYW1wbGUgPSB7CiAgc2VjOiBudW1iZXI7CiAgYnBtOiBudW1iZXI7Cn07CgpleHBvcnQgdHlwZSBXb3Jrb3V0RGV0YWlsRGF0YSA9IHsKICByb3V0ZVBvaW50czogUm91dGVQb2ludFtdOwogIHJvdXRlU2VnbWVudHM6IFJvdXRlU2VnbWVudFtdOwogIHRyYWNrUG9pbnRzOiBXb3Jrb3V0VHJhY2tQb2ludFtdOwogIGhlYXJ0UmF0ZVNhbXBsZXM6IFdvcmtvdXRIZWFydFJhdGVTYW1wbGVbXTsKICBzcGxpdHM6IFdvcmtvdXRLbVNwbGl0W107CiAgYXZnSHJGcm9tVHJhY2s6IG51bWJlciB8IG51bGw7CiAgbWF4SHJGcm9tVHJhY2s6IG51bWJlciB8IG51bGw7CiAgbW92aW5nRHVyYXRpb25TZWM6IG51bWJlciB8IG51bGw7CiAgcGF1c2VEdXJhdGlvblNlYzogbnVtYmVyIHwgbnVsbDsKICBkaXN0YW5jZVJhd0ttOiBudW1iZXIgfCBudWxsOwogIGRpc3RhbmNlT2ZmaWNpYWxLbTogbnVtYmVyIHwgbnVsbDsKfTsKCmZ1bmN0aW9uIGdldEltcG9ydERpcigpIHsKICByZXR1cm4gcHJvY2Vzcy5lbnYuUkVCVUlMRF9JTVBPUlRfRElSPy50cmltKCkgfHwgcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfUkVCVUlMRF9JTVBPUlRfRElSPy50cmltKCkgfHwgREVGQVVMVF9IRUFMVEhGSVRfRElSOwp9CgpmdW5jdGlvbiBleHRyYWN0RmlsZW5hbWUocmF3RmlsZUhhc2g6IHN0cmluZykgewogIGNvbnN0IGlkeCA9IHJhd0ZpbGVIYXNoLmluZGV4T2YoIjoiKTsKICByZXR1cm4gaWR4ID4gMCA/IHJhd0ZpbGVIYXNoLnNsaWNlKDAsIGlkeCkgOiByYXdGaWxlSGFzaDsKfQoKZnVuY3Rpb24gZmluZENhbmRpZGF0ZUdweCh3b3Jrb3V0OiBXb3Jrb3V0KSB7CiAgaWYgKHdvcmtvdXQucmF3RmlsZVBhdGg/LnRvTG93ZXJDYXNlKCkuZW5kc1dpdGgoIi5ncHgiKSAmJiBmcy5leGlzdHNTeW5jKHdvcmtvdXQucmF3RmlsZVBhdGgpKSB7CiAgICByZXR1cm4gd29ya291dC5yYXdGaWxlUGF0aDsKICB9CgogIGNvbnN0IGltcG9ydERpciA9IGdldEltcG9ydERpcigpOwogIGNvbnN0IGZpbGVuYW1lID0gZXh0cmFjdEZpbGVuYW1lKHdvcmtvdXQucmF3RmlsZUhhc2gpOwoKICBpZiAoZmlsZW5hbWUuZW5kc1dpdGgoIi5ncHgiKSkgewogICAgY29uc3QgZGlyZWN0UGF0aCA9IHBhdGguam9pbihpbXBvcnREaXIsIGZpbGVuYW1lKTsKICAgIGlmIChmcy5leGlzdHNTeW5jKGRpcmVjdFBhdGgpKSByZXR1cm4gZGlyZWN0UGF0aDsKICB9CgogIGNvbnN0IGdweEZpbGVuYW1lID0gZmlsZW5hbWUucmVwbGFjZSgvXC5maXQkL2ksICIuZ3B4Iik7CiAgY29uc3QgZ3B4UGF0aCA9IHBhdGguam9pbihpbXBvcnREaXIsIGdweEZpbGVuYW1lKTsKICBpZiAoZnMuZXhpc3RzU3luYyhncHhQYXRoKSkgcmV0dXJuIGdweFBhdGg7CgogIHJldHVybiBudWxsOwp9CgpmdW5jdGlvbiBoYXZlcnNpbmVNZXRlcnMobGF0MTogbnVtYmVyLCBsb24xOiBudW1iZXIsIGxhdDI6IG51bWJlciwgbG9uMjogbnVtYmVyKSB7CiAgY29uc3QgdG9SYWQgPSAoZGVnOiBudW1iZXIpID0+IChkZWcgKiBNYXRoLlBJKSAvIDE4MDsKICBjb25zdCBSID0gNjM3MTAwMDsKICBjb25zdCBkTGF0ID0gdG9SYWQobGF0MiAtIGxhdDEpOwogIGNvbnN0IGRMb24gPSB0b1JhZChsb24yIC0gbG9uMSk7CiAgY29uc3QgYSA9CiAgICBNYXRoLnNpbihkTGF0IC8gMikgKiogMiArCiAgICBNYXRoLmNvcyh0b1JhZChsYXQxKSkgKiBNYXRoLmNvcyh0b1JhZChsYXQyKSkgKiBNYXRoLnNpbihkTG9uIC8gMikgKiogMjsKICBjb25zdCBjID0gMiAqIE1hdGguYXRhbjIoTWF0aC5zcXJ0KGEpLCBNYXRoLnNxcnQoMSAtIGEpKTsKICByZXR1cm4gUiAqIGM7Cn0KCmZ1bmN0aW9uIGV4dHJhY3RIcihibG9jazogc3RyaW5nKSB7CiAgY29uc3QgbWF0Y2ggPSBibG9jay5tYXRjaCgvPCg/OlthLXowLTldKzopP2hyPihbXjxdKyk8XC8oPzpbYS16MC05XSs6KT9ocj4vaSk7CiAgY29uc3QgdmFsdWUgPSBOdW1iZXIobWF0Y2g/LlsxXSA/PyAiIik7CiAgcmV0dXJuIE51bWJlci5pc0Zpbml0ZSh2YWx1ZSkgPyBNYXRoLnJvdW5kKHZhbHVlKSA6IG51bGw7Cn0KCnR5cGUgUmF3VHJhY2tQb2ludCA9IHsKICBsYXQ6IG51bWJlcjsKICBsb246IG51bWJlcjsKICB0TXM6IG51bWJlcjsKICBocjogbnVtYmVyIHwgbnVsbDsKfTsKCmZ1bmN0aW9uIHBhcnNlR3B4UmF3VHJhY2tQb2ludHMocmF3OiBzdHJpbmcpOiBSYXdUcmFja1BvaW50W10gewogIGNvbnN0IGJsb2NrcyA9IHJhdy5tYXRjaCgvPHRya3B0W14+XSo+W1xzXFNdKj88XC90cmtwdD4vZykgPz8gW107CiAgaWYgKGJsb2Nrcy5sZW5ndGggPCAyKSB7CiAgICByZXR1cm4gW107CiAgfQoKICBjb25zdCBwYXJzZWQgPSBibG9ja3MKICAgIC5tYXAoKGJsb2NrKSA9PiB7CiAgICAgIGNvbnN0IGxhdCA9IE51bWJlcihibG9jay5tYXRjaCgvbGF0PSIoW14iXSspIi8pPy5bMV0gPz8gIiIpOwogICAgICBjb25zdCBsb24gPSBOdW1iZXIoYmxvY2subWF0Y2goL2xvbj0iKFteIl0rKSIvKT8uWzFdID8/ICIiKTsKICAgICAgY29uc3QgdGltZVJhdyA9IGJsb2NrLm1hdGNoKC88dGltZT4oW148XSspPFwvdGltZT4vKT8uWzFdID8/ICIiOwogICAgICBjb25zdCB0TXMgPSBEYXRlLnBhcnNlKHRpbWVSYXcpOwogICAgICBpZiAoIU51bWJlci5pc0Zpbml0ZShsYXQpIHx8ICFOdW1iZXIuaXNGaW5pdGUobG9uKSB8fCAhTnVtYmVyLmlzRmluaXRlKHRNcykpIHsKICAgICAgICByZXR1cm4gbnVsbDsKICAgICAgfQogICAgICBpZiAoTWF0aC5hYnMobGF0KSA+IDkwIHx8IE1hdGguYWJzKGxvbikgPiAxODApIHsKICAgICAgICByZXR1cm4gbnVsbDsKICAgICAgfQogICAgICByZXR1cm4gewogICAgICAgIGxhdCwKICAgICAgICBsb24sCiAgICAgICAgdE1zLAogICAgICAgIGhyOiBleHRyYWN0SHIoYmxvY2spCiAgICAgIH07CiAgICB9KQogICAgLmZpbHRlcigocG9pbnQpOiBwb2ludCBpcyB7IGxhdDogbnVtYmVyOyBsb246IG51bWJlcjsgdE1zOiBudW1iZXI7IGhyOiBudW1iZXIgfCBudWxsIH0gPT4gcG9pbnQgIT0gbnVsbCk7CgogIHJldHVybiBwYXJzZWQuc29ydCgoYSwgYikgPT4gYS50TXMgLSBiLnRNcyk7Cn0KCmZ1bmN0aW9uIHNwZWVkVGhyZXNob2xkTXBzKHNwb3J0OiBXb3Jrb3V0WyJzcG9ydCJdKSB7CiAgaWYgKHNwb3J0ID09PSAicnVuIikgewogICAgcmV0dXJuIDcuNTsKICB9CiAgaWYgKHNwb3J0ID09PSAic3dpbSIpIHsKICAgIHJldHVybiAzLjU7CiAgfQogIHJldHVybiAyNTsKfQoKZnVuY3Rpb24gc2FuaXRpemVUcmFja1BvaW50cyhyYXdQb2ludHM6IFJhd1RyYWNrUG9pbnRbXSwgc3BvcnQ6IFdvcmtvdXRbInNwb3J0Il0pOiBXb3Jrb3V0VHJhY2tQb2ludFtdIHsKICBpZiAocmF3UG9pbnRzLmxlbmd0aCA8IDIpIHsKICAgIHJldHVybiBbXTsKICB9CgogIGNvbnN0IG1heFNwZWVkID0gc3BlZWRUaHJlc2hvbGRNcHMoc3BvcnQpOwogIGNvbnN0IG1pbkp1bXBNZXRlcnMgPSBzcG9ydCA9PT0gInJ1biIgPyAxMjAgOiAyNTA7CiAgY29uc3QgbWF4R2FwRm9yU2FtZVNlZ21lbnRTZWMgPSAyNDA7CgogIGNvbnN0IGFjY2VwdGVkOiBBcnJheTxSYXdUcmFja1BvaW50ICYgeyBzZWdtZW50SW5kZXg6IG51bWJlciB9PiA9IFtdOwogIGxldCBzZWdtZW50SW5kZXggPSAwOwogIGxldCBwcmV2ID0gcmF3UG9pbnRzWzBdOwogIGFjY2VwdGVkLnB1c2goeyAuLi5wcmV2LCBzZWdtZW50SW5kZXggfSk7CgogIGZvciAobGV0IGkgPSAxOyBpIDwgcmF3UG9pbnRzLmxlbmd0aDsgaSArPSAxKSB7CiAgICBjb25zdCBjYW5kaWRhdGUgPSByYXdQb2ludHNbaV07CiAgICBjb25zdCBkdCA9IChjYW5kaWRhdGUudE1zIC0gcHJldi50TXMpIC8gMTAwMDsKICAgIGlmICghTnVtYmVyLmlzRmluaXRlKGR0KSB8fCBkdCA8PSAwKSB7CiAgICAgIGNvbnRpbnVlOwogICAgfQogICAgY29uc3QgZGlzdCA9IGhhdmVyc2luZU1ldGVycyhwcmV2LmxhdCwgcHJldi5sb24sIGNhbmRpZGF0ZS5sYXQsIGNhbmRpZGF0ZS5sb24pOwogICAgY29uc3Qgc3BlZWQgPSBkaXN0IC8gZHQ7CiAgICBjb25zdCBqdW1wT3V0bGllciA9IGRpc3QgPj0gbWluSnVtcE1ldGVycyAmJiBzcGVlZCA+IG1heFNwZWVkOwogICAgaWYgKGp1bXBPdXRsaWVyKSB7CiAgICAgIGNvbnRpbnVlOwogICAgfQogICAgaWYgKGR0ID4gbWF4R2FwRm9yU2FtZVNlZ21lbnRTZWMpIHsKICAgICAgc2VnbWVudEluZGV4ICs9IDE7CiAgICB9CiAgICBhY2NlcHRlZC5wdXNoKHsgLi4uY2FuZGlkYXRlLCBzZWdtZW50SW5kZXggfSk7CiAgICBwcmV2ID0gY2FuZGlkYXRlOwogIH0KCiAgaWYgKGFjY2VwdGVkLmxlbmd0aCA8IDIpIHsKICAgIHJldHVybiBbXTsKICB9CgogIGNvbnN0IGJhc2VNcyA9IGFjY2VwdGVkWzBdLnRNczsKICBsZXQgZGlzdE0gPSAwOwogIHJldHVybiBhY2NlcHRlZC5tYXAoKHBvaW50LCBpbmRleCkgPT4gewogICAgaWYgKGluZGV4ID4gMCkgewogICAgICBjb25zdCBwcmV2aW91cyA9IGFjY2VwdGVkW2luZGV4IC0gMV07CiAgICAgIGRpc3RNICs9IGhhdmVyc2luZU1ldGVycyhwcmV2aW91cy5sYXQsIHByZXZpb3VzLmxvbiwgcG9pbnQubGF0LCBwb2ludC5sb24pOwogICAgfQogICAgcmV0dXJuIHsKICAgICAgbGF0OiBwb2ludC5sYXQsCiAgICAgIGxvbjogcG9pbnQubG9uLAogICAgICBzZWM6IE1hdGgubWF4KDAsIChwb2ludC50TXMgLSBiYXNlTXMpIC8gMTAwMCksCiAgICAgIGRpc3RNLAogICAgICBocjogcG9pbnQuaHIsCiAgICAgIHNlZ21lbnRJbmRleDogcG9pbnQuc2VnbWVudEluZGV4CiAgICB9OwogIH0pOwp9CgpmdW5jdGlvbiBkb3duc2FtcGxlPFQ+KHBvaW50czogVFtdLCBtYXhQb2ludHM6IG51bWJlcikgewogIGlmIChwb2ludHMubGVuZ3RoIDw9IG1heFBvaW50cykgcmV0dXJuIHBvaW50czsKICBjb25zdCBzdGVwID0gTWF0aC5jZWlsKHBvaW50cy5sZW5ndGggLyBtYXhQb2ludHMpOwogIHJldHVybiBwb2ludHMuZmlsdGVyKChfLCBpbmRleCkgPT4gaW5kZXggJSBzdGVwID09PSAwIHx8IGluZGV4ID09PSBwb2ludHMubGVuZ3RoIC0gMSk7Cn0KCmZ1bmN0aW9uIGludGVycG9sYXRlTnVtYmVyKGE6IG51bWJlciwgYjogbnVtYmVyLCByYXRpbzogbnVtYmVyKSB7CiAgcmV0dXJuIGEgKyAoYiAtIGEpICogcmF0aW87Cn0KCmZ1bmN0aW9uIHBvaW50QXREaXN0YW5jZShwb2ludHM6IFdvcmtvdXRUcmFja1BvaW50W10sIHRhcmdldERpc3RNOiBudW1iZXIpIHsKICBpZiAoIXBvaW50cy5sZW5ndGgpIHJldHVybiBudWxsOwogIGlmICh0YXJnZXREaXN0TSA8PSAwKSByZXR1cm4geyBzZWM6IHBvaW50c1swXS5zZWMsIGhyOiBwb2ludHNbMF0uaHIgfTsKICBjb25zdCBsYXN0ID0gcG9pbnRzW3BvaW50cy5sZW5ndGggLSAxXTsKICBpZiAodGFyZ2V0RGlzdE0gPj0gbGFzdC5kaXN0TSkgcmV0dXJuIHsgc2VjOiBsYXN0LnNlYywgaHI6IGxhc3QuaHIgfTsKCiAgZm9yIChsZXQgaW5kZXggPSAxOyBpbmRleCA8IHBvaW50cy5sZW5ndGg7IGluZGV4ICs9IDEpIHsKICAgIGNvbnN0IHByZXYgPSBwb2ludHNbaW5kZXggLSAxXTsKICAgIGNvbnN0IGN1cnIgPSBwb2ludHNbaW5kZXhdOwogICAgaWYgKGN1cnIuZGlzdE0gPCB0YXJnZXREaXN0TSkgY29udGludWU7CiAgICBjb25zdCBzcGFuRGlzdCA9IGN1cnIuZGlzdE0gLSBwcmV2LmRpc3RNOwogICAgaWYgKHNwYW5EaXN0IDw9IDApIHsKICAgICAgcmV0dXJuIHsgc2VjOiBjdXJyLnNlYywgaHI6IGN1cnIuaHIgfTsKICAgIH0KICAgIGNvbnN0IHJhdGlvID0gKHRhcmdldERpc3RNIC0gcHJldi5kaXN0TSkgLyBzcGFuRGlzdDsKICAgIGNvbnN0IHNlYyA9IGludGVycG9sYXRlTnVtYmVyKHByZXYuc2VjLCBjdXJyLnNlYywgcmF0aW8pOwogICAgY29uc3QgaHIgPQogICAgICBwcmV2LmhyICE9IG51bGwgJiYgY3Vyci5ociAhPSBudWxsID8gaW50ZXJwb2xhdGVOdW1iZXIocHJldi5ociwgY3Vyci5ociwgcmF0aW8pIDogKGN1cnIuaHIgPz8gcHJldi5ociA/PyBudWxsKTsKICAgIHJldHVybiB7IHNlYywgaHI6IGhyID09IG51bGwgPyBudWxsIDogTWF0aC5yb3VuZChocikgfTsKICB9CgogIHJldHVybiB7IHNlYzogbGFzdC5zZWMsIGhyOiBsYXN0LmhyIH07Cn0KCmZ1bmN0aW9uIGJ1aWxkVGltZWxpbmVCeU1vdmVtZW50KHRyYWNrUG9pbnRzOiBXb3Jrb3V0VHJhY2tQb2ludFtdLCBzcG9ydDogV29ya291dFsic3BvcnQiXSwgdXNlTW92aW5nOiBib29sZWFuKSB7CiAgaWYgKCF0cmFja1BvaW50cy5sZW5ndGgpIHJldHVybiBbXSBhcyBudW1iZXJbXTsKICBpZiAoIXVzZU1vdmluZykgewogICAgcmV0dXJuIHRyYWNrUG9pbnRzLm1hcCgocG9pbnQpID0+IHBvaW50LnNlYyk7CiAgfQoKICBjb25zdCBtYXhTcGVlZCA9IHNwZWVkVGhyZXNob2xkTXBzKHNwb3J0KTsKICBjb25zdCBtaW5Nb3ZpbmdTcGVlZCA9IDAuNDU7CiAgY29uc3QgdGltZWxpbmU6IG51bWJlcltdID0gWzBdOwogIGxldCBtb3ZpbmdTZWMgPSAwOwoKICBmb3IgKGxldCBpID0gMTsgaSA8IHRyYWNrUG9pbnRzLmxlbmd0aDsgaSArPSAxKSB7CiAgICBjb25zdCBwcmV2ID0gdHJhY2tQb2ludHNbaSAtIDFdOwogICAgY29uc3QgY3VyciA9IHRyYWNrUG9pbnRzW2ldOwogICAgY29uc3QgZHQgPSBjdXJyLnNlYyAtIHByZXYuc2VjOwogICAgaWYgKCFOdW1iZXIuaXNGaW5pdGUoZHQpIHx8IGR0IDw9IDAgfHwgZHQgPiAxODApIHsKICAgICAgdGltZWxpbmUucHVzaChtb3ZpbmdTZWMpOwogICAgICBjb250aW51ZTsKICAgIH0KICAgIGNvbnN0IGRpc3QgPSBjdXJyLmRpc3RNIC0gcHJldi5kaXN0TTsKICAgIGlmICghTnVtYmVyLmlzRmluaXRlKGRpc3QpIHx8IGRpc3QgPCAwKSB7CiAgICAgIHRpbWVsaW5lLnB1c2gobW92aW5nU2VjKTsKICAgICAgY29udGludWU7CiAgICB9CiAgICBjb25zdCBzcGVlZCA9IGRpc3QgLyBkdDsKICAgIGlmIChzcGVlZCA+PSBtaW5Nb3ZpbmdTcGVlZCAmJiBzcGVlZCA8PSBtYXhTcGVlZCkgewogICAgICBtb3ZpbmdTZWMgKz0gZHQ7CiAgICB9CiAgICB0aW1lbGluZS5wdXNoKG1vdmluZ1NlYyk7CiAgfQoKICByZXR1cm4gdGltZWxpbmU7Cn0KCmZ1bmN0aW9uIHBvaW50QXREaXN0YW5jZVdpdGhUaW1lbGluZShwb2ludHM6IFdvcmtvdXRUcmFja1BvaW50W10sIHRpbWVsaW5lU2VjOiBudW1iZXJbXSwgdGFyZ2V0RGlzdE06IG51bWJlcikgewogIGlmICghcG9pbnRzLmxlbmd0aCkgcmV0dXJuIG51bGw7CiAgaWYgKHRpbWVsaW5lU2VjLmxlbmd0aCAhPT0gcG9pbnRzLmxlbmd0aCkgcmV0dXJuIG51bGw7CiAgaWYgKHRhcmdldERpc3RNIDw9IDApIHJldHVybiB7IHNlYzogdGltZWxpbmVTZWNbMF0sIGhyOiBwb2ludHNbMF0uaHIgfTsKICBjb25zdCBsYXN0ID0gcG9pbnRzW3BvaW50cy5sZW5ndGggLSAxXTsKICBjb25zdCBsYXN0VGltZWxpbmUgPSB0aW1lbGluZVNlY1t0aW1lbGluZVNlYy5sZW5ndGggLSAxXTsKICBpZiAodGFyZ2V0RGlzdE0gPj0gbGFzdC5kaXN0TSkgcmV0dXJuIHsgc2VjOiBsYXN0VGltZWxpbmUsIGhyOiBsYXN0LmhyIH07CgogIGZvciAobGV0IGluZGV4ID0gMTsgaW5kZXggPCBwb2ludHMubGVuZ3RoOyBpbmRleCArPSAxKSB7CiAgICBjb25zdCBwcmV2ID0gcG9pbnRzW2luZGV4IC0gMV07CiAgICBjb25zdCBjdXJyID0gcG9pbnRzW2luZGV4XTsKICAgIGlmIChjdXJyLmRpc3RNIDwgdGFyZ2V0RGlzdE0pIGNvbnRpbnVlOwogICAgY29uc3Qgc3BhbkRpc3QgPSBjdXJyLmRpc3RNIC0gcHJldi5kaXN0TTsKICAgIGlmIChzcGFuRGlzdCA8PSAwKSB7CiAgICAgIHJldHVybiB7IHNlYzogdGltZWxpbmVTZWNbaW5kZXhdLCBocjogY3Vyci5ociB9OwogICAgfQogICAgY29uc3QgcmF0aW8gPSAodGFyZ2V0RGlzdE0gLSBwcmV2LmRpc3RNKSAvIHNwYW5EaXN0OwogICAgY29uc3Qgc2VjID0gaW50ZXJwb2xhdGVOdW1iZXIodGltZWxpbmVTZWNbaW5kZXggLSAxXSwgdGltZWxpbmVTZWNbaW5kZXhdLCByYXRpbyk7CiAgICBjb25zdCBociA9CiAgICAgIHByZXYuaHIgIT0gbnVsbCAmJiBjdXJyLmhyICE9IG51bGwgPyBpbnRlcnBvbGF0ZU51bWJlcihwcmV2LmhyLCBjdXJyLmhyLCByYXRpbykgOiAoY3Vyci5ociA/PyBwcmV2LmhyID8/IG51bGwpOwogICAgcmV0dXJuIHsgc2VjLCBocjogaHIgPT0gbnVsbCA/IG51bGwgOiBNYXRoLnJvdW5kKGhyKSB9OwogIH0KCiAgcmV0dXJuIHsgc2VjOiBsYXN0VGltZWxpbmUsIGhyOiBsYXN0LmhyIH07Cn0KCmZ1bmN0aW9uIGNvbXB1dGVIclN0YXRzKHRyYWNrUG9pbnRzOiBXb3Jrb3V0VHJhY2tQb2ludFtdKSB7CiAgY29uc3QgaHJWYWx1ZXMgPSB0cmFja1BvaW50cwogICAgLm1hcCgocG9pbnQpID0+IHBvaW50LmhyKQogICAgLmZpbHRlcigodmFsdWUpOiB2YWx1ZSBpcyBudW1iZXIgPT4gdmFsdWUgIT0gbnVsbCAmJiBOdW1iZXIuaXNGaW5pdGUodmFsdWUpICYmIHZhbHVlID4gMCk7CiAgaWYgKCFoclZhbHVlcy5sZW5ndGgpIHsKICAgIHJldHVybiB7IGF2ZzogbnVsbCwgbWF4OiBudWxsIH0gYXMgY29uc3Q7CiAgfQogIGNvbnN0IGF2ZyA9IE1hdGgucm91bmQoaHJWYWx1ZXMucmVkdWNlKChzdW0sIHZhbHVlKSA9PiBzdW0gKyB2YWx1ZSwgMCkgLyBoclZhbHVlcy5sZW5ndGgpOwogIGNvbnN0IG1heCA9IE1hdGgucm91bmQoTWF0aC5tYXgoLi4uaHJWYWx1ZXMpKTsKICByZXR1cm4geyBhdmcsIG1heCB9IGFzIGNvbnN0Owp9CgpleHBvcnQgZnVuY3Rpb24gZ2V0V29ya291dFRyYWNrUG9pbnRzKHdvcmtvdXQ6IFdvcmtvdXQpOiBXb3Jrb3V0VHJhY2tQb2ludFtdIHsKICBjb25zdCBncHhQYXRoID0gZmluZENhbmRpZGF0ZUdweCh3b3Jrb3V0KTsKICBpZiAoIWdweFBhdGgpIHsKICAgIHJldHVybiBbXTsKICB9CgogIHRyeSB7CiAgICBjb25zdCByYXcgPSBmcy5yZWFkRmlsZVN5bmMoZ3B4UGF0aCwgInV0ZjgiKTsKICAgIGNvbnN0IHJhd1BvaW50cyA9IHBhcnNlR3B4UmF3VHJhY2tQb2ludHMocmF3KTsKICAgIHJldHVybiBzYW5pdGl6ZVRyYWNrUG9pbnRzKHJhd1BvaW50cywgd29ya291dC5zcG9ydCk7CiAgfSBjYXRjaCB7CiAgICByZXR1cm4gW107CiAgfQp9CgpleHBvcnQgZnVuY3Rpb24gZ2V0V29ya291dFJvdXRlUG9pbnRzKHdvcmtvdXQ6IFdvcmtvdXQpOiBSb3V0ZVBvaW50W10gewogIHJldHVybiBkb3duc2FtcGxlKAogICAgZ2V0V29ya291dFRyYWNrUG9pbnRzKHdvcmtvdXQpLm1hcCgocG9pbnQpID0+ICh7IGxhdDogcG9pbnQubGF0LCBsb246IHBvaW50LmxvbiB9KSksCiAgICA1MDAKICApOwp9CgpmdW5jdGlvbiBidWlsZFJvdXRlU2VnbWVudHModHJhY2tQb2ludHM6IFdvcmtvdXRUcmFja1BvaW50W10pOiBSb3V0ZVNlZ21lbnRbXSB7CiAgaWYgKHRyYWNrUG9pbnRzLmxlbmd0aCA8IDIpIHsKICAgIHJldHVybiBbXTsKICB9CgogIGNvbnN0IGdyb3VwZWQgPSBuZXcgTWFwPG51bWJlciwgV29ya291dFRyYWNrUG9pbnRbXT4oKTsKICBmb3IgKGNvbnN0IHBvaW50IG9mIHRyYWNrUG9pbnRzKSB7CiAgICBjb25zdCBsaXN0ID0gZ3JvdXBlZC5nZXQocG9pbnQuc2VnbWVudEluZGV4KSA/PyBbXTsKICAgIGxpc3QucHVzaChwb2ludCk7CiAgICBncm91cGVkLnNldChwb2ludC5zZWdtZW50SW5kZXgsIGxpc3QpOwogIH0KCiAgY29uc3Qgc291cmNlU2VnbWVudHMgPSBBcnJheS5mcm9tKGdyb3VwZWQudmFsdWVzKCkpLmZpbHRlcigoc2VnbWVudCkgPT4gc2VnbWVudC5sZW5ndGggPj0gMik7CiAgaWYgKCFzb3VyY2VTZWdtZW50cy5sZW5ndGgpIHsKICAgIHJldHVybiBbXTsKICB9CgogIGNvbnN0IHRvdGFsUG9pbnRzID0gc291cmNlU2VnbWVudHMucmVkdWNlKChzdW0sIHNlZ21lbnQpID0+IHN1bSArIHNlZ21lbnQubGVuZ3RoLCAwKTsKICBjb25zdCBtYXhQb2ludHMgPSA3MDA7CgogIHJldHVybiBzb3VyY2VTZWdtZW50cwogICAgLm1hcCgoc2VnbWVudCkgPT4gewogICAgICBjb25zdCBwb2ludHMgPSBzZWdtZW50Lm1hcCgocG9pbnQpID0+ICh7IGxhdDogcG9pbnQubGF0LCBsb246IHBvaW50LmxvbiB9KSk7CiAgICAgIGNvbnN0IG1heEZvclNlZ21lbnQgPSBNYXRoLm1heCgyMCwgTWF0aC5yb3VuZCgoc2VnbWVudC5sZW5ndGggLyB0b3RhbFBvaW50cykgKiBtYXhQb2ludHMpKTsKICAgICAgcmV0dXJuIGRvd25zYW1wbGUocG9pbnRzLCBtYXhGb3JTZWdtZW50KTsKICAgIH0pCiAgICAuZmlsdGVyKChzZWdtZW50KSA9PiBzZWdtZW50Lmxlbmd0aCA+PSAyKTsKfQoKZXhwb3J0IGZ1bmN0aW9uIGdldFdvcmtvdXRIZWFydFJhdGVTYW1wbGVzKHdvcmtvdXQ6IFdvcmtvdXQpOiBXb3Jrb3V0SGVhcnRSYXRlU2FtcGxlW10gewogIGNvbnN0IHNhbXBsZXMgPSBnZXRXb3Jrb3V0VHJhY2tQb2ludHMod29ya291dCkKICAgIC5maWx0ZXIoKHBvaW50KSA9PiBwb2ludC5ociAhPSBudWxsKQogICAgLm1hcCgocG9pbnQpID0+ICh7IHNlYzogcG9pbnQuc2VjLCBicG06IHBvaW50LmhyIGFzIG51bWJlciB9KSk7CiAgcmV0dXJuIGRvd25zYW1wbGUoc2FtcGxlcywgMTgwKTsKfQoKZXhwb3J0IGZ1bmN0aW9uIGdldFdvcmtvdXRLbVNwbGl0cyh3b3Jrb3V0OiBXb3Jrb3V0KTogV29ya291dEttU3BsaXRbXSB7CiAgY29uc3QgcG9pbnRzID0gZ2V0V29ya291dFRyYWNrUG9pbnRzKHdvcmtvdXQpOwogIGlmIChwb2ludHMubGVuZ3RoIDwgMikgewogICAgcmV0dXJuIFtdOwogIH0KCiAgY29uc3QgdGltZWxpbmVTZWMgPSBidWlsZFRpbWVsaW5lQnlNb3ZlbWVudChwb2ludHMsIHdvcmtvdXQuc3BvcnQsIHdvcmtvdXQuc3BvcnQgPT09ICJydW4iKTsKCiAgY29uc3QgdG90YWxGdWxsS20gPSBNYXRoLmZsb29yKChwb2ludHNbcG9pbnRzLmxlbmd0aCAtIDFdLmRpc3RNID8/IDApIC8gMTAwMCk7CiAgaWYgKHRvdGFsRnVsbEttIDw9IDApIHsKICAgIHJldHVybiBbXTsKICB9CgogIGNvbnN0IHNwbGl0czogV29ya291dEttU3BsaXRbXSA9IFtdOwogIGxldCBwcmV2U2VjID0gMDsKCiAgZm9yIChsZXQga20gPSAxOyBrbSA8PSB0b3RhbEZ1bGxLbTsga20gKz0gMSkgewogICAgY29uc3QgZW5kID0gcG9pbnRBdERpc3RhbmNlV2l0aFRpbWVsaW5lKHBvaW50cywgdGltZWxpbmVTZWMsIGttICogMTAwMCk7CiAgICBpZiAoIWVuZCkgY29udGludWU7CiAgICBjb25zdCBzcGxpdFNlYyA9IGVuZC5zZWMgLSBwcmV2U2VjOwogICAgaWYgKHNwbGl0U2VjIDw9IDApIGNvbnRpbnVlOwogICAgY29uc3QgaHJQb2ludHMgPSBwb2ludHMuZmlsdGVyKChwb2ludCkgPT4gcG9pbnQuaHIgIT0gbnVsbCAmJiBwb2ludC5kaXN0TSA+PSAoa20gLSAxKSAqIDEwMDAgJiYgcG9pbnQuZGlzdE0gPD0ga20gKiAxMDAwKTsKICAgIGNvbnN0IGF2Z0hyID0gaHJQb2ludHMubGVuZ3RoCiAgICAgID8gTWF0aC5yb3VuZChoclBvaW50cy5yZWR1Y2UoKHN1bSwgcG9pbnQpID0+IHN1bSArIChwb2ludC5ociBhcyBudW1iZXIpLCAwKSAvIGhyUG9pbnRzLmxlbmd0aCkKICAgICAgOiBlbmQuaHI7CiAgICBzcGxpdHMucHVzaCh7CiAgICAgIGttLAogICAgICBzcGxpdFNlYzogTWF0aC5yb3VuZChzcGxpdFNlYyksCiAgICAgIGN1bXVsYXRpdmVTZWM6IE1hdGgucm91bmQoZW5kLnNlYyksCiAgICAgIHBhY2VNaW5QZXJLbTogc3BsaXRTZWMgLyA2MCwKICAgICAgYXZnSHI6IGF2Z0hyID8/IG51bGwKICAgIH0pOwogICAgcHJldlNlYyA9IGVuZC5zZWM7CiAgfQoKICByZXR1cm4gc3BsaXRzOwp9CgpmdW5jdGlvbiBjb21wdXRlTW92aW5nRHVyYXRpb25TZWModHJhY2tQb2ludHM6IFdvcmtvdXRUcmFja1BvaW50W10sIHNwb3J0OiBXb3Jrb3V0WyJzcG9ydCJdKSB7CiAgaWYgKHRyYWNrUG9pbnRzLmxlbmd0aCA8IDIpIHsKICAgIHJldHVybiBudWxsOwogIH0KICBjb25zdCBtYXhTcGVlZCA9IHNwZWVkVGhyZXNob2xkTXBzKHNwb3J0KTsKICBjb25zdCBtaW5Nb3ZpbmdTcGVlZCA9IDAuNDU7IC8vIH4xLjZrbS9oCiAgbGV0IG1vdmluZ1NlYyA9IDA7CgogIGZvciAobGV0IGkgPSAxOyBpIDwgdHJhY2tQb2ludHMubGVuZ3RoOyBpICs9IDEpIHsKICAgIGNvbnN0IHByZXYgPSB0cmFja1BvaW50c1tpIC0gMV07CiAgICBjb25zdCBjdXJyID0gdHJhY2tQb2ludHNbaV07CiAgICBjb25zdCBkdCA9IGN1cnIuc2VjIC0gcHJldi5zZWM7CiAgICBpZiAoIU51bWJlci5pc0Zpbml0ZShkdCkgfHwgZHQgPD0gMCkgewogICAgICBjb250aW51ZTsKICAgIH0KICAgIGlmIChkdCA+IDE4MCkgewogICAgICBjb250aW51ZTsKICAgIH0KICAgIGNvbnN0IGRpc3QgPSBjdXJyLmRpc3RNIC0gcHJldi5kaXN0TTsKICAgIGlmICghTnVtYmVyLmlzRmluaXRlKGRpc3QpIHx8IGRpc3QgPCAwKSB7CiAgICAgIGNvbnRpbnVlOwogICAgfQogICAgY29uc3Qgc3BlZWQgPSBkaXN0IC8gZHQ7CiAgICBpZiAoc3BlZWQgPCBtaW5Nb3ZpbmdTcGVlZCB8fCBzcGVlZCA+IG1heFNwZWVkKSB7CiAgICAgIGNvbnRpbnVlOwogICAgfQogICAgbW92aW5nU2VjICs9IGR0OwogIH0KCiAgaWYgKG1vdmluZ1NlYyA8PSAwKSB7CiAgICByZXR1cm4gbnVsbDsKICB9CiAgcmV0dXJuIE1hdGgucm91bmQobW92aW5nU2VjKTsKfQoKZnVuY3Rpb24gbm9ybWFsaXplT2ZmaWNpYWxEaXN0YW5jZUttKHJhd0Rpc3RhbmNlS206IG51bWJlciB8IG51bGwsIHNwb3J0OiBXb3Jrb3V0WyJzcG9ydCJdKSB7CiAgaWYgKHNwb3J0ICE9PSAicnVuIiB8fCByYXdEaXN0YW5jZUttID09IG51bGwgfHwgIU51bWJlci5pc0Zpbml0ZShyYXdEaXN0YW5jZUttKSB8fCByYXdEaXN0YW5jZUttIDw9IDApIHsKICAgIHJldHVybiBudWxsOwogIH0KICBjb25zdCBvZmZpY2lhbCA9IFsxLCAzLCA1LCAxMCwgMTUsIDE2LCAyMS4xLCAyNSwgMzAsIDQyLjE5NV07CiAgbGV0IGJlc3Q6IG51bWJlciB8IG51bGwgPSBudWxsOwogIGxldCBiZXN0RGlmZiA9IE51bWJlci5QT1NJVElWRV9JTkZJTklUWTsKCiAgZm9yIChjb25zdCB0YXJnZXQgb2Ygb2ZmaWNpYWwpIHsKICAgIGNvbnN0IHRvbGVyYW5jZSA9CiAgICAgIHRhcmdldCA8PSA1ID8gMC4xMgogICAgICA6IHRhcmdldCA8PSAxNiA/IDAuMjgKICAgICAgOiB0YXJnZXQgPD0gMzAgPyAwLjQKICAgICAgOiAwLjY7CiAgICBjb25zdCBkaWZmID0gTWF0aC5hYnMocmF3RGlzdGFuY2VLbSAtIHRhcmdldCk7CiAgICBpZiAoZGlmZiA8PSB0b2xlcmFuY2UgJiYgZGlmZiA8IGJlc3REaWZmKSB7CiAgICAgIGJlc3QgPSB0YXJnZXQ7CiAgICAgIGJlc3REaWZmID0gZGlmZjsKICAgIH0KICB9CgogIGlmIChiZXN0ID09IG51bGwpIHsKICAgIHJldHVybiBudWxsOwogIH0KCiAgcmV0dXJuIE1hdGgucm91bmQoYmVzdCAqIDEwMCkgLyAxMDA7Cn0KCmV4cG9ydCBmdW5jdGlvbiBnZXRXb3Jrb3V0RGV0YWlsRGF0YSh3b3Jrb3V0OiBXb3Jrb3V0KTogV29ya291dERldGFpbERhdGEgewogIGNvbnN0IHRyYWNrUG9pbnRzID0gZ2V0V29ya291dFRyYWNrUG9pbnRzKHdvcmtvdXQpOwogIGNvbnN0IHRpbWVsaW5lU2VjID0gYnVpbGRUaW1lbGluZUJ5TW92ZW1lbnQodHJhY2tQb2ludHMsIHdvcmtvdXQuc3BvcnQsIHdvcmtvdXQuc3BvcnQgPT09ICJydW4iKTsKICBjb25zdCByb3V0ZVNlZ21lbnRzID0gYnVpbGRSb3V0ZVNlZ21lbnRzKHRyYWNrUG9pbnRzKTsKICBjb25zdCByb3V0ZVBvaW50cyA9IGRvd25zYW1wbGUoCiAgICB0cmFja1BvaW50cy5tYXAoKHBvaW50KSA9PiAoeyBsYXQ6IHBvaW50LmxhdCwgbG9uOiBwb2ludC5sb24gfSkpLAogICAgNTAwCiAgKTsKICBjb25zdCBoZWFydFJhdGVTYW1wbGVzID0gZG93bnNhbXBsZSgKICAgIHRyYWNrUG9pbnRzCiAgICAgIC5maWx0ZXIoKHBvaW50KSA9PiBwb2ludC5ociAhPSBudWxsKQogICAgICAubWFwKChwb2ludCkgPT4gKHsgc2VjOiBwb2ludC5zZWMsIGJwbTogcG9pbnQuaHIgYXMgbnVtYmVyIH0pKSwKICAgIDE4MAogICk7CgogIGNvbnN0IHRvdGFsRnVsbEttID0gTWF0aC5mbG9vcigodHJhY2tQb2ludHNbdHJhY2tQb2ludHMubGVuZ3RoIC0gMV0/LmRpc3RNID8/IDApIC8gMTAwMCk7CiAgY29uc3Qgc3BsaXRzOiBXb3Jrb3V0S21TcGxpdFtdID0gW107CiAgbGV0IHByZXZTZWMgPSAwOwoKICBmb3IgKGxldCBrbSA9IDE7IGttIDw9IHRvdGFsRnVsbEttOyBrbSArPSAxKSB7CiAgICBjb25zdCBlbmQgPSBwb2ludEF0RGlzdGFuY2VXaXRoVGltZWxpbmUodHJhY2tQb2ludHMsIHRpbWVsaW5lU2VjLCBrbSAqIDEwMDApOwogICAgaWYgKCFlbmQpIGNvbnRpbnVlOwogICAgY29uc3Qgc3BsaXRTZWMgPSBlbmQuc2VjIC0gcHJldlNlYzsKICAgIGlmIChzcGxpdFNlYyA8PSAwKSBjb250aW51ZTsKICAgIGNvbnN0IGhyUG9pbnRzID0gdHJhY2tQb2ludHMuZmlsdGVyKAogICAgICAocG9pbnQpID0+IHBvaW50LmhyICE9IG51bGwgJiYgcG9pbnQuZGlzdE0gPj0gKGttIC0gMSkgKiAxMDAwICYmIHBvaW50LmRpc3RNIDw9IGttICogMTAwMAogICAgKTsKICAgIGNvbnN0IGF2Z0hyID0gaHJQb2ludHMubGVuZ3RoCiAgICAgID8gTWF0aC5yb3VuZChoclBvaW50cy5yZWR1Y2UoKHN1bSwgcG9pbnQpID0+IHN1bSArIChwb2ludC5ociBhcyBudW1iZXIpLCAwKSAvIGhyUG9pbnRzLmxlbmd0aCkKICAgICAgOiBlbmQuaHI7CiAgICBzcGxpdHMucHVzaCh7CiAgICAgIGttLAogICAgICBzcGxpdFNlYzogTWF0aC5yb3VuZChzcGxpdFNlYyksCiAgICAgIGN1bXVsYXRpdmVTZWM6IE1hdGgucm91bmQoZW5kLnNlYyksCiAgICAgIHBhY2VNaW5QZXJLbTogc3BsaXRTZWMgLyA2MCwKICAgICAgYXZnSHI6IGF2Z0hyID8/IG51bGwKICAgIH0pOwogICAgcHJldlNlYyA9IGVuZC5zZWM7CiAgfQoKICBjb25zdCBtb3ZpbmdEdXJhdGlvblNlYyA9CiAgICB3b3Jrb3V0LnNwb3J0ID09PSAicnVuIgogICAgICA/IHRpbWVsaW5lU2VjLmxlbmd0aAogICAgICAgID8gTWF0aC5yb3VuZCh0aW1lbGluZVNlY1t0aW1lbGluZVNlYy5sZW5ndGggLSAxXSkKICAgICAgICA6IG51bGwKICAgICAgOiBjb21wdXRlTW92aW5nRHVyYXRpb25TZWModHJhY2tQb2ludHMsIHdvcmtvdXQuc3BvcnQpOwogIGNvbnN0IHBhdXNlRHVyYXRpb25TZWMgPQogICAgbW92aW5nRHVyYXRpb25TZWMgIT0gbnVsbCA/IE1hdGgubWF4KDAsIE1hdGgucm91bmQod29ya291dC5kdXJhdGlvblNlYyAtIG1vdmluZ0R1cmF0aW9uU2VjKSkgOiBudWxsOwogIGNvbnN0IGRpc3RhbmNlUmF3S20gPQogICAgd29ya291dC5kaXN0YW5jZU0gIT0gbnVsbCAmJiBOdW1iZXIuaXNGaW5pdGUod29ya291dC5kaXN0YW5jZU0pCiAgICAgID8gTWF0aC5yb3VuZCgod29ya291dC5kaXN0YW5jZU0gLyAxMDAwKSAqIDEwMCkgLyAxMDAKICAgICAgOiB0cmFja1BvaW50cy5sZW5ndGggPiAxCiAgICAgICAgPyBNYXRoLnJvdW5kKCgodHJhY2tQb2ludHNbdHJhY2tQb2ludHMubGVuZ3RoIC0gMV0uZGlzdE0gPz8gMCkgLyAxMDAwKSAqIDEwMCkgLyAxMDAKICAgICAgICA6IG51bGw7CiAgY29uc3QgZGlzdGFuY2VPZmZpY2lhbEttID0gbm9ybWFsaXplT2ZmaWNpYWxEaXN0YW5jZUttKGRpc3RhbmNlUmF3S20sIHdvcmtvdXQuc3BvcnQpOwogIGNvbnN0IGhyU3RhdHMgPSBjb21wdXRlSHJTdGF0cyh0cmFja1BvaW50cyk7CgogIHJldHVybiB7CiAgICByb3V0ZVBvaW50cywKICAgIHJvdXRlU2VnbWVudHMsCiAgICB0cmFja1BvaW50cywKICAgIGhlYXJ0UmF0ZVNhbXBsZXMsCiAgICBzcGxpdHMsCiAgICBhdmdIckZyb21UcmFjazogaHJTdGF0cy5hdmcsCiAgICBtYXhIckZyb21UcmFjazogaHJTdGF0cy5tYXgsCiAgICBtb3ZpbmdEdXJhdGlvblNlYywKICAgIHBhdXNlRHVyYXRpb25TZWMsCiAgICBkaXN0YW5jZVJhd0ttLAogICAgZGlzdGFuY2VPZmZpY2lhbEttCiAgfTsKfQoKZXhwb3J0IGZ1bmN0aW9uIG1hcEJvdW5kcyhwb2ludHM6IFJvdXRlUG9pbnRbXSkgewogIGlmIChwb2ludHMubGVuZ3RoID09PSAwKSByZXR1cm4gbnVsbDsKCiAgbGV0IG1pbkxhdCA9IHBvaW50c1swXS5sYXQ7CiAgbGV0IG1heExhdCA9IHBvaW50c1swXS5sYXQ7CiAgbGV0IG1pbkxvbiA9IHBvaW50c1swXS5sb247CiAgbGV0IG1heExvbiA9IHBvaW50c1swXS5sb247CgogIGZvciAoY29uc3QgcCBvZiBwb2ludHMpIHsKICAgIG1pbkxhdCA9IE1hdGgubWluKG1pbkxhdCwgcC5sYXQpOwogICAgbWF4TGF0ID0gTWF0aC5tYXgobWF4TGF0LCBwLmxhdCk7CiAgICBtaW5Mb24gPSBNYXRoLm1pbihtaW5Mb24sIHAubG9uKTsKICAgIG1heExvbiA9IE1hdGgubWF4KG1heExvbiwgcC5sb24pOwogIH0KCiAgcmV0dXJuIHsgbWluTGF0LCBtYXhMYXQsIG1pbkxvbiwgbWF4TG9uIH07Cn0K"}
+import fs from "node:fs";
+import path from "node:path";
+import type { Workout } from "@/lib/types";
+
+const DEFAULT_HEALTHFIT_DIR = "/Users/Y.T.p/Library/Mobile Documents/iCloud~com~altifondo~HealthFit/Documents";
+
+export type RoutePoint = { lat: number; lon: number };
+export type RouteSegment = RoutePoint[];
+
+export type WorkoutTrackPoint = {
+  lat: number;
+  lon: number;
+  sec: number;
+  distM: number;
+  hr: number | null;
+  segmentIndex: number;
+};
+
+export type WorkoutKmSplit = {
+  km: number;
+  splitSec: number;
+  cumulativeSec: number;
+  paceMinPerKm: number;
+  avgHr: number | null;
+};
+
+export type WorkoutHeartRateSample = {
+  sec: number;
+  bpm: number;
+};
+
+export type WorkoutDetailData = {
+  routePoints: RoutePoint[];
+  routeSegments: RouteSegment[];
+  trackPoints: WorkoutTrackPoint[];
+  heartRateSamples: WorkoutHeartRateSample[];
+  splits: WorkoutKmSplit[];
+  avgHrFromTrack: number | null;
+  maxHrFromTrack: number | null;
+  movingDurationSec: number | null;
+  pauseDurationSec: number | null;
+  distanceRawKm: number | null;
+  distanceOfficialKm: number | null;
+};
+
+function getImportDir() {
+  return process.env.REBUILD_IMPORT_DIR?.trim() || process.env.NEXT_PUBLIC_REBUILD_IMPORT_DIR?.trim() || DEFAULT_HEALTHFIT_DIR;
+}
+
+function extractFilename(rawFileHash: string) {
+  const idx = rawFileHash.indexOf(":");
+  return idx > 0 ? rawFileHash.slice(0, idx) : rawFileHash;
+}
+
+function findCandidateGpx(workout: Workout) {
+  if (workout.rawFilePath?.toLowerCase().endsWith(".gpx") && fs.existsSync(workout.rawFilePath)) {
+    return workout.rawFilePath;
+  }
+
+  const importDir = getImportDir();
+  const filename = extractFilename(workout.rawFileHash);
+
+  if (filename.endsWith(".gpx")) {
+    const directPath = path.join(importDir, filename);
+    if (fs.existsSync(directPath)) return directPath;
+  }
+
+  const gpxFilename = filename.replace(/\.fit$/i, ".gpx");
+  const gpxPath = path.join(importDir, gpxFilename);
+  if (fs.existsSync(gpxPath)) return gpxPath;
+
+  return null;
+}
+
+function haversineMeters(lat1: number, lon1: number, lat2: number, lon2: number) {
+  const toRad = (deg: number) => (deg * Math.PI) / 180;
+  const R = 6371000;
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
+}
+
+function extractHr(block: string) {
+  const match = block.match(/<(?:[a-z0-9]+:)?hr>([^<]+)<\/(?:[a-z0-9]+:)?hr>/i);
+  const value = Number(match?.[1] ?? "");
+  return Number.isFinite(value) ? Math.round(value) : null;
+}
+
+type RawTrackPoint = {
+  lat: number;
+  lon: number;
+  tMs: number;
+  hr: number | null;
+};
+
+function parseGpxRawTrackPoints(raw: string): RawTrackPoint[] {
+  const blocks = raw.match(/<trkpt[^>]*>[\s\S]*?<\/trkpt>/g) ?? [];
+  if (blocks.length < 2) {
+    return [];
+  }
+
+  const parsed = blocks
+    .map((block) => {
+      const lat = Number(block.match(/lat="([^"]+)"/)?.[1] ?? "");
+      const lon = Number(block.match(/lon="([^"]+)"/)?.[1] ?? "");
+      const timeRaw = block.match(/<time>([^<]+)<\/time>/)?.[1] ?? "";
+      const tMs = Date.parse(timeRaw);
+      if (!Number.isFinite(lat) || !Number.isFinite(lon) || !Number.isFinite(tMs)) {
+        return null;
+      }
+      if (Math.abs(lat) > 90 || Math.abs(lon) > 180) {
+        return null;
+      }
+      return {
+        lat,
+        lon,
+        tMs,
+        hr: extractHr(block)
+      };
+    })
+    .filter((point): point is { lat: number; lon: number; tMs: number; hr: number | null } => point != null);
+
+  return parsed.sort((a, b) => a.tMs - b.tMs);
+}
+
+function speedThresholdMps(sport: Workout["sport"]) {
+  if (sport === "run") {
+    return 7.5;
+  }
+  if (sport === "swim") {
+    return 3.5;
+  }
+  return 25;
+}
+
+function sanitizeTrackPoints(rawPoints: RawTrackPoint[], sport: Workout["sport"]): WorkoutTrackPoint[] {
+  if (rawPoints.length < 2) {
+    return [];
+  }
+
+  const maxSpeed = speedThresholdMps(sport);
+  const minJumpMeters = sport === "run" ? 120 : 250;
+  const maxGapForSameSegmentSec = 240;
+
+  const accepted: Array<RawTrackPoint & { segmentIndex: number }> = [];
+  let segmentIndex = 0;
+  let prev = rawPoints[0];
+  accepted.push({ ...prev, segmentIndex });
+
+  for (let i = 1; i < rawPoints.length; i += 1) {
+    const candidate = rawPoints[i];
+    const dt = (candidate.tMs - prev.tMs) / 1000;
+    if (!Number.isFinite(dt) || dt <= 0) {
+      continue;
+    }
+    const dist = haversineMeters(prev.lat, prev.lon, candidate.lat, candidate.lon);
+    const speed = dist / dt;
+    const jumpOutlier = dist >= minJumpMeters && speed > maxSpeed;
+    if (jumpOutlier) {
+      continue;
+    }
+    if (dt > maxGapForSameSegmentSec) {
+      segmentIndex += 1;
+    }
+    accepted.push({ ...candidate, segmentIndex });
+    prev = candidate;
+  }
+
+  if (accepted.length < 2) {
+    return [];
+  }
+
+  const baseMs = accepted[0].tMs;
+  let distM = 0;
+  return accepted.map((point, index) => {
+    if (index > 0) {
+      const previous = accepted[index - 1];
+      distM += haversineMeters(previous.lat, previous.lon, point.lat, point.lon);
+    }
+    return {
+      lat: point.lat,
+      lon: point.lon,
+      sec: Math.max(0, (point.tMs - baseMs) / 1000),
+      distM,
+      hr: point.hr,
+      segmentIndex: point.segmentIndex
+    };
+  });
+}
+
+function downsample<T>(points: T[], maxPoints: number) {
+  if (points.length <= maxPoints) return points;
+  const step = Math.ceil(points.length / maxPoints);
+  return points.filter((_, index) => index % step === 0 || index === points.length - 1);
+}
+
+function interpolateNumber(a: number, b: number, ratio: number) {
+  return a + (b - a) * ratio;
+}
+
+function pointAtDistance(points: WorkoutTrackPoint[], targetDistM: number) {
+  if (!points.length) return null;
+  if (targetDistM <= 0) return { sec: points[0].sec, hr: points[0].hr };
+  const last = points[points.length - 1];
+  if (targetDistM >= last.distM) return { sec: last.sec, hr: last.hr };
+
+  for (let index = 1; index < points.length; index += 1) {
+    const prev = points[index - 1];
+    const curr = points[index];
+    if (curr.distM < targetDistM) continue;
+    const spanDist = curr.distM - prev.distM;
+    if (spanDist <= 0) {
+      return { sec: curr.sec, hr: curr.hr };
+    }
+    const ratio = (targetDistM - prev.distM) / spanDist;
+    const sec = interpolateNumber(prev.sec, curr.sec, ratio);
+    const hr =
+      prev.hr != null && curr.hr != null ? interpolateNumber(prev.hr, curr.hr, ratio) : (curr.hr ?? prev.hr ?? null);
+    return { sec, hr: hr == null ? null : Math.round(hr) };
+  }
+
+  return { sec: last.sec, hr: last.hr };
+}
+
+function buildTimelineByMovement(trackPoints: WorkoutTrackPoint[], sport: Workout["sport"], useMoving: boolean) {
+  if (!trackPoints.length) return [] as number[];
+  if (!useMoving) {
+    return trackPoints.map((point) => point.sec);
+  }
+
+  const maxSpeed = speedThresholdMps(sport);
+  const minMovingSpeed = 0.45;
+  const timeline: number[] = [0];
+  let movingSec = 0;
+
+  for (let i = 1; i < trackPoints.length; i += 1) {
+    const prev = trackPoints[i - 1];
+    const curr = trackPoints[i];
+    const dt = curr.sec - prev.sec;
+    if (!Number.isFinite(dt) || dt <= 0 || dt > 180) {
+      timeline.push(movingSec);
+      continue;
+    }
+    const dist = curr.distM - prev.distM;
+    if (!Number.isFinite(dist) || dist < 0) {
+      timeline.push(movingSec);
+      continue;
+    }
+    const speed = dist / dt;
+    if (speed >= minMovingSpeed && speed <= maxSpeed) {
+      movingSec += dt;
+    }
+    timeline.push(movingSec);
+  }
+
+  return timeline;
+}
+
+function pointAtDistanceWithTimeline(points: WorkoutTrackPoint[], timelineSec: number[], targetDistM: number) {
+  if (!points.length) return null;
+  if (timelineSec.length !== points.length) return null;
+  if (targetDistM <= 0) return { sec: timelineSec[0], hr: points[0].hr };
+  const last = points[points.length - 1];
+  const lastTimeline = timelineSec[timelineSec.length - 1];
+  if (targetDistM >= last.distM) return { sec: lastTimeline, hr: last.hr };
+
+  for (let index = 1; index < points.length; index += 1) {
+    const prev = points[index - 1];
+    const curr = points[index];
+    if (curr.distM < targetDistM) continue;
+    const spanDist = curr.distM - prev.distM;
+    if (spanDist <= 0) {
+      return { sec: timelineSec[index], hr: curr.hr };
+    }
+    const ratio = (targetDistM - prev.distM) / spanDist;
+    const sec = interpolateNumber(timelineSec[index - 1], timelineSec[index], ratio);
+    const hr =
+      prev.hr != null && curr.hr != null ? interpolateNumber(prev.hr, curr.hr, ratio) : (curr.hr ?? prev.hr ?? null);
+    return { sec, hr: hr == null ? null : Math.round(hr) };
+  }
+
+  return { sec: lastTimeline, hr: last.hr };
+}
+
+function computeHrStats(trackPoints: WorkoutTrackPoint[]) {
+  const hrValues = trackPoints
+    .map((point) => point.hr)
+    .filter((value): value is number => value != null && Number.isFinite(value) && value > 0);
+  if (!hrValues.length) {
+    return { avg: null, max: null } as const;
+  }
+  const avg = Math.round(hrValues.reduce((sum, value) => sum + value, 0) / hrValues.length);
+  const max = Math.round(Math.max(...hrValues));
+  return { avg, max } as const;
+}
+
+export function getWorkoutTrackPoints(workout: Workout): WorkoutTrackPoint[] {
+  const gpxPath = findCandidateGpx(workout);
+  if (!gpxPath) {
+    return [];
+  }
+
+  try {
+    const raw = fs.readFileSync(gpxPath, "utf8");
+    const rawPoints = parseGpxRawTrackPoints(raw);
+    return sanitizeTrackPoints(rawPoints, workout.sport);
+  } catch {
+    return [];
+  }
+}
+
+export function getWorkoutRoutePoints(workout: Workout): RoutePoint[] {
+  return downsample(
+    getWorkoutTrackPoints(workout).map((point) => ({ lat: point.lat, lon: point.lon })),
+    500
+  );
+}
+
+function buildRouteSegments(trackPoints: WorkoutTrackPoint[]): RouteSegment[] {
+  if (trackPoints.length < 2) {
+    return [];
+  }
+
+  const grouped = new Map<number, WorkoutTrackPoint[]>();
+  for (const point of trackPoints) {
+    const list = grouped.get(point.segmentIndex) ?? [];
+    list.push(point);
+    grouped.set(point.segmentIndex, list);
+  }
+
+  const sourceSegments = Array.from(grouped.values()).filter((segment) => segment.length >= 2);
+  if (!sourceSegments.length) {
+    return [];
+  }
+
+  const totalPoints = sourceSegments.reduce((sum, segment) => sum + segment.length, 0);
+  const maxPoints = 700;
+
+  return sourceSegments
+    .map((segment) => {
+      const points = segment.map((point) => ({ lat: point.lat, lon: point.lon }));
+      const maxForSegment = Math.max(20, Math.round((segment.length / totalPoints) * maxPoints));
+      return downsample(points, maxForSegment);
+    })
+    .filter((segment) => segment.length >= 2);
+}
+
+export function getWorkoutHeartRateSamples(workout: Workout): WorkoutHeartRateSample[] {
+  const samples = getWorkoutTrackPoints(workout)
+    .filter((point) => point.hr != null)
+    .map((point) => ({ sec: point.sec, bpm: point.hr as number }));
+  return downsample(samples, 180);
+}
+
+export function getWorkoutKmSplits(workout: Workout): WorkoutKmSplit[] {
+  const points = getWorkoutTrackPoints(workout);
+  if (points.length < 2) {
+    return [];
+  }
+
+  const timelineSec = buildTimelineByMovement(points, workout.sport, workout.sport === "run");
+
+  const totalFullKm = Math.floor((points[points.length - 1].distM ?? 0) / 1000);
+  if (totalFullKm <= 0) {
+    return [];
+  }
+
+  const splits: WorkoutKmSplit[] = [];
+  let prevSec = 0;
+
+  for (let km = 1; km <= totalFullKm; km += 1) {
+    const end = pointAtDistanceWithTimeline(points, timelineSec, km * 1000);
+    if (!end) continue;
+    const splitSec = end.sec - prevSec;
+    if (splitSec <= 0) continue;
+    const hrPoints = points.filter((point) => point.hr != null && point.distM >= (km - 1) * 1000 && point.distM <= km * 1000);
+    const avgHr = hrPoints.length
+      ? Math.round(hrPoints.reduce((sum, point) => sum + (point.hr as number), 0) / hrPoints.length)
+      : end.hr;
+    splits.push({
+      km,
+      splitSec: Math.round(splitSec),
+      cumulativeSec: Math.round(end.sec),
+      paceMinPerKm: splitSec / 60,
+      avgHr: avgHr ?? null
+    });
+    prevSec = end.sec;
+  }
+
+  return splits;
+}
+
+function computeMovingDurationSec(trackPoints: WorkoutTrackPoint[], sport: Workout["sport"]) {
+  if (trackPoints.length < 2) {
+    return null;
+  }
+  const maxSpeed = speedThresholdMps(sport);
+  const minMovingSpeed = 0.45; // ~1.6km/h
+  let movingSec = 0;
+
+  for (let i = 1; i < trackPoints.length; i += 1) {
+    const prev = trackPoints[i - 1];
+    const curr = trackPoints[i];
+    const dt = curr.sec - prev.sec;
+    if (!Number.isFinite(dt) || dt <= 0) {
+      continue;
+    }
+    if (dt > 180) {
+      continue;
+    }
+    const dist = curr.distM - prev.distM;
+    if (!Number.isFinite(dist) || dist < 0) {
+      continue;
+    }
+    const speed = dist / dt;
+    if (speed < minMovingSpeed || speed > maxSpeed) {
+      continue;
+    }
+    movingSec += dt;
+  }
+
+  if (movingSec <= 0) {
+    return null;
+  }
+  return Math.round(movingSec);
+}
+
+function normalizeOfficialDistanceKm(rawDistanceKm: number | null, sport: Workout["sport"]) {
+  if (sport !== "run" || rawDistanceKm == null || !Number.isFinite(rawDistanceKm) || rawDistanceKm <= 0) {
+    return null;
+  }
+  const official = [1, 3, 5, 10, 15, 16, 21.1, 25, 30, 42.195];
+  let best: number | null = null;
+  let bestDiff = Number.POSITIVE_INFINITY;
+
+  for (const target of official) {
+    const tolerance =
+      target <= 5 ? 0.12
+      : target <= 16 ? 0.28
+      : target <= 30 ? 0.4
+      : 0.6;
+    const diff = Math.abs(rawDistanceKm - target);
+    if (diff <= tolerance && diff < bestDiff) {
+      best = target;
+      bestDiff = diff;
+    }
+  }
+
+  if (best == null) {
+    return null;
+  }
+
+  return Math.round(best * 100) / 100;
+}
+
+export function getWorkoutDetailData(workout: Workout): WorkoutDetailData {
+  const trackPoints = getWorkoutTrackPoints(workout);
+  const timelineSec = buildTimelineByMovement(trackPoints, workout.sport, workout.sport === "run");
+  const routeSegments = buildRouteSegments(trackPoints);
+  const routePoints = downsample(
+    trackPoints.map((point) => ({ lat: point.lat, lon: point.lon })),
+    500
+  );
+  const heartRateSamples = downsample(
+    trackPoints
+      .filter((point) => point.hr != null)
+      .map((point) => ({ sec: point.sec, bpm: point.hr as number })),
+    180
+  );
+
+  const totalFullKm = Math.floor((trackPoints[trackPoints.length - 1]?.distM ?? 0) / 1000);
+  const splits: WorkoutKmSplit[] = [];
+  let prevSec = 0;
+
+  for (let km = 1; km <= totalFullKm; km += 1) {
+    const end = pointAtDistanceWithTimeline(trackPoints, timelineSec, km * 1000);
+    if (!end) continue;
+    const splitSec = end.sec - prevSec;
+    if (splitSec <= 0) continue;
+    const hrPoints = trackPoints.filter(
+      (point) => point.hr != null && point.distM >= (km - 1) * 1000 && point.distM <= km * 1000
+    );
+    const avgHr = hrPoints.length
+      ? Math.round(hrPoints.reduce((sum, point) => sum + (point.hr as number), 0) / hrPoints.length)
+      : end.hr;
+    splits.push({
+      km,
+      splitSec: Math.round(splitSec),
+      cumulativeSec: Math.round(end.sec),
+      paceMinPerKm: splitSec / 60,
+      avgHr: avgHr ?? null
+    });
+    prevSec = end.sec;
+  }
+
+  const movingDurationSec =
+    workout.sport === "run"
+      ? timelineSec.length
+        ? Math.round(timelineSec[timelineSec.length - 1])
+        : null
+      : computeMovingDurationSec(trackPoints, workout.sport);
+  const pauseDurationSec =
+    movingDurationSec != null ? Math.max(0, Math.round(workout.durationSec - movingDurationSec)) : null;
+  const distanceRawKm =
+    workout.distanceM != null && Number.isFinite(workout.distanceM)
+      ? Math.round((workout.distanceM / 1000) * 100) / 100
+      : trackPoints.length > 1
+        ? Math.round(((trackPoints[trackPoints.length - 1].distM ?? 0) / 1000) * 100) / 100
+        : null;
+  const distanceOfficialKm = normalizeOfficialDistanceKm(distanceRawKm, workout.sport);
+  const hrStats = computeHrStats(trackPoints);
+
+  return {
+    routePoints,
+    routeSegments,
+    trackPoints,
+    heartRateSamples,
+    splits,
+    avgHrFromTrack: hrStats.avg,
+    maxHrFromTrack: hrStats.max,
+    movingDurationSec,
+    pauseDurationSec,
+    distanceRawKm,
+    distanceOfficialKm
+  };
+}
+
+export function mapBounds(points: RoutePoint[]) {
+  if (points.length === 0) return null;
+
+  let minLat = points[0].lat;
+  let maxLat = points[0].lat;
+  let minLon = points[0].lon;
+  let maxLon = points[0].lon;
+
+  for (const p of points) {
+    minLat = Math.min(minLat, p.lat);
+    maxLat = Math.max(maxLat, p.lat);
+    minLon = Math.min(minLon, p.lon);
+    maxLon = Math.max(maxLon, p.lon);
+  }
+
+  return { minLat, maxLat, minLon, maxLon };
+}

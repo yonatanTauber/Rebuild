@@ -1,1 +1,137 @@
-{"data":"aW1wb3J0IHsgY3JlYXRlSGFzaCwgcmFuZG9tVVVJRCB9IGZyb20gIm5vZGU6Y3J5cHRvIjsKaW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IGhhc1dvcmtvdXRCeUNhbm9uaWNhbEtleSwgdXBzZXJ0V29ya291dCB9IGZyb20gIkAvbGliL2RiIjsKaW1wb3J0IHR5cGUgeyBTcG9ydCwgV29ya291dCB9IGZyb20gIkAvbGliL3R5cGVzIjsKCmNvbnN0IHdvcmtvdXRTY2hlbWEgPSB6Lm9iamVjdCh7CiAgZXh0ZXJuYWxJZDogei5zdHJpbmcoKS5taW4oMSkubWF4KDIwMCksCiAgc3BvcnQ6IHouc3RyaW5nKCkubWluKDEpLm1heCgzMiksCiAgc3RhcnRBdDogei5zdHJpbmcoKS5kYXRldGltZSh7IG9mZnNldDogdHJ1ZSB9KSwKICBkdXJhdGlvblNlYzogei5udW1iZXIoKS5pbnQoKS5wb3NpdGl2ZSgpLm1heCg0MzIwMDApLAogIGRpc3RhbmNlTTogei5udW1iZXIoKS5ub25uZWdhdGl2ZSgpLm51bGxhYmxlKCkub3B0aW9uYWwoKSwKICBhdmdIcjogei5udW1iZXIoKS5ub25uZWdhdGl2ZSgpLm51bGxhYmxlKCkub3B0aW9uYWwoKSwKICBtYXhIcjogei5udW1iZXIoKS5ub25uZWdhdGl2ZSgpLm51bGxhYmxlKCkub3B0aW9uYWwoKSwKICBlbGV2YXRpb25NOiB6Lm51bWJlcigpLm51bGxhYmxlKCkub3B0aW9uYWwoKSwKICBhY3RpdmVFbmVyZ3lLY2FsOiB6Lm51bWJlcigpLm5vbm5lZ2F0aXZlKCkubnVsbGFibGUoKS5vcHRpb25hbCgpLAogIHNvdXJjZUFwcDogei5zdHJpbmcoKS5tYXgoMTIwKS5udWxsYWJsZSgpLm9wdGlvbmFsKCkKfSk7Cgpjb25zdCBzY2hlbWEgPSB6Lm9iamVjdCh7CiAgZGV2aWNlSWQ6IHouc3RyaW5nKCkubWluKDEpLm1heCgxMjApLAogIHdvcmtvdXRzOiB6LmFycmF5KHdvcmtvdXRTY2hlbWEpLm1heCg0MDApCn0pOwoKZnVuY3Rpb24gbm9ybWFsaXplU3BvcnQocmF3OiBzdHJpbmcpOiBTcG9ydCB8IG51bGwgewogIGNvbnN0IGtleSA9IHJhdy50cmltKCkudG9Mb3dlckNhc2UoKTsKICBpZiAoWyJydW4iLCAicnVubmluZyIsICLXqNeZ16bXlCJdLmluY2x1ZGVzKGtleSkpIHJldHVybiAicnVuIjsKICBpZiAoWyJiaWtlIiwgImN5Y2xpbmciLCAiYmljeWNsZSIsICLXkNeV16TXoNeZ15nXnSJdLmluY2x1ZGVzKGtleSkpIHJldHVybiAiYmlrZSI7CiAgaWYgKFsic3dpbSIsICJzd2ltbWluZyIsICLXqdeX15nXmdeUIl0uaW5jbHVkZXMoa2V5KSkgcmV0dXJuICJzd2ltIjsKICBpZiAoWyJzdHJlbmd0aCIsICJ0cmFkaXRpb25hbHN0cmVuZ3RodHJhaW5pbmciLCAiZnVuY3Rpb25hbHN0cmVuZ3RodHJhaW5pbmciLCAi15vXldeXIiwgIteb15ciXS5pbmNsdWRlcyhrZXkpKSB7CiAgICByZXR1cm4gInN0cmVuZ3RoIjsKICB9CiAgcmV0dXJuIG51bGw7Cn0KCmZ1bmN0aW9uIGVzdGltYXRlTG9hZCh7CiAgc3BvcnQsCiAgZHVyYXRpb25TZWMsCiAgZGlzdGFuY2VNLAogIGF2Z0hyLAogIGFjdGl2ZUVuZXJneUtjYWwKfTogewogIHNwb3J0OiBTcG9ydDsKICBkdXJhdGlvblNlYzogbnVtYmVyOwogIGRpc3RhbmNlTTogbnVtYmVyIHwgbnVsbDsKICBhdmdIcjogbnVtYmVyIHwgbnVsbDsKICBhY3RpdmVFbmVyZ3lLY2FsOiBudW1iZXIgfCBudWxsOwp9KSB7CiAgY29uc3QgZHVyYXRpb25NaW4gPSBNYXRoLm1heCgxLCBkdXJhdGlvblNlYyAvIDYwKTsKICBjb25zdCBzcG9ydEZhY3RvciA9IHNwb3J0ID09PSAicnVuIiA/IDEuMTUgOiBzcG9ydCA9PT0gInN3aW0iID8gMS4wNyA6IHNwb3J0ID09PSAic3RyZW5ndGgiID8gMC44NiA6IDE7CiAgY29uc3QgaHJGYWN0b3IgPSBhdmdIciAhPSBudWxsID8gTWF0aC5tYXgoMC43MiwgTWF0aC5taW4oMS43MiwgYXZnSHIgLyAxNDUpKSA6IDE7CiAgY29uc3QgZGlzdEZhY3RvciA9CiAgICBkaXN0YW5jZU0gIT0gbnVsbCAmJiBkaXN0YW5jZU0gPiAwID8gTWF0aC5tYXgoMC44NCwgTWF0aC5taW4oMS4zMiwgZGlzdGFuY2VNIC8gMTAwMDApKSA6IDE7CiAgY29uc3QgZW5lcmd5RmFjdG9yID0KICAgIGFjdGl2ZUVuZXJneUtjYWwgIT0gbnVsbCAmJiBhY3RpdmVFbmVyZ3lLY2FsID4gMAogICAgICA/IE1hdGgubWF4KDAuOCwgTWF0aC5taW4oMS40LCBhY3RpdmVFbmVyZ3lLY2FsIC8gNzAwKSkKICAgICAgOiAxOwoKICBjb25zdCB0c3NMaWtlID0gTWF0aC5tYXgoNSwgTWF0aC5yb3VuZChkdXJhdGlvbk1pbiAqIHNwb3J0RmFjdG9yICogaHJGYWN0b3IgKiBkaXN0RmFjdG9yICogMC45MikpOwogIGNvbnN0IHRyaW1wID0gTWF0aC5tYXgoNCwgTWF0aC5yb3VuZChkdXJhdGlvbk1pbiAqIHNwb3J0RmFjdG9yICogaHJGYWN0b3IgKiBlbmVyZ3lGYWN0b3IgKiAwLjg4KSk7CiAgcmV0dXJuIHsgdHNzTGlrZSwgdHJpbXAgfTsKfQoKZnVuY3Rpb24gYnVpbGRSYXdIYXNoKGRldmljZUlkOiBzdHJpbmcsIGV4dGVybmFsSWQ6IHN0cmluZywgc3RhcnRBdDogc3RyaW5nLCBzcG9ydDogU3BvcnQpIHsKICBjb25zdCBiYXNlID0gYGhlYWx0aGtpdHwke2RldmljZUlkfXwke2V4dGVybmFsSWR9fCR7c3RhcnRBdH18JHtzcG9ydH1gOwogIHJldHVybiBgaGVhbHRoa2l0OiR7Y3JlYXRlSGFzaCgic2hhMSIpLnVwZGF0ZShiYXNlKS5kaWdlc3QoImhleCIpfWA7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQT1NUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgY29uc3QgYm9keSA9IGF3YWl0IHJlcXVlc3QuanNvbigpLmNhdGNoKCgpID0+IG51bGwpOwogIGNvbnN0IHBhcnNlZCA9IHNjaGVtYS5zYWZlUGFyc2UoYm9keSk7CiAgaWYgKCFwYXJzZWQuc3VjY2VzcykgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgb2s6IGZhbHNlLCBlcnJvcjogIkludmFsaWQgcGF5bG9hZCIsIGRldGFpbHM6IHBhcnNlZC5lcnJvci5mbGF0dGVuKCkgfSwgeyBzdGF0dXM6IDQwMCB9KTsKICB9CgogIGxldCBjcmVhdGVkID0gMDsKICBsZXQgdXBkYXRlZCA9IDA7CiAgbGV0IHNraXBwZWQgPSAwOwoKICBmb3IgKGNvbnN0IGl0ZW0gb2YgcGFyc2VkLmRhdGEud29ya291dHMpIHsKICAgIGNvbnN0IHNwb3J0ID0gbm9ybWFsaXplU3BvcnQoaXRlbS5zcG9ydCk7CiAgICBpZiAoIXNwb3J0KSB7CiAgICAgIHNraXBwZWQgKz0gMTsKICAgICAgY29udGludWU7CiAgICB9CgogICAgY29uc3Qgc3RhcnQgPSBuZXcgRGF0ZShpdGVtLnN0YXJ0QXQpOwogICAgaWYgKCFOdW1iZXIuaXNGaW5pdGUoc3RhcnQuZ2V0VGltZSgpKSkgewogICAgICBza2lwcGVkICs9IDE7CiAgICAgIGNvbnRpbnVlOwogICAgfQogICAgY29uc3Qgc3RhcnRBdCA9IHN0YXJ0LnRvSVNPU3RyaW5nKCk7CiAgICBjb25zdCBjYW5vbmljYWxLZXkgPSBgJHtzcG9ydH18JHtzdGFydEF0fWA7CiAgICBjb25zdCBleGlzdGVkID0gaGFzV29ya291dEJ5Q2Fub25pY2FsS2V5KGNhbm9uaWNhbEtleSk7CiAgICBjb25zdCByYXdGaWxlSGFzaCA9IGJ1aWxkUmF3SGFzaChwYXJzZWQuZGF0YS5kZXZpY2VJZCwgaXRlbS5leHRlcm5hbElkLCBzdGFydEF0LCBzcG9ydCk7CiAgICBjb25zdCBsb2FkID0gZXN0aW1hdGVMb2FkKHsKICAgICAgc3BvcnQsCiAgICAgIGR1cmF0aW9uU2VjOiBpdGVtLmR1cmF0aW9uU2VjLAogICAgICBkaXN0YW5jZU06IGl0ZW0uZGlzdGFuY2VNID8/IG51bGwsCiAgICAgIGF2Z0hyOiBpdGVtLmF2Z0hyID8/IG51bGwsCiAgICAgIGFjdGl2ZUVuZXJneUtjYWw6IGl0ZW0uYWN0aXZlRW5lcmd5S2NhbCA/PyBudWxsCiAgICB9KTsKCiAgICBjb25zdCB3b3Jrb3V0OiBXb3Jrb3V0ID0gewogICAgICBpZDogcmFuZG9tVVVJRCgpLAogICAgICBzb3VyY2U6ICJoZWFsdGhmaXQiLAogICAgICBzcG9ydCwKICAgICAgc3RhcnRBdCwKICAgICAgZHVyYXRpb25TZWM6IGl0ZW0uZHVyYXRpb25TZWMsCiAgICAgIGRpc3RhbmNlTTogaXRlbS5kaXN0YW5jZU0gPz8gbnVsbCwKICAgICAgYXZnSHI6IGl0ZW0uYXZnSHIgPz8gbnVsbCwKICAgICAgbWF4SHI6IGl0ZW0ubWF4SHIgPz8gbnVsbCwKICAgICAgZWxldmF0aW9uTTogaXRlbS5lbGV2YXRpb25NID8/IG51bGwsCiAgICAgIHRzc0xpa2U6IGxvYWQudHNzTGlrZSwKICAgICAgdHJpbXA6IGxvYWQudHJpbXAsCiAgICAgIGNhbm9uaWNhbEtleSwKICAgICAgcmF3RmlsZUhhc2gsCiAgICAgIHJhd0ZpbGVQYXRoOiBpdGVtLnNvdXJjZUFwcCA/PyBudWxsCiAgICB9OwoKICAgIHVwc2VydFdvcmtvdXQod29ya291dCk7CiAgICBpZiAoZXhpc3RlZCkgewogICAgICB1cGRhdGVkICs9IDE7CiAgICB9IGVsc2UgewogICAgICBjcmVhdGVkICs9IDE7CiAgICB9CiAgfQoKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgb2s6IHRydWUsCiAgICByZWNlaXZlZDogcGFyc2VkLmRhdGEud29ya291dHMubGVuZ3RoLAogICAgY3JlYXRlZCwKICAgIHVwZGF0ZWQsCiAgICBza2lwcGVkLAogICAgc3luY2VkQXQ6IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKQogIH0pOwp9Cg=="}
+import { createHash, randomUUID } from "node:crypto";
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { hasWorkoutByCanonicalKey, upsertWorkout } from "@/lib/db";
+import type { Sport, Workout } from "@/lib/types";
+
+const workoutSchema = z.object({
+  externalId: z.string().min(1).max(200),
+  sport: z.string().min(1).max(32),
+  startAt: z.string().datetime({ offset: true }),
+  durationSec: z.number().int().positive().max(432000),
+  distanceM: z.number().nonnegative().nullable().optional(),
+  avgHr: z.number().nonnegative().nullable().optional(),
+  maxHr: z.number().nonnegative().nullable().optional(),
+  elevationM: z.number().nullable().optional(),
+  activeEnergyKcal: z.number().nonnegative().nullable().optional(),
+  sourceApp: z.string().max(120).nullable().optional()
+});
+
+const schema = z.object({
+  deviceId: z.string().min(1).max(120),
+  workouts: z.array(workoutSchema).max(400)
+});
+
+function normalizeSport(raw: string): Sport | null {
+  const key = raw.trim().toLowerCase();
+  if (["run", "running", "ריצה"].includes(key)) return "run";
+  if (["bike", "cycling", "bicycle", "אופניים"].includes(key)) return "bike";
+  if (["swim", "swimming", "שחייה"].includes(key)) return "swim";
+  if (["strength", "traditionalstrengthtraining", "functionalstrengthtraining", "כוח", "כח"].includes(key)) {
+    return "strength";
+  }
+  return null;
+}
+
+function estimateLoad({
+  sport,
+  durationSec,
+  distanceM,
+  avgHr,
+  activeEnergyKcal
+}: {
+  sport: Sport;
+  durationSec: number;
+  distanceM: number | null;
+  avgHr: number | null;
+  activeEnergyKcal: number | null;
+}) {
+  const durationMin = Math.max(1, durationSec / 60);
+  const sportFactor = sport === "run" ? 1.15 : sport === "swim" ? 1.07 : sport === "strength" ? 0.86 : 1;
+  const hrFactor = avgHr != null ? Math.max(0.72, Math.min(1.72, avgHr / 145)) : 1;
+  const distFactor =
+    distanceM != null && distanceM > 0 ? Math.max(0.84, Math.min(1.32, distanceM / 10000)) : 1;
+  const energyFactor =
+    activeEnergyKcal != null && activeEnergyKcal > 0
+      ? Math.max(0.8, Math.min(1.4, activeEnergyKcal / 700))
+      : 1;
+
+  const tssLike = Math.max(5, Math.round(durationMin * sportFactor * hrFactor * distFactor * 0.92));
+  const trimp = Math.max(4, Math.round(durationMin * sportFactor * hrFactor * energyFactor * 0.88));
+  return { tssLike, trimp };
+}
+
+function buildRawHash(deviceId: string, externalId: string, startAt: string, sport: Sport) {
+  const base = `healthkit|${deviceId}|${externalId}|${startAt}|${sport}`;
+  return `healthkit:${createHash("sha1").update(base).digest("hex")}`;
+}
+
+export async function POST(request: NextRequest) {
+  const body = await request.json().catch(() => null);
+  const parsed = schema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ ok: false, error: "Invalid payload", details: parsed.error.flatten() }, { status: 400 });
+  }
+
+  let created = 0;
+  let updated = 0;
+  let skipped = 0;
+
+  for (const item of parsed.data.workouts) {
+    const sport = normalizeSport(item.sport);
+    if (!sport) {
+      skipped += 1;
+      continue;
+    }
+
+    const start = new Date(item.startAt);
+    if (!Number.isFinite(start.getTime())) {
+      skipped += 1;
+      continue;
+    }
+    const startAt = start.toISOString();
+    const canonicalKey = `${sport}|${startAt}`;
+    const existed = hasWorkoutByCanonicalKey(canonicalKey);
+    const rawFileHash = buildRawHash(parsed.data.deviceId, item.externalId, startAt, sport);
+    const load = estimateLoad({
+      sport,
+      durationSec: item.durationSec,
+      distanceM: item.distanceM ?? null,
+      avgHr: item.avgHr ?? null,
+      activeEnergyKcal: item.activeEnergyKcal ?? null
+    });
+
+    const workout: Workout = {
+      id: randomUUID(),
+      source: "healthfit",
+      sport,
+      startAt,
+      durationSec: item.durationSec,
+      distanceM: item.distanceM ?? null,
+      avgHr: item.avgHr ?? null,
+      maxHr: item.maxHr ?? null,
+      elevationM: item.elevationM ?? null,
+      tssLike: load.tssLike,
+      trimp: load.trimp,
+      canonicalKey,
+      rawFileHash,
+      rawFilePath: item.sourceApp ?? null
+    };
+
+    upsertWorkout(workout);
+    if (existed) {
+      updated += 1;
+    } else {
+      created += 1;
+    }
+  }
+
+  return NextResponse.json({
+    ok: true,
+    received: parsed.data.workouts.length,
+    created,
+    updated,
+    skipped,
+    syncedAt: new Date().toISOString()
+  });
+}

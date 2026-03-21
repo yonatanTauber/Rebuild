@@ -1,1 +1,69 @@
-{"data":"ZXhwb3J0IGZ1bmN0aW9uIGZvcm1hdElTT0RhdGUoZGF0ZSA9IG5ldyBEYXRlKCkpIHsKICByZXR1cm4gZGF0ZS50b0lTT1N0cmluZygpLnNsaWNlKDAsIDEwKTsKfQoKZXhwb3J0IGZ1bmN0aW9uIGZvcm1hdExvY2FsSVNPRGF0ZShkYXRlSW5wdXQ6IHN0cmluZyB8IERhdGUpIHsKICBjb25zdCBkYXRlID0gdHlwZW9mIGRhdGVJbnB1dCA9PT0gInN0cmluZyIgPyBuZXcgRGF0ZShkYXRlSW5wdXQpIDogZGF0ZUlucHV0OwogIGlmICghTnVtYmVyLmlzRmluaXRlKGRhdGUuZ2V0VGltZSgpKSkgcmV0dXJuICIiOwogIGNvbnN0IGRkID0gU3RyaW5nKGRhdGUuZ2V0RGF0ZSgpKS5wYWRTdGFydCgyLCAiMCIpOwogIGNvbnN0IG1tID0gU3RyaW5nKGRhdGUuZ2V0TW9udGgoKSArIDEpLnBhZFN0YXJ0KDIsICIwIik7CiAgY29uc3QgeXl5eSA9IFN0cmluZyhkYXRlLmdldEZ1bGxZZWFyKCkpOwogIHJldHVybiBgJHt5eXl5fS0ke21tfS0ke2RkfWA7Cn0KCmV4cG9ydCBmdW5jdGlvbiBwYXJzZUxvY2FsSVNPRGF0ZShkYXRlSW5wdXQ6IHN0cmluZykgewogIGNvbnN0IG1hdGNoID0gL14oXGR7NH0pLShcZHsyfSktKFxkezJ9KSQvLmV4ZWMoZGF0ZUlucHV0KTsKICBpZiAoIW1hdGNoKSByZXR1cm4gbmV3IERhdGUoZGF0ZUlucHV0KTsKICBjb25zdCBbLCB5ZWFyLCBtb250aCwgZGF5XSA9IG1hdGNoOwogIHJldHVybiBuZXcgRGF0ZShOdW1iZXIoeWVhciksIE51bWJlcihtb250aCkgLSAxLCBOdW1iZXIoZGF5KSwgMTIsIDAsIDAsIDApOwp9CgpleHBvcnQgZnVuY3Rpb24gZm9ybWF0RGlzcGxheURhdGUoZGF0ZUlucHV0OiBzdHJpbmcgfCBEYXRlKSB7CiAgY29uc3QgZGF0ZSA9IHR5cGVvZiBkYXRlSW5wdXQgPT09ICJzdHJpbmciID8gbmV3IERhdGUoZGF0ZUlucHV0KSA6IGRhdGVJbnB1dDsKICBpZiAoIU51bWJlci5pc0Zpbml0ZShkYXRlLmdldFRpbWUoKSkpIHJldHVybiAiLSI7CiAgY29uc3QgZGQgPSBTdHJpbmcoZGF0ZS5nZXREYXRlKCkpLnBhZFN0YXJ0KDIsICIwIik7CiAgY29uc3QgbW0gPSBTdHJpbmcoZGF0ZS5nZXRNb250aCgpICsgMSkucGFkU3RhcnQoMiwgIjAiKTsKICBjb25zdCB5eSA9IFN0cmluZyhkYXRlLmdldEZ1bGxZZWFyKCkpLnNsaWNlKC0yKTsKICByZXR1cm4gYCR7ZGR9LSR7bW19LSR7eXl9YDsKfQoKZXhwb3J0IGZ1bmN0aW9uIGZvcm1hdERpc3BsYXlEYXRlVGltZShkYXRlSW5wdXQ6IHN0cmluZyB8IERhdGUpIHsKICBjb25zdCBkYXRlID0gdHlwZW9mIGRhdGVJbnB1dCA9PT0gInN0cmluZyIgPyBuZXcgRGF0ZShkYXRlSW5wdXQpIDogZGF0ZUlucHV0OwogIGlmICghTnVtYmVyLmlzRmluaXRlKGRhdGUuZ2V0VGltZSgpKSkgcmV0dXJuICItIjsKICBjb25zdCBoaCA9IFN0cmluZyhkYXRlLmdldEhvdXJzKCkpLnBhZFN0YXJ0KDIsICIwIik7CiAgY29uc3QgbWluID0gU3RyaW5nKGRhdGUuZ2V0TWludXRlcygpKS5wYWRTdGFydCgyLCAiMCIpOwogIHJldHVybiBgJHtmb3JtYXREaXNwbGF5RGF0ZShkYXRlKX0sICR7aGh9OiR7bWlufWA7Cn0KCmV4cG9ydCBmdW5jdGlvbiBkYXlzQWdvSXNvKGRheXM6IG51bWJlcikgewogIGNvbnN0IGRhdGUgPSBuZXcgRGF0ZSgpOwogIGRhdGUuc2V0RGF0ZShkYXRlLmdldERhdGUoKSAtIGRheXMpOwogIHJldHVybiBkYXRlLnRvSVNPU3RyaW5nKCk7Cn0KCmV4cG9ydCBmdW5jdGlvbiBhZGREYXlzSVNPKGRhdGU6IHN0cmluZywgZGF5czogbnVtYmVyKSB7CiAgY29uc3QgW3llYXIsIG1vbnRoLCBkYXldID0gZGF0ZS5zcGxpdCgiLSIpLm1hcCgocGFydCkgPT4gTnVtYmVyKHBhcnQpKTsKICBpZiAoIU51bWJlci5pc0Zpbml0ZSh5ZWFyKSB8fCAhTnVtYmVyLmlzRmluaXRlKG1vbnRoKSB8fCAhTnVtYmVyLmlzRmluaXRlKGRheSkpIHsKICAgIHJldHVybiBkYXRlOwogIH0KICBjb25zdCBkID0gbmV3IERhdGUoRGF0ZS5VVEMoeWVhciwgbW9udGggLSAxLCBkYXkpKTsKICBkLnNldFVUQ0RhdGUoZC5nZXRVVENEYXRlKCkgKyBkYXlzKTsKICByZXR1cm4gZC50b0lTT1N0cmluZygpLnNsaWNlKDAsIDEwKTsKfQoKZXhwb3J0IGZ1bmN0aW9uIHdlZWtkYXlJU08oZGF0ZTogc3RyaW5nKSB7CiAgY29uc3QgW3llYXIsIG1vbnRoLCBkYXldID0gZGF0ZS5zcGxpdCgiLSIpLm1hcCgocGFydCkgPT4gTnVtYmVyKHBhcnQpKTsKICBpZiAoIU51bWJlci5pc0Zpbml0ZSh5ZWFyKSB8fCAhTnVtYmVyLmlzRmluaXRlKG1vbnRoKSB8fCAhTnVtYmVyLmlzRmluaXRlKGRheSkpIHsKICAgIHJldHVybiAwOwogIH0KICByZXR1cm4gbmV3IERhdGUoRGF0ZS5VVEMoeWVhciwgbW9udGggLSAxLCBkYXkpKS5nZXRVVENEYXkoKTsKfQoKZXhwb3J0IGZ1bmN0aW9uIHN0YXJ0T2ZUcmFpbmluZ1dlZWtJU08oZGF0ZTogc3RyaW5nKSB7CiAgY29uc3Qgd2Vla2RheSA9IHdlZWtkYXlJU08oZGF0ZSk7CiAgcmV0dXJuIGFkZERheXNJU08oZGF0ZSwgLXdlZWtkYXkpOwp9CgpleHBvcnQgZnVuY3Rpb24gaXNTYXR1cmRheUlTTyhkYXRlOiBzdHJpbmcpIHsKICByZXR1cm4gd2Vla2RheUlTTyhkYXRlKSA9PT0gNjsKfQo="}
+export function formatISODate(date = new Date()) {
+  return date.toISOString().slice(0, 10);
+}
+
+export function formatLocalISODate(dateInput: string | Date) {
+  const date = typeof dateInput === "string" ? new Date(dateInput) : dateInput;
+  if (!Number.isFinite(date.getTime())) return "";
+  const dd = String(date.getDate()).padStart(2, "0");
+  const mm = String(date.getMonth() + 1).padStart(2, "0");
+  const yyyy = String(date.getFullYear());
+  return `${yyyy}-${mm}-${dd}`;
+}
+
+export function parseLocalISODate(dateInput: string) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateInput);
+  if (!match) return new Date(dateInput);
+  const [, year, month, day] = match;
+  return new Date(Number(year), Number(month) - 1, Number(day), 12, 0, 0, 0);
+}
+
+export function formatDisplayDate(dateInput: string | Date) {
+  const date = typeof dateInput === "string" ? new Date(dateInput) : dateInput;
+  if (!Number.isFinite(date.getTime())) return "-";
+  const dd = String(date.getDate()).padStart(2, "0");
+  const mm = String(date.getMonth() + 1).padStart(2, "0");
+  const yy = String(date.getFullYear()).slice(-2);
+  return `${dd}-${mm}-${yy}`;
+}
+
+export function formatDisplayDateTime(dateInput: string | Date) {
+  const date = typeof dateInput === "string" ? new Date(dateInput) : dateInput;
+  if (!Number.isFinite(date.getTime())) return "-";
+  const hh = String(date.getHours()).padStart(2, "0");
+  const min = String(date.getMinutes()).padStart(2, "0");
+  return `${formatDisplayDate(date)}, ${hh}:${min}`;
+}
+
+export function daysAgoIso(days: number) {
+  const date = new Date();
+  date.setDate(date.getDate() - days);
+  return date.toISOString();
+}
+
+export function addDaysISO(date: string, days: number) {
+  const [year, month, day] = date.split("-").map((part) => Number(part));
+  if (!Number.isFinite(year) || !Number.isFinite(month) || !Number.isFinite(day)) {
+    return date;
+  }
+  const d = new Date(Date.UTC(year, month - 1, day));
+  d.setUTCDate(d.getUTCDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
+export function weekdayISO(date: string) {
+  const [year, month, day] = date.split("-").map((part) => Number(part));
+  if (!Number.isFinite(year) || !Number.isFinite(month) || !Number.isFinite(day)) {
+    return 0;
+  }
+  return new Date(Date.UTC(year, month - 1, day)).getUTCDay();
+}
+
+export function startOfTrainingWeekISO(date: string) {
+  const weekday = weekdayISO(date);
+  return addDaysISO(date, -weekday);
+}
+
+export function isSaturdayISO(date: string) {
+  return weekdayISO(date) === 6;
+}

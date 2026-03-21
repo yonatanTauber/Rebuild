@@ -1,1 +1,5 @@
-{"data":"aW1wb3J0IHsgcmVkaXJlY3QgfSBmcm9tICJuZXh0L25hdmlnYXRpb24iOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTGVnYWN5TG9naWNQYWdlKCkgewogIHJlZGlyZWN0KCIvc2V0dGluZ3MvbG9naWMiKTsKfQo="}
+import { redirect } from "next/navigation";
+
+export default function LegacyLogicPage() {
+  redirect("/settings/logic");
+}

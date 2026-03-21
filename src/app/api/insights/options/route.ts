@@ -1,1 +1,6 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAnbmV4dC9zZXJ2ZXInOwppbXBvcnQgeyBnZXRJbnNpZ2h0T3B0aW9ucyB9IGZyb20gJ0AvbGliL2luc2lnaHRzJzsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQoKSB7CiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKGdldEluc2lnaHRPcHRpb25zKCkpOwp9Cg=="}
+import { NextResponse } from 'next/server';
+import { getInsightOptions } from '@/lib/insights';
+
+export async function GET() {
+  return NextResponse.json(getInsightOptions());
+}

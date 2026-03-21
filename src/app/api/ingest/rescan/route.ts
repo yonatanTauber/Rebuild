@@ -1,1 +1,12 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAibmV4dC9zZXJ2ZXIiOwppbXBvcnQgeyBydW5Jbmdlc3QgfSBmcm9tICJAL2xpYi9pbmdlc3QiOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QoKSB7CiAgY29uc3QgcmVzdWx0ID0gYXdhaXQgcnVuSW5nZXN0KHsgb25seU1pc3Npbmc6IGZhbHNlLCByZWNlbnREYXlzOiAzMSB9KTsKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgam9iSWQ6IHJlc3VsdC5qb2JJZCwKICAgIHN0YXJ0ZWRBdDogcmVzdWx0LnN0YXJ0ZWRBdCwKICAgIGZpbGVzUXVldWVkOiByZXN1bHQuZmlsZXNRdWV1ZWQsCiAgICBmaWxlc1NraXBwZWQ6IHJlc3VsdC5maWxlc1NraXBwZWQKICB9KTsKfQo="}
+import { NextResponse } from "next/server";
+import { runIngest } from "@/lib/ingest";
+
+export async function POST() {
+  const result = await runIngest({ onlyMissing: false, recentDays: 31 });
+  return NextResponse.json({
+    jobId: result.jobId,
+    startedAt: result.startedAt,
+    filesQueued: result.filesQueued,
+    filesSkipped: result.filesSkipped
+  });
+}

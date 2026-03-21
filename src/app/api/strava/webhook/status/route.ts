@@ -1,1 +1,19 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAibmV4dC9zZXJ2ZXIiOwppbXBvcnQgeyBzcWwgfSBmcm9tICJAdmVyY2VsL3Bvc3RncmVzIjsKaW1wb3J0IHsgZW5zdXJlU3RyYXZhVGFibGVzIH0gZnJvbSAiQC9hcHAvYXBpL3N0cmF2YS9fbGliIjsKCmV4cG9ydCBjb25zdCBydW50aW1lID0gIm5vZGVqcyI7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKCkgewogIGF3YWl0IGVuc3VyZVN0cmF2YVRhYmxlcygpOwogIGNvbnN0IHJlcyA9IGF3YWl0IHNxbDx7IHN1YnNjcmlwdGlvbl9pZDogc3RyaW5nIHwgbnVsbDsgY2FsbGJhY2tfdXJsOiBzdHJpbmcgfCBudWxsIH0+YAogICAgU0VMRUNUIHN1YnNjcmlwdGlvbl9pZCwgY2FsbGJhY2tfdXJsIEZST00gc3RyYXZhX3dlYmhvb2sgV0hFUkUgaWQgPSAxCiAgYDsKICBjb25zdCByb3cgPSByZXMucm93c1swXTsKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgc3Vic2NyaWJlZDogQm9vbGVhbihyb3c/LnN1YnNjcmlwdGlvbl9pZCksCiAgICBzdWJzY3JpcHRpb25JZDogcm93Py5zdWJzY3JpcHRpb25faWQgPz8gbnVsbCwKICAgIGNhbGxiYWNrVXJsOiByb3c/LmNhbGxiYWNrX3VybCA/PyBudWxsCiAgfSk7Cn0KCg=="}
+import { NextResponse } from "next/server";
+import { sql } from "@vercel/postgres";
+import { ensureStravaTables } from "@/app/api/strava/_lib";
+
+export const runtime = "nodejs";
+
+export async function GET() {
+  await ensureStravaTables();
+  const res = await sql<{ subscription_id: string | null; callback_url: string | null }>`
+    SELECT subscription_id, callback_url FROM strava_webhook WHERE id = 1
+  `;
+  const row = res.rows[0];
+  return NextResponse.json({
+    subscribed: Boolean(row?.subscription_id),
+    subscriptionId: row?.subscription_id ?? null,
+    callbackUrl: row?.callback_url ?? null
+  });
+}
+

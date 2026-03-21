@@ -1,1 +1,265 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VNZW1vLCB1c2VSZWYsIHVzZVN0YXRlIH0gZnJvbSAicmVhY3QiOwppbXBvcnQgeyBjcmVhdGVQb3J0YWwgfSBmcm9tICJyZWFjdC1kb20iOwoKZXhwb3J0IHR5cGUgVWlTZWxlY3RPcHRpb24gPSB7CiAgdmFsdWU6IHN0cmluZzsKICBsYWJlbDogc3RyaW5nOwogIGRpc2FibGVkPzogYm9vbGVhbjsKfTsKCnR5cGUgVWlTZWxlY3RQcm9wcyA9IHsKICB2YWx1ZTogc3RyaW5nOwogIG9wdGlvbnM6IFVpU2VsZWN0T3B0aW9uW107CiAgb25DaGFuZ2U6ICh2YWx1ZTogc3RyaW5nKSA9PiB2b2lkOwogIG9uQ3JlYXRlPzogKHF1ZXJ5OiBzdHJpbmcpID0+IHZvaWQ7CiAgY3JlYXRhYmxlPzogYm9vbGVhbjsKICBwbGFjZWhvbGRlcj86IHN0cmluZzsKICBkaXNhYmxlZD86IGJvb2xlYW47CiAgYXV0b0ZvY3VzPzogYm9vbGVhbjsKICBjbGFzc05hbWU/OiBzdHJpbmc7CiAgbWVudUNsYXNzTmFtZT86IHN0cmluZzsKICBzZWFyY2hhYmxlPzogYm9vbGVhbjsKICBtYXhWaXNpYmxlT3B0aW9ucz86IG51bWJlcjsKICBub1Jlc3VsdHNMYWJlbD86IHN0cmluZzsKfTsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFVpU2VsZWN0KHsKICB2YWx1ZSwKICBvcHRpb25zLAogIG9uQ2hhbmdlLAogIG9uQ3JlYXRlLAogIGNyZWF0YWJsZSA9IGZhbHNlLAogIHBsYWNlaG9sZGVyID0gIteR15fXqCIsCiAgZGlzYWJsZWQgPSBmYWxzZSwKICBhdXRvRm9jdXMgPSBmYWxzZSwKICBjbGFzc05hbWUsCiAgbWVudUNsYXNzTmFtZSwKICBzZWFyY2hhYmxlID0gZmFsc2UsCiAgbWF4VmlzaWJsZU9wdGlvbnMgPSAxOCwKICBub1Jlc3VsdHNMYWJlbCA9ICLXkNeZ158g16rXldem15DXldeqIgp9OiBVaVNlbGVjdFByb3BzKSB7CiAgY29uc3QgW29wZW4sIHNldE9wZW5dID0gdXNlU3RhdGUoZmFsc2UpOwogIGNvbnN0IFtxdWVyeSwgc2V0UXVlcnldID0gdXNlU3RhdGUoIiIpOwogIGNvbnN0IFttZW51VXB3YXJkcywgc2V0TWVudVVwd2FyZHNdID0gdXNlU3RhdGUoZmFsc2UpOwogIGNvbnN0IFttZW51TWF4SGVpZ2h0LCBzZXRNZW51TWF4SGVpZ2h0XSA9IHVzZVN0YXRlKDI2MCk7CiAgY29uc3QgW21lbnVWaWV3cG9ydFBvcywgc2V0TWVudVZpZXdwb3J0UG9zXSA9IHVzZVN0YXRlPHsgdG9wOiBudW1iZXI7IGxlZnQ6IG51bWJlcjsgcmlnaHQ6IG51bWJlcjsgd2lkdGg6IG51bWJlcjsgcnRsOiBib29sZWFuIH0gfCBudWxsPihudWxsKTsKICBjb25zdCByb290UmVmID0gdXNlUmVmPEhUTUxEaXZFbGVtZW50IHwgbnVsbD4obnVsbCk7CiAgY29uc3QgbWVudVJlZiA9IHVzZVJlZjxIVE1MRGl2RWxlbWVudCB8IG51bGw+KG51bGwpOwoKICBjb25zdCBzZWxlY3RlZExhYmVsID0gdXNlTWVtbygoKSA9PiB7CiAgICBjb25zdCBzZWxlY3RlZCA9IG9wdGlvbnMuZmluZCgob3B0aW9uKSA9PiBvcHRpb24udmFsdWUgPT09IHZhbHVlKTsKICAgIHJldHVybiBzZWxlY3RlZD8ubGFiZWwgPz8gIiI7CiAgfSwgW29wdGlvbnMsIHZhbHVlXSk7CgogIGNvbnN0IGZpbHRlcmVkT3B0aW9ucyA9IHVzZU1lbW8oKCkgPT4gewogICAgY29uc3Qgbm9ybWFsaXplZFF1ZXJ5ID0gcXVlcnkudHJpbSgpLnRvTG93ZXJDYXNlKCk7CiAgICBjb25zdCBzY29wZWQgPSBzZWFyY2hhYmxlICYmIG5vcm1hbGl6ZWRRdWVyeQogICAgICA/IG9wdGlvbnMuZmlsdGVyKChvcHRpb24pID0+IG9wdGlvbi5sYWJlbC50b0xvd2VyQ2FzZSgpLmluY2x1ZGVzKG5vcm1hbGl6ZWRRdWVyeSkpCiAgICAgIDogb3B0aW9uczsKICAgIHJldHVybiBzY29wZWQuc2xpY2UoMCwgTWF0aC5tYXgoMSwgbWF4VmlzaWJsZU9wdGlvbnMpKTsKICB9LCBbbWF4VmlzaWJsZU9wdGlvbnMsIG9wdGlvbnMsIHF1ZXJ5LCBzZWFyY2hhYmxlXSk7CgogIGNvbnN0IHRyaW1tZWRRdWVyeSA9IHF1ZXJ5LnRyaW0oKTsKICBjb25zdCBjYW5DcmVhdGUgPSBCb29sZWFuKGNyZWF0YWJsZSAmJiBzZWFyY2hhYmxlICYmIG9uQ3JlYXRlICYmIHRyaW1tZWRRdWVyeS5sZW5ndGggPj0gMik7CgogIGNvbnN0IGZpcnN0RW5hYmxlZE9wdGlvbiA9IHVzZU1lbW8oCiAgICAoKSA9PiBmaWx0ZXJlZE9wdGlvbnMuZmluZCgob3B0aW9uKSA9PiAhb3B0aW9uLmRpc2FibGVkKSA/PyBudWxsLAogICAgW2ZpbHRlcmVkT3B0aW9uc10KICApOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgaWYgKCFvcGVuKSB7CiAgICAgIHNldFF1ZXJ5KHNlbGVjdGVkTGFiZWwpOwogICAgfQogIH0sIFtvcGVuLCBzZWxlY3RlZExhYmVsXSk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAoIW9wZW4gJiYgIXNlbGVjdGVkTGFiZWwpIHsKICAgICAgc2V0UXVlcnkoIiIpOwogICAgfQogIH0sIFtvcGVuLCBzZWxlY3RlZExhYmVsXSk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAoIW9wZW4pIHsKICAgICAgc2V0TWVudVVwd2FyZHMoZmFsc2UpOwogICAgICByZXR1cm47CiAgICB9CgogICAgZnVuY3Rpb24gdXBkYXRlUGxhY2VtZW50KCkgewogICAgICBpZiAoIXJvb3RSZWYuY3VycmVudCkgcmV0dXJuOwogICAgICBjb25zdCByZWN0ID0gcm9vdFJlZi5jdXJyZW50LmdldEJvdW5kaW5nQ2xpZW50UmVjdCgpOwogICAgICBjb25zdCBlc3RpbWF0ZWRNZW51SGVpZ2h0ID0gTWF0aC5taW4oMjYwLCBNYXRoLm1heCgxMjAsIGZpbHRlcmVkT3B0aW9ucy5sZW5ndGggKiAzNCArIDE2KSk7CiAgICAgIGNvbnN0IHNwYWNlQmVsb3cgPSB3aW5kb3cuaW5uZXJIZWlnaHQgLSByZWN0LmJvdHRvbTsKICAgICAgY29uc3Qgc3BhY2VBYm92ZSA9IHJlY3QudG9wOwogICAgICBjb25zdCBzaG91bGRPcGVuVXAgPSBzcGFjZUJlbG93IDwgZXN0aW1hdGVkTWVudUhlaWdodCAmJiBzcGFjZUFib3ZlID4gc3BhY2VCZWxvdzsKICAgICAgY29uc3QgaXNSdGwgPSBnZXRDb21wdXRlZFN0eWxlKHJvb3RSZWYuY3VycmVudCkuZGlyZWN0aW9uID09PSAicnRsIjsKCiAgICAgIHNldE1lbnVVcHdhcmRzKHNob3VsZE9wZW5VcCk7CiAgICAgIGNvbnN0IGF2YWlsYWJsZVNwYWNlID0gTWF0aC5tYXgoMTIwLCBNYXRoLmZsb29yKChzaG91bGRPcGVuVXAgPyBzcGFjZUFib3ZlIDogc3BhY2VCZWxvdykgLSAxMikpOwogICAgICBzZXRNZW51TWF4SGVpZ2h0KE1hdGgubWluKGVzdGltYXRlZE1lbnVIZWlnaHQsIGF2YWlsYWJsZVNwYWNlKSk7CiAgICAgIHNldE1lbnVWaWV3cG9ydFBvcyh7CiAgICAgICAgdG9wOiBzaG91bGRPcGVuVXAgPyByZWN0LnRvcCAtIDYgOiByZWN0LmJvdHRvbSArIDYsCiAgICAgICAgbGVmdDogcmVjdC5sZWZ0LAogICAgICAgIHJpZ2h0OiB3aW5kb3cuaW5uZXJXaWR0aCAtIHJlY3QucmlnaHQsCiAgICAgICAgcnRsOiBpc1J0bCwKICAgICAgICB3aWR0aDogcmVjdC53aWR0aAogICAgICB9KTsKICAgIH0KCiAgICB1cGRhdGVQbGFjZW1lbnQoKTsKICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCJyZXNpemUiLCB1cGRhdGVQbGFjZW1lbnQpOwogICAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoInNjcm9sbCIsIHVwZGF0ZVBsYWNlbWVudCwgdHJ1ZSk7CiAgICByZXR1cm4gKCkgPT4gewogICAgICB3aW5kb3cucmVtb3ZlRXZlbnRMaXN0ZW5lcigicmVzaXplIiwgdXBkYXRlUGxhY2VtZW50KTsKICAgICAgd2luZG93LnJlbW92ZUV2ZW50TGlzdGVuZXIoInNjcm9sbCIsIHVwZGF0ZVBsYWNlbWVudCwgdHJ1ZSk7CiAgICB9OwogIH0sIFtvcGVuLCBmaWx0ZXJlZE9wdGlvbnMubGVuZ3RoXSk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBmdW5jdGlvbiBoYW5kbGVPdXRzaWRlQ2xpY2soZXZlbnQ6IE1vdXNlRXZlbnQpIHsKICAgICAgaWYgKCEoZXZlbnQudGFyZ2V0IGluc3RhbmNlb2YgTm9kZSkpIHJldHVybjsKICAgICAgaWYgKHJvb3RSZWYuY3VycmVudD8uY29udGFpbnMoZXZlbnQudGFyZ2V0KSkgcmV0dXJuOwogICAgICBpZiAobWVudVJlZi5jdXJyZW50Py5jb250YWlucyhldmVudC50YXJnZXQpKSByZXR1cm47CiAgICAgICAgc2V0T3BlbihmYWxzZSk7CiAgICB9CiAgICBmdW5jdGlvbiBoYW5kbGVFc2NhcGUoZXZlbnQ6IEtleWJvYXJkRXZlbnQpIHsKICAgICAgaWYgKGV2ZW50LmtleSA9PT0gIkVzY2FwZSIpIHNldE9wZW4oZmFsc2UpOwogICAgfQoKICAgIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoIm1vdXNlZG93biIsIGhhbmRsZU91dHNpZGVDbGljayk7CiAgICBkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCJrZXlkb3duIiwgaGFuZGxlRXNjYXBlKTsKICAgIHJldHVybiAoKSA9PiB7CiAgICAgIGRvY3VtZW50LnJlbW92ZUV2ZW50TGlzdGVuZXIoIm1vdXNlZG93biIsIGhhbmRsZU91dHNpZGVDbGljayk7CiAgICAgIGRvY3VtZW50LnJlbW92ZUV2ZW50TGlzdGVuZXIoImtleWRvd24iLCBoYW5kbGVFc2NhcGUpOwogICAgfTsKICB9LCBbXSk7CgogIHJldHVybiAoCiAgICA8ZGl2IHJlZj17cm9vdFJlZn0gY2xhc3NOYW1lPXtbInVpLXNlbGVjdCIsIG9wZW4gPyAib3BlbiIgOiAiIiwgZGlzYWJsZWQgPyAiZGlzYWJsZWQiIDogIiIsIGNsYXNzTmFtZSA/PyAiIl0uam9pbigiICIpLnRyaW0oKX0+CiAgICAgIHtzZWFyY2hhYmxlID8gKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ1aS1zZWxlY3QtdHJpZ2dlciB1aS1zZWxlY3QtdHJpZ2dlci1zZWFyY2giIGFyaWEtaGFzcG9wdXA9Imxpc3Rib3giIGFyaWEtZXhwYW5kZWQ9e29wZW59PgogICAgICAgICAgPGlucHV0CiAgICAgICAgICAgIGNsYXNzTmFtZT0idWktc2VsZWN0LWlucHV0IgogICAgICAgICAgICB2YWx1ZT17cXVlcnl9CiAgICAgICAgICAgIG9uRm9jdXM9eygpID0+IHsKICAgICAgICAgICAgICBpZiAoIWRpc2FibGVkKSBzZXRPcGVuKHRydWUpOwogICAgICAgICAgICB9fQogICAgICAgICAgICBvbkNoYW5nZT17KGV2ZW50KSA9PiB7CiAgICAgICAgICAgICAgaWYgKGRpc2FibGVkKSByZXR1cm47CiAgICAgICAgICAgICAgc2V0UXVlcnkoZXZlbnQudGFyZ2V0LnZhbHVlKTsKICAgICAgICAgICAgICBpZiAoIW9wZW4pIHNldE9wZW4odHJ1ZSk7CiAgICAgICAgICAgIH19CiAgICAgICAgICAgIG9uS2V5RG93bj17KGV2ZW50KSA9PiB7CiAgICAgICAgICAgICAgaWYgKGV2ZW50LmtleSA9PT0gIkVzY2FwZSIpIHsKICAgICAgICAgICAgICAgIHNldE9wZW4oZmFsc2UpOwogICAgICAgICAgICAgICAgc2V0UXVlcnkoc2VsZWN0ZWRMYWJlbCk7CiAgICAgICAgICAgICAgICByZXR1cm47CiAgICAgICAgICAgICAgfQogICAgICAgICAgICAgIGlmIChldmVudC5rZXkgPT09ICJFbnRlciIgJiYgZmlyc3RFbmFibGVkT3B0aW9uKSB7CiAgICAgICAgICAgICAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgpOwogICAgICAgICAgICAgICAgb25DaGFuZ2UoZmlyc3RFbmFibGVkT3B0aW9uLnZhbHVlKTsKICAgICAgICAgICAgICAgIHNldFF1ZXJ5KGZpcnN0RW5hYmxlZE9wdGlvbi5sYWJlbCk7CiAgICAgICAgICAgICAgICBzZXRPcGVuKGZhbHNlKTsKICAgICAgICAgICAgICAgIHJldHVybjsKICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgaWYgKGV2ZW50LmtleSA9PT0gIkVudGVyIiAmJiBjYW5DcmVhdGUgJiYgZmlsdGVyZWRPcHRpb25zLmxlbmd0aCA9PT0gMCkgewogICAgICAgICAgICAgICAgZXZlbnQucHJldmVudERlZmF1bHQoKTsKICAgICAgICAgICAgICAgIG9uQ3JlYXRlPy4odHJpbW1lZFF1ZXJ5KTsKICAgICAgICAgICAgICAgIHNldE9wZW4oZmFsc2UpOwogICAgICAgICAgICAgIH0KICAgICAgICAgICAgfX0KICAgICAgICAgICAgcGxhY2Vob2xkZXI9e3BsYWNlaG9sZGVyfQogICAgICAgICAgICBkaXNhYmxlZD17ZGlzYWJsZWR9CiAgICAgICAgICAgIGF1dG9Gb2N1cz17YXV0b0ZvY3VzfQogICAgICAgICAgLz4KICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgdHlwZT0iYnV0dG9uIgogICAgICAgICAgICBjbGFzc05hbWU9InVpLXNlbGVjdC1jYXJldC1idG4iCiAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHsKICAgICAgICAgICAgICBpZiAoZGlzYWJsZWQpIHJldHVybjsKICAgICAgICAgICAgICBzZXRPcGVuKChwcmV2KSA9PiAhcHJldik7CiAgICAgICAgICAgIH19CiAgICAgICAgICAgIGRpc2FibGVkPXtkaXNhYmxlZH0KICAgICAgICAgICAgYXJpYS1sYWJlbD0i16TXqteXINeo16nXmdee15QiCiAgICAgICAgICA+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idWktc2VsZWN0LWNhcmV0IiBhcmlhLWhpZGRlbj4KICAgICAgICAgICAgICDilr4KICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgPC9kaXY+CiAgICAgICkgOiAoCiAgICAgICAgPGJ1dHRvbgogICAgICAgICAgdHlwZT0iYnV0dG9uIgogICAgICAgICAgY2xhc3NOYW1lPSJ1aS1zZWxlY3QtdHJpZ2dlciIKICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHsKICAgICAgICAgICAgaWYgKGRpc2FibGVkKSByZXR1cm47CiAgICAgICAgICAgIHNldE9wZW4oKHByZXYpID0+ICFwcmV2KTsKICAgICAgICAgIH19CiAgICAgICAgICBhcmlhLWhhc3BvcHVwPSJsaXN0Ym94IgogICAgICAgICAgYXJpYS1leHBhbmRlZD17b3Blbn0KICAgICAgICAgIGRpc2FibGVkPXtkaXNhYmxlZH0KICAgICAgICA+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9e3NlbGVjdGVkTGFiZWwgPyAiIiA6ICJ1aS1zZWxlY3QtcGxhY2Vob2xkZXIifT57c2VsZWN0ZWRMYWJlbCB8fCBwbGFjZWhvbGRlcn08L3NwYW4+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InVpLXNlbGVjdC1jYXJldCIgYXJpYS1oaWRkZW4+CiAgICAgICAgICAgIOKWvgogICAgICAgICAgPC9zcGFuPgogICAgICAgIDwvYnV0dG9uPgogICAgICApfQoKICAgICAge29wZW4gJiYgbWVudVZpZXdwb3J0UG9zICYmIHR5cGVvZiBkb2N1bWVudCAhPT0gInVuZGVmaW5lZCIKICAgICAgICA/IGNyZWF0ZVBvcnRhbCgKICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgIHJlZj17bWVudVJlZn0KICAgICAgICAgICAgICBjbGFzc05hbWU9e1sidWktc2VsZWN0LW1lbnUiLCAicG9ydGFsIiwgbWVudVVwd2FyZHMgPyAidXB3YXJkcyIgOiAiIiwgbWVudUNsYXNzTmFtZSA/PyAiIl0uam9pbigiICIpLnRyaW0oKX0KICAgICAgICAgICAgICByb2xlPSJsaXN0Ym94IgogICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICBtYXhIZWlnaHQ6IGAke21lbnVNYXhIZWlnaHR9cHhgLAogICAgICAgICAgICAgICAgdG9wOiBgJHttZW51Vmlld3BvcnRQb3MudG9wfXB4YCwKICAgICAgICAgICAgICAgIGxlZnQ6IG1lbnVWaWV3cG9ydFBvcy5ydGwgPyAiYXV0byIgOiBgJHttZW51Vmlld3BvcnRQb3MubGVmdH1weGAsCiAgICAgICAgICAgICAgICByaWdodDogbWVudVZpZXdwb3J0UG9zLnJ0bCA/IGAke21lbnVWaWV3cG9ydFBvcy5yaWdodH1weGAgOiAiYXV0byIsCiAgICAgICAgICAgICAgICB3aWR0aDogYCR7bWVudVZpZXdwb3J0UG9zLndpZHRofXB4YCwKICAgICAgICAgICAgICAgIHRyYW5zZm9ybTogbWVudVVwd2FyZHMgPyAidHJhbnNsYXRlWSgtMTAwJSkiIDogIm5vbmUiCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIHtmaWx0ZXJlZE9wdGlvbnMubGVuZ3RoID09PSAwID8gKAogICAgICAgICAgICAgICAgY2FuQ3JlYXRlID8gKAogICAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgICAgdHlwZT0iYnV0dG9uIgogICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idWktc2VsZWN0LWNyZWF0ZSIKICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7CiAgICAgICAgICAgICAgICAgICAgICBvbkNyZWF0ZT8uKHRyaW1tZWRRdWVyeSk7CiAgICAgICAgICAgICAgICAgICAgICBzZXRPcGVuKGZhbHNlKTsKICAgICAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgICAg77yLINeU15XXodejICJ7dHJpbW1lZFF1ZXJ5fSIKICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICApIDogKAogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idWktc2VsZWN0LWVtcHR5Ij57bm9SZXN1bHRzTGFiZWx9PC9kaXY+CiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgKSA6ICgKICAgICAgICAgICAgICAgIGZpbHRlcmVkT3B0aW9ucy5tYXAoKG9wdGlvbikgPT4gKAogICAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgICAga2V5PXtvcHRpb24udmFsdWV9CiAgICAgICAgICAgICAgICAgICAgdHlwZT0iYnV0dG9uIgogICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17WyJ1aS1zZWxlY3Qtb3B0aW9uIiwgb3B0aW9uLnZhbHVlID09PSB2YWx1ZSA/ICJzZWxlY3RlZCIgOiAiIl0uam9pbigiICIpLnRyaW0oKX0KICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7CiAgICAgICAgICAgICAgICAgICAgICBpZiAob3B0aW9uLmRpc2FibGVkKSByZXR1cm47CiAgICAgICAgICAgICAgICAgICAgICBvbkNoYW5nZShvcHRpb24udmFsdWUpOwogICAgICAgICAgICAgICAgICAgICAgc2V0UXVlcnkob3B0aW9uLmxhYmVsKTsKICAgICAgICAgICAgICAgICAgICAgIHNldE9wZW4oZmFsc2UpOwogICAgICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgICAgICAgZGlzYWJsZWQ9e29wdGlvbi5kaXNhYmxlZH0KICAgICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICAgIHtvcHRpb24ubGFiZWx9CiAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgICAgKSkKICAgICAgICAgICAgICApfQogICAgICAgICAgICA8L2Rpdj4sCiAgICAgICAgICAgIGRvY3VtZW50LmJvZHkKICAgICAgICAgICkKICAgICAgICA6IG51bGx9CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+"use client";
+
+import { useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
+
+export type UiSelectOption = {
+  value: string;
+  label: string;
+  disabled?: boolean;
+};
+
+type UiSelectProps = {
+  value: string;
+  options: UiSelectOption[];
+  onChange: (value: string) => void;
+  onCreate?: (query: string) => void;
+  creatable?: boolean;
+  placeholder?: string;
+  disabled?: boolean;
+  autoFocus?: boolean;
+  className?: string;
+  menuClassName?: string;
+  searchable?: boolean;
+  maxVisibleOptions?: number;
+  noResultsLabel?: string;
+};
+
+export default function UiSelect({
+  value,
+  options,
+  onChange,
+  onCreate,
+  creatable = false,
+  placeholder = "בחר",
+  disabled = false,
+  autoFocus = false,
+  className,
+  menuClassName,
+  searchable = false,
+  maxVisibleOptions = 18,
+  noResultsLabel = "אין תוצאות"
+}: UiSelectProps) {
+  const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState("");
+  const [menuUpwards, setMenuUpwards] = useState(false);
+  const [menuMaxHeight, setMenuMaxHeight] = useState(260);
+  const [menuViewportPos, setMenuViewportPos] = useState<{ top: number; left: number; right: number; width: number; rtl: boolean } | null>(null);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const menuRef = useRef<HTMLDivElement | null>(null);
+
+  const selectedLabel = useMemo(() => {
+    const selected = options.find((option) => option.value === value);
+    return selected?.label ?? "";
+  }, [options, value]);
+
+  const filteredOptions = useMemo(() => {
+    const normalizedQuery = query.trim().toLowerCase();
+    const scoped = searchable && normalizedQuery
+      ? options.filter((option) => option.label.toLowerCase().includes(normalizedQuery))
+      : options;
+    return scoped.slice(0, Math.max(1, maxVisibleOptions));
+  }, [maxVisibleOptions, options, query, searchable]);
+
+  const trimmedQuery = query.trim();
+  const canCreate = Boolean(creatable && searchable && onCreate && trimmedQuery.length >= 2);
+
+  const firstEnabledOption = useMemo(
+    () => filteredOptions.find((option) => !option.disabled) ?? null,
+    [filteredOptions]
+  );
+
+  useEffect(() => {
+    if (!open) {
+      setQuery(selectedLabel);
+    }
+  }, [open, selectedLabel]);
+
+  useEffect(() => {
+    if (!open && !selectedLabel) {
+      setQuery("");
+    }
+  }, [open, selectedLabel]);
+
+  useEffect(() => {
+    if (!open) {
+      setMenuUpwards(false);
+      return;
+    }
+
+    function updatePlacement() {
+      if (!rootRef.current) return;
+      const rect = rootRef.current.getBoundingClientRect();
+      const estimatedMenuHeight = Math.min(260, Math.max(120, filteredOptions.length * 34 + 16));
+      const spaceBelow = window.innerHeight - rect.bottom;
+      const spaceAbove = rect.top;
+      const shouldOpenUp = spaceBelow < estimatedMenuHeight && spaceAbove > spaceBelow;
+      const isRtl = getComputedStyle(rootRef.current).direction === "rtl";
+
+      setMenuUpwards(shouldOpenUp);
+      const availableSpace = Math.max(120, Math.floor((shouldOpenUp ? spaceAbove : spaceBelow) - 12));
+      setMenuMaxHeight(Math.min(estimatedMenuHeight, availableSpace));
+      setMenuViewportPos({
+        top: shouldOpenUp ? rect.top - 6 : rect.bottom + 6,
+        left: rect.left,
+        right: window.innerWidth - rect.right,
+        rtl: isRtl,
+        width: rect.width
+      });
+    }
+
+    updatePlacement();
+    window.addEventListener("resize", updatePlacement);
+    window.addEventListener("scroll", updatePlacement, true);
+    return () => {
+      window.removeEventListener("resize", updatePlacement);
+      window.removeEventListener("scroll", updatePlacement, true);
+    };
+  }, [open, filteredOptions.length]);
+
+  useEffect(() => {
+    function handleOutsideClick(event: MouseEvent) {
+      if (!(event.target instanceof Node)) return;
+      if (rootRef.current?.contains(event.target)) return;
+      if (menuRef.current?.contains(event.target)) return;
+        setOpen(false);
+    }
+    function handleEscape(event: KeyboardEvent) {
+      if (event.key === "Escape") setOpen(false);
+    }
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    document.addEventListener("keydown", handleEscape);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+      document.removeEventListener("keydown", handleEscape);
+    };
+  }, []);
+
+  return (
+    <div ref={rootRef} className={["ui-select", open ? "open" : "", disabled ? "disabled" : "", className ?? ""].join(" ").trim()}>
+      {searchable ? (
+        <div className="ui-select-trigger ui-select-trigger-search" aria-haspopup="listbox" aria-expanded={open}>
+          <input
+            className="ui-select-input"
+            value={query}
+            onFocus={() => {
+              if (!disabled) setOpen(true);
+            }}
+            onChange={(event) => {
+              if (disabled) return;
+              setQuery(event.target.value);
+              if (!open) setOpen(true);
+            }}
+            onKeyDown={(event) => {
+              if (event.key === "Escape") {
+                setOpen(false);
+                setQuery(selectedLabel);
+                return;
+              }
+              if (event.key === "Enter" && firstEnabledOption) {
+                event.preventDefault();
+                onChange(firstEnabledOption.value);
+                setQuery(firstEnabledOption.label);
+                setOpen(false);
+                return;
+              }
+              if (event.key === "Enter" && canCreate && filteredOptions.length === 0) {
+                event.preventDefault();
+                onCreate?.(trimmedQuery);
+                setOpen(false);
+              }
+            }}
+            placeholder={placeholder}
+            disabled={disabled}
+            autoFocus={autoFocus}
+          />
+          <button
+            type="button"
+            className="ui-select-caret-btn"
+            onClick={() => {
+              if (disabled) return;
+              setOpen((prev) => !prev);
+            }}
+            disabled={disabled}
+            aria-label="פתח רשימה"
+          >
+            <span className="ui-select-caret" aria-hidden>
+              ▾
+            </span>
+          </button>
+        </div>
+      ) : (
+        <button
+          type="button"
+          className="ui-select-trigger"
+          onClick={() => {
+            if (disabled) return;
+            setOpen((prev) => !prev);
+          }}
+          aria-haspopup="listbox"
+          aria-expanded={open}
+          disabled={disabled}
+        >
+          <span className={selectedLabel ? "" : "ui-select-placeholder"}>{selectedLabel || placeholder}</span>
+          <span className="ui-select-caret" aria-hidden>
+            ▾
+          </span>
+        </button>
+      )}
+
+      {open && menuViewportPos && typeof document !== "undefined"
+        ? createPortal(
+            <div
+              ref={menuRef}
+              className={["ui-select-menu", "portal", menuUpwards ? "upwards" : "", menuClassName ?? ""].join(" ").trim()}
+              role="listbox"
+              style={{
+                maxHeight: `${menuMaxHeight}px`,
+                top: `${menuViewportPos.top}px`,
+                left: menuViewportPos.rtl ? "auto" : `${menuViewportPos.left}px`,
+                right: menuViewportPos.rtl ? `${menuViewportPos.right}px` : "auto",
+                width: `${menuViewportPos.width}px`,
+                transform: menuUpwards ? "translateY(-100%)" : "none"
+              }}
+            >
+              {filteredOptions.length === 0 ? (
+                canCreate ? (
+                  <button
+                    type="button"
+                    className="ui-select-create"
+                    onClick={() => {
+                      onCreate?.(trimmedQuery);
+                      setOpen(false);
+                    }}
+                  >
+                    ＋ הוסף "{trimmedQuery}"
+                  </button>
+                ) : (
+                  <div className="ui-select-empty">{noResultsLabel}</div>
+                )
+              ) : (
+                filteredOptions.map((option) => (
+                  <button
+                    key={option.value}
+                    type="button"
+                    className={["ui-select-option", option.value === value ? "selected" : ""].join(" ").trim()}
+                    onClick={() => {
+                      if (option.disabled) return;
+                      onChange(option.value);
+                      setQuery(option.label);
+                      setOpen(false);
+                    }}
+                    disabled={option.disabled}
+                  >
+                    {option.label}
+                  </button>
+                ))
+              )}
+            </div>,
+            document.body
+          )
+        : null}
+    </div>
+  );
+}

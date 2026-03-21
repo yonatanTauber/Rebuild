@@ -1,1 +1,18 @@
-{"data":"aW1wb3J0IExpbmsgZnJvbSAibmV4dC9saW5rIjsKCnR5cGUgTG9nb1Byb3BzID0gewogIGNvbXBhY3Q/OiBib29sZWFuOwp9OwoKZXhwb3J0IGZ1bmN0aW9uIFJlYnVpbGRMb2dvKHsgY29tcGFjdCA9IGZhbHNlIH06IExvZ29Qcm9wcykgewogIHJldHVybiAoCiAgICA8TGluayBocmVmPSIvdG9kYXkiIGNsYXNzTmFtZT0iYnJhbmQiIGFyaWEtbGFiZWw9IlJlYnVpbGQgaG9tZSI+CiAgICAgIDxzcGFuIGNsYXNzTmFtZT0iYnJpY2siIGFyaWEtaGlkZGVuPgogICAgICAgIDxzcGFuIGNsYXNzTmFtZT0ic3R1ZCIgLz4KICAgICAgICA8c3BhbiBjbGFzc05hbWU9InN0dWQiIC8+CiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJzdHVkIiAvPgogICAgICA8L3NwYW4+CiAgICAgIHshY29tcGFjdCAmJiA8c3BhbiBjbGFzc05hbWU9IndvcmRtYXJrIj5SZWJ1aWxkPC9zcGFuPn0KICAgIDwvTGluaz4KICApOwp9Cg=="}
+import Link from "next/link";
+
+type LogoProps = {
+  compact?: boolean;
+};
+
+export function RebuildLogo({ compact = false }: LogoProps) {
+  return (
+    <Link href="/today" className="brand" aria-label="Rebuild home">
+      <span className="brick" aria-hidden>
+        <span className="stud" />
+        <span className="stud" />
+        <span className="stud" />
+      </span>
+      {!compact && <span className="wordmark">Rebuild</span>}
+    </Link>
+  );
+}

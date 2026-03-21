@@ -1,1 +1,70 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgTWFwQ29udGFpbmVyLCBQb2x5bGluZSwgVGlsZUxheWVyIH0gZnJvbSAicmVhY3QtbGVhZmxldCI7CmltcG9ydCB0eXBlIHsgTGF0TG5nQm91bmRzRXhwcmVzc2lvbiwgTGF0TG5nRXhwcmVzc2lvbiB9IGZyb20gImxlYWZsZXQiOwppbXBvcnQgImxlYWZsZXQvZGlzdC9sZWFmbGV0LmNzcyI7Cgp0eXBlIFJvdXRlUG9pbnQgPSB7IGxhdDogbnVtYmVyOyBsb246IG51bWJlciB9OwoKZnVuY3Rpb24gYnVpbGRCb3VuZHMoc2VnbWVudHM6IFJvdXRlUG9pbnRbXVtdKTogTGF0TG5nQm91bmRzRXhwcmVzc2lvbiB8IG51bGwgewogIGNvbnN0IHBvaW50cyA9IHNlZ21lbnRzLmZsYXQoKTsKICBpZiAoIXBvaW50cy5sZW5ndGgpIHsKICAgIHJldHVybiBudWxsOwogIH0KICBsZXQgbWluTGF0ID0gcG9pbnRzWzBdLmxhdDsKICBsZXQgbWF4TGF0ID0gcG9pbnRzWzBdLmxhdDsKICBsZXQgbWluTG9uID0gcG9pbnRzWzBdLmxvbjsKICBsZXQgbWF4TG9uID0gcG9pbnRzWzBdLmxvbjsKCiAgZm9yIChjb25zdCBwb2ludCBvZiBwb2ludHMpIHsKICAgIG1pbkxhdCA9IE1hdGgubWluKG1pbkxhdCwgcG9pbnQubGF0KTsKICAgIG1heExhdCA9IE1hdGgubWF4KG1heExhdCwgcG9pbnQubGF0KTsKICAgIG1pbkxvbiA9IE1hdGgubWluKG1pbkxvbiwgcG9pbnQubG9uKTsKICAgIG1heExvbiA9IE1hdGgubWF4KG1heExvbiwgcG9pbnQubG9uKTsKICB9CgogIHJldHVybiBbCiAgICBbbWluTGF0LCBtaW5Mb25dLAogICAgW21heExhdCwgbWF4TG9uXQogIF07Cn0KCmZ1bmN0aW9uIHRvUG9seWxpbmUocG9pbnRzOiBSb3V0ZVBvaW50W10pOiBMYXRMbmdFeHByZXNzaW9uW10gewogIHJldHVybiBwb2ludHMubWFwKChwb2ludCkgPT4gW3BvaW50LmxhdCwgcG9pbnQubG9uXSk7Cn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFdvcmtvdXRSb3V0ZU1hcCh7IHNlZ21lbnRzIH06IHsgc2VnbWVudHM6IFJvdXRlUG9pbnRbXVtdIH0pIHsKICBjb25zdCBmaWx0ZXJlZFNlZ21lbnRzID0gc2VnbWVudHMuZmlsdGVyKChzZWdtZW50KSA9PiBzZWdtZW50Lmxlbmd0aCA+PSAyKTsKICBjb25zdCBib3VuZHMgPSBidWlsZEJvdW5kcyhmaWx0ZXJlZFNlZ21lbnRzKTsKCiAgaWYgKCFib3VuZHMgfHwgZmlsdGVyZWRTZWdtZW50cy5sZW5ndGggPT09IDApIHsKICAgIHJldHVybiA8cCBjbGFzc05hbWU9Im5vdGUiPteQ15nXnyDXoNeq15XXoNeZINee16HXnNeV15wg15bXnteZ16DXmdedINec15DXmdee15XXnyDXlNeW15QuPC9wPjsKICB9CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0icm91dGUtbWFwLXdyYXAiPgogICAgICA8TWFwQ29udGFpbmVyCiAgICAgICAgY2xhc3NOYW1lPSJyb3V0ZS1sZWFmbGV0LW1hcCIKICAgICAgICBib3VuZHM9e2JvdW5kc30KICAgICAgICBzY3JvbGxXaGVlbFpvb20KICAgICAgPgogICAgICAgIDxUaWxlTGF5ZXIKICAgICAgICAgIGF0dHJpYnV0aW9uPScmY29weTsgPGEgaHJlZj0iaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvY29weXJpZ2h0Ij5PcGVuU3RyZWV0TWFwPC9hPicKICAgICAgICAgIHVybD0iaHR0cHM6Ly97c30udGlsZS5vcGVuc3RyZWV0bWFwLm9yZy97en0ve3h9L3t5fS5wbmciCiAgICAgICAgLz4KICAgICAgICB7ZmlsdGVyZWRTZWdtZW50cy5tYXAoKHNlZ21lbnQsIGluZGV4KSA9PiAoCiAgICAgICAgICA8UG9seWxpbmUKICAgICAgICAgICAga2V5PXtgc2VnbWVudC0ke2luZGV4fWB9CiAgICAgICAgICAgIHBvc2l0aW9ucz17dG9Qb2x5bGluZShzZWdtZW50KX0KICAgICAgICAgICAgY29sb3I9IiNiODQyNDIiCiAgICAgICAgICAgIHdlaWdodD17NH0KICAgICAgICAgICAgbGluZUNhcD0icm91bmQiCiAgICAgICAgICAgIGxpbmVKb2luPSJyb3VuZCIKICAgICAgICAgIC8+CiAgICAgICAgKSl9CiAgICAgIDwvTWFwQ29udGFpbmVyPgogICAgICA8cCBjbGFzc05hbWU9Im5vdGUiPteU157Xodec15XXnCDXnteV16bXkiDXmdep15nXqNeV16og16LXnCDXlNee16TXlCwg15vXldec15wg15bXldedINeV15LXqNeZ16jXlCDXnteh15XXoNeb16jXoNeZ150uPC9wPgogICAgPC9kaXY+CiAgKTsKfQoK"}
+"use client";
+
+import { MapContainer, Polyline, TileLayer } from "react-leaflet";
+import type { LatLngBoundsExpression, LatLngExpression } from "leaflet";
+import "leaflet/dist/leaflet.css";
+
+type RoutePoint = { lat: number; lon: number };
+
+function buildBounds(segments: RoutePoint[][]): LatLngBoundsExpression | null {
+  const points = segments.flat();
+  if (!points.length) {
+    return null;
+  }
+  let minLat = points[0].lat;
+  let maxLat = points[0].lat;
+  let minLon = points[0].lon;
+  let maxLon = points[0].lon;
+
+  for (const point of points) {
+    minLat = Math.min(minLat, point.lat);
+    maxLat = Math.max(maxLat, point.lat);
+    minLon = Math.min(minLon, point.lon);
+    maxLon = Math.max(maxLon, point.lon);
+  }
+
+  return [
+    [minLat, minLon],
+    [maxLat, maxLon]
+  ];
+}
+
+function toPolyline(points: RoutePoint[]): LatLngExpression[] {
+  return points.map((point) => [point.lat, point.lon]);
+}
+
+export default function WorkoutRouteMap({ segments }: { segments: RoutePoint[][] }) {
+  const filteredSegments = segments.filter((segment) => segment.length >= 2);
+  const bounds = buildBounds(filteredSegments);
+
+  if (!bounds || filteredSegments.length === 0) {
+    return <p className="note">אין נתוני מסלול זמינים לאימון הזה.</p>;
+  }
+
+  return (
+    <div className="route-map-wrap">
+      <MapContainer
+        className="route-leaflet-map"
+        bounds={bounds}
+        scrollWheelZoom
+      >
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        {filteredSegments.map((segment, index) => (
+          <Polyline
+            key={`segment-${index}`}
+            positions={toPolyline(segment)}
+            color="#b84242"
+            weight={4}
+            lineCap="round"
+            lineJoin="round"
+          />
+        ))}
+      </MapContainer>
+      <p className="note">המסלול מוצג ישירות על המפה, כולל זום וגרירה מסונכרנים.</p>
+    </div>
+  );
+}
+

@@ -1,1 +1,98 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IGdldFJ1bGVzLCB1cHNlcnRSdWxlcyB9IGZyb20gIkAvbGliL2RiIjsKaW1wb3J0IHsgZ2V0RGJQcm92aWRlciwgZGJRdWVyeU9uZSwgZGJRdWVyeSB9IGZyb20gIkAvbGliL2RiLWRyaXZlciI7CmltcG9ydCB7IG1pZ3JhdGVEYiB9IGZyb20gIkAvbGliL2RiLW1pZ3JhdGUiOwoKY29uc3Qgc2NoZW1hID0gei5vYmplY3QoewogIHdlZWtseVRpbWVCdWRnZXRIb3Vyczogei5udW1iZXIoKS5taW4oMikubWF4KDIwKSwKICBydW5Qcmlvcml0eTogei5udW1iZXIoKS5taW4oMC41KS5tYXgoMiksCiAgY3Jvc3NUcmFpbmluZ1dlaWdodDogei5udW1iZXIoKS5taW4oMC4xKS5tYXgoMS4yKSwKICBoYXJkRGF5c1BlcldlZWs6IHoubnVtYmVyKCkubWluKDApLm1heCg0KSwKICBub0hhcmRJZkxvd1JlYWRpbmVzczogei5udW1iZXIoKS5taW4oMTApLm1heCg5MCksCiAgbWluRWFzeUJldHdlZW5IYXJkOiB6Lm51bWJlcigpLm1pbigwKS5tYXgoMyksCiAgaW5qdXJ5RmxhZ3M6IHouYXJyYXkoei5zdHJpbmcoKSkKfSk7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKCkgewogIGlmIChnZXREYlByb3ZpZGVyKCkgIT09ICJwb3N0Z3JlcyIpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbihnZXRSdWxlcygpKTsKICB9CgogIGF3YWl0IG1pZ3JhdGVEYigpOwogIGNvbnN0IHJvdyA9IGF3YWl0IGRiUXVlcnlPbmU8UmVjb3JkPHN0cmluZywgdW5rbm93bj4+KCJTRUxFQ1QgKiBGUk9NIGxvZ2ljX3J1bGVzIFdIRVJFIGlkID0gMSBMSU1JVCAxIik7CiAgaWYgKCFyb3cpIHsKICAgIGNvbnN0IG5vdyA9IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKTsKICAgIGF3YWl0IGRiUXVlcnkoCiAgICAgIGAKICAgICAgSU5TRVJUIElOVE8gbG9naWNfcnVsZXMKICAgICAgICAoaWQsIHdlZWtseVRpbWVCdWRnZXRIb3VycywgcnVuUHJpb3JpdHksIGNyb3NzVHJhaW5pbmdXZWlnaHQsIGhhcmREYXlzUGVyV2Vlaywgbm9IYXJkSWZMb3dSZWFkaW5lc3MsIG1pbkVhc3lJZkZhdGlndWVIaWdoLCBtaW5FYXN5QmV0d2VlbkhhcmQsIGluanVyeUZsYWdzLCB1cGRhdGVkQXQpCiAgICAgIFZBTFVFUwogICAgICAgICgxLCA3LCAxLjAsIDEuMCwgMiwgMzUsIDAsIDEsICdbXScsICQxKQogICAgICBgLAogICAgICBbbm93XQogICAgKTsKICB9CiAgY29uc3Qgb3V0ID0gYXdhaXQgZGJRdWVyeU9uZTxSZWNvcmQ8c3RyaW5nLCB1bmtub3duPj4oIlNFTEVDVCAqIEZST00gbG9naWNfcnVsZXMgV0hFUkUgaWQgPSAxIExJTUlUIDEiKTsKICBjb25zdCBpbmp1cnkgPSAoKCkgPT4gewogICAgdHJ5IHsKICAgICAgcmV0dXJuIEpTT04ucGFyc2UoU3RyaW5nKChvdXQgYXMgYW55KT8uaW5qdXJ5ZmxhZ3MgPz8gKG91dCBhcyBhbnkpPy5pbmp1cnlGbGFncyA/PyAiW10iKSk7CiAgICB9IGNhdGNoIHsKICAgICAgcmV0dXJuIFtdOwogICAgfQogIH0pKCk7CiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsKICAgIHdlZWtseVRpbWVCdWRnZXRIb3VyczogTnVtYmVyKChvdXQgYXMgYW55KT8ud2Vla2x5dGltZWJ1ZGdldGhvdXJzID8/IChvdXQgYXMgYW55KT8ud2Vla2x5VGltZUJ1ZGdldEhvdXJzID8/IDcpLAogICAgcnVuUHJpb3JpdHk6IE51bWJlcigob3V0IGFzIGFueSk/LnJ1bnByaW9yaXR5ID8/IChvdXQgYXMgYW55KT8ucnVuUHJpb3JpdHkgPz8gMSksCiAgICBjcm9zc1RyYWluaW5nV2VpZ2h0OiBOdW1iZXIoKG91dCBhcyBhbnkpPy5jcm9zc3RyYWluaW5nd2VpZ2h0ID8/IChvdXQgYXMgYW55KT8uY3Jvc3NUcmFpbmluZ1dlaWdodCA/PyAxKSwKICAgIGhhcmREYXlzUGVyV2VlazogTnVtYmVyKChvdXQgYXMgYW55KT8uaGFyZGRheXNwZXJ3ZWVrID8/IChvdXQgYXMgYW55KT8uaGFyZERheXNQZXJXZWVrID8/IDIpLAogICAgbm9IYXJkSWZMb3dSZWFkaW5lc3M6IE51bWJlcigob3V0IGFzIGFueSk/Lm5vaGFyZGlmbG93cmVhZGluZXNzID8/IChvdXQgYXMgYW55KT8ubm9IYXJkSWZMb3dSZWFkaW5lc3MgPz8gMzUpLAogICAgbWluRWFzeUJldHdlZW5IYXJkOiBOdW1iZXIoKG91dCBhcyBhbnkpPy5taW5lYXN5YmV0d2VlbmhhcmQgPz8gKG91dCBhcyBhbnkpPy5taW5FYXN5QmV0d2VlbkhhcmQgPz8gMSksCiAgICBpbmp1cnlGbGFnczogQXJyYXkuaXNBcnJheShpbmp1cnkpID8gaW5qdXJ5IDogW10KICB9KTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBib2R5ID0gYXdhaXQgcmVxdWVzdC5qc29uKCk7CiAgY29uc3QgcGFyc2VkID0gc2NoZW1hLnNhZmVQYXJzZShib2R5KTsKCiAgaWYgKCFwYXJzZWQuc3VjY2VzcykgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6IHBhcnNlZC5lcnJvci5mbGF0dGVuKCkgfSwgeyBzdGF0dXM6IDQwMCB9KTsKICB9CgogIGlmIChnZXREYlByb3ZpZGVyKCkgIT09ICJwb3N0Z3JlcyIpIHsKICAgIHVwc2VydFJ1bGVzKHBhcnNlZC5kYXRhKTsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IHNhdmVkOiB0cnVlLCB2ZXJzaW9uOiBEYXRlLm5vdygpLnRvU3RyaW5nKCkgfSk7CiAgfQoKICBhd2FpdCBtaWdyYXRlRGIoKTsKICBjb25zdCBub3cgPSBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCk7CiAgYXdhaXQgZGJRdWVyeSgKICAgIGAKICAgIElOU0VSVCBJTlRPIGxvZ2ljX3J1bGVzCiAgICAgIChpZCwgd2Vla2x5VGltZUJ1ZGdldEhvdXJzLCBydW5Qcmlvcml0eSwgY3Jvc3NUcmFpbmluZ1dlaWdodCwgaGFyZERheXNQZXJXZWVrLCBub0hhcmRJZkxvd1JlYWRpbmVzcywgbWluRWFzeUlmRmF0aWd1ZUhpZ2gsIG1pbkVhc3lCZXR3ZWVuSGFyZCwgaW5qdXJ5RmxhZ3MsIHVwZGF0ZWRBdCkKICAgIFZBTFVFUwogICAgICAoMSwkMSwkMiwkMywkNCwkNSwwLCQ2LCQ3LCQ4KQogICAgT04gQ09ORkxJQ1QgKGlkKSBETyBVUERBVEUgU0VUCiAgICAgIHdlZWtseVRpbWVCdWRnZXRIb3VycyA9IEVYQ0xVREVELndlZWtseVRpbWVCdWRnZXRIb3VycywKICAgICAgcnVuUHJpb3JpdHkgPSBFWENMVURFRC5ydW5Qcmlvcml0eSwKICAgICAgY3Jvc3NUcmFpbmluZ1dlaWdodCA9IEVYQ0xVREVELmNyb3NzVHJhaW5pbmdXZWlnaHQsCiAgICAgIGhhcmREYXlzUGVyV2VlayA9IEVYQ0xVREVELmhhcmREYXlzUGVyV2VlaywKICAgICAgbm9IYXJkSWZMb3dSZWFkaW5lc3MgPSBFWENMVURFRC5ub0hhcmRJZkxvd1JlYWRpbmVzcywKICAgICAgbWluRWFzeUJldHdlZW5IYXJkID0gRVhDTFVERUQubWluRWFzeUJldHdlZW5IYXJkLAogICAgICBpbmp1cnlGbGFncyA9IEVYQ0xVREVELmluanVyeUZsYWdzLAogICAgICB1cGRhdGVkQXQgPSBFWENMVURFRC51cGRhdGVkQXQKICAgIGAsCiAgICBbCiAgICAgIHBhcnNlZC5kYXRhLndlZWtseVRpbWVCdWRnZXRIb3VycywKICAgICAgcGFyc2VkLmRhdGEucnVuUHJpb3JpdHksCiAgICAgIHBhcnNlZC5kYXRhLmNyb3NzVHJhaW5pbmdXZWlnaHQsCiAgICAgIHBhcnNlZC5kYXRhLmhhcmREYXlzUGVyV2VlaywKICAgICAgcGFyc2VkLmRhdGEubm9IYXJkSWZMb3dSZWFkaW5lc3MsCiAgICAgIHBhcnNlZC5kYXRhLm1pbkVhc3lCZXR3ZWVuSGFyZCwKICAgICAgSlNPTi5zdHJpbmdpZnkocGFyc2VkLmRhdGEuaW5qdXJ5RmxhZ3MgPz8gW10pLAogICAgICBub3cKICAgIF0KICApOwogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IHNhdmVkOiB0cnVlLCB2ZXJzaW9uOiBub3cgfSk7Cn0K"}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { getRules, upsertRules } from "@/lib/db";
+import { getDbProvider, dbQueryOne, dbQuery } from "@/lib/db-driver";
+import { migrateDb } from "@/lib/db-migrate";
+
+const schema = z.object({
+  weeklyTimeBudgetHours: z.number().min(2).max(20),
+  runPriority: z.number().min(0.5).max(2),
+  crossTrainingWeight: z.number().min(0.1).max(1.2),
+  hardDaysPerWeek: z.number().min(0).max(4),
+  noHardIfLowReadiness: z.number().min(10).max(90),
+  minEasyBetweenHard: z.number().min(0).max(3),
+  injuryFlags: z.array(z.string())
+});
+
+export async function GET() {
+  if (getDbProvider() !== "postgres") {
+    return NextResponse.json(getRules());
+  }
+
+  await migrateDb();
+  const row = await dbQueryOne<Record<string, unknown>>("SELECT * FROM logic_rules WHERE id = 1 LIMIT 1");
+  if (!row) {
+    const now = new Date().toISOString();
+    await dbQuery(
+      `
+      INSERT INTO logic_rules
+        (id, weeklyTimeBudgetHours, runPriority, crossTrainingWeight, hardDaysPerWeek, noHardIfLowReadiness, minEasyIfFatigueHigh, minEasyBetweenHard, injuryFlags, updatedAt)
+      VALUES
+        (1, 7, 1.0, 1.0, 2, 35, 0, 1, '[]', $1)
+      `,
+      [now]
+    );
+  }
+  const out = await dbQueryOne<Record<string, unknown>>("SELECT * FROM logic_rules WHERE id = 1 LIMIT 1");
+  const injury = (() => {
+    try {
+      return JSON.parse(String((out as any)?.injuryflags ?? (out as any)?.injuryFlags ?? "[]"));
+    } catch {
+      return [];
+    }
+  })();
+  return NextResponse.json({
+    weeklyTimeBudgetHours: Number((out as any)?.weeklytimebudgethours ?? (out as any)?.weeklyTimeBudgetHours ?? 7),
+    runPriority: Number((out as any)?.runpriority ?? (out as any)?.runPriority ?? 1),
+    crossTrainingWeight: Number((out as any)?.crosstrainingweight ?? (out as any)?.crossTrainingWeight ?? 1),
+    hardDaysPerWeek: Number((out as any)?.harddaysperweek ?? (out as any)?.hardDaysPerWeek ?? 2),
+    noHardIfLowReadiness: Number((out as any)?.nohardiflowreadiness ?? (out as any)?.noHardIfLowReadiness ?? 35),
+    minEasyBetweenHard: Number((out as any)?.mineasybetweenhard ?? (out as any)?.minEasyBetweenHard ?? 1),
+    injuryFlags: Array.isArray(injury) ? injury : []
+  });
+}
+
+export async function POST(request: NextRequest) {
+  const body = await request.json();
+  const parsed = schema.safeParse(body);
+
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  if (getDbProvider() !== "postgres") {
+    upsertRules(parsed.data);
+    return NextResponse.json({ saved: true, version: Date.now().toString() });
+  }
+
+  await migrateDb();
+  const now = new Date().toISOString();
+  await dbQuery(
+    `
+    INSERT INTO logic_rules
+      (id, weeklyTimeBudgetHours, runPriority, crossTrainingWeight, hardDaysPerWeek, noHardIfLowReadiness, minEasyIfFatigueHigh, minEasyBetweenHard, injuryFlags, updatedAt)
+    VALUES
+      (1,$1,$2,$3,$4,$5,0,$6,$7,$8)
+    ON CONFLICT (id) DO UPDATE SET
+      weeklyTimeBudgetHours = EXCLUDED.weeklyTimeBudgetHours,
+      runPriority = EXCLUDED.runPriority,
+      crossTrainingWeight = EXCLUDED.crossTrainingWeight,
+      hardDaysPerWeek = EXCLUDED.hardDaysPerWeek,
+      noHardIfLowReadiness = EXCLUDED.noHardIfLowReadiness,
+      minEasyBetweenHard = EXCLUDED.minEasyBetweenHard,
+      injuryFlags = EXCLUDED.injuryFlags,
+      updatedAt = EXCLUDED.updatedAt
+    `,
+    [
+      parsed.data.weeklyTimeBudgetHours,
+      parsed.data.runPriority,
+      parsed.data.crossTrainingWeight,
+      parsed.data.hardDaysPerWeek,
+      parsed.data.noHardIfLowReadiness,
+      parsed.data.minEasyBetweenHard,
+      JSON.stringify(parsed.data.injuryFlags ?? []),
+      now
+    ]
+  );
+  return NextResponse.json({ saved: true, version: now });
+}

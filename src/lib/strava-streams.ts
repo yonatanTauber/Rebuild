@@ -1,1 +1,72 @@
-{"data":"aW1wb3J0IHsgc3FsIH0gZnJvbSAiQHZlcmNlbC9wb3N0Z3JlcyI7CmltcG9ydCB7IGVuc3VyZVN0cmF2YVRhYmxlcywgZ2V0U3RvcmVkVG9rZW4sIHJlZnJlc2hUb2tlbklmTmVlZGVkIH0gZnJvbSAiQC9hcHAvYXBpL3N0cmF2YS9fbGliIjsKCmV4cG9ydCB0eXBlIFN0cmF2YVN0cmVhbXMgPSB7CiAgdGltZT86IHsgZGF0YTogbnVtYmVyW10gfTsKICBkaXN0YW5jZT86IHsgZGF0YTogbnVtYmVyW10gfTsKICBoZWFydHJhdGU/OiB7IGRhdGE6IG51bWJlcltdIH07CiAgbGF0bG5nPzogeyBkYXRhOiBBcnJheTxbbnVtYmVyLCBudW1iZXJdPiB9Owp9OwoKZnVuY3Rpb24gcGFyc2VKc29uU2FmZShyYXc6IHN0cmluZyk6IFN0cmF2YVN0cmVhbXMgfCBudWxsIHsKICB0cnkgewogICAgY29uc3QgcGFyc2VkID0gSlNPTi5wYXJzZShyYXcpIGFzIFN0cmF2YVN0cmVhbXM7CiAgICByZXR1cm4gcGFyc2VkICYmIHR5cGVvZiBwYXJzZWQgPT09ICJvYmplY3QiID8gcGFyc2VkIDogbnVsbDsKICB9IGNhdGNoIHsKICAgIHJldHVybiBudWxsOwogIH0KfQoKZXhwb3J0IGZ1bmN0aW9uIHBhcnNlU3RyYXZhQWN0aXZpdHlJZCh3b3Jrb3V0SWRPckhhc2g6IHN0cmluZyk6IG51bWJlciB8IG51bGwgewogIGNvbnN0IG1hdGNoID0gU3RyaW5nKHdvcmtvdXRJZE9ySGFzaCB8fCAiIikubWF0Y2goL3N0cmF2YTooXGQrKS9pKTsKICBpZiAoIW1hdGNoKSByZXR1cm4gbnVsbDsKICBjb25zdCBuID0gTnVtYmVyKG1hdGNoWzFdKTsKICByZXR1cm4gTnVtYmVyLmlzRmluaXRlKG4pID8gTWF0aC5yb3VuZChuKSA6IG51bGw7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTdHJhdmFBY3Rpdml0eVN0cmVhbXMoYWN0aXZpdHlJZDogbnVtYmVyKTogUHJvbWlzZTxTdHJhdmFTdHJlYW1zIHwgbnVsbD4gewogIGF3YWl0IGVuc3VyZVN0cmF2YVRhYmxlcygpOwoKICBjb25zdCBjYWNoZWQgPSBhd2FpdCBzcWw8eyBzdHJlYW1zanNvbjogc3RyaW5nIH0+YAogICAgU0VMRUNUIHN0cmVhbXNKc29uIGFzIHN0cmVhbXNKc29uCiAgICBGUk9NIHN0cmF2YV9hY3Rpdml0eV9zdHJlYW1zCiAgICBXSEVSRSBhY3Rpdml0eUlkID0gJHthY3Rpdml0eUlkfQogICAgTElNSVQgMQogIGA7CiAgY29uc3QgY2FjaGVkUm93ID0gY2FjaGVkLnJvd3NbMF07CiAgY29uc3QgY2FjaGVkSnNvbiA9IChjYWNoZWRSb3cgYXMgYW55KT8uc3RyZWFtc2pzb24gPz8gKGNhY2hlZFJvdyBhcyBhbnkpPy5zdHJlYW1zSnNvbjsKICBpZiAoY2FjaGVkSnNvbikgewogICAgY29uc3QgcGFyc2VkID0gcGFyc2VKc29uU2FmZShTdHJpbmcoY2FjaGVkSnNvbikpOwogICAgaWYgKHBhcnNlZCkgcmV0dXJuIHBhcnNlZDsKICB9CgogIGNvbnN0IHN0b3JlZCA9IGF3YWl0IGdldFN0b3JlZFRva2VuKCk7CiAgaWYgKCFzdG9yZWQpIHJldHVybiBudWxsOwogIGNvbnN0IHRva2VuID0gYXdhaXQgcmVmcmVzaFRva2VuSWZOZWVkZWQoc3RvcmVkKTsKCiAgY29uc3Qga2V5cyA9IFsidGltZSIsICJkaXN0YW5jZSIsICJsYXRsbmciLCAiaGVhcnRyYXRlIl0uam9pbigiLCIpOwogIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKAogICAgYGh0dHBzOi8vd3d3LnN0cmF2YS5jb20vYXBpL3YzL2FjdGl2aXRpZXMvJHthY3Rpdml0eUlkfS9zdHJlYW1zP2tleXM9JHtlbmNvZGVVUklDb21wb25lbnQoa2V5cyl9JmtleV9ieV90eXBlPXRydWVgLAogICAgewogICAgICBoZWFkZXJzOiB7CiAgICAgICAgQXV0aG9yaXphdGlvbjogYEJlYXJlciAke3Rva2VuLmFjY2Vzc190b2tlbn1gCiAgICAgIH0KICAgIH0KICApOwogIGlmICghcmVzLm9rKSB7CiAgICByZXR1cm4gbnVsbDsKICB9CgogIGNvbnN0IGpzb24gPSAoYXdhaXQgcmVzLmpzb24oKS5jYXRjaCgoKSA9PiBudWxsKSkgYXMgU3RyYXZhU3RyZWFtcyB8IG51bGw7CiAgaWYgKCFqc29uIHx8IHR5cGVvZiBqc29uICE9PSAib2JqZWN0IikgcmV0dXJuIG51bGw7CgogIGF3YWl0IHNxbGAKICAgIElOU0VSVCBJTlRPIHN0cmF2YV9hY3Rpdml0eV9zdHJlYW1zIChhY3Rpdml0eUlkLCBzdHJlYW1zSnNvbiwgZmV0Y2hlZEF0KQogICAgVkFMVUVTICgke2FjdGl2aXR5SWR9LCAke0pTT04uc3RyaW5naWZ5KGpzb24pfSwgbm93KCkpCiAgICBPTiBDT05GTElDVCAoYWN0aXZpdHlJZCkgRE8gVVBEQVRFCiAgICAgIFNFVCBzdHJlYW1zSnNvbiA9IEVYQ0xVREVELnN0cmVhbXNKc29uLAogICAgICAgICAgZmV0Y2hlZEF0ID0gbm93KCkKICBgOwoKICByZXR1cm4ganNvbjsKfQo="}
+import { sql } from "@vercel/postgres";
+import { ensureStravaTables, getStoredToken, refreshTokenIfNeeded } from "@/app/api/strava/_lib";
+
+export type StravaStreams = {
+  time?: { data: number[] };
+  distance?: { data: number[] };
+  heartrate?: { data: number[] };
+  latlng?: { data: Array<[number, number]> };
+};
+
+function parseJsonSafe(raw: string): StravaStreams | null {
+  try {
+    const parsed = JSON.parse(raw) as StravaStreams;
+    return parsed && typeof parsed === "object" ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+export function parseStravaActivityId(workoutIdOrHash: string): number | null {
+  const match = String(workoutIdOrHash || "").match(/strava:(\d+)/i);
+  if (!match) return null;
+  const n = Number(match[1]);
+  return Number.isFinite(n) ? Math.round(n) : null;
+}
+
+export async function getStravaActivityStreams(activityId: number): Promise<StravaStreams | null> {
+  await ensureStravaTables();
+
+  const cached = await sql<{ streamsjson: string }>`
+    SELECT streamsJson as streamsJson
+    FROM strava_activity_streams
+    WHERE activityId = ${activityId}
+    LIMIT 1
+  `;
+  const cachedRow = cached.rows[0];
+  const cachedJson = (cachedRow as any)?.streamsjson ?? (cachedRow as any)?.streamsJson;
+  if (cachedJson) {
+    const parsed = parseJsonSafe(String(cachedJson));
+    if (parsed) return parsed;
+  }
+
+  const stored = await getStoredToken();
+  if (!stored) return null;
+  const token = await refreshTokenIfNeeded(stored);
+
+  const keys = ["time", "distance", "latlng", "heartrate"].join(",");
+  const res = await fetch(
+    `https://www.strava.com/api/v3/activities/${activityId}/streams?keys=${encodeURIComponent(keys)}&key_by_type=true`,
+    {
+      headers: {
+        Authorization: `Bearer ${token.access_token}`
+      }
+    }
+  );
+  if (!res.ok) {
+    return null;
+  }
+
+  const json = (await res.json().catch(() => null)) as StravaStreams | null;
+  if (!json || typeof json !== "object") return null;
+
+  await sql`
+    INSERT INTO strava_activity_streams (activityId, streamsJson, fetchedAt)
+    VALUES (${activityId}, ${JSON.stringify(json)}, now())
+    ON CONFLICT (activityId) DO UPDATE
+      SET streamsJson = EXCLUDED.streamsJson,
+          fetchedAt = now()
+  `;
+
+  return json;
+}

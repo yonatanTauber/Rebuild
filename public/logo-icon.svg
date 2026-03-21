@@ -1,1 +1,7 @@
-{"data":"PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgdmlld0JveD0iMCAwIDEyOCAxMjgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJSZWJ1aWxkIGljb24iPgogIDxyZWN0IHg9IjE2IiB5PSIzMCIgd2lkdGg9Ijk2IiBoZWlnaHQ9IjY2IiByeD0iMTgiIGZpbGw9IiNENjI4MjgiIHN0cm9rZT0iIzhGMTAxMCIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgPHJlY3QgeD0iMzAiIHk9IjIwIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHJ4PSI5IiBmaWxsPSIjRkY4OTg5IiBzdHJva2U9IiM4RjEwMTAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxyZWN0IHg9IjU1IiB5PSIyMCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iOSIgZmlsbD0iI0ZGODk4OSIgc3Ryb2tlPSIjOEYxMDEwIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8cmVjdCB4PSI4MCIgeT0iMjAiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjkiIGZpbGw9IiNGRjg5ODkiIHN0cm9rZT0iIzhGMTAxMCIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPHJlY3QgeD0iMTYiIHk9Ijc2IiB3aWR0aD0iOTYiIGhlaWdodD0iMjAiIHJ4PSIxMCIgZmlsbD0iI0IzMUMxQyIvPgo8L3N2Zz4K"}
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rebuild icon">
+  <rect x="16" y="30" width="96" height="66" rx="18" fill="#D62828" stroke="#8F1010" stroke-width="6"/>
+  <rect x="30" y="20" width="18" height="18" rx="9" fill="#FF8989" stroke="#8F1010" stroke-width="4"/>
+  <rect x="55" y="20" width="18" height="18" rx="9" fill="#FF8989" stroke="#8F1010" stroke-width="4"/>
+  <rect x="80" y="20" width="18" height="18" rx="9" fill="#FF8989" stroke="#8F1010" stroke-width="4"/>
+  <rect x="16" y="76" width="96" height="20" rx="10" fill="#B31C1C"/>
+</svg>

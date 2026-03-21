@@ -1,1 +1,445 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKaW1wb3J0IHR5cGUgeyBSb3V0ZSB9IGZyb20gJ25leHQnOwppbXBvcnQgeyB1c2VFZmZlY3QsIHVzZU1lbW8sIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyBTZWN0aW9uIH0gZnJvbSAnQC9jb21wb25lbnRzL2NhcmRzJzsKaW1wb3J0IEZvbGRTZWN0aW9uIGZyb20gJ0AvY29tcG9uZW50cy9mb2xkLXNlY3Rpb24nOwppbXBvcnQgVWlTZWxlY3QgZnJvbSAnQC9jb21wb25lbnRzL3VpLXNlbGVjdCc7CmltcG9ydCB0eXBlIHsgSW5zaWdodE9wdGlvbnMsIEluc2lnaHRRdWVyeUlucHV0LCBJbnNpZ2h0UmVzdWx0LCBJbnNpZ2h0VmlzdWFsU3BlYyB9IGZyb20gJ0AvbGliL2luc2lnaHRzJzsKCnR5cGUgUmFuZ2VLZXkgPSAnMzBkJyB8ICcxMncnIHwgJzM2NWQnIHwgJ2FsbCc7CnR5cGUgU3BvcnRGaWx0ZXIgPSAncnVuJyB8ICdiaWtlJyB8ICdzd2ltJyB8ICdhbGwnOwp0eXBlIFF1ZXJ5U3RhdGUgPSBJbnNpZ2h0UXVlcnlJbnB1dDsKdHlwZSBRdWVyeUZpbHRlcnMgPSBOb25OdWxsYWJsZTxRdWVyeVN0YXRlWydmaWx0ZXJzJ10+OwoKY29uc3QgZGVmYXVsdFF1ZXJ5OiBRdWVyeVN0YXRlID0gewogIGVudGl0eTogJ3dvcmtvdXQnLAogIGFnZ3JlZ2F0ZTogJ2F2ZycsCiAgbWV0cmljOiAncGFjZU1pblBlckttJywKICBncm91cEJ5OiAnbW9udGgnLAogIHJhbmdlOiAnMTJ3JywKICBzcG9ydDogJ3J1bicsCiAgZmlsdGVyczoge30KfTsKCmZ1bmN0aW9uIGZvcm1hdFZhbHVlKHZhbHVlOiBzdHJpbmcpIHsKICByZXR1cm4gdmFsdWU7Cn0KCmZ1bmN0aW9uIFJlbmRlclZpc3VhbCh7IHZpc3VhbCB9OiB7IHZpc3VhbDogSW5zaWdodFZpc3VhbFNwZWMgfSkgewogIGlmICh2aXN1YWwua2luZCA9PT0gJ2NvbXBhcmUnKSB7CiAgICByZXR1cm4gKAogICAgICA8ZGl2IGNsYXNzTmFtZT0iaW5zaWdodC12aXN1YWwgY29tcGFyZS12aXN1YWwiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJjb21wYXJlLXZpc3VhbC1oZWFkIj4KICAgICAgICAgIDxzdHJvbmc+e3Zpc3VhbC5sYWJlbH08L3N0cm9uZz4KICAgICAgICAgIDxzcGFuPnt2aXN1YWwubGVmdC5sYWJlbH0g157XldecIHt2aXN1YWwucmlnaHQubGFiZWx9PC9zcGFuPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJjb21wYXJlLXZpc3VhbC1jb2x1bW5zIj4KICAgICAgICAgIDxhcnRpY2xlPgogICAgICAgICAgICA8c21hbGw+e3Zpc3VhbC5sZWZ0LmxhYmVsfTwvc21hbGw+CiAgICAgICAgICAgIDxzdHJvbmc+e3Zpc3VhbC5sZWZ0LnZhbHVlfTwvc3Ryb25nPgogICAgICAgICAgPC9hcnRpY2xlPgogICAgICAgICAgPGFydGljbGU+CiAgICAgICAgICAgIDxzbWFsbD57dmlzdWFsLnJpZ2h0LmxhYmVsfTwvc21hbGw+CiAgICAgICAgICAgIDxzdHJvbmc+e3Zpc3VhbC5yaWdodC52YWx1ZX08L3N0cm9uZz4KICAgICAgICAgIDwvYXJ0aWNsZT4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iY29tcGFyZS1tZXRyaWMtbGlzdCI+CiAgICAgICAgICB7dmlzdWFsLm1ldHJpY3MubWFwKChtZXRyaWMpID0+ICgKICAgICAgICAgICAgPGRpdiBrZXk9e21ldHJpYy5sYWJlbH0gY2xhc3NOYW1lPSJjb21wYXJlLW1ldHJpYy1yb3ciPgogICAgICAgICAgICAgIDxzcGFuPnttZXRyaWMubGFiZWx9PC9zcGFuPgogICAgICAgICAgICAgIDxzdHJvbmc+e21ldHJpYy5sZWZ0fTwvc3Ryb25nPgogICAgICAgICAgICAgIDxzdHJvbmc+e21ldHJpYy5yaWdodH08L3N0cm9uZz4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApKX0KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICApOwogIH0KCiAgY29uc3QgbWF4ID0gTWF0aC5tYXgoMSwgLi4udmlzdWFsLnNlcmllcy5tYXAoKGl0ZW0pID0+IGl0ZW0udmFsdWUpKTsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9Imluc2lnaHQtdmlzdWFsIGJhcnMtdmlzdWFsIj4KICAgICAgPGRpdiBjbGFzc05hbWU9ImJhcnMtdmlzdWFsLWhlYWQiPgogICAgICAgIDxzdHJvbmc+e3Zpc3VhbC5sYWJlbH08L3N0cm9uZz4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJiYXJzLXZpc3VhbC1saXN0Ij4KICAgICAgICB7dmlzdWFsLnNlcmllcy5tYXAoKGl0ZW0pID0+ICgKICAgICAgICAgIDxkaXYga2V5PXtpdGVtLmxhYmVsfSBjbGFzc05hbWU9ImJhcnMtdmlzdWFsLXJvdyI+CiAgICAgICAgICAgIDxzcGFuPntpdGVtLmxhYmVsfTwvc3Bhbj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImJhcnMtdmlzdWFsLXRyYWNrIj4KICAgICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2BiYXJzLXZpc3VhbC1maWxsICR7aXRlbS50b25lID8/ICdkZWZhdWx0J31gfQogICAgICAgICAgICAgICAgc3R5bGU9e3sgd2lkdGg6IGAkeyhpdGVtLnZhbHVlIC8gbWF4KSAqIDEwMH0lYCB9fQogICAgICAgICAgICAgIC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8c3Ryb25nPntpdGVtLnZhbHVlfTwvc3Ryb25nPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgKSl9CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKTsKfQoKZnVuY3Rpb24gRXZpZGVuY2VSb3dzKHsgcm93cyB9OiB7IHJvd3M6IEluc2lnaHRSZXN1bHRbJ3Jvd3MnXSB9KSB7CiAgaWYgKCFyb3dzLmxlbmd0aCkgewogICAgcmV0dXJuIDxwIGNsYXNzTmFtZT0iZW1wdHktbm90ZSI+15DXmdefINeb16jXkteiINep15XXqNeV16og16rXldee15vXldeqINec15TXpteS15QuPC9wPjsKICB9CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJpbnNpZ2h0LWV2aWRlbmNlLWxpc3QiPgogICAgICB7cm93cy5tYXAoKHJvdykgPT4gewogICAgICAgIGNvbnN0IGNvbnRlbnQgPSAoCiAgICAgICAgICA8PgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaW5zaWdodC1ldmlkZW5jZS1oZWFkIj4KICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgPHN0cm9uZz57cm93LnRpdGxlfTwvc3Ryb25nPgogICAgICAgICAgICAgICAge3Jvdy5zdWJ0aXRsZSAmJiA8c21hbGw+e3Jvdy5zdWJ0aXRsZX08L3NtYWxsPn0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJpbnNpZ2h0LWV2aWRlbmNlLW1ldHJpY3MiPgogICAgICAgICAgICAgIHtyb3cubWV0cmljcy5tYXAoKG1ldHJpYykgPT4gKAogICAgICAgICAgICAgICAgPHNwYW4ga2V5PXtgJHtyb3cuaWR9LSR7bWV0cmljLmxhYmVsfWB9IGNsYXNzTmFtZT0iaW5zaWdodC1ldmlkZW5jZS1jaGlwIj4KICAgICAgICAgICAgICAgICAgPHNtYWxsPnttZXRyaWMubGFiZWx9PC9zbWFsbD4KICAgICAgICAgICAgICAgICAgPHN0cm9uZz57bWV0cmljLnZhbHVlfTwvc3Ryb25nPgogICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICkpfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvPgogICAgICAgICk7CiAgICAgICAgcmV0dXJuIHJvdy5ocmVmID8gKAogICAgICAgICAgPExpbmsga2V5PXtyb3cuaWR9IGhyZWY9e3Jvdy5ocmVmIGFzIFJvdXRlfSBjbGFzc05hbWU9Imluc2lnaHQtZXZpZGVuY2UtY2FyZCI+CiAgICAgICAgICAgIHtjb250ZW50fQogICAgICAgICAgPC9MaW5rPgogICAgICAgICkgOiAoCiAgICAgICAgICA8YXJ0aWNsZSBrZXk9e3Jvdy5pZH0gY2xhc3NOYW1lPSJpbnNpZ2h0LWV2aWRlbmNlLWNhcmQiPgogICAgICAgICAgICB7Y29udGVudH0KICAgICAgICAgIDwvYXJ0aWNsZT4KICAgICAgICApOwogICAgICB9KX0KICAgIDwvZGl2PgogICk7Cn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEluc2lnaHRzUGFnZSgpIHsKICBjb25zdCBbb3B0aW9ucywgc2V0T3B0aW9uc10gPSB1c2VTdGF0ZTxJbnNpZ2h0T3B0aW9ucyB8IG51bGw+KG51bGwpOwogIGNvbnN0IFtyYW5nZSwgc2V0UmFuZ2VdID0gdXNlU3RhdGU8UmFuZ2VLZXk+KCcxMncnKTsKICBjb25zdCBbc3BvcnQsIHNldFNwb3J0XSA9IHVzZVN0YXRlPFNwb3J0RmlsdGVyPigncnVuJyk7CiAgY29uc3QgW3ByZXNldHMsIHNldFByZXNldHNdID0gdXNlU3RhdGU8SW5zaWdodFJlc3VsdFtdPihbXSk7CiAgY29uc3QgW3NlbGVjdGVkSWQsIHNldFNlbGVjdGVkSWRdID0gdXNlU3RhdGU8c3RyaW5nPignJyk7CiAgY29uc3QgW3F1ZXJ5U3RhdGUsIHNldFF1ZXJ5U3RhdGVdID0gdXNlU3RhdGU8UXVlcnlTdGF0ZT4oZGVmYXVsdFF1ZXJ5KTsKICBjb25zdCBbcXVlcnlSZXN1bHQsIHNldFF1ZXJ5UmVzdWx0XSA9IHVzZVN0YXRlPEluc2lnaHRSZXN1bHQgfCBudWxsPihudWxsKTsKICBjb25zdCBbbG9hZGluZ1ByZXNldHMsIHNldExvYWRpbmdQcmVzZXRzXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbcXVlcnlMb2FkaW5nLCBzZXRRdWVyeUxvYWRpbmddID0gdXNlU3RhdGUoZmFsc2UpOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgdm9pZCBmZXRjaCgnL2FwaS9pbnNpZ2h0cy9vcHRpb25zJykKICAgICAgLnRoZW4oKHJlcykgPT4gcmVzLmpzb24oKSkKICAgICAgLnRoZW4oKGpzb246IEluc2lnaHRPcHRpb25zKSA9PiBzZXRPcHRpb25zKGpzb24pKTsKICB9LCBbXSk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBzZXRMb2FkaW5nUHJlc2V0cyh0cnVlKTsKICAgIHZvaWQgZmV0Y2goYC9hcGkvaW5zaWdodHMvcHJlc2V0cz9yYW5nZT0ke3JhbmdlfSZzcG9ydD0ke3Nwb3J0fWApCiAgICAgIC50aGVuKChyZXMpID0+IHJlcy5qc29uKCkpCiAgICAgIC50aGVuKChqc29uOiB7IHByZXNldHM6IEluc2lnaHRSZXN1bHRbXSB9KSA9PiB7CiAgICAgICAgc2V0UHJlc2V0cyhqc29uLnByZXNldHMgPz8gW10pOwogICAgICAgIHNldFNlbGVjdGVkSWQoKHByZXYpID0+IChqc29uLnByZXNldHM/LnNvbWUoKGl0ZW0pID0+IGl0ZW0uaWQgPT09IHByZXYpID8gcHJldiA6IGpzb24ucHJlc2V0cz8uWzBdPy5pZCA/PyAnJykpOwogICAgICB9KQogICAgICAuZmluYWxseSgoKSA9PiBzZXRMb2FkaW5nUHJlc2V0cyhmYWxzZSkpOwogIH0sIFtyYW5nZSwgc3BvcnRdKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIHNldFF1ZXJ5U3RhdGUoKHByZXYpID0+ICh7IC4uLnByZXYsIHJhbmdlLCBzcG9ydCB9KSk7CiAgfSwgW3JhbmdlLCBzcG9ydF0pOwoKICBjb25zdCBtZXRyaWNPcHRpb25zID0gdXNlTWVtbygKICAgICgpID0+IG9wdGlvbnM/Lm1ldHJpY09wdGlvbnMuZmlsdGVyKChtZXRyaWMpID0+IG1ldHJpYy5lbnRpdHkuaW5jbHVkZXMocXVlcnlTdGF0ZS5lbnRpdHkpKSA/PyBbXSwKICAgIFtvcHRpb25zLCBxdWVyeVN0YXRlLmVudGl0eV0KICApOwogIGNvbnN0IGFnZ3JlZ2F0ZU9wdGlvbnMgPSB1c2VNZW1vKCgpID0+IHsKICAgIGNvbnN0IG1ldHJpYyA9IG1ldHJpY09wdGlvbnMuZmluZCgoaXRlbSkgPT4gaXRlbS52YWx1ZSA9PT0gcXVlcnlTdGF0ZS5tZXRyaWMpOwogICAgY29uc3QgYWxsb3dlZCA9IG1ldHJpYz8uYWdncmVnYXRlcyA/PyBbXTsKICAgIHJldHVybiAob3B0aW9ucz8uYWdncmVnYXRlT3B0aW9ucyA/PyBbXSkuZmlsdGVyKChpdGVtKSA9PiBhbGxvd2VkLmluY2x1ZGVzKGl0ZW0udmFsdWUpKTsKICB9LCBbbWV0cmljT3B0aW9ucywgb3B0aW9ucywgcXVlcnlTdGF0ZS5tZXRyaWNdKTsKICBjb25zdCBncm91cE9wdGlvbnMgPSB1c2VNZW1vKAogICAgKCkgPT4gb3B0aW9ucz8uZ3JvdXBPcHRpb25zLmZpbHRlcigoZ3JvdXApID0+IGdyb3VwLmVudGl0eS5pbmNsdWRlcyhxdWVyeVN0YXRlLmVudGl0eSkpID8/IFtdLAogICAgW29wdGlvbnMsIHF1ZXJ5U3RhdGUuZW50aXR5XQogICk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAoIW1ldHJpY09wdGlvbnMuc29tZSgoaXRlbSkgPT4gaXRlbS52YWx1ZSA9PT0gcXVlcnlTdGF0ZS5tZXRyaWMpKSB7CiAgICAgIGNvbnN0IG5leHRNZXRyaWMgPSBtZXRyaWNPcHRpb25zWzBdPy52YWx1ZTsKICAgICAgaWYgKG5leHRNZXRyaWMpIHNldFF1ZXJ5U3RhdGUoKHByZXYpID0+ICh7IC4uLnByZXYsIG1ldHJpYzogbmV4dE1ldHJpYyB9KSk7CiAgICB9CiAgfSwgW21ldHJpY09wdGlvbnMsIHF1ZXJ5U3RhdGUubWV0cmljXSk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAoIWFnZ3JlZ2F0ZU9wdGlvbnMuc29tZSgoaXRlbSkgPT4gaXRlbS52YWx1ZSA9PT0gcXVlcnlTdGF0ZS5hZ2dyZWdhdGUpKSB7CiAgICAgIGNvbnN0IG5leHRBZ2dyZWdhdGUgPSBhZ2dyZWdhdGVPcHRpb25zWzBdPy52YWx1ZTsKICAgICAgaWYgKG5leHRBZ2dyZWdhdGUpIHNldFF1ZXJ5U3RhdGUoKHByZXYpID0+ICh7IC4uLnByZXYsIGFnZ3JlZ2F0ZTogbmV4dEFnZ3JlZ2F0ZSB9KSk7CiAgICB9CiAgfSwgW2FnZ3JlZ2F0ZU9wdGlvbnMsIHF1ZXJ5U3RhdGUuYWdncmVnYXRlXSk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAoIWdyb3VwT3B0aW9ucy5zb21lKChpdGVtKSA9PiBpdGVtLnZhbHVlID09PSBxdWVyeVN0YXRlLmdyb3VwQnkpKSB7CiAgICAgIGNvbnN0IG5leHRHcm91cCA9IGdyb3VwT3B0aW9uc1swXT8udmFsdWU7CiAgICAgIGlmIChuZXh0R3JvdXApIHNldFF1ZXJ5U3RhdGUoKHByZXYpID0+ICh7IC4uLnByZXYsIGdyb3VwQnk6IG5leHRHcm91cCB9KSk7CiAgICB9CiAgfSwgW2dyb3VwT3B0aW9ucywgcXVlcnlTdGF0ZS5ncm91cEJ5XSk7CgogIGNvbnN0IHNlbGVjdGVkUHJlc2V0ID0gcHJlc2V0cy5maW5kKChpdGVtKSA9PiBpdGVtLmlkID09PSBzZWxlY3RlZElkKSA/PyBwcmVzZXRzWzBdID8/IG51bGw7CiAgY29uc3QgYWN0aXZlUmVzdWx0ID0gcXVlcnlSZXN1bHQgPz8gc2VsZWN0ZWRQcmVzZXQ7CgogIGFzeW5jIGZ1bmN0aW9uIHN1Ym1pdFF1ZXJ5KCkgewogICAgc2V0UXVlcnlMb2FkaW5nKHRydWUpOwogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goJy9hcGkvaW5zaWdodHMvcXVlcnknLCB7CiAgICAgICAgbWV0aG9kOiAnUE9TVCcsCiAgICAgICAgaGVhZGVyczogeyAnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0aW9uL2pzb24nIH0sCiAgICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkocXVlcnlTdGF0ZSkKICAgICAgfSk7CiAgICAgIGNvbnN0IGpzb24gPSAoYXdhaXQgcmVzLmpzb24oKSkgYXMgSW5zaWdodFJlc3VsdDsKICAgICAgc2V0UXVlcnlSZXN1bHQoanNvbik7CiAgICAgIHNldFNlbGVjdGVkSWQoJycpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0UXVlcnlMb2FkaW5nKGZhbHNlKTsKICAgIH0KICB9CgogIGZ1bmN0aW9uIHVwZGF0ZUZpbHRlcjxLIGV4dGVuZHMga2V5b2YgUXVlcnlGaWx0ZXJzPihrZXk6IEssIHZhbHVlOiBRdWVyeUZpbHRlcnNbS10gfCB1bmRlZmluZWQpIHsKICAgIHNldFF1ZXJ5U3RhdGUoKHByZXYpID0+ICh7CiAgICAgIC4uLnByZXYsCiAgICAgIGZpbHRlcnM6IHsKICAgICAgICAuLi4ocHJldi5maWx0ZXJzID8/IHt9KSwKICAgICAgICBba2V5XTogdmFsdWUKICAgICAgfQogICAgfSkpOwogIH0KCiAgcmV0dXJuICgKICAgIDw+CiAgICAgIDxoZWFkZXIgY2xhc3NOYW1lPSJwYWdlLWhlYWRlciI+CiAgICAgICAgPGgxPteq15XXkdeg15XXqjwvaDE+CiAgICAgICAgPHA+16nXkNec15XXqiDXqdecINee15DXntefINec157Xotec15QsINeX15nXpNeV16kg157Xqten15PXnSDXnNee15jXlC4g15DXldeq15Ug15PXkNeY15QsINek15fXldeqINeo16LXqS48L3A+CiAgICAgIDwvaGVhZGVyPgoKICAgICAgPFNlY3Rpb24gdGl0bGU9IteY15XXldeXINei15HXldeT15QiIHN1YnRpdGxlPSLXkdeo15nXqNeqINee15fXk9ecOiAxMiDXqdeR15XXoteV16og15DXl9eo15XXoNeZ150iPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJpbnNpZ2h0cy10b29sYmFyIj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzZWdtZW50ZWQtcm93Ij4KICAgICAgICAgICAgeyhvcHRpb25zPy5yYW5nZU9wdGlvbnMgPz8gW10pLm1hcCgoaXRlbSkgPT4gKAogICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgIGtleT17aXRlbS52YWx1ZX0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17cmFuZ2UgPT09IGl0ZW0udmFsdWUgPyAnc2VnbWVudGVkLWJ0biBzZWxlY3RlZCcgOiAnc2VnbWVudGVkLWJ0bid9CiAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7CiAgICAgICAgICAgICAgICAgIHNldFJhbmdlKGl0ZW0udmFsdWUpOwogICAgICAgICAgICAgICAgICBzZXRRdWVyeVJlc3VsdChudWxsKTsKICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAge2l0ZW0ubGFiZWx9CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaW5zaWdodHMtaW5saW5lLWZpbHRlciI+CiAgICAgICAgICAgIDxsYWJlbD7Xoteg16M8L2xhYmVsPgogICAgICAgICAgICA8VWlTZWxlY3QKICAgICAgICAgICAgICB2YWx1ZT17c3BvcnR9CiAgICAgICAgICAgICAgb25DaGFuZ2U9eyhuZXh0VmFsdWUpID0+IHsKICAgICAgICAgICAgICAgIHNldFNwb3J0KG5leHRWYWx1ZSBhcyBTcG9ydEZpbHRlcik7CiAgICAgICAgICAgICAgICBzZXRRdWVyeVJlc3VsdChudWxsKTsKICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgIG9wdGlvbnM9eyhvcHRpb25zPy5zcG9ydE9wdGlvbnMgPz8gW10pLm1hcCgoaXRlbSkgPT4gKHsgdmFsdWU6IGl0ZW0udmFsdWUsIGxhYmVsOiBpdGVtLmxhYmVsIH0pKX0KICAgICAgICAgICAgLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L1NlY3Rpb24+CgogICAgICA8U2VjdGlvbiB0aXRsZT0i16nXkNec15XXqiDXnteV15vXoNeV16og16nXnCDXnteQ157XnyIgc3VidGl0bGU9Iteg16fXldeT16og15TXqteX15zXlCDXmNeV15HXlCDXnNek16DXmSDXl9eZ16TXldepINeX15XXpNep15kg15nXldeq16giPgogICAgICAgIHtsb2FkaW5nUHJlc2V0cyA/ICgKICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZW1wdHktbm90ZSI+15jXldei158g16rXldeR16DXldeqLi4uPC9wPgogICAgICAgICkgOiAoCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaW5zaWdodC1jYXJkLWdyaWQiPgogICAgICAgICAgICB7cHJlc2V0cy5tYXAoKHByZXNldCkgPT4gKAogICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgIGtleT17cHJlc2V0LmlkfQogICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtzZWxlY3RlZElkID09PSBwcmVzZXQuaWQgJiYgIXF1ZXJ5UmVzdWx0ID8gJ2luc2lnaHQtY2FyZCBzZWxlY3RlZCcgOiAnaW5zaWdodC1jYXJkJ30KICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHsKICAgICAgICAgICAgICAgICAgc2V0U2VsZWN0ZWRJZChwcmVzZXQuaWQpOwogICAgICAgICAgICAgICAgICBzZXRRdWVyeVJlc3VsdChudWxsKTsKICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgPHN0cm9uZz57cHJlc2V0LnRpdGxlfTwvc3Ryb25nPgogICAgICAgICAgICAgICAgPHA+e3ByZXNldC5xdWVzdGlvbn08L3A+CiAgICAgICAgICAgICAgICA8c21hbGw+e3ByZXNldC5zdW1tYXJ5fTwvc21hbGw+CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgKX0KICAgICAgPC9TZWN0aW9uPgoKICAgICAgPFNlY3Rpb24gdGl0bGU9e2FjdGl2ZVJlc3VsdD8udGl0bGUgPz8gJ9eq15XXpteQ15QnfSBzdWJ0aXRsZT17YWN0aXZlUmVzdWx0Py5xdWVzdGlvbn0+CiAgICAgICAge2FjdGl2ZVJlc3VsdCA/ICgKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJpbnNpZ2h0LXJlc3VsdC1ncmlkIj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9Imluc2lnaHQtc3VtbWFyeS1jYXJkIj4KICAgICAgICAgICAgICA8c3Ryb25nPnthY3RpdmVSZXN1bHQuc3VtbWFyeX08L3N0cm9uZz4KICAgICAgICAgICAgICB7YWN0aXZlUmVzdWx0LnN1bW1hcnlEZXRhaWwgJiYgPHA+e2FjdGl2ZVJlc3VsdC5zdW1tYXJ5RGV0YWlsfTwvcD59CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9Imluc2lnaHQtc3VtbWFyeS1zdHJpcCI+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImpvdXJuYWwtc3RhdHVzLXBpbGwiPtee15PXktedOiB7YWN0aXZlUmVzdWx0LnNhbXBsZVNpemV9PC9zcGFuPgogICAgICAgICAgICAgICAge2FjdGl2ZVJlc3VsdC5saW5rcy5tYXAoKGxpbmspID0+ICgKICAgICAgICAgICAgICAgICAgPExpbmsga2V5PXtsaW5rLmhyZWZ9IGhyZWY9e2xpbmsuaHJlZiBhcyBSb3V0ZX0gY2xhc3NOYW1lPSJpbmxpbmUtY3RhLWxpbmsgc3VidGxlLWxpbmsiPgogICAgICAgICAgICAgICAgICAgIHtsaW5rLmxhYmVsfQogICAgICAgICAgICAgICAgICA8L0xpbms+CiAgICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxSZW5kZXJWaXN1YWwgdmlzdWFsPXthY3RpdmVSZXN1bHQudmlzdWFsU3BlY30gLz4KICAgICAgICAgICAgPEV2aWRlbmNlUm93cyByb3dzPXthY3RpdmVSZXN1bHQucm93c30gLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICkgOiAoCiAgICAgICAgICA8cCBjbGFzc05hbWU9ImVtcHR5LW5vdGUiPteR15fXqCDXqdeQ15zXlCDXnteV15vXoNeUINeQ15Ug15TXqNelINeX15nXpNeV16kg157Xqten15PXnS48L3A+CiAgICAgICAgKX0KICAgICAgPC9TZWN0aW9uPgoKICAgICAgPEZvbGRTZWN0aW9uIHRpdGxlPSLXl9eZ16TXldepINee16rXp9eT150iIHN1YnRpdGxlPSJRdWVyeSBidWlsZGVyINee15XXkdeg15QsINec15Ag16nXk9eUINeX15XXpNep15kiIGRlZmF1bHRPcGVuPXtmYWxzZX0+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Imluc2lnaHQtcXVlcnktZ3JpZCI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaW5zaWdodHMtaW5saW5lLWZpbHRlciI+CiAgICAgICAgICAgIDxsYWJlbD7Xkteo16LXmdefPC9sYWJlbD4KICAgICAgICAgICAgPFVpU2VsZWN0CiAgICAgICAgICAgICAgdmFsdWU9e3F1ZXJ5U3RhdGUuZW50aXR5fQogICAgICAgICAgICAgIG9uQ2hhbmdlPXsobmV4dFZhbHVlKSA9PiBzZXRRdWVyeVN0YXRlKChwcmV2KSA9PiAoeyAuLi5wcmV2LCBlbnRpdHk6IG5leHRWYWx1ZSBhcyBRdWVyeVN0YXRlWydlbnRpdHknXSB9KSl9CiAgICAgICAgICAgICAgb3B0aW9ucz17KG9wdGlvbnM/LmVudGl0eU9wdGlvbnMgPz8gW10pLm1hcCgoaXRlbSkgPT4gKHsgdmFsdWU6IGl0ZW0udmFsdWUsIGxhYmVsOiBpdGVtLmxhYmVsIH0pKX0KICAgICAgICAgICAgLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Imluc2lnaHRzLWlubGluZS1maWx0ZXIiPgogICAgICAgICAgICA8bGFiZWw+157Xk9eTPC9sYWJlbD4KICAgICAgICAgICAgPFVpU2VsZWN0CiAgICAgICAgICAgICAgdmFsdWU9e3F1ZXJ5U3RhdGUubWV0cmljfQogICAgICAgICAgICAgIG9uQ2hhbmdlPXsobmV4dFZhbHVlKSA9PiBzZXRRdWVyeVN0YXRlKChwcmV2KSA9PiAoeyAuLi5wcmV2LCBtZXRyaWM6IG5leHRWYWx1ZSBhcyBRdWVyeVN0YXRlWydtZXRyaWMnXSB9KSl9CiAgICAgICAgICAgICAgb3B0aW9ucz17bWV0cmljT3B0aW9ucy5tYXAoKGl0ZW0pID0+ICh7IHZhbHVlOiBpdGVtLnZhbHVlLCBsYWJlbDogaXRlbS5sYWJlbCB9KSl9CiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJpbnNpZ2h0cy1pbmxpbmUtZmlsdGVyIj4KICAgICAgICAgICAgPGxhYmVsPteX15nXqdeV15E8L2xhYmVsPgogICAgICAgICAgICA8VWlTZWxlY3QKICAgICAgICAgICAgICB2YWx1ZT17cXVlcnlTdGF0ZS5hZ2dyZWdhdGV9CiAgICAgICAgICAgICAgb25DaGFuZ2U9eyhuZXh0VmFsdWUpID0+IHNldFF1ZXJ5U3RhdGUoKHByZXYpID0+ICh7IC4uLnByZXYsIGFnZ3JlZ2F0ZTogbmV4dFZhbHVlIGFzIFF1ZXJ5U3RhdGVbJ2FnZ3JlZ2F0ZSddIH0pKX0KICAgICAgICAgICAgICBvcHRpb25zPXthZ2dyZWdhdGVPcHRpb25zLm1hcCgoaXRlbSkgPT4gKHsgdmFsdWU6IGl0ZW0udmFsdWUsIGxhYmVsOiBpdGVtLmxhYmVsIH0pKX0KICAgICAgICAgICAgLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Imluc2lnaHRzLWlubGluZS1maWx0ZXIiPgogICAgICAgICAgICA8bGFiZWw+16fXmdeR15XXpTwvbGFiZWw+CiAgICAgICAgICAgIDxVaVNlbGVjdAogICAgICAgICAgICAgIHZhbHVlPXtxdWVyeVN0YXRlLmdyb3VwQnl9CiAgICAgICAgICAgICAgb25DaGFuZ2U9eyhuZXh0VmFsdWUpID0+IHNldFF1ZXJ5U3RhdGUoKHByZXYpID0+ICh7IC4uLnByZXYsIGdyb3VwQnk6IG5leHRWYWx1ZSBhcyBRdWVyeVN0YXRlWydncm91cEJ5J10gfSkpfQogICAgICAgICAgICAgIG9wdGlvbnM9e2dyb3VwT3B0aW9ucy5tYXAoKGl0ZW0pID0+ICh7IHZhbHVlOiBpdGVtLnZhbHVlLCBsYWJlbDogaXRlbS5sYWJlbCB9KSl9CiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJpbnNpZ2h0cy1pbmxpbmUtZmlsdGVyIj4KICAgICAgICAgICAgPGxhYmVsPtee16rXkNeo15nXmjwvbGFiZWw+CiAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJkYXRlIiB2YWx1ZT17cXVlcnlTdGF0ZS5mcm9tID8/ICcnfSBvbkNoYW5nZT17KGUpID0+IHNldFF1ZXJ5U3RhdGUoKHByZXYpID0+ICh7IC4uLnByZXYsIGZyb206IGUudGFyZ2V0LnZhbHVlIHx8IHVuZGVmaW5lZCB9KSl9IC8+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJpbnNpZ2h0cy1pbmxpbmUtZmlsdGVyIj4KICAgICAgICAgICAgPGxhYmVsPtei15Mg16rXkNeo15nXmjwvbGFiZWw+CiAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJkYXRlIiB2YWx1ZT17cXVlcnlTdGF0ZS50byA/PyAnJ30gb25DaGFuZ2U9eyhlKSA9PiBzZXRRdWVyeVN0YXRlKChwcmV2KSA9PiAoeyAuLi5wcmV2LCB0bzogZS50YXJnZXQudmFsdWUgfHwgdW5kZWZpbmVkIH0pKX0gLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Imluc2lnaHRzLWlubGluZS1maWx0ZXIiPgogICAgICAgICAgICA8bGFiZWw+16DXotecPC9sYWJlbD4KICAgICAgICAgICAgPFVpU2VsZWN0CiAgICAgICAgICAgICAgdmFsdWU9e3F1ZXJ5U3RhdGUuZmlsdGVycz8uc2hvZUlkID8/ICcnfQogICAgICAgICAgICAgIG9uQ2hhbmdlPXsobmV4dFZhbHVlKSA9PiB1cGRhdGVGaWx0ZXIoJ3Nob2VJZCcsIG5leHRWYWx1ZSB8fCB1bmRlZmluZWQpfQogICAgICAgICAgICAgIG9wdGlvbnM9e1sKICAgICAgICAgICAgICAgIHsgdmFsdWU6ICcnLCBsYWJlbDogJ9eb15wg15TXoNei15zXmdeZ150nIH0sCiAgICAgICAgICAgICAgICAuLi4ob3B0aW9ucz8uc2hvZXMgPz8gW10pLm1hcCgoc2hvZSkgPT4gKHsgdmFsdWU6IHNob2UuaWQsIGxhYmVsOiBzaG9lLm5hbWUgfSkpCiAgICAgICAgICAgICAgXX0KICAgICAgICAgICAgLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Imluc2lnaHRzLWlubGluZS1maWx0ZXIiPgogICAgICAgICAgICA8bGFiZWw+15DXlteV16gg15vXkNeRPC9sYWJlbD4KICAgICAgICAgICAgPFVpU2VsZWN0CiAgICAgICAgICAgICAgdmFsdWU9e3F1ZXJ5U3RhdGUuZmlsdGVycz8ucGFpbkFyZWEgPz8gJyd9CiAgICAgICAgICAgICAgb25DaGFuZ2U9eyhuZXh0VmFsdWUpID0+IHVwZGF0ZUZpbHRlcigncGFpbkFyZWEnLCBuZXh0VmFsdWUgfHwgdW5kZWZpbmVkKX0KICAgICAgICAgICAgICBvcHRpb25zPXtbCiAgICAgICAgICAgICAgICB7IHZhbHVlOiAnJywgbGFiZWw6ICfXm9ecINeU15DXlteV16jXmdedJyB9LAogICAgICAgICAgICAgICAgLi4uKG9wdGlvbnM/LnBhaW5BcmVhcyA/PyBbXSkubWFwKChhcmVhKSA9PiAoeyB2YWx1ZTogYXJlYSwgbGFiZWw6IGFyZWEgfSkpCiAgICAgICAgICAgICAgXX0KICAgICAgICAgICAgLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Imluc2lnaHRzLWlubGluZS1maWx0ZXIiPgogICAgICAgICAgICA8bGFiZWw+15DXqNeV15fXlCDXnteQ15XXqdeo16o8L2xhYmVsPgogICAgICAgICAgICA8VWlTZWxlY3QKICAgICAgICAgICAgICB2YWx1ZT17cXVlcnlTdGF0ZS5maWx0ZXJzPy5tZWFsU2xvdCA/PyAnJ30KICAgICAgICAgICAgICBvbkNoYW5nZT17KG5leHRWYWx1ZSkgPT4gdXBkYXRlRmlsdGVyKCdtZWFsU2xvdCcsIChuZXh0VmFsdWUgfHwgdW5kZWZpbmVkKSBhcyBRdWVyeUZpbHRlcnNbJ21lYWxTbG90J10pfQogICAgICAgICAgICAgIG9wdGlvbnM9e1sKICAgICAgICAgICAgICAgIHsgdmFsdWU6ICcnLCBsYWJlbDogJ9eb15wg15TXkNeo15XXl9eV16onIH0sCiAgICAgICAgICAgICAgICAuLi4ob3B0aW9ucz8ubWVhbFNsb3RPcHRpb25zID8/IFtdKS5tYXAoKHNsb3QpID0+ICh7IHZhbHVlOiBzbG90LnZhbHVlLCBsYWJlbDogc2xvdC5sYWJlbCB9KSkKICAgICAgICAgICAgICBdfQogICAgICAgICAgICAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaW5zaWdodHMtaW5saW5lLWZpbHRlciI+CiAgICAgICAgICAgIDxsYWJlbD7Xqdei16og15DXmdee15XXnzwvbGFiZWw+CiAgICAgICAgICAgIDxVaVNlbGVjdAogICAgICAgICAgICAgIHZhbHVlPXtxdWVyeVN0YXRlLmZpbHRlcnM/LnRpbWVPZkRheSA/PyAnJ30KICAgICAgICAgICAgICBvbkNoYW5nZT17KG5leHRWYWx1ZSkgPT4gdXBkYXRlRmlsdGVyKCd0aW1lT2ZEYXknLCAobmV4dFZhbHVlIHx8IHVuZGVmaW5lZCkgYXMgUXVlcnlGaWx0ZXJzWyd0aW1lT2ZEYXknXSl9CiAgICAgICAgICAgICAgb3B0aW9ucz17WwogICAgICAgICAgICAgICAgeyB2YWx1ZTogJycsIGxhYmVsOiAn15vXnCDXlNeZ15XXnScgfSwKICAgICAgICAgICAgICAgIC4uLihvcHRpb25zPy50aW1lT2ZEYXlPcHRpb25zID8/IFtdKS5tYXAoKHNsb3QpID0+ICh7IHZhbHVlOiBzbG90LnZhbHVlLCBsYWJlbDogc2xvdC5sYWJlbCB9KSkKICAgICAgICAgICAgICBdfQogICAgICAgICAgICAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaW5zaWdodHMtaW5saW5lLWZpbHRlciBzaG9ydC1maWVsZCI+CiAgICAgICAgICAgIDxsYWJlbD7Xnteo15fXpyDXnteZ16DXszwvbGFiZWw+CiAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJudW1iZXIiIHN0ZXA9IjAuMSIgdmFsdWU9e3F1ZXJ5U3RhdGUuZmlsdGVycz8ubWluRGlzdGFuY2VLbSA/PyAnJ30gb25DaGFuZ2U9eyhlKSA9PiB1cGRhdGVGaWx0ZXIoJ21pbkRpc3RhbmNlS20nLCBlLnRhcmdldC52YWx1ZSA/IE51bWJlcihlLnRhcmdldC52YWx1ZSkgOiB1bmRlZmluZWQpfSAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaW5zaWdodHMtaW5saW5lLWZpbHRlciBzaG9ydC1maWVsZCI+CiAgICAgICAgICAgIDxsYWJlbD7Xnteo15fXpyDXnten16HXszwvbGFiZWw+CiAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJudW1iZXIiIHN0ZXA9IjAuMSIgdmFsdWU9e3F1ZXJ5U3RhdGUuZmlsdGVycz8ubWF4RGlzdGFuY2VLbSA/PyAnJ30gb25DaGFuZ2U9eyhlKSA9PiB1cGRhdGVGaWx0ZXIoJ21heERpc3RhbmNlS20nLCBlLnRhcmdldC52YWx1ZSA/IE51bWJlcihlLnRhcmdldC52YWx1ZSkgOiB1bmRlZmluZWQpfSAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaW5zaWdodHMtaW5saW5lLWZpbHRlciBzaG9ydC1maWVsZCI+CiAgICAgICAgICAgIDxsYWJlbD7Xntep15og157Xmdeg17M8L2xhYmVsPgogICAgICAgICAgICA8aW5wdXQgdHlwZT0ibnVtYmVyIiBzdGVwPSIxIiB2YWx1ZT17cXVlcnlTdGF0ZS5maWx0ZXJzPy5taW5EdXJhdGlvbk1pbiA/PyAnJ30gb25DaGFuZ2U9eyhlKSA9PiB1cGRhdGVGaWx0ZXIoJ21pbkR1cmF0aW9uTWluJywgZS50YXJnZXQudmFsdWUgPyBOdW1iZXIoZS50YXJnZXQudmFsdWUpIDogdW5kZWZpbmVkKX0gLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Imluc2lnaHRzLWlubGluZS1maWx0ZXIgc2hvcnQtZmllbGQiPgogICAgICAgICAgICA8bGFiZWw+157XqdeaINee16fXodezPC9sYWJlbD4KICAgICAgICAgICAgPGlucHV0IHR5cGU9Im51bWJlciIgc3RlcD0iMSIgdmFsdWU9e3F1ZXJ5U3RhdGUuZmlsdGVycz8ubWF4RHVyYXRpb25NaW4gPz8gJyd9IG9uQ2hhbmdlPXsoZSkgPT4gdXBkYXRlRmlsdGVyKCdtYXhEdXJhdGlvbk1pbicsIGUudGFyZ2V0LnZhbHVlID8gTnVtYmVyKGUudGFyZ2V0LnZhbHVlKSA6IHVuZGVmaW5lZCl9IC8+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJpbnNpZ2h0cy1pbmxpbmUtZmlsdGVyIHNob3J0LWZpZWxkIj4KICAgICAgICAgICAgPGxhYmVsPtei15XXntehINee15nXoNezPC9sYWJlbD4KICAgICAgICAgICAgPGlucHV0IHR5cGU9Im51bWJlciIgc3RlcD0iMSIgdmFsdWU9e3F1ZXJ5U3RhdGUuZmlsdGVycz8ubWluTG9hZCA/PyAnJ30gb25DaGFuZ2U9eyhlKSA9PiB1cGRhdGVGaWx0ZXIoJ21pbkxvYWQnLCBlLnRhcmdldC52YWx1ZSA/IE51bWJlcihlLnRhcmdldC52YWx1ZSkgOiB1bmRlZmluZWQpfSAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaW5zaWdodHMtaW5saW5lLWZpbHRlciBzaG9ydC1maWVsZCI+CiAgICAgICAgICAgIDxsYWJlbD7XoteV157XoSDXnten16HXszwvbGFiZWw+CiAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJudW1iZXIiIHN0ZXA9IjEiIHZhbHVlPXtxdWVyeVN0YXRlLmZpbHRlcnM/Lm1heExvYWQgPz8gJyd9IG9uQ2hhbmdlPXsoZSkgPT4gdXBkYXRlRmlsdGVyKCdtYXhMb2FkJywgZS50YXJnZXQudmFsdWUgPyBOdW1iZXIoZS50YXJnZXQudmFsdWUpIDogdW5kZWZpbmVkKX0gLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Imluc2lnaHRzLWlubGluZS1maWx0ZXIgc2hvcnQtZmllbGQiPgogICAgICAgICAgICA8bGFiZWw+UmVhZGluZXNzINee15nXoNezPC9sYWJlbD4KICAgICAgICAgICAgPGlucHV0IHR5cGU9Im51bWJlciIgc3RlcD0iMSIgdmFsdWU9e3F1ZXJ5U3RhdGUuZmlsdGVycz8ubWluUmVhZGluZXNzID8/ICcnfSBvbkNoYW5nZT17KGUpID0+IHVwZGF0ZUZpbHRlcignbWluUmVhZGluZXNzJywgZS50YXJnZXQudmFsdWUgPyBOdW1iZXIoZS50YXJnZXQudmFsdWUpIDogdW5kZWZpbmVkKX0gLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Imluc2lnaHRzLWlubGluZS1maWx0ZXIgc2hvcnQtZmllbGQiPgogICAgICAgICAgICA8bGFiZWw+RmF0aWd1ZSDXnten16HXszwvbGFiZWw+CiAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJudW1iZXIiIHN0ZXA9IjEiIHZhbHVlPXtxdWVyeVN0YXRlLmZpbHRlcnM/Lm1heEZhdGlndWUgPz8gJyd9IG9uQ2hhbmdlPXsoZSkgPT4gdXBkYXRlRmlsdGVyKCdtYXhGYXRpZ3VlJywgZS50YXJnZXQudmFsdWUgPyBOdW1iZXIoZS50YXJnZXQudmFsdWUpIDogdW5kZWZpbmVkKX0gLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Imluc2lnaHRzLWlubGluZS1maWx0ZXIgc2hvcnQtZmllbGQiPgogICAgICAgICAgICA8bGFiZWw+15PXldek16cg157XnteV16bXoiDXnteZ16DXszwvbGFiZWw+CiAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJudW1iZXIiIHN0ZXA9IjEiIHZhbHVlPXtxdWVyeVN0YXRlLmZpbHRlcnM/Lm1pbkF2Z0hyID8/ICcnfSBvbkNoYW5nZT17KGUpID0+IHVwZGF0ZUZpbHRlcignbWluQXZnSHInLCBlLnRhcmdldC52YWx1ZSA/IE51bWJlcihlLnRhcmdldC52YWx1ZSkgOiB1bmRlZmluZWQpfSAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaW5zaWdodHMtaW5saW5lLWZpbHRlciBzaG9ydC1maWVsZCI+CiAgICAgICAgICAgIDxsYWJlbD7Xp9em15Eg157Xp9eh17M8L2xhYmVsPgogICAgICAgICAgICA8aW5wdXQgdHlwZT0ibnVtYmVyIiBzdGVwPSIwLjEiIHZhbHVlPXtxdWVyeVN0YXRlLmZpbHRlcnM/Lm1heFBhY2UgPz8gJyd9IG9uQ2hhbmdlPXsoZSkgPT4gdXBkYXRlRmlsdGVyKCdtYXhQYWNlJywgZS50YXJnZXQudmFsdWUgPyBOdW1iZXIoZS50YXJnZXQudmFsdWUpIDogdW5kZWZpbmVkKX0gLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaW5zaWdodC1ib29sZWFuLXJvdyI+CiAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT17cXVlcnlTdGF0ZS5maWx0ZXJzPy5oYXNQYWluID8gJ3NlZ21lbnRlZC1idG4gc2VsZWN0ZWQnIDogJ3NlZ21lbnRlZC1idG4nfSBvbkNsaWNrPXsoKSA9PiB1cGRhdGVGaWx0ZXIoJ2hhc1BhaW4nLCBxdWVyeVN0YXRlLmZpbHRlcnM/Lmhhc1BhaW4gPyB1bmRlZmluZWQgOiB0cnVlKX0+16jXpyDXmdee15nXnS/XkNeZ157Xldeg15nXnSDXotedINeb15DXkTwvYnV0dG9uPgogICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9e3F1ZXJ5U3RhdGUuZmlsdGVycz8uaGFzUHJlUnVuTWVhbCA/ICdzZWdtZW50ZWQtYnRuIHNlbGVjdGVkJyA6ICdzZWdtZW50ZWQtYnRuJ30gb25DbGljaz17KCkgPT4gdXBkYXRlRmlsdGVyKCdoYXNQcmVSdW5NZWFsJywgcXVlcnlTdGF0ZS5maWx0ZXJzPy5oYXNQcmVSdW5NZWFsID8gdW5kZWZpbmVkIDogdHJ1ZSl9Pteo16cg16LXnSDXnteW15XXnyDXnNek16DXmSDXqNeZ16bXlDwvYnV0dG9uPgogICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9e3F1ZXJ5U3RhdGUuZmlsdGVycz8uaGFzRnVlbGluZyA/ICdzZWdtZW50ZWQtYnRuIHNlbGVjdGVkJyA6ICdzZWdtZW50ZWQtYnRuJ30gb25DbGljaz17KCkgPT4gdXBkYXRlRmlsdGVyKCdoYXNGdWVsaW5nJywgcXVlcnlTdGF0ZS5maWx0ZXJzPy5oYXNGdWVsaW5nID8gdW5kZWZpbmVkIDogdHJ1ZSl9Pteo16cg16LXnSDXqteT15zXldenPC9idXR0b24+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJpbnNpZ2h0LWFjdGlvbnMtcm93Ij4KICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJwcmltYXJ5LWJ0biIgb25DbGljaz17KCkgPT4gdm9pZCBzdWJtaXRRdWVyeSgpfSBkaXNhYmxlZD17cXVlcnlMb2FkaW5nfT4KICAgICAgICAgICAge3F1ZXJ5TG9hZGluZyA/ICfXnteo15nXpS4uLicgOiAn15TXqNelINeX15nXpNeV16knfQogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvRm9sZFNlY3Rpb24+CiAgICA8Lz4KICApOwp9Cg=="}
+'use client';
+
+import Link from 'next/link';
+import type { Route } from 'next';
+import { useEffect, useMemo, useState } from 'react';
+import { Section } from '@/components/cards';
+import FoldSection from '@/components/fold-section';
+import UiSelect from '@/components/ui-select';
+import type { InsightOptions, InsightQueryInput, InsightResult, InsightVisualSpec } from '@/lib/insights';
+
+type RangeKey = '30d' | '12w' | '365d' | 'all';
+type SportFilter = 'run' | 'bike' | 'swim' | 'all';
+type QueryState = InsightQueryInput;
+type QueryFilters = NonNullable<QueryState['filters']>;
+
+const defaultQuery: QueryState = {
+  entity: 'workout',
+  aggregate: 'avg',
+  metric: 'paceMinPerKm',
+  groupBy: 'month',
+  range: '12w',
+  sport: 'run',
+  filters: {}
+};
+
+function formatValue(value: string) {
+  return value;
+}
+
+function RenderVisual({ visual }: { visual: InsightVisualSpec }) {
+  if (visual.kind === 'compare') {
+    return (
+      <div className="insight-visual compare-visual">
+        <div className="compare-visual-head">
+          <strong>{visual.label}</strong>
+          <span>{visual.left.label} מול {visual.right.label}</span>
+        </div>
+        <div className="compare-visual-columns">
+          <article>
+            <small>{visual.left.label}</small>
+            <strong>{visual.left.value}</strong>
+          </article>
+          <article>
+            <small>{visual.right.label}</small>
+            <strong>{visual.right.value}</strong>
+          </article>
+        </div>
+        <div className="compare-metric-list">
+          {visual.metrics.map((metric) => (
+            <div key={metric.label} className="compare-metric-row">
+              <span>{metric.label}</span>
+              <strong>{metric.left}</strong>
+              <strong>{metric.right}</strong>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  const max = Math.max(1, ...visual.series.map((item) => item.value));
+  return (
+    <div className="insight-visual bars-visual">
+      <div className="bars-visual-head">
+        <strong>{visual.label}</strong>
+      </div>
+      <div className="bars-visual-list">
+        {visual.series.map((item) => (
+          <div key={item.label} className="bars-visual-row">
+            <span>{item.label}</span>
+            <div className="bars-visual-track">
+              <div
+                className={`bars-visual-fill ${item.tone ?? 'default'}`}
+                style={{ width: `${(item.value / max) * 100}%` }}
+              />
+            </div>
+            <strong>{item.value}</strong>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function EvidenceRows({ rows }: { rows: InsightResult['rows'] }) {
+  if (!rows.length) {
+    return <p className="empty-note">אין כרגע שורות תומכות להצגה.</p>;
+  }
+  return (
+    <div className="insight-evidence-list">
+      {rows.map((row) => {
+        const content = (
+          <>
+            <div className="insight-evidence-head">
+              <div>
+                <strong>{row.title}</strong>
+                {row.subtitle && <small>{row.subtitle}</small>}
+              </div>
+            </div>
+            <div className="insight-evidence-metrics">
+              {row.metrics.map((metric) => (
+                <span key={`${row.id}-${metric.label}`} className="insight-evidence-chip">
+                  <small>{metric.label}</small>
+                  <strong>{metric.value}</strong>
+                </span>
+              ))}
+            </div>
+          </>
+        );
+        return row.href ? (
+          <Link key={row.id} href={row.href as Route} className="insight-evidence-card">
+            {content}
+          </Link>
+        ) : (
+          <article key={row.id} className="insight-evidence-card">
+            {content}
+          </article>
+        );
+      })}
+    </div>
+  );
+}
+
+export default function InsightsPage() {
+  const [options, setOptions] = useState<InsightOptions | null>(null);
+  const [range, setRange] = useState<RangeKey>('12w');
+  const [sport, setSport] = useState<SportFilter>('run');
+  const [presets, setPresets] = useState<InsightResult[]>([]);
+  const [selectedId, setSelectedId] = useState<string>('');
+  const [queryState, setQueryState] = useState<QueryState>(defaultQuery);
+  const [queryResult, setQueryResult] = useState<InsightResult | null>(null);
+  const [loadingPresets, setLoadingPresets] = useState(false);
+  const [queryLoading, setQueryLoading] = useState(false);
+
+  useEffect(() => {
+    void fetch('/api/insights/options')
+      .then((res) => res.json())
+      .then((json: InsightOptions) => setOptions(json));
+  }, []);
+
+  useEffect(() => {
+    setLoadingPresets(true);
+    void fetch(`/api/insights/presets?range=${range}&sport=${sport}`)
+      .then((res) => res.json())
+      .then((json: { presets: InsightResult[] }) => {
+        setPresets(json.presets ?? []);
+        setSelectedId((prev) => (json.presets?.some((item) => item.id === prev) ? prev : json.presets?.[0]?.id ?? ''));
+      })
+      .finally(() => setLoadingPresets(false));
+  }, [range, sport]);
+
+  useEffect(() => {
+    setQueryState((prev) => ({ ...prev, range, sport }));
+  }, [range, sport]);
+
+  const metricOptions = useMemo(
+    () => options?.metricOptions.filter((metric) => metric.entity.includes(queryState.entity)) ?? [],
+    [options, queryState.entity]
+  );
+  const aggregateOptions = useMemo(() => {
+    const metric = metricOptions.find((item) => item.value === queryState.metric);
+    const allowed = metric?.aggregates ?? [];
+    return (options?.aggregateOptions ?? []).filter((item) => allowed.includes(item.value));
+  }, [metricOptions, options, queryState.metric]);
+  const groupOptions = useMemo(
+    () => options?.groupOptions.filter((group) => group.entity.includes(queryState.entity)) ?? [],
+    [options, queryState.entity]
+  );
+
+  useEffect(() => {
+    if (!metricOptions.some((item) => item.value === queryState.metric)) {
+      const nextMetric = metricOptions[0]?.value;
+      if (nextMetric) setQueryState((prev) => ({ ...prev, metric: nextMetric }));
+    }
+  }, [metricOptions, queryState.metric]);
+
+  useEffect(() => {
+    if (!aggregateOptions.some((item) => item.value === queryState.aggregate)) {
+      const nextAggregate = aggregateOptions[0]?.value;
+      if (nextAggregate) setQueryState((prev) => ({ ...prev, aggregate: nextAggregate }));
+    }
+  }, [aggregateOptions, queryState.aggregate]);
+
+  useEffect(() => {
+    if (!groupOptions.some((item) => item.value === queryState.groupBy)) {
+      const nextGroup = groupOptions[0]?.value;
+      if (nextGroup) setQueryState((prev) => ({ ...prev, groupBy: nextGroup }));
+    }
+  }, [groupOptions, queryState.groupBy]);
+
+  const selectedPreset = presets.find((item) => item.id === selectedId) ?? presets[0] ?? null;
+  const activeResult = queryResult ?? selectedPreset;
+
+  async function submitQuery() {
+    setQueryLoading(true);
+    try {
+      const res = await fetch('/api/insights/query', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(queryState)
+      });
+      const json = (await res.json()) as InsightResult;
+      setQueryResult(json);
+      setSelectedId('');
+    } finally {
+      setQueryLoading(false);
+    }
+  }
+
+  function updateFilter<K extends keyof QueryFilters>(key: K, value: QueryFilters[K] | undefined) {
+    setQueryState((prev) => ({
+      ...prev,
+      filters: {
+        ...(prev.filters ?? {}),
+        [key]: value
+      }
+    }));
+  }
+
+  return (
+    <>
+      <header className="page-header">
+        <h1>תובנות</h1>
+        <p>שאלות של מאמן למעלה, חיפוש מתקדם למטה. אותו דאטה, פחות רעש.</p>
+      </header>
+
+      <Section title="טווח עבודה" subtitle="ברירת מחדל: 12 שבועות אחרונים">
+        <div className="insights-toolbar">
+          <div className="segmented-row">
+            {(options?.rangeOptions ?? []).map((item) => (
+              <button
+                key={item.value}
+                className={range === item.value ? 'segmented-btn selected' : 'segmented-btn'}
+                onClick={() => {
+                  setRange(item.value);
+                  setQueryResult(null);
+                }}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+          <div className="insights-inline-filter">
+            <label>ענף</label>
+            <UiSelect
+              value={sport}
+              onChange={(nextValue) => {
+                setSport(nextValue as SportFilter);
+                setQueryResult(null);
+              }}
+              options={(options?.sportOptions ?? []).map((item) => ({ value: item.value, label: item.label }))}
+            />
+          </div>
+        </div>
+      </Section>
+
+      <Section title="שאלות מוכנות של מאמן" subtitle="נקודת התחלה טובה לפני חיפוש חופשי יותר">
+        {loadingPresets ? (
+          <p className="empty-note">טוען תובנות...</p>
+        ) : (
+          <div className="insight-card-grid">
+            {presets.map((preset) => (
+              <button
+                key={preset.id}
+                className={selectedId === preset.id && !queryResult ? 'insight-card selected' : 'insight-card'}
+                onClick={() => {
+                  setSelectedId(preset.id);
+                  setQueryResult(null);
+                }}
+              >
+                <strong>{preset.title}</strong>
+                <p>{preset.question}</p>
+                <small>{preset.summary}</small>
+              </button>
+            ))}
+          </div>
+        )}
+      </Section>
+
+      <Section title={activeResult?.title ?? 'תוצאה'} subtitle={activeResult?.question}>
+        {activeResult ? (
+          <div className="insight-result-grid">
+            <div className="insight-summary-card">
+              <strong>{activeResult.summary}</strong>
+              {activeResult.summaryDetail && <p>{activeResult.summaryDetail}</p>}
+              <div className="insight-summary-strip">
+                <span className="journal-status-pill">מדגם: {activeResult.sampleSize}</span>
+                {activeResult.links.map((link) => (
+                  <Link key={link.href} href={link.href as Route} className="inline-cta-link subtle-link">
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <RenderVisual visual={activeResult.visualSpec} />
+            <EvidenceRows rows={activeResult.rows} />
+          </div>
+        ) : (
+          <p className="empty-note">בחר שאלה מוכנה או הרץ חיפוש מתקדם.</p>
+        )}
+      </Section>
+
+      <FoldSection title="חיפוש מתקדם" subtitle="Query builder מובנה, לא שדה חופשי" defaultOpen={false}>
+        <div className="insight-query-grid">
+          <div className="insights-inline-filter">
+            <label>גרעין</label>
+            <UiSelect
+              value={queryState.entity}
+              onChange={(nextValue) => setQueryState((prev) => ({ ...prev, entity: nextValue as QueryState['entity'] }))}
+              options={(options?.entityOptions ?? []).map((item) => ({ value: item.value, label: item.label }))}
+            />
+          </div>
+          <div className="insights-inline-filter">
+            <label>מדד</label>
+            <UiSelect
+              value={queryState.metric}
+              onChange={(nextValue) => setQueryState((prev) => ({ ...prev, metric: nextValue as QueryState['metric'] }))}
+              options={metricOptions.map((item) => ({ value: item.value, label: item.label }))}
+            />
+          </div>
+          <div className="insights-inline-filter">
+            <label>חישוב</label>
+            <UiSelect
+              value={queryState.aggregate}
+              onChange={(nextValue) => setQueryState((prev) => ({ ...prev, aggregate: nextValue as QueryState['aggregate'] }))}
+              options={aggregateOptions.map((item) => ({ value: item.value, label: item.label }))}
+            />
+          </div>
+          <div className="insights-inline-filter">
+            <label>קיבוץ</label>
+            <UiSelect
+              value={queryState.groupBy}
+              onChange={(nextValue) => setQueryState((prev) => ({ ...prev, groupBy: nextValue as QueryState['groupBy'] }))}
+              options={groupOptions.map((item) => ({ value: item.value, label: item.label }))}
+            />
+          </div>
+          <div className="insights-inline-filter">
+            <label>מתאריך</label>
+            <input type="date" value={queryState.from ?? ''} onChange={(e) => setQueryState((prev) => ({ ...prev, from: e.target.value || undefined }))} />
+          </div>
+          <div className="insights-inline-filter">
+            <label>עד תאריך</label>
+            <input type="date" value={queryState.to ?? ''} onChange={(e) => setQueryState((prev) => ({ ...prev, to: e.target.value || undefined }))} />
+          </div>
+          <div className="insights-inline-filter">
+            <label>נעל</label>
+            <UiSelect
+              value={queryState.filters?.shoeId ?? ''}
+              onChange={(nextValue) => updateFilter('shoeId', nextValue || undefined)}
+              options={[
+                { value: '', label: 'כל הנעליים' },
+                ...(options?.shoes ?? []).map((shoe) => ({ value: shoe.id, label: shoe.name }))
+              ]}
+            />
+          </div>
+          <div className="insights-inline-filter">
+            <label>אזור כאב</label>
+            <UiSelect
+              value={queryState.filters?.painArea ?? ''}
+              onChange={(nextValue) => updateFilter('painArea', nextValue || undefined)}
+              options={[
+                { value: '', label: 'כל האזורים' },
+                ...(options?.painAreas ?? []).map((area) => ({ value: area, label: area }))
+              ]}
+            />
+          </div>
+          <div className="insights-inline-filter">
+            <label>ארוחה מאושרת</label>
+            <UiSelect
+              value={queryState.filters?.mealSlot ?? ''}
+              onChange={(nextValue) => updateFilter('mealSlot', (nextValue || undefined) as QueryFilters['mealSlot'])}
+              options={[
+                { value: '', label: 'כל הארוחות' },
+                ...(options?.mealSlotOptions ?? []).map((slot) => ({ value: slot.value, label: slot.label }))
+              ]}
+            />
+          </div>
+          <div className="insights-inline-filter">
+            <label>שעת אימון</label>
+            <UiSelect
+              value={queryState.filters?.timeOfDay ?? ''}
+              onChange={(nextValue) => updateFilter('timeOfDay', (nextValue || undefined) as QueryFilters['timeOfDay'])}
+              options={[
+                { value: '', label: 'כל היום' },
+                ...(options?.timeOfDayOptions ?? []).map((slot) => ({ value: slot.value, label: slot.label }))
+              ]}
+            />
+          </div>
+          <div className="insights-inline-filter short-field">
+            <label>מרחק מינ׳</label>
+            <input type="number" step="0.1" value={queryState.filters?.minDistanceKm ?? ''} onChange={(e) => updateFilter('minDistanceKm', e.target.value ? Number(e.target.value) : undefined)} />
+          </div>
+          <div className="insights-inline-filter short-field">
+            <label>מרחק מקס׳</label>
+            <input type="number" step="0.1" value={queryState.filters?.maxDistanceKm ?? ''} onChange={(e) => updateFilter('maxDistanceKm', e.target.value ? Number(e.target.value) : undefined)} />
+          </div>
+          <div className="insights-inline-filter short-field">
+            <label>משך מינ׳</label>
+            <input type="number" step="1" value={queryState.filters?.minDurationMin ?? ''} onChange={(e) => updateFilter('minDurationMin', e.target.value ? Number(e.target.value) : undefined)} />
+          </div>
+          <div className="insights-inline-filter short-field">
+            <label>משך מקס׳</label>
+            <input type="number" step="1" value={queryState.filters?.maxDurationMin ?? ''} onChange={(e) => updateFilter('maxDurationMin', e.target.value ? Number(e.target.value) : undefined)} />
+          </div>
+          <div className="insights-inline-filter short-field">
+            <label>עומס מינ׳</label>
+            <input type="number" step="1" value={queryState.filters?.minLoad ?? ''} onChange={(e) => updateFilter('minLoad', e.target.value ? Number(e.target.value) : undefined)} />
+          </div>
+          <div className="insights-inline-filter short-field">
+            <label>עומס מקס׳</label>
+            <input type="number" step="1" value={queryState.filters?.maxLoad ?? ''} onChange={(e) => updateFilter('maxLoad', e.target.value ? Number(e.target.value) : undefined)} />
+          </div>
+          <div className="insights-inline-filter short-field">
+            <label>Readiness מינ׳</label>
+            <input type="number" step="1" value={queryState.filters?.minReadiness ?? ''} onChange={(e) => updateFilter('minReadiness', e.target.value ? Number(e.target.value) : undefined)} />
+          </div>
+          <div className="insights-inline-filter short-field">
+            <label>Fatigue מקס׳</label>
+            <input type="number" step="1" value={queryState.filters?.maxFatigue ?? ''} onChange={(e) => updateFilter('maxFatigue', e.target.value ? Number(e.target.value) : undefined)} />
+          </div>
+          <div className="insights-inline-filter short-field">
+            <label>דופק ממוצע מינ׳</label>
+            <input type="number" step="1" value={queryState.filters?.minAvgHr ?? ''} onChange={(e) => updateFilter('minAvgHr', e.target.value ? Number(e.target.value) : undefined)} />
+          </div>
+          <div className="insights-inline-filter short-field">
+            <label>קצב מקס׳</label>
+            <input type="number" step="0.1" value={queryState.filters?.maxPace ?? ''} onChange={(e) => updateFilter('maxPace', e.target.value ? Number(e.target.value) : undefined)} />
+          </div>
+        </div>
+
+        <div className="insight-boolean-row">
+          <button className={queryState.filters?.hasPain ? 'segmented-btn selected' : 'segmented-btn'} onClick={() => updateFilter('hasPain', queryState.filters?.hasPain ? undefined : true)}>רק ימים/אימונים עם כאב</button>
+          <button className={queryState.filters?.hasPreRunMeal ? 'segmented-btn selected' : 'segmented-btn'} onClick={() => updateFilter('hasPreRunMeal', queryState.filters?.hasPreRunMeal ? undefined : true)}>רק עם מזון לפני ריצה</button>
+          <button className={queryState.filters?.hasFueling ? 'segmented-btn selected' : 'segmented-btn'} onClick={() => updateFilter('hasFueling', queryState.filters?.hasFueling ? undefined : true)}>רק עם תדלוק</button>
+        </div>
+
+        <div className="insight-actions-row">
+          <button className="primary-btn" onClick={() => void submitQuery()} disabled={queryLoading}>
+            {queryLoading ? 'מריץ...' : 'הרץ חיפוש'}
+          </button>
+        </div>
+      </FoldSection>
+    </>
+  );
+}

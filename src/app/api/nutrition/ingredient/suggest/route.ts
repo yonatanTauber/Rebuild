@@ -1,1 +1,134 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IHN1Z2dlc3ROdXRyaXRpb25JbmdyZWRpZW50RnJvbVRleHQgfSBmcm9tICJAL2xpYi9udXRyaXRpb24tZW5naW5lIjsKCmV4cG9ydCBjb25zdCBydW50aW1lID0gIm5vZGVqcyI7Cgpjb25zdCBzY2hlbWEgPSB6Lm9iamVjdCh7CiAgdGV4dDogei5zdHJpbmcoKS5taW4oMSkubWF4KDE2MCkKfSk7Cgp0eXBlIEluZ3JlZGllbnRTdWdnZXN0aW9uID0gTm9uTnVsbGFibGU8UmV0dXJuVHlwZTx0eXBlb2Ygc3VnZ2VzdE51dHJpdGlvbkluZ3JlZGllbnRGcm9tVGV4dD4+OwoKZnVuY3Rpb24gY2xhbXAodmFsdWU6IG51bWJlciwgbWluOiBudW1iZXIsIG1heDogbnVtYmVyKSB7CiAgcmV0dXJuIE1hdGgubWF4KG1pbiwgTWF0aC5taW4obWF4LCB2YWx1ZSkpOwp9CgpmdW5jdGlvbiBndWVzc0NhdGVnb3J5KHRleHQ6IHN0cmluZyk6IEluZ3JlZGllbnRTdWdnZXN0aW9uWyJjYXRlZ29yeSJdIHsKICBjb25zdCB0ID0gKHRleHQgfHwgIiIpLnRvTG93ZXJDYXNlKCk7CiAgaWYgKHQuaW5jbHVkZXMoItee15nXnSIpIHx8IHQuaW5jbHVkZXMoIndhdGVyIikgfHwgdC5pbmNsdWRlcygi16fXpNeUIikgfHwgdC5pbmNsdWRlcygiY29mZmVlIikgfHwgdC5pbmNsdWRlcygi16rXlCIpIHx8IHQuaW5jbHVkZXMoImVzcHJlc3NvIikpIHsKICAgIHJldHVybiAiaHlkcmF0aW9uIjsKICB9CiAgaWYgKHQuaW5jbHVkZXMoIteZ15XXkteV16jXmCIpIHx8IHQuaW5jbHVkZXMoIten15XXmNeSIikgfHwgdC5pbmNsdWRlcygi15LXkdeZ16DXlCIpIHx8IHQuaW5jbHVkZXMoIteX15zXkSIpIHx8IHQuaW5jbHVkZXMoIteh16fXmdeZ16giKSB8fCB0LmluY2x1ZGVzKCJsYWJhbmVoIikgfHwgdC5pbmNsdWRlcygi15zXkNeR16DXlCIpKSB7CiAgICByZXR1cm4gImRhaXJ5IjsKICB9CiAgaWYgKHQuaW5jbHVkZXMoIteR16DXoNeUIikgfHwgdC5pbmNsdWRlcygi16rXpNeV15ciKSB8fCB0LmluY2x1ZGVzKCLXqtee16giKSB8fCB0LmluY2x1ZGVzKCLXkNeR15jXmdeXIikgfHwgdC5pbmNsdWRlcygibWVsb24iKSB8fCB0LmluY2x1ZGVzKCJiYW5hbmEiKSB8fCB0LmluY2x1ZGVzKCJhcHBsZSIpIHx8IHQuaW5jbHVkZXMoImRhdGUiKSkgewogICAgcmV0dXJuICJmcnVpdCI7CiAgfQogIGlmICh0LmluY2x1ZGVzKCLXqdee158iKSB8fCB0LmluY2x1ZGVzKCLXmNeX15nXoNeUIikgfHwgdC5pbmNsdWRlcygiYXZvY2FkbyIpIHx8IHQuaW5jbHVkZXMoIteQ15HXlden15PXlSIpKSB7CiAgICByZXR1cm4gImZhdCI7CiAgfQogIGlmICh0LmluY2x1ZGVzKCLXoteV16MiKSB8fCB0LmluY2x1ZGVzKCLXl9eW15QiKSB8fCB0LmluY2x1ZGVzKCLXmNeV16DXlCIpIHx8IHQuaW5jbHVkZXMoIteR15nXpteUIikgfHwgdC5pbmNsdWRlcygicHJvdGVpbiIpKSB7CiAgICByZXR1cm4gInByb3RlaW4iOwogIH0KICBpZiAodC5pbmNsdWRlcygi16nXlden15XXnNeTIikgfHwgdC5pbmNsdWRlcygi16fXmdeg15PXqCIpIHx8IHQuaW5jbHVkZXMoItee16rXldenIikgfHwgdC5pbmNsdWRlcygic3dlZXQiKSB8fCB0LmluY2x1ZGVzKCJjb29raWUiKSkgewogICAgcmV0dXJuICJzd2VldCI7CiAgfQogIHJldHVybiAibWl4ZWQiOwp9CgpmdW5jdGlvbiBndWVzc0RlZmF1bHRVbml0KHRleHQ6IHN0cmluZyk6IEluZ3JlZGllbnRTdWdnZXN0aW9uWyJkZWZhdWx0VW5pdCJdIHsKICBjb25zdCB0ID0gKHRleHQgfHwgIiIpLnRvTG93ZXJDYXNlKCk7CiAgaWYgKHQuaW5jbHVkZXMoItee17TXnCIpIHx8IHQuaW5jbHVkZXMoIm1sIikgfHwgdC5pbmNsdWRlcygi16fXpNeUIikgfHwgdC5pbmNsdWRlcygiY29mZmVlIikgfHwgdC5pbmNsdWRlcygi157XmdedIikgfHwgdC5pbmNsdWRlcygianVpY2UiKSkgewogICAgcmV0dXJuICJtbCI7CiAgfQogIHJldHVybiAiZyI7Cn0KCmFzeW5jIGZ1bmN0aW9uIHN1Z2dlc3RGcm9tT3BlbkZvb2RGYWN0cyh0ZXh0OiBzdHJpbmcpOiBQcm9taXNlPEluZ3JlZGllbnRTdWdnZXN0aW9uIHwgbnVsbD4gewogIGNvbnN0IHF1ZXJ5ID0gdGV4dC50cmltKCk7CiAgaWYgKHF1ZXJ5Lmxlbmd0aCA8IDIpIHJldHVybiBudWxsOwoKICBjb25zdCBlbmRwb2ludHMgPSBbImh0dHBzOi8vaWwub3BlbmZvb2RmYWN0cy5vcmcvY2dpL3NlYXJjaC5wbCIsICJodHRwczovL3dvcmxkLm9wZW5mb29kZmFjdHMub3JnL2NnaS9zZWFyY2gucGwiXTsKICBmb3IgKGNvbnN0IGVuZHBvaW50IG9mIGVuZHBvaW50cykgewogICAgY29uc3QgdXJsID0gbmV3IFVSTChlbmRwb2ludCk7CiAgICB1cmwuc2VhcmNoUGFyYW1zLnNldCgic2VhcmNoX3Rlcm1zIiwgcXVlcnkpOwogICAgdXJsLnNlYXJjaFBhcmFtcy5zZXQoInNlYXJjaF9zaW1wbGUiLCAiMSIpOwogICAgdXJsLnNlYXJjaFBhcmFtcy5zZXQoImFjdGlvbiIsICJwcm9jZXNzIik7CiAgICB1cmwuc2VhcmNoUGFyYW1zLnNldCgianNvbiIsICIxIik7CiAgICB1cmwuc2VhcmNoUGFyYW1zLnNldCgicGFnZV9zaXplIiwgIjgiKTsKICAgIHVybC5zZWFyY2hQYXJhbXMuc2V0KCJsYyIsICJoZSIpOwoKICAgIGNvbnN0IGNvbnRyb2xsZXIgPSBuZXcgQWJvcnRDb250cm9sbGVyKCk7CiAgICBjb25zdCB0aW1lb3V0ID0gc2V0VGltZW91dCgoKSA9PiBjb250cm9sbGVyLmFib3J0KCksIDQ1MDApOwogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2godXJsLnRvU3RyaW5nKCksIHsKICAgICAgICBoZWFkZXJzOiB7ICJVc2VyLUFnZW50IjogIlJlYnVpbGQvMS4wIChudXRyaXRpb24tc3VnZ2VzdCkiIH0sCiAgICAgICAgc2lnbmFsOiBjb250cm9sbGVyLnNpZ25hbAogICAgICB9KTsKICAgICAgaWYgKCFyZXMub2spIGNvbnRpbnVlOwogICAgICBjb25zdCBqc29uID0gKGF3YWl0IHJlcy5qc29uKCkpIGFzIHsKICAgICAgICBwcm9kdWN0cz86IEFycmF5PHsKICAgICAgICAgIHByb2R1Y3RfbmFtZT86IHN0cmluZzsKICAgICAgICAgIHByb2R1Y3RfbmFtZV9oZT86IHN0cmluZzsKICAgICAgICAgIG51dHJpbWVudHM/OiBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPjsKICAgICAgICB9PjsKICAgICAgfTsKICAgICAgY29uc3QgcHJvZHVjdHMgPSBBcnJheS5pc0FycmF5KGpzb24ucHJvZHVjdHMpID8ganNvbi5wcm9kdWN0cyA6IFtdOwogICAgICBmb3IgKGNvbnN0IHAgb2YgcHJvZHVjdHMpIHsKICAgICAgICBjb25zdCBudXRyID0gKHAubnV0cmltZW50cyA/PyB7fSkgYXMgUmVjb3JkPHN0cmluZywgdW5rbm93bj47CiAgICAgICAgY29uc3Qga2NhbFJhdyA9IG51dHJbImVuZXJneS1rY2FsXzEwMGciXSA/PyBudXRyWyJlbmVyZ3kta2NhbCJdID8/IG51bGw7CiAgICAgICAgY29uc3QgcHJvdGVpblJhdyA9IG51dHJbInByb3RlaW5zXzEwMGciXSA/PyBudXRyWyJwcm90ZWlucyJdID8/IG51bGw7CiAgICAgICAgY29uc3QgY2FyYnNSYXcgPSBudXRyWyJjYXJib2h5ZHJhdGVzXzEwMGciXSA/PyBudXRyWyJjYXJib2h5ZHJhdGVzIl0gPz8gbnVsbDsKICAgICAgICBjb25zdCBmYXRSYXcgPSBudXRyWyJmYXRfMTAwZyJdID8/IG51dHJbImZhdCJdID8/IG51bGw7CgogICAgICAgIGNvbnN0IGtjYWwgPSBOdW1iZXIoa2NhbFJhdyk7CiAgICAgICAgY29uc3QgcHJvdGVpbiA9IE51bWJlcihwcm90ZWluUmF3KTsKICAgICAgICBjb25zdCBjYXJicyA9IE51bWJlcihjYXJic1Jhdyk7CiAgICAgICAgY29uc3QgZmF0ID0gTnVtYmVyKGZhdFJhdyk7CgogICAgICAgIGlmICghW2tjYWwsIHByb3RlaW4sIGNhcmJzLCBmYXRdLmV2ZXJ5KCh2KSA9PiBOdW1iZXIuaXNGaW5pdGUodikpKSBjb250aW51ZTsKICAgICAgICBpZiAoa2NhbCA8PSAwIHx8IGtjYWwgPiAxMDAwKSBjb250aW51ZTsKCiAgICAgICAgY29uc3QgbmFtZSA9IFN0cmluZyhwLnByb2R1Y3RfbmFtZV9oZSB8fCBwLnByb2R1Y3RfbmFtZSB8fCBxdWVyeSkudHJpbSgpIHx8IHF1ZXJ5OwogICAgICAgIGNvbnN0IGRlZmF1bHRVbml0ID0gZ3Vlc3NEZWZhdWx0VW5pdChuYW1lKTsKICAgICAgICByZXR1cm4gewogICAgICAgICAgbmFtZSwKICAgICAgICAgIGNhdGVnb3J5OiBndWVzc0NhdGVnb3J5KG5hbWUpLAogICAgICAgICAga2NhbFBlcjEwMDogY2xhbXAoTWF0aC5yb3VuZChrY2FsKSwgMCwgMTAwMCksCiAgICAgICAgICBwcm90ZWluUGVyMTAwOiBjbGFtcChNYXRoLnJvdW5kKHByb3RlaW4gKiAxMCkgLyAxMCwgMCwgMTAwKSwKICAgICAgICAgIGNhcmJzUGVyMTAwOiBjbGFtcChNYXRoLnJvdW5kKGNhcmJzICogMTApIC8gMTAsIDAsIDEwMCksCiAgICAgICAgICBmYXRQZXIxMDA6IGNsYW1wKE1hdGgucm91bmQoZmF0ICogMTApIC8gMTAsIDAsIDEwMCksCiAgICAgICAgICBkZWZhdWx0VW5pdCwKICAgICAgICAgIGdyYW1zUGVyVW5pdDogMTAwLAogICAgICAgICAgbWF0Y2hlZEJ5OiAiT3BlbkZvb2RGYWN0cyIKICAgICAgICB9OwogICAgICB9CiAgICB9IGNhdGNoIHsKICAgICAgLy8gdHJ5IG5leHQgZW5kcG9pbnQKICAgIH0gZmluYWxseSB7CiAgICAgIGNsZWFyVGltZW91dCh0aW1lb3V0KTsKICAgIH0KICB9CiAgcmV0dXJuIG51bGw7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQT1NUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgY29uc3QgYm9keSA9IGF3YWl0IHJlcXVlc3QuanNvbigpLmNhdGNoKCgpID0+ICh7fSkpOwogIGNvbnN0IHBhcnNlZCA9IHNjaGVtYS5zYWZlUGFyc2UoYm9keSk7CiAgaWYgKCFwYXJzZWQuc3VjY2VzcykgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6IHBhcnNlZC5lcnJvci5mbGF0dGVuKCkgfSwgeyBzdGF0dXM6IDQwMCB9KTsKICB9CgogIGNvbnN0IGxvY2FsU3VnZ2VzdGlvbiA9IHN1Z2dlc3ROdXRyaXRpb25JbmdyZWRpZW50RnJvbVRleHQocGFyc2VkLmRhdGEudGV4dCk7CiAgaWYgKGxvY2FsU3VnZ2VzdGlvbikgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgb2s6IHRydWUsIHN1Z2dlc3Rpb246IGxvY2FsU3VnZ2VzdGlvbiB9KTsKICB9CgogIGNvbnN0IG9ubGluZVN1Z2dlc3Rpb24gPSBhd2FpdCBzdWdnZXN0RnJvbU9wZW5Gb29kRmFjdHMocGFyc2VkLmRhdGEudGV4dCk7CiAgaWYgKCFvbmxpbmVTdWdnZXN0aW9uKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBvazogZmFsc2UsIHN1Z2dlc3Rpb246IG51bGwgfSk7CiAgfQoKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBvazogdHJ1ZSwgc3VnZ2VzdGlvbjogb25saW5lU3VnZ2VzdGlvbiB9KTsKfQo="}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { suggestNutritionIngredientFromText } from "@/lib/nutrition-engine";
+
+export const runtime = "nodejs";
+
+const schema = z.object({
+  text: z.string().min(1).max(160)
+});
+
+type IngredientSuggestion = NonNullable<ReturnType<typeof suggestNutritionIngredientFromText>>;
+
+function clamp(value: number, min: number, max: number) {
+  return Math.max(min, Math.min(max, value));
+}
+
+function guessCategory(text: string): IngredientSuggestion["category"] {
+  const t = (text || "").toLowerCase();
+  if (t.includes("מים") || t.includes("water") || t.includes("קפה") || t.includes("coffee") || t.includes("תה") || t.includes("espresso")) {
+    return "hydration";
+  }
+  if (t.includes("יוגורט") || t.includes("קוטג") || t.includes("גבינה") || t.includes("חלב") || t.includes("סקייר") || t.includes("labaneh") || t.includes("לאבנה")) {
+    return "dairy";
+  }
+  if (t.includes("בננה") || t.includes("תפוח") || t.includes("תמר") || t.includes("אבטיח") || t.includes("melon") || t.includes("banana") || t.includes("apple") || t.includes("date")) {
+    return "fruit";
+  }
+  if (t.includes("שמן") || t.includes("טחינה") || t.includes("avocado") || t.includes("אבוקדו")) {
+    return "fat";
+  }
+  if (t.includes("עוף") || t.includes("חזה") || t.includes("טונה") || t.includes("ביצה") || t.includes("protein")) {
+    return "protein";
+  }
+  if (t.includes("שוקולד") || t.includes("קינדר") || t.includes("מתוק") || t.includes("sweet") || t.includes("cookie")) {
+    return "sweet";
+  }
+  return "mixed";
+}
+
+function guessDefaultUnit(text: string): IngredientSuggestion["defaultUnit"] {
+  const t = (text || "").toLowerCase();
+  if (t.includes("מ״ל") || t.includes("ml") || t.includes("קפה") || t.includes("coffee") || t.includes("מים") || t.includes("juice")) {
+    return "ml";
+  }
+  return "g";
+}
+
+async function suggestFromOpenFoodFacts(text: string): Promise<IngredientSuggestion | null> {
+  const query = text.trim();
+  if (query.length < 2) return null;
+
+  const endpoints = ["https://il.openfoodfacts.org/cgi/search.pl", "https://world.openfoodfacts.org/cgi/search.pl"];
+  for (const endpoint of endpoints) {
+    const url = new URL(endpoint);
+    url.searchParams.set("search_terms", query);
+    url.searchParams.set("search_simple", "1");
+    url.searchParams.set("action", "process");
+    url.searchParams.set("json", "1");
+    url.searchParams.set("page_size", "8");
+    url.searchParams.set("lc", "he");
+
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 4500);
+    try {
+      const res = await fetch(url.toString(), {
+        headers: { "User-Agent": "Rebuild/1.0 (nutrition-suggest)" },
+        signal: controller.signal
+      });
+      if (!res.ok) continue;
+      const json = (await res.json()) as {
+        products?: Array<{
+          product_name?: string;
+          product_name_he?: string;
+          nutriments?: Record<string, unknown>;
+        }>;
+      };
+      const products = Array.isArray(json.products) ? json.products : [];
+      for (const p of products) {
+        const nutr = (p.nutriments ?? {}) as Record<string, unknown>;
+        const kcalRaw = nutr["energy-kcal_100g"] ?? nutr["energy-kcal"] ?? null;
+        const proteinRaw = nutr["proteins_100g"] ?? nutr["proteins"] ?? null;
+        const carbsRaw = nutr["carbohydrates_100g"] ?? nutr["carbohydrates"] ?? null;
+        const fatRaw = nutr["fat_100g"] ?? nutr["fat"] ?? null;
+
+        const kcal = Number(kcalRaw);
+        const protein = Number(proteinRaw);
+        const carbs = Number(carbsRaw);
+        const fat = Number(fatRaw);
+
+        if (![kcal, protein, carbs, fat].every((v) => Number.isFinite(v))) continue;
+        if (kcal <= 0 || kcal > 1000) continue;
+
+        const name = String(p.product_name_he || p.product_name || query).trim() || query;
+        const defaultUnit = guessDefaultUnit(name);
+        return {
+          name,
+          category: guessCategory(name),
+          kcalPer100: clamp(Math.round(kcal), 0, 1000),
+          proteinPer100: clamp(Math.round(protein * 10) / 10, 0, 100),
+          carbsPer100: clamp(Math.round(carbs * 10) / 10, 0, 100),
+          fatPer100: clamp(Math.round(fat * 10) / 10, 0, 100),
+          defaultUnit,
+          gramsPerUnit: 100,
+          matchedBy: "OpenFoodFacts"
+        };
+      }
+    } catch {
+      // try next endpoint
+    } finally {
+      clearTimeout(timeout);
+    }
+  }
+  return null;
+}
+
+export async function POST(request: NextRequest) {
+  const body = await request.json().catch(() => ({}));
+  const parsed = schema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  const localSuggestion = suggestNutritionIngredientFromText(parsed.data.text);
+  if (localSuggestion) {
+    return NextResponse.json({ ok: true, suggestion: localSuggestion });
+  }
+
+  const onlineSuggestion = await suggestFromOpenFoodFacts(parsed.data.text);
+  if (!onlineSuggestion) {
+    return NextResponse.json({ ok: false, suggestion: null });
+  }
+
+  return NextResponse.json({ ok: true, suggestion: onlineSuggestion });
+}

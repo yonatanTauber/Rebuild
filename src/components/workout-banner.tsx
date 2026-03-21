@@ -1,1 +1,157 @@
-{"data":"ZXhwb3J0IHR5cGUgV29ya291dEJhbm5lck1ldHJpY0l0ZW0gPSB7CiAgdGl0bGU6IHN0cmluZzsKICB2YWx1ZTogc3RyaW5nOwp9OwoKZXhwb3J0IHR5cGUgV29ya291dEJhbm5lck1ldHJpY3MgPSB7CiAgdG9wTGVhZGluZz86IFdvcmtvdXRCYW5uZXJNZXRyaWNJdGVtIHwgbnVsbDsKICB0b3BUcmFpbGluZz86IFdvcmtvdXRCYW5uZXJNZXRyaWNJdGVtIHwgbnVsbDsKICBib3R0b21MZWFkaW5nPzogV29ya291dEJhbm5lck1ldHJpY0l0ZW0gfCBudWxsOwogIGJvdHRvbVRyYWlsaW5nPzogV29ya291dEJhbm5lck1ldHJpY0l0ZW0gfCBudWxsOwp9OwoKZXhwb3J0IHR5cGUgV29ya291dEJhbm5lck1ldHJpY3NJbnB1dCA9IHsKICBzcG9ydDogc3RyaW5nOwogIGR1cmF0aW9uU2VjOiBudW1iZXI7CiAgZGlzdGFuY2VLbT86IG51bWJlciB8IG51bGw7CiAgcGFjZU1pblBlckttPzogbnVtYmVyIHwgbnVsbDsKICBhdmdIcj86IG51bWJlciB8IG51bGw7CiAgbG9hZD86IG51bWJlciB8IG51bGw7Cn07CgpmdW5jdGlvbiBmb3JtYXREdXJhdGlvbihzZWM6IG51bWJlcikgewogIGNvbnN0IHNhZmUgPSBNYXRoLm1heCgwLCBNYXRoLnJvdW5kKHNlYykpOwogIGNvbnN0IGhvdXJzID0gTWF0aC5mbG9vcihzYWZlIC8gMzYwMCk7CiAgY29uc3QgbWludXRlcyA9IE1hdGguZmxvb3IoKHNhZmUgJSAzNjAwKSAvIDYwKTsKICBjb25zdCBzZWNvbmRzID0gc2FmZSAlIDYwOwogIGlmIChob3VycyA+IDApIHJldHVybiBgJHtob3Vyc306JHtTdHJpbmcobWludXRlcykucGFkU3RhcnQoMiwgIjAiKX06JHtTdHJpbmcoc2Vjb25kcykucGFkU3RhcnQoMiwgIjAiKX1gOwogIHJldHVybiBgJHttaW51dGVzfToke1N0cmluZyhzZWNvbmRzKS5wYWRTdGFydCgyLCAiMCIpfWA7Cn0KCmZ1bmN0aW9uIG5vcm1hbGl6ZWRTcG9ydEtleShzcG9ydDogc3RyaW5nKSB7CiAgY29uc3Qga2V5ID0gU3RyaW5nKHNwb3J0IHx8ICIiKS50cmltKCkudG9Mb3dlckNhc2UoKTsKICBpZiAoWyJydW4iLCAi16jXmdem15QiXS5pbmNsdWRlcyhrZXkpKSByZXR1cm4gInJ1biI7CiAgaWYgKFsiYmlrZSIsICLXkNeV16TXoNeZ15nXnSJdLmluY2x1ZGVzKGtleSkpIHJldHVybiAiYmlrZSI7CiAgaWYgKFsic3dpbSIsICJzd2ltbWluZyIsICJwb29sX3N3aW0iLCAicG9vbCBzd2ltIiwgItep15fXmdeZ15QiXS5pbmNsdWRlcyhrZXkpKSByZXR1cm4gInN3aW0iOwogIGlmIChbInN0cmVuZ3RoIiwgInN0cmVuZ3RoX3RyYWluaW5nIiwgInN0cmVuZ3RoIHRyYWluaW5nIiwgImd5bSIsICLXm9eV15ciLCAi15vXlyJdLmluY2x1ZGVzKGtleSkpIHJldHVybiAic3RyZW5ndGgiOwogIHJldHVybiBrZXkgfHwgInJ1biI7Cn0KCmZ1bmN0aW9uIHNwb3J0QmFubmVySW1hZ2Uoc3BvcnQ6IHN0cmluZykgewogIGNvbnN0IGtleSA9IG5vcm1hbGl6ZWRTcG9ydEtleShzcG9ydCk7CiAgaWYgKGtleSA9PT0gInJ1biIpIHJldHVybiAiL2Jhbm5lcnMvcnVuX2Jhbm5lci5qcGciOwogIGlmIChrZXkgPT09ICJzd2ltIikgcmV0dXJuICIvYmFubmVycy9zd2ltX2Jhbm5lci5qcGciOwogIGlmIChrZXkgPT09ICJzdHJlbmd0aCIpIHJldHVybiAiL2Jhbm5lcnMvc3RyZW5ndGhfYmFubmVyLmpwZyI7CiAgcmV0dXJuIG51bGw7Cn0KCmZ1bmN0aW9uIHNjb3JlQ2hpcChzY29yZTogbnVtYmVyKSB7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJ3b3Jrb3V0LWJhbm5lci1zY29yZSIgYXJpYS1sYWJlbD17YNem15nXldefICR7c2NvcmV9YH0+CiAgICAgIDxzcGFuPtem15nXldefPC9zcGFuPgogICAgICA8c3Ryb25nPntzY29yZX08L3N0cm9uZz4KICAgIDwvZGl2PgogICk7Cn0KCmZ1bmN0aW9uIG1ldHJpY0NoaXAobWV0cmljOiBXb3Jrb3V0QmFubmVyTWV0cmljSXRlbSwgdHJhaWxpbmcgPSBmYWxzZSkgewogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT17dHJhaWxpbmcgPyAid29ya291dC1iYW5uZXItY2hpcCB0cmFpbCIgOiAid29ya291dC1iYW5uZXItY2hpcCJ9IGtleT17YCR7bWV0cmljLnRpdGxlfS0ke21ldHJpYy52YWx1ZX1gfT4KICAgICAgPHNwYW4+e21ldHJpYy50aXRsZX08L3NwYW4+CiAgICAgIDxzdHJvbmc+e21ldHJpYy52YWx1ZX08L3N0cm9uZz4KICAgIDwvZGl2PgogICk7Cn0KCmV4cG9ydCBmdW5jdGlvbiBidWlsZFdvcmtvdXRCYW5uZXJNZXRyaWNzKGlucHV0OiBXb3Jrb3V0QmFubmVyTWV0cmljc0lucHV0KTogV29ya291dEJhbm5lck1ldHJpY3MgewogIGNvbnN0IHNwb3J0ID0gbm9ybWFsaXplZFNwb3J0S2V5KGlucHV0LnNwb3J0KTsKICBjb25zdCBpdGVtczogV29ya291dEJhbm5lck1ldHJpY0l0ZW1bXSA9IFt7IHRpdGxlOiAi157XqdeaIiwgdmFsdWU6IGZvcm1hdER1cmF0aW9uKGlucHV0LmR1cmF0aW9uU2VjKSB9XTsKCiAgaWYgKHNwb3J0ICE9PSAic3RyZW5ndGgiKSB7CiAgICBpZiAoaW5wdXQuZGlzdGFuY2VLbSAhPSBudWxsICYmIE51bWJlci5pc0Zpbml0ZShpbnB1dC5kaXN0YW5jZUttKSAmJiBpbnB1dC5kaXN0YW5jZUttID4gMCkgewogICAgICBpdGVtcy5wdXNoKHsgdGl0bGU6ICLXnteo15fXpyIsIHZhbHVlOiBgJHtpbnB1dC5kaXN0YW5jZUttLnRvRml4ZWQoMSl9INen17TXnmAgfSk7CiAgICB9CiAgICBpZiAoaW5wdXQucGFjZU1pblBlckttICE9IG51bGwgJiYgTnVtYmVyLmlzRmluaXRlKGlucHV0LnBhY2VNaW5QZXJLbSkgJiYgaW5wdXQucGFjZU1pblBlckttID4gMCkgewogICAgICBjb25zdCB0b3RhbFNlYyA9IE1hdGgucm91bmQoaW5wdXQucGFjZU1pblBlckttICogNjApOwogICAgICBjb25zdCBtaW4gPSBNYXRoLmZsb29yKHRvdGFsU2VjIC8gNjApOwogICAgICBjb25zdCBzZWMgPSB0b3RhbFNlYyAlIDYwOwogICAgICBpdGVtcy5wdXNoKHsgdGl0bGU6ICLXp9em15EiLCB2YWx1ZTogYCR7bWlufToke1N0cmluZyhzZWMpLnBhZFN0YXJ0KDIsICIwIil9YCB9KTsKICAgIH0KICB9CgogIGlmIChpbnB1dC5hdmdIciAhPSBudWxsICYmIE51bWJlci5pc0Zpbml0ZShpbnB1dC5hdmdIcikgJiYgaW5wdXQuYXZnSHIgPiAwKSB7CiAgICBpdGVtcy5wdXNoKHsgdGl0bGU6ICLXk9eV16TXpyIsIHZhbHVlOiBgJHtNYXRoLnJvdW5kKGlucHV0LmF2Z0hyKX0gYnBtYCB9KTsKICB9CiAgaWYgKGlucHV0LmxvYWQgIT0gbnVsbCAmJiBOdW1iZXIuaXNGaW5pdGUoaW5wdXQubG9hZCkpIHsKICAgIGl0ZW1zLnB1c2goeyB0aXRsZTogItei15XXntehIiwgdmFsdWU6IGAke01hdGgucm91bmQoaW5wdXQubG9hZCl9YCB9KTsKICB9CgogIGNvbnN0IHVuaXF1ZTogV29ya291dEJhbm5lck1ldHJpY0l0ZW1bXSA9IFtdOwogIGNvbnN0IHNlZW4gPSBuZXcgU2V0PHN0cmluZz4oKTsKICBmb3IgKGNvbnN0IGl0ZW0gb2YgaXRlbXMpIHsKICAgIGlmICghaXRlbS52YWx1ZSB8fCBpdGVtLnZhbHVlID09PSAiLSIgfHwgc2Vlbi5oYXMoaXRlbS50aXRsZSkpIGNvbnRpbnVlOwogICAgc2Vlbi5hZGQoaXRlbS50aXRsZSk7CiAgICB1bmlxdWUucHVzaChpdGVtKTsKICB9CiAgY29uc3QgbGltaXRlZCA9IHVuaXF1ZS5zbGljZSgwLCA0KTsKICByZXR1cm4gewogICAgdG9wTGVhZGluZzogbGltaXRlZFswXSA/PyBudWxsLAogICAgdG9wVHJhaWxpbmc6IGxpbWl0ZWRbMV0gPz8gbnVsbCwKICAgIGJvdHRvbUxlYWRpbmc6IGxpbWl0ZWRbMl0gPz8gbnVsbCwKICAgIGJvdHRvbVRyYWlsaW5nOiBsaW1pdGVkWzNdID8/IG51bGwKICB9Owp9CgpleHBvcnQgZnVuY3Rpb24gV29ya291dEJhbm5lcih7CiAgc3BvcnQsCiAgbWV0cmljcywKICBydW5TY29yZSwKICBjbGFzc05hbWUKfTogewogIHNwb3J0OiBzdHJpbmc7CiAgbWV0cmljczogV29ya291dEJhbm5lck1ldHJpY3M7CiAgcnVuU2NvcmU/OiBudW1iZXIgfCBudWxsOwogIGNsYXNzTmFtZT86IHN0cmluZzsKfSkgewogIGNvbnN0IHNwb3J0S2V5ID0gbm9ybWFsaXplZFNwb3J0S2V5KHNwb3J0KTsKICBjb25zdCBiYW5uZXIgPSBzcG9ydEJhbm5lckltYWdlKHNwb3J0KTsKICBjb25zdCBhbGxNZXRyaWNzID0gW21ldHJpY3MudG9wTGVhZGluZywgbWV0cmljcy50b3BUcmFpbGluZywgbWV0cmljcy5ib3R0b21MZWFkaW5nLCBtZXRyaWNzLmJvdHRvbVRyYWlsaW5nXS5maWx0ZXIoCiAgICBCb29sZWFuCiAgKSBhcyBXb3Jrb3V0QmFubmVyTWV0cmljSXRlbVtdOwogIGNvbnN0IGZpcnN0Um93ID0gYWxsTWV0cmljcy5zbGljZSgwLCAyKTsKICBjb25zdCBzZWNvbmRSb3cgPSBhbGxNZXRyaWNzLnNsaWNlKDIsIDQpOwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9e1sid29ya291dC1iYW5uZXIiLCBgd29ya291dC1iYW5uZXItLSR7c3BvcnRLZXl9YCwgY2xhc3NOYW1lXS5maWx0ZXIoQm9vbGVhbikuam9pbigiICIpfT4KICAgICAge2Jhbm5lciA/ICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0id29ya291dC1iYW5uZXItYmciIHN0eWxlPXt7IGJhY2tncm91bmRJbWFnZTogYHVybCgke2Jhbm5lcn0pYCB9fSBhcmlhLWhpZGRlbiAvPgogICAgICApIDogKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgd29ya291dC1iYW5uZXItYmcgd29ya291dC1iYW5uZXItZmFsbGJhY2sgc3BvcnQtJHtzcG9ydEtleX1gfSBhcmlhLWhpZGRlbiAvPgogICAgICApfQogICAgICA8ZGl2IGNsYXNzTmFtZT17c3BvcnRLZXkgPT09ICJzd2ltIiA/ICJ3b3Jrb3V0LWJhbm5lci1vdmVybGF5IHN3aW0iIDogIndvcmtvdXQtYmFubmVyLW92ZXJsYXkifT4KICAgICAgICB7c3BvcnRLZXkgPT09ICJzd2ltIiA/ICgKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3b3Jrb3V0LWJhbm5lci1tZXRyaWNzLXN3aW0iPgogICAgICAgICAgICB7Zmlyc3RSb3cubGVuZ3RoID4gMCAmJiA8ZGl2IGNsYXNzTmFtZT0id29ya291dC1iYW5uZXItcm93Ij57Zmlyc3RSb3cubWFwKChpdGVtKSA9PiBtZXRyaWNDaGlwKGl0ZW0pKX08L2Rpdj59CiAgICAgICAgICAgIHtzZWNvbmRSb3cubGVuZ3RoID4gMCAmJiAoCiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9IndvcmtvdXQtYmFubmVyLXJvdyI+e3NlY29uZFJvdy5tYXAoKGl0ZW0pID0+IG1ldHJpY0NoaXAoaXRlbSkpfTwvZGl2PgogICAgICAgICAgICApfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgKSA6ICgKICAgICAgICAgIDw+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3b3Jrb3V0LWJhbm5lci1yb3ciPgogICAgICAgICAgICAgIHttZXRyaWNzLnRvcExlYWRpbmcgPyBtZXRyaWNDaGlwKG1ldHJpY3MudG9wTGVhZGluZykgOiA8c3BhbiAvPn0KICAgICAgICAgICAgICB7bWV0cmljcy50b3BUcmFpbGluZyA/IG1ldHJpY0NoaXAobWV0cmljcy50b3BUcmFpbGluZywgdHJ1ZSkgOiA8c3BhbiAvPn0KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3b3Jrb3V0LWJhbm5lci1yb3cgYm90dG9tIj4KICAgICAgICAgICAgICB7bWV0cmljcy5ib3R0b21MZWFkaW5nID8gbWV0cmljQ2hpcChtZXRyaWNzLmJvdHRvbUxlYWRpbmcpIDogPHNwYW4gLz59CiAgICAgICAgICAgICAge21ldHJpY3MuYm90dG9tVHJhaWxpbmcgPyBtZXRyaWNDaGlwKG1ldHJpY3MuYm90dG9tVHJhaWxpbmcsIHRydWUpIDogPHNwYW4gLz59CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC8+CiAgICAgICAgKX0KICAgICAgPC9kaXY+CiAgICAgIHtzcG9ydEtleSAhPT0gInJ1biIgJiYgcnVuU2NvcmUgIT0gbnVsbCAmJiBOdW1iZXIuaXNGaW5pdGUocnVuU2NvcmUpID8gKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3b3Jrb3V0LWJhbm5lci1zY29yZS13cmFwIj57c2NvcmVDaGlwKE1hdGgucm91bmQocnVuU2NvcmUpKX08L2Rpdj4KICAgICAgKSA6IG51bGx9CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+export type WorkoutBannerMetricItem = {
+  title: string;
+  value: string;
+};
+
+export type WorkoutBannerMetrics = {
+  topLeading?: WorkoutBannerMetricItem | null;
+  topTrailing?: WorkoutBannerMetricItem | null;
+  bottomLeading?: WorkoutBannerMetricItem | null;
+  bottomTrailing?: WorkoutBannerMetricItem | null;
+};
+
+export type WorkoutBannerMetricsInput = {
+  sport: string;
+  durationSec: number;
+  distanceKm?: number | null;
+  paceMinPerKm?: number | null;
+  avgHr?: number | null;
+  load?: number | null;
+};
+
+function formatDuration(sec: number) {
+  const safe = Math.max(0, Math.round(sec));
+  const hours = Math.floor(safe / 3600);
+  const minutes = Math.floor((safe % 3600) / 60);
+  const seconds = safe % 60;
+  if (hours > 0) return `${hours}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  return `${minutes}:${String(seconds).padStart(2, "0")}`;
+}
+
+function normalizedSportKey(sport: string) {
+  const key = String(sport || "").trim().toLowerCase();
+  if (["run", "ריצה"].includes(key)) return "run";
+  if (["bike", "אופניים"].includes(key)) return "bike";
+  if (["swim", "swimming", "pool_swim", "pool swim", "שחייה"].includes(key)) return "swim";
+  if (["strength", "strength_training", "strength training", "gym", "כוח", "כח"].includes(key)) return "strength";
+  return key || "run";
+}
+
+function sportBannerImage(sport: string) {
+  const key = normalizedSportKey(sport);
+  if (key === "run") return "/banners/run_banner.jpg";
+  if (key === "swim") return "/banners/swim_banner.jpg";
+  if (key === "strength") return "/banners/strength_banner.jpg";
+  return null;
+}
+
+function scoreChip(score: number) {
+  return (
+    <div className="workout-banner-score" aria-label={`ציון ${score}`}>
+      <span>ציון</span>
+      <strong>{score}</strong>
+    </div>
+  );
+}
+
+function metricChip(metric: WorkoutBannerMetricItem, trailing = false) {
+  return (
+    <div className={trailing ? "workout-banner-chip trail" : "workout-banner-chip"} key={`${metric.title}-${metric.value}`}>
+      <span>{metric.title}</span>
+      <strong>{metric.value}</strong>
+    </div>
+  );
+}
+
+export function buildWorkoutBannerMetrics(input: WorkoutBannerMetricsInput): WorkoutBannerMetrics {
+  const sport = normalizedSportKey(input.sport);
+  const items: WorkoutBannerMetricItem[] = [{ title: "משך", value: formatDuration(input.durationSec) }];
+
+  if (sport !== "strength") {
+    if (input.distanceKm != null && Number.isFinite(input.distanceKm) && input.distanceKm > 0) {
+      items.push({ title: "מרחק", value: `${input.distanceKm.toFixed(1)} ק״מ` });
+    }
+    if (input.paceMinPerKm != null && Number.isFinite(input.paceMinPerKm) && input.paceMinPerKm > 0) {
+      const totalSec = Math.round(input.paceMinPerKm * 60);
+      const min = Math.floor(totalSec / 60);
+      const sec = totalSec % 60;
+      items.push({ title: "קצב", value: `${min}:${String(sec).padStart(2, "0")}` });
+    }
+  }
+
+  if (input.avgHr != null && Number.isFinite(input.avgHr) && input.avgHr > 0) {
+    items.push({ title: "דופק", value: `${Math.round(input.avgHr)} bpm` });
+  }
+  if (input.load != null && Number.isFinite(input.load)) {
+    items.push({ title: "עומס", value: `${Math.round(input.load)}` });
+  }
+
+  const unique: WorkoutBannerMetricItem[] = [];
+  const seen = new Set<string>();
+  for (const item of items) {
+    if (!item.value || item.value === "-" || seen.has(item.title)) continue;
+    seen.add(item.title);
+    unique.push(item);
+  }
+  const limited = unique.slice(0, 4);
+  return {
+    topLeading: limited[0] ?? null,
+    topTrailing: limited[1] ?? null,
+    bottomLeading: limited[2] ?? null,
+    bottomTrailing: limited[3] ?? null
+  };
+}
+
+export function WorkoutBanner({
+  sport,
+  metrics,
+  runScore,
+  className
+}: {
+  sport: string;
+  metrics: WorkoutBannerMetrics;
+  runScore?: number | null;
+  className?: string;
+}) {
+  const sportKey = normalizedSportKey(sport);
+  const banner = sportBannerImage(sport);
+  const allMetrics = [metrics.topLeading, metrics.topTrailing, metrics.bottomLeading, metrics.bottomTrailing].filter(
+    Boolean
+  ) as WorkoutBannerMetricItem[];
+  const firstRow = allMetrics.slice(0, 2);
+  const secondRow = allMetrics.slice(2, 4);
+
+  return (
+    <div className={["workout-banner", `workout-banner--${sportKey}`, className].filter(Boolean).join(" ")}>
+      {banner ? (
+        <div className="workout-banner-bg" style={{ backgroundImage: `url(${banner})` }} aria-hidden />
+      ) : (
+        <div className={`workout-banner-bg workout-banner-fallback sport-${sportKey}`} aria-hidden />
+      )}
+      <div className={sportKey === "swim" ? "workout-banner-overlay swim" : "workout-banner-overlay"}>
+        {sportKey === "swim" ? (
+          <div className="workout-banner-metrics-swim">
+            {firstRow.length > 0 && <div className="workout-banner-row">{firstRow.map((item) => metricChip(item))}</div>}
+            {secondRow.length > 0 && (
+              <div className="workout-banner-row">{secondRow.map((item) => metricChip(item))}</div>
+            )}
+          </div>
+        ) : (
+          <>
+            <div className="workout-banner-row">
+              {metrics.topLeading ? metricChip(metrics.topLeading) : <span />}
+              {metrics.topTrailing ? metricChip(metrics.topTrailing, true) : <span />}
+            </div>
+            <div className="workout-banner-row bottom">
+              {metrics.bottomLeading ? metricChip(metrics.bottomLeading) : <span />}
+              {metrics.bottomTrailing ? metricChip(metrics.bottomTrailing, true) : <span />}
+            </div>
+          </>
+        )}
+      </div>
+      {sportKey !== "run" && runScore != null && Number.isFinite(runScore) ? (
+        <div className="workout-banner-score-wrap">{scoreChip(Math.round(runScore))}</div>
+      ) : null}
+    </div>
+  );
+}

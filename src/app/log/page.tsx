@@ -1,1 +1,272 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IExpbmsgZnJvbSAibmV4dC9saW5rIjsKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VNZW1vLCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgV29ya291dEJhbm5lciwgYnVpbGRXb3Jrb3V0QmFubmVyTWV0cmljcyB9IGZyb20gIkAvY29tcG9uZW50cy93b3Jrb3V0LWJhbm5lciI7CmltcG9ydCB7IGZvcm1hdERpc3BsYXlEYXRlLCBmb3JtYXREaXNwbGF5RGF0ZVRpbWUsIGZvcm1hdExvY2FsSVNPRGF0ZSB9IGZyb20gIkAvbGliL2RhdGUiOwppbXBvcnQgeyB3b3Jrb3V0RGV0YWlsUGF0aCB9IGZyb20gIkAvbGliL3VybCI7Cgp0eXBlIENhbGVuZGFyVmlldyA9ICJtb250aCIgfCAid2VlayI7Cgp0eXBlIFdvcmtvdXRJdGVtID0gewogIGlkOiBzdHJpbmc7CiAgc3BvcnQ6ICJydW4iIHwgImJpa2UiIHwgInN3aW0iIHwgInN0cmVuZ3RoIjsKICBzb3VyY2U6ICJzdHJhdmEiIHwgImhlYWx0aGZpdCIgfCAiYmF2ZWwiIHwgInNtYXNocnVuIjsKICBzdGFydEF0OiBzdHJpbmc7CiAgZHVyYXRpb25TZWM6IG51bWJlcjsKICBkaXN0YW5jZU0/OiBudW1iZXIgfCBudWxsOwogIGF2Z0hyPzogbnVtYmVyIHwgbnVsbDsKICBlbGV2YXRpb25NPzogbnVtYmVyIHwgbnVsbDsKICB0c3NMaWtlOiBudW1iZXI7CiAgc2hvZU5hbWU/OiBzdHJpbmcgfCBudWxsOwp9OwoKdHlwZSBDYWxlbmRhclJlc3BvbnNlID0gewogIHZpZXc6IENhbGVuZGFyVmlldzsKICBhbmNob3JEYXRlOiBzdHJpbmc7CiAgZnJvbTogc3RyaW5nOwogIHRvOiBzdHJpbmc7CiAgd29ya291dHM6IFdvcmtvdXRJdGVtW107Cn07CgpmdW5jdGlvbiBpc29EYXRlKGRhdGU6IERhdGUpIHsKICByZXR1cm4gZGF0ZS50b0lTT1N0cmluZygpLnNsaWNlKDAsIDEwKTsKfQoKZnVuY3Rpb24gYWRkRGF5cyhkYXRlOiBEYXRlLCBkYXlzOiBudW1iZXIpIHsKICBjb25zdCBjb3B5ID0gbmV3IERhdGUoZGF0ZSk7CiAgY29weS5zZXREYXRlKGNvcHkuZ2V0RGF0ZSgpICsgZGF5cyk7CiAgcmV0dXJuIGNvcHk7Cn0KCmZ1bmN0aW9uIGFkZE1vbnRocyhkYXRlOiBEYXRlLCBtb250aHM6IG51bWJlcikgewogIHJldHVybiBuZXcgRGF0ZShkYXRlLmdldEZ1bGxZZWFyKCksIGRhdGUuZ2V0TW9udGgoKSArIG1vbnRocywgZGF0ZS5nZXREYXRlKCkpOwp9CgpmdW5jdGlvbiBmb3JtYXREdXJhdGlvbihzZWM6IG51bWJlcikgewogIGNvbnN0IG1pbiA9IE1hdGgucm91bmQoc2VjIC8gNjApOwogIGNvbnN0IGggPSBNYXRoLmZsb29yKG1pbiAvIDYwKTsKICBjb25zdCBtID0gbWluICUgNjA7CiAgcmV0dXJuIGggPiAwID8gYCR7aH06JHtTdHJpbmcobSkucGFkU3RhcnQoMiwgIjAiKX1gIDogYCR7bX0g15PXpydgOwp9CgpmdW5jdGlvbiBzcG9ydExhYmVsKHNwb3J0OiBXb3Jrb3V0SXRlbVsic3BvcnQiXSkgewogIGlmIChzcG9ydCA9PT0gInJ1biIpIHJldHVybiAi16jXmdem15QiOwogIGlmIChzcG9ydCA9PT0gImJpa2UiKSByZXR1cm4gIteQ15XXpNeg15nXmdedIjsKICBpZiAoc3BvcnQgPT09ICJzdHJlbmd0aCIpIHJldHVybiAi15vXldeXIjsKICByZXR1cm4gItep15fXmdeZ15QiOwp9CgpmdW5jdGlvbiB3ZWVrZGF5TGFiZWxzKCkgewogIHJldHVybiBbIteo15DXqdeV158iLCAi16nXoNeZIiwgItep15zXmdep15kiLCAi16jXkdeZ16LXmSIsICLXl9ee15nXqdeZIiwgItep15nXqdeZIiwgItep15HXqiJdOwp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBMb2dQYWdlKCkgewogIGNvbnN0IFt2aWV3LCBzZXRWaWV3XSA9IHVzZVN0YXRlPENhbGVuZGFyVmlldz4oIndlZWsiKTsKICBjb25zdCBbYW5jaG9yRGF0ZSwgc2V0QW5jaG9yRGF0ZV0gPSB1c2VTdGF0ZTxzdHJpbmc+KGlzb0RhdGUobmV3IERhdGUoKSkpOwogIGNvbnN0IFtzZWxlY3RlZERhdGUsIHNldFNlbGVjdGVkRGF0ZV0gPSB1c2VTdGF0ZTxzdHJpbmc+KGlzb0RhdGUobmV3IERhdGUoKSkpOwogIGNvbnN0IFthY3RpdmVXb3Jrb3V0SWQsIHNldEFjdGl2ZVdvcmtvdXRJZF0gPSB1c2VTdGF0ZTxzdHJpbmcgfCBudWxsPihudWxsKTsKICBjb25zdCBbZGF0YSwgc2V0RGF0YV0gPSB1c2VTdGF0ZTxDYWxlbmRhclJlc3BvbnNlIHwgbnVsbD4obnVsbCk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICB2b2lkIGZldGNoKGAvYXBpL3dvcmtvdXRzP3ZpZXc9JHt2aWV3fSZkYXRlPSR7YW5jaG9yRGF0ZX1gKQogICAgICAudGhlbigocmVzcG9uc2UpID0+IHJlc3BvbnNlLmpzb24oKSkKICAgICAgLnRoZW4oKHBheWxvYWQpID0+IHNldERhdGEocGF5bG9hZCBhcyBDYWxlbmRhclJlc3BvbnNlKSk7CiAgfSwgW3ZpZXcsIGFuY2hvckRhdGVdKTsKCiAgY29uc3Qgd29ya291dHNCeURhdGUgPSB1c2VNZW1vKCgpID0+IHsKICAgIGNvbnN0IG1hcCA9IG5ldyBNYXA8c3RyaW5nLCBXb3Jrb3V0SXRlbVtdPigpOwogICAgZm9yIChjb25zdCB3b3Jrb3V0IG9mIGRhdGE/LndvcmtvdXRzID8/IFtdKSB7CiAgICAgIGNvbnN0IGtleSA9IGZvcm1hdExvY2FsSVNPRGF0ZSh3b3Jrb3V0LnN0YXJ0QXQpOwogICAgICBjb25zdCBsaXN0ID0gbWFwLmdldChrZXkpID8/IFtdOwogICAgICBsaXN0LnB1c2god29ya291dCk7CiAgICAgIG1hcC5zZXQoa2V5LCBsaXN0KTsKICAgIH0KCiAgICBmb3IgKGNvbnN0IFtrZXksIGxpc3RdIG9mIG1hcC5lbnRyaWVzKCkpIHsKICAgICAgbWFwLnNldCgKICAgICAgICBrZXksCiAgICAgICAgWy4uLmxpc3RdLnNvcnQoKGEsIGIpID0+IG5ldyBEYXRlKGEuc3RhcnRBdCkuZ2V0VGltZSgpIC0gbmV3IERhdGUoYi5zdGFydEF0KS5nZXRUaW1lKCkpCiAgICAgICk7CiAgICB9CgogICAgcmV0dXJuIG1hcDsKICB9LCBbZGF0YV0pOwoKICBjb25zdCB2aXNpYmxlRGF5cyA9IHVzZU1lbW8oKCkgPT4gewogICAgaWYgKCFkYXRhKSByZXR1cm4gW10gYXMgRGF0ZVtdOwogICAgY29uc3QgZnJvbSA9IG5ldyBEYXRlKGRhdGEuZnJvbSk7CiAgICBjb25zdCB0byA9IG5ldyBEYXRlKGRhdGEudG8pOwoKICAgIGNvbnN0IGRheXM6IERhdGVbXSA9IFtdOwogICAgZm9yIChsZXQgZCA9IG5ldyBEYXRlKGZyb20pOyBkIDw9IHRvOyBkID0gYWRkRGF5cyhkLCAxKSkgewogICAgICBkYXlzLnB1c2gobmV3IERhdGUoZCkpOwogICAgfQogICAgcmV0dXJuIGRheXM7CiAgfSwgW2RhdGFdKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGlmICghZGF0YSkgcmV0dXJuOwogICAgaWYgKHNlbGVjdGVkRGF0ZSA+PSBkYXRhLmZyb20gJiYgc2VsZWN0ZWREYXRlIDw9IGRhdGEudG8pIHJldHVybjsKICAgIHNldFNlbGVjdGVkRGF0ZShkYXRhLmFuY2hvckRhdGUgPz8gaXNvRGF0ZShuZXcgRGF0ZSgpKSk7CiAgfSwgW2RhdGEsIHNlbGVjdGVkRGF0ZV0pOwoKICBjb25zdCBzZWxlY3RlZFdvcmtvdXRzID0gd29ya291dHNCeURhdGUuZ2V0KHNlbGVjdGVkRGF0ZSkgPz8gW107CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAoIXNlbGVjdGVkV29ya291dHMubGVuZ3RoKSB7CiAgICAgIHNldEFjdGl2ZVdvcmtvdXRJZChudWxsKTsKICAgICAgcmV0dXJuOwogICAgfQogICAgaWYgKGFjdGl2ZVdvcmtvdXRJZCAmJiBzZWxlY3RlZFdvcmtvdXRzLnNvbWUoKHcpID0+IHcuaWQgPT09IGFjdGl2ZVdvcmtvdXRJZCkpIHJldHVybjsKICAgIHNldEFjdGl2ZVdvcmtvdXRJZChzZWxlY3RlZFdvcmtvdXRzWzBdLmlkKTsKICB9LCBbYWN0aXZlV29ya291dElkLCBzZWxlY3RlZFdvcmtvdXRzXSk7CgogIGNvbnN0IGFjdGl2ZVdvcmtvdXQgPSBzZWxlY3RlZFdvcmtvdXRzLmZpbmQoKGl0ZW0pID0+IGl0ZW0uaWQgPT09IGFjdGl2ZVdvcmtvdXRJZCkgPz8gc2VsZWN0ZWRXb3Jrb3V0c1swXSA/PyBudWxsOwoKICBjb25zdCBhbmNob3IgPSBuZXcgRGF0ZShhbmNob3JEYXRlKTsKICBjb25zdCB0aXRsZSA9CiAgICB2aWV3ID09PSAibW9udGgiCiAgICAgID8gYCR7U3RyaW5nKGFuY2hvci5nZXRNb250aCgpICsgMSkucGFkU3RhcnQoMiwgIjAiKX0tJHtTdHJpbmcoYW5jaG9yLmdldEZ1bGxZZWFyKCkpLnNsaWNlKC0yKX1gCiAgICAgIDogZGF0YQogICAgICAgID8gYNep15HXldeiICR7Zm9ybWF0RGlzcGxheURhdGUoZGF0YS5mcm9tKX0g16LXkyAke2Zvcm1hdERpc3BsYXlEYXRlKGRhdGEudG8pfWAKICAgICAgICA6IGDXqdeR15XXoiAke2Zvcm1hdERpc3BsYXlEYXRlKGFuY2hvcil9YDsKCiAgZnVuY3Rpb24gZ29QcmV2aW91cygpIHsKICAgIGNvbnN0IGRhdGUgPSBuZXcgRGF0ZShhbmNob3JEYXRlKTsKICAgIHNldEFuY2hvckRhdGUoaXNvRGF0ZSh2aWV3ID09PSAibW9udGgiID8gYWRkTW9udGhzKGRhdGUsIC0xKSA6IGFkZERheXMoZGF0ZSwgLTcpKSk7CiAgfQoKICBmdW5jdGlvbiBnb05leHQoKSB7CiAgICBjb25zdCBkYXRlID0gbmV3IERhdGUoYW5jaG9yRGF0ZSk7CiAgICBzZXRBbmNob3JEYXRlKGlzb0RhdGUodmlldyA9PT0gIm1vbnRoIiA/IGFkZE1vbnRocyhkYXRlLCAxKSA6IGFkZERheXMoZGF0ZSwgNykpKTsKICB9CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ibG9nLXBhZ2UiPgogICAgICA8aGVhZGVyIGNsYXNzTmFtZT0icGFnZS1oZWFkZXIiPgogICAgICAgIDxoMT7XmdeV157XnyDXkNeZ157Xldeg15nXnTwvaDE+CiAgICAgICAgPHA+15nXldee158g16jXpteZ16M6INeR15XXl9eo15nXnSDXmdeV150g15XXqNeV15DXmdedINee15nXkyDXkNeqINeU15DXmdee15XXnyDXlNek16LXmdecINeR15DXldeq15Ug157XqdeY15cuPC9wPgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0ibG9nLXN1cmZhY2UiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJsb2ctdG9vbGJhciI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iY2FsZW5kYXItc3dpdGNoIiByb2xlPSJ0YWJsaXN0IiBhcmlhLWxhYmVsPSLXqtem15XXkteqINeZ15XXntefIj4KICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgIGNsYXNzTmFtZT17dmlldyA9PT0gIm1vbnRoIiA/ICJjYWxlbmRhci10YWIgYWN0aXZlIiA6ICJjYWxlbmRhci10YWIifQogICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldFZpZXcoIm1vbnRoIil9CiAgICAgICAgICAgID4KICAgICAgICAgICAgICDXl9eV15PXqdeZCiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT17dmlldyA9PT0gIndlZWsiID8gImNhbGVuZGFyLXRhYiBhY3RpdmUiIDogImNhbGVuZGFyLXRhYiJ9IG9uQ2xpY2s9eygpID0+IHNldFZpZXcoIndlZWsiKX0+CiAgICAgICAgICAgICAg16nXkdeV16LXmQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJjYWxlbmRhci1uYXYiPgogICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9e2dvUHJldmlvdXN9PteU16fXldeT1508L2J1dHRvbj4KICAgICAgICAgICAgPHN0cm9uZz57dGl0bGV9PC9zdHJvbmc+CiAgICAgICAgICAgIDxidXR0b24gb25DbGljaz17Z29OZXh0fT7XlNeR15A8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibG9nLXN1cmZhY2UtbGF5b3V0Ij4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJsb2ctY2FsZW5kYXItZ3JpZCI+CiAgICAgICAgICAgIHt3ZWVrZGF5TGFiZWxzKCkubWFwKChsYWJlbCkgPT4gKAogICAgICAgICAgICAgIDxkaXYga2V5PXtsYWJlbH0gY2xhc3NOYW1lPSJjYWxlbmRhci13ZWVrZGF5Ij4KICAgICAgICAgICAgICAgIHtsYWJlbH0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgKSl9CgogICAgICAgICAgICB7dmlzaWJsZURheXMubWFwKChkYXkpID0+IHsKICAgICAgICAgICAgICBjb25zdCBkYXlLZXkgPSBpc29EYXRlKGRheSk7CiAgICAgICAgICAgICAgY29uc3QgaXRlbXMgPSB3b3Jrb3V0c0J5RGF0ZS5nZXQoZGF5S2V5KSA/PyBbXTsKICAgICAgICAgICAgICBjb25zdCBpbkN1cnJlbnRNb250aCA9IGRheS5nZXRNb250aCgpID09PSBuZXcgRGF0ZShhbmNob3JEYXRlKS5nZXRNb250aCgpOwogICAgICAgICAgICAgIGNvbnN0IHNlbGVjdGVkID0gZGF5S2V5ID09PSBzZWxlY3RlZERhdGU7CgogICAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgIGtleT17ZGF5S2V5fQogICAgICAgICAgICAgICAgICB0eXBlPSJidXR0b24iCiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17WwogICAgICAgICAgICAgICAgICAgICJsb2ctZGF5LWNlbGwiLAogICAgICAgICAgICAgICAgICAgIGluQ3VycmVudE1vbnRoID8gIiIgOiAibXV0ZWQiLAogICAgICAgICAgICAgICAgICAgIHNlbGVjdGVkID8gInNlbGVjdGVkIiA6ICIiLAogICAgICAgICAgICAgICAgICAgIGl0ZW1zLmxlbmd0aCA+IDAgPyAiaGFzLXdvcmtvdXQiIDogIiIKICAgICAgICAgICAgICAgICAgXQogICAgICAgICAgICAgICAgICAgIC5qb2luKCIgIikKICAgICAgICAgICAgICAgICAgICAudHJpbSgpfQogICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRTZWxlY3RlZERhdGUoZGF5S2V5KX0KICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJsb2ctZGF5LWRhdGUiPntmb3JtYXREaXNwbGF5RGF0ZShkYXkpfTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJsb2ctZGF5LWNvdW50Ij57aXRlbXMubGVuZ3RofSDXkNeZ157Xldeg15nXnTwvc3Bhbj4KICAgICAgICAgICAgICAgICAge2l0ZW1zLmxlbmd0aCA+IDAgPyA8aSBhcmlhLWhpZGRlbiBjbGFzc05hbWU9ImxvZy1kYXktZG90IiAvPiA6IG51bGx9CiAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICApOwogICAgICAgICAgICB9KX0KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxhc2lkZSBjbGFzc05hbWU9ImxvZy1hY3RpdmUtcGFuZWwiPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibG9nLWFjdGl2ZS1oZWFkIj4KICAgICAgICAgICAgICA8c3Ryb25nPntmb3JtYXREaXNwbGF5RGF0ZShzZWxlY3RlZERhdGUpfTwvc3Ryb25nPgogICAgICAgICAgICAgIDxzcGFuPntzZWxlY3RlZFdvcmtvdXRzLmxlbmd0aH0g15DXmdee15XXoNeZ1508L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAge3NlbGVjdGVkV29ya291dHMubGVuZ3RoID4gMSA/ICgKICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibG9nLWRheS13b3Jrb3V0LXRhYnMiIHJvbGU9InRhYmxpc3QiIGFyaWEtbGFiZWw9IteQ15nXnteV16DXmSDXlNeZ15XXnSI+CiAgICAgICAgICAgICAgICB7c2VsZWN0ZWRXb3Jrb3V0cy5tYXAoKGl0ZW0pID0+ICgKICAgICAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgICAgIGtleT17aXRlbS5pZH0KICAgICAgICAgICAgICAgICAgICB0eXBlPSJidXR0b24iCiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtpdGVtLmlkID09PSBhY3RpdmVXb3Jrb3V0Py5pZCA/ICJsb2ctZGF5LXdvcmtvdXQtdGFiIGFjdGl2ZSIgOiAibG9nLWRheS13b3Jrb3V0LXRhYiJ9CiAgICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0QWN0aXZlV29ya291dElkKGl0ZW0uaWQpfQogICAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgICAge3Nwb3J0TGFiZWwoaXRlbS5zcG9ydCl9IMK3IHtmb3JtYXREdXJhdGlvbihpdGVtLmR1cmF0aW9uU2VjKX0KICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgKSA6IG51bGx9CgogICAgICAgICAgICB7YWN0aXZlV29ya291dCA/ICgKICAgICAgICAgICAgICA8YXJ0aWNsZSBjbGFzc05hbWU9ImxvZy1hY3RpdmUtd29ya291dC1jYXJkIj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJsb2ctYWN0aXZlLXdvcmtvdXQtbWFpbiI+CiAgICAgICAgICAgICAgICAgIDxXb3Jrb3V0QmFubmVyCiAgICAgICAgICAgICAgICAgICAgc3BvcnQ9e2FjdGl2ZVdvcmtvdXQuc3BvcnR9CiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJsb2ctYWN0aXZlLWJhbm5lciIKICAgICAgICAgICAgICAgICAgICBtZXRyaWNzPXtidWlsZFdvcmtvdXRCYW5uZXJNZXRyaWNzKHsKICAgICAgICAgICAgICAgICAgICAgIHNwb3J0OiBhY3RpdmVXb3Jrb3V0LnNwb3J0LAogICAgICAgICAgICAgICAgICAgICAgZHVyYXRpb25TZWM6IGFjdGl2ZVdvcmtvdXQuZHVyYXRpb25TZWMsCiAgICAgICAgICAgICAgICAgICAgICBkaXN0YW5jZUttOiBhY3RpdmVXb3Jrb3V0LmRpc3RhbmNlTSAhPSBudWxsID8gYWN0aXZlV29ya291dC5kaXN0YW5jZU0gLyAxMDAwIDogbnVsbCwKICAgICAgICAgICAgICAgICAgICAgIGF2Z0hyOiBhY3RpdmVXb3Jrb3V0LmF2Z0hyID8/IG51bGwsCiAgICAgICAgICAgICAgICAgICAgICBsb2FkOiBhY3RpdmVXb3Jrb3V0LnRzc0xpa2UKICAgICAgICAgICAgICAgICAgICB9KX0KICAgICAgICAgICAgICAgICAgICBydW5TY29yZT17bnVsbH0KICAgICAgICAgICAgICAgICAgLz4KCiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJsb2ctYWN0aXZlLW1ldGEiPgogICAgICAgICAgICAgICAgICAgIDxoMz57c3BvcnRMYWJlbChhY3RpdmVXb3Jrb3V0LnNwb3J0KX08L2gzPgogICAgICAgICAgICAgICAgICAgIDxwPntmb3JtYXREaXNwbGF5RGF0ZVRpbWUoYWN0aXZlV29ya291dC5zdGFydEF0KX08L3A+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImxvZy1hY3RpdmUtcGlsbHMiPgogICAgICAgICAgICAgICAgICAgICAgPHNwYW4+157XqdeaOiB7Zm9ybWF0RHVyYXRpb24oYWN0aXZlV29ya291dC5kdXJhdGlvblNlYyl9PC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAge2FjdGl2ZVdvcmtvdXQuZGlzdGFuY2VNICE9IG51bGwgPyA8c3Bhbj7Xnteo15fXpzogeyhhY3RpdmVXb3Jrb3V0LmRpc3RhbmNlTSAvIDEwMDApLnRvRml4ZWQoMSl9INenIteePC9zcGFuPiA6IG51bGx9CiAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj7XoteV157XoToge01hdGgucm91bmQoYWN0aXZlV29ya291dC50c3NMaWtlKX08L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICB7YWN0aXZlV29ya291dC5hdmdIciA/IDxzcGFuPteT15XXpNenOiB7TWF0aC5yb3VuZChhY3RpdmVXb3Jrb3V0LmF2Z0hyKX08L3NwYW4+IDogbnVsbH0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICB7YWN0aXZlV29ya291dC5zaG9lTmFtZSA/IDxzbWFsbD7XoNei15w6IHthY3RpdmVXb3Jrb3V0LnNob2VOYW1lfTwvc21hbGw+IDogbnVsbH0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibG9nLWFjdGl2ZS1hY3Rpb25zIj4KICAgICAgICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9e3dvcmtvdXREZXRhaWxQYXRoKGFjdGl2ZVdvcmtvdXQuaWQpfSBjbGFzc05hbWU9ImlubGluZS1jdGEtbGluayI+CiAgICAgICAgICAgICAgICAgICAgICAgINek16rXmdeX16og15DXmdee15XXnyDXntec15AKICAgICAgICAgICAgICAgICAgICAgIDwvTGluaz4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8L2FydGljbGU+CiAgICAgICAgICAgICkgOiAoCiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImxvZy1lbXB0eSI+15zXkCDXoNee16bXkCDXkNeZ157XldefINeR15nXldedINeU16DXkdeX16guPC9kaXY+CiAgICAgICAgICAgICl9CiAgICAgICAgICA8L2FzaWRlPgogICAgICAgIDwvZGl2PgogICAgICA8L3NlY3Rpb24+CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+"use client";
+
+import Link from "next/link";
+import { useEffect, useMemo, useState } from "react";
+import { WorkoutBanner, buildWorkoutBannerMetrics } from "@/components/workout-banner";
+import { formatDisplayDate, formatDisplayDateTime, formatLocalISODate } from "@/lib/date";
+import { workoutDetailPath } from "@/lib/url";
+
+type CalendarView = "month" | "week";
+
+type WorkoutItem = {
+  id: string;
+  sport: "run" | "bike" | "swim" | "strength";
+  source: "strava" | "healthfit" | "bavel" | "smashrun";
+  startAt: string;
+  durationSec: number;
+  distanceM?: number | null;
+  avgHr?: number | null;
+  elevationM?: number | null;
+  tssLike: number;
+  shoeName?: string | null;
+};
+
+type CalendarResponse = {
+  view: CalendarView;
+  anchorDate: string;
+  from: string;
+  to: string;
+  workouts: WorkoutItem[];
+};
+
+function isoDate(date: Date) {
+  return date.toISOString().slice(0, 10);
+}
+
+function addDays(date: Date, days: number) {
+  const copy = new Date(date);
+  copy.setDate(copy.getDate() + days);
+  return copy;
+}
+
+function addMonths(date: Date, months: number) {
+  return new Date(date.getFullYear(), date.getMonth() + months, date.getDate());
+}
+
+function formatDuration(sec: number) {
+  const min = Math.round(sec / 60);
+  const h = Math.floor(min / 60);
+  const m = min % 60;
+  return h > 0 ? `${h}:${String(m).padStart(2, "0")}` : `${m} דק'`;
+}
+
+function sportLabel(sport: WorkoutItem["sport"]) {
+  if (sport === "run") return "ריצה";
+  if (sport === "bike") return "אופניים";
+  if (sport === "strength") return "כוח";
+  return "שחייה";
+}
+
+function weekdayLabels() {
+  return ["ראשון", "שני", "שלישי", "רביעי", "חמישי", "שישי", "שבת"];
+}
+
+export default function LogPage() {
+  const [view, setView] = useState<CalendarView>("week");
+  const [anchorDate, setAnchorDate] = useState<string>(isoDate(new Date()));
+  const [selectedDate, setSelectedDate] = useState<string>(isoDate(new Date()));
+  const [activeWorkoutId, setActiveWorkoutId] = useState<string | null>(null);
+  const [data, setData] = useState<CalendarResponse | null>(null);
+
+  useEffect(() => {
+    void fetch(`/api/workouts?view=${view}&date=${anchorDate}`)
+      .then((response) => response.json())
+      .then((payload) => setData(payload as CalendarResponse));
+  }, [view, anchorDate]);
+
+  const workoutsByDate = useMemo(() => {
+    const map = new Map<string, WorkoutItem[]>();
+    for (const workout of data?.workouts ?? []) {
+      const key = formatLocalISODate(workout.startAt);
+      const list = map.get(key) ?? [];
+      list.push(workout);
+      map.set(key, list);
+    }
+
+    for (const [key, list] of map.entries()) {
+      map.set(
+        key,
+        [...list].sort((a, b) => new Date(a.startAt).getTime() - new Date(b.startAt).getTime())
+      );
+    }
+
+    return map;
+  }, [data]);
+
+  const visibleDays = useMemo(() => {
+    if (!data) return [] as Date[];
+    const from = new Date(data.from);
+    const to = new Date(data.to);
+
+    const days: Date[] = [];
+    for (let d = new Date(from); d <= to; d = addDays(d, 1)) {
+      days.push(new Date(d));
+    }
+    return days;
+  }, [data]);
+
+  useEffect(() => {
+    if (!data) return;
+    if (selectedDate >= data.from && selectedDate <= data.to) return;
+    setSelectedDate(data.anchorDate ?? isoDate(new Date()));
+  }, [data, selectedDate]);
+
+  const selectedWorkouts = workoutsByDate.get(selectedDate) ?? [];
+
+  useEffect(() => {
+    if (!selectedWorkouts.length) {
+      setActiveWorkoutId(null);
+      return;
+    }
+    if (activeWorkoutId && selectedWorkouts.some((w) => w.id === activeWorkoutId)) return;
+    setActiveWorkoutId(selectedWorkouts[0].id);
+  }, [activeWorkoutId, selectedWorkouts]);
+
+  const activeWorkout = selectedWorkouts.find((item) => item.id === activeWorkoutId) ?? selectedWorkouts[0] ?? null;
+
+  const anchor = new Date(anchorDate);
+  const title =
+    view === "month"
+      ? `${String(anchor.getMonth() + 1).padStart(2, "0")}-${String(anchor.getFullYear()).slice(-2)}`
+      : data
+        ? `שבוע ${formatDisplayDate(data.from)} עד ${formatDisplayDate(data.to)}`
+        : `שבוע ${formatDisplayDate(anchor)}`;
+
+  function goPrevious() {
+    const date = new Date(anchorDate);
+    setAnchorDate(isoDate(view === "month" ? addMonths(date, -1) : addDays(date, -7)));
+  }
+
+  function goNext() {
+    const date = new Date(anchorDate);
+    setAnchorDate(isoDate(view === "month" ? addMonths(date, 1) : addDays(date, 7)));
+  }
+
+  return (
+    <div className="log-page">
+      <header className="page-header">
+        <h1>יומן אימונים</h1>
+        <p>יומן רציף: בוחרים יום ורואים מיד את האימון הפעיל באותו משטח.</p>
+      </header>
+
+      <section className="log-surface">
+        <div className="log-toolbar">
+          <div className="calendar-switch" role="tablist" aria-label="תצוגת יומן">
+            <button
+              className={view === "month" ? "calendar-tab active" : "calendar-tab"}
+              onClick={() => setView("month")}
+            >
+              חודשי
+            </button>
+            <button className={view === "week" ? "calendar-tab active" : "calendar-tab"} onClick={() => setView("week")}>
+              שבועי
+            </button>
+          </div>
+
+          <div className="calendar-nav">
+            <button onClick={goPrevious}>הקודם</button>
+            <strong>{title}</strong>
+            <button onClick={goNext}>הבא</button>
+          </div>
+        </div>
+
+        <div className="log-surface-layout">
+          <div className="log-calendar-grid">
+            {weekdayLabels().map((label) => (
+              <div key={label} className="calendar-weekday">
+                {label}
+              </div>
+            ))}
+
+            {visibleDays.map((day) => {
+              const dayKey = isoDate(day);
+              const items = workoutsByDate.get(dayKey) ?? [];
+              const inCurrentMonth = day.getMonth() === new Date(anchorDate).getMonth();
+              const selected = dayKey === selectedDate;
+
+              return (
+                <button
+                  key={dayKey}
+                  type="button"
+                  className={[
+                    "log-day-cell",
+                    inCurrentMonth ? "" : "muted",
+                    selected ? "selected" : "",
+                    items.length > 0 ? "has-workout" : ""
+                  ]
+                    .join(" ")
+                    .trim()}
+                  onClick={() => setSelectedDate(dayKey)}
+                >
+                  <span className="log-day-date">{formatDisplayDate(day)}</span>
+                  <span className="log-day-count">{items.length} אימונים</span>
+                  {items.length > 0 ? <i aria-hidden className="log-day-dot" /> : null}
+                </button>
+              );
+            })}
+          </div>
+
+          <aside className="log-active-panel">
+            <div className="log-active-head">
+              <strong>{formatDisplayDate(selectedDate)}</strong>
+              <span>{selectedWorkouts.length} אימונים</span>
+            </div>
+
+            {selectedWorkouts.length > 1 ? (
+              <div className="log-day-workout-tabs" role="tablist" aria-label="אימוני היום">
+                {selectedWorkouts.map((item) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    className={item.id === activeWorkout?.id ? "log-day-workout-tab active" : "log-day-workout-tab"}
+                    onClick={() => setActiveWorkoutId(item.id)}
+                  >
+                    {sportLabel(item.sport)} · {formatDuration(item.durationSec)}
+                  </button>
+                ))}
+              </div>
+            ) : null}
+
+            {activeWorkout ? (
+              <article className="log-active-workout-card">
+                <div className="log-active-workout-main">
+                  <WorkoutBanner
+                    sport={activeWorkout.sport}
+                    className="log-active-banner"
+                    metrics={buildWorkoutBannerMetrics({
+                      sport: activeWorkout.sport,
+                      durationSec: activeWorkout.durationSec,
+                      distanceKm: activeWorkout.distanceM != null ? activeWorkout.distanceM / 1000 : null,
+                      avgHr: activeWorkout.avgHr ?? null,
+                      load: activeWorkout.tssLike
+                    })}
+                    runScore={null}
+                  />
+
+                  <div className="log-active-meta">
+                    <h3>{sportLabel(activeWorkout.sport)}</h3>
+                    <p>{formatDisplayDateTime(activeWorkout.startAt)}</p>
+                    <div className="log-active-pills">
+                      <span>משך: {formatDuration(activeWorkout.durationSec)}</span>
+                      {activeWorkout.distanceM != null ? <span>מרחק: {(activeWorkout.distanceM / 1000).toFixed(1)} ק"מ</span> : null}
+                      <span>עומס: {Math.round(activeWorkout.tssLike)}</span>
+                      {activeWorkout.avgHr ? <span>דופק: {Math.round(activeWorkout.avgHr)}</span> : null}
+                    </div>
+                    {activeWorkout.shoeName ? <small>נעל: {activeWorkout.shoeName}</small> : null}
+                    <div className="log-active-actions">
+                      <Link href={workoutDetailPath(activeWorkout.id)} className="inline-cta-link">
+                        פתיחת אימון מלא
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            ) : (
+              <div className="log-empty">לא נמצא אימון ביום הנבחר.</div>
+            )}
+          </aside>
+        </div>
+      </section>
+    </div>
+  );
+}

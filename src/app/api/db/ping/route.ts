@@ -1,1 +1,32 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAibmV4dC9zZXJ2ZXIiOwppbXBvcnQgeyBzcWwgfSBmcm9tICJAdmVyY2VsL3Bvc3RncmVzIjsKCmV4cG9ydCBjb25zdCBydW50aW1lID0gIm5vZGVqcyI7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKCkgewogIGNvbnN0IHVybCA9CiAgICBwcm9jZXNzLmVudi5QT1NUR1JFU19VUkwgfHwKICAgIHByb2Nlc3MuZW52LkRBVEFCQVNFX1VSTCB8fAogICAgcHJvY2Vzcy5lbnYuUE9TVEdSRVNfUFJJU01BX1VSTCB8fAogICAgcHJvY2Vzcy5lbnYuUE9TVEdSRVNfVVJMX05PTl9QT09MSU5HOwoKICBpZiAoIXVybCkgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKAogICAgICB7CiAgICAgICAgb2s6IGZhbHNlLAogICAgICAgIGVycm9yOgogICAgICAgICAgIk1pc3NpbmcgUG9zdGdyZXMgZW52IHZhci4gRXhwZWN0ZWQgb25lIG9mOiBQT1NUR1JFU19VUkwgLyBEQVRBQkFTRV9VUkwgLyBQT1NUR1JFU19QUklTTUFfVVJMIC8gUE9TVEdSRVNfVVJMX05PTl9QT09MSU5HIgogICAgICB9LAogICAgICB7IHN0YXR1czogNTAwIH0KICAgICk7CiAgfQoKICAvLyBUaGlzIHZlcmlmaWVzIHRoZSBOZW9uL1ZlcmNlbCBQb3N0Z3JlcyBjb25uZWN0aW9uIGlzIGFjdHVhbGx5IHVzYWJsZS4KICBjb25zdCByZXN1bHQgPSBhd2FpdCBzcWw8eyBvazogbnVtYmVyIH0+YFNFTEVDVCAxIGFzIG9rYDsKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgb2s6IHRydWUsCiAgICBwcm92aWRlcjogInZlcmNlbC1wb3N0Z3JlcyIsCiAgICBwaW5nOiByZXN1bHQucm93c1swXT8ub2sgPz8gbnVsbAogIH0pOwp9Cgo="}
+import { NextResponse } from "next/server";
+import { sql } from "@vercel/postgres";
+
+export const runtime = "nodejs";
+
+export async function GET() {
+  const url =
+    process.env.POSTGRES_URL ||
+    process.env.DATABASE_URL ||
+    process.env.POSTGRES_PRISMA_URL ||
+    process.env.POSTGRES_URL_NON_POOLING;
+
+  if (!url) {
+    return NextResponse.json(
+      {
+        ok: false,
+        error:
+          "Missing Postgres env var. Expected one of: POSTGRES_URL / DATABASE_URL / POSTGRES_PRISMA_URL / POSTGRES_URL_NON_POOLING"
+      },
+      { status: 500 }
+    );
+  }
+
+  // This verifies the Neon/Vercel Postgres connection is actually usable.
+  const result = await sql<{ ok: number }>`SELECT 1 as ok`;
+  return NextResponse.json({
+    ok: true,
+    provider: "vercel-postgres",
+    ping: result.rows[0]?.ok ?? null
+  });
+}
+

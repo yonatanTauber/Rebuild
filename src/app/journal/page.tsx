@@ -1,1 +1,87 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IExpbmsgZnJvbSAibmV4dC9saW5rIjsKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VNZW1vLCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgRGF5Sm91cm5hbEdyaWQsIHR5cGUgRGF5Sm91cm5hbEJ1bmRsZSB9IGZyb20gIkAvY29tcG9uZW50cy9kYXktam91cm5hbC1ncmlkIjsKaW1wb3J0IHsgYWRkRGF5c0lTTywgZm9ybWF0RGlzcGxheURhdGUsIGZvcm1hdElTT0RhdGUgfSBmcm9tICJAL2xpYi9kYXRlIjsKCmZ1bmN0aW9uIGlzSXNvRGF0ZSh2YWx1ZTogc3RyaW5nIHwgbnVsbCB8IHVuZGVmaW5lZCk6IHZhbHVlIGlzIHN0cmluZyB7CiAgcmV0dXJuIEJvb2xlYW4odmFsdWUgJiYgL15cZHs0fS1cZHsyfS1cZHsyfSQvLnRlc3QodmFsdWUpKTsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSm91cm5hbFBhZ2UoKSB7CiAgY29uc3QgW2FjdGl2ZURhdGUsIHNldEFjdGl2ZURhdGVdID0gdXNlU3RhdGUoZm9ybWF0SVNPRGF0ZSgpKTsKICBjb25zdCBbam91cm5hbCwgc2V0Sm91cm5hbF0gPSB1c2VTdGF0ZTxEYXlKb3VybmFsQnVuZGxlIHwgbnVsbD4obnVsbCk7CiAgY29uc3QgW2xvYWRpbmcsIHNldExvYWRpbmddID0gdXNlU3RhdGUoZmFsc2UpOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgaWYgKHR5cGVvZiB3aW5kb3cgPT09ICJ1bmRlZmluZWQiKSByZXR1cm47CiAgICBjb25zdCByZXF1ZXN0ZWREYXRlID0gbmV3IFVSTFNlYXJjaFBhcmFtcyh3aW5kb3cubG9jYXRpb24uc2VhcmNoKS5nZXQoImRhdGUiKTsKICAgIGlmIChpc0lzb0RhdGUocmVxdWVzdGVkRGF0ZSkpIHsKICAgICAgc2V0QWN0aXZlRGF0ZShyZXF1ZXN0ZWREYXRlKTsKICAgIH0KICB9LCBbXSk7CgogIGFzeW5jIGZ1bmN0aW9uIGxvYWRKb3VybmFsKGRhdGUgPSBhY3RpdmVEYXRlKSB7CiAgICBzZXRMb2FkaW5nKHRydWUpOwogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goYC9hcGkvam91cm5hbC9kYXk/ZGF0ZT0ke2RhdGV9YCk7CiAgICAgIGlmICghcmVzLm9rKSB7CiAgICAgICAgc2V0Sm91cm5hbChudWxsKTsKICAgICAgICByZXR1cm47CiAgICAgIH0KICAgICAgY29uc3QgYnVuZGxlID0gKGF3YWl0IHJlcy5qc29uKCkpIGFzIERheUpvdXJuYWxCdW5kbGU7CiAgICAgIHNldEpvdXJuYWwoYnVuZGxlKTsKICAgIH0gZmluYWxseSB7CiAgICAgIHNldExvYWRpbmcoZmFsc2UpOwogICAgfQogIH0KCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIHZvaWQgbG9hZEpvdXJuYWwoYWN0aXZlRGF0ZSk7CiAgfSwgW2FjdGl2ZURhdGVdKTsKCiAgY29uc3QgcHJldkRhdGUgPSB1c2VNZW1vKCgpID0+IGFkZERheXNJU08oYWN0aXZlRGF0ZSwgLTEpLCBbYWN0aXZlRGF0ZV0pOwogIGNvbnN0IG5leHREYXRlID0gdXNlTWVtbygoKSA9PiBhZGREYXlzSVNPKGFjdGl2ZURhdGUsIDEpLCBbYWN0aXZlRGF0ZV0pOwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9ImpvdXJuYWwtcGFnZSI+CiAgICAgIDxoZWFkZXIgY2xhc3NOYW1lPSJwYWdlLWhlYWRlciI+CiAgICAgICAgPGgxPteq15bXldeg15Q8L2gxPgogICAgICAgIDxwPteb15wg16TXmdeo15XXmCDXlNeQ16jXldeX15XXqiwg15TXlNee15zXpteV16og15XXlNeU15bXoNeUINeU157XnNeQ15Qg16DXntem15DXmdedINeb15DXny48L3A+CiAgICAgIDwvaGVhZGVyPgoKICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJ0b2RheS1zdXJmYWNlIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iam91cm5hbC10b3BiYXIiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImpvdXJuYWwtdG9wbGluZSI+CiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJjaG9pY2UtYnRuIGpvdXJuYWwtdG9kYXktYnRuIiBvbkNsaWNrPXsoKSA9PiBzZXRBY3RpdmVEYXRlKGZvcm1hdElTT0RhdGUoKSl9PgogICAgICAgICAgICAgINeU15nXldedCiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICA8TGluayBocmVmPSIvdG9kYXkiIGNsYXNzTmFtZT0iaW5saW5lLWN0YS1saW5rIHN1YnRsZS1saW5rIj4KICAgICAgICAgICAgICDXl9eW16jXlCDXnNeT16Mg15TXmdeV150KICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iam91cm5hbC1uYXYiPgogICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0iY2hvaWNlLWJ0biBqb3VybmFsLW5hdi1idG4iIG9uQ2xpY2s9eygpID0+IHNldEFjdGl2ZURhdGUocHJldkRhdGUpfT4KICAgICAgICAgICAgICDXmdeV150g16fXldeT150KICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDxzdHJvbmcgY2xhc3NOYW1lPSJqb3VybmFsLWRhdGUtdGl0bGUiPntmb3JtYXREaXNwbGF5RGF0ZShhY3RpdmVEYXRlKX08L3N0cm9uZz4KICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9ImNob2ljZS1idG4gam91cm5hbC1uYXYtYnRuIiBvbkNsaWNrPXsoKSA9PiBzZXRBY3RpdmVEYXRlKG5leHREYXRlKX0+CiAgICAgICAgICAgICAg15nXldedINeU15HXkAogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICB7bG9hZGluZyA/IDxwIGNsYXNzTmFtZT0ibm90ZSI+15jXldei158g16DXqteV16DXmSDXqteW15XXoNeULi4uPC9wPiA6IG51bGx9CiAgICAgICAgPERheUpvdXJuYWxHcmlkCiAgICAgICAgICBkYXRlPXthY3RpdmVEYXRlfQogICAgICAgICAgam91cm5hbD17am91cm5hbH0KICAgICAgICAgIG9uUmVmcmVzaD17KCkgPT4gbG9hZEpvdXJuYWwoYWN0aXZlRGF0ZSl9CiAgICAgICAgICBoaWRlTW9ybmluZwogICAgICAgICAgaGlkZVdvcmtvdXRzCiAgICAgICAgICBoaWRlRmVlZGJhY2sKICAgICAgICAvPgogICAgICA8L3NlY3Rpb24+CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+"use client";
+
+import Link from "next/link";
+import { useEffect, useMemo, useState } from "react";
+import { DayJournalGrid, type DayJournalBundle } from "@/components/day-journal-grid";
+import { addDaysISO, formatDisplayDate, formatISODate } from "@/lib/date";
+
+function isIsoDate(value: string | null | undefined): value is string {
+  return Boolean(value && /^\d{4}-\d{2}-\d{2}$/.test(value));
+}
+
+export default function JournalPage() {
+  const [activeDate, setActiveDate] = useState(formatISODate());
+  const [journal, setJournal] = useState<DayJournalBundle | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const requestedDate = new URLSearchParams(window.location.search).get("date");
+    if (isIsoDate(requestedDate)) {
+      setActiveDate(requestedDate);
+    }
+  }, []);
+
+  async function loadJournal(date = activeDate) {
+    setLoading(true);
+    try {
+      const res = await fetch(`/api/journal/day?date=${date}`);
+      if (!res.ok) {
+        setJournal(null);
+        return;
+      }
+      const bundle = (await res.json()) as DayJournalBundle;
+      setJournal(bundle);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    void loadJournal(activeDate);
+  }, [activeDate]);
+
+  const prevDate = useMemo(() => addDaysISO(activeDate, -1), [activeDate]);
+  const nextDate = useMemo(() => addDaysISO(activeDate, 1), [activeDate]);
+
+  return (
+    <div className="journal-page">
+      <header className="page-header">
+        <h1>תזונה</h1>
+        <p>כל פירוט הארוחות, ההמלצות וההזנה המלאה נמצאים כאן.</p>
+      </header>
+
+      <section className="today-surface">
+        <div className="journal-topbar">
+          <div className="journal-topline">
+            <button className="choice-btn journal-today-btn" onClick={() => setActiveDate(formatISODate())}>
+              היום
+            </button>
+            <Link href="/today" className="inline-cta-link subtle-link">
+              חזרה לדף היום
+            </Link>
+          </div>
+          <div className="journal-nav">
+            <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate(prevDate)}>
+              יום קודם
+            </button>
+            <strong className="journal-date-title">{formatDisplayDate(activeDate)}</strong>
+            <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate(nextDate)}>
+              יום הבא
+            </button>
+          </div>
+        </div>
+
+        {loading ? <p className="note">טוען נתוני תזונה...</p> : null}
+        <DayJournalGrid
+          date={activeDate}
+          journal={journal}
+          onRefresh={() => loadJournal(activeDate)}
+          hideMorning
+          hideWorkouts
+          hideFeedback
+        />
+      </section>
+    </div>
+  );
+}

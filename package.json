@@ -1,1 +1,40 @@
-{"data":"ewogICJuYW1lIjogInJlYnVpbGQiLAogICJ2ZXJzaW9uIjogIjAuMS4wIiwKICAicHJpdmF0ZSI6IHRydWUsCiAgInNjcmlwdHMiOiB7CiAgICAiZGV2IjogIm5leHQgZGV2IiwKICAgICJidWlsZCI6ICJuZXh0IGJ1aWxkIiwKICAgICJzdGFydCI6ICJuZXh0IHN0YXJ0IiwKICAgICJsaW50IjogIm5leHQgbGludCIsCiAgICAid2F0Y2g6aW5nZXN0IjogInRzeCBzY3JpcHRzL3dhdGNoLWluZ2VzdC50cyIsCiAgICAicmVzY2FuOnJlY2VudCI6ICJ0c3ggc2NyaXB0cy9yZXNjYW4tcmVjZW50LnRzIiwKICAgICJkZWR1cGU6d29ya291dHMiOiAidHN4IHNjcmlwdHMvZGVkdXBlLXdvcmtvdXRzLnRzIiwKICAgICJpbmdlc3Q6cmVzZXQiOiAidHN4IHNjcmlwdHMvcmVzZXQtaW5nZXN0LnRzIiwKICAgICJ0ZXN0OmVuZ2luZSI6ICJ0c3ggc2NyaXB0cy90ZXN0LWVuZ2luZS50cyIsCiAgICAiaW1wb3J0OnBoeXNpb2xvZ3kiOiAidHN4IHNjcmlwdHMvaW1wb3J0LXBoeXNpb2xvZ3kudHMiLAogICAgImltcG9ydDpydW5zLTIwMjYtcGF0Y2giOiAidHN4IHNjcmlwdHMvaW1wb3J0LXJ1bnMtMjAyNi1wYXRjaC50cyIsCiAgICAicmVzZXQ6aGlzdG9yeSI6ICJ0c3ggc2NyaXB0cy9yZXNldC1oaXN0b3J5LnRzIiwKICAgICJyZXNldDppbmdlc3QiOiAidHN4IHNjcmlwdHMvcmVzZXQtaW5nZXN0LnRzIiwKICAgICJtaWdyYXRlOmNsb3VkIjogIm5vZGUgc2NyaXB0cy9taWdyYXRlLWxvY2FsLXRvLWNsb3VkLmpzIgogIH0sCiAgImRlcGVuZGVuY2llcyI6IHsKICAgICJAbmVvbmRhdGFiYXNlL3NlcnZlcmxlc3MiOiAiXjEuMC4yIiwKICAgICJAdmVyY2VsL3Bvc3RncmVzIjogIl4wLjEwLjAiLAogICAgImJldHRlci1zcWxpdGUzIjogIl4xMS44LjEiLAogICAgImxlYWZsZXQiOiAiXjEuOS40IiwKICAgICJuZXh0IjogIl4xNi4xLjYiLAogICAgInJlYWN0IjogIjE5LjAuMCIsCiAgICAicmVhY3QtZG9tIjogIjE5LjAuMCIsCiAgICAicmVhY3QtbGVhZmxldCI6ICJeNS4wLjAiLAogICAgInpvZCI6ICJeMy4yNC4yIgogIH0sCiAgImRldkRlcGVuZGVuY2llcyI6IHsKICAgICJAdHlwZXMvbGVhZmxldCI6ICJeMS45LjIxIiwKICAgICJAdHlwZXMvbm9kZSI6ICJeMjIuMTMuMTAiLAogICAgIkB0eXBlcy9yZWFjdCI6ICJeMTkuMC4xMCIsCiAgICAiQHR5cGVzL3JlYWN0LWRvbSI6ICJeMTkuMC40IiwKICAgICJ0c3giOiAiXjQuMTkuMyIsCiAgICAidHlwZXNjcmlwdCI6ICJeNS44LjIiCiAgfQp9Cg=="}
+{
+  "name": "rebuild",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "watch:ingest": "tsx scripts/watch-ingest.ts",
+    "rescan:recent": "tsx scripts/rescan-recent.ts",
+    "dedupe:workouts": "tsx scripts/dedupe-workouts.ts",
+    "ingest:reset": "tsx scripts/reset-ingest.ts",
+    "test:engine": "tsx scripts/test-engine.ts",
+    "import:physiology": "tsx scripts/import-physiology.ts",
+    "import:runs-2026-patch": "tsx scripts/import-runs-2026-patch.ts",
+    "reset:history": "tsx scripts/reset-history.ts",
+    "reset:ingest": "tsx scripts/reset-ingest.ts",
+    "migrate:cloud": "node scripts/migrate-local-to-cloud.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "@vercel/postgres": "^0.10.0",
+    "better-sqlite3": "^11.8.1",
+    "leaflet": "^1.9.4",
+    "next": "^16.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-leaflet": "^5.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.21",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

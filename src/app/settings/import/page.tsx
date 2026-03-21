@@ -1,1 +1,112 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IExpbmsgZnJvbSAibmV4dC9saW5rIjsKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgU2VjdGlvbiB9IGZyb20gIkAvY29tcG9uZW50cy9jYXJkcyI7CmltcG9ydCB7IGZvcm1hdERpc3BsYXlEYXRlVGltZSB9IGZyb20gIkAvbGliL2RhdGUiOwoKdHlwZSBJbmdlc3RTdGF0dXMgPSB7CiAgbGFzdFJ1bkF0OiBzdHJpbmcgfCBudWxsOwogIGxhc3RTdWNjZXNzQXQ6IHN0cmluZyB8IG51bGw7CiAgcGVuZGluZ0pvYnM6IG51bWJlcjsKICBmYWlsZWRGaWxlczogc3RyaW5nW107Cn07Cgp0eXBlIEF0aGxldGVQcm9maWxlID0gewogIHJlc3RpbmdIckJhc2VsaW5lPzogbnVtYmVyIHwgbnVsbDsKICBocnZCYXNlbGluZT86IG51bWJlciB8IG51bGw7CiAgdm8yTWF4QmFzZWxpbmU/OiBudW1iZXIgfCBudWxsOwogIHNsZWVwSG91cnNCYXNlbGluZT86IG51bWJlciB8IG51bGw7CiAgaW1wb3J0ZWRBdD86IHN0cmluZyB8IG51bGw7Cn07CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBTZXR0aW5nc0ltcG9ydFBhZ2UoKSB7CiAgY29uc3QgW3N0YXR1cywgc2V0U3RhdHVzXSA9IHVzZVN0YXRlPEluZ2VzdFN0YXR1cyB8IG51bGw+KG51bGwpOwogIGNvbnN0IFtwcm9maWxlLCBzZXRQcm9maWxlXSA9IHVzZVN0YXRlPEF0aGxldGVQcm9maWxlIHwgbnVsbD4obnVsbCk7CiAgY29uc3QgW21lc3NhZ2UsIHNldE1lc3NhZ2VdID0gdXNlU3RhdGUoIiIpOwoKICBhc3luYyBmdW5jdGlvbiBsb2FkKCkgewogICAgY29uc3QgW3N0YXR1c1JlcywgcHJvZmlsZVJlc10gPSBhd2FpdCBQcm9taXNlLmFsbChbZmV0Y2goIi9hcGkvaW5nZXN0L3N0YXR1cyIpLCBmZXRjaCgiL2FwaS9wcm9maWxlL2Jhc2VsaW5lIildKTsKICAgIGNvbnN0IHN0YXR1c0RhdGEgPSAoYXdhaXQgc3RhdHVzUmVzLmpzb24oKSkgYXMgSW5nZXN0U3RhdHVzOwogICAgY29uc3QgcHJvZmlsZURhdGEgPSAoYXdhaXQgcHJvZmlsZVJlcy5qc29uKCkpIGFzIEF0aGxldGVQcm9maWxlOwogICAgc2V0U3RhdHVzKHN0YXR1c0RhdGEpOwogICAgc2V0UHJvZmlsZShwcm9maWxlRGF0YSk7CiAgfQoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgdm9pZCBsb2FkKCk7CiAgfSwgW10pOwoKICBhc3luYyBmdW5jdGlvbiByZXNjYW4oKSB7CiAgICBzZXRNZXNzYWdlKCLXodeV16jXpyDXqteZ16fXmdeZ16og15nXmdeR15XXkC4uLiIpOwogICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goIi9hcGkvaW5nZXN0L3Jlc2NhbiIsIHsgbWV0aG9kOiAiUE9TVCIgfSk7CiAgICBjb25zdCBkYXRhID0gKGF3YWl0IHJlcy5qc29uKCkpIGFzIHsgam9iSWQ6IHN0cmluZzsgZmlsZXNRdWV1ZWQ6IG51bWJlcjsgZmlsZXNTa2lwcGVkPzogbnVtYmVyIH07CiAgICBzZXRNZXNzYWdlKGBKb2IgJHtkYXRhLmpvYklkfSDXlNeq15fXmdecLiDXoNeh16jXp9eVICR7ZGF0YS5maWxlc1F1ZXVlZH0g16fXkdem15nXnSwg15PXldec15LXlSAke2RhdGEuZmlsZXNTa2lwcGVkID8/IDB9LmApOwogICAgYXdhaXQgbG9hZCgpOwogIH0KCiAgYXN5bmMgZnVuY3Rpb24gcmVzZXRBbmRSZWxvYWQoKSB7CiAgICBzZXRNZXNzYWdlKCLXnteg16fXlCDXoNeq15XXoNeZ150g15XXnteY16LXmdefINee15fXk9epLi4uIik7CiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaCgiL2FwaS9pbmdlc3QvcmVzZXQiLCB7IG1ldGhvZDogIlBPU1QiIH0pOwogICAgY29uc3QgZGF0YSA9IChhd2FpdCByZXMuanNvbigpKSBhcyB7CiAgICAgIHJlc2V0OiBib29sZWFuOwogICAgICBqb2JJZDogc3RyaW5nOwogICAgICBmaWxlc1F1ZXVlZDogbnVtYmVyOwogICAgICBmaWxlc0luZ2VzdGVkOiBudW1iZXI7CiAgICAgIGZpbGVzU2tpcHBlZDogbnVtYmVyOwogICAgICBlcnJvcnM6IG51bWJlcjsKICAgIH07CiAgICBzZXRNZXNzYWdlKAogICAgICBg15HXldem16Ig16DXmden15XXmSArINeU15jXoteg15Qg157Xl9eT16kuIEpvYiAke2RhdGEuam9iSWR9OiDXoNen15zXmNeVICR7ZGF0YS5maWxlc0luZ2VzdGVkfSwg15PXldec15LXlSAke2RhdGEuZmlsZXNTa2lwcGVkfSwg16nXkteZ15DXldeqICR7ZGF0YS5lcnJvcnN9LmAKICAgICk7CiAgICBhd2FpdCBsb2FkKCk7CiAgfQoKICByZXR1cm4gKAogICAgPD4KICAgICAgPGhlYWRlciBjbGFzc05hbWU9InBhZ2UtaGVhZGVyIj4KICAgICAgICA8aDE+15nXmdeR15XXkCDXldeq16fXmdeg15XXqjwvaDE+CiAgICAgICAgPHA+16HXoNeb16jXldefINee16rXmden15nXmdeUINee16fXldee15nXqiDXm9ecIDEwINeT16fXldeqICsg16HXqNeZ16fXlCDXmdeW15XXnteULjwvcD4KICAgICAgPC9oZWFkZXI+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0idHdvLWNvbC1wYW5lbHMiPgogICAgICAgIDxTZWN0aW9uIHRpdGxlPSLXntem15EgSW5nZXN0aW9uIiBzdWJ0aXRsZT0i15HXqNeZ16jXqiDXnteX15PXnDogZGF0YS9pbXBvcnQiPgogICAgICAgICAgPHVsIGNsYXNzTmFtZT0ia3YgY29tcGFjdC1rdiI+CiAgICAgICAgICAgIDxsaT7XlNeo16bXlCDXkNeX16jXldeg15Q6IHtzdGF0dXM/Lmxhc3RSdW5BdCA/IGZvcm1hdERpc3BsYXlEYXRlVGltZShzdGF0dXMubGFzdFJ1bkF0KSA6ICItIn08L2xpPgogICAgICAgICAgICA8bGk+15TXptec15fXlCDXkNeX16jXldeg15Q6IHtzdGF0dXM/Lmxhc3RTdWNjZXNzQXQgPyBmb3JtYXREaXNwbGF5RGF0ZVRpbWUoc3RhdHVzLmxhc3RTdWNjZXNzQXQpIDogIi0ifTwvbGk+CiAgICAgICAgICAgIDxsaT5Kb2JzINee157XqteZ16DXmdedOiB7c3RhdHVzPy5wZW5kaW5nSm9icyA/PyAwfTwvbGk+CiAgICAgICAgICA8L3VsPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InJvdyI+CiAgICAgICAgICAgIDxidXR0b24gb25DbGljaz17cmVzY2FufT7XlNeo16Ug16HXqNeZ16fXlCDXoteb16nXmdeVPC9idXR0b24+CiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJhbHQiIG9uQ2xpY2s9e3Jlc2V0QW5kUmVsb2FkfT4KICAgICAgICAgICAgICDXoNeZ16fXldeZINeg16rXldeg15nXnSDXldeU15jXoteg15Qg157Xl9eT16kKICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDxMaW5rIGhyZWY9Ii9zZXR0aW5ncyIgY2xhc3NOYW1lPSJpbmxpbmUtY3RhLWxpbmsgc3VidGxlLWxpbmsiPgogICAgICAgICAgICAgINeX15bXqNeUINec15TXkteT16jXldeqCiAgICAgICAgICAgIDwvTGluaz4KICAgICAgICAgICAge21lc3NhZ2UgJiYgPHAgY2xhc3NOYW1lPSJub3RlIj57bWVzc2FnZX08L3A+fQogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9TZWN0aW9uPgoKICAgICAgICA8U2VjdGlvbiB0aXRsZT0iQmFzZWxpbmUg16TXmdeW15nXldec15XXkteZINeQ15nXqdeZIiBzdWJ0aXRsZT0i16DXkteW16gg157XmdeZ15HXldeQINeX15Mt16TXotee15kg16nXnCBBcHBsZSBIZWFsdGggZXhwb3J0LnhtbCI+CiAgICAgICAgICA8dWwgY2xhc3NOYW1lPSJrdiBjb21wYWN0LWt2Ij4KICAgICAgICAgICAgPGxpPlJlc3RpbmcgSFIgYmFzZWxpbmU6IHtwcm9maWxlPy5yZXN0aW5nSHJCYXNlbGluZSA/PyAiLSJ9PC9saT4KICAgICAgICAgICAgPGxpPkhSViBiYXNlbGluZToge3Byb2ZpbGU/LmhydkJhc2VsaW5lID8/ICItIn08L2xpPgogICAgICAgICAgICA8bGk+Vk8ybWF4IGJhc2VsaW5lOiB7cHJvZmlsZT8udm8yTWF4QmFzZWxpbmUgPz8gIi0ifTwvbGk+CiAgICAgICAgICAgIDxsaT5TbGVlcCBob3VycyBiYXNlbGluZToge3Byb2ZpbGU/LnNsZWVwSG91cnNCYXNlbGluZSA/PyAiLSJ9PC9saT4KICAgICAgICAgICAgPGxpPtei15XXk9eb158g15zXkNeX16jXldeg15Q6IHtwcm9maWxlPy5pbXBvcnRlZEF0ID8gZm9ybWF0RGlzcGxheURhdGVUaW1lKHByb2ZpbGUuaW1wb3J0ZWRBdCkgOiAiLSJ9PC9saT4KICAgICAgICAgIDwvdWw+CiAgICAgICAgPC9TZWN0aW9uPgogICAgICA8L2Rpdj4KCiAgICAgIDxTZWN0aW9uIHRpdGxlPSLXp9eR16bXmdedINep16DXm9ep15zXlSIgc3VidGl0bGU9IteQ150g16fXmdeZ157XmdedLCDXmdeV16bXkteVINeb15DXnyI+CiAgICAgICAgPHVsIGNsYXNzTmFtZT0ibGlzdCI+CiAgICAgICAgICB7KHN0YXR1cz8uZmFpbGVkRmlsZXMgPz8gW10pLm1hcCgoZmlsZSkgPT4gKAogICAgICAgICAgICA8bGkga2V5PXtmaWxlfT57ZmlsZX08L2xpPgogICAgICAgICAgKSl9CiAgICAgICAgICB7KCFzdGF0dXM/LmZhaWxlZEZpbGVzIHx8IHN0YXR1cy5mYWlsZWRGaWxlcy5sZW5ndGggPT09IDApICYmIDxsaT7XkNeZ158g15vXqdec15nXnSDXm9eo15LXoi48L2xpPn0KICAgICAgICA8L3VsPgogICAgICA8L1NlY3Rpb24+CiAgICA8Lz4KICApOwp9Cg=="}
+"use client";
+
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { Section } from "@/components/cards";
+import { formatDisplayDateTime } from "@/lib/date";
+
+type IngestStatus = {
+  lastRunAt: string | null;
+  lastSuccessAt: string | null;
+  pendingJobs: number;
+  failedFiles: string[];
+};
+
+type AthleteProfile = {
+  restingHrBaseline?: number | null;
+  hrvBaseline?: number | null;
+  vo2MaxBaseline?: number | null;
+  sleepHoursBaseline?: number | null;
+  importedAt?: string | null;
+};
+
+export default function SettingsImportPage() {
+  const [status, setStatus] = useState<IngestStatus | null>(null);
+  const [profile, setProfile] = useState<AthleteProfile | null>(null);
+  const [message, setMessage] = useState("");
+
+  async function load() {
+    const [statusRes, profileRes] = await Promise.all([fetch("/api/ingest/status"), fetch("/api/profile/baseline")]);
+    const statusData = (await statusRes.json()) as IngestStatus;
+    const profileData = (await profileRes.json()) as AthleteProfile;
+    setStatus(statusData);
+    setProfile(profileData);
+  }
+
+  useEffect(() => {
+    void load();
+  }, []);
+
+  async function rescan() {
+    setMessage("סורק תיקיית ייבוא...");
+    const res = await fetch("/api/ingest/rescan", { method: "POST" });
+    const data = (await res.json()) as { jobId: string; filesQueued: number; filesSkipped?: number };
+    setMessage(`Job ${data.jobId} התחיל. נסרקו ${data.filesQueued} קבצים, דולגו ${data.filesSkipped ?? 0}.`);
+    await load();
+  }
+
+  async function resetAndReload() {
+    setMessage("מנקה נתונים ומטעין מחדש...");
+    const res = await fetch("/api/ingest/reset", { method: "POST" });
+    const data = (await res.json()) as {
+      reset: boolean;
+      jobId: string;
+      filesQueued: number;
+      filesIngested: number;
+      filesSkipped: number;
+      errors: number;
+    };
+    setMessage(
+      `בוצע ניקוי + הטענה מחדש. Job ${data.jobId}: נקלטו ${data.filesIngested}, דולגו ${data.filesSkipped}, שגיאות ${data.errors}.`
+    );
+    await load();
+  }
+
+  return (
+    <>
+      <header className="page-header">
+        <h1>ייבוא ותקינות</h1>
+        <p>סנכרון מתיקייה מקומית כל 10 דקות + סריקה יזומה.</p>
+      </header>
+
+      <div className="two-col-panels">
+        <Section title="מצב Ingestion" subtitle="ברירת מחדל: data/import">
+          <ul className="kv compact-kv">
+            <li>הרצה אחרונה: {status?.lastRunAt ? formatDisplayDateTime(status.lastRunAt) : "-"}</li>
+            <li>הצלחה אחרונה: {status?.lastSuccessAt ? formatDisplayDateTime(status.lastSuccessAt) : "-"}</li>
+            <li>Jobs ממתינים: {status?.pendingJobs ?? 0}</li>
+          </ul>
+          <div className="row">
+            <button onClick={rescan}>הרץ סריקה עכשיו</button>
+            <button className="alt" onClick={resetAndReload}>
+              ניקוי נתונים והטענה מחדש
+            </button>
+            <Link href="/settings" className="inline-cta-link subtle-link">
+              חזרה להגדרות
+            </Link>
+            {message && <p className="note">{message}</p>}
+          </div>
+        </Section>
+
+        <Section title="Baseline פיזיולוגי אישי" subtitle="נגזר מייבוא חד-פעמי של Apple Health export.xml">
+          <ul className="kv compact-kv">
+            <li>Resting HR baseline: {profile?.restingHrBaseline ?? "-"}</li>
+            <li>HRV baseline: {profile?.hrvBaseline ?? "-"}</li>
+            <li>VO2max baseline: {profile?.vo2MaxBaseline ?? "-"}</li>
+            <li>Sleep hours baseline: {profile?.sleepHoursBaseline ?? "-"}</li>
+            <li>עודכן לאחרונה: {profile?.importedAt ? formatDisplayDateTime(profile.importedAt) : "-"}</li>
+          </ul>
+        </Section>
+      </div>
+
+      <Section title="קבצים שנכשלו" subtitle="אם קיימים, יוצגו כאן">
+        <ul className="list">
+          {(status?.failedFiles ?? []).map((file) => (
+            <li key={file}>{file}</li>
+          ))}
+          {(!status?.failedFiles || status.failedFiles.length === 0) && <li>אין כשלים כרגע.</li>}
+        </ul>
+      </Section>
+    </>
+  );
+}

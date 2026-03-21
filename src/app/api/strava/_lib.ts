@@ -1,1 +1,258 @@
-{"data":"aW1wb3J0IHsgc3FsIH0gZnJvbSAiQHZlcmNlbC9wb3N0Z3JlcyI7CgpleHBvcnQgdHlwZSBTdHJhdmFUb2tlblJvdyA9IHsKICBhdGhsZXRlX2lkOiBzdHJpbmcgfCBudWxsOwogIGFjY2Vzc190b2tlbjogc3RyaW5nOwogIHJlZnJlc2hfdG9rZW46IHN0cmluZzsKICBleHBpcmVzX2F0OiBudW1iZXI7CiAgc2NvcGU6IHN0cmluZyB8IG51bGw7Cn07CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZW5zdXJlU3RyYXZhVGFibGVzKCkgewogIGF3YWl0IHNxbGAKICAgIENSRUFURSBUQUJMRSBJRiBOT1QgRVhJU1RTIHN0cmF2YV90b2tlbnMgKAogICAgICBpZCBJTlRFR0VSIFBSSU1BUlkgS0VZLAogICAgICBhdGhsZXRlX2lkIFRFWFQsCiAgICAgIGFjY2Vzc190b2tlbiBURVhUIE5PVCBOVUxMLAogICAgICByZWZyZXNoX3Rva2VuIFRFWFQgTk9UIE5VTEwsCiAgICAgIGV4cGlyZXNfYXQgQklHSU5UIE5PVCBOVUxMLAogICAgICBzY29wZSBURVhULAogICAgICBjcmVhdGVkX2F0IFRJTUVTVEFNUFRaIE5PVCBOVUxMIERFRkFVTFQgbm93KCksCiAgICAgIHVwZGF0ZWRfYXQgVElNRVNUQU1QVFogTk9UIE5VTEwgREVGQVVMVCBub3coKQogICAgKTsKICBgOwoKICBhd2FpdCBzcWxgCiAgICBDUkVBVEUgVEFCTEUgSUYgTk9UIEVYSVNUUyBzdHJhdmFfd2ViaG9vayAoCiAgICAgIGlkIElOVEVHRVIgUFJJTUFSWSBLRVksCiAgICAgIHN1YnNjcmlwdGlvbl9pZCBURVhULAogICAgICBjYWxsYmFja191cmwgVEVYVCwKICAgICAgY3JlYXRlZF9hdCBUSU1FU1RBTVBUWiBOT1QgTlVMTCBERUZBVUxUIG5vdygpLAogICAgICB1cGRhdGVkX2F0IFRJTUVTVEFNUFRaIE5PVCBOVUxMIERFRkFVTFQgbm93KCkKICAgICk7CiAgYDsKCiAgYXdhaXQgc3FsYAogICAgQ1JFQVRFIFRBQkxFIElGIE5PVCBFWElTVFMgc3RyYXZhX3N5bmNfc3RhdGUgKAogICAgICBpZCBJTlRFR0VSIFBSSU1BUlkgS0VZLAogICAgICBuZXh0X3BhZ2UgSU5URUdFUiBOT1QgTlVMTCBERUZBVUxUIDEsCiAgICAgIGRvbmUgQk9PTEVBTiBOT1QgTlVMTCBERUZBVUxUIGZhbHNlLAogICAgICB1cGRhdGVkX2F0IFRJTUVTVEFNUFRaIE5PVCBOVUxMIERFRkFVTFQgbm93KCkKICAgICk7CiAgYDsKCiAgYXdhaXQgc3FsYAogICAgQ1JFQVRFIFRBQkxFIElGIE5PVCBFWElTVFMgc3RyYXZhX2FjdGl2aXR5X3N0cmVhbXMgKAogICAgICBhY3Rpdml0eUlkIEJJR0lOVCBQUklNQVJZIEtFWSwKICAgICAgc3RyZWFtc0pzb24gVEVYVCBOT1QgTlVMTCwKICAgICAgZmV0Y2hlZEF0IFRJTUVTVEFNUFRaIE5PVCBOVUxMIERFRkFVTFQgbm93KCkKICAgICk7CiAgYDsKCiAgYXdhaXQgc3FsYAogICAgQ1JFQVRFIFRBQkxFIElGIE5PVCBFWElTVFMgd29ya291dHMgKAogICAgICBpZCBURVhUIFBSSU1BUlkgS0VZLAogICAgICBzb3VyY2UgVEVYVCBOT1QgTlVMTCwKICAgICAgdXNlcklkIFRFWFQsCiAgICAgIHNwb3J0IFRFWFQgTk9UIE5VTEwsCiAgICAgIHN0YXJ0QXQgVEVYVCBOT1QgTlVMTCwKICAgICAgZHVyYXRpb25TZWMgSU5URUdFUiBOT1QgTlVMTCwKICAgICAgZGlzdGFuY2VNIERPVUJMRSBQUkVDSVNJT04sCiAgICAgIGF2Z0hyIERPVUJMRSBQUkVDSVNJT04sCiAgICAgIG1heEhyIERPVUJMRSBQUkVDSVNJT04sCiAgICAgIGVsZXZhdGlvbk0gRE9VQkxFIFBSRUNJU0lPTiwKICAgICAgcG93ZXJBdmcgRE9VQkxFIFBSRUNJU0lPTiwKICAgICAgcGFjZUF2ZyBET1VCTEUgUFJFQ0lTSU9OLAogICAgICB0c3NMaWtlIERPVUJMRSBQUkVDSVNJT04gTk9UIE5VTEwsCiAgICAgIHRyaW1wIERPVUJMRSBQUkVDSVNJT04gTk9UIE5VTEwsCiAgICAgIGNhbm9uaWNhbEtleSBURVhULAogICAgICByYXdGaWxlSGFzaCBURVhUIFVOSVFVRSBOT1QgTlVMTCwKICAgICAgcmF3RmlsZVBhdGggVEVYVCwKICAgICAgc2hvZUlkIFRFWFQsCiAgICAgIHNob2VLbUF0QXNzaWduIERPVUJMRSBQUkVDSVNJT04KICAgICk7CiAgYDsKCiAgYXdhaXQgc3FsYENSRUFURSBJTkRFWCBJRiBOT1QgRVhJU1RTIHdvcmtvdXRzX3N0YXJ0QXRfaWR4IE9OIHdvcmtvdXRzKHN0YXJ0QXQpO2A7CiAgYXdhaXQgc3FsYENSRUFURSBJTkRFWCBJRiBOT1QgRVhJU1RTIHdvcmtvdXRzX3Nwb3J0X3N0YXJ0QXRfaWR4IE9OIHdvcmtvdXRzKHNwb3J0LCBzdGFydEF0KTtgOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0U3RyYXZhU3luY1N0YXRlKCk6IFByb21pc2U8eyBuZXh0UGFnZTogbnVtYmVyOyBkb25lOiBib29sZWFuOyB1cGRhdGVkQXQ6IHN0cmluZyB8IG51bGwgfT4gewogIGF3YWl0IGVuc3VyZVN0cmF2YVRhYmxlcygpOwogIGNvbnN0IHJlcyA9CiAgICBhd2FpdCBzcWw8eyBuZXh0X3BhZ2U6IG51bWJlcjsgZG9uZTogYm9vbGVhbjsgdXBkYXRlZF9hdDogc3RyaW5nIH0+YFNFTEVDVCBuZXh0X3BhZ2UsIGRvbmUsIHVwZGF0ZWRfYXQgRlJPTSBzdHJhdmFfc3luY19zdGF0ZSBXSEVSRSBpZCA9IDFgOwogIGNvbnN0IHJvdyA9IHJlcy5yb3dzWzBdOwogIGlmICghcm93KSB7CiAgICByZXR1cm4geyBuZXh0UGFnZTogMSwgZG9uZTogZmFsc2UsIHVwZGF0ZWRBdDogbnVsbCB9OwogIH0KICByZXR1cm4geyBuZXh0UGFnZTogTnVtYmVyKHJvdy5uZXh0X3BhZ2UgPz8gMSksIGRvbmU6IEJvb2xlYW4ocm93LmRvbmUpLCB1cGRhdGVkQXQ6IHJvdy51cGRhdGVkX2F0ID8/IG51bGwgfTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHVwc2VydFN0cmF2YVN5bmNTdGF0ZShpbnB1dDogeyBuZXh0UGFnZTogbnVtYmVyOyBkb25lOiBib29sZWFuIH0pIHsKICBhd2FpdCBlbnN1cmVTdHJhdmFUYWJsZXMoKTsKICBhd2FpdCBzcWxgCiAgICBJTlNFUlQgSU5UTyBzdHJhdmFfc3luY19zdGF0ZSAoaWQsIG5leHRfcGFnZSwgZG9uZSwgdXBkYXRlZF9hdCkKICAgIFZBTFVFUyAoMSwgJHtNYXRoLm1heCgxLCBNYXRoLnJvdW5kKGlucHV0Lm5leHRQYWdlKSl9LCAke0Jvb2xlYW4oaW5wdXQuZG9uZSl9LCBub3coKSkKICAgIE9OIENPTkZMSUNUIChpZCkgRE8gVVBEQVRFCiAgICAgIFNFVCBuZXh0X3BhZ2UgPSBFWENMVURFRC5uZXh0X3BhZ2UsCiAgICAgICAgICBkb25lID0gRVhDTFVERUQuZG9uZSwKICAgICAgICAgIHVwZGF0ZWRfYXQgPSBub3coKQogIGA7Cn0KCmV4cG9ydCBmdW5jdGlvbiBnZXRTdHJhdmFFbnYoKSB7CiAgY29uc3QgY2xpZW50SWQgPSBwcm9jZXNzLmVudi5TVFJBVkFfQ0xJRU5UX0lEPy50cmltKCkgfHwgIiI7CiAgY29uc3QgY2xpZW50U2VjcmV0ID0gcHJvY2Vzcy5lbnYuU1RSQVZBX0NMSUVOVF9TRUNSRVQ/LnRyaW0oKSB8fCAiIjsKICBpZiAoIWNsaWVudElkIHx8ICFjbGllbnRTZWNyZXQpIHsKICAgIHJldHVybiBudWxsOwogIH0KICByZXR1cm4geyBjbGllbnRJZCwgY2xpZW50U2VjcmV0IH07Cn0KCmV4cG9ydCBmdW5jdGlvbiBnZXRTdHJhdmFWZXJpZnlUb2tlbigpIHsKICByZXR1cm4gcHJvY2Vzcy5lbnYuU1RSQVZBX1ZFUklGWV9UT0tFTj8udHJpbSgpIHx8ICIiOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0U3RvcmVkVG9rZW4oKTogUHJvbWlzZTxTdHJhdmFUb2tlblJvdyB8IG51bGw+IHsKICBhd2FpdCBlbnN1cmVTdHJhdmFUYWJsZXMoKTsKICBjb25zdCByZXMgPSBhd2FpdCBzcWw8U3RyYXZhVG9rZW5Sb3c+YFNFTEVDVCBhdGhsZXRlX2lkLCBhY2Nlc3NfdG9rZW4sIHJlZnJlc2hfdG9rZW4sIGV4cGlyZXNfYXQsIHNjb3BlIEZST00gc3RyYXZhX3Rva2VucyBXSEVSRSBpZCA9IDFgOwogIHJldHVybiByZXMucm93c1swXSA/PyBudWxsOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gdXBzZXJ0VG9rZW4odG9rZW46IFN0cmF2YVRva2VuUm93KSB7CiAgYXdhaXQgZW5zdXJlU3RyYXZhVGFibGVzKCk7CiAgYXdhaXQgc3FsYAogICAgSU5TRVJUIElOVE8gc3RyYXZhX3Rva2VucyAoaWQsIGF0aGxldGVfaWQsIGFjY2Vzc190b2tlbiwgcmVmcmVzaF90b2tlbiwgZXhwaXJlc19hdCwgc2NvcGUsIGNyZWF0ZWRfYXQsIHVwZGF0ZWRfYXQpCiAgICBWQUxVRVMgKDEsICR7dG9rZW4uYXRobGV0ZV9pZH0sICR7dG9rZW4uYWNjZXNzX3Rva2VufSwgJHt0b2tlbi5yZWZyZXNoX3Rva2VufSwgJHt0b2tlbi5leHBpcmVzX2F0fSwgJHt0b2tlbi5zY29wZX0sIG5vdygpLCBub3coKSkKICAgIE9OIENPTkZMSUNUIChpZCkgRE8gVVBEQVRFCiAgICAgIFNFVCBhdGhsZXRlX2lkID0gRVhDTFVERUQuYXRobGV0ZV9pZCwKICAgICAgICAgIGFjY2Vzc190b2tlbiA9IEVYQ0xVREVELmFjY2Vzc190b2tlbiwKICAgICAgICAgIHJlZnJlc2hfdG9rZW4gPSBFWENMVURFRC5yZWZyZXNoX3Rva2VuLAogICAgICAgICAgZXhwaXJlc19hdCA9IEVYQ0xVREVELmV4cGlyZXNfYXQsCiAgICAgICAgICBzY29wZSA9IEVYQ0xVREVELnNjb3BlLAogICAgICAgICAgdXBkYXRlZF9hdCA9IG5vdygpCiAgYDsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHJlZnJlc2hUb2tlbklmTmVlZGVkKHRva2VuOiBTdHJhdmFUb2tlblJvdykgewogIGNvbnN0IG5vd1NlYyA9IE1hdGguZmxvb3IoRGF0ZS5ub3coKSAvIDEwMDApOwogIGlmICh0b2tlbi5leHBpcmVzX2F0ID4gbm93U2VjICsgNjApIHJldHVybiB0b2tlbjsKICBjb25zdCBlbnYgPSBnZXRTdHJhdmFFbnYoKTsKICBpZiAoIWVudikgdGhyb3cgbmV3IEVycm9yKCJNaXNzaW5nIFNUUkFWQV9DTElFTlRfSUQvU1RSQVZBX0NMSUVOVF9TRUNSRVQiKTsKCiAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goImh0dHBzOi8vd3d3LnN0cmF2YS5jb20vb2F1dGgvdG9rZW4iLCB7CiAgICBtZXRob2Q6ICJQT1NUIiwKICAgIGhlYWRlcnM6IHsgIkNvbnRlbnQtVHlwZSI6ICJhcHBsaWNhdGlvbi9qc29uIiB9LAogICAgYm9keTogSlNPTi5zdHJpbmdpZnkoewogICAgICBjbGllbnRfaWQ6IGVudi5jbGllbnRJZCwKICAgICAgY2xpZW50X3NlY3JldDogZW52LmNsaWVudFNlY3JldCwKICAgICAgZ3JhbnRfdHlwZTogInJlZnJlc2hfdG9rZW4iLAogICAgICByZWZyZXNoX3Rva2VuOiB0b2tlbi5yZWZyZXNoX3Rva2VuCiAgICB9KQogIH0pOwogIGlmICghcmVzLm9rKSB7CiAgICB0aHJvdyBuZXcgRXJyb3IoYFN0cmF2YSByZWZyZXNoIGZhaWxlZCAoJHtyZXMuc3RhdHVzfSlgKTsKICB9CiAgY29uc3QganNvbiA9IChhd2FpdCByZXMuanNvbigpKSBhcyB7CiAgICBhY2Nlc3NfdG9rZW46IHN0cmluZzsKICAgIHJlZnJlc2hfdG9rZW46IHN0cmluZzsKICAgIGV4cGlyZXNfYXQ6IG51bWJlcjsKICB9OwogIGNvbnN0IHVwZGF0ZWQ6IFN0cmF2YVRva2VuUm93ID0gewogICAgYXRobGV0ZV9pZDogdG9rZW4uYXRobGV0ZV9pZCwKICAgIGFjY2Vzc190b2tlbjoganNvbi5hY2Nlc3NfdG9rZW4sCiAgICByZWZyZXNoX3Rva2VuOiBqc29uLnJlZnJlc2hfdG9rZW4sCiAgICBleHBpcmVzX2F0OiBqc29uLmV4cGlyZXNfYXQsCiAgICBzY29wZTogdG9rZW4uc2NvcGUgPz8gbnVsbAogIH07CiAgYXdhaXQgdXBzZXJ0VG9rZW4odXBkYXRlZCk7CiAgcmV0dXJuIHVwZGF0ZWQ7Cn0KCmV4cG9ydCB0eXBlIFN0cmF2YUFjdGl2aXR5ID0gewogIGlkOiBudW1iZXI7CiAgdHlwZTogc3RyaW5nOwogIG5hbWU6IHN0cmluZzsKICBzdGFydF9kYXRlOiBzdHJpbmc7CiAgZWxhcHNlZF90aW1lOiBudW1iZXI7CiAgbW92aW5nX3RpbWU6IG51bWJlcjsKICBkaXN0YW5jZTogbnVtYmVyOwogIGF2ZXJhZ2VfaGVhcnRyYXRlPzogbnVtYmVyOwogIG1heF9oZWFydHJhdGU/OiBudW1iZXI7CiAgdG90YWxfZWxldmF0aW9uX2dhaW4/OiBudW1iZXI7Cn07CgpleHBvcnQgZnVuY3Rpb24gbWFwU3RyYXZhU3BvcnQodHlwZVJhdzogc3RyaW5nKSB7CiAgY29uc3QgdCA9ICh0eXBlUmF3IHx8ICIiKS50b0xvd2VyQ2FzZSgpOwogIGlmICh0LmluY2x1ZGVzKCJydW4iKSkgcmV0dXJuICJydW4iOwogIGlmICh0LmluY2x1ZGVzKCJyaWRlIikpIHJldHVybiAiYmlrZSI7CiAgaWYgKHQuaW5jbHVkZXMoInN3aW0iKSkgcmV0dXJuICJzd2ltIjsKICBpZiAodC5pbmNsdWRlcygid2VpZ2h0IikgfHwgdC5pbmNsdWRlcygic3RyZW5ndGgiKSkgcmV0dXJuICJzdHJlbmd0aCI7CiAgcmV0dXJuICJzdHJlbmd0aCI7Cn0KCmV4cG9ydCBmdW5jdGlvbiBlc3RpbWF0ZVRzc0xpa2UoYWN0aXZpdHk6IFN0cmF2YUFjdGl2aXR5KSB7CiAgY29uc3QgbWludXRlcyA9IE1hdGgubWF4KDEsIE1hdGgucm91bmQoYWN0aXZpdHkubW92aW5nX3RpbWUgLyA2MCkpOwogIHJldHVybiBNYXRoLnJvdW5kKG1pbnV0ZXMgKiAxLjI1KTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHVwc2VydFdvcmtvdXRGcm9tU3RyYXZhQWN0aXZpdHkoYWN0aXZpdHk6IFN0cmF2YUFjdGl2aXR5KSB7CiAgYXdhaXQgZW5zdXJlU3RyYXZhVGFibGVzKCk7CiAgY29uc3Qgc3BvcnQgPSBtYXBTdHJhdmFTcG9ydChhY3Rpdml0eS50eXBlKTsKICBjb25zdCBzdGFydEF0ID0gYWN0aXZpdHkuc3RhcnRfZGF0ZTsKICBjb25zdCBkdXJhdGlvblNlYyA9IE1hdGgubWF4KDEsIE1hdGgucm91bmQoYWN0aXZpdHkuZWxhcHNlZF90aW1lKSk7CiAgY29uc3QgZGlzdGFuY2VNID0gTnVtYmVyLmlzRmluaXRlKGFjdGl2aXR5LmRpc3RhbmNlKSA/IGFjdGl2aXR5LmRpc3RhbmNlIDogbnVsbDsKICBjb25zdCBhdmdIciA9IGFjdGl2aXR5LmF2ZXJhZ2VfaGVhcnRyYXRlICE9IG51bGwgPyBNYXRoLnJvdW5kKGFjdGl2aXR5LmF2ZXJhZ2VfaGVhcnRyYXRlKSA6IG51bGw7CiAgY29uc3QgbWF4SHIgPSBhY3Rpdml0eS5tYXhfaGVhcnRyYXRlICE9IG51bGwgPyBNYXRoLnJvdW5kKGFjdGl2aXR5Lm1heF9oZWFydHJhdGUpIDogbnVsbDsKICBjb25zdCBlbGV2YXRpb25NID0gYWN0aXZpdHkudG90YWxfZWxldmF0aW9uX2dhaW4gIT0gbnVsbCA/IE1hdGgucm91bmQoYWN0aXZpdHkudG90YWxfZWxldmF0aW9uX2dhaW4pIDogbnVsbDsKICBjb25zdCB0c3NMaWtlID0gZXN0aW1hdGVUc3NMaWtlKGFjdGl2aXR5KTsKICBjb25zdCB0cmltcCA9IE1hdGgucm91bmQodHNzTGlrZSAqIDAuOSk7CiAgY29uc3QgY2Fub25pY2FsS2V5ID0gYCR7c3BvcnR9fCR7c3RhcnRBdH1gOwogIGNvbnN0IHJhd0ZpbGVIYXNoID0gYHN0cmF2YToke2FjdGl2aXR5LmlkfWA7CgogIGNvbnN0IHVwc2VydCA9IGF3YWl0IHNxbGAKICAgIElOU0VSVCBJTlRPIHdvcmtvdXRzICgKICAgICAgaWQsIHNvdXJjZSwgdXNlcklkLCBzcG9ydCwgc3RhcnRBdCwgZHVyYXRpb25TZWMsIGRpc3RhbmNlTSwgYXZnSHIsIG1heEhyLCBlbGV2YXRpb25NLAogICAgICBwb3dlckF2ZywgcGFjZUF2ZywgdHNzTGlrZSwgdHJpbXAsIGNhbm9uaWNhbEtleSwgcmF3RmlsZUhhc2gsIHJhd0ZpbGVQYXRoLCBzaG9lSWQsIHNob2VLbUF0QXNzaWduCiAgICApIFZBTFVFUyAoCiAgICAgICR7cmF3RmlsZUhhc2h9LAogICAgICAnc3RyYXZhJywKICAgICAgTlVMTCwKICAgICAgJHtzcG9ydH0sCiAgICAgICR7c3RhcnRBdH0sCiAgICAgICR7ZHVyYXRpb25TZWN9LAogICAgICAke2Rpc3RhbmNlTX0sCiAgICAgICR7YXZnSHJ9LAogICAgICAke21heEhyfSwKICAgICAgJHtlbGV2YXRpb25NfSwKICAgICAgTlVMTCwKICAgICAgTlVMTCwKICAgICAgJHt0c3NMaWtlfSwKICAgICAgJHt0cmltcH0sCiAgICAgICR7Y2Fub25pY2FsS2V5fSwKICAgICAgJHtyYXdGaWxlSGFzaH0sCiAgICAgIE5VTEwsCiAgICAgIE5VTEwsCiAgICAgIE5VTEwKICAgICkKICAgIE9OIENPTkZMSUNUIChpZCkgRE8gVVBEQVRFIFNFVAogICAgICBzdGFydEF0ID0gRVhDTFVERUQuc3RhcnRBdCwKICAgICAgZHVyYXRpb25TZWMgPSBFWENMVURFRC5kdXJhdGlvblNlYywKICAgICAgZGlzdGFuY2VNID0gRVhDTFVERUQuZGlzdGFuY2VNLAogICAgICBhdmdIciA9IEVYQ0xVREVELmF2Z0hyLAogICAgICBtYXhIciA9IEVYQ0xVREVELm1heEhyLAogICAgICBlbGV2YXRpb25NID0gRVhDTFVERUQuZWxldmF0aW9uTSwKICAgICAgdHNzTGlrZSA9IEVYQ0xVREVELnRzc0xpa2UsCiAgICAgIHRyaW1wID0gRVhDTFVERUQudHJpbXAsCiAgICAgIGNhbm9uaWNhbEtleSA9IEVYQ0xVREVELmNhbm9uaWNhbEtleQogICAgUkVUVVJOSU5HICh4bWF4ID0gMCkgQVMgaW5zZXJ0ZWQ7CiAgYDsKCiAgcmV0dXJuIEJvb2xlYW4oKHVwc2VydC5yb3dzWzBdIGFzIHVua25vd24gYXMgeyBpbnNlcnRlZD86IGJvb2xlYW4gfSk/Lmluc2VydGVkKTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGRlbGV0ZVdvcmtvdXRCeVN0cmF2YUFjdGl2aXR5SWQoYWN0aXZpdHlJZDogbnVtYmVyKSB7CiAgYXdhaXQgZW5zdXJlU3RyYXZhVGFibGVzKCk7CiAgY29uc3QgcmF3RmlsZUhhc2ggPSBgc3RyYXZhOiR7YWN0aXZpdHlJZH1gOwogIGF3YWl0IHNxbGBERUxFVEUgRlJPTSB3b3Jrb3V0cyBXSEVSRSBpZCA9ICR7cmF3RmlsZUhhc2h9YDsKfQo="}
+import { sql } from "@vercel/postgres";
+
+export type StravaTokenRow = {
+  athlete_id: string | null;
+  access_token: string;
+  refresh_token: string;
+  expires_at: number;
+  scope: string | null;
+};
+
+export async function ensureStravaTables() {
+  await sql`
+    CREATE TABLE IF NOT EXISTS strava_tokens (
+      id INTEGER PRIMARY KEY,
+      athlete_id TEXT,
+      access_token TEXT NOT NULL,
+      refresh_token TEXT NOT NULL,
+      expires_at BIGINT NOT NULL,
+      scope TEXT,
+      created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+      updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+    );
+  `;
+
+  await sql`
+    CREATE TABLE IF NOT EXISTS strava_webhook (
+      id INTEGER PRIMARY KEY,
+      subscription_id TEXT,
+      callback_url TEXT,
+      created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+      updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+    );
+  `;
+
+  await sql`
+    CREATE TABLE IF NOT EXISTS strava_sync_state (
+      id INTEGER PRIMARY KEY,
+      next_page INTEGER NOT NULL DEFAULT 1,
+      done BOOLEAN NOT NULL DEFAULT false,
+      updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+    );
+  `;
+
+  await sql`
+    CREATE TABLE IF NOT EXISTS strava_activity_streams (
+      activityId BIGINT PRIMARY KEY,
+      streamsJson TEXT NOT NULL,
+      fetchedAt TIMESTAMPTZ NOT NULL DEFAULT now()
+    );
+  `;
+
+  await sql`
+    CREATE TABLE IF NOT EXISTS workouts (
+      id TEXT PRIMARY KEY,
+      source TEXT NOT NULL,
+      userId TEXT,
+      sport TEXT NOT NULL,
+      startAt TEXT NOT NULL,
+      durationSec INTEGER NOT NULL,
+      distanceM DOUBLE PRECISION,
+      avgHr DOUBLE PRECISION,
+      maxHr DOUBLE PRECISION,
+      elevationM DOUBLE PRECISION,
+      powerAvg DOUBLE PRECISION,
+      paceAvg DOUBLE PRECISION,
+      tssLike DOUBLE PRECISION NOT NULL,
+      trimp DOUBLE PRECISION NOT NULL,
+      canonicalKey TEXT,
+      rawFileHash TEXT UNIQUE NOT NULL,
+      rawFilePath TEXT,
+      shoeId TEXT,
+      shoeKmAtAssign DOUBLE PRECISION
+    );
+  `;
+
+  await sql`CREATE INDEX IF NOT EXISTS workouts_startAt_idx ON workouts(startAt);`;
+  await sql`CREATE INDEX IF NOT EXISTS workouts_sport_startAt_idx ON workouts(sport, startAt);`;
+}
+
+export async function getStravaSyncState(): Promise<{ nextPage: number; done: boolean; updatedAt: string | null }> {
+  await ensureStravaTables();
+  const res =
+    await sql<{ next_page: number; done: boolean; updated_at: string }>`SELECT next_page, done, updated_at FROM strava_sync_state WHERE id = 1`;
+  const row = res.rows[0];
+  if (!row) {
+    return { nextPage: 1, done: false, updatedAt: null };
+  }
+  return { nextPage: Number(row.next_page ?? 1), done: Boolean(row.done), updatedAt: row.updated_at ?? null };
+}
+
+export async function upsertStravaSyncState(input: { nextPage: number; done: boolean }) {
+  await ensureStravaTables();
+  await sql`
+    INSERT INTO strava_sync_state (id, next_page, done, updated_at)
+    VALUES (1, ${Math.max(1, Math.round(input.nextPage))}, ${Boolean(input.done)}, now())
+    ON CONFLICT (id) DO UPDATE
+      SET next_page = EXCLUDED.next_page,
+          done = EXCLUDED.done,
+          updated_at = now()
+  `;
+}
+
+export function getStravaEnv() {
+  const clientId = process.env.STRAVA_CLIENT_ID?.trim() || "";
+  const clientSecret = process.env.STRAVA_CLIENT_SECRET?.trim() || "";
+  if (!clientId || !clientSecret) {
+    return null;
+  }
+  return { clientId, clientSecret };
+}
+
+export function getStravaVerifyToken() {
+  return process.env.STRAVA_VERIFY_TOKEN?.trim() || "";
+}
+
+export async function getStoredToken(): Promise<StravaTokenRow | null> {
+  await ensureStravaTables();
+  const res = await sql<StravaTokenRow>`SELECT athlete_id, access_token, refresh_token, expires_at, scope FROM strava_tokens WHERE id = 1`;
+  return res.rows[0] ?? null;
+}
+
+export async function upsertToken(token: StravaTokenRow) {
+  await ensureStravaTables();
+  await sql`
+    INSERT INTO strava_tokens (id, athlete_id, access_token, refresh_token, expires_at, scope, created_at, updated_at)
+    VALUES (1, ${token.athlete_id}, ${token.access_token}, ${token.refresh_token}, ${token.expires_at}, ${token.scope}, now(), now())
+    ON CONFLICT (id) DO UPDATE
+      SET athlete_id = EXCLUDED.athlete_id,
+          access_token = EXCLUDED.access_token,
+          refresh_token = EXCLUDED.refresh_token,
+          expires_at = EXCLUDED.expires_at,
+          scope = EXCLUDED.scope,
+          updated_at = now()
+  `;
+}
+
+export async function refreshTokenIfNeeded(token: StravaTokenRow) {
+  const nowSec = Math.floor(Date.now() / 1000);
+  if (token.expires_at > nowSec + 60) return token;
+  const env = getStravaEnv();
+  if (!env) throw new Error("Missing STRAVA_CLIENT_ID/STRAVA_CLIENT_SECRET");
+
+  const res = await fetch("https://www.strava.com/oauth/token", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      client_id: env.clientId,
+      client_secret: env.clientSecret,
+      grant_type: "refresh_token",
+      refresh_token: token.refresh_token
+    })
+  });
+  if (!res.ok) {
+    throw new Error(`Strava refresh failed (${res.status})`);
+  }
+  const json = (await res.json()) as {
+    access_token: string;
+    refresh_token: string;
+    expires_at: number;
+  };
+  const updated: StravaTokenRow = {
+    athlete_id: token.athlete_id,
+    access_token: json.access_token,
+    refresh_token: json.refresh_token,
+    expires_at: json.expires_at,
+    scope: token.scope ?? null
+  };
+  await upsertToken(updated);
+  return updated;
+}
+
+export type StravaActivity = {
+  id: number;
+  type: string;
+  name: string;
+  start_date: string;
+  elapsed_time: number;
+  moving_time: number;
+  distance: number;
+  average_heartrate?: number;
+  max_heartrate?: number;
+  total_elevation_gain?: number;
+};
+
+export function mapStravaSport(typeRaw: string) {
+  const t = (typeRaw || "").toLowerCase();
+  if (t.includes("run")) return "run";
+  if (t.includes("ride")) return "bike";
+  if (t.includes("swim")) return "swim";
+  if (t.includes("weight") || t.includes("strength")) return "strength";
+  return "strength";
+}
+
+export function estimateTssLike(activity: StravaActivity) {
+  const minutes = Math.max(1, Math.round(activity.moving_time / 60));
+  return Math.round(minutes * 1.25);
+}
+
+export async function upsertWorkoutFromStravaActivity(activity: StravaActivity) {
+  await ensureStravaTables();
+  const sport = mapStravaSport(activity.type);
+  const startAt = activity.start_date;
+  const durationSec = Math.max(1, Math.round(activity.elapsed_time));
+  const distanceM = Number.isFinite(activity.distance) ? activity.distance : null;
+  const avgHr = activity.average_heartrate != null ? Math.round(activity.average_heartrate) : null;
+  const maxHr = activity.max_heartrate != null ? Math.round(activity.max_heartrate) : null;
+  const elevationM = activity.total_elevation_gain != null ? Math.round(activity.total_elevation_gain) : null;
+  const tssLike = estimateTssLike(activity);
+  const trimp = Math.round(tssLike * 0.9);
+  const canonicalKey = `${sport}|${startAt}`;
+  const rawFileHash = `strava:${activity.id}`;
+
+  const upsert = await sql`
+    INSERT INTO workouts (
+      id, source, userId, sport, startAt, durationSec, distanceM, avgHr, maxHr, elevationM,
+      powerAvg, paceAvg, tssLike, trimp, canonicalKey, rawFileHash, rawFilePath, shoeId, shoeKmAtAssign
+    ) VALUES (
+      ${rawFileHash},
+      'strava',
+      NULL,
+      ${sport},
+      ${startAt},
+      ${durationSec},
+      ${distanceM},
+      ${avgHr},
+      ${maxHr},
+      ${elevationM},
+      NULL,
+      NULL,
+      ${tssLike},
+      ${trimp},
+      ${canonicalKey},
+      ${rawFileHash},
+      NULL,
+      NULL,
+      NULL
+    )
+    ON CONFLICT (id) DO UPDATE SET
+      startAt = EXCLUDED.startAt,
+      durationSec = EXCLUDED.durationSec,
+      distanceM = EXCLUDED.distanceM,
+      avgHr = EXCLUDED.avgHr,
+      maxHr = EXCLUDED.maxHr,
+      elevationM = EXCLUDED.elevationM,
+      tssLike = EXCLUDED.tssLike,
+      trimp = EXCLUDED.trimp,
+      canonicalKey = EXCLUDED.canonicalKey
+    RETURNING (xmax = 0) AS inserted;
+  `;
+
+  return Boolean((upsert.rows[0] as unknown as { inserted?: boolean })?.inserted);
+}
+
+export async function deleteWorkoutByStravaActivityId(activityId: number) {
+  await ensureStravaTables();
+  const rawFileHash = `strava:${activityId}`;
+  await sql`DELETE FROM workouts WHERE id = ${rawFileHash}`;
+}

@@ -1,1 +1,111 @@
-{"data":"dHlwZSBSdW5TY29yZVNwbGl0ID0geyBzcGxpdFNlYzogbnVtYmVyIH07CgpleHBvcnQgdHlwZSBSdW5TY29yZUZlZWRiYWNrSW5wdXQgPSB7CiAgcnBlU2NvcmU/OiBudW1iZXIgfCBudWxsOwogIGxlZ3NMb2FkU2NvcmU/OiBudW1iZXIgfCBudWxsOwogIHBhaW5TY29yZT86IG51bWJlciB8IG51bGw7CiAgcmVjb3ZlcnlTY29yZT86IG51bWJlciB8IG51bGw7CiAgYnJlYXRoaW5nU2NvcmU/OiBudW1iZXIgfCBudWxsOwogIG92ZXJhbGxMb2FkU2NvcmU/OiBudW1iZXIgfCBudWxsOwogIHByZVJ1bk51dHJpdGlvblNjb3JlPzogbnVtYmVyIHwgbnVsbDsKICBzYXRpc2ZhY3Rpb25TY29yZT86IG51bWJlciB8IG51bGw7Cn07CgpmdW5jdGlvbiBjbGFtcCh2YWx1ZTogbnVtYmVyLCBtaW46IG51bWJlciwgbWF4OiBudW1iZXIpIHsKICByZXR1cm4gTWF0aC5tYXgobWluLCBNYXRoLm1pbihtYXgsIHZhbHVlKSk7Cn0KCmZ1bmN0aW9uIHNwbGl0UGFjZUN2KHNwbGl0czogUnVuU2NvcmVTcGxpdFtdKSB7CiAgaWYgKHNwbGl0cy5sZW5ndGggPCA0KSByZXR1cm4gbnVsbDsKICBjb25zdCB2YWx1ZXMgPSBzcGxpdHMubWFwKChzcGxpdCkgPT4gc3BsaXQuc3BsaXRTZWMpOwogIGNvbnN0IG1lYW4gPSB2YWx1ZXMucmVkdWNlKChzdW0sIHZhbHVlKSA9PiBzdW0gKyB2YWx1ZSwgMCkgLyB2YWx1ZXMubGVuZ3RoOwogIGlmICghTnVtYmVyLmlzRmluaXRlKG1lYW4pIHx8IG1lYW4gPD0gMCkgcmV0dXJuIG51bGw7CiAgY29uc3QgdmFyaWFuY2UgPSB2YWx1ZXMucmVkdWNlKChzdW0sIHZhbHVlKSA9PiBzdW0gKyAodmFsdWUgLSBtZWFuKSAqKiAyLCAwKSAvIHZhbHVlcy5sZW5ndGg7CiAgcmV0dXJuIE1hdGguc3FydCh2YXJpYW5jZSkgLyBtZWFuOwp9CgpleHBvcnQgZnVuY3Rpb24gcnVuU2NvcmVMYWJlbChzY29yZTogbnVtYmVyKSB7CiAgaWYgKHNjb3JlID49IDg1KSByZXR1cm4gItee16bXldeZ158iOwogIGlmIChzY29yZSA+PSA3MCkgcmV0dXJuICLXmNeV15EiOwogIGlmIChzY29yZSA+PSA1NSkgcmV0dXJuICLXodeR15nXqCI7CiAgcmV0dXJuICLXk9eV16jXqSDXlNeq15DXldep16nXldeqIjsKfQoKZXhwb3J0IGZ1bmN0aW9uIGNvbXB1dGVSdW5TY29yZShhcmdzOiB7CiAgZHVyYXRpb25TZWM6IG51bWJlcjsKICBhdmdIcjogbnVtYmVyIHwgbnVsbCB8IHVuZGVmaW5lZDsKICBtYXhIcjogbnVtYmVyIHwgbnVsbCB8IHVuZGVmaW5lZDsKICBtb3ZpbmdEdXJhdGlvblNlYzogbnVtYmVyIHwgbnVsbDsKICBzcGxpdHM6IFJ1blNjb3JlU3BsaXRbXTsKICBmZWVkYmFjaz86IFJ1blNjb3JlRmVlZGJhY2tJbnB1dCB8IG51bGw7Cn0pIHsKICBsZXQgc2NvcmUgPSA4MDsKICBjb25zdCByZWFzb25zOiBzdHJpbmdbXSA9IFtdOwogIGxldCBjb250aW51aXR5RGVsdGEgPSAwOwogIGxldCBzdGFiaWxpdHlEZWx0YSA9IDA7CiAgbGV0IGxvYWREZWx0YSA9IDA7CiAgbGV0IGZlZWRiYWNrRGVsdGEgPSAwOwoKICBpZiAoYXJncy5kdXJhdGlvblNlYyA+IDAgJiYgYXJncy5tb3ZpbmdEdXJhdGlvblNlYyAhPSBudWxsKSB7CiAgICBjb25zdCBtb3ZpbmdSYXRpbyA9IGFyZ3MubW92aW5nRHVyYXRpb25TZWMgLyBhcmdzLmR1cmF0aW9uU2VjOwogICAgY29udGludWl0eURlbHRhID0gY2xhbXAoKG1vdmluZ1JhdGlvIC0gMC43OCkgKiAzMCwgLTYsIDcpOwogICAgc2NvcmUgKz0gY29udGludWl0eURlbHRhOwogICAgaWYgKG1vdmluZ1JhdGlvIDwgMC43MikgcmVhc29ucy5wdXNoKCLXltee158g16LXpteZ16jXldeqINeS15HXldeUINeZ15fXodeZ16oiKTsKICAgIGVsc2UgaWYgKG1vdmluZ1JhdGlvID4gMC45KSByZWFzb25zLnB1c2goIteo15nXpteUINeo16bXmdek15Qg15vXntei15gg15zXnNeQINei16bXmdeo15XXqiIpOwogIH0KCiAgY29uc3QgY3YgPSBzcGxpdFBhY2VDdihhcmdzLnNwbGl0cyk7CiAgaWYgKGN2ICE9IG51bGwpIHsKICAgIHN0YWJpbGl0eURlbHRhID0gY2xhbXAoKDAuMSAtIGN2KSAqIDkwLCAtOCwgOCk7CiAgICBzY29yZSArPSBzdGFiaWxpdHlEZWx0YTsKICAgIGlmIChjdiA8IDAuMDcpIHJlYXNvbnMucHVzaCgi16fXpteRINeZ16bXmdeRINec15DXldeo15og15TXp9eZ15zXldee15jXqNeZ150iKTsKICAgIGVsc2UgaWYgKGN2ID4gMC4xMikgcmVhc29ucy5wdXNoKCLXqdeV16DXldeqINeS15HXldeU15Qg15HXp9em15EiKTsKICB9CgogIGlmIChhcmdzLmF2Z0hyICE9IG51bGwgJiYgYXJncy5tYXhIciAhPSBudWxsICYmIGFyZ3MubWF4SHIgPiAwKSB7CiAgICBjb25zdCBoclJhdGlvID0gYXJncy5hdmdIciAvIGFyZ3MubWF4SHI7CiAgICBsb2FkRGVsdGEgPSBjbGFtcCgoMC45IC0gaHJSYXRpbykgKiAxOCwgLTQsIDQpOwogICAgc2NvcmUgKz0gbG9hZERlbHRhOwogIH0KCiAgaWYgKGFyZ3MuZmVlZGJhY2spIHsKICAgIGNvbnN0IHNhdGlzZmFjdGlvbiA9IGFyZ3MuZmVlZGJhY2suc2F0aXNmYWN0aW9uU2NvcmU7CiAgICBjb25zdCByZWNvdmVyeSA9IGFyZ3MuZmVlZGJhY2sucmVjb3ZlcnlTY29yZTsKICAgIGNvbnN0IHBhaW4gPSBhcmdzLmZlZWRiYWNrLnBhaW5TY29yZTsKICAgIGNvbnN0IG92ZXJhbGwgPSBhcmdzLmZlZWRiYWNrLm92ZXJhbGxMb2FkU2NvcmU7CiAgICBjb25zdCBwcmVGdWVsID0gYXJncy5mZWVkYmFjay5wcmVSdW5OdXRyaXRpb25TY29yZTsKICAgIGNvbnN0IGNvbnRyaWJ1dG9yczogbnVtYmVyW10gPSBbXTsKCiAgICBpZiAoc2F0aXNmYWN0aW9uICE9IG51bGwpIHsKICAgICAgY29udHJpYnV0b3JzLnB1c2goNiAtIHNhdGlzZmFjdGlvbik7CiAgICAgIGlmIChzYXRpc2ZhY3Rpb24gPD0gMikgcmVhc29ucy5wdXNoKCLXqdeR15nXoteV16og16jXpteV158g15LXkdeV15TXlCDXnteU15DXmdee15XXnyIpOwogICAgICBpZiAoc2F0aXNmYWN0aW9uID49IDQpIHJlYXNvbnMucHVzaCgi16nXkdeZ16LXldeqINeo16bXldefINeg157Xldeb15Qg157XlNeQ15nXnteV158iKTsKICAgIH0KICAgIGlmIChyZWNvdmVyeSAhPSBudWxsKSBjb250cmlidXRvcnMucHVzaCg2IC0gcmVjb3ZlcnkpOwogICAgaWYgKHBhaW4gIT0gbnVsbCkgewogICAgICBjb250cmlidXRvcnMucHVzaCg2IC0gcGFpbik7CiAgICAgIGlmIChwYWluID49IDMpIHJlYXNvbnMucHVzaCgi15vXkNeRINee15XXqNeS16kg15HXnteU15zXmiDXlNeo15nXpteUIik7CiAgICB9CiAgICBpZiAob3ZlcmFsbCAhPSBudWxsKSBjb250cmlidXRvcnMucHVzaCg2IC0gb3ZlcmFsbCk7CiAgICBpZiAocHJlRnVlbCAhPSBudWxsICYmIHByZUZ1ZWwgPj0gNCkgcmVhc29ucy5wdXNoKCLXqteX15XXqdeqINeX15XXodeoINeQ16DXqNeS15nXlCDXnteU16rXlteV16DXlCDXnNek16DXmSDXlNeo15nXpteUIik7CgogICAgaWYgKGNvbnRyaWJ1dG9ycy5sZW5ndGggPiAwKSB7CiAgICAgIGNvbnN0IGF2ZyA9IGNvbnRyaWJ1dG9ycy5yZWR1Y2UoKHN1bSwgdmFsdWUpID0+IHN1bSArIHZhbHVlLCAwKSAvIGNvbnRyaWJ1dG9ycy5sZW5ndGg7CiAgICAgIGZlZWRiYWNrRGVsdGEgPSBjbGFtcCgoYXZnIC0gMykgKiA1LCAtMTAsIDEyKTsKICAgICAgc2NvcmUgKz0gZmVlZGJhY2tEZWx0YTsKICAgIH0KICB9CgogIGNvbnN0IGZpbmFsU2NvcmUgPSBjbGFtcChNYXRoLnJvdW5kKHNjb3JlKSwgMCwgMTAwKTsKICByZXR1cm4gewogICAgc2NvcmU6IGZpbmFsU2NvcmUsCiAgICBsYWJlbDogcnVuU2NvcmVMYWJlbChmaW5hbFNjb3JlKSwKICAgIHJlYXNvbnMsCiAgICBicmVha2Rvd246IHsKICAgICAgY29udGludWl0eTogTWF0aC5yb3VuZChjb250aW51aXR5RGVsdGEgKiAxMCkgLyAxMCwKICAgICAgc3RhYmlsaXR5OiBNYXRoLnJvdW5kKHN0YWJpbGl0eURlbHRhICogMTApIC8gMTAsCiAgICAgIGxvYWQ6IE1hdGgucm91bmQobG9hZERlbHRhICogMTApIC8gMTAsCiAgICAgIGZlZWRiYWNrOiBNYXRoLnJvdW5kKGZlZWRiYWNrRGVsdGEgKiAxMCkgLyAxMAogICAgfQogIH07Cn0K"}
+type RunScoreSplit = { splitSec: number };
+
+export type RunScoreFeedbackInput = {
+  rpeScore?: number | null;
+  legsLoadScore?: number | null;
+  painScore?: number | null;
+  recoveryScore?: number | null;
+  breathingScore?: number | null;
+  overallLoadScore?: number | null;
+  preRunNutritionScore?: number | null;
+  satisfactionScore?: number | null;
+};
+
+function clamp(value: number, min: number, max: number) {
+  return Math.max(min, Math.min(max, value));
+}
+
+function splitPaceCv(splits: RunScoreSplit[]) {
+  if (splits.length < 4) return null;
+  const values = splits.map((split) => split.splitSec);
+  const mean = values.reduce((sum, value) => sum + value, 0) / values.length;
+  if (!Number.isFinite(mean) || mean <= 0) return null;
+  const variance = values.reduce((sum, value) => sum + (value - mean) ** 2, 0) / values.length;
+  return Math.sqrt(variance) / mean;
+}
+
+export function runScoreLabel(score: number) {
+  if (score >= 85) return "מצוין";
+  if (score >= 70) return "טוב";
+  if (score >= 55) return "סביר";
+  return "דורש התאוששות";
+}
+
+export function computeRunScore(args: {
+  durationSec: number;
+  avgHr: number | null | undefined;
+  maxHr: number | null | undefined;
+  movingDurationSec: number | null;
+  splits: RunScoreSplit[];
+  feedback?: RunScoreFeedbackInput | null;
+}) {
+  let score = 80;
+  const reasons: string[] = [];
+  let continuityDelta = 0;
+  let stabilityDelta = 0;
+  let loadDelta = 0;
+  let feedbackDelta = 0;
+
+  if (args.durationSec > 0 && args.movingDurationSec != null) {
+    const movingRatio = args.movingDurationSec / args.durationSec;
+    continuityDelta = clamp((movingRatio - 0.78) * 30, -6, 7);
+    score += continuityDelta;
+    if (movingRatio < 0.72) reasons.push("זמן עצירות גבוה יחסית");
+    else if (movingRatio > 0.9) reasons.push("ריצה רציפה כמעט ללא עצירות");
+  }
+
+  const cv = splitPaceCv(args.splits);
+  if (cv != null) {
+    stabilityDelta = clamp((0.1 - cv) * 90, -8, 8);
+    score += stabilityDelta;
+    if (cv < 0.07) reasons.push("קצב יציב לאורך הקילומטרים");
+    else if (cv > 0.12) reasons.push("שונות גבוהה בקצב");
+  }
+
+  if (args.avgHr != null && args.maxHr != null && args.maxHr > 0) {
+    const hrRatio = args.avgHr / args.maxHr;
+    loadDelta = clamp((0.9 - hrRatio) * 18, -4, 4);
+    score += loadDelta;
+  }
+
+  if (args.feedback) {
+    const satisfaction = args.feedback.satisfactionScore;
+    const recovery = args.feedback.recoveryScore;
+    const pain = args.feedback.painScore;
+    const overall = args.feedback.overallLoadScore;
+    const preFuel = args.feedback.preRunNutritionScore;
+    const contributors: number[] = [];
+
+    if (satisfaction != null) {
+      contributors.push(6 - satisfaction);
+      if (satisfaction <= 2) reasons.push("שביעות רצון גבוהה מהאימון");
+      if (satisfaction >= 4) reasons.push("שביעות רצון נמוכה מהאימון");
+    }
+    if (recovery != null) contributors.push(6 - recovery);
+    if (pain != null) {
+      contributors.push(6 - pain);
+      if (pain >= 3) reasons.push("כאב מורגש במהלך הריצה");
+    }
+    if (overall != null) contributors.push(6 - overall);
+    if (preFuel != null && preFuel >= 4) reasons.push("תחושת חוסר אנרגיה מהתזונה לפני הריצה");
+
+    if (contributors.length > 0) {
+      const avg = contributors.reduce((sum, value) => sum + value, 0) / contributors.length;
+      feedbackDelta = clamp((avg - 3) * 5, -10, 12);
+      score += feedbackDelta;
+    }
+  }
+
+  const finalScore = clamp(Math.round(score), 0, 100);
+  return {
+    score: finalScore,
+    label: runScoreLabel(finalScore),
+    reasons,
+    breakdown: {
+      continuity: Math.round(continuityDelta * 10) / 10,
+      stability: Math.round(stabilityDelta * 10) / 10,
+      load: Math.round(loadDelta * 10) / 10,
+      feedback: Math.round(feedbackDelta * 10) / 10
+    }
+  };
+}

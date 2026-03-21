@@ -1,1 +1,40 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgY29tcHV0ZVNjb3JlcyB9IGZyb20gIkAvbGliL2VuZ2luZSI7CmltcG9ydCB7IGFkZERheXNJU08sIGZvcm1hdElTT0RhdGUgfSBmcm9tICJAL2xpYi9kYXRlIjsKaW1wb3J0IHsgZ2V0V29ya291dHNCZXR3ZWVuIH0gZnJvbSAiQC9saWIvZGIiOwppbXBvcnQgeyBidWlsZERhaWx5Q29hY2ggfSBmcm9tICJAL2xpYi9zbWFydC1jb2FjaCI7CmltcG9ydCB7IGdldE51dHJpdGlvbkRheUJ1bmRsZSB9IGZyb20gIkAvbGliL251dHJpdGlvbi1lbmdpbmUiOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IGRhdGUgPSByZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zLmdldCgiZGF0ZSIpID8/IGZvcm1hdElTT0RhdGUoKTsKICBjb25zdCBzY29yZXMgPSBjb21wdXRlU2NvcmVzKGRhdGUpOwogIGNvbnN0IHsgcmVjb21tZW5kYXRpb24sIGNvYWNoQWdlbnQsIHNvdXJjZSwgYWlFcnJvciB9ID0gYXdhaXQgYnVpbGREYWlseUNvYWNoKGRhdGUpOwogIGNvbnN0IG51dHJpdGlvbkJ1bmRsZSA9IGdldE51dHJpdGlvbkRheUJ1bmRsZShkYXRlKTsKICBjb25zdCB0b2RheVdvcmtvdXRzID0gZ2V0V29ya291dHNCZXR3ZWVuKGAke2RhdGV9VDAwOjAwOjAwLjAwMFpgLCBgJHthZGREYXlzSVNPKGRhdGUsIDEpfVQwMDowMDowMC4wMDBaYCkubWFwKCh3KSA9PiAoewogICAgaWQ6IHcuaWQsCiAgICBzcG9ydDogdy5zcG9ydCwKICAgIHN0YXJ0QXQ6IHcuc3RhcnRBdCwKICAgIGR1cmF0aW9uU2VjOiB3LmR1cmF0aW9uU2VjLAogICAgZGlzdGFuY2VNOiB3LmRpc3RhbmNlTSA/PyBudWxsCiAgfSkpOwoKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgc291cmNlLAogICAgYWlFcnJvcjogYWlFcnJvciA/PyBudWxsLAogICAgcmVhZGluZXNzU2NvcmU6IHNjb3Jlcy5yZWFkaW5lc3NTY29yZSwKICAgIGZhdGlndWVTY29yZTogc2NvcmVzLmZhdGlndWVTY29yZSwKICAgIGZpdG5lc3NTY29yZTogc2NvcmVzLmZpdG5lc3NTY29yZSwKICAgIHN0YXRlVGFnOiBzY29yZXMuc3RhdGVUYWcsCiAgICBzdGF0ZUxhYmVsOiBzY29yZXMuc3RhdGVMYWJlbCwKICAgIHN0YXRlSGludDogc2NvcmVzLnN0YXRlSGludCwKICAgIHJlY29tbWVuZGF0aW9uOiByZWNvbW1lbmRhdGlvbi53b3Jrb3V0VHlwZSwKICAgIGV4cGxhbmF0aW9uOiByZWNvbW1lbmRhdGlvbi5leHBsYW5hdGlvbkZhY3RvcnMuam9pbigiOyAiKSwKICAgIGV4cGxhbmF0aW9uRmFjdG9yczogcmVjb21tZW5kYXRpb24uZXhwbGFuYXRpb25GYWN0b3JzLAogICAgYWxlcnRzOiBzY29yZXMucmVhZGluZXNzU2NvcmUgPCA0NSA/IFsi157Xldee15zXpSDXnNeU15XXqNeZ15Mg16LXldee16Eg15TXmdeV150iXSA6IFtdLAogICAgdG9kYXlXb3Jrb3V0cywKICAgIGNvYWNoQWdlbnQsCiAgICByZWNvbW1lbmRhdGlvblBheWxvYWQ6IHJlY29tbWVuZGF0aW9uLAogICAgbWVhbFBsYW46IG51dHJpdGlvbkJ1bmRsZS5tZWFscywKICAgIG51dHJpdGlvblRvdGFsczogbnV0cml0aW9uQnVuZGxlLnRvdGFscwogIH0pOwp9Cg=="}
+import { NextRequest, NextResponse } from "next/server";
+import { computeScores } from "@/lib/engine";
+import { addDaysISO, formatISODate } from "@/lib/date";
+import { getWorkoutsBetween } from "@/lib/db";
+import { buildDailyCoach } from "@/lib/smart-coach";
+import { getNutritionDayBundle } from "@/lib/nutrition-engine";
+
+export async function GET(request: NextRequest) {
+  const date = request.nextUrl.searchParams.get("date") ?? formatISODate();
+  const scores = computeScores(date);
+  const { recommendation, coachAgent, source, aiError } = await buildDailyCoach(date);
+  const nutritionBundle = getNutritionDayBundle(date);
+  const todayWorkouts = getWorkoutsBetween(`${date}T00:00:00.000Z`, `${addDaysISO(date, 1)}T00:00:00.000Z`).map((w) => ({
+    id: w.id,
+    sport: w.sport,
+    startAt: w.startAt,
+    durationSec: w.durationSec,
+    distanceM: w.distanceM ?? null
+  }));
+
+  return NextResponse.json({
+    source,
+    aiError: aiError ?? null,
+    readinessScore: scores.readinessScore,
+    fatigueScore: scores.fatigueScore,
+    fitnessScore: scores.fitnessScore,
+    stateTag: scores.stateTag,
+    stateLabel: scores.stateLabel,
+    stateHint: scores.stateHint,
+    recommendation: recommendation.workoutType,
+    explanation: recommendation.explanationFactors.join("; "),
+    explanationFactors: recommendation.explanationFactors,
+    alerts: scores.readinessScore < 45 ? ["מומלץ להוריד עומס היום"] : [],
+    todayWorkouts,
+    coachAgent,
+    recommendationPayload: recommendation,
+    mealPlan: nutritionBundle.meals,
+    nutritionTotals: nutritionBundle.totals
+  });
+}

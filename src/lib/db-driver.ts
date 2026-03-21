@@ -1,1 +1,106 @@
-{"data":"aW1wb3J0IERhdGFiYXNlIGZyb20gImJldHRlci1zcWxpdGUzIjsKaW1wb3J0IHBhdGggZnJvbSAibm9kZTpwYXRoIjsKaW1wb3J0IGZzIGZyb20gIm5vZGU6ZnMiOwppbXBvcnQgeyBuZW9uIH0gZnJvbSAiQG5lb25kYXRhYmFzZS9zZXJ2ZXJsZXNzIjsKCnR5cGUgRGJQcm92aWRlciA9ICJzcWxpdGUiIHwgInBvc3RncmVzIjsKCnR5cGUgUXVlcnlSZXN1bHRSb3cgPSBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPjsKCnR5cGUgUXVlcnlSZXN1bHQ8VCBleHRlbmRzIFF1ZXJ5UmVzdWx0Um93PiA9IHsKICByb3dzOiBUW107Cn07CgpsZXQgc3FsaXRlRGI6IEluc3RhbmNlVHlwZTx0eXBlb2YgRGF0YWJhc2U+IHwgbnVsbCA9IG51bGw7CmxldCBwZ1NxbDogUmV0dXJuVHlwZTx0eXBlb2YgbmVvbj4gfCBudWxsID0gbnVsbDsKCmV4cG9ydCBmdW5jdGlvbiBnZXREYlByb3ZpZGVyKCk6IERiUHJvdmlkZXIgewogIGlmIChwcm9jZXNzLmVudi5SRUJVSUxEX0RCX1BST1ZJREVSPy50cmltKCkgPT09ICJwb3N0Z3JlcyIpIHJldHVybiAicG9zdGdyZXMiOwogIGNvbnN0IHVybCA9IHByb2Nlc3MuZW52LkRBVEFCQVNFX1VSTCB8fCBwcm9jZXNzLmVudi5QT1NUR1JFU19VUkwgfHwgcHJvY2Vzcy5lbnYuUE9TVEdSRVNfUFJJU01BX1VSTDsKICBpZiAocHJvY2Vzcy5lbnYuVkVSQ0VMID09PSAiMSIgJiYgdXJsICYmIHVybC5zdGFydHNXaXRoKCJwb3N0Z3JlcyIpKSByZXR1cm4gInBvc3RncmVzIjsKICByZXR1cm4gInNxbGl0ZSI7Cn0KCmZ1bmN0aW9uIGdldFNxbGl0ZVBhdGgoKSB7CiAgY29uc3QgYnVuZGxlZERhdGFEaXIgPSBwYXRoLmpvaW4ocHJvY2Vzcy5jd2QoKSwgImRhdGEiKTsKICBjb25zdCBpc1ZlcmNlbFJ1bnRpbWUgPSBwcm9jZXNzLmVudi5WRVJDRUwgPT09ICIxIjsKICBjb25zdCBydW50aW1lRGF0YURpciA9IGlzVmVyY2VsUnVudGltZSA/IHBhdGguam9pbigiL3RtcCIsICJyZWJ1aWxkLWRhdGEiKSA6IGJ1bmRsZWREYXRhRGlyOwogIGlmICghZnMuZXhpc3RzU3luYyhydW50aW1lRGF0YURpcikpIGZzLm1rZGlyU3luYyhydW50aW1lRGF0YURpciwgeyByZWN1cnNpdmU6IHRydWUgfSk7CiAgcmV0dXJuIHBhdGguam9pbihydW50aW1lRGF0YURpciwgInJlYnVpbGQuZGIiKTsKfQoKZnVuY3Rpb24gb3BlblNxbGl0ZSgpIHsKICBpZiAoc3FsaXRlRGIpIHJldHVybiBzcWxpdGVEYjsKICBjb25zdCBkYlBhdGggPSBnZXRTcWxpdGVQYXRoKCk7CiAgc3FsaXRlRGIgPSBuZXcgRGF0YWJhc2UoZGJQYXRoKTsKICBzcWxpdGVEYi5leGVjKGBQUkFHTUEgam91cm5hbF9tb2RlID0gJHtwcm9jZXNzLmVudi5WRVJDRUwgPT09ICIxIiA/ICJERUxFVEUiIDogIldBTCJ9O2ApOwogIHNxbGl0ZURiLmV4ZWMoIlBSQUdNQSBidXN5X3RpbWVvdXQgPSA1MDAwOyIpOwogIHJldHVybiBzcWxpdGVEYjsKfQoKZnVuY3Rpb24gb3BlblBvc3RncmVzKCkgewogIGlmIChwZ1NxbCkgcmV0dXJuIHBnU3FsOwogIGNvbnN0IHVybCA9IHByb2Nlc3MuZW52LkRBVEFCQVNFX1VSTCB8fCBwcm9jZXNzLmVudi5QT1NUR1JFU19VUkwgfHwgcHJvY2Vzcy5lbnYuUE9TVEdSRVNfUFJJU01BX1VSTDsKICBpZiAoIXVybCkgewogICAgdGhyb3cgbmV3IEVycm9yKCJNaXNzaW5nIERBVEFCQVNFX1VSTC9QT1NUR1JFU19VUkwgZm9yIHBvc3RncmVzIHByb3ZpZGVyLiIpOwogIH0KICBwZ1NxbCA9IG5lb24odXJsKTsKICByZXR1cm4gcGdTcWw7Cn0KCmZ1bmN0aW9uIHNxbGl0ZVRyYW5zZm9ybVBsYWNlaG9sZGVycyhxdWVyeVdpdGhQbGFjZWhvbGRlcnM6IHN0cmluZykgewogIC8vIENvbnZlcnQgJDEvJDIvLi4uIHBsYWNlaG9sZGVycyB0byBzcWxpdGUgJz8nIHBsYWNlaG9sZGVycy4KICByZXR1cm4gcXVlcnlXaXRoUGxhY2Vob2xkZXJzLnJlcGxhY2UoL1wkXGQrL2csICI/Iik7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBkYkV4ZWMoc3FsVGV4dDogc3RyaW5nKTogUHJvbWlzZTx2b2lkPiB7CiAgY29uc3QgcHJvdmlkZXIgPSBnZXREYlByb3ZpZGVyKCk7CiAgaWYgKHByb3ZpZGVyID09PSAicG9zdGdyZXMiKSB7CiAgICBjb25zdCBzcWwgPSBvcGVuUG9zdGdyZXMoKTsKICAgIC8vIE5lb24gc2VydmVybGVzcyBkb2Vzbid0IGFsbG93IG11bHRpcGxlIFNRTCBjb21tYW5kcyBpbiBhIHNpbmdsZSBwcmVwYXJlZCBzdGF0ZW1lbnQuCiAgICAvLyBPdXIgbWlncmF0aW9ucyBiYXRjaCBtdWx0aXBsZSBDUkVBVEUgVEFCTEUgc3RhdGVtZW50czsgc3BsaXQgYW5kIHJ1biBzZXF1ZW50aWFsbHkuCiAgICBjb25zdCBzdGF0ZW1lbnRzID0gU3RyaW5nKHNxbFRleHQpCiAgICAgIC5zcGxpdCgiOyIpCiAgICAgIC5tYXAoKHMpID0+IHMudHJpbSgpKQogICAgICAuZmlsdGVyKEJvb2xlYW4pOwogICAgZm9yIChjb25zdCBzdG10IG9mIHN0YXRlbWVudHMpIHsKICAgICAgYXdhaXQgc3FsLnF1ZXJ5KHN0bXQpOwogICAgfQogICAgcmV0dXJuOwogIH0KICBvcGVuU3FsaXRlKCkuZXhlYyhzcWxUZXh0KTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGRiUXVlcnk8VCBleHRlbmRzIFF1ZXJ5UmVzdWx0Um93ID0gUXVlcnlSZXN1bHRSb3c+KAogIHF1ZXJ5V2l0aFBsYWNlaG9sZGVyczogc3RyaW5nLAogIHBhcmFtczogdW5rbm93bltdID0gW10KKTogUHJvbWlzZTxRdWVyeVJlc3VsdDxUPj4gewogIGNvbnN0IHByb3ZpZGVyID0gZ2V0RGJQcm92aWRlcigpOwogIGlmIChwcm92aWRlciA9PT0gInBvc3RncmVzIikgewogICAgY29uc3Qgc3FsID0gb3BlblBvc3RncmVzKCk7CiAgICBjb25zdCByb3dzID0gKGF3YWl0IHNxbC5xdWVyeShxdWVyeVdpdGhQbGFjZWhvbGRlcnMsIHBhcmFtcykpIGFzIHVua25vd24gYXMgVFtdOwogICAgcmV0dXJuIHsgcm93cyB9OwogIH0KCiAgY29uc3QgZGIgPSBvcGVuU3FsaXRlKCk7CiAgY29uc3QgcXVlcnkgPSBzcWxpdGVUcmFuc2Zvcm1QbGFjZWhvbGRlcnMocXVlcnlXaXRoUGxhY2Vob2xkZXJzKTsKICBjb25zdCBzdG10ID0gZGIucHJlcGFyZShxdWVyeSk7CiAgLy8gSGV1cmlzdGljOiB0cmVhdCBzdGF0ZW1lbnRzIHN0YXJ0aW5nIHdpdGggU0VMRUNUL1BSQUdNQS9XSVRIIGFzIHJldHVybmluZyByb3dzLgogIGNvbnN0IGhlYWQgPSBxdWVyeS50cmltU3RhcnQoKS5zbGljZSgwLCAxMCkudG9VcHBlckNhc2UoKTsKICBpZiAoaGVhZC5zdGFydHNXaXRoKCJTRUxFQ1QiKSB8fCBoZWFkLnN0YXJ0c1dpdGgoIldJVEgiKSkgewogICAgcmV0dXJuIHsgcm93czogc3RtdC5hbGwocGFyYW1zKSBhcyBUW10gfTsKICB9CiAgaWYgKHF1ZXJ5LmluY2x1ZGVzKCJSRVRVUk5JTkciKSkgewogICAgcmV0dXJuIHsgcm93czogc3RtdC5hbGwocGFyYW1zKSBhcyBUW10gfTsKICB9CiAgc3RtdC5ydW4ocGFyYW1zKTsKICByZXR1cm4geyByb3dzOiBbXSBhcyBUW10gfTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGRiUXVlcnlPbmU8VCBleHRlbmRzIFF1ZXJ5UmVzdWx0Um93ID0gUXVlcnlSZXN1bHRSb3c+KAogIHF1ZXJ5V2l0aFBsYWNlaG9sZGVyczogc3RyaW5nLAogIHBhcmFtczogdW5rbm93bltdID0gW10KKTogUHJvbWlzZTxUIHwgbnVsbD4gewogIGNvbnN0IHJlc3VsdCA9IGF3YWl0IGRiUXVlcnk8VD4ocXVlcnlXaXRoUGxhY2Vob2xkZXJzLCBwYXJhbXMpOwogIHJldHVybiByZXN1bHQucm93c1swXSA/PyBudWxsOwp9Cg=="}
+import Database from "better-sqlite3";
+import path from "node:path";
+import fs from "node:fs";
+import { neon } from "@neondatabase/serverless";
+
+type DbProvider = "sqlite" | "postgres";
+
+type QueryResultRow = Record<string, unknown>;
+
+type QueryResult<T extends QueryResultRow> = {
+  rows: T[];
+};
+
+let sqliteDb: InstanceType<typeof Database> | null = null;
+let pgSql: ReturnType<typeof neon> | null = null;
+
+export function getDbProvider(): DbProvider {
+  if (process.env.REBUILD_DB_PROVIDER?.trim() === "postgres") return "postgres";
+  const url = process.env.DATABASE_URL || process.env.POSTGRES_URL || process.env.POSTGRES_PRISMA_URL;
+  if (process.env.VERCEL === "1" && url && url.startsWith("postgres")) return "postgres";
+  return "sqlite";
+}
+
+function getSqlitePath() {
+  const bundledDataDir = path.join(process.cwd(), "data");
+  const isVercelRuntime = process.env.VERCEL === "1";
+  const runtimeDataDir = isVercelRuntime ? path.join("/tmp", "rebuild-data") : bundledDataDir;
+  if (!fs.existsSync(runtimeDataDir)) fs.mkdirSync(runtimeDataDir, { recursive: true });
+  return path.join(runtimeDataDir, "rebuild.db");
+}
+
+function openSqlite() {
+  if (sqliteDb) return sqliteDb;
+  const dbPath = getSqlitePath();
+  sqliteDb = new Database(dbPath);
+  sqliteDb.exec(`PRAGMA journal_mode = ${process.env.VERCEL === "1" ? "DELETE" : "WAL"};`);
+  sqliteDb.exec("PRAGMA busy_timeout = 5000;");
+  return sqliteDb;
+}
+
+function openPostgres() {
+  if (pgSql) return pgSql;
+  const url = process.env.DATABASE_URL || process.env.POSTGRES_URL || process.env.POSTGRES_PRISMA_URL;
+  if (!url) {
+    throw new Error("Missing DATABASE_URL/POSTGRES_URL for postgres provider.");
+  }
+  pgSql = neon(url);
+  return pgSql;
+}
+
+function sqliteTransformPlaceholders(queryWithPlaceholders: string) {
+  // Convert $1/$2/... placeholders to sqlite '?' placeholders.
+  return queryWithPlaceholders.replace(/\$\d+/g, "?");
+}
+
+export async function dbExec(sqlText: string): Promise<void> {
+  const provider = getDbProvider();
+  if (provider === "postgres") {
+    const sql = openPostgres();
+    // Neon serverless doesn't allow multiple SQL commands in a single prepared statement.
+    // Our migrations batch multiple CREATE TABLE statements; split and run sequentially.
+    const statements = String(sqlText)
+      .split(";")
+      .map((s) => s.trim())
+      .filter(Boolean);
+    for (const stmt of statements) {
+      await sql.query(stmt);
+    }
+    return;
+  }
+  openSqlite().exec(sqlText);
+}
+
+export async function dbQuery<T extends QueryResultRow = QueryResultRow>(
+  queryWithPlaceholders: string,
+  params: unknown[] = []
+): Promise<QueryResult<T>> {
+  const provider = getDbProvider();
+  if (provider === "postgres") {
+    const sql = openPostgres();
+    const rows = (await sql.query(queryWithPlaceholders, params)) as unknown as T[];
+    return { rows };
+  }
+
+  const db = openSqlite();
+  const query = sqliteTransformPlaceholders(queryWithPlaceholders);
+  const stmt = db.prepare(query);
+  // Heuristic: treat statements starting with SELECT/PRAGMA/WITH as returning rows.
+  const head = query.trimStart().slice(0, 10).toUpperCase();
+  if (head.startsWith("SELECT") || head.startsWith("WITH")) {
+    return { rows: stmt.all(params) as T[] };
+  }
+  if (query.includes("RETURNING")) {
+    return { rows: stmt.all(params) as T[] };
+  }
+  stmt.run(params);
+  return { rows: [] as T[] };
+}
+
+export async function dbQueryOne<T extends QueryResultRow = QueryResultRow>(
+  queryWithPlaceholders: string,
+  params: unknown[] = []
+): Promise<T | null> {
+  const result = await dbQuery<T>(queryWithPlaceholders, params);
+  return result.rows[0] ?? null;
+}

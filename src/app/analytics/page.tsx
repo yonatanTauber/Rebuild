@@ -1,1 +1,536 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IExpbmsgZnJvbSAibmV4dC9saW5rIjsKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VNZW1vLCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgU2VjdGlvbiB9IGZyb20gIkAvY29tcG9uZW50cy9jYXJkcyI7CmltcG9ydCBVaVNlbGVjdCBmcm9tICJAL2NvbXBvbmVudHMvdWktc2VsZWN0IjsKaW1wb3J0IHsgZm9ybWF0RGlzcGxheURhdGUgfSBmcm9tICJAL2xpYi9kYXRlIjsKaW1wb3J0IHsgd29ya291dERldGFpbFBhdGggfSBmcm9tICJAL2xpYi91cmwiOwppbXBvcnQgdHlwZSB7IEhpc3RvcnlSZXN1bHQsIEhpc3RvcnlXb3Jrb3V0IH0gZnJvbSAiQC9saWIvaGlzdG9yeS10eXBlcyI7Cgp0eXBlIFNwb3J0ID0gInJ1biIgfCAic3dpbSIgfCAiYmlrZSI7CnR5cGUgSGlzdG9yeVNvcnRGaWVsZCA9ICJkYXRlIiB8ICJkaXN0YW5jZSIgfCAicGFjZSIgfCAidGltZSIgfCAidHNzIjsKCnR5cGUgQW5hbHl0aWNzUmVzcG9uc2UgPSB7CiAgc3BvcnQ6IFNwb3J0OwogIHNlbGVjdGVkU2hvZUlkOiBzdHJpbmcgfCBudWxsOwogIGN1cnJlbnRZZWFyOiBudW1iZXI7CiAgc2VsZWN0ZWRZZWFyOiBudW1iZXI7CiAgYXZhaWxhYmxlWWVhcnM6IG51bWJlcltdOwogIHJhbmdlRnJvbVllYXI6IG51bWJlcjsKICByYW5nZVRvWWVhcjogbnVtYmVyOwogIHJhbmdlU3VtbWFyeTogewogICAgdG90YWxDb3VudDogbnVtYmVyOwogICAgdG90YWxLbTogbnVtYmVyOwogICAgYXZnUGFjZTogbnVtYmVyIHwgbnVsbDsKICB9OwogIHN1bW1hcnk6IHsKICAgIHNlbGVjdGVkWWVhckttOiBudW1iZXI7CiAgICBjdXJyZW50WWVhckttOiBudW1iZXI7CiAgICBjdXJyZW50TW9udGhLbTogbnVtYmVyOwogIH07CiAgeWVhcmx5OiBBcnJheTx7IHllYXI6IG51bWJlcjsga206IG51bWJlcjsgd29ya291dHM6IG51bWJlciB9PjsKICBtb250aGx5OiBBcnJheTx7IG1vbnRoOiBudW1iZXI7IGttOiBudW1iZXI7IHdvcmtvdXRzOiBudW1iZXI7IGF2Z1BhY2VNaW5QZXJLbTogbnVtYmVyIHwgbnVsbCB9PjsKICBydW5CcmVha2Rvd246IHsKICAgIGJ5RGlzdGFuY2U6IEFycmF5PHsgaWQ6IHN0cmluZzsgbGFiZWw6IHN0cmluZzsgY291bnQ6IG51bWJlcjsga206IG51bWJlciB9PjsKICAgIGJ5RHVyYXRpb246IEFycmF5PHsgaWQ6IHN0cmluZzsgbGFiZWw6IHN0cmluZzsgY291bnQ6IG51bWJlciB9PjsKICAgIGJ5UGFjZTogQXJyYXk8eyBpZDogc3RyaW5nOyBsYWJlbDogc3RyaW5nOyBjb3VudDogbnVtYmVyIH0+OwogIH07CiAgcnVuU2hvZXM6IEFycmF5PHsgaWQ6IHN0cmluZzsgbmFtZTogc3RyaW5nOyBydW5zOiBudW1iZXI7IGttOiBudW1iZXIgfT47CiAgdG9kYXlSdW5zOiBBcnJheTx7CiAgICBpZDogc3RyaW5nOwogICAgc3RhcnRBdDogc3RyaW5nOwogICAgZGlzdGFuY2VLbTogbnVtYmVyOwogICAgZHVyYXRpb25TZWM6IG51bWJlcjsKICAgIHNob2VOYW1lOiBzdHJpbmc7CiAgfT47CiAgcGJzOiBBcnJheTx7CiAgICBkaXN0YW5jZUtleTogc3RyaW5nOwogICAgZGlzdGFuY2VMYWJlbDogc3RyaW5nOwogICAgZGlzdGFuY2VLbTogbnVtYmVyOwogICAgYmVzdFRpbWVTZWM6IG51bWJlciB8IG51bGw7CiAgICBwYWNlTWluUGVyS206IG51bWJlciB8IG51bGw7CiAgICB3b3Jrb3V0SWQ6IHN0cmluZyB8IG51bGw7CiAgICBkYXRlOiBzdHJpbmcgfCBudWxsOwogICAgc291cmNlOiAid2hvbGVfd29ya291dCIgfCAicm9sbGluZ19zZWdtZW50IiB8IG51bGw7CiAgfT47Cn07CgpmdW5jdGlvbiBtb250aExhYmVsKG1vbnRoOiBudW1iZXIpIHsKICBjb25zdCBsYWJlbHMgPSBbIteZ16DXlSIsICLXpNeR16giLCAi157XqNelIiwgIteQ16TXqCIsICLXnteQ15kiLCAi15nXldegIiwgIteZ15XXnCIsICLXkNeV15IiLCAi16HXpNeYIiwgIteQ15XXpyIsICLXoNeV15EiLCAi15PXpteeIl07CiAgcmV0dXJuIGxhYmVsc1ttb250aCAtIDFdID8/IFN0cmluZyhtb250aCk7Cn0KCmZ1bmN0aW9uIGZvcm1hdER1cmF0aW9uKHNlYzogbnVtYmVyIHwgbnVsbCkgewogIGlmIChzZWMgPT0gbnVsbCkgcmV0dXJuICItIjsKICBjb25zdCBob3VycyA9IE1hdGguZmxvb3Ioc2VjIC8gMzYwMCk7CiAgY29uc3QgbWludXRlcyA9IE1hdGguZmxvb3IoKHNlYyAlIDM2MDApIC8gNjApOwogIGNvbnN0IHNlY29uZHMgPSBzZWMgJSA2MDsKICBpZiAoaG91cnMgPiAwKSByZXR1cm4gYCR7aG91cnN9OiR7U3RyaW5nKG1pbnV0ZXMpLnBhZFN0YXJ0KDIsICIwIil9OiR7U3RyaW5nKHNlY29uZHMpLnBhZFN0YXJ0KDIsICIwIil9YDsKICByZXR1cm4gYCR7bWludXRlc306JHtTdHJpbmcoc2Vjb25kcykucGFkU3RhcnQoMiwgIjAiKX1gOwp9CgpmdW5jdGlvbiBmb3JtYXRQYWNlKHBhY2VNaW5QZXJLbTogbnVtYmVyIHwgbnVsbCkgewogIGlmIChwYWNlTWluUGVyS20gPT0gbnVsbCB8fCAhTnVtYmVyLmlzRmluaXRlKHBhY2VNaW5QZXJLbSkpIHJldHVybiAiLSI7CiAgY29uc3QgbWluID0gTWF0aC5mbG9vcihwYWNlTWluUGVyS20pOwogIGNvbnN0IHNlYyA9IE1hdGgucm91bmQoKHBhY2VNaW5QZXJLbSAtIG1pbikgKiA2MCk7CiAgcmV0dXJuIGAke21pbn06JHtTdHJpbmcoc2VjKS5wYWRTdGFydCgyLCAiMCIpfWA7Cn0KCmZ1bmN0aW9uIGZvcm1hdERpc3RhbmNlS20oZGlzdGFuY2VLbTogbnVtYmVyIHwgbnVsbCB8IHVuZGVmaW5lZCkgewogIGlmIChkaXN0YW5jZUttID09IG51bGwgfHwgIU51bWJlci5pc0Zpbml0ZShkaXN0YW5jZUttKSkgcmV0dXJuICItIjsKICBjb25zdCByb3VuZGVkID0gTWF0aC5yb3VuZChkaXN0YW5jZUttICogMTAwKSAvIDEwMDsKICByZXR1cm4gYCR7TnVtYmVyLmlzSW50ZWdlcihyb3VuZGVkKSA/IHJvdW5kZWQudG9GaXhlZCgwKSA6IHJvdW5kZWQudG9GaXhlZCgyKX0g16ci155gOwp9CgpmdW5jdGlvbiBtYXhWYWx1ZSh2YWx1ZXM6IG51bWJlcltdKSB7CiAgcmV0dXJuIE1hdGgubWF4KDEsIC4uLnZhbHVlcyk7Cn0KCmZ1bmN0aW9uIGN1cnJlbnRNb250aFJhbmdlKCkgewogIGNvbnN0IG5vdyA9IG5ldyBEYXRlKCk7CiAgY29uc3QgeWVhciA9IG5vdy5nZXRGdWxsWWVhcigpOwogIGNvbnN0IG1vbnRoID0gU3RyaW5nKG5vdy5nZXRNb250aCgpICsgMSkucGFkU3RhcnQoMiwgIjAiKTsKICBjb25zdCBkYXkgPSBTdHJpbmcobm93LmdldERhdGUoKSkucGFkU3RhcnQoMiwgIjAiKTsKICByZXR1cm4gewogICAgZnJvbTogYCR7eWVhcn0tJHttb250aH0tMDFgLAogICAgdG86IGAke3llYXJ9LSR7bW9udGh9LSR7ZGF5fWAKICB9Owp9CgpmdW5jdGlvbiBoaXN0b3J5U29ydFZhbHVlKHdvcmtvdXQ6IEhpc3RvcnlXb3Jrb3V0LCBmaWVsZDogSGlzdG9yeVNvcnRGaWVsZCkgewogIHN3aXRjaCAoZmllbGQpIHsKICAgIGNhc2UgImRhdGUiOgogICAgICByZXR1cm4gRGF0ZS5wYXJzZSh3b3Jrb3V0LnN0YXJ0QXQpIHx8IDA7CiAgICBjYXNlICJkaXN0YW5jZSI6CiAgICAgIHJldHVybiB3b3Jrb3V0LmRpc3RhbmNlRGlzcGxheUttID8/ICh3b3Jrb3V0LmRpc3RhbmNlTSA/PyAwKSAvIDEwMDA7CiAgICBjYXNlICJwYWNlIjoKICAgICAgcmV0dXJuIE51bWJlci5pc0Zpbml0ZSh3b3Jrb3V0LnBhY2VNaW5QZXJLbSA/PyBOYU4pID8gKHdvcmtvdXQucGFjZU1pblBlckttIGFzIG51bWJlcikgOiBOdW1iZXIuTUFYX1NBRkVfSU5URUdFUjsKICAgIGNhc2UgInRpbWUiOgogICAgICByZXR1cm4gd29ya291dC5kdXJhdGlvblNlYyA/PyAwOwogICAgY2FzZSAidHNzIjoKICAgICAgcmV0dXJuIHdvcmtvdXQudHNzTGlrZSA/PyAwOwogICAgZGVmYXVsdDoKICAgICAgcmV0dXJuIDA7CiAgfQp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBBbmFseXRpY3NQYWdlKCkgewogIGNvbnN0IG1vbnRoUmFuZ2UgPSBjdXJyZW50TW9udGhSYW5nZSgpOwogIGNvbnN0IFtzcG9ydCwgc2V0U3BvcnRdID0gdXNlU3RhdGU8U3BvcnQ+KCJydW4iKTsKICBjb25zdCBbeWVhciwgc2V0WWVhcl0gPSB1c2VTdGF0ZTxudW1iZXI+KG5ldyBEYXRlKCkuZ2V0RnVsbFllYXIoKSk7CiAgY29uc3QgW3Nob2VJZCwgc2V0U2hvZUlkXSA9IHVzZVN0YXRlPHN0cmluZz4oIiIpOwogIGNvbnN0IFtmcm9tWWVhciwgc2V0RnJvbVllYXJdID0gdXNlU3RhdGU8bnVtYmVyIHwgdW5kZWZpbmVkPih1bmRlZmluZWQpOwogIGNvbnN0IFt0b1llYXIsIHNldFRvWWVhcl0gPSB1c2VTdGF0ZTxudW1iZXIgfCB1bmRlZmluZWQ+KHVuZGVmaW5lZCk7CiAgY29uc3QgW2FsbFllYXJzLCBzZXRBbGxZZWFyc10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2RhdGEsIHNldERhdGFdID0gdXNlU3RhdGU8QW5hbHl0aWNzUmVzcG9uc2UgfCBudWxsPihudWxsKTsKICBjb25zdCBbaGlzdG9yeVJlc3VsdCwgc2V0SGlzdG9yeVJlc3VsdF0gPSB1c2VTdGF0ZTxIaXN0b3J5UmVzdWx0IHwgbnVsbD4obnVsbCk7CiAgY29uc3QgW2hpc3RvcnlMb2FkaW5nLCBzZXRIaXN0b3J5TG9hZGluZ10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2hpc3RvcnlGcm9tRGF0ZSwgc2V0SGlzdG9yeUZyb21EYXRlXSA9IHVzZVN0YXRlKG1vbnRoUmFuZ2UuZnJvbSk7CiAgY29uc3QgW2hpc3RvcnlUb0RhdGUsIHNldEhpc3RvcnlUb0RhdGVdID0gdXNlU3RhdGUobW9udGhSYW5nZS50byk7CiAgY29uc3QgW2hpc3RvcnlGaWx0ZXJEaXJ0eSwgc2V0SGlzdG9yeUZpbHRlckRpcnR5XSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbaGlzdG9yeVJlZnJlc2hUb2tlbiwgc2V0SGlzdG9yeVJlZnJlc2hUb2tlbl0gPSB1c2VTdGF0ZSgwKTsKICBjb25zdCBbaGlzdG9yeVNvcnQsIHNldEhpc3RvcnlTb3J0XSA9IHVzZVN0YXRlPHsgZmllbGQ6IEhpc3RvcnlTb3J0RmllbGQ7IGRpcmVjdGlvbjogImFzYyIgfCAiZGVzYyIgfT4oewogICAgZmllbGQ6ICJkYXRlIiwKICAgIGRpcmVjdGlvbjogImRlc2MiCiAgfSk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICB2b2lkIGxvYWQoKTsKICB9LCBbc3BvcnQsIHllYXIsIHNob2VJZCwgZnJvbVllYXIsIHRvWWVhciwgYWxsWWVhcnNdKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIHZvaWQgbG9hZEhpc3RvcnlUYWJsZSgpOwogIH0sIFtzcG9ydCwgZnJvbVllYXIsIHRvWWVhciwgYWxsWWVhcnMsIGhpc3RvcnlSZWZyZXNoVG9rZW5dKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGlmICghYWxsWWVhcnMgfHwgIWRhdGEpIHJldHVybjsKICAgIGNvbnN0IHNvcnRlZCA9IFsuLi5kYXRhLmF2YWlsYWJsZVllYXJzXS5zb3J0KChhLCBiKSA9PiBhIC0gYik7CiAgICBzZXRGcm9tWWVhcihzb3J0ZWRbMF0pOwogICAgc2V0VG9ZZWFyKHNvcnRlZFtzb3J0ZWQubGVuZ3RoIC0gMV0pOwogIH0sIFthbGxZZWFycywgZGF0YV0pOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgaWYgKGhpc3RvcnlGaWx0ZXJEaXJ0eSkgcmV0dXJuOwogICAgaWYgKGFsbFllYXJzKSB7CiAgICAgIHNldEhpc3RvcnlGcm9tRGF0ZSgiIik7CiAgICAgIHNldEhpc3RvcnlUb0RhdGUoIiIpOwogICAgICByZXR1cm47CiAgICB9CiAgICBjb25zdCByYW5nZSA9IGN1cnJlbnRNb250aFJhbmdlKCk7CiAgICBzZXRIaXN0b3J5RnJvbURhdGUocmFuZ2UuZnJvbSk7CiAgICBzZXRIaXN0b3J5VG9EYXRlKHJhbmdlLnRvKTsKICB9LCBbYWxsWWVhcnMsIGhpc3RvcnlGaWx0ZXJEaXJ0eSwgc3BvcnRdKTsKCiAgYXN5bmMgZnVuY3Rpb24gbG9hZCgpIHsKICAgIGNvbnN0IHBhcmFtcyA9IG5ldyBVUkxTZWFyY2hQYXJhbXMoewogICAgICBzcG9ydCwKICAgICAgeWVhcjogU3RyaW5nKHllYXIpCiAgICB9KTsKICAgIGlmIChmcm9tWWVhcikgcGFyYW1zLnNldCgiZnJvbVllYXIiLCBTdHJpbmcoZnJvbVllYXIpKTsKICAgIGlmICh0b1llYXIpIHBhcmFtcy5zZXQoInRvWWVhciIsIFN0cmluZyh0b1llYXIpKTsKICAgIGlmIChhbGxZZWFycykgcGFyYW1zLnNldCgiYWxsWWVhcnMiLCAidHJ1ZSIpOwogICAgaWYgKHNwb3J0ID09PSAicnVuIiAmJiBzaG9lSWQpIHsKICAgICAgcGFyYW1zLnNldCgic2hvZUlkIiwgc2hvZUlkKTsKICAgIH0KICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGAvYXBpL2FuYWx5dGljcy9vdmVydmlldz8ke3BhcmFtcy50b1N0cmluZygpfWApOwogICAgY29uc3QganNvbiA9IChhd2FpdCByZXMuanNvbigpKSBhcyBBbmFseXRpY3NSZXNwb25zZTsKICAgIHNldERhdGEoanNvbik7CiAgICBzZXRZZWFyKGpzb24uc2VsZWN0ZWRZZWFyKTsKICB9CgogIGFzeW5jIGZ1bmN0aW9uIGxvYWRIaXN0b3J5VGFibGUoKSB7CiAgICBzZXRIaXN0b3J5TG9hZGluZyh0cnVlKTsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHBhcmFtcyA9IG5ldyBVUkxTZWFyY2hQYXJhbXMoKTsKICAgICAgcGFyYW1zLnNldCgic3BvcnQiLCBzcG9ydCk7CiAgICAgIGlmICghYWxsWWVhcnMpIHsKICAgICAgICBpZiAoaGlzdG9yeUZyb21EYXRlKSB7CiAgICAgICAgICBwYXJhbXMuc2V0KCJmcm9tIiwgYCR7aGlzdG9yeUZyb21EYXRlfVQwMDowMDowMC4wMDBaYCk7CiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgIHBhcmFtcy5zZXQoImZyb20iLCBgJHttb250aFJhbmdlLmZyb219VDAwOjAwOjAwLjAwMFpgKTsKICAgICAgICB9CiAgICAgICAgaWYgKGhpc3RvcnlUb0RhdGUpIHsKICAgICAgICAgIHBhcmFtcy5zZXQoInRvIiwgYCR7aGlzdG9yeVRvRGF0ZX1UMjM6NTk6NTkuOTk5WmApOwogICAgICAgIH0gZWxzZSB7CiAgICAgICAgICBwYXJhbXMuc2V0KCJ0byIsIGAke21vbnRoUmFuZ2UudG99VDIzOjU5OjU5Ljk5OVpgKTsKICAgICAgICB9CiAgICAgIH0KICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goYC9hcGkvYW5hbHl0aWNzL2hpc3Rvcnk/JHtwYXJhbXMudG9TdHJpbmcoKX1gKTsKICAgICAgaWYgKCFyZXMub2spIHRocm93IG5ldyBFcnJvcigiaGlzdG9yeSBmZXRjaCBmYWlsZWQiKTsKICAgICAgY29uc3QgcGF5bG9hZCA9IChhd2FpdCByZXMuanNvbigpKSBhcyBIaXN0b3J5UmVzdWx0OwogICAgICBzZXRIaXN0b3J5UmVzdWx0KHBheWxvYWQpOwogICAgfSBjYXRjaCAoZXJyb3IpIHsKICAgICAgY29uc29sZS5lcnJvcihlcnJvcik7CiAgICB9IGZpbmFsbHkgewogICAgICBzZXRIaXN0b3J5TG9hZGluZyhmYWxzZSk7CiAgICB9CiAgfQoKICBmdW5jdGlvbiBhcHBseUhpc3RvcnlGaWx0ZXJzKCkgewogICAgc2V0SGlzdG9yeVJlZnJlc2hUb2tlbigocHJldikgPT4gcHJldiArIDEpOwogICAgc2V0SGlzdG9yeUZpbHRlckRpcnR5KHRydWUpOwogIH0KCiAgZnVuY3Rpb24gaGFuZGxlVG9nZ2xlQWxsWWVhcnMoKSB7CiAgICBzZXRBbGxZZWFycygocHJldikgPT4gewogICAgICBjb25zdCBuZXh0ID0gIXByZXY7CiAgICAgIGlmICghbmV4dCkgewogICAgICAgIGNvbnN0IHJhbmdlID0gY3VycmVudE1vbnRoUmFuZ2UoKTsKICAgICAgICBzZXRIaXN0b3J5RnJvbURhdGUocmFuZ2UuZnJvbSk7CiAgICAgICAgc2V0SGlzdG9yeVRvRGF0ZShyYW5nZS50byk7CiAgICAgIH0KICAgICAgcmV0dXJuIG5leHQ7CiAgICB9KTsKICAgIHNldEhpc3RvcnlGaWx0ZXJEaXJ0eShmYWxzZSk7CiAgfQoKICBjb25zdCB5ZWFybHlNYXggPSB1c2VNZW1vKCgpID0+IG1heFZhbHVlKChkYXRhPy55ZWFybHkgPz8gW10pLm1hcCgoeSkgPT4geS5rbSkpLCBbZGF0YV0pOwogIGNvbnN0IG1vbnRobHlNYXggPSB1c2VNZW1vKCgpID0+IG1heFZhbHVlKChkYXRhPy5tb250aGx5ID8/IFtdKS5tYXAoKG0pID0+IG0ua20pKSwgW2RhdGFdKTsKCiAgY29uc3Qgc29ydGVkSGlzdG9yeVdvcmtvdXRzID0gdXNlTWVtbygoKSA9PiB7CiAgICBjb25zdCB3b3Jrb3V0cyA9IGhpc3RvcnlSZXN1bHQ/LndvcmtvdXRzID8/IFtdOwogICAgY29uc3QgZGlyID0gaGlzdG9yeVNvcnQuZGlyZWN0aW9uID09PSAiYXNjIiA/IDEgOiAtMTsKICAgIHJldHVybiBbLi4ud29ya291dHNdLnNvcnQoKGEsIGIpID0+IHsKICAgICAgY29uc3QgdmFsQSA9IGhpc3RvcnlTb3J0VmFsdWUoYSwgaGlzdG9yeVNvcnQuZmllbGQpOwogICAgICBjb25zdCB2YWxCID0gaGlzdG9yeVNvcnRWYWx1ZShiLCBoaXN0b3J5U29ydC5maWVsZCk7CiAgICAgIGlmICh2YWxBID09PSB2YWxCKSB7CiAgICAgICAgcmV0dXJuIERhdGUucGFyc2UoYi5zdGFydEF0KSAtIERhdGUucGFyc2UoYS5zdGFydEF0KTsKICAgICAgfQogICAgICByZXR1cm4gZGlyICogKHZhbEEgLSB2YWxCKTsKICAgIH0pOwogIH0sIFtoaXN0b3J5UmVzdWx0Py53b3Jrb3V0cywgaGlzdG9yeVNvcnRdKTsKCiAgY29uc3QgaGlzdG9yeVNvcnRJbmRpY2F0b3IgPSAoZmllbGQ6IEhpc3RvcnlTb3J0RmllbGQpID0+IHsKICAgIGlmIChoaXN0b3J5U29ydC5maWVsZCAhPT0gZmllbGQpIHJldHVybiAiIjsKICAgIHJldHVybiBoaXN0b3J5U29ydC5kaXJlY3Rpb24gPT09ICJhc2MiID8gIuKWsiIgOiAi4pa8IjsKICB9OwoKICBmdW5jdGlvbiB0b2dnbGVIaXN0b3J5U29ydChmaWVsZDogSGlzdG9yeVNvcnRGaWVsZCkgewogICAgc2V0SGlzdG9yeVNvcnQoKHByZXYpID0+CiAgICAgIHByZXYuZmllbGQgPT09IGZpZWxkCiAgICAgICAgPyB7IGZpZWxkLCBkaXJlY3Rpb246IHByZXYuZGlyZWN0aW9uID09PSAiYXNjIiA/ICJkZXNjIiA6ICJhc2MiIH0KICAgICAgICA6IHsgZmllbGQsIGRpcmVjdGlvbjogImRlc2MiIH0KICAgICk7CiAgfQoKICBjb25zdCB5ZWFySW5kZXggPSBkYXRhID8gZGF0YS5hdmFpbGFibGVZZWFycy5pbmRleE9mKGRhdGEuc2VsZWN0ZWRZZWFyKSA6IC0xOwogIGNvbnN0IGNhblByZXZZZWFyID0gZGF0YSA/IHllYXJJbmRleCA+PSAwICYmIHllYXJJbmRleCA8IGRhdGEuYXZhaWxhYmxlWWVhcnMubGVuZ3RoIC0gMSA6IGZhbHNlOwogIGNvbnN0IGNhbk5leHRZZWFyID0gZGF0YSA/IHllYXJJbmRleCA+IDAgOiBmYWxzZTsKCiAgcmV0dXJuICgKICAgIDw+CiAgICAgIDxoZWFkZXIgY2xhc3NOYW1lPSJwYWdlLWhlYWRlciI+CiAgICAgICAgPGgxPteg16rXldeg15nXnSDXldeU15nXodeY15XXqNeZ15Q8L2gxPgogICAgICAgIDxwPtee15HXmCDXnteQ16fXqNeVINeV157Xmden16jXlSDXotecINeg16TXlyDXkNeZ157Xldeg15nXnSwg157Xktee15XXqiDXldep15nXkNeZ150g15DXmdep15nXmdedLjwvcD4KICAgICAgPC9oZWFkZXI+CgogICAgICA8U2VjdGlvbiB0aXRsZT0i16TXmdec15jXqNeZ150iIHN1YnRpdGxlPSLXoteg16MgKyDXqdeg15Qg15zXoNeZ16rXldeXIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icm93Ij4KICAgICAgICAgIHtbCiAgICAgICAgICAgIHsgaWQ6ICJydW4iLCBsYWJlbDogIteo15nXpteUIiB9LAogICAgICAgICAgICB7IGlkOiAic3dpbSIsIGxhYmVsOiAi16nXl9eZ15nXlCIgfSwKICAgICAgICAgICAgeyBpZDogImJpa2UiLCBsYWJlbDogIteQ15XXpNeg15nXmdedIiB9CiAgICAgICAgICBdLm1hcCgoaXRlbSkgPT4gKAogICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAga2V5PXtpdGVtLmlkfQogICAgICAgICAgICAgIGNsYXNzTmFtZT17c3BvcnQgPT09IGl0ZW0uaWQgPyAiY2hvaWNlLWJ0biBzZWxlY3RlZCIgOiAiY2hvaWNlLWJ0biJ9CiAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0U3BvcnQoaXRlbS5pZCBhcyBTcG9ydCl9CiAgICAgICAgICAgID4KICAgICAgICAgICAgICB7aXRlbS5sYWJlbH0KICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICApKX0KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ5ZWFyLW5hdi1pbmxpbmUiPgogICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJjaG9pY2UtYnRuIgogICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IGRhdGEgJiYgY2FuUHJldlllYXIgJiYgc2V0WWVhcihkYXRhLmF2YWlsYWJsZVllYXJzW3llYXJJbmRleCArIDFdKX0KICAgICAgICAgICAgICBkaXNhYmxlZD17IWNhblByZXZZZWFyfQogICAgICAgICAgICA+CiAgICAgICAgICAgICAg16nXoNeUINen15XXk9ee16oKICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDxzdHJvbmc+e2RhdGE/LnNlbGVjdGVkWWVhciA/PyB5ZWFyfTwvc3Ryb25nPgogICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJjaG9pY2UtYnRuIgogICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IGRhdGEgJiYgY2FuTmV4dFllYXIgJiYgc2V0WWVhcihkYXRhLmF2YWlsYWJsZVllYXJzW3llYXJJbmRleCAtIDFdKX0KICAgICAgICAgICAgICBkaXNhYmxlZD17IWNhbk5leHRZZWFyfQogICAgICAgICAgICA+CiAgICAgICAgICAgICAg16nXoNeUINeU15HXkNeUCiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8VWlTZWxlY3QKICAgICAgICAgICAgdmFsdWU9e1N0cmluZyhkYXRhPy5zZWxlY3RlZFllYXIgPz8geWVhcil9CiAgICAgICAgICAgIG9uQ2hhbmdlPXsobmV4dFZhbHVlKSA9PiBzZXRZZWFyKE51bWJlcihuZXh0VmFsdWUpKX0KICAgICAgICAgICAgb3B0aW9ucz17KGRhdGE/LmF2YWlsYWJsZVllYXJzID8/IFt5ZWFyXSkubWFwKCh5KSA9PiAoeyB2YWx1ZTogU3RyaW5nKHkpLCBsYWJlbDogU3RyaW5nKHkpIH0pKX0KICAgICAgICAgIC8+CiAgICAgICAgICB7c3BvcnQgPT09ICJydW4iICYmICgKICAgICAgICAgICAgPFVpU2VsZWN0CiAgICAgICAgICAgICAgdmFsdWU9e3Nob2VJZH0KICAgICAgICAgICAgICBvbkNoYW5nZT17KG5leHRWYWx1ZSkgPT4gc2V0U2hvZUlkKG5leHRWYWx1ZSl9CiAgICAgICAgICAgICAgb3B0aW9ucz17WwogICAgICAgICAgICAgICAgeyB2YWx1ZTogIiIsIGxhYmVsOiAi15vXnCDXlNeg16LXnNeZ15nXnSIgfSwKICAgICAgICAgICAgICAgIC4uLigoZGF0YT8ucnVuU2hvZXMgPz8gW10pLm1hcCgoc2hvZSkgPT4gKHsgdmFsdWU6IHNob2UuaWQsIGxhYmVsOiBzaG9lLm5hbWUgfSkpKQogICAgICAgICAgICAgIF19CiAgICAgICAgICAgIC8+CiAgICAgICAgICApfQogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyb3cgcmFuZ2UtY29udHJvbHMiPgogICAgICAgICAgPGxhYmVsPgogICAgICAgICAgICDXnta+CiAgICAgICAgICAgIDxVaVNlbGVjdAogICAgICAgICAgICAgIHZhbHVlPXtTdHJpbmcoZnJvbVllYXIgPz8gZGF0YT8ucmFuZ2VGcm9tWWVhciA/PyB5ZWFyKX0KICAgICAgICAgICAgICBvbkNoYW5nZT17KG5leHRWYWx1ZSkgPT4gc2V0RnJvbVllYXIoTnVtYmVyKG5leHRWYWx1ZSkpfQogICAgICAgICAgICAgIGRpc2FibGVkPXthbGxZZWFyc30KICAgICAgICAgICAgICBvcHRpb25zPXsoZGF0YT8uYXZhaWxhYmxlWWVhcnMgPz8gW3llYXJdKS5tYXAoKHkpID0+ICh7IHZhbHVlOiBTdHJpbmcoeSksIGxhYmVsOiBTdHJpbmcoeSkgfSkpfQogICAgICAgICAgICAvPgogICAgICAgICAgPC9sYWJlbD4KICAgICAgICAgIDxsYWJlbD4KICAgICAgICAgICAg16LXk9a+CiAgICAgICAgICAgIDxVaVNlbGVjdAogICAgICAgICAgICAgIHZhbHVlPXtTdHJpbmcodG9ZZWFyID8/IGRhdGE/LnJhbmdlVG9ZZWFyID8/IHllYXIpfQogICAgICAgICAgICAgIG9uQ2hhbmdlPXsobmV4dFZhbHVlKSA9PiBzZXRUb1llYXIoTnVtYmVyKG5leHRWYWx1ZSkpfQogICAgICAgICAgICAgIGRpc2FibGVkPXthbGxZZWFyc30KICAgICAgICAgICAgICBvcHRpb25zPXsoZGF0YT8uYXZhaWxhYmxlWWVhcnMgPz8gW3llYXJdKS5tYXAoKHkpID0+ICh7IHZhbHVlOiBTdHJpbmcoeSksIGxhYmVsOiBTdHJpbmcoeSkgfSkpfQogICAgICAgICAgICAvPgogICAgICAgICAgPC9sYWJlbD4KICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPXthbGxZZWFycyA/ICJjaG9pY2UtYnRuIHNlbGVjdGVkIiA6ICJjaG9pY2UtYnRuIn0gb25DbGljaz17aGFuZGxlVG9nZ2xlQWxsWWVhcnN9PgogICAgICAgICAgICB7YWxsWWVhcnMgPyAi15vXnCDXlNep16DXmdedIiA6ICLXlNem15Ig15vXnCDXlNep16DXmdedIn0KICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyb3cgcmFuZ2Utc3VtbWFyeSI+CiAgICAgICAgICA8c3Bhbj7XmNeV15XXlyDXoNeZ16rXldeXOiB7YWxsWWVhcnMgPyAi15vXnCDXlNep16DXmdedIiA6IGAke2Zyb21ZZWFyID8/IGRhdGE/LnJhbmdlRnJvbVllYXIgPz8geWVhcn0tJHt0b1llYXIgPz8gZGF0YT8ucmFuZ2VUb1llYXIgPz8geWVhcn1gfTwvc3Bhbj4KICAgICAgICAgIDxzcGFuPteh15Qi15sg16ci154g15HXmNeV15XXlzoge2RhdGE/LnJhbmdlU3VtbWFyeS50b3RhbEttID8/IDB9PC9zcGFuPgogICAgICAgICAgPHNwYW4+16fXpteRINee157Xldem16I6IHtkYXRhPy5yYW5nZVN1bW1hcnkuYXZnUGFjZSA/IGZvcm1hdFBhY2UoZGF0YS5yYW5nZVN1bW1hcnkuYXZnUGFjZSkgOiAiLSJ9PC9zcGFuPgogICAgICAgIDwvZGl2PgogICAgICA8L1NlY3Rpb24+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZC0zIj4KICAgICAgICA8YXJ0aWNsZSBjbGFzc05hbWU9InNjb3JlLWNhcmQgeWVsbG93Ij4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0ic2NvcmUtbGFiZWwiPtenIteeINeU16nXoNeUICh7ZGF0YT8uY3VycmVudFllYXIgPz8geWVhcn0pPC9wPgogICAgICAgICAgPHN0cm9uZyBjbGFzc05hbWU9InNjb3JlLXZhbHVlIj57ZGF0YT8uc3VtbWFyeS5jdXJyZW50WWVhckttID8/IDB9PC9zdHJvbmc+CiAgICAgICAgPC9hcnRpY2xlPgogICAgICAgIDxhcnRpY2xlIGNsYXNzTmFtZT0ic2NvcmUtY2FyZCByZWQiPgogICAgICAgICAgPHAgY2xhc3NOYW1lPSJzY29yZS1sYWJlbCI+16ci154g15TXl9eV15PXqTwvcD4KICAgICAgICAgIDxzdHJvbmcgY2xhc3NOYW1lPSJzY29yZS12YWx1ZSI+e2RhdGE/LnN1bW1hcnkuY3VycmVudE1vbnRoS20gPz8gMH08L3N0cm9uZz4KICAgICAgICA8L2FydGljbGU+CiAgICAgICAgPGFydGljbGUgY2xhc3NOYW1lPSJzY29yZS1jYXJkIGJsYWNrIj4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0ic2NvcmUtbGFiZWwiPtenIteeINeR16nXoNeqINeg15nXqteV15c8L3A+CiAgICAgICAgICA8c3Ryb25nIGNsYXNzTmFtZT0ic2NvcmUtdmFsdWUiPntkYXRhPy5zdW1tYXJ5LnNlbGVjdGVkWWVhckttID8/IDB9PC9zdHJvbmc+CiAgICAgICAgPC9hcnRpY2xlPgogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0d28tY29sLXBhbmVscyI+CiAgICAgICAgPFNlY3Rpb24gdGl0bGU9Itee15HXmCDXotecINep16DXqteZIiBzdWJ0aXRsZT0i16HXlNe015sg16fXtNeeINec15vXnCDXqdeg15QiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRyZW5kLWNoYXJ0Ij4KICAgICAgICAgICAgeyhkYXRhPy55ZWFybHkgPz8gW10pLm1hcCgoeSkgPT4gKAogICAgICAgICAgICAgIDxkaXYga2V5PXt5LnllYXJ9IGNsYXNzTmFtZT0idHJlbmQtYmFyLWl0ZW0iIHRpdGxlPXtgJHt5LmttfSDXp9e0154gwrcgJHt5LndvcmtvdXRzfSDXkNeZ157Xldeg15nXnWB9PgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRyZW5kLWJhciIgc3R5bGU9e3sgaGVpZ2h0OiBgJHtNYXRoLm1heCg4LCAoeS5rbSAvIHllYXJseU1heCkgKiAxODApfXB4YCB9fSAvPgogICAgICAgICAgICAgICAgPHNwYW4+e3kueWVhcn08L3NwYW4+CiAgICAgICAgICAgICAgICA8c21hbGw+e3kua219PC9zbWFsbD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgKSl9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L1NlY3Rpb24+CgogICAgICAgIDxTZWN0aW9uIHRpdGxlPXtg157Xmden16jXlSDXl9eV15PXqdeZIMK3ICR7ZGF0YT8uc2VsZWN0ZWRZZWFyID8/IHllYXJ9YH0gc3VidGl0bGU9IteX15zXlden15Qg15zXpNeZINeX15XXk9ep15nXnSDXotedINeW15XXnSDXpNeg15nXnteUINec15HXmdem15XXoteZ150iPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRyZW5kLWNoYXJ0IG1vbnRobHkiPgogICAgICAgICAgICB7KGRhdGE/Lm1vbnRobHkgPz8gW10pLm1hcCgobSkgPT4gKAogICAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICAgIGtleT17bS5tb250aH0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idHJlbmQtYmFyLWl0ZW0iCiAgICAgICAgICAgICAgICB0aXRsZT17YCR7bS5rbX0g16fXtNeeIMK3ICR7bS53b3Jrb3V0c30g15DXmdee15XXoNeZ150ke3Nwb3J0ID09PSAicnVuIiAmJiBtLmF2Z1BhY2VNaW5QZXJLbSA/IGAgwrcg16fXpteRINee157Xldem16IgJHtmb3JtYXRQYWNlKG0uYXZnUGFjZU1pblBlckttKX1gIDogIiJ9YH0KICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idHJlbmQtYmFyIiBzdHlsZT17eyBoZWlnaHQ6IGAke01hdGgubWF4KDgsIChtLmttIC8gbW9udGhseU1heCkgKiAxODApfXB4YCB9fSAvPgogICAgICAgICAgICAgICAgPHNwYW4+e21vbnRoTGFiZWwobS5tb250aCl9PC9zcGFuPgogICAgICAgICAgICAgICAgPHNtYWxsPnttLmttfTwvc21hbGw+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9TZWN0aW9uPgogICAgICA8L2Rpdj4KCiAgICAgIHtzcG9ydCA9PT0gInJ1biIgJiYgKAogICAgICAgIDxTZWN0aW9uIHRpdGxlPSLXpNeZ15zXldeXINeU15nXodeY15XXqNeZ15nXqiDXkNeZ157Xldeg15nXnSIgc3VidGl0bGU9IteR15fXqCDXmNeV15XXlyDXldei16fXldeRINeQ15fXqNeZINeb15wg15TXotee15XXk9eV16og15HXmNeR15zXlCDXnteh15XXk9eo16oiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Imhpc3RvcnktY29udHJvbHMiPgogICAgICAgICAgICA8bGFiZWw+CiAgICAgICAgICAgICAg157WvgogICAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgICAgdHlwZT0iZGF0ZSIKICAgICAgICAgICAgICAgIHZhbHVlPXtoaXN0b3J5RnJvbURhdGV9CiAgICAgICAgICAgICAgICBkaXNhYmxlZD17YWxsWWVhcnN9CiAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHsKICAgICAgICAgICAgICAgICAgc2V0SGlzdG9yeUZyb21EYXRlKGUudGFyZ2V0LnZhbHVlKTsKICAgICAgICAgICAgICAgICAgc2V0SGlzdG9yeUZpbHRlckRpcnR5KHRydWUpOwogICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICAvPgogICAgICAgICAgICA8L2xhYmVsPgogICAgICAgICAgICA8bGFiZWw+CiAgICAgICAgICAgICAg16LXk9a+CiAgICAgICAgICAgICAgPGlucHV0CiAgICAgICAgICAgICAgICB0eXBlPSJkYXRlIgogICAgICAgICAgICAgICAgdmFsdWU9e2hpc3RvcnlUb0RhdGV9CiAgICAgICAgICAgICAgICBkaXNhYmxlZD17YWxsWWVhcnN9CiAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHsKICAgICAgICAgICAgICAgICAgc2V0SGlzdG9yeVRvRGF0ZShlLnRhcmdldC52YWx1ZSk7CiAgICAgICAgICAgICAgICAgIHNldEhpc3RvcnlGaWx0ZXJEaXJ0eSh0cnVlKTsKICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgPC9sYWJlbD4KICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9e2FsbFllYXJzID8gImNob2ljZS1idG4gc2VsZWN0ZWQiIDogImNob2ljZS1idG4ifSBvbkNsaWNrPXtoYW5kbGVUb2dnbGVBbGxZZWFyc30+CiAgICAgICAgICAgICAge2FsbFllYXJzID8gIteb15wg15TXqdeg15nXnSIgOiAi15TXpteSINeb15wg15TXqdeg15nXnSJ9CiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0iY2hvaWNlLWJ0biIgb25DbGljaz17YXBwbHlIaXN0b3J5RmlsdGVyc30+CiAgICAgICAgICAgICAg15TXpteSCiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICB7aGlzdG9yeUxvYWRpbmcgJiYgPHAgY2xhc3NOYW1lPSJub3RlIj7XmNeV16LXnyDXoNeq15XXoNeZ150uLi48L3A+fQogICAgICAgICAgeyFoaXN0b3J5TG9hZGluZyAmJiBoaXN0b3J5UmVzdWx0ICYmICgKICAgICAgICAgICAgPD4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaGlzdG9yeS1zdW1tYXJ5LXJvdyI+CiAgICAgICAgICAgICAgICA8c3Bhbj7XodeUItebINeQ15nXnteV16DXmdedOiB7aGlzdG9yeVJlc3VsdC5zdW1tYXJ5LnRvdGFsQ291bnR9PC9zcGFuPgogICAgICAgICAgICAgICAgPHNwYW4+16HXlCLXmyDXpyLXnjoge2hpc3RvcnlSZXN1bHQuc3VtbWFyeS50b3RhbEttfTwvc3Bhbj4KICAgICAgICAgICAgICAgIDxzcGFuPten16bXkSDXntee15XXpteiOiB7aGlzdG9yeVJlc3VsdC5zdW1tYXJ5LmF2Z1BhY2UgPyBmb3JtYXRQYWNlKGhpc3RvcnlSZXN1bHQuc3VtbWFyeS5hdmdQYWNlKSA6ICItIn08L3NwYW4+CiAgICAgICAgICAgICAgICA8c3Bhbj7Xp9em15Eg16nXmdeQOiB7Zm9ybWF0UGFjZShoaXN0b3J5UmVzdWx0LnN1bW1hcnkuYmVzdFBhY2UpfTwvc3Bhbj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaGlzdG9yeS10YWJsZSI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaGlzdG9yeS1yb3cgaGVhZGVyIj4KICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXsoKSA9PiB0b2dnbGVIaXN0b3J5U29ydCgiZGF0ZSIpfT7XqteQ16jXmdeaIHtoaXN0b3J5U29ydEluZGljYXRvcigiZGF0ZSIpfTwvYnV0dG9uPgogICAgICAgICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9eygpID0+IHRvZ2dsZUhpc3RvcnlTb3J0KCJkaXN0YW5jZSIpfT7Xnteo15fXpyB7aGlzdG9yeVNvcnRJbmRpY2F0b3IoImRpc3RhbmNlIil9PC9idXR0b24+CiAgICAgICAgICAgICAgICAgIDxidXR0b24gb25DbGljaz17KCkgPT4gdG9nZ2xlSGlzdG9yeVNvcnQoInBhY2UiKX0+16fXpteRIHtoaXN0b3J5U29ydEluZGljYXRvcigicGFjZSIpfTwvYnV0dG9uPgogICAgICAgICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9eygpID0+IHRvZ2dsZUhpc3RvcnlTb3J0KCJ0aW1lIil9PteW157XnyB7aGlzdG9yeVNvcnRJbmRpY2F0b3IoInRpbWUiKX08L2J1dHRvbj4KICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXsoKSA9PiB0b2dnbGVIaXN0b3J5U29ydCgidHNzIil9PlRTUyB7aGlzdG9yeVNvcnRJbmRpY2F0b3IoInRzcyIpfTwvYnV0dG9uPgogICAgICAgICAgICAgICAgICA8c3Bhbj7XoNei15w8L3NwYW4+CiAgICAgICAgICAgICAgICAgIDxzcGFuPtee16fXldeoPC9zcGFuPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICB7c29ydGVkSGlzdG9yeVdvcmtvdXRzLmxlbmd0aCA+IDAgPyAoCiAgICAgICAgICAgICAgICAgIHNvcnRlZEhpc3RvcnlXb3Jrb3V0cy5tYXAoKHdvcmspID0+ICgKICAgICAgICAgICAgICAgICAgICA8TGluayBrZXk9e3dvcmsuaWR9IGhyZWY9e3dvcmtvdXREZXRhaWxQYXRoKHdvcmsuaWQpfSBjbGFzc05hbWU9Imhpc3Rvcnktcm93IGhpc3RvcnktbGluayI+CiAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj57Zm9ybWF0RGlzcGxheURhdGUod29yay5zdGFydEF0KX08L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj57Zm9ybWF0RGlzdGFuY2VLbSh3b3JrLmRpc3RhbmNlRGlzcGxheUttID8/ICh3b3JrLmRpc3RhbmNlTSAhPSBudWxsID8gd29yay5kaXN0YW5jZU0gLyAxMDAwIDogbnVsbCkpfTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICAgIDxzcGFuPntmb3JtYXRQYWNlKHdvcmsucGFjZU1pblBlckttKX08L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj57Zm9ybWF0RHVyYXRpb24od29yay5kdXJhdGlvblNlYyl9PC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgPHNwYW4+e3dvcmsudHNzTGlrZX08L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj57d29yay5zaG9lTmFtZSA/PyAiLSJ9PC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgPHNwYW4+e3dvcmsuc291cmNlfTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICA8L0xpbms+CiAgICAgICAgICAgICAgICAgICkpCiAgICAgICAgICAgICAgICApIDogKAogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaGlzdG9yeS1yb3cgZW1wdHkiPgogICAgICAgICAgICAgICAgICAgIDxzcGFuPteQ15nXnyDXkNeZ157Xldeg15nXnSDXkdeY15XXldeXINep16DXkdeX16guPC9zcGFuPgogICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICl9CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvPgogICAgICAgICAgKX0KICAgICAgICAgIHshaGlzdG9yeUxvYWRpbmcgJiYgIWhpc3RvcnlSZXN1bHQgJiYgPHAgY2xhc3NOYW1lPSJub3RlIj7Xkdem16Ig16TXmdec15XXlyDXm9eT15kg15zXqNeQ15XXqiDXkNeZ157Xldeg15nXnS48L3A+fQogICAgICAgIDwvU2VjdGlvbj4KICAgICAgKX0KCiAgICAgIHtzcG9ydCA9PT0gInJ1biIgJiYgKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0d28tY29sLXBhbmVscyI+CiAgICAgICAgICA8U2VjdGlvbiB0aXRsZT0i157XmdeV158g15zXpNeZINeg16LXnCIgc3VidGl0bGU9Iteb157XldeqINeo15nXpteV16og15XXp9e0154g15zXm9ecINeg16LXnCI+CiAgICAgICAgICAgIDx1bCBjbGFzc05hbWU9Imxpc3QiPgogICAgICAgICAgICAgIHsoZGF0YT8ucnVuU2hvZXMgPz8gW10pLm1hcCgoc2hvZSkgPT4gKAogICAgICAgICAgICAgICAgPGxpIGtleT17c2hvZS5pZH0gY2xhc3NOYW1lPSJtZXRyaWMtcm93Ij4KICAgICAgICAgICAgICAgICAgPHNwYW4+e3Nob2UubmFtZX08L3NwYW4+CiAgICAgICAgICAgICAgICAgIDxzdHJvbmc+e3Nob2UucnVuc30g16jXmdem15XXqiDCtyB7c2hvZS5rbX0g16ci1548L3N0cm9uZz4KICAgICAgICAgICAgICAgIDwvbGk+CiAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICA8L1NlY3Rpb24+CgogICAgICAgICAgPFNlY3Rpb24gdGl0bGU9Iteo15nXpteV16og15TXmdeV150g15zXpNeZINeg16LXnCIgc3VidGl0bGU9Itee16LXp9eRINeZ15XXnteZINei15wg16nXmdeV15og16DXotec15nXmdedIj4KICAgICAgICAgICAgPHVsIGNsYXNzTmFtZT0ibGlzdCI+CiAgICAgICAgICAgICAgeyhkYXRhPy50b2RheVJ1bnMgPz8gW10pLm1hcCgocnVuKSA9PiAoCiAgICAgICAgICAgICAgICA8bGkga2V5PXtydW4uaWR9IGNsYXNzTmFtZT0ibWV0cmljLXJvdyI+CiAgICAgICAgICAgICAgICAgIDxzcGFuPgogICAgICAgICAgICAgICAgICAgIHtmb3JtYXREaXNwbGF5RGF0ZShydW4uc3RhcnRBdCl9IMK3IHtydW4uZGlzdGFuY2VLbX0g16ci154KICAgICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICAgICA8c3Ryb25nPntydW4uc2hvZU5hbWV9PC9zdHJvbmc+CiAgICAgICAgICAgICAgICA8L2xpPgogICAgICAgICAgICAgICkpfQogICAgICAgICAgICAgIHsoIWRhdGE/LnRvZGF5UnVucyB8fCBkYXRhLnRvZGF5UnVucy5sZW5ndGggPT09IDApICYmIDxsaT7XkNeZ158g16jXmdem15XXqiDXlNeZ15XXnS48L2xpPn0KICAgICAgICAgICAgPC91bD4KICAgICAgICAgIDwvU2VjdGlvbj4KICAgICAgICA8L2Rpdj4KICAgICAgKX0KCiAgICAgIHtzcG9ydCA9PT0gInJ1biIgJiYgZGF0YT8ucGJzICYmIGRhdGEucGJzLmxlbmd0aCA+IDAgJiYgKAogICAgICAgIDxTZWN0aW9uIHRpdGxlPSLXqdeZ15DXmdedINeQ15nXqdeZ15nXnSIgc3VidGl0bGU9IlRvcDUg15zXm9ecINee16jXl9enINep16DXkdeT16ciPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InBiLWdyaWQiPgogICAgICAgICAgICB7ZGF0YS5wYnMubWFwKChwYikgPT4gKAogICAgICAgICAgICAgIDxkaXYga2V5PXtgJHtwYi5kaXN0YW5jZUtleX0tJHtwYi5kYXRlID8/IHBiLmJlc3RUaW1lU2VjfWB9IGNsYXNzTmFtZT0icGItY2FyZCI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icGItZGlzdGFuY2UiPgogICAgICAgICAgICAgICAgICA8TGluayBocmVmPXtgL2FuYWx5dGljcy9wYi8ke3BiLmRpc3RhbmNlS2V5fWB9IGNsYXNzTmFtZT0icGItZGlzdGFuY2UtbGluayI+CiAgICAgICAgICAgICAgICAgICAge3BiLmRpc3RhbmNlTGFiZWx9CiAgICAgICAgICAgICAgICAgIDwvTGluaz4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InBiLXRpbWUiPntmb3JtYXREdXJhdGlvbihwYi5iZXN0VGltZVNlYyl9PC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icGItZGV0YWlscyI+CiAgICAgICAgICAgICAgICAgIDxzcGFuPntwYi5kaXN0YW5jZUttLnRvRml4ZWQoMSl9INenIteePC9zcGFuPgogICAgICAgICAgICAgICAgICA8c3Bhbj57cGIucGFjZU1pblBlckttID8gZm9ybWF0UGFjZShwYi5wYWNlTWluUGVyS20pIDogIi0ifTwvc3Bhbj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InBiLW1ldGEiPgogICAgICAgICAgICAgICAgICA8c3Bhbj57cGIuZGF0ZSA/IGZvcm1hdERpc3BsYXlEYXRlKHBiLmRhdGUpIDogIteq15DXqNeZ15og15zXkCDXmdeT15XXoiJ9PC9zcGFuPgogICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InBiLXNvdXJjZSI+CiAgICAgICAgICAgICAgICAgICAge3BiLnNvdXJjZSA9PT0gInJvbGxpbmdfc2VnbWVudCIgPyAi15fXnNenINee16jXmdem15QiIDogcGIuc291cmNlID09PSAid2hvbGVfd29ya291dCIgPyAi16jXmdem15QiIDogIi0ifQogICAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIHtwYi53b3Jrb3V0SWQgJiYgKAogICAgICAgICAgICAgICAgICA8TGluayBocmVmPXt3b3Jrb3V0RGV0YWlsUGF0aChwYi53b3Jrb3V0SWQpfSBjbGFzc05hbWU9InBiLWxpbmsiPgogICAgICAgICAgICAgICAgICAgINec15DXmdee15XXnwogICAgICAgICAgICAgICAgICA8L0xpbms+CiAgICAgICAgICAgICAgICApfQogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICApKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvU2VjdGlvbj4KICAgICAgKX0KCiAgICAgIHtzcG9ydCA9PT0gInN3aW0iICYmICgKICAgICAgICA8U2VjdGlvbiB0aXRsZT0i15TXoteo15Qg15zXqdeX15nXmdeUIiBzdWJ0aXRsZT0i15zXpNeZINeU15TXkteT16jXlCwg16nXl9eZ15nXlCDXnteV16bXkteqINee15TXqdeg15Qg15TXoNeV15vXl9eZ16og15XXlNec15DXlCI+CiAgICAgICAgICA8cCBjbGFzc05hbWU9Im5vdGUiPteQ150g16rXqNem15QsINeQ16TXqdeoINec16TXqteV15cg15HXlNee16nXmiDXktedINep16DXmdedINen15XXk9ee15XXqiDXnNep15fXmdeZ15QuPC9wPgogICAgICAgIDwvU2VjdGlvbj4KICAgICAgKX0KICAgIDwvPgogICk7Cn0K"}
+"use client";
+
+import Link from "next/link";
+import { useEffect, useMemo, useState } from "react";
+import { Section } from "@/components/cards";
+import UiSelect from "@/components/ui-select";
+import { formatDisplayDate } from "@/lib/date";
+import { workoutDetailPath } from "@/lib/url";
+import type { HistoryResult, HistoryWorkout } from "@/lib/history-types";
+
+type Sport = "run" | "swim" | "bike";
+type HistorySortField = "date" | "distance" | "pace" | "time" | "tss";
+
+type AnalyticsResponse = {
+  sport: Sport;
+  selectedShoeId: string | null;
+  currentYear: number;
+  selectedYear: number;
+  availableYears: number[];
+  rangeFromYear: number;
+  rangeToYear: number;
+  rangeSummary: {
+    totalCount: number;
+    totalKm: number;
+    avgPace: number | null;
+  };
+  summary: {
+    selectedYearKm: number;
+    currentYearKm: number;
+    currentMonthKm: number;
+  };
+  yearly: Array<{ year: number; km: number; workouts: number }>;
+  monthly: Array<{ month: number; km: number; workouts: number; avgPaceMinPerKm: number | null }>;
+  runBreakdown: {
+    byDistance: Array<{ id: string; label: string; count: number; km: number }>;
+    byDuration: Array<{ id: string; label: string; count: number }>;
+    byPace: Array<{ id: string; label: string; count: number }>;
+  };
+  runShoes: Array<{ id: string; name: string; runs: number; km: number }>;
+  todayRuns: Array<{
+    id: string;
+    startAt: string;
+    distanceKm: number;
+    durationSec: number;
+    shoeName: string;
+  }>;
+  pbs: Array<{
+    distanceKey: string;
+    distanceLabel: string;
+    distanceKm: number;
+    bestTimeSec: number | null;
+    paceMinPerKm: number | null;
+    workoutId: string | null;
+    date: string | null;
+    source: "whole_workout" | "rolling_segment" | null;
+  }>;
+};
+
+function monthLabel(month: number) {
+  const labels = ["ינו", "פבר", "מרץ", "אפר", "מאי", "יונ", "יול", "אוג", "ספט", "אוק", "נוב", "דצמ"];
+  return labels[month - 1] ?? String(month);
+}
+
+function formatDuration(sec: number | null) {
+  if (sec == null) return "-";
+  const hours = Math.floor(sec / 3600);
+  const minutes = Math.floor((sec % 3600) / 60);
+  const seconds = sec % 60;
+  if (hours > 0) return `${hours}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  return `${minutes}:${String(seconds).padStart(2, "0")}`;
+}
+
+function formatPace(paceMinPerKm: number | null) {
+  if (paceMinPerKm == null || !Number.isFinite(paceMinPerKm)) return "-";
+  const min = Math.floor(paceMinPerKm);
+  const sec = Math.round((paceMinPerKm - min) * 60);
+  return `${min}:${String(sec).padStart(2, "0")}`;
+}
+
+function formatDistanceKm(distanceKm: number | null | undefined) {
+  if (distanceKm == null || !Number.isFinite(distanceKm)) return "-";
+  const rounded = Math.round(distanceKm * 100) / 100;
+  return `${Number.isInteger(rounded) ? rounded.toFixed(0) : rounded.toFixed(2)} ק"מ`;
+}
+
+function maxValue(values: number[]) {
+  return Math.max(1, ...values);
+}
+
+function currentMonthRange() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const day = String(now.getDate()).padStart(2, "0");
+  return {
+    from: `${year}-${month}-01`,
+    to: `${year}-${month}-${day}`
+  };
+}
+
+function historySortValue(workout: HistoryWorkout, field: HistorySortField) {
+  switch (field) {
+    case "date":
+      return Date.parse(workout.startAt) || 0;
+    case "distance":
+      return workout.distanceDisplayKm ?? (workout.distanceM ?? 0) / 1000;
+    case "pace":
+      return Number.isFinite(workout.paceMinPerKm ?? NaN) ? (workout.paceMinPerKm as number) : Number.MAX_SAFE_INTEGER;
+    case "time":
+      return workout.durationSec ?? 0;
+    case "tss":
+      return workout.tssLike ?? 0;
+    default:
+      return 0;
+  }
+}
+
+export default function AnalyticsPage() {
+  const monthRange = currentMonthRange();
+  const [sport, setSport] = useState<Sport>("run");
+  const [year, setYear] = useState<number>(new Date().getFullYear());
+  const [shoeId, setShoeId] = useState<string>("");
+  const [fromYear, setFromYear] = useState<number | undefined>(undefined);
+  const [toYear, setToYear] = useState<number | undefined>(undefined);
+  const [allYears, setAllYears] = useState(false);
+  const [data, setData] = useState<AnalyticsResponse | null>(null);
+  const [historyResult, setHistoryResult] = useState<HistoryResult | null>(null);
+  const [historyLoading, setHistoryLoading] = useState(false);
+  const [historyFromDate, setHistoryFromDate] = useState(monthRange.from);
+  const [historyToDate, setHistoryToDate] = useState(monthRange.to);
+  const [historyFilterDirty, setHistoryFilterDirty] = useState(false);
+  const [historyRefreshToken, setHistoryRefreshToken] = useState(0);
+  const [historySort, setHistorySort] = useState<{ field: HistorySortField; direction: "asc" | "desc" }>({
+    field: "date",
+    direction: "desc"
+  });
+
+  useEffect(() => {
+    void load();
+  }, [sport, year, shoeId, fromYear, toYear, allYears]);
+
+  useEffect(() => {
+    void loadHistoryTable();
+  }, [sport, fromYear, toYear, allYears, historyRefreshToken]);
+
+  useEffect(() => {
+    if (!allYears || !data) return;
+    const sorted = [...data.availableYears].sort((a, b) => a - b);
+    setFromYear(sorted[0]);
+    setToYear(sorted[sorted.length - 1]);
+  }, [allYears, data]);
+
+  useEffect(() => {
+    if (historyFilterDirty) return;
+    if (allYears) {
+      setHistoryFromDate("");
+      setHistoryToDate("");
+      return;
+    }
+    const range = currentMonthRange();
+    setHistoryFromDate(range.from);
+    setHistoryToDate(range.to);
+  }, [allYears, historyFilterDirty, sport]);
+
+  async function load() {
+    const params = new URLSearchParams({
+      sport,
+      year: String(year)
+    });
+    if (fromYear) params.set("fromYear", String(fromYear));
+    if (toYear) params.set("toYear", String(toYear));
+    if (allYears) params.set("allYears", "true");
+    if (sport === "run" && shoeId) {
+      params.set("shoeId", shoeId);
+    }
+    const res = await fetch(`/api/analytics/overview?${params.toString()}`);
+    const json = (await res.json()) as AnalyticsResponse;
+    setData(json);
+    setYear(json.selectedYear);
+  }
+
+  async function loadHistoryTable() {
+    setHistoryLoading(true);
+    try {
+      const params = new URLSearchParams();
+      params.set("sport", sport);
+      if (!allYears) {
+        if (historyFromDate) {
+          params.set("from", `${historyFromDate}T00:00:00.000Z`);
+        } else {
+          params.set("from", `${monthRange.from}T00:00:00.000Z`);
+        }
+        if (historyToDate) {
+          params.set("to", `${historyToDate}T23:59:59.999Z`);
+        } else {
+          params.set("to", `${monthRange.to}T23:59:59.999Z`);
+        }
+      }
+      const res = await fetch(`/api/analytics/history?${params.toString()}`);
+      if (!res.ok) throw new Error("history fetch failed");
+      const payload = (await res.json()) as HistoryResult;
+      setHistoryResult(payload);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setHistoryLoading(false);
+    }
+  }
+
+  function applyHistoryFilters() {
+    setHistoryRefreshToken((prev) => prev + 1);
+    setHistoryFilterDirty(true);
+  }
+
+  function handleToggleAllYears() {
+    setAllYears((prev) => {
+      const next = !prev;
+      if (!next) {
+        const range = currentMonthRange();
+        setHistoryFromDate(range.from);
+        setHistoryToDate(range.to);
+      }
+      return next;
+    });
+    setHistoryFilterDirty(false);
+  }
+
+  const yearlyMax = useMemo(() => maxValue((data?.yearly ?? []).map((y) => y.km)), [data]);
+  const monthlyMax = useMemo(() => maxValue((data?.monthly ?? []).map((m) => m.km)), [data]);
+
+  const sortedHistoryWorkouts = useMemo(() => {
+    const workouts = historyResult?.workouts ?? [];
+    const dir = historySort.direction === "asc" ? 1 : -1;
+    return [...workouts].sort((a, b) => {
+      const valA = historySortValue(a, historySort.field);
+      const valB = historySortValue(b, historySort.field);
+      if (valA === valB) {
+        return Date.parse(b.startAt) - Date.parse(a.startAt);
+      }
+      return dir * (valA - valB);
+    });
+  }, [historyResult?.workouts, historySort]);
+
+  const historySortIndicator = (field: HistorySortField) => {
+    if (historySort.field !== field) return "";
+    return historySort.direction === "asc" ? "▲" : "▼";
+  };
+
+  function toggleHistorySort(field: HistorySortField) {
+    setHistorySort((prev) =>
+      prev.field === field
+        ? { field, direction: prev.direction === "asc" ? "desc" : "asc" }
+        : { field, direction: "desc" }
+    );
+  }
+
+  const yearIndex = data ? data.availableYears.indexOf(data.selectedYear) : -1;
+  const canPrevYear = data ? yearIndex >= 0 && yearIndex < data.availableYears.length - 1 : false;
+  const canNextYear = data ? yearIndex > 0 : false;
+
+  return (
+    <>
+      <header className="page-header">
+        <h1>נתונים והיסטוריה</h1>
+        <p>מבט מאקרו ומיקרו על נפח אימונים, מגמות ושיאים אישיים.</p>
+      </header>
+
+      <Section title="פילטרים" subtitle="ענף + שנה לניתוח">
+        <div className="row">
+          {[
+            { id: "run", label: "ריצה" },
+            { id: "swim", label: "שחייה" },
+            { id: "bike", label: "אופניים" }
+          ].map((item) => (
+            <button
+              key={item.id}
+              className={sport === item.id ? "choice-btn selected" : "choice-btn"}
+              onClick={() => setSport(item.id as Sport)}
+            >
+              {item.label}
+            </button>
+          ))}
+          <div className="year-nav-inline">
+            <button
+              className="choice-btn"
+              onClick={() => data && canPrevYear && setYear(data.availableYears[yearIndex + 1])}
+              disabled={!canPrevYear}
+            >
+              שנה קודמת
+            </button>
+            <strong>{data?.selectedYear ?? year}</strong>
+            <button
+              className="choice-btn"
+              onClick={() => data && canNextYear && setYear(data.availableYears[yearIndex - 1])}
+              disabled={!canNextYear}
+            >
+              שנה הבאה
+            </button>
+          </div>
+          <UiSelect
+            value={String(data?.selectedYear ?? year)}
+            onChange={(nextValue) => setYear(Number(nextValue))}
+            options={(data?.availableYears ?? [year]).map((y) => ({ value: String(y), label: String(y) }))}
+          />
+          {sport === "run" && (
+            <UiSelect
+              value={shoeId}
+              onChange={(nextValue) => setShoeId(nextValue)}
+              options={[
+                { value: "", label: "כל הנעליים" },
+                ...((data?.runShoes ?? []).map((shoe) => ({ value: shoe.id, label: shoe.name })))
+              ]}
+            />
+          )}
+        </div>
+        <div className="row range-controls">
+          <label>
+            מ־
+            <UiSelect
+              value={String(fromYear ?? data?.rangeFromYear ?? year)}
+              onChange={(nextValue) => setFromYear(Number(nextValue))}
+              disabled={allYears}
+              options={(data?.availableYears ?? [year]).map((y) => ({ value: String(y), label: String(y) }))}
+            />
+          </label>
+          <label>
+            עד־
+            <UiSelect
+              value={String(toYear ?? data?.rangeToYear ?? year)}
+              onChange={(nextValue) => setToYear(Number(nextValue))}
+              disabled={allYears}
+              options={(data?.availableYears ?? [year]).map((y) => ({ value: String(y), label: String(y) }))}
+            />
+          </label>
+          <button className={allYears ? "choice-btn selected" : "choice-btn"} onClick={handleToggleAllYears}>
+            {allYears ? "כל השנים" : "הצג כל השנים"}
+          </button>
+        </div>
+        <div className="row range-summary">
+          <span>טווח ניתוח: {allYears ? "כל השנים" : `${fromYear ?? data?.rangeFromYear ?? year}-${toYear ?? data?.rangeToYear ?? year}`}</span>
+          <span>סה"כ ק"מ בטווח: {data?.rangeSummary.totalKm ?? 0}</span>
+          <span>קצב ממוצע: {data?.rangeSummary.avgPace ? formatPace(data.rangeSummary.avgPace) : "-"}</span>
+        </div>
+      </Section>
+
+      <div className="grid-3">
+        <article className="score-card yellow">
+          <p className="score-label">ק"מ השנה ({data?.currentYear ?? year})</p>
+          <strong className="score-value">{data?.summary.currentYearKm ?? 0}</strong>
+        </article>
+        <article className="score-card red">
+          <p className="score-label">ק"מ החודש</p>
+          <strong className="score-value">{data?.summary.currentMonthKm ?? 0}</strong>
+        </article>
+        <article className="score-card black">
+          <p className="score-label">ק"מ בשנת ניתוח</p>
+          <strong className="score-value">{data?.summary.selectedYearKm ?? 0}</strong>
+        </article>
+      </div>
+
+      <div className="two-col-panels">
+        <Section title="מבט על שנתי" subtitle="סה״כ ק״מ לכל שנה">
+          <div className="trend-chart">
+            {(data?.yearly ?? []).map((y) => (
+              <div key={y.year} className="trend-bar-item" title={`${y.km} ק״מ · ${y.workouts} אימונים`}>
+                <div className="trend-bar" style={{ height: `${Math.max(8, (y.km / yearlyMax) * 180)}px` }} />
+                <span>{y.year}</span>
+                <small>{y.km}</small>
+              </div>
+            ))}
+          </div>
+        </Section>
+
+        <Section title={`מיקרו חודשי · ${data?.selectedYear ?? year}`} subtitle="חלוקה לפי חודשים עם זום פנימה לביצועים">
+          <div className="trend-chart monthly">
+            {(data?.monthly ?? []).map((m) => (
+              <div
+                key={m.month}
+                className="trend-bar-item"
+                title={`${m.km} ק״מ · ${m.workouts} אימונים${sport === "run" && m.avgPaceMinPerKm ? ` · קצב ממוצע ${formatPace(m.avgPaceMinPerKm)}` : ""}`}
+              >
+                <div className="trend-bar" style={{ height: `${Math.max(8, (m.km / monthlyMax) * 180)}px` }} />
+                <span>{monthLabel(m.month)}</span>
+                <small>{m.km}</small>
+              </div>
+            ))}
+          </div>
+        </Section>
+      </div>
+
+      {sport === "run" && (
+        <Section title="פילוח היסטוריית אימונים" subtitle="בחר טווח ועקוב אחרי כל העמודות בטבלה מסודרת">
+          <div className="history-controls">
+            <label>
+              מ־
+              <input
+                type="date"
+                value={historyFromDate}
+                disabled={allYears}
+                onChange={(e) => {
+                  setHistoryFromDate(e.target.value);
+                  setHistoryFilterDirty(true);
+                }}
+              />
+            </label>
+            <label>
+              עד־
+              <input
+                type="date"
+                value={historyToDate}
+                disabled={allYears}
+                onChange={(e) => {
+                  setHistoryToDate(e.target.value);
+                  setHistoryFilterDirty(true);
+                }}
+              />
+            </label>
+            <button className={allYears ? "choice-btn selected" : "choice-btn"} onClick={handleToggleAllYears}>
+              {allYears ? "כל השנים" : "הצג כל השנים"}
+            </button>
+            <button className="choice-btn" onClick={applyHistoryFilters}>
+              הצג
+            </button>
+          </div>
+          {historyLoading && <p className="note">טוען נתונים...</p>}
+          {!historyLoading && historyResult && (
+            <>
+              <div className="history-summary-row">
+                <span>סה"כ אימונים: {historyResult.summary.totalCount}</span>
+                <span>סה"כ ק"מ: {historyResult.summary.totalKm}</span>
+                <span>קצב ממוצע: {historyResult.summary.avgPace ? formatPace(historyResult.summary.avgPace) : "-"}</span>
+                <span>קצב שיא: {formatPace(historyResult.summary.bestPace)}</span>
+              </div>
+              <div className="history-table">
+                <div className="history-row header">
+                  <button onClick={() => toggleHistorySort("date")}>תאריך {historySortIndicator("date")}</button>
+                  <button onClick={() => toggleHistorySort("distance")}>מרחק {historySortIndicator("distance")}</button>
+                  <button onClick={() => toggleHistorySort("pace")}>קצב {historySortIndicator("pace")}</button>
+                  <button onClick={() => toggleHistorySort("time")}>זמן {historySortIndicator("time")}</button>
+                  <button onClick={() => toggleHistorySort("tss")}>TSS {historySortIndicator("tss")}</button>
+                  <span>נעל</span>
+                  <span>מקור</span>
+                </div>
+                {sortedHistoryWorkouts.length > 0 ? (
+                  sortedHistoryWorkouts.map((work) => (
+                    <Link key={work.id} href={workoutDetailPath(work.id)} className="history-row history-link">
+                      <span>{formatDisplayDate(work.startAt)}</span>
+                      <span>{formatDistanceKm(work.distanceDisplayKm ?? (work.distanceM != null ? work.distanceM / 1000 : null))}</span>
+                      <span>{formatPace(work.paceMinPerKm)}</span>
+                      <span>{formatDuration(work.durationSec)}</span>
+                      <span>{work.tssLike}</span>
+                      <span>{work.shoeName ?? "-"}</span>
+                      <span>{work.source}</span>
+                    </Link>
+                  ))
+                ) : (
+                  <div className="history-row empty">
+                    <span>אין אימונים בטווח שנבחר.</span>
+                  </div>
+                )}
+              </div>
+            </>
+          )}
+          {!historyLoading && !historyResult && <p className="note">בצע פילוח כדי לראות אימונים.</p>}
+        </Section>
+      )}
+
+      {sport === "run" && (
+        <div className="two-col-panels">
+          <Section title="מיון לפי נעל" subtitle="כמות ריצות וק״מ לכל נעל">
+            <ul className="list">
+              {(data?.runShoes ?? []).map((shoe) => (
+                <li key={shoe.id} className="metric-row">
+                  <span>{shoe.name}</span>
+                  <strong>{shoe.runs} ריצות · {shoe.km} ק"מ</strong>
+                </li>
+              ))}
+            </ul>
+          </Section>
+
+          <Section title="ריצות היום לפי נעל" subtitle="מעקב יומי על שיוך נעליים">
+            <ul className="list">
+              {(data?.todayRuns ?? []).map((run) => (
+                <li key={run.id} className="metric-row">
+                  <span>
+                    {formatDisplayDate(run.startAt)} · {run.distanceKm} ק"מ
+                  </span>
+                  <strong>{run.shoeName}</strong>
+                </li>
+              ))}
+              {(!data?.todayRuns || data.todayRuns.length === 0) && <li>אין ריצות היום.</li>}
+            </ul>
+          </Section>
+        </div>
+      )}
+
+      {sport === "run" && data?.pbs && data.pbs.length > 0 && (
+        <Section title="שיאים אישיים" subtitle="Top5 לכל מרחק שנבדק">
+          <div className="pb-grid">
+            {data.pbs.map((pb) => (
+              <div key={`${pb.distanceKey}-${pb.date ?? pb.bestTimeSec}`} className="pb-card">
+                <div className="pb-distance">
+                  <Link href={`/analytics/pb/${pb.distanceKey}`} className="pb-distance-link">
+                    {pb.distanceLabel}
+                  </Link>
+                </div>
+                <div className="pb-time">{formatDuration(pb.bestTimeSec)}</div>
+                <div className="pb-details">
+                  <span>{pb.distanceKm.toFixed(1)} ק"מ</span>
+                  <span>{pb.paceMinPerKm ? formatPace(pb.paceMinPerKm) : "-"}</span>
+                </div>
+                <div className="pb-meta">
+                  <span>{pb.date ? formatDisplayDate(pb.date) : "תאריך לא ידוע"}</span>
+                  <span className="pb-source">
+                    {pb.source === "rolling_segment" ? "חלק מריצה" : pb.source === "whole_workout" ? "ריצה" : "-"}
+                  </span>
+                </div>
+                {pb.workoutId && (
+                  <Link href={workoutDetailPath(pb.workoutId)} className="pb-link">
+                    לאימון
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {sport === "swim" && (
+        <Section title="הערה לשחייה" subtitle="לפי ההגדרה, שחייה מוצגת מהשנה הנוכחית והלאה">
+          <p className="note">אם תרצה, אפשר לפתוח בהמשך גם שנים קודמות לשחייה.</p>
+        </Section>
+      )}
+    </>
+  );
+}

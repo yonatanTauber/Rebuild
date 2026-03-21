@@ -1,1 +1,220 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IFVpU2VsZWN0IGZyb20gIkAvY29tcG9uZW50cy91aS1zZWxlY3QiOwoKZXhwb3J0IHR5cGUgUnVuRnVlbGluZ1NvdXJjZSA9ICJub25lIiB8ICJnZWwiIHwgImRhdGUiIHwgIm90aGVyIjsKCmV4cG9ydCB0eXBlIFJ1bkZlZWRiYWNrVmFsdWVzID0gewogIHJwZVNjb3JlOiAxIHwgMiB8IDMgfCA0IHwgNTsKICBsZWdzTG9hZFNjb3JlOiAxIHwgMiB8IDMgfCA0IHwgNTsKICBwYWluU2NvcmU6IDEgfCAyIHwgMyB8IDQgfCA1OwogIHBhaW5BcmVhOiBzdHJpbmc7CiAgYWRkRml2ZUttU2NvcmU6IDEgfCAyIHwgMyB8IDQgfCA1OwogIHJlY292ZXJ5U2NvcmU6IDEgfCAyIHwgMyB8IDQgfCA1OwogIGJyZWF0aGluZ1Njb3JlOiAxIHwgMiB8IDMgfCA0IHwgNTsKICBvdmVyYWxsTG9hZFNjb3JlOiAxIHwgMiB8IDMgfCA0IHwgNTsKICBwcmVSdW5OdXRyaXRpb25TY29yZTogMSB8IDIgfCAzIHwgNCB8IDU7CiAgZW52aXJvbm1lbnRTY29yZTogMSB8IDIgfCAzIHwgNCB8IDU7CiAgc2F0aXNmYWN0aW9uU2NvcmU6IDEgfCAyIHwgMyB8IDQgfCA1OwogIGZ1ZWxpbmdTb3VyY2U6IFJ1bkZ1ZWxpbmdTb3VyY2U7CiAgZnVlbGluZ1F1YW50aXR5OiBudW1iZXI7CiAgb3Blbk5vdGU6IHN0cmluZzsKfTsKCnR5cGUgUHJvcHMgPSB7CiAgdmFsdWU6IFJ1bkZlZWRiYWNrVmFsdWVzOwogIG9uQ2hhbmdlOiAobmV4dDogUnVuRmVlZGJhY2tWYWx1ZXMpID0+IHZvaWQ7CiAgcGFpbkFyZWFzPzogc3RyaW5nW107CiAgY29tcGFjdD86IGJvb2xlYW47Cn07Cgpjb25zdCBzY29yZVNldHM6IEFycmF5PHsKICBrZXk6IGtleW9mIE9taXQ8CiAgICBSdW5GZWVkYmFja1ZhbHVlcywKICAgICJwYWluQXJlYSIgfCAiZnVlbGluZ1NvdXJjZSIgfCAiZnVlbGluZ1F1YW50aXR5IiB8ICJvcGVuTm90ZSIKICA+OwogIHRpdGxlOiBzdHJpbmc7CiAgb3B0aW9uczogW3N0cmluZywgc3RyaW5nLCBzdHJpbmcsIHN0cmluZywgc3RyaW5nXTsKfT4gPSBbCiAgewogICAga2V5OiAicnBlU2NvcmUiLAogICAgdGl0bGU6ICLXqteX15XXqdeqINee15DXntelINeb15zXnNeZ16ogKFJQRSkg4oCUINeb157XlCDXp9ep15Qg15TXqNeZ16bXlCDXlNeo15LXmdep15Q/IiwKICAgIG9wdGlvbnM6IFsi16fXnNeUINee15DXldeTIiwgIten15zXlCIsICLXkdeZ16DXldeg15nXqiIsICLXp9ep15QiLCAi16fXqdeUINee15DXldeTIl0KICB9LAogIHsKICAgIGtleTogImxlZ3NMb2FkU2NvcmUiLAogICAgdGl0bGU6ICLXoteV157XoSDXotecINeU16jXktec15nXmdedIOKAlCDXm9ee15Qg16LXldee16Eg15TXqNeS16nXqiDXkdee15TXnNeaINeU16jXmdem15Q/IiwKICAgIG9wdGlvbnM6IFsi16fXnNeZ15zXldeqINee15DXldeTIiwgIten15zXmdec15XXqiIsICLXkdeZ16DXldeg15kiLCAi15vXkdeT15XXqiIsICLXm9eR15PXldeqINee15DXldeTIl0KICB9LAogIHsKICAgIGtleTogInBhaW5TY29yZSIsCiAgICB0aXRsZTogIteb15DXkSDXkNeVINeo15LXmdep15XXqiDigJQg15vXnteUINeb15DXkS/XqNeS15nXqdeV16og15TXldek15nXoteVINeR157XlNec15og15TXqNeZ16bXlD8iLAogICAgb3B0aW9uczogWyLXnNec15Ag15vXkNeRIiwgIteo15LXmdep15XXqiDXp9ec15QiLCAi15vXkNeRINen15wiLCAi15vXkNeRINee15XXqNeS16kiLCAi15vXkNeRINee16nXntei15XXqteZIl0KICB9LAogIHsKICAgIGtleTogImFkZEZpdmVLbVNjb3JlIiwKICAgIHRpdGxlOiAi15nXm9eV15zXqiDXnNeU157XqdeZ15og4oCUINeb157XlCDXp9ep15Qg15TXmdeUINec15TXldeh15nXoyDXoteV15MgNSDXp9e0154g15HXodeZ15XXnT8iLAogICAgb3B0aW9uczogWyLXkden15zXldeqIiwgIteT15kg15HXp9ec15XXqiIsICLXkNek16nXqNeZINee15DXqteS16giLCAi16fXqdeUINee15DXldeTIiwgIteR15zXqteZINeQ16TXqdeo15kiXQogIH0sCiAgewogICAga2V5OiAicmVjb3ZlcnlTY29yZSIsCiAgICB0aXRsZTogIteU16rXkNeV16nXqdeV16og15DXl9eo15kg15TXqNeZ16bXlCDigJQg15DXmdeaINeU15LXldejINee16jXkteZ16kg16LXm9ep15nXlT8iLAogICAgb3B0aW9uczogWyLXqNei16DXnyDXnteQ15XXkyIsICLXqNei16DXnyIsICLXkdeh15PXqCIsICLXoteZ15nXoyIsICLXnteV16rXqSJdCiAgfSwKICB7CiAgICBrZXk6ICJicmVhdGhpbmdTY29yZSIsCiAgICB0aXRsZTogIteg16nXmdee15Qg4oCUINeb157XlCDXlNeg16nXmdee15Qg15TXmdeZ16rXlCDXnteS15HXmdec15Qg15HXnteU15zXmiDXlNeo15nXpteUPyIsCiAgICBvcHRpb25zOiBbIteX15XXpNep15nXqiIsICLXntei15gg157XkNee16UiLCAi15HXmdeg15XXoNeZIiwgIten16nXlCIsICLXp9ep15Qg157XkNeV15MiXQogIH0sCiAgewogICAga2V5OiAib3ZlcmFsbExvYWRTY29yZSIsCiAgICB0aXRsZTogItei15XXntehINeb15zXnNeZIOKAlCDXm9ee15Qg15TXkNeZ157XldefINeU16jXkteZ16kg16LXnteV16Eg15zXkteV16M/IiwKICAgIG9wdGlvbnM6IFsi16fXnCDXnteQ15XXkyIsICLXp9ecIiwgIteR15nXoNeV16DXmSIsICLXp9ep15QiLCAi16fXqdeUINee15DXldeTIl0KICB9LAogIHsKICAgIGtleTogInByZVJ1bk51dHJpdGlvblNjb3JlIiwKICAgIHRpdGxlOiAi16rXlteV16DXlCDXnNek16DXmSDXlNeo15nXpteUIOKAlCDXm9ee15Qg15TXkNeg16jXkteZ15Qg157XlNeQ15XXm9ecINeU16HXpNeZ16fXlD8iLAogICAgb3B0aW9uczogWyLXntem15XXmdeg16oiLCAi15jXldeR15QiLCAi15HXodeT16giLCAi157XoteYINeX16HXqCIsICLXl9eh16gg157Xqdee16LXldeq15kiXQogIH0sCiAgewogICAga2V5OiAiZW52aXJvbm1lbnRTY29yZSIsCiAgICB0aXRsZTogIteq16DXkNeZINeh15HXmdeR15Qg4oCUINeb157XlCDXlNeq16DXkNeZ150g15TXp9ep15Ug16LXnCDXlNeo15nXpteUPyIsCiAgICBvcHRpb25zOiBbItee16bXldeZ16DXmdedIiwgIteY15XXkdeZ150iLCAi15HXmdeg15XXoNeZ15nXnSIsICLXp9ep15nXnSIsICLXp9ep15nXnSDXnteQ15XXkyJdCiAgfSwKICB7CiAgICBrZXk6ICJzYXRpc2ZhY3Rpb25TY29yZSIsCiAgICB0aXRsZTogItep15HXmdei15XXqiDXqNem15XXnyDXnteU15DXmdee15XXnyDigJQg15vXnteUINeQ16rXlCDXnteo15XXpteUINee15TXkNeZ157XldefPyIsCiAgICBvcHRpb25zOiBbItee16bXldeZ158iLCAi15jXldeRINee15DXldeTIiwgIteY15XXkSIsICLXkdeZ16DXldeg15kiLCAi15zXkCDXmNeV15EiXQogIH0KXTsKCmV4cG9ydCBmdW5jdGlvbiBkZWZhdWx0UnVuRmVlZGJhY2tWYWx1ZXMoKTogUnVuRmVlZGJhY2tWYWx1ZXMgewogIHJldHVybiB7CiAgICBycGVTY29yZTogMywKICAgIGxlZ3NMb2FkU2NvcmU6IDMsCiAgICBwYWluU2NvcmU6IDEsCiAgICBwYWluQXJlYTogIiIsCiAgICBhZGRGaXZlS21TY29yZTogMywKICAgIHJlY292ZXJ5U2NvcmU6IDMsCiAgICBicmVhdGhpbmdTY29yZTogMywKICAgIG92ZXJhbGxMb2FkU2NvcmU6IDMsCiAgICBwcmVSdW5OdXRyaXRpb25TY29yZTogMywKICAgIGVudmlyb25tZW50U2NvcmU6IDMsCiAgICBzYXRpc2ZhY3Rpb25TY29yZTogMywKICAgIGZ1ZWxpbmdTb3VyY2U6ICJub25lIiwKICAgIGZ1ZWxpbmdRdWFudGl0eTogMCwKICAgIG9wZW5Ob3RlOiAiIgogIH07Cn0KCmZ1bmN0aW9uIHNjb3JlQnV0dG9ucygKICB0aXRsZTogc3RyaW5nLAogIGxhYmVsczogW3N0cmluZywgc3RyaW5nLCBzdHJpbmcsIHN0cmluZywgc3RyaW5nXSwKICB2YWx1ZTogMSB8IDIgfCAzIHwgNCB8IDUsCiAgb25QaWNrOiAoc2NvcmU6IDEgfCAyIHwgMyB8IDQgfCA1KSA9PiB2b2lkCikgewogIHJldHVybiAoCiAgICA8YXJ0aWNsZSBjbGFzc05hbWU9InJ1bi1mZWVkYmFjay1xdWVzdGlvbiIga2V5PXt0aXRsZX0+CiAgICAgIDxwPnt0aXRsZX08L3A+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJydW4tc2NvcmUtcm93Ij4KICAgICAgICB7bGFiZWxzLm1hcCgobGFiZWwsIGluZGV4KSA9PiB7CiAgICAgICAgICBjb25zdCBzY29yZSA9IChpbmRleCArIDEpIGFzIDEgfCAyIHwgMyB8IDQgfCA1OwogICAgICAgICAgcmV0dXJuICgKICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgIGtleT17bGFiZWx9CiAgICAgICAgICAgICAgdHlwZT0iYnV0dG9uIgogICAgICAgICAgICAgIGNsYXNzTmFtZT17dmFsdWUgPT09IHNjb3JlID8gInJ1bi1vcHRpb24tYnRuIHNlbGVjdGVkIiA6ICJydW4tb3B0aW9uLWJ0biJ9CiAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gb25QaWNrKHNjb3JlKX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIHtsYWJlbH0KICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICApOwogICAgICAgIH0pfQogICAgICA8L2Rpdj4KICAgIDwvYXJ0aWNsZT4KICApOwp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBSdW5GZWVkYmFja0Zvcm0oeyB2YWx1ZSwgb25DaGFuZ2UsIHBhaW5BcmVhcyA9IFtdLCBjb21wYWN0ID0gZmFsc2UgfTogUHJvcHMpIHsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9e2NvbXBhY3QgPyAicnVuLWZlZWRiYWNrLWZvcm0gY29tcGFjdCIgOiAicnVuLWZlZWRiYWNrLWZvcm0ifT4KICAgICAgPGRpdiBjbGFzc05hbWU9InJ1bi1mZWVkYmFjay1ncmlkIj4KICAgICAgICB7c2NvcmVTZXRzLm1hcCgoaXRlbSkgPT4KICAgICAgICAgIHNjb3JlQnV0dG9ucyhpdGVtLnRpdGxlLCBpdGVtLm9wdGlvbnMsIHZhbHVlW2l0ZW0ua2V5XSwgKHNjb3JlKSA9PgogICAgICAgICAgICBvbkNoYW5nZSh7IC4uLnZhbHVlLCBbaXRlbS5rZXldOiBzY29yZSB9KQogICAgICAgICAgKQogICAgICAgICl9CiAgICAgIDwvZGl2PgoKICAgICAge3ZhbHVlLnBhaW5TY29yZSA+PSAyICYmICgKICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJmaWVsZCI+CiAgICAgICAgICDXkNeZ16TXlCDXkdeS15XXoyDXlNeV16TXmdeiINeb15DXkS/XqNeS15nXqdeV16o/CiAgICAgICAgICB7cGFpbkFyZWFzLmxlbmd0aCA+IDAgPyAoCiAgICAgICAgICAgIDxVaVNlbGVjdAogICAgICAgICAgICAgIHZhbHVlPXt2YWx1ZS5wYWluQXJlYX0KICAgICAgICAgICAgICBvbkNoYW5nZT17KG5leHRWYWx1ZSkgPT4gb25DaGFuZ2UoeyAuLi52YWx1ZSwgcGFpbkFyZWE6IG5leHRWYWx1ZSB9KX0KICAgICAgICAgICAgICBvcHRpb25zPXtbCiAgICAgICAgICAgICAgICB7IHZhbHVlOiAiIiwgbGFiZWw6ICLXkdeX16gg15DXlteV16giIH0sCiAgICAgICAgICAgICAgICAuLi5wYWluQXJlYXMubWFwKChhcmVhKSA9PiAoeyB2YWx1ZTogYXJlYSwgbGFiZWw6IGFyZWEgfSkpCiAgICAgICAgICAgICAgXX0KICAgICAgICAgICAgLz4KICAgICAgICAgICkgOiAoCiAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgIHZhbHVlPXt2YWx1ZS5wYWluQXJlYX0KICAgICAgICAgICAgICBvbkNoYW5nZT17KGV2ZW50KSA9PiBvbkNoYW5nZSh7IC4uLnZhbHVlLCBwYWluQXJlYTogZXZlbnQudGFyZ2V0LnZhbHVlIH0pfQogICAgICAgICAgICAgIHBsYWNlaG9sZGVyPSLXnNeT15XXktee15Q6INeR16jXmiDXmdee15nXnyAvINep15XXpyDXqdee15DXnCIKICAgICAgICAgICAgLz4KICAgICAgICAgICl9CiAgICAgICAgPC9sYWJlbD4KICAgICAgKX0KCiAgICAgIDxhcnRpY2xlIGNsYXNzTmFtZT0icnVuLWZlZWRiYWNrLXF1ZXN0aW9uIj4KICAgICAgICA8cD7XqteW15XXoNeUINeR15DXmdee15XXnyAo16rXldeaINeb15PXmSDXqNeZ16bXlCk8L3A+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImNob2ljZS1yb3ciPgogICAgICAgICAge1sKICAgICAgICAgICAgeyBpZDogIm5vbmUiLCBsYWJlbDogItec15zXkCIgfSwKICAgICAgICAgICAgeyBpZDogImdlbCIsIGxhYmVsOiAi15LXs9ecIiB9LAogICAgICAgICAgICB7IGlkOiAiZGF0ZSIsIGxhYmVsOiAi16rXnteoIiB9LAogICAgICAgICAgICB7IGlkOiAib3RoZXIiLCBsYWJlbDogIteQ15fXqCIgfQogICAgICAgICAgXS5tYXAoKG9wdGlvbikgPT4gKAogICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAga2V5PXtvcHRpb24uaWR9CiAgICAgICAgICAgICAgdHlwZT0iYnV0dG9uIgogICAgICAgICAgICAgIGNsYXNzTmFtZT17dmFsdWUuZnVlbGluZ1NvdXJjZSA9PT0gb3B0aW9uLmlkID8gInJ1bi1vcHRpb24tYnRuIHNlbGVjdGVkIiA6ICJydW4tb3B0aW9uLWJ0biJ9CiAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gb25DaGFuZ2UoeyAuLi52YWx1ZSwgZnVlbGluZ1NvdXJjZTogb3B0aW9uLmlkIGFzIFJ1bkZ1ZWxpbmdTb3VyY2UgfSl9CiAgICAgICAgICAgID4KICAgICAgICAgICAgICB7b3B0aW9uLmxhYmVsfQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICkpfQogICAgICAgIDwvZGl2PgogICAgICAgIHt2YWx1ZS5mdWVsaW5nU291cmNlICE9PSAibm9uZSIgJiYgKAogICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iZmllbGQiPgogICAgICAgICAgICDXm9ee15XXqgogICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICB0eXBlPSJudW1iZXIiCiAgICAgICAgICAgICAgbWluPXswfQogICAgICAgICAgICAgIHN0ZXA9ezAuNX0KICAgICAgICAgICAgICB2YWx1ZT17dmFsdWUuZnVlbGluZ1F1YW50aXR5fQogICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZXZlbnQpID0+CiAgICAgICAgICAgICAgICBvbkNoYW5nZSh7CiAgICAgICAgICAgICAgICAgIC4uLnZhbHVlLAogICAgICAgICAgICAgICAgICBmdWVsaW5nUXVhbnRpdHk6IE51bWJlcihldmVudC50YXJnZXQudmFsdWUpCiAgICAgICAgICAgICAgICB9KQogICAgICAgICAgICAgIH0KICAgICAgICAgICAgLz4KICAgICAgICAgIDwvbGFiZWw+CiAgICAgICAgKX0KICAgICAgPC9hcnRpY2xlPgoKICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iZmllbGQiPgogICAgICAgINeZ16kg157XqdeU15Ug15fXqdeV15Eg16nXp9eo15Qg15HXnteU15zXmiDXlNeo15nXpteUINep15vXk9eQ15kg15zXqtei15M/CiAgICAgICAgPHRleHRhcmVhCiAgICAgICAgICByb3dzPXszfQogICAgICAgICAgdmFsdWU9e3ZhbHVlLm9wZW5Ob3RlfQogICAgICAgICAgb25DaGFuZ2U9eyhldmVudCkgPT4gb25DaGFuZ2UoeyAuLi52YWx1ZSwgb3Blbk5vdGU6IGV2ZW50LnRhcmdldC52YWx1ZSB9KX0KICAgICAgICAgIHBsYWNlaG9sZGVyPSLXm9eQ15EsINep15nXoNeV15kg16fXpteRLCDXnteW15Ig15DXldeV15nXqCwg16rXlteV16DXlCwg16rXl9eV16nXlCDXnteZ15XXl9eT16og15XXm9eV17MiCiAgICAgICAgLz4KICAgICAgPC9sYWJlbD4KICAgIDwvZGl2PgogICk7Cn0K"}
+"use client";
+
+import UiSelect from "@/components/ui-select";
+
+export type RunFuelingSource = "none" | "gel" | "date" | "other";
+
+export type RunFeedbackValues = {
+  rpeScore: 1 | 2 | 3 | 4 | 5;
+  legsLoadScore: 1 | 2 | 3 | 4 | 5;
+  painScore: 1 | 2 | 3 | 4 | 5;
+  painArea: string;
+  addFiveKmScore: 1 | 2 | 3 | 4 | 5;
+  recoveryScore: 1 | 2 | 3 | 4 | 5;
+  breathingScore: 1 | 2 | 3 | 4 | 5;
+  overallLoadScore: 1 | 2 | 3 | 4 | 5;
+  preRunNutritionScore: 1 | 2 | 3 | 4 | 5;
+  environmentScore: 1 | 2 | 3 | 4 | 5;
+  satisfactionScore: 1 | 2 | 3 | 4 | 5;
+  fuelingSource: RunFuelingSource;
+  fuelingQuantity: number;
+  openNote: string;
+};
+
+type Props = {
+  value: RunFeedbackValues;
+  onChange: (next: RunFeedbackValues) => void;
+  painAreas?: string[];
+  compact?: boolean;
+};
+
+const scoreSets: Array<{
+  key: keyof Omit<
+    RunFeedbackValues,
+    "painArea" | "fuelingSource" | "fuelingQuantity" | "openNote"
+  >;
+  title: string;
+  options: [string, string, string, string, string];
+}> = [
+  {
+    key: "rpeScore",
+    title: "תחושת מאמץ כללית (RPE) — כמה קשה הריצה הרגישה?",
+    options: ["קלה מאוד", "קלה", "בינונית", "קשה", "קשה מאוד"]
+  },
+  {
+    key: "legsLoadScore",
+    title: "עומס על הרגליים — כמה עומס הרגשת במהלך הריצה?",
+    options: ["קלילות מאוד", "קלילות", "בינוני", "כבדות", "כבדות מאוד"]
+  },
+  {
+    key: "painScore",
+    title: "כאב או רגישות — כמה כאב/רגישות הופיעו במהלך הריצה?",
+    options: ["ללא כאב", "רגישות קלה", "כאב קל", "כאב מורגש", "כאב משמעותי"]
+  },
+  {
+    key: "addFiveKmScore",
+    title: "יכולת להמשיך — כמה קשה היה להוסיף עוד 5 ק״מ בסיום?",
+    options: ["בקלות", "די בקלות", "אפשרי מאתגר", "קשה מאוד", "בלתי אפשרי"]
+  },
+  {
+    key: "recoveryScore",
+    title: "התאוששות אחרי הריצה — איך הגוף מרגיש עכשיו?",
+    options: ["רענן מאוד", "רענן", "בסדר", "עייף", "מותש"]
+  },
+  {
+    key: "breathingScore",
+    title: "נשימה — כמה הנשימה הייתה מגבילה במהלך הריצה?",
+    options: ["חופשית", "מעט מאמץ", "בינוני", "קשה", "קשה מאוד"]
+  },
+  {
+    key: "overallLoadScore",
+    title: "עומס כללי — כמה האימון הרגיש עמוס לגוף?",
+    options: ["קל מאוד", "קל", "בינוני", "קשה", "קשה מאוד"]
+  },
+  {
+    key: "preRunNutritionScore",
+    title: "תזונה לפני הריצה — כמה האנרגיה מהאוכל הספיקה?",
+    options: ["מצוינת", "טובה", "בסדר", "מעט חסר", "חסר משמעותי"]
+  },
+  {
+    key: "environmentScore",
+    title: "תנאי סביבה — כמה התנאים הקשו על הריצה?",
+    options: ["מצוינים", "טובים", "בינוניים", "קשים", "קשים מאוד"]
+  },
+  {
+    key: "satisfactionScore",
+    title: "שביעות רצון מהאימון — כמה אתה מרוצה מהאימון?",
+    options: ["מצוין", "טוב מאוד", "טוב", "בינוני", "לא טוב"]
+  }
+];
+
+export function defaultRunFeedbackValues(): RunFeedbackValues {
+  return {
+    rpeScore: 3,
+    legsLoadScore: 3,
+    painScore: 1,
+    painArea: "",
+    addFiveKmScore: 3,
+    recoveryScore: 3,
+    breathingScore: 3,
+    overallLoadScore: 3,
+    preRunNutritionScore: 3,
+    environmentScore: 3,
+    satisfactionScore: 3,
+    fuelingSource: "none",
+    fuelingQuantity: 0,
+    openNote: ""
+  };
+}
+
+function scoreButtons(
+  title: string,
+  labels: [string, string, string, string, string],
+  value: 1 | 2 | 3 | 4 | 5,
+  onPick: (score: 1 | 2 | 3 | 4 | 5) => void
+) {
+  return (
+    <article className="run-feedback-question" key={title}>
+      <p>{title}</p>
+      <div className="run-score-row">
+        {labels.map((label, index) => {
+          const score = (index + 1) as 1 | 2 | 3 | 4 | 5;
+          return (
+            <button
+              key={label}
+              type="button"
+              className={value === score ? "run-option-btn selected" : "run-option-btn"}
+              onClick={() => onPick(score)}
+            >
+              {label}
+            </button>
+          );
+        })}
+      </div>
+    </article>
+  );
+}
+
+export default function RunFeedbackForm({ value, onChange, painAreas = [], compact = false }: Props) {
+  return (
+    <div className={compact ? "run-feedback-form compact" : "run-feedback-form"}>
+      <div className="run-feedback-grid">
+        {scoreSets.map((item) =>
+          scoreButtons(item.title, item.options, value[item.key], (score) =>
+            onChange({ ...value, [item.key]: score })
+          )
+        )}
+      </div>
+
+      {value.painScore >= 2 && (
+        <label className="field">
+          איפה בגוף הופיע כאב/רגישות?
+          {painAreas.length > 0 ? (
+            <UiSelect
+              value={value.painArea}
+              onChange={(nextValue) => onChange({ ...value, painArea: nextValue })}
+              options={[
+                { value: "", label: "בחר אזור" },
+                ...painAreas.map((area) => ({ value: area, label: area }))
+              ]}
+            />
+          ) : (
+            <input
+              value={value.painArea}
+              onChange={(event) => onChange({ ...value, painArea: event.target.value })}
+              placeholder="לדוגמה: ברך ימין / שוק שמאל"
+            />
+          )}
+        </label>
+      )}
+
+      <article className="run-feedback-question">
+        <p>תזונה באימון (תוך כדי ריצה)</p>
+        <div className="choice-row">
+          {[
+            { id: "none", label: "ללא" },
+            { id: "gel", label: "ג׳ל" },
+            { id: "date", label: "תמר" },
+            { id: "other", label: "אחר" }
+          ].map((option) => (
+            <button
+              key={option.id}
+              type="button"
+              className={value.fuelingSource === option.id ? "run-option-btn selected" : "run-option-btn"}
+              onClick={() => onChange({ ...value, fuelingSource: option.id as RunFuelingSource })}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+        {value.fuelingSource !== "none" && (
+          <label className="field">
+            כמות
+            <input
+              type="number"
+              min={0}
+              step={0.5}
+              value={value.fuelingQuantity}
+              onChange={(event) =>
+                onChange({
+                  ...value,
+                  fuelingQuantity: Number(event.target.value)
+                })
+              }
+            />
+          </label>
+        )}
+      </article>
+
+      <label className="field">
+        יש משהו חשוב שקרה במהלך הריצה שכדאי לתעד?
+        <textarea
+          rows={3}
+          value={value.openNote}
+          onChange={(event) => onChange({ ...value, openNote: event.target.value })}
+          placeholder="כאב, שינוי קצב, מזג אוויר, תזונה, תחושה מיוחדת וכו׳"
+        />
+      </label>
+    </div>
+  );
+}

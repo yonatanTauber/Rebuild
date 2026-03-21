@@ -1,1 +1,12 @@
-{"data":"aW1wb3J0IHsgZGVkdXBlV29ya291dHMgfSBmcm9tICJAL2xpYi9kYiI7CmltcG9ydCB7IHJlY2FsY3VsYXRlTnV0cml0aW9uRnJvbSB9IGZyb20gIkAvbGliL251dHJpdGlvbi1lbmdpbmUiOwppbXBvcnQgeyByZWNvbXB1dGVCZXN0RWZmb3J0c0FsbCB9IGZyb20gIkAvbGliL3BiLWVuZ2luZSI7CgpmdW5jdGlvbiBydW4oKSB7CiAgY29uc3QgcmVzdWx0ID0gZGVkdXBlV29ya291dHMoKTsKICByZWNvbXB1dGVCZXN0RWZmb3J0c0FsbCgpOwogIHJlY2FsY3VsYXRlTnV0cml0aW9uRnJvbSh1bmRlZmluZWQsIDgpOwogIGNvbnNvbGUubG9nKGBkZWR1cGUgZG9uZTogcmVtb3ZlZD0ke3Jlc3VsdC5yZW1vdmVkfSBtZXJnZWRfZ3JvdXBzPSR7cmVzdWx0Lm1lcmdlZEdyb3Vwc31gKTsKfQoKcnVuKCk7Cg=="}
+import { dedupeWorkouts } from "@/lib/db";
+import { recalculateNutritionFrom } from "@/lib/nutrition-engine";
+import { recomputeBestEffortsAll } from "@/lib/pb-engine";
+
+function run() {
+  const result = dedupeWorkouts();
+  recomputeBestEffortsAll();
+  recalculateNutritionFrom(undefined, 8);
+  console.log(`dedupe done: removed=${result.removed} merged_groups=${result.mergedGroups}`);
+}
+
+run();

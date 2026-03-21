@@ -1,1 +1,70 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IGFkZERheXNJU08sIGZvcm1hdElTT0RhdGUgfSBmcm9tICJAL2xpYi9kYXRlIjsKaW1wb3J0IHsgZ2V0RGIgfSBmcm9tICJAL2xpYi9kYiI7CmltcG9ydCB7IGJ1aWxkSm91cm5hbERheUJ1bmRsZSB9IGZyb20gIkAvbGliL2pvdXJuYWwtZGF5IjsKCmNvbnN0IHF1ZXJ5U2NoZW1hID0gei5vYmplY3QoewogIGFuY2hvckRhdGU6IHouc3RyaW5nKCkucmVnZXgoL15cZHs0fS1cZHsyfS1cZHsyfSQvKS5vcHRpb25hbCgpLAogIGRheXM6IHouY29lcmNlLm51bWJlcigpLmludCgpLm1pbigxKS5tYXgoMzApLm9wdGlvbmFsKCksCiAgY3Vyc29yOiB6LnN0cmluZygpLnJlZ2V4KC9eXGR7NH0tXGR7Mn0tXGR7Mn0kLykub3B0aW9uYWwoKQp9KTsKCmZ1bmN0aW9uIGJ1aWxkRGF0ZXMoc3RhcnREYXRlOiBzdHJpbmcsIGNvdW50OiBudW1iZXIpIHsKICByZXR1cm4gQXJyYXkuZnJvbSh7IGxlbmd0aDogY291bnQgfSwgKF8sIGlkeCkgPT4gYWRkRGF5c0lTTyhzdGFydERhdGUsIC1pZHgpKTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IHBhcnNlZCA9IHF1ZXJ5U2NoZW1hLnNhZmVQYXJzZSh7CiAgICBhbmNob3JEYXRlOiByZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zLmdldCgiYW5jaG9yRGF0ZSIpID8/IGZvcm1hdElTT0RhdGUoKSwKICAgIGRheXM6IHJlcXVlc3QubmV4dFVybC5zZWFyY2hQYXJhbXMuZ2V0KCJkYXlzIikgPz8gNywKICAgIGN1cnNvcjogcmVxdWVzdC5uZXh0VXJsLnNlYXJjaFBhcmFtcy5nZXQoImN1cnNvciIpID8/IHVuZGVmaW5lZAogIH0pOwoKICBpZiAoIXBhcnNlZC5zdWNjZXNzKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogcGFyc2VkLmVycm9yLmZsYXR0ZW4oKSB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgY29uc3QgYW5jaG9yRGF0ZSA9IHBhcnNlZC5kYXRhLmFuY2hvckRhdGUgPz8gZm9ybWF0SVNPRGF0ZSgpOwogIGNvbnN0IGRheXMgPSBwYXJzZWQuZGF0YS5kYXlzID8/IDc7CiAgY29uc3Qgc3RhcnREYXRlID0gcGFyc2VkLmRhdGEuY3Vyc29yID8/IGFuY2hvckRhdGU7CiAgY29uc3QgZGF0ZXMgPSBidWlsZERhdGVzKHN0YXJ0RGF0ZSwgZGF5cyk7CgogIGNvbnN0IGRheUJ1bmRsZXMgPSBhd2FpdCBQcm9taXNlLmFsbChkYXRlcy5tYXAoKGRhdGUpID0+IGJ1aWxkSm91cm5hbERheUJ1bmRsZShkYXRlLCB7IGluY2x1ZGVDb2FjaDogZmFsc2UgfSkpKTsKICBjb25zdCBpdGVtcyA9IGRheUJ1bmRsZXMubWFwKChidW5kbGUpID0+ICh7CiAgICBkYXRlOiBidW5kbGUuZGF0ZSwKICAgIHNjb3JlczogYnVuZGxlLnNjb3JlcywKICAgIGRheVN0YXR1czogYnVuZGxlLmRheVN0YXR1cywKICAgIHJlY292ZXJ5OiBidW5kbGUucmVjb3ZlcnksCiAgICBudXRyaXRpb246IHsKICAgICAgdG90YWxzOiBidW5kbGUubnV0cml0aW9uLnRvdGFscywKICAgICAgdGFyZ2V0OiBidW5kbGUubnV0cml0aW9uLnRhcmdldCwKICAgICAgZGVsdGFUb1RhcmdldDogYnVuZGxlLm51dHJpdGlvbi5kZWx0YVRvVGFyZ2V0LAogICAgICBzdGF0dXM6IGJ1bmRsZS5udXRyaXRpb24uc3RhdHVzCiAgICB9LAogICAgd29ya291dHM6IGJ1bmRsZS53b3Jrb3V0cywKICAgIGVuZXJneUJhdHRlcnk6IGJ1bmRsZS5lbmVyZ3lCYXR0ZXJ5LAogICAgZGFpbHlTY29yZTogYnVuZGxlLmRhaWx5U2NvcmUKICB9KSk7CgogIGxldCBtaW5EYXRlOiBzdHJpbmcgfCBudWxsID0gbnVsbDsKICB0cnkgewogICAgY29uc3QgZGIgPSBnZXREYigpOwogICAgY29uc3QgbWluRGF0ZVJvdyA9IGRiLnByZXBhcmUoIlNFTEVDVCBNSU4oZGF0ZSkgYXMgbWluRGF0ZSBGUk9NIGluc2lnaHRfZGF5X3ZpZXciKS5nZXQoKSBhcyB7IG1pbkRhdGU6IHN0cmluZyB8IG51bGwgfTsKICAgIG1pbkRhdGUgPSBtaW5EYXRlUm93Lm1pbkRhdGU7CiAgfSBjYXRjaCB7CiAgICAvLyBDbG91ZCBkZXBsb3ltZW50cyBtaWdodCBub3QgaGF2ZSB0aGUgbG9jYWwgaW5zaWdodCB2aWV3IGF2YWlsYWJsZTsgaXQncyBvbmx5IHVzZWQgZm9yIHBhZ2luYXRpb24uCiAgICBtaW5EYXRlID0gbnVsbDsKICB9CiAgY29uc3QgbmV4dEN1cnNvciA9IGFkZERheXNJU08oZGF0ZXNbZGF0ZXMubGVuZ3RoIC0gMV0sIC0xKTsKICBjb25zdCBoYXNNb3JlID0gbWluRGF0ZSA/IG5leHRDdXJzb3IgPj0gbWluRGF0ZSA6IGZhbHNlOwoKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgYW5jaG9yRGF0ZSwKICAgIGRheXMsCiAgICBjdXJzb3I6IHN0YXJ0RGF0ZSwKICAgIG5leHRDdXJzb3I6IGhhc01vcmUgPyBuZXh0Q3Vyc29yIDogbnVsbCwKICAgIGhhc01vcmUsCiAgICBpdGVtcwogIH0pOwp9Cg=="}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { addDaysISO, formatISODate } from "@/lib/date";
+import { getDb } from "@/lib/db";
+import { buildJournalDayBundle } from "@/lib/journal-day";
+
+const querySchema = z.object({
+  anchorDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  days: z.coerce.number().int().min(1).max(30).optional(),
+  cursor: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional()
+});
+
+function buildDates(startDate: string, count: number) {
+  return Array.from({ length: count }, (_, idx) => addDaysISO(startDate, -idx));
+}
+
+export async function GET(request: NextRequest) {
+  const parsed = querySchema.safeParse({
+    anchorDate: request.nextUrl.searchParams.get("anchorDate") ?? formatISODate(),
+    days: request.nextUrl.searchParams.get("days") ?? 7,
+    cursor: request.nextUrl.searchParams.get("cursor") ?? undefined
+  });
+
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  const anchorDate = parsed.data.anchorDate ?? formatISODate();
+  const days = parsed.data.days ?? 7;
+  const startDate = parsed.data.cursor ?? anchorDate;
+  const dates = buildDates(startDate, days);
+
+  const dayBundles = await Promise.all(dates.map((date) => buildJournalDayBundle(date, { includeCoach: false })));
+  const items = dayBundles.map((bundle) => ({
+    date: bundle.date,
+    scores: bundle.scores,
+    dayStatus: bundle.dayStatus,
+    recovery: bundle.recovery,
+    nutrition: {
+      totals: bundle.nutrition.totals,
+      target: bundle.nutrition.target,
+      deltaToTarget: bundle.nutrition.deltaToTarget,
+      status: bundle.nutrition.status
+    },
+    workouts: bundle.workouts,
+    energyBattery: bundle.energyBattery,
+    dailyScore: bundle.dailyScore
+  }));
+
+  let minDate: string | null = null;
+  try {
+    const db = getDb();
+    const minDateRow = db.prepare("SELECT MIN(date) as minDate FROM insight_day_view").get() as { minDate: string | null };
+    minDate = minDateRow.minDate;
+  } catch {
+    // Cloud deployments might not have the local insight view available; it's only used for pagination.
+    minDate = null;
+  }
+  const nextCursor = addDaysISO(dates[dates.length - 1], -1);
+  const hasMore = minDate ? nextCursor >= minDate : false;
+
+  return NextResponse.json({
+    anchorDate,
+    days,
+    cursor: startDate,
+    nextCursor: hasMore ? nextCursor : null,
+    hasMore,
+    items
+  });
+}

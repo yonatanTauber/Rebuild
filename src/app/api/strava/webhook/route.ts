@@ -1,1 +1,74 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsKICBkZWxldGVXb3Jrb3V0QnlTdHJhdmFBY3Rpdml0eUlkLAogIGVuc3VyZVN0cmF2YVRhYmxlcywKICBnZXRTdG9yZWRUb2tlbiwKICBnZXRTdHJhdmFWZXJpZnlUb2tlbiwKICByZWZyZXNoVG9rZW5JZk5lZWRlZCwKICB1cHNlcnRXb3Jrb3V0RnJvbVN0cmF2YUFjdGl2aXR5Cn0gZnJvbSAiQC9hcHAvYXBpL3N0cmF2YS9fbGliIjsKCmV4cG9ydCBjb25zdCBydW50aW1lID0gIm5vZGVqcyI7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgY29uc3QgbW9kZSA9IHJlcXVlc3QubmV4dFVybC5zZWFyY2hQYXJhbXMuZ2V0KCJodWIubW9kZSIpOwogIGNvbnN0IGNoYWxsZW5nZSA9IHJlcXVlc3QubmV4dFVybC5zZWFyY2hQYXJhbXMuZ2V0KCJodWIuY2hhbGxlbmdlIik7CiAgY29uc3QgdmVyaWZ5VG9rZW4gPSByZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zLmdldCgiaHViLnZlcmlmeV90b2tlbiIpOwoKICBpZiAobW9kZSAhPT0gInN1YnNjcmliZSIgfHwgIWNoYWxsZW5nZSkgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgb2s6IGZhbHNlIH0sIHsgc3RhdHVzOiA0MDAgfSk7CiAgfQoKICBjb25zdCBleHBlY3RlZCA9IGdldFN0cmF2YVZlcmlmeVRva2VuKCk7CiAgaWYgKCFleHBlY3RlZCB8fCB2ZXJpZnlUb2tlbiAhPT0gZXhwZWN0ZWQpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiBmYWxzZSB9LCB7IHN0YXR1czogNDAzIH0pOwogIH0KCiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgImh1Yi5jaGFsbGVuZ2UiOiBjaGFsbGVuZ2UgfSk7Cn0KCnR5cGUgU3RyYXZhV2ViaG9va0V2ZW50ID0gewogIGFzcGVjdF90eXBlOiAiY3JlYXRlIiB8ICJ1cGRhdGUiIHwgImRlbGV0ZSI7CiAgZXZlbnRfdGltZTogbnVtYmVyOwogIG9iamVjdF9pZDogbnVtYmVyOwogIG9iamVjdF90eXBlOiAiYWN0aXZpdHkiIHwgImF0aGxldGUiOwogIG93bmVyX2lkOiBudW1iZXI7CiAgc3Vic2NyaXB0aW9uX2lkOiBudW1iZXI7CiAgdXBkYXRlcz86IFJlY29yZDxzdHJpbmcsIHVua25vd24+Owp9OwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBldmVudCA9IChhd2FpdCByZXF1ZXN0Lmpzb24oKS5jYXRjaCgoKSA9PiBudWxsKSkgYXMgU3RyYXZhV2ViaG9va0V2ZW50IHwgbnVsbDsKICBpZiAoIWV2ZW50IHx8ICFldmVudC5vYmplY3RfdHlwZSkgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgb2s6IHRydWUgfSk7CiAgfQoKICBpZiAoZXZlbnQub2JqZWN0X3R5cGUgIT09ICJhY3Rpdml0eSIpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlIH0pOwogIH0KCiAgYXdhaXQgZW5zdXJlU3RyYXZhVGFibGVzKCk7CgogIGlmIChldmVudC5hc3BlY3RfdHlwZSA9PT0gImRlbGV0ZSIpIHsKICAgIGF3YWl0IGRlbGV0ZVdvcmtvdXRCeVN0cmF2YUFjdGl2aXR5SWQoZXZlbnQub2JqZWN0X2lkKTsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlIH0pOwogIH0KCiAgY29uc3Qgc3RvcmVkID0gYXdhaXQgZ2V0U3RvcmVkVG9rZW4oKTsKICBpZiAoIXN0b3JlZCkgewogICAgLy8gQ29ubmVjdGVkIHN0YXRlIG1pc3Npbmc7IGFja25vd2xlZGdlIHRvIGF2b2lkIHdlYmhvb2sgcmV0cmllcy4KICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlIH0pOwogIH0KICBjb25zdCB0b2tlbiA9IGF3YWl0IHJlZnJlc2hUb2tlbklmTmVlZGVkKHN0b3JlZCk7CgogIGNvbnN0IGFjdGl2aXR5UmVzID0gYXdhaXQgZmV0Y2goYGh0dHBzOi8vd3d3LnN0cmF2YS5jb20vYXBpL3YzL2FjdGl2aXRpZXMvJHtldmVudC5vYmplY3RfaWR9YCwgewogICAgaGVhZGVyczogeyBBdXRob3JpemF0aW9uOiBgQmVhcmVyICR7dG9rZW4uYWNjZXNzX3Rva2VufWAgfQogIH0pOwogIGlmICghYWN0aXZpdHlSZXMub2spIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlIH0pOwogIH0KICBjb25zdCBhY3Rpdml0eSA9IChhd2FpdCBhY3Rpdml0eVJlcy5qc29uKCkpIGFzIFBhcmFtZXRlcnM8dHlwZW9mIHVwc2VydFdvcmtvdXRGcm9tU3RyYXZhQWN0aXZpdHk+WzBdOwogIGF3YWl0IHVwc2VydFdvcmtvdXRGcm9tU3RyYXZhQWN0aXZpdHkoYWN0aXZpdHkpOwogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlIH0pOwp9Cgo="}
+import { NextRequest, NextResponse } from "next/server";
+import {
+  deleteWorkoutByStravaActivityId,
+  ensureStravaTables,
+  getStoredToken,
+  getStravaVerifyToken,
+  refreshTokenIfNeeded,
+  upsertWorkoutFromStravaActivity
+} from "@/app/api/strava/_lib";
+
+export const runtime = "nodejs";
+
+export async function GET(request: NextRequest) {
+  const mode = request.nextUrl.searchParams.get("hub.mode");
+  const challenge = request.nextUrl.searchParams.get("hub.challenge");
+  const verifyToken = request.nextUrl.searchParams.get("hub.verify_token");
+
+  if (mode !== "subscribe" || !challenge) {
+    return NextResponse.json({ ok: false }, { status: 400 });
+  }
+
+  const expected = getStravaVerifyToken();
+  if (!expected || verifyToken !== expected) {
+    return NextResponse.json({ ok: false }, { status: 403 });
+  }
+
+  return NextResponse.json({ "hub.challenge": challenge });
+}
+
+type StravaWebhookEvent = {
+  aspect_type: "create" | "update" | "delete";
+  event_time: number;
+  object_id: number;
+  object_type: "activity" | "athlete";
+  owner_id: number;
+  subscription_id: number;
+  updates?: Record<string, unknown>;
+};
+
+export async function POST(request: NextRequest) {
+  const event = (await request.json().catch(() => null)) as StravaWebhookEvent | null;
+  if (!event || !event.object_type) {
+    return NextResponse.json({ ok: true });
+  }
+
+  if (event.object_type !== "activity") {
+    return NextResponse.json({ ok: true });
+  }
+
+  await ensureStravaTables();
+
+  if (event.aspect_type === "delete") {
+    await deleteWorkoutByStravaActivityId(event.object_id);
+    return NextResponse.json({ ok: true });
+  }
+
+  const stored = await getStoredToken();
+  if (!stored) {
+    // Connected state missing; acknowledge to avoid webhook retries.
+    return NextResponse.json({ ok: true });
+  }
+  const token = await refreshTokenIfNeeded(stored);
+
+  const activityRes = await fetch(`https://www.strava.com/api/v3/activities/${event.object_id}`, {
+    headers: { Authorization: `Bearer ${token.access_token}` }
+  });
+  if (!activityRes.ok) {
+    return NextResponse.json({ ok: true });
+  }
+  const activity = (await activityRes.json()) as Parameters<typeof upsertWorkoutFromStravaActivity>[0];
+  await upsertWorkoutFromStravaActivity(activity);
+  return NextResponse.json({ ok: true });
+}
+

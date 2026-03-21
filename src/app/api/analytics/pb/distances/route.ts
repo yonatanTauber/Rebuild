@@ -1,1 +1,24 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAibmV4dC9zZXJ2ZXIiOwppbXBvcnQgeyBnZXRUb3BFZmZvcnRzIH0gZnJvbSAiQC9saWIvZGIiOwppbXBvcnQgeyBQQl9ESVNUQU5DRVMgfSBmcm9tICJAL2xpYi9wYi1lbmdpbmUiOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVCgpIHsKICBjb25zdCBkaXN0YW5jZXMgPSBQQl9ESVNUQU5DRVMubWFwKChkKSA9PiB7CiAgICBjb25zdCBbYmVzdF0gPSBnZXRUb3BFZmZvcnRzKGQua2V5LCAxKTsKICAgIHJldHVybiB7CiAgICAgIGtleTogZC5rZXksCiAgICAgIGxhYmVsOiBkLmxhYmVsLAogICAgICBrbTogZC5rbSwKICAgICAgYmVzdDogYmVzdAogICAgICAgID8gewogICAgICAgICAgICB0aW1lU2VjOiBNYXRoLnJvdW5kKGJlc3QudGltZVNlYyksCiAgICAgICAgICAgIHBhY2VNaW5QZXJLbTogYmVzdC5wYWNlTWluUGVyS20sCiAgICAgICAgICAgIHdvcmtvdXRJZDogYmVzdC53b3Jrb3V0SWQsCiAgICAgICAgICAgIHNvdXJjZTogYmVzdC5zb3VyY2UKICAgICAgICAgIH0KICAgICAgICA6IG51bGwKICAgIH07CiAgfSk7CgogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGRpc3RhbmNlcyB9KTsKfQo="}
+import { NextResponse } from "next/server";
+import { getTopEfforts } from "@/lib/db";
+import { PB_DISTANCES } from "@/lib/pb-engine";
+
+export async function GET() {
+  const distances = PB_DISTANCES.map((d) => {
+    const [best] = getTopEfforts(d.key, 1);
+    return {
+      key: d.key,
+      label: d.label,
+      km: d.km,
+      best: best
+        ? {
+            timeSec: Math.round(best.timeSec),
+            paceMinPerKm: best.paceMinPerKm,
+            workoutId: best.workoutId,
+            source: best.source
+          }
+        : null
+    };
+  });
+
+  return NextResponse.json({ distances });
+}

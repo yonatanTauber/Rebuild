@@ -1,1 +1,29 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAibmV4dC9zZXJ2ZXIiOwppbXBvcnQgeyB6IH0gZnJvbSAiem9kIjsKaW1wb3J0IHsgY3JlYXRlUnVubmluZ1Nob2VCcmFuZCwgbGlzdFJ1bm5pbmdTaG9lQnJhbmRzIH0gZnJvbSAiQC9saWIvZGIiOwppbXBvcnQgeyBjbG91ZEVuYWJsZWQgfSBmcm9tICJAL2xpYi9jbG91ZC1kYiI7CmltcG9ydCB7IGNsb3VkQ3JlYXRlUnVubmluZ1Nob2VCcmFuZCwgY2xvdWRMaXN0UnVubmluZ1Nob2VCcmFuZHMgfSBmcm9tICJAL2xpYi9jbG91ZC1zaG9lcyI7CgpleHBvcnQgY29uc3QgcnVudGltZSA9ICJub2RlanMiOwoKY29uc3Qgc2NoZW1hID0gei5vYmplY3QoewogIG5hbWU6IHouc3RyaW5nKCkubWluKDEpLm1heCg2NCkKfSk7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKCkgewogIGNvbnN0IGJyYW5kcyA9IGNsb3VkRW5hYmxlZCgpID8gYXdhaXQgY2xvdWRMaXN0UnVubmluZ1Nob2VCcmFuZHMoKSA6IGxpc3RSdW5uaW5nU2hvZUJyYW5kcygpOwogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGJyYW5kcyB9KTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogUmVxdWVzdCkgewogIGNvbnN0IHBheWxvYWQgPSBhd2FpdCByZXF1ZXN0Lmpzb24oKS5jYXRjaCgoKSA9PiAoe30pKTsKICBjb25zdCBwYXJzZWQgPSBzY2hlbWEuc2FmZVBhcnNlKHBheWxvYWQpOwogIGlmICghcGFyc2VkLnN1Y2Nlc3MpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAi16nXnSDXl9eR16jXlCDXnNeQINeX15XXp9eZIiB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KICBjb25zdCBicmFuZCA9IGNsb3VkRW5hYmxlZCgpID8gYXdhaXQgY2xvdWRDcmVhdGVSdW5uaW5nU2hvZUJyYW5kKHBhcnNlZC5kYXRhLm5hbWUpIDogY3JlYXRlUnVubmluZ1Nob2VCcmFuZChwYXJzZWQuZGF0YS5uYW1lKTsKICBpZiAoIWJyYW5kKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogItep150g15fXkdeo15Qg15zXkCDXoNeZ16rXnyDXnNeX15bXldeoIiB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBicmFuZCB9KTsKfQo="}
+import { NextResponse } from "next/server";
+import { z } from "zod";
+import { createRunningShoeBrand, listRunningShoeBrands } from "@/lib/db";
+import { cloudEnabled } from "@/lib/cloud-db";
+import { cloudCreateRunningShoeBrand, cloudListRunningShoeBrands } from "@/lib/cloud-shoes";
+
+export const runtime = "nodejs";
+
+const schema = z.object({
+  name: z.string().min(1).max(64)
+});
+
+export async function GET() {
+  const brands = cloudEnabled() ? await cloudListRunningShoeBrands() : listRunningShoeBrands();
+  return NextResponse.json({ brands });
+}
+
+export async function POST(request: Request) {
+  const payload = await request.json().catch(() => ({}));
+  const parsed = schema.safeParse(payload);
+  if (!parsed.success) {
+    return NextResponse.json({ error: "שם חברה לא חוקי" }, { status: 400 });
+  }
+  const brand = cloudEnabled() ? await cloudCreateRunningShoeBrand(parsed.data.name) : createRunningShoeBrand(parsed.data.name);
+  if (!brand) {
+    return NextResponse.json({ error: "שם חברה לא ניתן לחזור" }, { status: 400 });
+  }
+  return NextResponse.json({ brand });
+}

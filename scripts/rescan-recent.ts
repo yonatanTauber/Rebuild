@@ -1,1 +1,16 @@
-{"data":"aW1wb3J0IHsgcnVuSW5nZXN0IH0gZnJvbSAiLi4vc3JjL2xpYi9pbmdlc3QiOwoKYXN5bmMgZnVuY3Rpb24gbWFpbigpIHsKICBjb25zdCByZXN1bHQgPSBhd2FpdCBydW5Jbmdlc3QoeyBvbmx5TWlzc2luZzogZmFsc2UsIHJlY2VudERheXM6IDMxIH0pOwogIGNvbnNvbGUubG9nKAogICAgYHJlc2NhbiBkb25lLiBxdWV1ZWQ9JHtyZXN1bHQuZmlsZXNRdWV1ZWR9IGluZ2VzdGVkPSR7cmVzdWx0LmZpbGVzSW5nZXN0ZWR9IHNraXBwZWQ9JHtyZXN1bHQuZmlsZXNTa2lwcGVkfSBlcnJvcnM9JHtyZXN1bHQuZXJyb3JzLmxlbmd0aH1gCiAgKTsKICBpZiAocmVzdWx0LmVycm9ycy5sZW5ndGggPiAwKSB7CiAgICBjb25zb2xlLmxvZyhyZXN1bHQuZXJyb3JzLnNsaWNlKDAsIDMwKSk7CiAgfQp9CgptYWluKCkuY2F0Y2goKGVycikgPT4gewogIGNvbnNvbGUuZXJyb3IoZXJyIGluc3RhbmNlb2YgRXJyb3IgPyBlcnIubWVzc2FnZSA6IFN0cmluZyhlcnIpKTsKICBwcm9jZXNzLmV4aXQoMSk7Cn0pOwo="}
+import { runIngest } from "../src/lib/ingest";
+
+async function main() {
+  const result = await runIngest({ onlyMissing: false, recentDays: 31 });
+  console.log(
+    `rescan done. queued=${result.filesQueued} ingested=${result.filesIngested} skipped=${result.filesSkipped} errors=${result.errors.length}`
+  );
+  if (result.errors.length > 0) {
+    console.log(result.errors.slice(0, 30));
+  }
+}
+
+main().catch((err) => {
+  console.error(err instanceof Error ? err.message : String(err));
+  process.exit(1);
+});

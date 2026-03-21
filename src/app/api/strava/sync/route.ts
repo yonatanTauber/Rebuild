@@ -1,1 +1,84 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAibmV4dC9zZXJ2ZXIiOwppbXBvcnQgewogIGVuc3VyZVN0cmF2YVRhYmxlcywKICBnZXRTdG9yZWRUb2tlbiwKICByZWZyZXNoVG9rZW5JZk5lZWRlZCwKICB1cHNlcnRTdHJhdmFTeW5jU3RhdGUsCiAgZ2V0U3RyYXZhU3luY1N0YXRlLAogIHVwc2VydFdvcmtvdXRGcm9tU3RyYXZhQWN0aXZpdHkKfSBmcm9tICJAL2FwcC9hcGkvc3RyYXZhL19saWIiOwoKZXhwb3J0IGNvbnN0IHJ1bnRpbWUgPSAibm9kZWpzIjsKCmltcG9ydCB0eXBlIHsgU3RyYXZhQWN0aXZpdHkgfSBmcm9tICJAL2FwcC9hcGkvc3RyYXZhL19saWIiOwoKZnVuY3Rpb24gcGFyc2VQb3NpdGl2ZUludChyYXc6IHN0cmluZyB8IG51bGwsIGZhbGxiYWNrOiBudW1iZXIpIHsKICBjb25zdCBuID0gTnVtYmVyKHJhdyk7CiAgcmV0dXJuIE51bWJlci5pc0Zpbml0ZShuKSAmJiBuID4gMCA/IE1hdGguZmxvb3IobikgOiBmYWxsYmFjazsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogUmVxdWVzdCkgewogIGNvbnN0IHVybCA9IG5ldyBVUkwocmVxdWVzdC51cmwpOwogIGNvbnN0IG1vZGUgPSB1cmwuc2VhcmNoUGFyYW1zLmdldCgibW9kZSIpID09PSAiYmFja2ZpbGwiID8gImJhY2tmaWxsIiA6ICJyZWNlbnQiOwogIGNvbnN0IHBhZ2VzID0gcGFyc2VQb3NpdGl2ZUludCh1cmwuc2VhcmNoUGFyYW1zLmdldCgicGFnZXMiKSwgbW9kZSA9PT0gImJhY2tmaWxsIiA/IDYgOiAxKTsKCiAgYXdhaXQgZW5zdXJlU3RyYXZhVGFibGVzKCk7CiAgY29uc3Qgc3RvcmVkID0gYXdhaXQgZ2V0U3RvcmVkVG9rZW4oKTsKICBpZiAoIXN0b3JlZCkgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgb2s6IGZhbHNlLCBlcnJvcjogIlN0cmF2YSDXnNeQINee15fXldeR16giIH0sIHsgc3RhdHVzOiA0MDAgfSk7CiAgfQogIGNvbnN0IHRva2VuID0gYXdhaXQgcmVmcmVzaFRva2VuSWZOZWVkZWQoc3RvcmVkKTsKCiAgY29uc3QgcGVyUGFnZSA9IDUwOwogIGxldCBpbXBvcnRlZCA9IDA7CiAgbGV0IHVwZGF0ZWQgPSAwOwoKICBsZXQgc3RhcnRQYWdlID0gMTsKICBsZXQgZG9uZSA9IGZhbHNlOwogIGlmIChtb2RlID09PSAiYmFja2ZpbGwiKSB7CiAgICBjb25zdCBzdGF0ZSA9IGF3YWl0IGdldFN0cmF2YVN5bmNTdGF0ZSgpOwogICAgc3RhcnRQYWdlID0gTWF0aC5tYXgoMSwgc3RhdGUubmV4dFBhZ2UpOwogICAgZG9uZSA9IEJvb2xlYW4oc3RhdGUuZG9uZSk7CiAgICBpZiAoZG9uZSkgewogICAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBvazogdHJ1ZSwgbW9kZSwgaW1wb3J0ZWQ6IDAsIHVwZGF0ZWQ6IDAsIGRvbmU6IHRydWUsIG5leHRQYWdlOiBzdGFydFBhZ2UgfSk7CiAgICB9CiAgfQoKICBsZXQgbGFzdFBhZ2VGZXRjaGVkID0gc3RhcnRQYWdlOwogIGZvciAobGV0IG9mZnNldCA9IDA7IG9mZnNldCA8IHBhZ2VzOyBvZmZzZXQgKz0gMSkgewogICAgY29uc3QgcGFnZSA9IHN0YXJ0UGFnZSArIG9mZnNldDsKICAgIGxhc3RQYWdlRmV0Y2hlZCA9IHBhZ2U7CiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChgaHR0cHM6Ly93d3cuc3RyYXZhLmNvbS9hcGkvdjMvYXRobGV0ZS9hY3Rpdml0aWVzP3Blcl9wYWdlPSR7cGVyUGFnZX0mcGFnZT0ke3BhZ2V9YCwgewogICAgICBoZWFkZXJzOiB7CiAgICAgICAgQXV0aG9yaXphdGlvbjogYEJlYXJlciAke3Rva2VuLmFjY2Vzc190b2tlbn1gCiAgICAgIH0KICAgIH0pOwogICAgaWYgKCFyZXMub2spIHsKICAgICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgb2s6IGZhbHNlLCBlcnJvcjogYFN0cmF2YSBmZXRjaCBmYWlsZWQgKCR7cmVzLnN0YXR1c30pYCB9LCB7IHN0YXR1czogNTAwIH0pOwogICAgfQoKICAgIGNvbnN0IGFjdGl2aXRpZXMgPSAoYXdhaXQgcmVzLmpzb24oKSkgYXMgU3RyYXZhQWN0aXZpdHlbXTsKICAgIGlmICghQXJyYXkuaXNBcnJheShhY3Rpdml0aWVzKSB8fCBhY3Rpdml0aWVzLmxlbmd0aCA9PT0gMCkgewogICAgICBkb25lID0gdHJ1ZTsKICAgICAgYnJlYWs7CiAgICB9CgogICAgZm9yIChjb25zdCBhY3Qgb2YgYWN0aXZpdGllcykgewogICAgICBjb25zdCBpbnNlcnRlZCA9IGF3YWl0IHVwc2VydFdvcmtvdXRGcm9tU3RyYXZhQWN0aXZpdHkoYWN0KTsKICAgICAgaWYgKGluc2VydGVkKSBpbXBvcnRlZCArPSAxOwogICAgICBlbHNlIHVwZGF0ZWQgKz0gMTsKICAgIH0KCiAgICBpZiAoYWN0aXZpdGllcy5sZW5ndGggPCBwZXJQYWdlKSB7CiAgICAgIGRvbmUgPSB0cnVlOwogICAgICBicmVhazsKICAgIH0KICB9CgogIGNvbnN0IG5leHRQYWdlID0gbW9kZSA9PT0gImJhY2tmaWxsIiA/IChkb25lID8gbGFzdFBhZ2VGZXRjaGVkIDogbGFzdFBhZ2VGZXRjaGVkICsgMSkgOiAxOwogIGlmIChtb2RlID09PSAiYmFja2ZpbGwiKSB7CiAgICBhd2FpdCB1cHNlcnRTdHJhdmFTeW5jU3RhdGUoeyBuZXh0UGFnZSwgZG9uZSB9KTsKICB9CgogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlLCBtb2RlLCBpbXBvcnRlZCwgdXBkYXRlZCwgZG9uZSwgbmV4dFBhZ2UgfSk7Cn0K"}
+import { NextResponse } from "next/server";
+import {
+  ensureStravaTables,
+  getStoredToken,
+  refreshTokenIfNeeded,
+  upsertStravaSyncState,
+  getStravaSyncState,
+  upsertWorkoutFromStravaActivity
+} from "@/app/api/strava/_lib";
+
+export const runtime = "nodejs";
+
+import type { StravaActivity } from "@/app/api/strava/_lib";
+
+function parsePositiveInt(raw: string | null, fallback: number) {
+  const n = Number(raw);
+  return Number.isFinite(n) && n > 0 ? Math.floor(n) : fallback;
+}
+
+export async function POST(request: Request) {
+  const url = new URL(request.url);
+  const mode = url.searchParams.get("mode") === "backfill" ? "backfill" : "recent";
+  const pages = parsePositiveInt(url.searchParams.get("pages"), mode === "backfill" ? 6 : 1);
+
+  await ensureStravaTables();
+  const stored = await getStoredToken();
+  if (!stored) {
+    return NextResponse.json({ ok: false, error: "Strava לא מחובר" }, { status: 400 });
+  }
+  const token = await refreshTokenIfNeeded(stored);
+
+  const perPage = 50;
+  let imported = 0;
+  let updated = 0;
+
+  let startPage = 1;
+  let done = false;
+  if (mode === "backfill") {
+    const state = await getStravaSyncState();
+    startPage = Math.max(1, state.nextPage);
+    done = Boolean(state.done);
+    if (done) {
+      return NextResponse.json({ ok: true, mode, imported: 0, updated: 0, done: true, nextPage: startPage });
+    }
+  }
+
+  let lastPageFetched = startPage;
+  for (let offset = 0; offset < pages; offset += 1) {
+    const page = startPage + offset;
+    lastPageFetched = page;
+    const res = await fetch(`https://www.strava.com/api/v3/athlete/activities?per_page=${perPage}&page=${page}`, {
+      headers: {
+        Authorization: `Bearer ${token.access_token}`
+      }
+    });
+    if (!res.ok) {
+      return NextResponse.json({ ok: false, error: `Strava fetch failed (${res.status})` }, { status: 500 });
+    }
+
+    const activities = (await res.json()) as StravaActivity[];
+    if (!Array.isArray(activities) || activities.length === 0) {
+      done = true;
+      break;
+    }
+
+    for (const act of activities) {
+      const inserted = await upsertWorkoutFromStravaActivity(act);
+      if (inserted) imported += 1;
+      else updated += 1;
+    }
+
+    if (activities.length < perPage) {
+      done = true;
+      break;
+    }
+  }
+
+  const nextPage = mode === "backfill" ? (done ? lastPageFetched : lastPageFetched + 1) : 1;
+  if (mode === "backfill") {
+    await upsertStravaSyncState({ nextPage, done });
+  }
+
+  return NextResponse.json({ ok: true, mode, imported, updated, done, nextPage });
+}

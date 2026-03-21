@@ -1,1 +1,149 @@
-{"data":"IyBSZWJ1aWxkCgpSZWJ1aWxkIGlzIGEgbG9jYWwtZmlyc3QgSGVicmV3IHRyYWluaW5nIGludGVsbGlnZW5jZSB3ZWIgYXBwLgoKIyMgV2hhdCBpcyBpbXBsZW1lbnRlZAoKLSBSZXNwb25zaXZlIE5leHQuanMgYXBwIChSVEwgSGVicmV3IFVJKQotIFNRTGl0ZSBsb2NhbCBzdG9yYWdlIChgZGF0YS9yZWJ1aWxkLmRiYCkKLSBJbmdlc3Rpb24gZnJvbSBsb2NhbCBmb2xkZXIgKGBkYXRhL2ltcG9ydC8qLmpzb25gKQotIERhaWx5IG1ldHJpY3M6IEZpdG5lc3MvRmF0aWd1ZS9SZWFkaW5lc3MKLSBEYWlseSByZWNvbW1lbmRhdGlvbiB3aXRoIGV4cGxhbmF0aW9uIGZhY3RvcnMKLSA3LWRheSBmb3JlY2FzdAotIFNtYXJ0IE51dHJpdGlvbiBWMS41OiBwYW50cnkgKyBtZWFsIHNsb3RzICsgbWFjcm8gdG90YWxzICsgZmVlZGJhY2sgbGVhcm5pbmcKLSBTY3JlZW5zOiBUb2RheSwgTG9nLCBEYWlseSBDaGVjay1pbiwgTG9naWMgU3R1ZGlvLCBJbXBvcnQsIFNldHRpbmdzCi0gQVBJIHJvdXRlczoKICAtIGBQT1NUIC9hcGkvaW5nZXN0L3Jlc2NhbmAKICAtIGBHRVQgL2FwaS9pbmdlc3Qvc3RhdHVzYAogIC0gYEdFVCAvYXBpL2Rhc2hib2FyZC90b2RheWAKICAtIGBHRVQgL2FwaS9kYXNoYm9hcmQvZm9yZWNhc3Q/ZGF5cz03YAogIC0gYFBPU1QgL2FwaS9jaGVja2luL2RhaWx5YAogIC0gYEdFVCAvYXBpL3JlY29tbWVuZGF0aW9uL3RvZGF5YAogIC0gYFBPU1QgL2FwaS9sb2dpYy9ydWxlc2AKICAtIGBHRVQgL2FwaS9udXRyaXRpb24vcGFudHJ5P2RhdGU9WVlZWS1NTS1ERGAKICAtIGBQT1NUIC9hcGkvbnV0cml0aW9uL3BhbnRyeWAKICAtIGBQT1NUIC9hcGkvbnV0cml0aW9uL2luZ3JlZGllbnRgCiAgLSBgUE9TVCAvYXBpL251dHJpdGlvbi9tZWFsLWZlZWRiYWNrYAogIC0gYFBPU1QgL2FwaS9udXRyaXRpb24vbWVhbC1lZGl0YAoKIyMgTG9jYWwgcnVuCgoxLiBJbnN0YWxsIGRlcGVuZGVuY2llczoKCmBgYGJhc2gKbnBtIGluc3RhbGwKYGBgCgoyLiBTdGFydCBhcHA6CgpgYGBiYXNoCm5wbSBydW4gZGV2CmBgYAoKMy4gT3B0aW9uYWwgaW5nZXN0IHdhdGNoZXIgKDEwIG1pbnV0ZXMpOgoKYGBgYmFzaApucG0gcnVuIHdhdGNoOmluZ2VzdApgYGAKCjQuIE9wZW4gaHR0cDovL2xvY2FsaG9zdDozMDAwCgojIyBWZXJjZWwgUG9zdGdyZXMgKE5lb24pIHNldHVwCgojIyMgMSkgQ3JlYXRlIC8gYXR0YWNoIHRoZSBkYXRhYmFzZSBpbiBWZXJjZWwKMS4gT3BlbiB5b3VyIFZlcmNlbCBwcm9qZWN0IGRhc2hib2FyZC4KMi4gR28gdG8gKipTdG9yYWdlKiouCjMuIENsaWNrICoqQ3JlYXRlIERhdGFiYXNlKiog4oaSICoqUG9zdGdyZXMqKi4KNC4gQXR0YWNoIGl0IHRvIHRoaXMgcHJvamVjdC4KClZlcmNlbCB3aWxsIGFkZCBlbnZpcm9ubWVudCB2YXJpYWJsZXMgbGlrZSBgUE9TVEdSRVNfVVJMYCB0byB5b3VyIHByb2plY3QuCgojIyMgMikgUHVsbCBlbnYgdmFycyBsb2NhbGx5CkZyb20gdGhlIHByb2plY3QgZm9sZGVyOgoKYGBgYmFzaApjZCAiL1VzZXJzL1kuVC5wL0NsYXVkZSBjb2RlLWNoYXQvcmVidWlsZCIKbnB4IHZlcmNlbCBsaW5rCm5weCB2ZXJjZWwgZW52IHB1bGwgLmVudi5sb2NhbApgYGAKCiMjIyAzKSBWZXJpZnkgdGhlIGNvbm5lY3Rpb24KU3RhcnQgdGhlIGRldiBzZXJ2ZXI6CgpgYGBiYXNoCm5wbSBydW4gZGV2CmBgYAoKVGhlbiBvcGVuOgpgaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9kYi9waW5nYAoKWW91IHNob3VsZCBzZWUgYHsib2siOnRydWUsLi4ufWAuCgojIyBSZXNldHRpbmcgaGlzdG9yeSBhbmQgcmViYXNlbGluaW5nCgpJZiB5b3Ugd2FudCB0byBkcm9wIGV2ZXJ5IHdvcmtvdXQvbWV0cmljIGFuZCBzdGFydCBmcm9tIGEgbmV3IFNtYXNocnVuIFRDWCBleHBvcnQ6CgoxLiBSdW4gYG5wbSBydW4gcmVzZXQ6aGlzdG9yeWAgdG8gZGVsZXRlIGBkYXRhL3JlYnVpbGQuZGJgLCBjbGVhciBgZGF0YS9pbXBvcnRgIGFuZCBgZGF0YS9zbWFzaHJ1bi1leHBvcnRgLCBhbmQgcmVjcmVhdGUgdGhlIGZvbGRlcnMuCjIuIENvcHkgeW91ciBuZXcgU21hc2hydW4gYCoudGN4YCBmaWxlcyBpbnRvIGBkYXRhL3NtYXNocnVuLWV4cG9ydGAgKG9yIGFub3RoZXIgZm9sZGVyIHlvdSBwb2ludCB0byB3aXRoIGBSRUJVSUxEX1NNQVNIUlVOX0RJUmApLgozLiBSdW4gYG5wbSBydW4gcmVzZXQ6aW5nZXN0YCAod2hpY2ggYWxyZWFkeSBjbGVhcnMgd29ya291dCB0YWJsZXMgYW5kIHJlaW5nZXN0cykgb3Igc3RhcnQgYG5wbSBydW4gd2F0Y2g6aW5nZXN0YCB0byBidWlsZCB0aGUgYXBwIGZyb20gdGhlIGZyZXNoIFRDWCBzZXQuCjQuIEtlZXAgb25seSB0aGUgbmV3IFRDWCBmaWxlcyBpbiB0aGF0IGZvbGRlciBzbyBmdXR1cmUgc2NhbnMgcmVtYWluIGluIHN5bmMgd2l0aCB0aGUgcmVzZXQgYmFzZWxpbmUuCgpUaGUgU21hc2hydW4gZGlyZWN0b3J5IGlzIGNvbnNpZGVyZWQgdGhlIGdyb3VuZCB0cnV0aCBhZnRlciB0aGUgcmVzZXQsIHNvIG9uY2UgbmV3IGV4cG9ydHMgYXJlIGNvcGllZCBpbiB0aGUgYXBwIHdpbGwgdHJlYXQgdGhlbSBhcyB0aGUgb25seSBoaXN0b3J5LgoKIyMgSGVhbHRoRml0IHBhdGgKCkRlZmF1bHQgaW1wb3J0IGRpcmVjdG9yeSBpcyBhbHJlYWR5IHNldCBpbiBjb2RlIHRvOgoKYC9Vc2Vycy9ZLlQucC9MaWJyYXJ5L01vYmlsZSBEb2N1bWVudHMvaUNsb3VkfmNvbX5hbHRpZm9uZG9+SGVhbHRoRml0L0RvY3VtZW50c2AKCllvdSBjYW4gb3ZlcnJpZGUgd2l0aCBlbnYgdmFyOgoKYGBgYmFzaApSRUJVSUxEX0lNUE9SVF9ESVI9Ii9hYnNvbHV0ZS9wYXRoL3RvL2V4cG9ydC9mb2xkZXIiCmBgYAoKIyMgU21hcnQgQ29hY2ggKEFJIHRva2VuKQoKVG8gZW5hYmxlIHRoZSBzbWFydCBjb2FjaGluZyBhZ2VudCAodHJhaW5pbmcgKyBudXRyaXRpb24gc3VnZ2VzdGlvbnMpLCBhZGQgdG8gYC5lbnYubG9jYWxgOgoKYGBgYmFzaApSRUJVSUxEX0FJX0FQSV9LRVk9IllPVVJfQVBJX0tFWSIKUkVCVUlMRF9BSV9NT0RFTD0iZ3B0LTRvLW1pbmkiClJFQlVJTERfQUlfQkFTRV9VUkw9Imh0dHBzOi8vYXBpLm9wZW5haS5jb20vdjEiClJFQlVJTERfQUlfVElNRU9VVF9NUz0iMTUwMDAiCmBgYAoKTm90ZXM6CgotIElmIGBSRUJVSUxEX0FJX0FQSV9LRVlgIGlzIG1pc3Npbmcgb3IgdGhlIEFQSSBjYWxsIGZhaWxzLCBSZWJ1aWxkIGF1dG9tYXRpY2FsbHkgZmFsbHMgYmFjayB0byB0aGUgbG9jYWwgcnVsZXMgZW5naW5lLgotIFBhbnRyeSBpbnB1dCBmcm9tIHRoZSBUb2RheSBzY3JlZW4gaXMgc2VudCB0byB0aGUgc21hcnQgY29hY2ggYW5kIGluZmx1ZW5jZXMgbWVhbCBzdWdnZXN0aW9ucy4KLSBBSSBudXRyaXRpb24gb3V0cHV0IGlzIHZhbGlkYXRlZC4gSWYgc2xvdHMvbWFjcm9zIGFyZSBpbnZhbGlkLCBSZWJ1aWxkIGZhbGxzIGJhY2sgdG8gdGhlIGxvY2FsIGRldGVybWluaXN0aWMgbnV0cml0aW9uIGVuZ2luZS4KLSBJZiBjYWxvcmllcyBhcmUgbm90IHByb3ZpZGVkIHdoZW4gYWRkaW5nIGEgY3VzdG9tIGluZ3JlZGllbnQsIFJlYnVpbGQgY29tcHV0ZXMgY2Fsb3JpZXMgYnkgYDQvNC85YCAocHJvdGVpbi9jYXJicy9mYXQpLgoKIyMgSW1wb3J0IGZvcm1hdAoKU3VwcG9ydGVkIGZpbGUgdHlwZXM6CgotIGAuZml0YCAoSGVhbHRoRml0IGV4cG9ydCkKLSBgLmdweGAgKEhlYWx0aEZpdCBleHBvcnQpCi0gYC5qc29uYCAoY3VzdG9tIHBheWxvYWQpCgpFeGFtcGxlOgoKYGBganNvbgp7CiAgInNvdXJjZSI6ICJzdHJhdmEiLAogICJzcG9ydCI6ICJydW4iLAogICJzdGFydEF0IjogIjIwMjYtMDMtMDNUMDY6MTU6MDAuMDAwWiIsCiAgImR1cmF0aW9uU2VjIjogMjcwMCwKICAiZGlzdGFuY2VNIjogODIwMCwKICAiYXZnSHIiOiAxNDgsCiAgIm1heEhyIjogMTcxLAogICJlbGV2YXRpb25NIjogNjEKfQpgYGAKCiMjIE5vdGVzCgotIFYxIGlzIHNpbmdsZS11c2VyIGFuZCBsb2NhbC1vbmx5LgotIEJhdmVsIGlzIGN1cnJlbnRseSBhIGNvbXBsZW1lbnRhcnkgc291cmNlIHZpYSBmaWxlIGltcG9ydCBwYXlsb2FkcyAoYHNvdXJjZTogImJhdmVsImApLgo="}
+# Rebuild
+
+Rebuild is a local-first Hebrew training intelligence web app.
+
+## What is implemented
+
+- Responsive Next.js app (RTL Hebrew UI)
+- SQLite local storage (`data/rebuild.db`)
+- Ingestion from local folder (`data/import/*.json`)
+- Daily metrics: Fitness/Fatigue/Readiness
+- Daily recommendation with explanation factors
+- 7-day forecast
+- Smart Nutrition V1.5: pantry + meal slots + macro totals + feedback learning
+- Screens: Today, Log, Daily Check-in, Logic Studio, Import, Settings
+- API routes:
+  - `POST /api/ingest/rescan`
+  - `GET /api/ingest/status`
+  - `GET /api/dashboard/today`
+  - `GET /api/dashboard/forecast?days=7`
+  - `POST /api/checkin/daily`
+  - `GET /api/recommendation/today`
+  - `POST /api/logic/rules`
+  - `GET /api/nutrition/pantry?date=YYYY-MM-DD`
+  - `POST /api/nutrition/pantry`
+  - `POST /api/nutrition/ingredient`
+  - `POST /api/nutrition/meal-feedback`
+  - `POST /api/nutrition/meal-edit`
+
+## Local run
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start app:
+
+```bash
+npm run dev
+```
+
+3. Optional ingest watcher (10 minutes):
+
+```bash
+npm run watch:ingest
+```
+
+4. Open http://localhost:3000
+
+## Vercel Postgres (Neon) setup
+
+### 1) Create / attach the database in Vercel
+1. Open your Vercel project dashboard.
+2. Go to **Storage**.
+3. Click **Create Database** → **Postgres**.
+4. Attach it to this project.
+
+Vercel will add environment variables like `POSTGRES_URL` to your project.
+
+### 2) Pull env vars locally
+From the project folder:
+
+```bash
+cd "/Users/Y.T.p/Claude code-chat/rebuild"
+npx vercel link
+npx vercel env pull .env.local
+```
+
+### 3) Verify the connection
+Start the dev server:
+
+```bash
+npm run dev
+```
+
+Then open:
+`http://localhost:3000/api/db/ping`
+
+You should see `{"ok":true,...}`.
+
+## Resetting history and rebaselining
+
+If you want to drop every workout/metric and start from a new Smashrun TCX export:
+
+1. Run `npm run reset:history` to delete `data/rebuild.db`, clear `data/import` and `data/smashrun-export`, and recreate the folders.
+2. Copy your new Smashrun `*.tcx` files into `data/smashrun-export` (or another folder you point to with `REBUILD_SMASHRUN_DIR`).
+3. Run `npm run reset:ingest` (which already clears workout tables and reingests) or start `npm run watch:ingest` to build the app from the fresh TCX set.
+4. Keep only the new TCX files in that folder so future scans remain in sync with the reset baseline.
+
+The Smashrun directory is considered the ground truth after the reset, so once new exports are copied in the app will treat them as the only history.
+
+## HealthFit path
+
+Default import directory is already set in code to:
+
+`/Users/Y.T.p/Library/Mobile Documents/iCloud~com~altifondo~HealthFit/Documents`
+
+You can override with env var:
+
+```bash
+REBUILD_IMPORT_DIR="/absolute/path/to/export/folder"
+```
+
+## Smart Coach (AI token)
+
+To enable the smart coaching agent (training + nutrition suggestions), add to `.env.local`:
+
+```bash
+REBUILD_AI_API_KEY="YOUR_API_KEY"
+REBUILD_AI_MODEL="gpt-4o-mini"
+REBUILD_AI_BASE_URL="https://api.openai.com/v1"
+REBUILD_AI_TIMEOUT_MS="15000"
+```
+
+Notes:
+
+- If `REBUILD_AI_API_KEY` is missing or the API call fails, Rebuild automatically falls back to the local rules engine.
+- Pantry input from the Today screen is sent to the smart coach and influences meal suggestions.
+- AI nutrition output is validated. If slots/macros are invalid, Rebuild falls back to the local deterministic nutrition engine.
+- If calories are not provided when adding a custom ingredient, Rebuild computes calories by `4/4/9` (protein/carbs/fat).
+
+## Import format
+
+Supported file types:
+
+- `.fit` (HealthFit export)
+- `.gpx` (HealthFit export)
+- `.json` (custom payload)
+
+Example:
+
+```json
+{
+  "source": "strava",
+  "sport": "run",
+  "startAt": "2026-03-03T06:15:00.000Z",
+  "durationSec": 2700,
+  "distanceM": 8200,
+  "avgHr": 148,
+  "maxHr": 171,
+  "elevationM": 61
+}
+```
+
+## Notes
+
+- V1 is single-user and local-only.
+- Bavel is currently a complementary source via file import payloads (`source: "bavel"`).

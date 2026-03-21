@@ -1,1 +1,407 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7CiAgZ2V0V29ya291dEZlZWRiYWNrLAogIHJlcGxhY2VXb3Jrb3V0RnVlbGluZywKICB1cHNlcnRXb3Jrb3V0RmVlZGJhY2sKfSBmcm9tICJAL2xpYi9kYiI7CmltcG9ydCB7IGNsb3VkRW5hYmxlZCwgY2xvdWRHZXRXb3Jrb3V0RmVlZGJhY2ssIGNsb3VkVXBzZXJ0V29ya291dEZlZWRiYWNrIH0gZnJvbSAiQC9saWIvY2xvdWQtZGIiOwoKZXhwb3J0IGNvbnN0IHJ1bnRpbWUgPSAibm9kZWpzIjsKCmNvbnN0IGxlZ2FjeVBlcmNlaXZlZEVudW0gPSB6LmVudW0oWyJlYXN5IiwgIm1vZGVyYXRlIiwgImhhcmQiLCAibWF4Il0pOwpjb25zdCBsZWdhY3lCb2R5RW51bSA9IHouZW51bShbImZyZXNoIiwgIm5vcm1hbCIsICJoZWF2eSIsICJwYWluIl0pOwpjb25zdCBsZWdhY3lCcmVhdGhpbmdFbnVtID0gei5lbnVtKFsiZWFzeSIsICJzdGVhZHkiLCAiaGFyZCJdKTsKY29uc3QgcnVuRnVlbGluZ1NvdXJjZUVudW0gPSB6LmVudW0oWyJub25lIiwgImdlbCIsICJkYXRlIiwgIm90aGVyIl0pOwpjb25zdCBzdHJlbmd0aEZvY3VzRW51bSA9IHouZW51bShbImZ1bGxfYm9keSIsICJ1cHBlcl9ib2R5IiwgImxvd2VyX2JvZHkiLCAiY29yZSJdKTsKCmNvbnN0IHNjaGVtYSA9IHoub2JqZWN0KHsKICB3b3Jrb3V0SWQ6IHouc3RyaW5nKCkubWluKDEpLAogIGRhdGU6IHouc3RyaW5nKCkubWluKDgpLAogIHNwb3J0OiB6LmVudW0oWyJydW4iLCAiYmlrZSIsICJzd2ltIiwgInN0cmVuZ3RoIl0pLAogIHBlcmNlaXZlZEVmZm9ydDogbGVnYWN5UGVyY2VpdmVkRW51bS5vcHRpb25hbCgpLAogIGJvZHlGZWVsOiBsZWdhY3lCb2R5RW51bS5vcHRpb25hbCgpLAogIGJyZWF0aGluZ0ZlZWw6IGxlZ2FjeUJyZWF0aGluZ0VudW0ub3B0aW9uYWwoKSwKICBycGVTY29yZTogei5udW1iZXIoKS5pbnQoKS5taW4oMSkubWF4KDUpLm9wdGlvbmFsKCksCiAgbGVnc0xvYWRTY29yZTogei5udW1iZXIoKS5pbnQoKS5taW4oMSkubWF4KDUpLm9wdGlvbmFsKCksCiAgcGFpblNjb3JlOiB6Lm51bWJlcigpLmludCgpLm1pbigxKS5tYXgoNSkub3B0aW9uYWwoKSwKICBwYWluQXJlYTogei5zdHJpbmcoKS5tYXgoMTIwKS5vcHRpb25hbCgpLAogIGFkZEZpdmVLbVNjb3JlOiB6Lm51bWJlcigpLmludCgpLm1pbigxKS5tYXgoNSkub3B0aW9uYWwoKSwKICByZWNvdmVyeVNjb3JlOiB6Lm51bWJlcigpLmludCgpLm1pbigxKS5tYXgoNSkub3B0aW9uYWwoKSwKICBicmVhdGhpbmdTY29yZTogei5udW1iZXIoKS5pbnQoKS5taW4oMSkubWF4KDUpLm9wdGlvbmFsKCksCiAgb3ZlcmFsbExvYWRTY29yZTogei5udW1iZXIoKS5pbnQoKS5taW4oMSkubWF4KDUpLm9wdGlvbmFsKCksCiAgcHJlUnVuTnV0cml0aW9uU2NvcmU6IHoubnVtYmVyKCkuaW50KCkubWluKDEpLm1heCg1KS5vcHRpb25hbCgpLAogIGVudmlyb25tZW50U2NvcmU6IHoubnVtYmVyKCkuaW50KCkubWluKDEpLm1heCg1KS5vcHRpb25hbCgpLAogIHNhdGlzZmFjdGlvblNjb3JlOiB6Lm51bWJlcigpLmludCgpLm1pbigxKS5tYXgoNSkub3B0aW9uYWwoKSwKICBvcGVuTm90ZTogei5zdHJpbmcoKS5tYXgoMTAwMCkub3B0aW9uYWwoKSwKICBmdWVsaW5nU291cmNlOiBydW5GdWVsaW5nU291cmNlRW51bS5vcHRpb25hbCgpLAogIGZ1ZWxpbmdRdWFudGl0eTogei5udW1iZXIoKS5taW4oMCkub3B0aW9uYWwoKSwKICBzdHJlbmd0aEVmZm9ydFNjb3JlOiB6Lm51bWJlcigpLmludCgpLm1pbigxKS5tYXgoNSkub3B0aW9uYWwoKSwKICBzdHJlbmd0aE11c2NsZUxvYWRTY29yZTogei5udW1iZXIoKS5pbnQoKS5taW4oMSkubWF4KDUpLm9wdGlvbmFsKCksCiAgc3RyZW5ndGhUZWNobmlxdWVTY29yZTogei5udW1iZXIoKS5pbnQoKS5taW4oMSkubWF4KDUpLm9wdGlvbmFsKCksCiAgc3RyZW5ndGhGYWlsdXJlUHJveGltaXR5U2NvcmU6IHoubnVtYmVyKCkuaW50KCkubWluKDEpLm1heCg1KS5vcHRpb25hbCgpLAogIHN0cmVuZ3RoUGFpblNjb3JlOiB6Lm51bWJlcigpLmludCgpLm1pbigxKS5tYXgoNSkub3B0aW9uYWwoKSwKICBzdHJlbmd0aFJlY292ZXJ5U2NvcmU6IHoubnVtYmVyKCkuaW50KCkubWluKDEpLm1heCg1KS5vcHRpb25hbCgpLAogIHN0cmVuZ3RoRm9jdXNBcmVhOiBzdHJlbmd0aEZvY3VzRW51bS5vcHRpb25hbCgpLAogIHN0cmVuZ3RoUGFpbkFyZWE6IHouc3RyaW5nKCkubWF4KDEyMCkub3B0aW9uYWwoKSwKICBzdHJlbmd0aE9wZW5Ob3RlOiB6LnN0cmluZygpLm1heCgxMDAwKS5vcHRpb25hbCgpCn0pOwoKZnVuY3Rpb24gbGVnYWN5RnJvbVJ1blNjb3JlcyhpbnB1dDogewogIHJwZVNjb3JlOiBudW1iZXI7CiAgbGVnc0xvYWRTY29yZTogbnVtYmVyOwogIHBhaW5TY29yZTogbnVtYmVyOwogIHJlY292ZXJ5U2NvcmU6IG51bWJlcjsKICBicmVhdGhpbmdTY29yZTogbnVtYmVyOwogIG92ZXJhbGxMb2FkU2NvcmU6IG51bWJlcjsKfSkgewogIGNvbnN0IGVmZm9ydFBpdm90ID0gTWF0aC5tYXgoaW5wdXQucnBlU2NvcmUsIGlucHV0Lm92ZXJhbGxMb2FkU2NvcmUpOwogIGNvbnN0IHBlcmNlaXZlZEVmZm9ydDogei5pbmZlcjx0eXBlb2YgbGVnYWN5UGVyY2VpdmVkRW51bT4gPQogICAgZWZmb3J0UGl2b3QgPD0gMiA/ICJlYXN5IiA6IGVmZm9ydFBpdm90IDw9IDMgPyAibW9kZXJhdGUiIDogZWZmb3J0UGl2b3QgPT09IDQgPyAiaGFyZCIgOiAibWF4IjsKCiAgbGV0IGJvZHlGZWVsOiB6LmluZmVyPHR5cGVvZiBsZWdhY3lCb2R5RW51bT4gPSAibm9ybWFsIjsKICBpZiAoaW5wdXQucGFpblNjb3JlID49IDMpIHsKICAgIGJvZHlGZWVsID0gInBhaW4iOwogIH0gZWxzZSB7CiAgICBjb25zdCBib2R5UGl2b3QgPSBNYXRoLm1heChpbnB1dC5sZWdzTG9hZFNjb3JlLCBpbnB1dC5yZWNvdmVyeVNjb3JlKTsKICAgIGlmIChib2R5UGl2b3QgPD0gMikgewogICAgICBib2R5RmVlbCA9ICJmcmVzaCI7CiAgICB9IGVsc2UgaWYgKGJvZHlQaXZvdCA+PSA0KSB7CiAgICAgIGJvZHlGZWVsID0gImhlYXZ5IjsKICAgIH0KICB9CgogIGNvbnN0IGJyZWF0aGluZ0ZlZWw6IHouaW5mZXI8dHlwZW9mIGxlZ2FjeUJyZWF0aGluZ0VudW0+ID0KICAgIGlucHV0LmJyZWF0aGluZ1Njb3JlIDw9IDIgPyAiZWFzeSIgOiBpbnB1dC5icmVhdGhpbmdTY29yZSA8PSAzID8gInN0ZWFkeSIgOiAiaGFyZCI7CgogIHJldHVybiB7IHBlcmNlaXZlZEVmZm9ydCwgYm9keUZlZWwsIGJyZWF0aGluZ0ZlZWwgfTsKfQoKZnVuY3Rpb24gcnVuU2NvcmVzRnJvbUxlZ2FjeShpbnB1dDogewogIHBlcmNlaXZlZEVmZm9ydDogei5pbmZlcjx0eXBlb2YgbGVnYWN5UGVyY2VpdmVkRW51bT47CiAgYm9keUZlZWw6IHouaW5mZXI8dHlwZW9mIGxlZ2FjeUJvZHlFbnVtPjsKICBicmVhdGhpbmdGZWVsOiB6LmluZmVyPHR5cGVvZiBsZWdhY3lCcmVhdGhpbmdFbnVtPjsKfSkgewogIGNvbnN0IGVmZm9ydFNjb3JlID0gaW5wdXQucGVyY2VpdmVkRWZmb3J0ID09PSAiZWFzeSIgPyAyIDogaW5wdXQucGVyY2VpdmVkRWZmb3J0ID09PSAibW9kZXJhdGUiID8gMyA6IGlucHV0LnBlcmNlaXZlZEVmZm9ydCA9PT0gImhhcmQiID8gNCA6IDU7CiAgY29uc3QgbGVnc0xvYWRTY29yZSA9IGlucHV0LmJvZHlGZWVsID09PSAiZnJlc2giID8gMiA6IGlucHV0LmJvZHlGZWVsID09PSAibm9ybWFsIiA/IDMgOiBpbnB1dC5ib2R5RmVlbCA9PT0gImhlYXZ5IiA/IDQgOiA1OwogIGNvbnN0IHBhaW5TY29yZSA9IGlucHV0LmJvZHlGZWVsID09PSAicGFpbiIgPyA0IDogMTsKICBjb25zdCBicmVhdGhpbmdTY29yZSA9IGlucHV0LmJyZWF0aGluZ0ZlZWwgPT09ICJlYXN5IiA/IDIgOiBpbnB1dC5icmVhdGhpbmdGZWVsID09PSAic3RlYWR5IiA/IDMgOiA0OwogIHJldHVybiB7CiAgICBycGVTY29yZTogZWZmb3J0U2NvcmUsCiAgICBsZWdzTG9hZFNjb3JlLAogICAgcGFpblNjb3JlLAogICAgYWRkRml2ZUttU2NvcmU6IGVmZm9ydFNjb3JlLAogICAgcmVjb3ZlcnlTY29yZTogaW5wdXQuYm9keUZlZWwgPT09ICJmcmVzaCIgPyAyIDogaW5wdXQuYm9keUZlZWwgPT09ICJub3JtYWwiID8gMyA6IDQsCiAgICBicmVhdGhpbmdTY29yZSwKICAgIG92ZXJhbGxMb2FkU2NvcmU6IGVmZm9ydFNjb3JlLAogICAgcHJlUnVuTnV0cml0aW9uU2NvcmU6IDMsCiAgICBlbnZpcm9ubWVudFNjb3JlOiAzLAogICAgc2F0aXNmYWN0aW9uU2NvcmU6IGlucHV0LnBlcmNlaXZlZEVmZm9ydCA9PT0gIm1heCIgPyA0IDogMwogIH07Cn0KCmZ1bmN0aW9uIG1pc3NpbmdSdW5GaWVsZHMoaW5wdXQ6IHouaW5mZXI8dHlwZW9mIHNjaGVtYT4pIHsKICBjb25zdCByZXF1aXJlZDogQXJyYXk8a2V5b2Ygei5pbmZlcjx0eXBlb2Ygc2NoZW1hPj4gPSBbCiAgICAicnBlU2NvcmUiLAogICAgImxlZ3NMb2FkU2NvcmUiLAogICAgInBhaW5TY29yZSIsCiAgICAiYWRkRml2ZUttU2NvcmUiLAogICAgInJlY292ZXJ5U2NvcmUiLAogICAgImJyZWF0aGluZ1Njb3JlIiwKICAgICJvdmVyYWxsTG9hZFNjb3JlIiwKICAgICJwcmVSdW5OdXRyaXRpb25TY29yZSIsCiAgICAiZW52aXJvbm1lbnRTY29yZSIsCiAgICAic2F0aXNmYWN0aW9uU2NvcmUiCiAgXTsKCiAgcmV0dXJuIHJlcXVpcmVkLmZpbHRlcigoZmllbGQpID0+IGlucHV0W2ZpZWxkXSA9PSBudWxsKTsKfQoKZnVuY3Rpb24gbWlzc2luZ1N0cmVuZ3RoRmllbGRzKGlucHV0OiB6LmluZmVyPHR5cGVvZiBzY2hlbWE+KSB7CiAgY29uc3QgcmVxdWlyZWQ6IEFycmF5PGtleW9mIHouaW5mZXI8dHlwZW9mIHNjaGVtYT4+ID0gWwogICAgInN0cmVuZ3RoRWZmb3J0U2NvcmUiLAogICAgInN0cmVuZ3RoTXVzY2xlTG9hZFNjb3JlIiwKICAgICJzdHJlbmd0aFRlY2huaXF1ZVNjb3JlIiwKICAgICJzdHJlbmd0aEZhaWx1cmVQcm94aW1pdHlTY29yZSIsCiAgICAic3RyZW5ndGhQYWluU2NvcmUiLAogICAgInN0cmVuZ3RoUmVjb3ZlcnlTY29yZSIsCiAgICAic3RyZW5ndGhGb2N1c0FyZWEiCiAgXTsKICByZXR1cm4gcmVxdWlyZWQuZmlsdGVyKChmaWVsZCkgPT4gaW5wdXRbZmllbGRdID09IG51bGwpOwp9CgpmdW5jdGlvbiBzdHJlbmd0aEZyb21MZWdhY3koaW5wdXQ6IHsKICBwZXJjZWl2ZWRFZmZvcnQ6IHouaW5mZXI8dHlwZW9mIGxlZ2FjeVBlcmNlaXZlZEVudW0+OwogIGJvZHlGZWVsOiB6LmluZmVyPHR5cGVvZiBsZWdhY3lCb2R5RW51bT47CiAgYnJlYXRoaW5nRmVlbDogei5pbmZlcjx0eXBlb2YgbGVnYWN5QnJlYXRoaW5nRW51bT47Cn0pIHsKICBjb25zdCBlZmZvcnQgPSBpbnB1dC5wZXJjZWl2ZWRFZmZvcnQgPT09ICJlYXN5IiA/IDIgOiBpbnB1dC5wZXJjZWl2ZWRFZmZvcnQgPT09ICJtb2RlcmF0ZSIgPyAzIDogaW5wdXQucGVyY2VpdmVkRWZmb3J0ID09PSAiaGFyZCIgPyA0IDogNTsKICBjb25zdCBtdXNjbGVMb2FkID0gaW5wdXQuYm9keUZlZWwgPT09ICJmcmVzaCIgPyAyIDogaW5wdXQuYm9keUZlZWwgPT09ICJub3JtYWwiID8gMyA6IDQ7CiAgY29uc3QgdGVjaG5pcXVlID0gaW5wdXQuYnJlYXRoaW5nRmVlbCA9PT0gImVhc3kiID8gMiA6IGlucHV0LmJyZWF0aGluZ0ZlZWwgPT09ICJzdGVhZHkiID8gMyA6IDQ7CiAgY29uc3QgcGFpbiA9IGlucHV0LmJvZHlGZWVsID09PSAicGFpbiIgPyA0IDogMTsKICBjb25zdCByZWNvdmVyeSA9IGlucHV0LmJvZHlGZWVsID09PSAiZnJlc2giID8gMiA6IGlucHV0LmJvZHlGZWVsID09PSAibm9ybWFsIiA/IDMgOiBpbnB1dC5ib2R5RmVlbCA9PT0gImhlYXZ5IiA/IDQgOiA1OwogIHJldHVybiB7CiAgICBzdHJlbmd0aEVmZm9ydFNjb3JlOiBlZmZvcnQsCiAgICBzdHJlbmd0aE11c2NsZUxvYWRTY29yZTogbXVzY2xlTG9hZCwKICAgIHN0cmVuZ3RoVGVjaG5pcXVlU2NvcmU6IHRlY2huaXF1ZSwKICAgIHN0cmVuZ3RoRmFpbHVyZVByb3hpbWl0eVNjb3JlOiBlZmZvcnQsCiAgICBzdHJlbmd0aFBhaW5TY29yZTogcGFpbiwKICAgIHN0cmVuZ3RoUmVjb3ZlcnlTY29yZTogcmVjb3ZlcnksCiAgICBzdHJlbmd0aEZvY3VzQXJlYTogImZ1bGxfYm9keSIgYXMgY29uc3QKICB9Owp9CgpmdW5jdGlvbiBzeW5jRnVlbGluZ0Zyb21SdW5GZWVkYmFjaygKICB3b3Jrb3V0SWQ6IHN0cmluZywKICBzb3VyY2U6IHouaW5mZXI8dHlwZW9mIHJ1bkZ1ZWxpbmdTb3VyY2VFbnVtPiB8IHVuZGVmaW5lZCwKICBxdWFudGl0eTogbnVtYmVyIHwgdW5kZWZpbmVkCikgewogIGlmIChzb3VyY2UgPT0gbnVsbCB8fCBzb3VyY2UgPT09ICJub25lIiB8fCBxdWFudGl0eSA9PSBudWxsIHx8ICFOdW1iZXIuaXNGaW5pdGUocXVhbnRpdHkpIHx8IHF1YW50aXR5IDw9IDApIHsKICAgIHJlcGxhY2VXb3Jrb3V0RnVlbGluZyh3b3Jrb3V0SWQsIFtdKTsKICAgIHJldHVybjsKICB9CiAgY29uc3QgdW5pdExhYmVsID0gIteZ15fXsyI7CiAgY29uc3Qgbm9ybWFsaXplZFF0eSA9IE1hdGgucm91bmQocXVhbnRpdHkgKiAxMCkgLyAxMDsKCiAgaWYgKHNvdXJjZSA9PT0gImdlbCIpIHsKICAgIHJlcGxhY2VXb3Jrb3V0RnVlbGluZyh3b3Jrb3V0SWQsIFsKICAgICAgewogICAgICAgIGl0ZW1OYW1lOiAi15LXs9ecIiwKICAgICAgICBxdWFudGl0eTogbm9ybWFsaXplZFF0eSwKICAgICAgICB1bml0TGFiZWwsCiAgICAgICAgY2FyYnNHOiBNYXRoLnJvdW5kKG5vcm1hbGl6ZWRRdHkgKiAyNSAqIDEwKSAvIDEwLAogICAgICAgIGtjYWw6IE1hdGgucm91bmQobm9ybWFsaXplZFF0eSAqIDEwMCksCiAgICAgICAgbm90ZXM6ICLXoNep157XqCDXntee16nXldeRINeo15nXpteUIgogICAgICB9CiAgICBdKTsKICAgIHJldHVybjsKICB9CgogIGlmIChzb3VyY2UgPT09ICJkYXRlIikgewogICAgcmVwbGFjZVdvcmtvdXRGdWVsaW5nKHdvcmtvdXRJZCwgWwogICAgICB7CiAgICAgICAgaXRlbU5hbWU6ICLXqtee16giLAogICAgICAgIHF1YW50aXR5OiBub3JtYWxpemVkUXR5LAogICAgICAgIHVuaXRMYWJlbCwKICAgICAgICBjYXJic0c6IE1hdGgucm91bmQobm9ybWFsaXplZFF0eSAqIDE4ICogMTApIC8gMTAsCiAgICAgICAga2NhbDogTWF0aC5yb3VuZChub3JtYWxpemVkUXR5ICogNjYpLAogICAgICAgIG5vdGVzOiAi16DXqdee16gg157Xntep15XXkSDXqNeZ16bXlCIKICAgICAgfQogICAgXSk7CiAgICByZXR1cm47CiAgfQoKICByZXBsYWNlV29ya291dEZ1ZWxpbmcod29ya291dElkLCBbCiAgICB7CiAgICAgIGl0ZW1OYW1lOiAi16rXk9ec15XXpyDXkNeX16giLAogICAgICBxdWFudGl0eTogbm9ybWFsaXplZFF0eSwKICAgICAgdW5pdExhYmVsLAogICAgICBjYXJic0c6IDAsCiAgICAgIGtjYWw6IG51bGwsCiAgICAgIG5vdGVzOiAi16DXqdee16gg157Xntep15XXkSDXqNeZ16bXlCIKICAgIH0KICBdKTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBib2R5ID0gYXdhaXQgcmVxdWVzdC5qc29uKCk7CiAgY29uc3QgcGFyc2VkID0gc2NoZW1hLnNhZmVQYXJzZShib2R5KTsKICBpZiAoIXBhcnNlZC5zdWNjZXNzKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogcGFyc2VkLmVycm9yLmZsYXR0ZW4oKSB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgY29uc3QgcGF5bG9hZCA9IHBhcnNlZC5kYXRhOwogIGxldCBwZXJjZWl2ZWRFZmZvcnQgPSBwYXlsb2FkLnBlcmNlaXZlZEVmZm9ydDsKICBsZXQgYm9keUZlZWwgPSBwYXlsb2FkLmJvZHlGZWVsOwogIGxldCBicmVhdGhpbmdGZWVsID0gcGF5bG9hZC5icmVhdGhpbmdGZWVsOwoKICBpZiAocGF5bG9hZC5zcG9ydCA9PT0gInJ1biIpIHsKICAgIGNvbnN0IGhhc1J1bkZpZWxkcyA9CiAgICAgIHBheWxvYWQucnBlU2NvcmUgIT0gbnVsbCB8fAogICAgICBwYXlsb2FkLmxlZ3NMb2FkU2NvcmUgIT0gbnVsbCB8fAogICAgICBwYXlsb2FkLnBhaW5TY29yZSAhPSBudWxsIHx8CiAgICAgIHBheWxvYWQuYWRkRml2ZUttU2NvcmUgIT0gbnVsbCB8fAogICAgICBwYXlsb2FkLnJlY292ZXJ5U2NvcmUgIT0gbnVsbCB8fAogICAgICBwYXlsb2FkLmJyZWF0aGluZ1Njb3JlICE9IG51bGwgfHwKICAgICAgcGF5bG9hZC5vdmVyYWxsTG9hZFNjb3JlICE9IG51bGwgfHwKICAgICAgcGF5bG9hZC5wcmVSdW5OdXRyaXRpb25TY29yZSAhPSBudWxsIHx8CiAgICAgIHBheWxvYWQuZW52aXJvbm1lbnRTY29yZSAhPSBudWxsIHx8CiAgICAgIHBheWxvYWQuc2F0aXNmYWN0aW9uU2NvcmUgIT0gbnVsbCB8fAogICAgICBwYXlsb2FkLm9wZW5Ob3RlICE9IG51bGwgfHwKICAgICAgcGF5bG9hZC5mdWVsaW5nU291cmNlICE9IG51bGwgfHwKICAgICAgcGF5bG9hZC5mdWVsaW5nUXVhbnRpdHkgIT0gbnVsbDsKCiAgICBpZiAoIWhhc1J1bkZpZWxkcyAmJiAoIXBlcmNlaXZlZEVmZm9ydCB8fCAhYm9keUZlZWwgfHwgIWJyZWF0aGluZ0ZlZWwpKSB7CiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAi15fXodeo15nXnSDXoNeq15XXoNeZINee16nXldeRINeo15nXpteUIiB9LCB7IHN0YXR1czogNDAwIH0pOwogICAgfQoKICAgIGlmIChoYXNSdW5GaWVsZHMpIHsKICAgICAgY29uc3QgbWlzc2luZyA9IG1pc3NpbmdSdW5GaWVsZHMocGF5bG9hZCk7CiAgICAgIGlmIChtaXNzaW5nLmxlbmd0aCA+IDApIHsKICAgICAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogYNep15PXldeqINeX16HXqNeZ1506ICR7bWlzc2luZy5qb2luKCIsICIpfWAgfSwgeyBzdGF0dXM6IDQwMCB9KTsKICAgICAgfQogICAgICBjb25zdCBsZWdhY3kgPSBsZWdhY3lGcm9tUnVuU2NvcmVzKHsKICAgICAgICBycGVTY29yZTogcGF5bG9hZC5ycGVTY29yZSBhcyBudW1iZXIsCiAgICAgICAgbGVnc0xvYWRTY29yZTogcGF5bG9hZC5sZWdzTG9hZFNjb3JlIGFzIG51bWJlciwKICAgICAgICBwYWluU2NvcmU6IHBheWxvYWQucGFpblNjb3JlIGFzIG51bWJlciwKICAgICAgICByZWNvdmVyeVNjb3JlOiBwYXlsb2FkLnJlY292ZXJ5U2NvcmUgYXMgbnVtYmVyLAogICAgICAgIGJyZWF0aGluZ1Njb3JlOiBwYXlsb2FkLmJyZWF0aGluZ1Njb3JlIGFzIG51bWJlciwKICAgICAgICBvdmVyYWxsTG9hZFNjb3JlOiBwYXlsb2FkLm92ZXJhbGxMb2FkU2NvcmUgYXMgbnVtYmVyCiAgICAgIH0pOwogICAgICBwZXJjZWl2ZWRFZmZvcnQgPSBsZWdhY3kucGVyY2VpdmVkRWZmb3J0OwogICAgICBib2R5RmVlbCA9IGxlZ2FjeS5ib2R5RmVlbDsKICAgICAgYnJlYXRoaW5nRmVlbCA9IGxlZ2FjeS5icmVhdGhpbmdGZWVsOwogICAgfSBlbHNlIGlmIChwZXJjZWl2ZWRFZmZvcnQgJiYgYm9keUZlZWwgJiYgYnJlYXRoaW5nRmVlbCkgewogICAgICBjb25zdCBydW5EZXJpdmVkID0gcnVuU2NvcmVzRnJvbUxlZ2FjeSh7CiAgICAgICAgcGVyY2VpdmVkRWZmb3J0LAogICAgICAgIGJvZHlGZWVsLAogICAgICAgIGJyZWF0aGluZ0ZlZWwKICAgICAgfSk7CiAgICAgIHBheWxvYWQucnBlU2NvcmUgPSBydW5EZXJpdmVkLnJwZVNjb3JlOwogICAgICBwYXlsb2FkLmxlZ3NMb2FkU2NvcmUgPSBydW5EZXJpdmVkLmxlZ3NMb2FkU2NvcmU7CiAgICAgIHBheWxvYWQucGFpblNjb3JlID0gcnVuRGVyaXZlZC5wYWluU2NvcmU7CiAgICAgIHBheWxvYWQuYWRkRml2ZUttU2NvcmUgPSBydW5EZXJpdmVkLmFkZEZpdmVLbVNjb3JlOwogICAgICBwYXlsb2FkLnJlY292ZXJ5U2NvcmUgPSBydW5EZXJpdmVkLnJlY292ZXJ5U2NvcmU7CiAgICAgIHBheWxvYWQuYnJlYXRoaW5nU2NvcmUgPSBydW5EZXJpdmVkLmJyZWF0aGluZ1Njb3JlOwogICAgICBwYXlsb2FkLm92ZXJhbGxMb2FkU2NvcmUgPSBydW5EZXJpdmVkLm92ZXJhbGxMb2FkU2NvcmU7CiAgICAgIHBheWxvYWQucHJlUnVuTnV0cml0aW9uU2NvcmUgPSBydW5EZXJpdmVkLnByZVJ1bk51dHJpdGlvblNjb3JlOwogICAgICBwYXlsb2FkLmVudmlyb25tZW50U2NvcmUgPSBydW5EZXJpdmVkLmVudmlyb25tZW50U2NvcmU7CiAgICAgIHBheWxvYWQuc2F0aXNmYWN0aW9uU2NvcmUgPSBydW5EZXJpdmVkLnNhdGlzZmFjdGlvblNjb3JlOwogICAgICBwYXlsb2FkLmZ1ZWxpbmdTb3VyY2UgPSBwYXlsb2FkLmZ1ZWxpbmdTb3VyY2UgPz8gIm5vbmUiOwogICAgICBwYXlsb2FkLmZ1ZWxpbmdRdWFudGl0eSA9IHBheWxvYWQuZnVlbGluZ1F1YW50aXR5ID8/IDA7CiAgICB9CiAgfSBlbHNlIGlmIChwYXlsb2FkLnNwb3J0ID09PSAic3RyZW5ndGgiKSB7CiAgICBjb25zdCBoYXNTdHJlbmd0aEZpZWxkcyA9CiAgICAgIHBheWxvYWQuc3RyZW5ndGhFZmZvcnRTY29yZSAhPSBudWxsIHx8CiAgICAgIHBheWxvYWQuc3RyZW5ndGhNdXNjbGVMb2FkU2NvcmUgIT0gbnVsbCB8fAogICAgICBwYXlsb2FkLnN0cmVuZ3RoVGVjaG5pcXVlU2NvcmUgIT0gbnVsbCB8fAogICAgICBwYXlsb2FkLnN0cmVuZ3RoRmFpbHVyZVByb3hpbWl0eVNjb3JlICE9IG51bGwgfHwKICAgICAgcGF5bG9hZC5zdHJlbmd0aFBhaW5TY29yZSAhPSBudWxsIHx8CiAgICAgIHBheWxvYWQuc3RyZW5ndGhSZWNvdmVyeVNjb3JlICE9IG51bGwgfHwKICAgICAgcGF5bG9hZC5zdHJlbmd0aEZvY3VzQXJlYSAhPSBudWxsIHx8CiAgICAgIHBheWxvYWQuc3RyZW5ndGhQYWluQXJlYSAhPSBudWxsIHx8CiAgICAgIHBheWxvYWQuc3RyZW5ndGhPcGVuTm90ZSAhPSBudWxsOwoKICAgIGlmICghaGFzU3RyZW5ndGhGaWVsZHMgJiYgKCFwZXJjZWl2ZWRFZmZvcnQgfHwgIWJvZHlGZWVsIHx8ICFicmVhdGhpbmdGZWVsKSkgewogICAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogIteX16HXqNeZ150g16DXqteV16DXmSDXntep15XXkSDXm9eV15ciIH0sIHsgc3RhdHVzOiA0MDAgfSk7CiAgICB9CgogICAgaWYgKGhhc1N0cmVuZ3RoRmllbGRzKSB7CiAgICAgIGNvbnN0IG1pc3NpbmcgPSBtaXNzaW5nU3RyZW5ndGhGaWVsZHMocGF5bG9hZCk7CiAgICAgIGlmIChtaXNzaW5nLmxlbmd0aCA+IDApIHsKICAgICAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogYNep15PXldeqINeX16HXqNeZ1506ICR7bWlzc2luZy5qb2luKCIsICIpfWAgfSwgeyBzdGF0dXM6IDQwMCB9KTsKICAgICAgfQogICAgICBjb25zdCBlZmZvcnQgPSBwYXlsb2FkLnN0cmVuZ3RoRWZmb3J0U2NvcmUgYXMgbnVtYmVyOwogICAgICBjb25zdCBtdXNjbGVMb2FkID0gcGF5bG9hZC5zdHJlbmd0aE11c2NsZUxvYWRTY29yZSBhcyBudW1iZXI7CiAgICAgIGNvbnN0IHRlY2huaXF1ZSA9IHBheWxvYWQuc3RyZW5ndGhUZWNobmlxdWVTY29yZSBhcyBudW1iZXI7CiAgICAgIGNvbnN0IGZhaWx1cmUgPSBwYXlsb2FkLnN0cmVuZ3RoRmFpbHVyZVByb3hpbWl0eVNjb3JlIGFzIG51bWJlcjsKICAgICAgY29uc3QgcGFpbiA9IHBheWxvYWQuc3RyZW5ndGhQYWluU2NvcmUgYXMgbnVtYmVyOwogICAgICBjb25zdCByZWNvdmVyeSA9IHBheWxvYWQuc3RyZW5ndGhSZWNvdmVyeVNjb3JlIGFzIG51bWJlcjsKCiAgICAgIHBlcmNlaXZlZEVmZm9ydCA9IGVmZm9ydCA8PSAyID8gImVhc3kiIDogZWZmb3J0IDw9IDMgPyAibW9kZXJhdGUiIDogZWZmb3J0ID09PSA0ID8gImhhcmQiIDogIm1heCI7CiAgICAgIGJvZHlGZWVsID0gcGFpbiA+PSAzID8gInBhaW4iIDogbXVzY2xlTG9hZCA+PSA0IHx8IHJlY292ZXJ5ID49IDQgPyAiaGVhdnkiIDogcmVjb3ZlcnkgPD0gMiA/ICJmcmVzaCIgOiAibm9ybWFsIjsKICAgICAgYnJlYXRoaW5nRmVlbCA9IHRlY2huaXF1ZSA8PSAyID8gImVhc3kiIDogdGVjaG5pcXVlIDw9IDMgPyAic3RlYWR5IiA6ICJoYXJkIjsKCiAgICAgIHBheWxvYWQucnBlU2NvcmUgPSBlZmZvcnQ7CiAgICAgIHBheWxvYWQubGVnc0xvYWRTY29yZSA9IG11c2NsZUxvYWQ7CiAgICAgIHBheWxvYWQuYnJlYXRoaW5nU2NvcmUgPSB0ZWNobmlxdWU7CiAgICAgIHBheWxvYWQub3ZlcmFsbExvYWRTY29yZSA9IGZhaWx1cmU7CiAgICAgIHBheWxvYWQucGFpblNjb3JlID0gcGFpbjsKICAgICAgcGF5bG9hZC5yZWNvdmVyeVNjb3JlID0gcmVjb3Zlcnk7CiAgICAgIHBheWxvYWQucGFpbkFyZWEgPSBwYXlsb2FkLnN0cmVuZ3RoUGFpbkFyZWEgPz8gIiI7CiAgICAgIHBheWxvYWQub3Blbk5vdGUgPSBwYXlsb2FkLnN0cmVuZ3RoT3Blbk5vdGUgPz8gcGF5bG9hZC5vcGVuTm90ZSA/PyAiIjsKICAgIH0gZWxzZSBpZiAocGVyY2VpdmVkRWZmb3J0ICYmIGJvZHlGZWVsICYmIGJyZWF0aGluZ0ZlZWwpIHsKICAgICAgY29uc3QgZGVyaXZlZCA9IHN0cmVuZ3RoRnJvbUxlZ2FjeSh7IHBlcmNlaXZlZEVmZm9ydCwgYm9keUZlZWwsIGJyZWF0aGluZ0ZlZWwgfSk7CiAgICAgIHBheWxvYWQuc3RyZW5ndGhFZmZvcnRTY29yZSA9IGRlcml2ZWQuc3RyZW5ndGhFZmZvcnRTY29yZTsKICAgICAgcGF5bG9hZC5zdHJlbmd0aE11c2NsZUxvYWRTY29yZSA9IGRlcml2ZWQuc3RyZW5ndGhNdXNjbGVMb2FkU2NvcmU7CiAgICAgIHBheWxvYWQuc3RyZW5ndGhUZWNobmlxdWVTY29yZSA9IGRlcml2ZWQuc3RyZW5ndGhUZWNobmlxdWVTY29yZTsKICAgICAgcGF5bG9hZC5zdHJlbmd0aEZhaWx1cmVQcm94aW1pdHlTY29yZSA9IGRlcml2ZWQuc3RyZW5ndGhGYWlsdXJlUHJveGltaXR5U2NvcmU7CiAgICAgIHBheWxvYWQuc3RyZW5ndGhQYWluU2NvcmUgPSBkZXJpdmVkLnN0cmVuZ3RoUGFpblNjb3JlOwogICAgICBwYXlsb2FkLnN0cmVuZ3RoUmVjb3ZlcnlTY29yZSA9IGRlcml2ZWQuc3RyZW5ndGhSZWNvdmVyeVNjb3JlOwogICAgICBwYXlsb2FkLnN0cmVuZ3RoRm9jdXNBcmVhID0gZGVyaXZlZC5zdHJlbmd0aEZvY3VzQXJlYTsKICAgICAgcGF5bG9hZC5ycGVTY29yZSA9IGRlcml2ZWQuc3RyZW5ndGhFZmZvcnRTY29yZTsKICAgICAgcGF5bG9hZC5sZWdzTG9hZFNjb3JlID0gZGVyaXZlZC5zdHJlbmd0aE11c2NsZUxvYWRTY29yZTsKICAgICAgcGF5bG9hZC5icmVhdGhpbmdTY29yZSA9IGRlcml2ZWQuc3RyZW5ndGhUZWNobmlxdWVTY29yZTsKICAgICAgcGF5bG9hZC5vdmVyYWxsTG9hZFNjb3JlID0gZGVyaXZlZC5zdHJlbmd0aEZhaWx1cmVQcm94aW1pdHlTY29yZTsKICAgICAgcGF5bG9hZC5wYWluU2NvcmUgPSBkZXJpdmVkLnN0cmVuZ3RoUGFpblNjb3JlOwogICAgICBwYXlsb2FkLnJlY292ZXJ5U2NvcmUgPSBkZXJpdmVkLnN0cmVuZ3RoUmVjb3ZlcnlTY29yZTsKICAgIH0KICB9IGVsc2UgaWYgKCFwZXJjZWl2ZWRFZmZvcnQgfHwgIWJvZHlGZWVsIHx8ICFicmVhdGhpbmdGZWVsKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogIteX16HXqNeZ150g16DXqteV16DXmSDXntep15XXkSDXnNeQ15nXnteV158iIH0sIHsgc3RhdHVzOiA0MDAgfSk7CiAgfQoKICBjb25zdCB0b1NhdmUgPSB7CiAgICB3b3Jrb3V0SWQ6IHBheWxvYWQud29ya291dElkLAogICAgZGF0ZTogcGF5bG9hZC5kYXRlLAogICAgc3BvcnQ6IHBheWxvYWQuc3BvcnQsCiAgICBwZXJjZWl2ZWRFZmZvcnQ6IHBlcmNlaXZlZEVmZm9ydCBhcyB6LmluZmVyPHR5cGVvZiBsZWdhY3lQZXJjZWl2ZWRFbnVtPiwKICAgIGJvZHlGZWVsOiBib2R5RmVlbCBhcyB6LmluZmVyPHR5cGVvZiBsZWdhY3lCb2R5RW51bT4sCiAgICBicmVhdGhpbmdGZWVsOiBicmVhdGhpbmdGZWVsIGFzIHouaW5mZXI8dHlwZW9mIGxlZ2FjeUJyZWF0aGluZ0VudW0+LAogICAgcnBlU2NvcmU6IHBheWxvYWQucnBlU2NvcmUgPz8gbnVsbCwKICAgIGxlZ3NMb2FkU2NvcmU6IHBheWxvYWQubGVnc0xvYWRTY29yZSA/PyBudWxsLAogICAgcGFpblNjb3JlOiBwYXlsb2FkLnBhaW5TY29yZSA/PyBudWxsLAogICAgcGFpbkFyZWE6IHBheWxvYWQucGFpbkFyZWEgPz8gbnVsbCwKICAgIGFkZEZpdmVLbVNjb3JlOiBwYXlsb2FkLmFkZEZpdmVLbVNjb3JlID8/IG51bGwsCiAgICByZWNvdmVyeVNjb3JlOiBwYXlsb2FkLnJlY292ZXJ5U2NvcmUgPz8gbnVsbCwKICAgIGJyZWF0aGluZ1Njb3JlOiBwYXlsb2FkLmJyZWF0aGluZ1Njb3JlID8/IG51bGwsCiAgICBvdmVyYWxsTG9hZFNjb3JlOiBwYXlsb2FkLm92ZXJhbGxMb2FkU2NvcmUgPz8gbnVsbCwKICAgIHByZVJ1bk51dHJpdGlvblNjb3JlOiBwYXlsb2FkLnByZVJ1bk51dHJpdGlvblNjb3JlID8/IG51bGwsCiAgICBlbnZpcm9ubWVudFNjb3JlOiBwYXlsb2FkLmVudmlyb25tZW50U2NvcmUgPz8gbnVsbCwKICAgIHNhdGlzZmFjdGlvblNjb3JlOiBwYXlsb2FkLnNhdGlzZmFjdGlvblNjb3JlID8/IG51bGwsCiAgICBzdHJlbmd0aFRlY2huaXF1ZVNjb3JlOiBwYXlsb2FkLnNwb3J0ID09PSAic3RyZW5ndGgiID8gcGF5bG9hZC5zdHJlbmd0aFRlY2huaXF1ZVNjb3JlID8/IG51bGwgOiBudWxsLAogICAgc3RyZW5ndGhGYWlsdXJlUHJveGltaXR5U2NvcmU6IHBheWxvYWQuc3BvcnQgPT09ICJzdHJlbmd0aCIgPyBwYXlsb2FkLnN0cmVuZ3RoRmFpbHVyZVByb3hpbWl0eVNjb3JlID8/IG51bGwgOiBudWxsLAogICAgc3RyZW5ndGhGb2N1c0FyZWE6IHBheWxvYWQuc3BvcnQgPT09ICJzdHJlbmd0aCIgPyBwYXlsb2FkLnN0cmVuZ3RoRm9jdXNBcmVhID8/IG51bGwgOiBudWxsLAogICAgb3Blbk5vdGU6IHBheWxvYWQuc3BvcnQgPT09ICJzdHJlbmd0aCIgPyBwYXlsb2FkLnN0cmVuZ3RoT3Blbk5vdGUgPz8gcGF5bG9hZC5vcGVuTm90ZSA/PyBudWxsIDogcGF5bG9hZC5vcGVuTm90ZSA/PyBudWxsLAogICAgZnVlbGluZ1NvdXJjZTogcGF5bG9hZC5mdWVsaW5nU291cmNlID8/IG51bGwsCiAgICBmdWVsaW5nUXVhbnRpdHk6IHBheWxvYWQuZnVlbGluZ1F1YW50aXR5ID8/IG51bGwKICB9IGFzIGNvbnN0OwoKICBpZiAoY2xvdWRFbmFibGVkKCkpIHsKICAgIGF3YWl0IGNsb3VkVXBzZXJ0V29ya291dEZlZWRiYWNrKHsKICAgICAgLi4udG9TYXZlLAogICAgICBycGVTY29yZTogdG9TYXZlLnJwZVNjb3JlID8/IG51bGwsCiAgICAgIGxlZ3NMb2FkU2NvcmU6IHRvU2F2ZS5sZWdzTG9hZFNjb3JlID8/IG51bGwsCiAgICAgIHBhaW5TY29yZTogdG9TYXZlLnBhaW5TY29yZSA/PyBudWxsLAogICAgICBwYWluQXJlYTogdG9TYXZlLnBhaW5BcmVhID8/IG51bGwsCiAgICAgIGFkZEZpdmVLbVNjb3JlOiB0b1NhdmUuYWRkRml2ZUttU2NvcmUgPz8gbnVsbCwKICAgICAgcmVjb3ZlcnlTY29yZTogdG9TYXZlLnJlY292ZXJ5U2NvcmUgPz8gbnVsbCwKICAgICAgYnJlYXRoaW5nU2NvcmU6IHRvU2F2ZS5icmVhdGhpbmdTY29yZSA/PyBudWxsLAogICAgICBvdmVyYWxsTG9hZFNjb3JlOiB0b1NhdmUub3ZlcmFsbExvYWRTY29yZSA/PyBudWxsLAogICAgICBwcmVSdW5OdXRyaXRpb25TY29yZTogdG9TYXZlLnByZVJ1bk51dHJpdGlvblNjb3JlID8/IG51bGwsCiAgICAgIGVudmlyb25tZW50U2NvcmU6IHRvU2F2ZS5lbnZpcm9ubWVudFNjb3JlID8/IG51bGwsCiAgICAgIHNhdGlzZmFjdGlvblNjb3JlOiB0b1NhdmUuc2F0aXNmYWN0aW9uU2NvcmUgPz8gbnVsbCwKICAgICAgc3RyZW5ndGhUZWNobmlxdWVTY29yZTogdG9TYXZlLnN0cmVuZ3RoVGVjaG5pcXVlU2NvcmUgPz8gbnVsbCwKICAgICAgc3RyZW5ndGhGYWlsdXJlUHJveGltaXR5U2NvcmU6IHRvU2F2ZS5zdHJlbmd0aEZhaWx1cmVQcm94aW1pdHlTY29yZSA/PyBudWxsLAogICAgICBzdHJlbmd0aEZvY3VzQXJlYTogdG9TYXZlLnN0cmVuZ3RoRm9jdXNBcmVhID8/IG51bGwsCiAgICAgIHN0cmVuZ3RoRWZmb3J0U2NvcmU6IHBheWxvYWQuc3BvcnQgPT09ICJzdHJlbmd0aCIgPyBwYXlsb2FkLnN0cmVuZ3RoRWZmb3J0U2NvcmUgPz8gbnVsbCA6IG51bGwsCiAgICAgIHN0cmVuZ3RoTXVzY2xlTG9hZFNjb3JlOiBwYXlsb2FkLnNwb3J0ID09PSAic3RyZW5ndGgiID8gcGF5bG9hZC5zdHJlbmd0aE11c2NsZUxvYWRTY29yZSA/PyBudWxsIDogbnVsbCwKICAgICAgc3RyZW5ndGhQYWluU2NvcmU6IHBheWxvYWQuc3BvcnQgPT09ICJzdHJlbmd0aCIgPyBwYXlsb2FkLnN0cmVuZ3RoUGFpblNjb3JlID8/IG51bGwgOiBudWxsLAogICAgICBzdHJlbmd0aFJlY292ZXJ5U2NvcmU6IHBheWxvYWQuc3BvcnQgPT09ICJzdHJlbmd0aCIgPyBwYXlsb2FkLnN0cmVuZ3RoUmVjb3ZlcnlTY29yZSA/PyBudWxsIDogbnVsbCwKICAgICAgc3RyZW5ndGhQYWluQXJlYTogcGF5bG9hZC5zcG9ydCA9PT0gInN0cmVuZ3RoIiA/IHBheWxvYWQuc3RyZW5ndGhQYWluQXJlYSA/PyBudWxsIDogbnVsbCwKICAgICAgc3RyZW5ndGhPcGVuTm90ZTogcGF5bG9hZC5zcG9ydCA9PT0gInN0cmVuZ3RoIiA/IHBheWxvYWQuc3RyZW5ndGhPcGVuTm90ZSA/PyBudWxsIDogbnVsbAogICAgfSk7CiAgfSBlbHNlIHsKICAgIHVwc2VydFdvcmtvdXRGZWVkYmFjayh0b1NhdmUpOwogIH0KCiAgaWYgKCFjbG91ZEVuYWJsZWQoKSAmJiBwYXlsb2FkLnNwb3J0ID09PSAicnVuIikgewogICAgc3luY0Z1ZWxpbmdGcm9tUnVuRmVlZGJhY2soCiAgICAgIHBheWxvYWQud29ya291dElkLAogICAgICBwYXlsb2FkLmZ1ZWxpbmdTb3VyY2UsCiAgICAgIHBheWxvYWQuZnVlbGluZ1F1YW50aXR5CiAgICApOwogIH0KCiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgc2F2ZWQ6IHRydWUgfSk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCB3b3Jrb3V0SWQgPSByZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zLmdldCgid29ya291dElkIik7CiAgaWYgKCF3b3Jrb3V0SWQpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAid29ya291dElkIHJlcXVpcmVkIiB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KICBpZiAoY2xvdWRFbmFibGVkKCkpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGZlZWRiYWNrOiAoYXdhaXQgY2xvdWRHZXRXb3Jrb3V0RmVlZGJhY2sod29ya291dElkKSkgPz8gbnVsbCB9KTsKICB9CiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZmVlZGJhY2s6IGdldFdvcmtvdXRGZWVkYmFjayh3b3Jrb3V0SWQpID8/IG51bGwgfSk7Cn0K"}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import {
+  getWorkoutFeedback,
+  replaceWorkoutFueling,
+  upsertWorkoutFeedback
+} from "@/lib/db";
+import { cloudEnabled, cloudGetWorkoutFeedback, cloudUpsertWorkoutFeedback } from "@/lib/cloud-db";
+
+export const runtime = "nodejs";
+
+const legacyPerceivedEnum = z.enum(["easy", "moderate", "hard", "max"]);
+const legacyBodyEnum = z.enum(["fresh", "normal", "heavy", "pain"]);
+const legacyBreathingEnum = z.enum(["easy", "steady", "hard"]);
+const runFuelingSourceEnum = z.enum(["none", "gel", "date", "other"]);
+const strengthFocusEnum = z.enum(["full_body", "upper_body", "lower_body", "core"]);
+
+const schema = z.object({
+  workoutId: z.string().min(1),
+  date: z.string().min(8),
+  sport: z.enum(["run", "bike", "swim", "strength"]),
+  perceivedEffort: legacyPerceivedEnum.optional(),
+  bodyFeel: legacyBodyEnum.optional(),
+  breathingFeel: legacyBreathingEnum.optional(),
+  rpeScore: z.number().int().min(1).max(5).optional(),
+  legsLoadScore: z.number().int().min(1).max(5).optional(),
+  painScore: z.number().int().min(1).max(5).optional(),
+  painArea: z.string().max(120).optional(),
+  addFiveKmScore: z.number().int().min(1).max(5).optional(),
+  recoveryScore: z.number().int().min(1).max(5).optional(),
+  breathingScore: z.number().int().min(1).max(5).optional(),
+  overallLoadScore: z.number().int().min(1).max(5).optional(),
+  preRunNutritionScore: z.number().int().min(1).max(5).optional(),
+  environmentScore: z.number().int().min(1).max(5).optional(),
+  satisfactionScore: z.number().int().min(1).max(5).optional(),
+  openNote: z.string().max(1000).optional(),
+  fuelingSource: runFuelingSourceEnum.optional(),
+  fuelingQuantity: z.number().min(0).optional(),
+  strengthEffortScore: z.number().int().min(1).max(5).optional(),
+  strengthMuscleLoadScore: z.number().int().min(1).max(5).optional(),
+  strengthTechniqueScore: z.number().int().min(1).max(5).optional(),
+  strengthFailureProximityScore: z.number().int().min(1).max(5).optional(),
+  strengthPainScore: z.number().int().min(1).max(5).optional(),
+  strengthRecoveryScore: z.number().int().min(1).max(5).optional(),
+  strengthFocusArea: strengthFocusEnum.optional(),
+  strengthPainArea: z.string().max(120).optional(),
+  strengthOpenNote: z.string().max(1000).optional()
+});
+
+function legacyFromRunScores(input: {
+  rpeScore: number;
+  legsLoadScore: number;
+  painScore: number;
+  recoveryScore: number;
+  breathingScore: number;
+  overallLoadScore: number;
+}) {
+  const effortPivot = Math.max(input.rpeScore, input.overallLoadScore);
+  const perceivedEffort: z.infer<typeof legacyPerceivedEnum> =
+    effortPivot <= 2 ? "easy" : effortPivot <= 3 ? "moderate" : effortPivot === 4 ? "hard" : "max";
+
+  let bodyFeel: z.infer<typeof legacyBodyEnum> = "normal";
+  if (input.painScore >= 3) {
+    bodyFeel = "pain";
+  } else {
+    const bodyPivot = Math.max(input.legsLoadScore, input.recoveryScore);
+    if (bodyPivot <= 2) {
+      bodyFeel = "fresh";
+    } else if (bodyPivot >= 4) {
+      bodyFeel = "heavy";
+    }
+  }
+
+  const breathingFeel: z.infer<typeof legacyBreathingEnum> =
+    input.breathingScore <= 2 ? "easy" : input.breathingScore <= 3 ? "steady" : "hard";
+
+  return { perceivedEffort, bodyFeel, breathingFeel };
+}
+
+function runScoresFromLegacy(input: {
+  perceivedEffort: z.infer<typeof legacyPerceivedEnum>;
+  bodyFeel: z.infer<typeof legacyBodyEnum>;
+  breathingFeel: z.infer<typeof legacyBreathingEnum>;
+}) {
+  const effortScore = input.perceivedEffort === "easy" ? 2 : input.perceivedEffort === "moderate" ? 3 : input.perceivedEffort === "hard" ? 4 : 5;
+  const legsLoadScore = input.bodyFeel === "fresh" ? 2 : input.bodyFeel === "normal" ? 3 : input.bodyFeel === "heavy" ? 4 : 5;
+  const painScore = input.bodyFeel === "pain" ? 4 : 1;
+  const breathingScore = input.breathingFeel === "easy" ? 2 : input.breathingFeel === "steady" ? 3 : 4;
+  return {
+    rpeScore: effortScore,
+    legsLoadScore,
+    painScore,
+    addFiveKmScore: effortScore,
+    recoveryScore: input.bodyFeel === "fresh" ? 2 : input.bodyFeel === "normal" ? 3 : 4,
+    breathingScore,
+    overallLoadScore: effortScore,
+    preRunNutritionScore: 3,
+    environmentScore: 3,
+    satisfactionScore: input.perceivedEffort === "max" ? 4 : 3
+  };
+}
+
+function missingRunFields(input: z.infer<typeof schema>) {
+  const required: Array<keyof z.infer<typeof schema>> = [
+    "rpeScore",
+    "legsLoadScore",
+    "painScore",
+    "addFiveKmScore",
+    "recoveryScore",
+    "breathingScore",
+    "overallLoadScore",
+    "preRunNutritionScore",
+    "environmentScore",
+    "satisfactionScore"
+  ];
+
+  return required.filter((field) => input[field] == null);
+}
+
+function missingStrengthFields(input: z.infer<typeof schema>) {
+  const required: Array<keyof z.infer<typeof schema>> = [
+    "strengthEffortScore",
+    "strengthMuscleLoadScore",
+    "strengthTechniqueScore",
+    "strengthFailureProximityScore",
+    "strengthPainScore",
+    "strengthRecoveryScore",
+    "strengthFocusArea"
+  ];
+  return required.filter((field) => input[field] == null);
+}
+
+function strengthFromLegacy(input: {
+  perceivedEffort: z.infer<typeof legacyPerceivedEnum>;
+  bodyFeel: z.infer<typeof legacyBodyEnum>;
+  breathingFeel: z.infer<typeof legacyBreathingEnum>;
+}) {
+  const effort = input.perceivedEffort === "easy" ? 2 : input.perceivedEffort === "moderate" ? 3 : input.perceivedEffort === "hard" ? 4 : 5;
+  const muscleLoad = input.bodyFeel === "fresh" ? 2 : input.bodyFeel === "normal" ? 3 : 4;
+  const technique = input.breathingFeel === "easy" ? 2 : input.breathingFeel === "steady" ? 3 : 4;
+  const pain = input.bodyFeel === "pain" ? 4 : 1;
+  const recovery = input.bodyFeel === "fresh" ? 2 : input.bodyFeel === "normal" ? 3 : input.bodyFeel === "heavy" ? 4 : 5;
+  return {
+    strengthEffortScore: effort,
+    strengthMuscleLoadScore: muscleLoad,
+    strengthTechniqueScore: technique,
+    strengthFailureProximityScore: effort,
+    strengthPainScore: pain,
+    strengthRecoveryScore: recovery,
+    strengthFocusArea: "full_body" as const
+  };
+}
+
+function syncFuelingFromRunFeedback(
+  workoutId: string,
+  source: z.infer<typeof runFuelingSourceEnum> | undefined,
+  quantity: number | undefined
+) {
+  if (source == null || source === "none" || quantity == null || !Number.isFinite(quantity) || quantity <= 0) {
+    replaceWorkoutFueling(workoutId, []);
+    return;
+  }
+  const unitLabel = "יח׳";
+  const normalizedQty = Math.round(quantity * 10) / 10;
+
+  if (source === "gel") {
+    replaceWorkoutFueling(workoutId, [
+      {
+        itemName: "ג׳ל",
+        quantity: normalizedQty,
+        unitLabel,
+        carbsG: Math.round(normalizedQty * 25 * 10) / 10,
+        kcal: Math.round(normalizedQty * 100),
+        notes: "נשמר ממשוב ריצה"
+      }
+    ]);
+    return;
+  }
+
+  if (source === "date") {
+    replaceWorkoutFueling(workoutId, [
+      {
+        itemName: "תמר",
+        quantity: normalizedQty,
+        unitLabel,
+        carbsG: Math.round(normalizedQty * 18 * 10) / 10,
+        kcal: Math.round(normalizedQty * 66),
+        notes: "נשמר ממשוב ריצה"
+      }
+    ]);
+    return;
+  }
+
+  replaceWorkoutFueling(workoutId, [
+    {
+      itemName: "תדלוק אחר",
+      quantity: normalizedQty,
+      unitLabel,
+      carbsG: 0,
+      kcal: null,
+      notes: "נשמר ממשוב ריצה"
+    }
+  ]);
+}
+
+export async function POST(request: NextRequest) {
+  const body = await request.json();
+  const parsed = schema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  const payload = parsed.data;
+  let perceivedEffort = payload.perceivedEffort;
+  let bodyFeel = payload.bodyFeel;
+  let breathingFeel = payload.breathingFeel;
+
+  if (payload.sport === "run") {
+    const hasRunFields =
+      payload.rpeScore != null ||
+      payload.legsLoadScore != null ||
+      payload.painScore != null ||
+      payload.addFiveKmScore != null ||
+      payload.recoveryScore != null ||
+      payload.breathingScore != null ||
+      payload.overallLoadScore != null ||
+      payload.preRunNutritionScore != null ||
+      payload.environmentScore != null ||
+      payload.satisfactionScore != null ||
+      payload.openNote != null ||
+      payload.fuelingSource != null ||
+      payload.fuelingQuantity != null;
+
+    if (!hasRunFields && (!perceivedEffort || !bodyFeel || !breathingFeel)) {
+      return NextResponse.json({ error: "חסרים נתוני משוב ריצה" }, { status: 400 });
+    }
+
+    if (hasRunFields) {
+      const missing = missingRunFields(payload);
+      if (missing.length > 0) {
+        return NextResponse.json({ error: `שדות חסרים: ${missing.join(", ")}` }, { status: 400 });
+      }
+      const legacy = legacyFromRunScores({
+        rpeScore: payload.rpeScore as number,
+        legsLoadScore: payload.legsLoadScore as number,
+        painScore: payload.painScore as number,
+        recoveryScore: payload.recoveryScore as number,
+        breathingScore: payload.breathingScore as number,
+        overallLoadScore: payload.overallLoadScore as number
+      });
+      perceivedEffort = legacy.perceivedEffort;
+      bodyFeel = legacy.bodyFeel;
+      breathingFeel = legacy.breathingFeel;
+    } else if (perceivedEffort && bodyFeel && breathingFeel) {
+      const runDerived = runScoresFromLegacy({
+        perceivedEffort,
+        bodyFeel,
+        breathingFeel
+      });
+      payload.rpeScore = runDerived.rpeScore;
+      payload.legsLoadScore = runDerived.legsLoadScore;
+      payload.painScore = runDerived.painScore;
+      payload.addFiveKmScore = runDerived.addFiveKmScore;
+      payload.recoveryScore = runDerived.recoveryScore;
+      payload.breathingScore = runDerived.breathingScore;
+      payload.overallLoadScore = runDerived.overallLoadScore;
+      payload.preRunNutritionScore = runDerived.preRunNutritionScore;
+      payload.environmentScore = runDerived.environmentScore;
+      payload.satisfactionScore = runDerived.satisfactionScore;
+      payload.fuelingSource = payload.fuelingSource ?? "none";
+      payload.fuelingQuantity = payload.fuelingQuantity ?? 0;
+    }
+  } else if (payload.sport === "strength") {
+    const hasStrengthFields =
+      payload.strengthEffortScore != null ||
+      payload.strengthMuscleLoadScore != null ||
+      payload.strengthTechniqueScore != null ||
+      payload.strengthFailureProximityScore != null ||
+      payload.strengthPainScore != null ||
+      payload.strengthRecoveryScore != null ||
+      payload.strengthFocusArea != null ||
+      payload.strengthPainArea != null ||
+      payload.strengthOpenNote != null;
+
+    if (!hasStrengthFields && (!perceivedEffort || !bodyFeel || !breathingFeel)) {
+      return NextResponse.json({ error: "חסרים נתוני משוב כוח" }, { status: 400 });
+    }
+
+    if (hasStrengthFields) {
+      const missing = missingStrengthFields(payload);
+      if (missing.length > 0) {
+        return NextResponse.json({ error: `שדות חסרים: ${missing.join(", ")}` }, { status: 400 });
+      }
+      const effort = payload.strengthEffortScore as number;
+      const muscleLoad = payload.strengthMuscleLoadScore as number;
+      const technique = payload.strengthTechniqueScore as number;
+      const failure = payload.strengthFailureProximityScore as number;
+      const pain = payload.strengthPainScore as number;
+      const recovery = payload.strengthRecoveryScore as number;
+
+      perceivedEffort = effort <= 2 ? "easy" : effort <= 3 ? "moderate" : effort === 4 ? "hard" : "max";
+      bodyFeel = pain >= 3 ? "pain" : muscleLoad >= 4 || recovery >= 4 ? "heavy" : recovery <= 2 ? "fresh" : "normal";
+      breathingFeel = technique <= 2 ? "easy" : technique <= 3 ? "steady" : "hard";
+
+      payload.rpeScore = effort;
+      payload.legsLoadScore = muscleLoad;
+      payload.breathingScore = technique;
+      payload.overallLoadScore = failure;
+      payload.painScore = pain;
+      payload.recoveryScore = recovery;
+      payload.painArea = payload.strengthPainArea ?? "";
+      payload.openNote = payload.strengthOpenNote ?? payload.openNote ?? "";
+    } else if (perceivedEffort && bodyFeel && breathingFeel) {
+      const derived = strengthFromLegacy({ perceivedEffort, bodyFeel, breathingFeel });
+      payload.strengthEffortScore = derived.strengthEffortScore;
+      payload.strengthMuscleLoadScore = derived.strengthMuscleLoadScore;
+      payload.strengthTechniqueScore = derived.strengthTechniqueScore;
+      payload.strengthFailureProximityScore = derived.strengthFailureProximityScore;
+      payload.strengthPainScore = derived.strengthPainScore;
+      payload.strengthRecoveryScore = derived.strengthRecoveryScore;
+      payload.strengthFocusArea = derived.strengthFocusArea;
+      payload.rpeScore = derived.strengthEffortScore;
+      payload.legsLoadScore = derived.strengthMuscleLoadScore;
+      payload.breathingScore = derived.strengthTechniqueScore;
+      payload.overallLoadScore = derived.strengthFailureProximityScore;
+      payload.painScore = derived.strengthPainScore;
+      payload.recoveryScore = derived.strengthRecoveryScore;
+    }
+  } else if (!perceivedEffort || !bodyFeel || !breathingFeel) {
+    return NextResponse.json({ error: "חסרים נתוני משוב לאימון" }, { status: 400 });
+  }
+
+  const toSave = {
+    workoutId: payload.workoutId,
+    date: payload.date,
+    sport: payload.sport,
+    perceivedEffort: perceivedEffort as z.infer<typeof legacyPerceivedEnum>,
+    bodyFeel: bodyFeel as z.infer<typeof legacyBodyEnum>,
+    breathingFeel: breathingFeel as z.infer<typeof legacyBreathingEnum>,
+    rpeScore: payload.rpeScore ?? null,
+    legsLoadScore: payload.legsLoadScore ?? null,
+    painScore: payload.painScore ?? null,
+    painArea: payload.painArea ?? null,
+    addFiveKmScore: payload.addFiveKmScore ?? null,
+    recoveryScore: payload.recoveryScore ?? null,
+    breathingScore: payload.breathingScore ?? null,
+    overallLoadScore: payload.overallLoadScore ?? null,
+    preRunNutritionScore: payload.preRunNutritionScore ?? null,
+    environmentScore: payload.environmentScore ?? null,
+    satisfactionScore: payload.satisfactionScore ?? null,
+    strengthTechniqueScore: payload.sport === "strength" ? payload.strengthTechniqueScore ?? null : null,
+    strengthFailureProximityScore: payload.sport === "strength" ? payload.strengthFailureProximityScore ?? null : null,
+    strengthFocusArea: payload.sport === "strength" ? payload.strengthFocusArea ?? null : null,
+    openNote: payload.sport === "strength" ? payload.strengthOpenNote ?? payload.openNote ?? null : payload.openNote ?? null,
+    fuelingSource: payload.fuelingSource ?? null,
+    fuelingQuantity: payload.fuelingQuantity ?? null
+  } as const;
+
+  if (cloudEnabled()) {
+    await cloudUpsertWorkoutFeedback({
+      ...toSave,
+      rpeScore: toSave.rpeScore ?? null,
+      legsLoadScore: toSave.legsLoadScore ?? null,
+      painScore: toSave.painScore ?? null,
+      painArea: toSave.painArea ?? null,
+      addFiveKmScore: toSave.addFiveKmScore ?? null,
+      recoveryScore: toSave.recoveryScore ?? null,
+      breathingScore: toSave.breathingScore ?? null,
+      overallLoadScore: toSave.overallLoadScore ?? null,
+      preRunNutritionScore: toSave.preRunNutritionScore ?? null,
+      environmentScore: toSave.environmentScore ?? null,
+      satisfactionScore: toSave.satisfactionScore ?? null,
+      strengthTechniqueScore: toSave.strengthTechniqueScore ?? null,
+      strengthFailureProximityScore: toSave.strengthFailureProximityScore ?? null,
+      strengthFocusArea: toSave.strengthFocusArea ?? null,
+      strengthEffortScore: payload.sport === "strength" ? payload.strengthEffortScore ?? null : null,
+      strengthMuscleLoadScore: payload.sport === "strength" ? payload.strengthMuscleLoadScore ?? null : null,
+      strengthPainScore: payload.sport === "strength" ? payload.strengthPainScore ?? null : null,
+      strengthRecoveryScore: payload.sport === "strength" ? payload.strengthRecoveryScore ?? null : null,
+      strengthPainArea: payload.sport === "strength" ? payload.strengthPainArea ?? null : null,
+      strengthOpenNote: payload.sport === "strength" ? payload.strengthOpenNote ?? null : null
+    });
+  } else {
+    upsertWorkoutFeedback(toSave);
+  }
+
+  if (!cloudEnabled() && payload.sport === "run") {
+    syncFuelingFromRunFeedback(
+      payload.workoutId,
+      payload.fuelingSource,
+      payload.fuelingQuantity
+    );
+  }
+
+  return NextResponse.json({ saved: true });
+}
+
+export async function GET(request: NextRequest) {
+  const workoutId = request.nextUrl.searchParams.get("workoutId");
+  if (!workoutId) {
+    return NextResponse.json({ error: "workoutId required" }, { status: 400 });
+  }
+  if (cloudEnabled()) {
+    return NextResponse.json({ feedback: (await cloudGetWorkoutFeedback(workoutId)) ?? null });
+  }
+  return NextResponse.json({ feedback: getWorkoutFeedback(workoutId) ?? null });
+}

@@ -1,1 +1,79 @@
-{"data":"aW1wb3J0IExpbmsgZnJvbSAibmV4dC9saW5rIjsKaW1wb3J0IHsgUmVidWlsZExvZ28gfSBmcm9tICJAL2NvbXBvbmVudHMvbG9nbyI7CmltcG9ydCB7IGZvcm1hdERpc3BsYXlEYXRlVGltZSB9IGZyb20gIkAvbGliL2RhdGUiOwppbXBvcnQgeyBjbG91ZEVuYWJsZWQgfSBmcm9tICJAL2xpYi9jbG91ZC1kYiI7Cgpjb25zdCBzZXR0aW5nc0dyb3VwcyA9IFsKICB7CiAgICB0aXRsZTogItek16jXldek15nXnCDXkNeZ157XldefIiwKICAgIHJvd3M6IFsKICAgICAgeyBocmVmOiAiL3NldHRpbmdzL3Nob2VzIiwgdGl0bGU6ICLXoNei15zXmSDXqNeZ16bXlCIsIGRlc2M6ICLXoNeZ15TXldecINeW15XXkteV16osINeR16jXmdeo16og157Xl9eT15wg15XXp9e0154g157XpteY15HXqC4iIH0sCiAgICAgIHsgaHJlZjogIi9sb2ciLCB0aXRsZTogIteZ15XXntefINeQ15nXnteV16DXmdedIiwgZGVzYzogItee16LXkdeoINee15TXmdeoINec15nXldee158g15XXnNek15nXqNeV15gg15DXmdee15XXny4iIH0KICAgIF0KICB9LAogIHsKICAgIHRpdGxlOiAi157Xoteo15vXqiDXldeh16DXm9eo15XXnyIsCiAgICByb3dzOiBbCiAgICAgIHsgaHJlZjogIi9zZXR0aW5ncy9zdHJhdmEiLCB0aXRsZTogIlN0cmF2YSIsIGRlc2M6ICLXl9eZ15HXldeoINeQ15XXoNec15nXmdefINeV16HXoNeb16jXldefINek16LXmdec15XXmdeV16og15zXkteo16HXqiDXlNeQ16rXqC4iIH0sCiAgICAgIHsgaHJlZjogIi9zZXR0aW5ncy9pbXBvcnQiLCB0aXRsZTogIteZ15nXkdeV15Ag15XXqten15nXoNeV16oiLCBkZXNjOiAi16HXmNeY15XXoSDXodeg15vXqNeV158sINeh16jXmden15Qg15nXlteV157XlCDXldeg15nXp9eV15kuIiB9LAogICAgICB7IGhyZWY6ICIvc2V0dGluZ3MvbG9naWMiLCB0aXRsZTogIkxvZ2ljIFN0dWRpbyIsIGRlc2M6ICLXm9eV15XXoNeV158g15vXnNec15kg15TXnteg15XXoiDXlNeQ15nXqdeZLiIgfQogICAgXQogIH0sCiAgewogICAgdGl0bGU6ICLXpNeo15jXmdeV16og15XXoNeq15XXoNeZ150iLAogICAgcm93czogWwogICAgICB7IGhyZWY6ICIvam91cm5hbCIsIHRpdGxlOiAi16rXlteV16DXlCIsIGRlc2M6ICLXqteW15XXoNeUINeZ15XXnteZ16osINeQ16jXldeX15XXqiwg16TXoNeY16jXmSDXldee15XXoteT16TXmdedLiIgfQogICAgXQogIH0KXSBhcyBjb25zdDsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFNldHRpbmdzUGFnZSgpIHsKICBjb25zdCBub3cgPSBmb3JtYXREaXNwbGF5RGF0ZVRpbWUobmV3IERhdGUoKSk7CiAgY29uc3Qgc3RvcmFnZUxhYmVsID0gY2xvdWRFbmFibGVkKCkgPyAi15DXldeg15zXmdeZ158gKFZlcmNlbCBQb3N0Z3JlcykiIDogItec15XXp9eQ15zXmSAoU1FMaXRlKSI7CiAgY29uc3Qgc3RvcmFnZUhpbnQgPSBjbG91ZEVuYWJsZWQoKQogICAgPyAi15vXnCDXnteUINep157XlteZ16DXmdedINeR15DXqteoICjXkdeV16fXqC/XqteW15XXoNeUL9ee16nXldeR15nXnS/XoNei15zXmdeZ150pINeg16nXnteoINeR16LXoNefINeV16DXqdeQ16gg16fXkdeV16IuIgogICAgOiAi15TXoNeq15XXoNeZ150g16DXqdee16jXmdedINeR157Xl9ep15Eg15HXnNeR15MuINeb15PXmSDXnNei15HXldeoINec16LXoNefOiDXl9eR16ggUG9zdGdyZXMg15HXlNeS15PXqNeV16og15XXqteo15nXpSDXnteZ15LXqNem15nXlCDXl9eT1r7XpNei157XmdeqLiI7CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ic2V0dGluZ3MtcGFnZSI+CiAgICAgIDxoZWFkZXIgY2xhc3NOYW1lPSJwYWdlLWhlYWRlciI+CiAgICAgICAgPGgxPteU15LXk9eo15XXqjwvaDE+CiAgICAgICAgPHA+15DXldeq15Qg15TXmdeo16jXm9eZ15Qg15vXnteVINeU157XldeR15nXmdecOiDXp9eR15XXpteV16og16jXpteZ16TXldeqLCDXodeY15jXldeh15nXnSDXkdeo15XXqNeZ150g15XXpNei15XXnNeV16og157XlNeZ16jXldeqLjwvcD4KICAgICAgPC9oZWFkZXI+CgogICAgICA8c2VjdGlvbiBjbGFzc05hbWU9InNldHRpbmdzLXN1cmZhY2UiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzZXR0aW5ncy1zdXJmYWNlLWhlYWQiPgogICAgICAgICAgPFJlYnVpbGRMb2dvIC8+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InNldHRpbmdzLXN5bmMtcGlsbCI+16LXldeT15vXnyDXnNeQ15fXqNeV16DXlDoge25vd308L3NwYW4+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzZXR0aW5ncy1ncm91cHMiPgogICAgICAgICAge3NldHRpbmdzR3JvdXBzLm1hcCgoZ3JvdXApID0+ICgKICAgICAgICAgICAgPGFydGljbGUga2V5PXtncm91cC50aXRsZX0gY2xhc3NOYW1lPSJzZXR0aW5ncy1ncm91cC1jYXJkIj4KICAgICAgICAgICAgICA8aGVhZGVyPgogICAgICAgICAgICAgICAgPGgyPntncm91cC50aXRsZX08L2gyPgogICAgICAgICAgICAgIDwvaGVhZGVyPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzZXR0aW5ncy1ncm91cC1yb3dzIj4KICAgICAgICAgICAgICAgIHtncm91cC5yb3dzLm1hcCgoaXRlbSkgPT4gKAogICAgICAgICAgICAgICAgICA8TGluayBrZXk9e2l0ZW0udGl0bGV9IGhyZWY9e2l0ZW0uaHJlZn0gY2xhc3NOYW1lPSJzZXR0aW5ncy1yb3ctbGluayI+CiAgICAgICAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgICAgICAgIDxzdHJvbmc+e2l0ZW0udGl0bGV9PC9zdHJvbmc+CiAgICAgICAgICAgICAgICAgICAgICA8cD57aXRlbS5kZXNjfTwvcD4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8c3BhbiBhcmlhLWhpZGRlbj7ihpA8L3NwYW4+CiAgICAgICAgICAgICAgICAgIDwvTGluaz4KICAgICAgICAgICAgICAgICkpfQogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2FydGljbGU+CiAgICAgICAgICApKX0KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPHVsIGNsYXNzTmFtZT0ia3Ygc2V0dGluZ3Mta3YiPgogICAgICAgICAgPGxpPteQ15fXodeV1586IHtzdG9yYWdlTGFiZWx9PC9saT4KICAgICAgICAgIDxsaT7XmdeZ15HXldeQOiDXqteZ16fXmdeZ15Qg157Xp9eV157XmdeqINeQ15UgU3RyYXZhPC9saT4KICAgICAgICAgIDxsaT57c3RvcmFnZUhpbnR9PC9saT4KICAgICAgICA8L3VsPgogICAgICA8L3NlY3Rpb24+CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+import Link from "next/link";
+import { RebuildLogo } from "@/components/logo";
+import { formatDisplayDateTime } from "@/lib/date";
+import { cloudEnabled } from "@/lib/cloud-db";
+
+const settingsGroups = [
+  {
+    title: "פרופיל אימון",
+    rows: [
+      { href: "/settings/shoes", title: "נעלי ריצה", desc: "ניהול זוגות, ברירת מחדל וק״מ מצטבר." },
+      { href: "/log", title: "יומן אימונים", desc: "מעבר מהיר ליומן ולפירוט אימון." }
+    ]
+  },
+  {
+    title: "מערכת וסנכרון",
+    rows: [
+      { href: "/settings/strava", title: "Strava", desc: "חיבור אונליין וסנכרון פעילויות לגרסת האתר." },
+      { href: "/settings/import", title: "ייבוא ותקינות", desc: "סטטוס סנכרון, סריקה יזומה וניקוי." },
+      { href: "/settings/logic", title: "Logic Studio", desc: "כוונון כללי המנוע האישי." }
+    ]
+  },
+  {
+    title: "פרטיות ונתונים",
+    rows: [
+      { href: "/journal", title: "תזונה", desc: "תזונה יומית, ארוחות, פנטרי ומועדפים." }
+    ]
+  }
+] as const;
+
+export default function SettingsPage() {
+  const now = formatDisplayDateTime(new Date());
+  const storageLabel = cloudEnabled() ? "אונליין (Vercel Postgres)" : "לוקאלי (SQLite)";
+  const storageHint = cloudEnabled()
+    ? "כל מה שמזינים באתר (בוקר/תזונה/משובים/נעליים) נשמר בענן ונשאר קבוע."
+    : "הנתונים נשמרים במחשב בלבד. כדי לעבור לענן: חבר Postgres בהגדרות ותריץ מיגרציה חד־פעמית.";
+
+  return (
+    <div className="settings-page">
+      <header className="page-header">
+        <h1>הגדרות</h1>
+        <p>אותה היררכיה כמו המובייל: קבוצות רציפות, סטטוסים ברורים ופעולות מהירות.</p>
+      </header>
+
+      <section className="settings-surface">
+        <div className="settings-surface-head">
+          <RebuildLogo />
+          <span className="settings-sync-pill">עודכן לאחרונה: {now}</span>
+        </div>
+
+        <div className="settings-groups">
+          {settingsGroups.map((group) => (
+            <article key={group.title} className="settings-group-card">
+              <header>
+                <h2>{group.title}</h2>
+              </header>
+              <div className="settings-group-rows">
+                {group.rows.map((item) => (
+                  <Link key={item.title} href={item.href} className="settings-row-link">
+                    <div>
+                      <strong>{item.title}</strong>
+                      <p>{item.desc}</p>
+                    </div>
+                    <span aria-hidden>←</span>
+                  </Link>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <ul className="kv settings-kv">
+          <li>אחסון: {storageLabel}</li>
+          <li>ייבוא: תיקייה מקומית או Strava</li>
+          <li>{storageHint}</li>
+        </ul>
+      </section>
+    </div>
+  );
+}

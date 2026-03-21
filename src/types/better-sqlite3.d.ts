@@ -1,1 +1,15 @@
-{"data":"ZGVjbGFyZSBtb2R1bGUgImJldHRlci1zcWxpdGUzIiB7CiAgY2xhc3MgU3RhdGVtZW50IHsKICAgIHJ1biguLi5wYXJhbXM6IHVua25vd25bXSk6IHVua25vd247CiAgICBnZXQoLi4ucGFyYW1zOiB1bmtub3duW10pOiB1bmtub3duOwogICAgYWxsKC4uLnBhcmFtczogdW5rbm93bltdKTogdW5rbm93bltdOwogIH0KCiAgY2xhc3MgRGF0YWJhc2UgewogICAgY29uc3RydWN0b3IoZmlsZW5hbWU6IHN0cmluZyk7CiAgICBleGVjKHNxbDogc3RyaW5nKTogdGhpczsKICAgIHByZXBhcmUoc3FsOiBzdHJpbmcpOiBTdGF0ZW1lbnQ7CiAgfQoKICBleHBvcnQgZGVmYXVsdCBEYXRhYmFzZTsKfQo="}
+declare module "better-sqlite3" {
+  class Statement {
+    run(...params: unknown[]): unknown;
+    get(...params: unknown[]): unknown;
+    all(...params: unknown[]): unknown[];
+  }
+
+  class Database {
+    constructor(filename: string);
+    exec(sql: string): this;
+    prepare(sql: string): Statement;
+  }
+
+  export default Database;
+}

@@ -1,1 +1,66 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IHRvZ2dsZUluZ3JlZGllbnRGYXZvcml0ZSB9IGZyb20gIkAvbGliL251dHJpdGlvbi1lbmdpbmUiOwppbXBvcnQgeyBnZXREYlByb3ZpZGVyLCBkYlF1ZXJ5LCBkYlF1ZXJ5T25lIH0gZnJvbSAiQC9saWIvZGItZHJpdmVyIjsKaW1wb3J0IHsgbWlncmF0ZURiIH0gZnJvbSAiQC9saWIvZGItbWlncmF0ZSI7CmltcG9ydCB7IGVuc3VyZUNsb3VkTnV0cml0aW9uU2VlZCB9IGZyb20gIkAvbGliL251dHJpdGlvbi1jbG91ZCI7CgpleHBvcnQgY29uc3QgcnVudGltZSA9ICJub2RlanMiOwoKY29uc3Qgc2NoZW1hID0gei5vYmplY3QoewogIGluZ3JlZGllbnRJZDogei5zdHJpbmcoKS5taW4oMSksCiAgZmF2b3JpdGU6IHouYm9vbGVhbigpLm9wdGlvbmFsKCkKfSk7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gUE9TVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IGJvZHkgPSBhd2FpdCByZXF1ZXN0Lmpzb24oKS5jYXRjaCgoKSA9PiAoe30pKTsKICBjb25zdCBwYXJzZWQgPSBzY2hlbWEuc2FmZVBhcnNlKGJvZHkpOwogIGlmICghcGFyc2VkLnN1Y2Nlc3MpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiBwYXJzZWQuZXJyb3IuZmxhdHRlbigpIH0sIHsgc3RhdHVzOiA0MDAgfSk7CiAgfQoKICBpZiAoZ2V0RGJQcm92aWRlcigpID09PSAicG9zdGdyZXMiKSB7CiAgICBhd2FpdCBtaWdyYXRlRGIoKTsKICAgIGF3YWl0IGVuc3VyZUNsb3VkTnV0cml0aW9uU2VlZCgpOwoKICAgIGNvbnN0IGZvdW5kID0gYXdhaXQgZGJRdWVyeU9uZTx7IGlkOiBzdHJpbmcgfT4oIlNFTEVDVCBpZCBGUk9NIG51dHJpdGlvbl9pbmdyZWRpZW50cyBXSEVSRSBpZCA9ICQxIExJTUlUIDEiLCBbCiAgICAgIHBhcnNlZC5kYXRhLmluZ3JlZGllbnRJZAogICAgXSk7CiAgICBpZiAoIWZvdW5kPy5pZCkgewogICAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogImluZ3JlZGllbnQgbm90IGZvdW5kIiB9LCB7IHN0YXR1czogNDA0IH0pOwogICAgfQoKICAgIGNvbnN0IG5vdyA9IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKTsKICAgIGNvbnN0IHNob3VsZEZhdm9yaXRlID0gcGFyc2VkLmRhdGEuZmF2b3JpdGU7CiAgICBpZiAoc2hvdWxkRmF2b3JpdGUgPT09IGZhbHNlKSB7CiAgICAgIGF3YWl0IGRiUXVlcnkoIkRFTEVURSBGUk9NIG51dHJpdGlvbl9pbmdyZWRpZW50X2Zhdm9yaXRlcyBXSEVSRSBpbmdyZWRpZW50SWQgPSAkMSIsIFtwYXJzZWQuZGF0YS5pbmdyZWRpZW50SWRdKTsKICAgICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgb2s6IHRydWUsIGZhdm9yaXRlOiBmYWxzZSB9KTsKICAgIH0KCiAgICAvLyBkZWZhdWx0OiB0b2dnbGUgb3Igc2V0IHRydWUKICAgIGNvbnN0IGV4aXN0aW5nID0gYXdhaXQgZGJRdWVyeU9uZTx7IGluZ3JlZGllbnRpZDogc3RyaW5nIH0+KAogICAgICAiU0VMRUNUIGluZ3JlZGllbnRJZCBGUk9NIG51dHJpdGlvbl9pbmdyZWRpZW50X2Zhdm9yaXRlcyBXSEVSRSBpbmdyZWRpZW50SWQgPSAkMSBMSU1JVCAxIiwKICAgICAgW3BhcnNlZC5kYXRhLmluZ3JlZGllbnRJZF0KICAgICk7CiAgICBjb25zdCBuZXh0RmF2b3JpdGUgPSBzaG91bGRGYXZvcml0ZSA9PT0gdHJ1ZSA/IHRydWUgOiAhQm9vbGVhbihleGlzdGluZz8uaW5ncmVkaWVudGlkID8/IChleGlzdGluZyBhcyBhbnkpPy5pbmdyZWRpZW50SWQpOwogICAgaWYgKCFuZXh0RmF2b3JpdGUpIHsKICAgICAgYXdhaXQgZGJRdWVyeSgiREVMRVRFIEZST00gbnV0cml0aW9uX2luZ3JlZGllbnRfZmF2b3JpdGVzIFdIRVJFIGluZ3JlZGllbnRJZCA9ICQxIiwgW3BhcnNlZC5kYXRhLmluZ3JlZGllbnRJZF0pOwogICAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBvazogdHJ1ZSwgZmF2b3JpdGU6IGZhbHNlIH0pOwogICAgfQogICAgYXdhaXQgZGJRdWVyeSgKICAgICAgYAogICAgICBJTlNFUlQgSU5UTyBudXRyaXRpb25faW5ncmVkaWVudF9mYXZvcml0ZXMgKGluZ3JlZGllbnRJZCwgY3JlYXRlZEF0LCB1cGRhdGVkQXQpCiAgICAgIFZBTFVFUyAoJDEsJDIsJDIpCiAgICAgIE9OIENPTkZMSUNUKGluZ3JlZGllbnRJZCkgRE8gVVBEQVRFIFNFVCB1cGRhdGVkQXQgPSBFWENMVURFRC51cGRhdGVkQXQKICAgICAgYCwKICAgICAgW3BhcnNlZC5kYXRhLmluZ3JlZGllbnRJZCwgbm93XQogICAgKTsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlLCBmYXZvcml0ZTogdHJ1ZSB9KTsKICB9CgogIGNvbnN0IHVwZGF0ZWQgPSB0b2dnbGVJbmdyZWRpZW50RmF2b3JpdGUocGFyc2VkLmRhdGEuaW5ncmVkaWVudElkLCBwYXJzZWQuZGF0YS5mYXZvcml0ZSk7CiAgaWYgKCF1cGRhdGVkKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogImluZ3JlZGllbnQgbm90IGZvdW5kIiB9LCB7IHN0YXR1czogNDA0IH0pOwogIH0KICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBvazogdHJ1ZSwgLi4udXBkYXRlZCB9KTsKfQo="}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { toggleIngredientFavorite } from "@/lib/nutrition-engine";
+import { getDbProvider, dbQuery, dbQueryOne } from "@/lib/db-driver";
+import { migrateDb } from "@/lib/db-migrate";
+import { ensureCloudNutritionSeed } from "@/lib/nutrition-cloud";
+
+export const runtime = "nodejs";
+
+const schema = z.object({
+  ingredientId: z.string().min(1),
+  favorite: z.boolean().optional()
+});
+
+export async function POST(request: NextRequest) {
+  const body = await request.json().catch(() => ({}));
+  const parsed = schema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  if (getDbProvider() === "postgres") {
+    await migrateDb();
+    await ensureCloudNutritionSeed();
+
+    const found = await dbQueryOne<{ id: string }>("SELECT id FROM nutrition_ingredients WHERE id = $1 LIMIT 1", [
+      parsed.data.ingredientId
+    ]);
+    if (!found?.id) {
+      return NextResponse.json({ error: "ingredient not found" }, { status: 404 });
+    }
+
+    const now = new Date().toISOString();
+    const shouldFavorite = parsed.data.favorite;
+    if (shouldFavorite === false) {
+      await dbQuery("DELETE FROM nutrition_ingredient_favorites WHERE ingredientId = $1", [parsed.data.ingredientId]);
+      return NextResponse.json({ ok: true, favorite: false });
+    }
+
+    // default: toggle or set true
+    const existing = await dbQueryOne<{ ingredientid: string }>(
+      "SELECT ingredientId FROM nutrition_ingredient_favorites WHERE ingredientId = $1 LIMIT 1",
+      [parsed.data.ingredientId]
+    );
+    const nextFavorite = shouldFavorite === true ? true : !Boolean(existing?.ingredientid ?? (existing as any)?.ingredientId);
+    if (!nextFavorite) {
+      await dbQuery("DELETE FROM nutrition_ingredient_favorites WHERE ingredientId = $1", [parsed.data.ingredientId]);
+      return NextResponse.json({ ok: true, favorite: false });
+    }
+    await dbQuery(
+      `
+      INSERT INTO nutrition_ingredient_favorites (ingredientId, createdAt, updatedAt)
+      VALUES ($1,$2,$2)
+      ON CONFLICT(ingredientId) DO UPDATE SET updatedAt = EXCLUDED.updatedAt
+      `,
+      [parsed.data.ingredientId, now]
+    );
+    return NextResponse.json({ ok: true, favorite: true });
+  }
+
+  const updated = toggleIngredientFavorite(parsed.data.ingredientId, parsed.data.favorite);
+  if (!updated) {
+    return NextResponse.json({ error: "ingredient not found" }, { status: 404 });
+  }
+  return NextResponse.json({ ok: true, ...updated });
+}

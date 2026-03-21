@@ -1,1 +1,42 @@
-{"data":"aW1wb3J0IHsgSW1hZ2VSZXNwb25zZSB9IGZyb20gIm5leHQvb2ciOwoKZXhwb3J0IGNvbnN0IHNpemUgPSB7CiAgd2lkdGg6IDEyOCwKICBoZWlnaHQ6IDEyOAp9OwoKZXhwb3J0IGNvbnN0IGNvbnRlbnRUeXBlID0gImltYWdlL3BuZyI7CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBJY29uKCkgewogIHJldHVybiBuZXcgSW1hZ2VSZXNwb25zZSgKICAgICgKICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICB3aWR0aDogIjEwMCUiLAogICAgICAgICAgaGVpZ2h0OiAiMTAwJSIsCiAgICAgICAgICBiYWNrZ3JvdW5kOiAiI2ZmZjZmMCIsCiAgICAgICAgICBkaXNwbGF5OiAiZmxleCIsCiAgICAgICAgICBhbGlnbkl0ZW1zOiAiY2VudGVyIiwKICAgICAgICAgIGp1c3RpZnlDb250ZW50OiAiY2VudGVyIgogICAgICAgIH19CiAgICAgID4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICB3aWR0aDogOTIsCiAgICAgICAgICAgIGhlaWdodDogNTQsCiAgICAgICAgICAgIGJvcmRlclJhZGl1czogMTQsCiAgICAgICAgICAgIGJhY2tncm91bmQ6ICIjRDYyODI4IiwKICAgICAgICAgICAgYm9yZGVyOiAiNHB4IHNvbGlkICM4RjEwMTAiLAogICAgICAgICAgICBwb3NpdGlvbjogInJlbGF0aXZlIiwKICAgICAgICAgICAgZGlzcGxheTogImZsZXgiCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICJhYnNvbHV0ZSIsIHRvcDogLTEyLCByaWdodDogMTUsIHdpZHRoOiAxNiwgaGVpZ2h0OiAxNiwgYm9yZGVyUmFkaXVzOiA5OTksIGJhY2tncm91bmQ6ICIjRkY4OTg5IiwgYm9yZGVyOiAiM3B4IHNvbGlkICM4RjEwMTAiIH19IC8+CiAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAiYWJzb2x1dGUiLCB0b3A6IC0xMiwgcmlnaHQ6IDM4LCB3aWR0aDogMTYsIGhlaWdodDogMTYsIGJvcmRlclJhZGl1czogOTk5LCBiYWNrZ3JvdW5kOiAiI0ZGODk4OSIsIGJvcmRlcjogIjNweCBzb2xpZCAjOEYxMDEwIiB9fSAvPgogICAgICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogImFic29sdXRlIiwgdG9wOiAtMTIsIHJpZ2h0OiA2MSwgd2lkdGg6IDE2LCBoZWlnaHQ6IDE2LCBib3JkZXJSYWRpdXM6IDk5OSwgYmFja2dyb3VuZDogIiNGRjg5ODkiLCBib3JkZXI6ICIzcHggc29saWQgIzhGMTAxMCIgfX0gLz4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICApLAogICAgc2l6ZQogICk7Cn0K"}
+import { ImageResponse } from "next/og";
+
+export const size = {
+  width: 128,
+  height: 128
+};
+
+export const contentType = "image/png";
+
+export default function Icon() {
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          background: "#fff6f0",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center"
+        }}
+      >
+        <div
+          style={{
+            width: 92,
+            height: 54,
+            borderRadius: 14,
+            background: "#D62828",
+            border: "4px solid #8F1010",
+            position: "relative",
+            display: "flex"
+          }}
+        >
+          <div style={{ position: "absolute", top: -12, right: 15, width: 16, height: 16, borderRadius: 999, background: "#FF8989", border: "3px solid #8F1010" }} />
+          <div style={{ position: "absolute", top: -12, right: 38, width: 16, height: 16, borderRadius: 999, background: "#FF8989", border: "3px solid #8F1010" }} />
+          <div style={{ position: "absolute", top: -12, right: 61, width: 16, height: 16, borderRadius: 999, background: "#FF8989", border: "3px solid #8F1010" }} />
+        </div>
+      </div>
+    ),
+    size
+  );
+}

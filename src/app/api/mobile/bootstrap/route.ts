@@ -1,1 +1,42 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAibmV4dC9zZXJ2ZXIiOwppbXBvcnQgeyBmb3JtYXRJU09EYXRlIH0gZnJvbSAiQC9saWIvZGF0ZSI7CmltcG9ydCB7IGNvbXB1dGVTY29yZXMsIGZvcmVjYXN0LCByZWNvbW1lbmRUb2RheSB9IGZyb20gIkAvbGliL2VuZ2luZSI7CmltcG9ydCB7IGdldE51dHJpdGlvblRvZGF5IH0gZnJvbSAiQC9saWIvbnV0cml0aW9uLWVuZ2luZSI7CmltcG9ydCB7IGdldFBlbmRpbmdXb3Jrb3V0RmVlZGJhY2ssIGdldFdlZWtseVBsYW4gfSBmcm9tICJAL2xpYi9kYiI7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKCkgewogIGNvbnN0IHRvZGF5ID0gZm9ybWF0SVNPRGF0ZSgpOwogIGNvbnN0IHNjb3JlcyA9IGNvbXB1dGVTY29yZXModG9kYXkpOwogIGNvbnN0IHJlY29tbWVuZGF0aW9uID0gcmVjb21tZW5kVG9kYXkodG9kYXkpOwogIGNvbnN0IHdlZWsgPSBmb3JlY2FzdCg3LCB0b2RheSk7CiAgY29uc3QgbnV0cml0aW9uID0gZ2V0TnV0cml0aW9uVG9kYXkodG9kYXkpOwogIGNvbnN0IHBlbmRpbmdGZWVkYmFjayA9IGdldFBlbmRpbmdXb3Jrb3V0RmVlZGJhY2soNSwgNyk7CgogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7CiAgICBwcm9kdWN0OiAiUmVidWlsZCIsCiAgICBsb2NhbGU6ICJoZS1JTCIsCiAgICBkYXRlRm9ybWF0OiAiREQtTU0tWVkiLAogICAgZ2VuZXJhdGVkQXQ6IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKSwKICAgIHRvZGF5LAogICAgc2NvcmVzOiB7CiAgICAgIHJlYWRpbmVzczogc2NvcmVzLnJlYWRpbmVzc1Njb3JlLAogICAgICBmYXRpZ3VlOiBzY29yZXMuZmF0aWd1ZVNjb3JlLAogICAgICBmaXRuZXNzOiBzY29yZXMuZml0bmVzc1Njb3JlLAogICAgICBzdGF0ZVRhZzogc2NvcmVzLnN0YXRlVGFnLAogICAgICBzdGF0ZUxhYmVsOiBzY29yZXMuc3RhdGVMYWJlbCwKICAgICAgc3RhdGVIaW50OiBzY29yZXMuc3RhdGVIaW50CiAgICB9LAogICAgcmVjb21tZW5kYXRpb246IHsKICAgICAgd29ya291dFR5cGU6IHJlY29tbWVuZGF0aW9uLndvcmtvdXRUeXBlLAogICAgICBkdXJhdGlvbk1pbjogcmVjb21tZW5kYXRpb24uZHVyYXRpb25NaW4sCiAgICAgIGludGVuc2l0eVpvbmU6IHJlY29tbWVuZGF0aW9uLmludGVuc2l0eVpvbmUsCiAgICAgIGNvbmZpZGVuY2U6IHJlY29tbWVuZGF0aW9uLmNvbmZpZGVuY2UsCiAgICAgIGRheVN0YXR1czogcmVjb21tZW5kYXRpb24uZGF5U3RhdHVzLAogICAgICBkYXlTdGF0dXNUZXh0OiByZWNvbW1lbmRhdGlvbi5kYXlTdGF0dXNUZXh0CiAgICB9LAogICAgd2Vla2x5UGxhbjogZ2V0V2Vla2x5UGxhbigpLAogICAgZm9yZWNhc3Q6IHdlZWssCiAgICBudXRyaXRpb24sCiAgICBwZW5kaW5nRmVlZGJhY2tDb3VudDogcGVuZGluZ0ZlZWRiYWNrLmxlbmd0aAogIH0pOwp9Cg=="}
+import { NextResponse } from "next/server";
+import { formatISODate } from "@/lib/date";
+import { computeScores, forecast, recommendToday } from "@/lib/engine";
+import { getNutritionToday } from "@/lib/nutrition-engine";
+import { getPendingWorkoutFeedback, getWeeklyPlan } from "@/lib/db";
+
+export async function GET() {
+  const today = formatISODate();
+  const scores = computeScores(today);
+  const recommendation = recommendToday(today);
+  const week = forecast(7, today);
+  const nutrition = getNutritionToday(today);
+  const pendingFeedback = getPendingWorkoutFeedback(5, 7);
+
+  return NextResponse.json({
+    product: "Rebuild",
+    locale: "he-IL",
+    dateFormat: "DD-MM-YY",
+    generatedAt: new Date().toISOString(),
+    today,
+    scores: {
+      readiness: scores.readinessScore,
+      fatigue: scores.fatigueScore,
+      fitness: scores.fitnessScore,
+      stateTag: scores.stateTag,
+      stateLabel: scores.stateLabel,
+      stateHint: scores.stateHint
+    },
+    recommendation: {
+      workoutType: recommendation.workoutType,
+      durationMin: recommendation.durationMin,
+      intensityZone: recommendation.intensityZone,
+      confidence: recommendation.confidence,
+      dayStatus: recommendation.dayStatus,
+      dayStatusText: recommendation.dayStatusText
+    },
+    weeklyPlan: getWeeklyPlan(),
+    forecast: week,
+    nutrition,
+    pendingFeedbackCount: pendingFeedback.length
+  });
+}

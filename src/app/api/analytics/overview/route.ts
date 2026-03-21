@@ -1,1 +1,31 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAibmV4dC9zZXJ2ZXIiOwppbXBvcnQgeyBidWlsZEFuYWx5dGljcyB9IGZyb20gIkAvbGliL2FuYWx5dGljcyI7CmltcG9ydCB7IHogfSBmcm9tICJ6b2QiOwoKY29uc3Qgc2NoZW1hID0gei5vYmplY3QoewogIHNwb3J0OiB6LmVudW0oWyJydW4iLCAiYmlrZSIsICJzd2ltIl0pLmRlZmF1bHQoInJ1biIpLAogIHllYXI6IHoubnVtYmVyKCkuaW50KCkub3B0aW9uYWwoKSwKICBmcm9tWWVhcjogei5udW1iZXIoKS5pbnQoKS5vcHRpb25hbCgpLAogIHRvWWVhcjogei5udW1iZXIoKS5pbnQoKS5vcHRpb25hbCgpLAogIHNob2VJZDogei5zdHJpbmcoKS5vcHRpb25hbCgpLAogIGFsbFllYXJzOiB6LnVuaW9uKFt6LmxpdGVyYWwoInRydWUiKSwgei5saXRlcmFsKCIxIildKS5vcHRpb25hbCgpCn0pOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVChyZXF1ZXN0OiBSZXF1ZXN0KSB7CiAgY29uc3QgdXJsID0gbmV3IFVSTChyZXF1ZXN0LnVybCk7CiAgY29uc3QgcGFyYW1zID0gewogICAgc3BvcnQ6ICh1cmwuc2VhcmNoUGFyYW1zLmdldCgic3BvcnQiKSA/PyAicnVuIikgYXMgInJ1biIgfCAiYmlrZSIgfCAic3dpbSIsCiAgICB5ZWFyOiB1cmwuc2VhcmNoUGFyYW1zLmdldCgieWVhciIpID8gTnVtYmVyKHVybC5zZWFyY2hQYXJhbXMuZ2V0KCJ5ZWFyIikpIDogdW5kZWZpbmVkLAogICAgZnJvbVllYXI6IHVybC5zZWFyY2hQYXJhbXMuZ2V0KCJmcm9tWWVhciIpID8gTnVtYmVyKHVybC5zZWFyY2hQYXJhbXMuZ2V0KCJmcm9tWWVhciIpKSA6IHVuZGVmaW5lZCwKICAgIHRvWWVhcjogdXJsLnNlYXJjaFBhcmFtcy5nZXQoInRvWWVhciIpID8gTnVtYmVyKHVybC5zZWFyY2hQYXJhbXMuZ2V0KCJ0b1llYXIiKSkgOiB1bmRlZmluZWQsCiAgICBzaG9lSWQ6IHVybC5zZWFyY2hQYXJhbXMuZ2V0KCJzaG9lSWQiKSA/PyB1bmRlZmluZWQsCiAgICBhbGxZZWFyczogdXJsLnNlYXJjaFBhcmFtcy5nZXQoImFsbFllYXJzIikgPz8gdW5kZWZpbmVkCiAgfTsKICBjb25zdCBwYXJzZWQgPSBzY2hlbWEuc2FmZVBhcnNlKHBhcmFtcyk7CiAgaWYgKCFwYXJzZWQuc3VjY2VzcykgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6IHBhcnNlZC5lcnJvci5mbGF0dGVuKCkgfSwgeyBzdGF0dXM6IDQwMCB9KTsKICB9CgogIGNvbnN0IHsgc3BvcnQsIHllYXIsIHNob2VJZCwgZnJvbVllYXIsIHRvWWVhciwgYWxsWWVhcnMgfSA9IHBhcnNlZC5kYXRhOwogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbihidWlsZEFuYWx5dGljcyh7IHNwb3J0LCB5ZWFyLCBzaG9lSWQ6IHNob2VJZCA/PyBudWxsLCBmcm9tWWVhciwgdG9ZZWFyLCBhbGxZZWFyczogQm9vbGVhbihhbGxZZWFycykgfSkpOwp9Cg=="}
+import { NextResponse } from "next/server";
+import { buildAnalytics } from "@/lib/analytics";
+import { z } from "zod";
+
+const schema = z.object({
+  sport: z.enum(["run", "bike", "swim"]).default("run"),
+  year: z.number().int().optional(),
+  fromYear: z.number().int().optional(),
+  toYear: z.number().int().optional(),
+  shoeId: z.string().optional(),
+  allYears: z.union([z.literal("true"), z.literal("1")]).optional()
+});
+
+export async function GET(request: Request) {
+  const url = new URL(request.url);
+  const params = {
+    sport: (url.searchParams.get("sport") ?? "run") as "run" | "bike" | "swim",
+    year: url.searchParams.get("year") ? Number(url.searchParams.get("year")) : undefined,
+    fromYear: url.searchParams.get("fromYear") ? Number(url.searchParams.get("fromYear")) : undefined,
+    toYear: url.searchParams.get("toYear") ? Number(url.searchParams.get("toYear")) : undefined,
+    shoeId: url.searchParams.get("shoeId") ?? undefined,
+    allYears: url.searchParams.get("allYears") ?? undefined
+  };
+  const parsed = schema.safeParse(params);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  const { sport, year, shoeId, fromYear, toYear, allYears } = parsed.data;
+  return NextResponse.json(buildAnalytics({ sport, year, shoeId: shoeId ?? null, fromYear, toYear, allYears: Boolean(allYears) }));
+}

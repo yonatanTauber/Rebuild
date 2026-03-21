@@ -1,1 +1,130 @@
-{"data":"4pWU4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWXCuKVkSAgICAgICAgIFJFQlVJTEQgTU9CSUxFIE9QVElNSVpBVElPTiAtIERFUExPWU1FTlQgR1VJREUgICAgICAgICAgICDilZEK4pWRICAgICAgICAgICAgICAgICAgaVBob25lICgzNzUtNDMwcHgpIEJyZWFrcG9pbnQgICAgICAgICAgICAgICAgICAgIOKVkQrilZrilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZ0KCvCfk4sgV0hBVCBXQVMgQ0hBTkdFRArilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKRmlsZTogc3JjL2FwcC9nbG9iYWxzLmNzcwpBZGRlZDogQG1lZGlhIChtYXgtd2lkdGg6IDQzMHB4KSB3aXRoIDM1MCsgbGluZXMgb2YgQ1NTClRvdGFsOiA0MTQgbmV3IGxpbmVzIGFkZGVkIHRvIHRoZSBlbmQgb2YgdGhlIGZpbGUKCuKcqCBLRVkgSU1QUk9WRU1FTlRTCuKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgArinIUgMy1jb2x1bW4gZ3JpZHMg4oaSIDEgY29sdW1uIChmdWxsIHdpZHRoKQrinIUgMi1jb2x1bW4gZ3JpZHMg4oaSIDEgY29sdW1uIChzdGFja2VkIHZlcnRpY2FsbHkpCuKchSBBbGwgYnV0dG9ucyBtaW4gNDR4NDRweCAodG91Y2ggZnJpZW5kbHkpCuKchSBSZXNwb25zaXZlIHR5cG9ncmFwaHkgd2l0aCBjbGFtcCgpCuKchSBTY3JvbGxhYmxlIG5hdmlnYXRpb24gKG5vIG92ZXJmbG93KQrinIUgRm9vZCBzZWN0aW9ucyBzdGFja2VkIHZlcnRpY2FsbHkK4pyFIEltcHJvdmVkIHNwYWNpbmcgZm9yIHNtYWxsIHNjcmVlbnMK4pyFIE5vIGhvcml6b250YWwgb3ZlcmZsb3cgb24gY29udGVudAoK8J+agCBIT1cgVE8gREVQTE9ZICgzIFNJTVBMRSBTVEVQUykK4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACgpTVEVQIDE6IEdvIHRvIHlvdXIgcHJvamVjdCBkaXJlY3RvcnkK4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACmNkICIvVXNlcnMvWS5ULnAvQ2xhdWRlIGNvZGUtY2hhdC9yZWJ1aWxkIgoKU1RFUCAyOiBDb21taXQgdGhlIGNoYW5nZXMK4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACmdpdCBhZGQgc3JjL2FwcC9nbG9iYWxzLmNzcwoKZ2l0IGNvbW1pdCAtbSAiY2hvcmU6IGFkZCBtb2JpbGUgb3B0aW1pemF0aW9uIGZvciBpUGhvbmUgKDM3NS00MzBweCkgYnJlYWtwb2ludAoKLSBBZGRlZCBAbWVkaWEgKG1heC13aWR0aDogNDMwcHgpIGJyZWFrcG9pbnQgZm9yIGlQaG9uZSBTRS8xMiBtaW5pCi0gT3B0aW1pemVkIHR5cG9ncmFwaHksIHNwYWNpbmcsIGFuZCBsYXlvdXQgZm9yIHNtYWxsIHNjcmVlbnMKLSBFbnN1cmVkIGFsbCB0b3VjaCB0YXJnZXRzIGFyZSBtaW5pbXVtIDQ0eDQ0cHggKGFjY2Vzc2liaWxpdHkpCi0gSW1wbGVtZW50ZWQgcmVzcG9uc2l2ZSBncmlkIHN0YWNraW5nCi0gSW1wcm92ZWQgbW9iaWxlIG5hdmlnYXRpb24gYW5kIGZvcm0gZWxlbWVudHMiCgpTVEVQIDM6IFB1c2ggdG8gR2l0SHViCuKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApnaXQgcHVzaCBvcmlnaW4gbWFzdGVyCgooT3I6IGdpdCBwdXNoIG9yaWdpbiBtYWluIC0gaWYgeW91ciBkZWZhdWx0IGJyYW5jaCBpcyAnbWFpbicpCgrij7MgV0hBVCBIQVBQRU5TIE5FWFQK4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACjEuIEdpdEh1YiByZWNlaXZlcyB5b3VyIHB1c2gKMi4gVmVyY2VsIGRldGVjdHMgdGhlIGNoYW5nZSBhdXRvbWF0aWNhbGx5CjMuIFZlcmNlbCBidWlsZHMgeW91ciBhcHAgKH4zMC02MCBzZWNvbmRzKQo0LiBWZXJjZWwgZGVwbG95cyB0byBwcm9kdWN0aW9uCjUuIFlvdXIgbW9iaWxlIG9wdGltaXphdGlvbiBnb2VzIExJVkUhIPCfjokKCvCfk4ogSE9XIFRPIFZFUklGWSBJVCBXT1JLRUQK4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACgpPcHRpb24gQTogT24gRGVza3RvcCBCcm93c2VyCuKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAoxLiBPcGVuOiBodHRwczovL3JlYnVpbGQtcGktc2V2ZW4udmVyY2VsLmFwcAoyLiBQcmVzcyBGMTIgKG9wZW4gRGV2VG9vbHMpCjMuIENsaWNrIPCfk7EgdG9nZ2xlIGRldmljZSB0b29sYmFyCjQuIFNlbGVjdCAiaVBob25lIDEyIiBvciAiaVBob25lIFNFIgo1LiBSZWZyZXNoIHRoZSBwYWdlCjYuIENoZWNrIHRoYXQ6CiAgIC0gQ2FyZHMgYXJlIGZ1bGwgd2lkdGggKG5vdCAzIGNvbHVtbnMpCiAgIC0gQnV0dG9ucyBhcmUgYmlnIGFuZCB0YXBwYWJsZQogICAtIFRleHQgaXMgcmVhZGFibGUKICAgLSBObyBob3Jpem9udGFsIHNjcm9sbGluZyAoZXhjZXB0IG5hdikKCk9wdGlvbiBCOiBPbiBSZWFsIGlQaG9uZQrilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKMS4gT3BlbiBTYWZhcmkKMi4gVmlzaXQ6IGh0dHBzOi8vcmVidWlsZC1waS1zZXZlbi52ZXJjZWwuYXBwCjMuIENoZWNrIHRoYXQgbGF5b3V0IGlzIGNsZWFuIGFuZCByZWFkYWJsZQo0LiBUcnkgdGFwcGluZyBidXR0b25zIChzaG91bGQgYmUgZWFzeSkKCvCflI0gVkVSSUZZIFRIRSBERVBMT1lNRU5UCuKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApHbyB0bzogaHR0cHM6Ly92ZXJjZWwuY29tL3lvbmF0YW4tdGF1YmVycy1wcm9qZWN0cy9yZWJ1aWxkCgpMb29rIGZvcjoKLSDinIUgTGF0ZXN0IGRlcGxveW1lbnQgc2hvd3MgeW91ciBjb21taXQgbWVzc2FnZQotIOKchSBTdGF0dXMgc2hvdWxkIGJlICJSZWFkeSIgKGdyZWVuIGNoZWNrbWFyaykKLSDinIUgQnVpbGQgdGltZTogfjMwLTYwIHNlY29uZHMKCuKdjCBJRiBTT01FVEhJTkcgR09FUyBXUk9ORwrilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKCkVycm9yOiAic3JjIHJlZnNwZWMgbWFpbiBkb2VzIG5vdCBtYXRjaCBhbnkiClNvbHV0aW9uOiBVc2UgImdpdCBwdXNoIG9yaWdpbiBtYXN0ZXIiIGluc3RlYWQgb2YgImdpdCBwdXNoIG9yaWdpbiBtYWluIgoKRXJyb3I6ICJQZXJtaXNzaW9uIGRlbmllZCAocHVibGlja2V5KSIKU29sdXRpb246IE1ha2Ugc3VyZSBTU0gga2V5IGlzIHNldCB1cDogc3NoLWtleXNjYW4gZ2l0aHViLmNvbQoKRXJyb3I6ICJmYXRhbDogbm90IGEgZ2l0IHJlcG9zaXRvcnkiClNvbHV0aW9uOiBNYWtlIHN1cmUgeW91J3JlIGluIHRoZSByaWdodCBkaXJlY3Rvcnk6CiAgICAgICAgICBjZCAiL1VzZXJzL1kuVC5wL0NsYXVkZSBjb2RlLWNoYXQvcmVidWlsZCIKCvCfk54gU1VQUE9SVArilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKSWYgZGVwbG95bWVudCBmYWlsczoKMS4gQ2hlY2sgZ2l0IHN0YXR1czogZ2l0IHN0YXR1cwoyLiBDaGVjayByZW1vdGVzOiBnaXQgcmVtb3RlIC12CjMuIFZpZXcgbG9nczogZ2l0IGxvZyAtLW9uZWxpbmUgLTUKNC4gVmVyY2VsIGRhc2hib2FyZDogaHR0cHM6Ly92ZXJjZWwuY29tL3lvbmF0YW4tdGF1YmVycy1wcm9qZWN0cy9yZWJ1aWxkCgrwn5OmIEZJTEVTIFBST1ZJREVECuKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAoxLiBNT0JJTEVfT1BUSU1JWkFUSU9OX1NVTU1BUlkubWQKICAgLSBDb21wbGV0ZSB0ZWNobmljYWwgc3VtbWFyeSBvZiB3aGF0IHdhcyBkb25lCiAgIAoyLiBNT0JJTEVfQ1NTX0FERElUSU9OUy5jc3MKICAgLSBKdXN0IHRoZSA0MTQgbGluZXMgb2YgbmV3IENTUyAoaWYgeW91IHdhbnQgdG8gc2VlIGl0KQogICAKMy4gREVQTE9ZTUVOVF9JTlNUUlVDVElPTlMudHh0CiAgIC0gVGhpcyBmaWxlCgrwn46vIFNVTU1BUlkK4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACllvdXIgcmVidWlsZCBhcHAgbm93IGhhczoK4pyoIEZ1bGwgaVBob25lIG9wdGltaXphdGlvbiAoMzc1LTQzMHB4KQrinKggUmVzcG9uc2l2ZSBsYXlvdXQgc3RhY2tpbmcK4pyoIFRvdWNoLWZyaWVuZGx5IGJ1dHRvbnMgKDQ0cHggbWluaW11bSkK4pyoIFJlYWRhYmxlIHR5cG9ncmFwaHkK4pyoIE5vIG92ZXJmbG93IGlzc3VlcwoKQWxsIGRvbmUhIEp1c3QgcnVuIHRoZSAzIGdpdCBjb21tYW5kcyBhYm92ZSB0byBkZXBsb3kuIPCfmoAKCg=="}
+╔════════════════════════════════════════════════════════════════════╗
+║         REBUILD MOBILE OPTIMIZATION - DEPLOYMENT GUIDE            ║
+║                  iPhone (375-430px) Breakpoint                    ║
+╚════════════════════════════════════════════════════════════════════╝
+
+📋 WHAT WAS CHANGED
+─────────────────────────────────────────────────────────────────────
+File: src/app/globals.css
+Added: @media (max-width: 430px) with 350+ lines of CSS
+Total: 414 new lines added to the end of the file
+
+✨ KEY IMPROVEMENTS
+─────────────────────────────────────────────────────────────────────
+✅ 3-column grids → 1 column (full width)
+✅ 2-column grids → 1 column (stacked vertically)
+✅ All buttons min 44x44px (touch friendly)
+✅ Responsive typography with clamp()
+✅ Scrollable navigation (no overflow)
+✅ Food sections stacked vertically
+✅ Improved spacing for small screens
+✅ No horizontal overflow on content
+
+🚀 HOW TO DEPLOY (3 SIMPLE STEPS)
+─────────────────────────────────────────────────────────────────────
+
+STEP 1: Go to your project directory
+────────────────────────────────────
+cd "/Users/Y.T.p/Claude code-chat/rebuild"
+
+STEP 2: Commit the changes
+───────────────────────────
+git add src/app/globals.css
+
+git commit -m "chore: add mobile optimization for iPhone (375-430px) breakpoint
+
+- Added @media (max-width: 430px) breakpoint for iPhone SE/12 mini
+- Optimized typography, spacing, and layout for small screens
+- Ensured all touch targets are minimum 44x44px (accessibility)
+- Implemented responsive grid stacking
+- Improved mobile navigation and form elements"
+
+STEP 3: Push to GitHub
+──────────────────────
+git push origin master
+
+(Or: git push origin main - if your default branch is 'main')
+
+⏳ WHAT HAPPENS NEXT
+─────────────────────────────────────────────────────────────────────
+1. GitHub receives your push
+2. Vercel detects the change automatically
+3. Vercel builds your app (~30-60 seconds)
+4. Vercel deploys to production
+5. Your mobile optimization goes LIVE! 🎉
+
+📊 HOW TO VERIFY IT WORKED
+─────────────────────────────────────────────────────────────────────
+
+Option A: On Desktop Browser
+──────────────────────────────
+1. Open: https://rebuild-pi-seven.vercel.app
+2. Press F12 (open DevTools)
+3. Click 📱 toggle device toolbar
+4. Select "iPhone 12" or "iPhone SE"
+5. Refresh the page
+6. Check that:
+   - Cards are full width (not 3 columns)
+   - Buttons are big and tappable
+   - Text is readable
+   - No horizontal scrolling (except nav)
+
+Option B: On Real iPhone
+──────────────────────────
+1. Open Safari
+2. Visit: https://rebuild-pi-seven.vercel.app
+3. Check that layout is clean and readable
+4. Try tapping buttons (should be easy)
+
+🔍 VERIFY THE DEPLOYMENT
+─────────────────────────────────────────────────────────────────────
+Go to: https://vercel.com/yonatan-taubers-projects/rebuild
+
+Look for:
+- ✅ Latest deployment shows your commit message
+- ✅ Status should be "Ready" (green checkmark)
+- ✅ Build time: ~30-60 seconds
+
+❌ IF SOMETHING GOES WRONG
+─────────────────────────────────────────────────────────────────────
+
+Error: "src refspec main does not match any"
+Solution: Use "git push origin master" instead of "git push origin main"
+
+Error: "Permission denied (publickey)"
+Solution: Make sure SSH key is set up: ssh-keyscan github.com
+
+Error: "fatal: not a git repository"
+Solution: Make sure you're in the right directory:
+          cd "/Users/Y.T.p/Claude code-chat/rebuild"
+
+📞 SUPPORT
+─────────────────────────────────────────────────────────────────────
+If deployment fails:
+1. Check git status: git status
+2. Check remotes: git remote -v
+3. View logs: git log --oneline -5
+4. Vercel dashboard: https://vercel.com/yonatan-taubers-projects/rebuild
+
+📦 FILES PROVIDED
+─────────────────────────────────────────────────────────────────────
+1. MOBILE_OPTIMIZATION_SUMMARY.md
+   - Complete technical summary of what was done
+   
+2. MOBILE_CSS_ADDITIONS.css
+   - Just the 414 lines of new CSS (if you want to see it)
+   
+3. DEPLOYMENT_INSTRUCTIONS.txt
+   - This file
+
+🎯 SUMMARY
+─────────────────────────────────────────────────────────────────────
+Your rebuild app now has:
+✨ Full iPhone optimization (375-430px)
+✨ Responsive layout stacking
+✨ Touch-friendly buttons (44px minimum)
+✨ Readable typography
+✨ No overflow issues
+
+All done! Just run the 3 git commands above to deploy. 🚀
+

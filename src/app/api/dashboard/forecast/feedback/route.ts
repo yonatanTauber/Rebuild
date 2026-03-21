@@ -1,1 +1,19 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IHNldEZvcmVjYXN0RmVlZGJhY2sgfSBmcm9tICJAL2xpYi9kYiI7Cgpjb25zdCBzY2hlbWEgPSB6Lm9iamVjdCh7CiAgZGF0ZTogei5zdHJpbmcoKSwKICBlZmZvcnQ6IHouZW51bShbImxpZ2h0IiwgImFzX3BsYW5uZWQiLCAiaGFyZCIsICJza2lwcGVkIl0pCn0pOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBwYXlsb2FkID0gYXdhaXQgcmVxdWVzdC5qc29uKCk7CiAgY29uc3QgcGFyc2VkID0gc2NoZW1hLnNhZmVQYXJzZShwYXlsb2FkKTsKICBpZiAoIXBhcnNlZC5zdWNjZXNzKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogcGFyc2VkLmVycm9yLmZsYXR0ZW4oKSB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgc2V0Rm9yZWNhc3RGZWVkYmFjayhwYXJzZWQuZGF0YS5kYXRlLCBwYXJzZWQuZGF0YS5lZmZvcnQpOwogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IHNhdmVkOiB0cnVlIH0pOwp9Cg=="}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { setForecastFeedback } from "@/lib/db";
+
+const schema = z.object({
+  date: z.string(),
+  effort: z.enum(["light", "as_planned", "hard", "skipped"])
+});
+
+export async function POST(request: NextRequest) {
+  const payload = await request.json();
+  const parsed = schema.safeParse(payload);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  setForecastFeedback(parsed.data.date, parsed.data.effort);
+  return NextResponse.json({ saved: true });
+}

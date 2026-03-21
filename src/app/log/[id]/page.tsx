@@ -1,1 +1,381 @@
-{"data":"aW1wb3J0IExpbmsgZnJvbSAibmV4dC9saW5rIjsKaW1wb3J0IEZlZWRiYWNrSW5saW5lIGZyb20gIkAvY29tcG9uZW50cy93b3Jrb3V0LWZlZWRiYWNrLWlubGluZSI7CmltcG9ydCBIZWFydFJhdGVDaGFydCBmcm9tICJAL2NvbXBvbmVudHMvaGVhcnQtcmF0ZS1jaGFydCI7CmltcG9ydCBXb3Jrb3V0T2ZmaWNpYWxEdXJhdGlvbkVkaXRvciBmcm9tICJAL2NvbXBvbmVudHMvd29ya291dC1vZmZpY2lhbC1kdXJhdGlvbi1lZGl0b3IiOwppbXBvcnQgV29ya291dFNob2VJbmxpbmUgZnJvbSAiQC9jb21wb25lbnRzL3dvcmtvdXQtc2hvZS1pbmxpbmUiOwppbXBvcnQgV29ya291dFJvdXRlTWFwIGZyb20gIkAvY29tcG9uZW50cy93b3Jrb3V0LXJvdXRlLW1hcC1sYXp5IjsKaW1wb3J0IHsgV29ya291dEJhbm5lciwgYnVpbGRXb3Jrb3V0QmFubmVyTWV0cmljcyB9IGZyb20gIkAvY29tcG9uZW50cy93b3Jrb3V0LWJhbm5lciI7CmltcG9ydCB7IFNlY3Rpb24gfSBmcm9tICJAL2NvbXBvbmVudHMvY2FyZHMiOwppbXBvcnQgewogIGdldEFkamFjZW50V29ya291dElkcywKICBnZXRUb3BFZmZvcnRzRm9yV29ya291dCwKICBnZXRXb3Jrb3V0QnlJZCwKICBnZXRXb3Jrb3V0RmVlZGJhY2ssCiAgZ2V0V29ya291dE9mZmljaWFsRHVyYXRpb25TZWMKfSBmcm9tICJAL2xpYi9kYiI7CmltcG9ydCB7CiAgY2xvdWRFbmFibGVkLAogIGNsb3VkR2V0QWRqYWNlbnRXb3Jrb3V0SWRzLAogIGNsb3VkR2V0V29ya291dEJ5SWQsCiAgY2xvdWRHZXRXb3Jrb3V0RmVlZGJhY2ssCiAgY2xvdWRHZXRXb3Jrb3V0T2ZmaWNpYWxEdXJhdGlvblNlYwp9IGZyb20gIkAvbGliL2Nsb3VkLWRiIjsKaW1wb3J0IHsgZm9ybWF0RGlzcGxheURhdGVUaW1lIH0gZnJvbSAiQC9saWIvZGF0ZSI7CmltcG9ydCB7IGNvbXB1dGVSdW5TY29yZSB9IGZyb20gIkAvbGliL3J1bi1zY29yZSI7CmltcG9ydCB7IGRlY29kZVJvdXRlUGFyYW0sIHdvcmtvdXREZXRhaWxQYXRoIH0gZnJvbSAiQC9saWIvdXJsIjsKaW1wb3J0IHsgZ2V0V29ya291dERldGFpbERhdGEgfSBmcm9tICJAL2xpYi93b3Jrb3V0LWRldGFpbCI7CmltcG9ydCB7IGdldENsb3VkV29ya291dERldGFpbERhdGEgfSBmcm9tICJAL2xpYi9zdHJhdmEtd29ya291dC1kZXRhaWwiOwoKZXhwb3J0IGNvbnN0IHJ1bnRpbWUgPSAibm9kZWpzIjsKZXhwb3J0IGNvbnN0IGR5bmFtaWMgPSAiZm9yY2UtZHluYW1pYyI7CgpmdW5jdGlvbiBzcG9ydExhYmVsKHNwb3J0OiBzdHJpbmcpIHsKICBpZiAoc3BvcnQgPT09ICJydW4iKSByZXR1cm4gIteo15nXpteUIjsKICBpZiAoc3BvcnQgPT09ICJiaWtlIikgcmV0dXJuICLXkNeV16TXoNeZ15nXnSI7CiAgaWYgKHNwb3J0ID09PSAic3RyZW5ndGgiKSByZXR1cm4gIteb15XXlyI7CiAgcmV0dXJuICLXqdeX15nXmdeUIjsKfQoKZnVuY3Rpb24gZm9ybWF0Q2xvY2soc2VjOiBudW1iZXIgfCBudWxsKSB7CiAgaWYgKHNlYyA9PSBudWxsIHx8ICFOdW1iZXIuaXNGaW5pdGUoc2VjKSkgcmV0dXJuICItIjsKICBjb25zdCByb3VuZGVkID0gTWF0aC5yb3VuZChzZWMpOwogIGNvbnN0IGhvdXJzID0gTWF0aC5mbG9vcihyb3VuZGVkIC8gMzYwMCk7CiAgY29uc3QgbWludXRlcyA9IE1hdGguZmxvb3IoKHJvdW5kZWQgJSAzNjAwKSAvIDYwKTsKICBjb25zdCBzZWNvbmRzID0gcm91bmRlZCAlIDYwOwogIGlmIChob3VycyA+IDApIHJldHVybiBgJHtob3Vyc306JHtTdHJpbmcobWludXRlcykucGFkU3RhcnQoMiwgIjAiKX06JHtTdHJpbmcoc2Vjb25kcykucGFkU3RhcnQoMiwgIjAiKX1gOwogIHJldHVybiBgJHttaW51dGVzfToke1N0cmluZyhzZWNvbmRzKS5wYWRTdGFydCgyLCAiMCIpfWA7Cn0KCmZ1bmN0aW9uIGZvcm1hdFBhY2UocGFjZU1pblBlckttOiBudW1iZXIgfCBudWxsKSB7CiAgaWYgKHBhY2VNaW5QZXJLbSA9PSBudWxsIHx8ICFOdW1iZXIuaXNGaW5pdGUocGFjZU1pblBlckttKSkgcmV0dXJuICItIjsKICBjb25zdCB0b3RhbFNlYyA9IE1hdGgucm91bmQocGFjZU1pblBlckttICogNjApOwogIGNvbnN0IG1pbiA9IE1hdGguZmxvb3IodG90YWxTZWMgLyA2MCk7CiAgY29uc3Qgc2VjID0gdG90YWxTZWMgJSA2MDsKICByZXR1cm4gYCR7bWlufToke1N0cmluZyhzZWMpLnBhZFN0YXJ0KDIsICIwIil9INeT16cnL9enIteeYDsKfQoKZnVuY3Rpb24gZm9ybWF0RGlzdGFuY2VLbShkaXN0YW5jZUttOiBudW1iZXIgfCBudWxsKSB7CiAgaWYgKGRpc3RhbmNlS20gPT0gbnVsbCB8fCAhTnVtYmVyLmlzRmluaXRlKGRpc3RhbmNlS20pKSByZXR1cm4gIi0iOwogIGNvbnN0IHJvdW5kZWQgPSBNYXRoLnJvdW5kKGRpc3RhbmNlS20gKiAxMDApIC8gMTAwOwogIHJldHVybiBgJHtOdW1iZXIuaXNJbnRlZ2VyKHJvdW5kZWQpID8gcm91bmRlZC50b0ZpeGVkKDApIDogcm91bmRlZC50b0ZpeGVkKDIpfSDXpyLXnmA7Cn0KCmZ1bmN0aW9uIGZvcm1hdFNob2VLbShrbTogbnVtYmVyIHwgbnVsbCB8IHVuZGVmaW5lZCkgewogIGlmIChrbSA9PSBudWxsIHx8ICFOdW1iZXIuaXNGaW5pdGUoa20pKSByZXR1cm4gIi0iOwogIHJldHVybiBgJHtrbS50b0ZpeGVkKDEpfSDXpyLXnmA7Cn0KCmZ1bmN0aW9uIGVmZm9ydERpc3RhbmNlTGFiZWwoZGlzdGFuY2VLZXk6IHN0cmluZywgZGlzdGFuY2VLbTogbnVtYmVyKSB7CiAgaWYgKGRpc3RhbmNlS2V5ID09PSAiaGFsZiIpIHJldHVybiAi15fXpteZINee16jXqteV158iOwogIHJldHVybiBgJHtOdW1iZXIuaXNJbnRlZ2VyKGRpc3RhbmNlS20pID8gZGlzdGFuY2VLbS50b0ZpeGVkKDApIDogZGlzdGFuY2VLbS50b0ZpeGVkKDEpfSDXpyLXnmA7Cn0KCmV4cG9ydCBkZWZhdWx0IGFzeW5jIGZ1bmN0aW9uIFdvcmtvdXREZXRhaWxQYWdlKHsgcGFyYW1zIH06IHsgcGFyYW1zOiBQcm9taXNlPHsgaWQ6IHN0cmluZyB9PiB9KSB7CiAgY29uc3QgeyBpZCB9ID0gYXdhaXQgcGFyYW1zOwogIGNvbnN0IHdvcmtvdXRJZCA9IGRlY29kZVJvdXRlUGFyYW0oaWQpOwogIGNvbnN0IHVzZUNsb3VkID0gY2xvdWRFbmFibGVkKCk7CiAgY29uc3Qgd29ya291dCA9IHVzZUNsb3VkID8gYXdhaXQgY2xvdWRHZXRXb3Jrb3V0QnlJZCh3b3Jrb3V0SWQpIDogZ2V0V29ya291dEJ5SWQod29ya291dElkKTsKCiAgaWYgKCF3b3Jrb3V0KSB7CiAgICByZXR1cm4gKAogICAgICA8PgogICAgICAgIDxoZWFkZXIgY2xhc3NOYW1lPSJwYWdlLWhlYWRlciI+CiAgICAgICAgICA8aDE+15DXmdee15XXnyDXnNeQINeg157XpteQPC9oMT4KICAgICAgICAgIDxwPtec15Ag16DXntem15DXlCDXqNep15XXnteUINeq15XXkNee16ouPC9wPgogICAgICAgIDwvaGVhZGVyPgogICAgICAgIDxMaW5rIGhyZWY9Ii9sb2ciPteX15bXqNeUINec15nXldee1588L0xpbms+CiAgICAgIDwvPgogICAgKTsKICB9CgogIGxldCBkZXRhaWwgPSBnZXRXb3Jrb3V0RGV0YWlsRGF0YSh3b3Jrb3V0KTsKICBpZiAodXNlQ2xvdWQgJiYgd29ya291dC5zb3VyY2UgPT09ICJzdHJhdmEiKSB7CiAgICB0cnkgewogICAgICBkZXRhaWwgPSBhd2FpdCBnZXRDbG91ZFdvcmtvdXREZXRhaWxEYXRhKHdvcmtvdXQpOwogICAgfSBjYXRjaCAoZXJyb3IpIHsKICAgICAgY29uc29sZS5lcnJvcigic3RyYXZhLWRldGFpbC1mYWlsZWQiLCB7IHdvcmtvdXRJZDogd29ya291dC5pZCwgZXJyb3IgfSk7CiAgICB9CiAgfQogIGNvbnN0IGFkamFjZW50ID0gdXNlQ2xvdWQgPyBhd2FpdCBjbG91ZEdldEFkamFjZW50V29ya291dElkcyh3b3Jrb3V0LmlkKSA6IGdldEFkamFjZW50V29ya291dElkcyh3b3Jrb3V0LmlkKTsKICBjb25zdCBpc1J1biA9IHdvcmtvdXQuc3BvcnQgPT09ICJydW4iOwogIGNvbnN0IGlzQmlrZSA9IHdvcmtvdXQuc3BvcnQgPT09ICJiaWtlIjsKICBjb25zdCBoYXNSb3V0ZU1hcCA9IGlzUnVuIHx8IGlzQmlrZTsKICBjb25zdCBmZWVkYmFjayA9IGlzUnVuID8gKHVzZUNsb3VkID8gYXdhaXQgY2xvdWRHZXRXb3Jrb3V0RmVlZGJhY2sod29ya291dC5pZCkgOiBnZXRXb3Jrb3V0RmVlZGJhY2sod29ya291dC5pZCkpIDogbnVsbDsKICBjb25zdCBhbGxFZmZvcnRzID0gdXNlQ2xvdWQgPyBbXSA6IGdldFRvcEVmZm9ydHNGb3JXb3Jrb3V0KHdvcmtvdXQuaWQpOwogIGNvbnN0IGJlc3RFZmZvcnRzID0gQXJyYXkuZnJvbSgKICAgIGFsbEVmZm9ydHMucmVkdWNlKChtYXAsIGVmZm9ydCkgPT4gewogICAgICBpZiAoIW1hcC5oYXMoZWZmb3J0LmRpc3RhbmNlS2V5KSkgewogICAgICAgIG1hcC5zZXQoZWZmb3J0LmRpc3RhbmNlS2V5LCBlZmZvcnQpOwogICAgICB9CiAgICAgIHJldHVybiBtYXA7CiAgICB9LCBuZXcgTWFwPHN0cmluZywgKHR5cGVvZiBhbGxFZmZvcnRzKVtudW1iZXJdPigpKS52YWx1ZXMoKQogICk7CiAgY29uc3Qgc3BsaXRzID0gaXNSdW4gPyBkZXRhaWwuc3BsaXRzIDogW107CiAgY29uc3QgaHJTYW1wbGVzID0gZGV0YWlsLmhlYXJ0UmF0ZVNhbXBsZXM7CiAgY29uc3QgZGlzcGxheUF2Z0hyID0gZGV0YWlsLmF2Z0hyRnJvbVRyYWNrID8/IHdvcmtvdXQuYXZnSHIgPz8gbnVsbDsKICBjb25zdCBkaXNwbGF5TWF4SHIgPSBkZXRhaWwubWF4SHJGcm9tVHJhY2sgPz8gd29ya291dC5tYXhIciA/PyBudWxsOwogIGNvbnN0IGhyU2NvcmUgPSBpc1J1bgogICAgPyBjb21wdXRlUnVuU2NvcmUoewogICAgICAgIGR1cmF0aW9uU2VjOiB3b3Jrb3V0LmR1cmF0aW9uU2VjLAogICAgICAgIGF2Z0hyOiBkaXNwbGF5QXZnSHIsCiAgICAgICAgbWF4SHI6IGRpc3BsYXlNYXhIciwKICAgICAgICBtb3ZpbmdEdXJhdGlvblNlYzogZGV0YWlsLm1vdmluZ0R1cmF0aW9uU2VjLAogICAgICAgIHNwbGl0cywKICAgICAgICBmZWVkYmFjazogZmVlZGJhY2sgPz8gdW5kZWZpbmVkCiAgICAgIH0pCiAgICA6IG51bGw7CiAgY29uc3Qgb2ZmaWNpYWxEdXJhdGlvbk92ZXJyaWRlU2VjID0gdXNlQ2xvdWQKICAgID8gYXdhaXQgY2xvdWRHZXRXb3Jrb3V0T2ZmaWNpYWxEdXJhdGlvblNlYyh3b3Jrb3V0LmlkKQogICAgOiBnZXRXb3Jrb3V0T2ZmaWNpYWxEdXJhdGlvblNlYyh3b3Jrb3V0LmlkKTsKICBjb25zdCBydW5EaXNwbGF5RGlzdGFuY2VLbSA9IGlzUnVuID8gZGV0YWlsLmRpc3RhbmNlT2ZmaWNpYWxLbSA/PyBkZXRhaWwuZGlzdGFuY2VSYXdLbSA6IG51bGw7CiAgY29uc3QgcnVuRGlzcGxheUR1cmF0aW9uU2VjID0gaXNSdW4KICAgID8gb2ZmaWNpYWxEdXJhdGlvbk92ZXJyaWRlU2VjID8/IGRldGFpbC5tb3ZpbmdEdXJhdGlvblNlYyA/PyB3b3Jrb3V0LmR1cmF0aW9uU2VjCiAgICA6IHdvcmtvdXQuZHVyYXRpb25TZWM7CiAgY29uc3QgcnVuRGlzcGxheVBhY2VNaW5QZXJLbSA9CiAgICBydW5EaXNwbGF5RGlzdGFuY2VLbSAhPSBudWxsICYmIHJ1bkRpc3BsYXlEaXN0YW5jZUttID4gMCAmJiBydW5EaXNwbGF5RHVyYXRpb25TZWMgPiAwCiAgICAgID8gcnVuRGlzcGxheUR1cmF0aW9uU2VjIC8gNjAgLyBydW5EaXNwbGF5RGlzdGFuY2VLbQogICAgICA6IG51bGw7CiAgY29uc3Qgc2hvd1BhdXNlUm93ID0gKGRldGFpbC5wYXVzZUR1cmF0aW9uU2VjID8/IDApID49IDYwOwogIGNvbnN0IGRpc3RhbmNlR2FwS20gPQogICAgZGV0YWlsLmRpc3RhbmNlT2ZmaWNpYWxLbSAhPSBudWxsICYmIGRldGFpbC5kaXN0YW5jZVJhd0ttICE9IG51bGwKICAgICAgPyBNYXRoLmFicyhkZXRhaWwuZGlzdGFuY2VPZmZpY2lhbEttIC0gZGV0YWlsLmRpc3RhbmNlUmF3S20pCiAgICAgIDogMDsKICBjb25zdCBzaG93RGlzdGFuY2VHYXAgPSBkaXN0YW5jZUdhcEttID49IDAuMDM7CiAgY29uc3Qgc2hvd1J1blNjb3JlVG9wID0gQm9vbGVhbihpc1J1biAmJiBoclNjb3JlKTsKICBjb25zdCBiYW5uZXJNZXRyaWNzID0gYnVpbGRXb3Jrb3V0QmFubmVyTWV0cmljcyh7CiAgICBzcG9ydDogd29ya291dC5zcG9ydCwKICAgIGR1cmF0aW9uU2VjOiB3b3Jrb3V0LmR1cmF0aW9uU2VjLAogICAgZGlzdGFuY2VLbTogZGV0YWlsLmRpc3RhbmNlT2ZmaWNpYWxLbSA/PyBkZXRhaWwuZGlzdGFuY2VSYXdLbSwKICAgIHBhY2VNaW5QZXJLbTogcnVuRGlzcGxheVBhY2VNaW5QZXJLbSwKICAgIGF2Z0hyOiBkaXNwbGF5QXZnSHIsCiAgICBsb2FkOiB3b3Jrb3V0LnRzc0xpa2UKICB9KTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJ3b3Jrb3V0LWRldGFpbC1wYWdlIj4KICAgICAgPGRpdiBjbGFzc05hbWU9IndvcmtvdXQtZGV0YWlsLW5hdiI+CiAgICAgICAge2FkamFjZW50LnByZXZpb3VzID8gKAogICAgICAgICAgPExpbmsgaHJlZj17d29ya291dERldGFpbFBhdGgoYWRqYWNlbnQucHJldmlvdXMuaWQpfSBjbGFzc05hbWU9IndvcmtvdXQtZGV0YWlsLW5hdi1idG4iPgogICAgICAgICAgICDXkNeZ157XldefINen15XXk9edCiAgICAgICAgICA8L0xpbms+CiAgICAgICAgKSA6ICgKICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0id29ya291dC1kZXRhaWwtbmF2LWJ0biBkaXNhYmxlZCI+15DXmdee15XXnyDXp9eV15PXnTwvc3Bhbj4KICAgICAgICApfQogICAgICAgIDxMaW5rIGhyZWY9Ii9sb2ciIGNsYXNzTmFtZT0id29ya291dC1kZXRhaWwtbmF2LWJ0biBjZW50ZXIiPgogICAgICAgICAg15fXlteo15Qg15zXmdeV157XnwogICAgICAgIDwvTGluaz4KICAgICAgICB7YWRqYWNlbnQubmV4dCA/ICgKICAgICAgICAgIDxMaW5rIGhyZWY9e3dvcmtvdXREZXRhaWxQYXRoKGFkamFjZW50Lm5leHQuaWQpfSBjbGFzc05hbWU9IndvcmtvdXQtZGV0YWlsLW5hdi1idG4iPgogICAgICAgICAgICDXkNeZ157XldefINeU15HXkAogICAgICAgICAgPC9MaW5rPgogICAgICAgICkgOiAoCiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9IndvcmtvdXQtZGV0YWlsLW5hdi1idG4gZGlzYWJsZWQiPteQ15nXnteV158g15TXkdeQPC9zcGFuPgogICAgICAgICl9CiAgICAgIDwvZGl2PgoKICAgICAgPGhlYWRlciBjbGFzc05hbWU9InBhZ2UtaGVhZGVyIHdvcmtvdXQtcGFnZS1oZWFkZXIiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3b3Jrb3V0LWhlYWRlci1tYWluIj4KICAgICAgICAgIDxoMT7XpNeo15jXmSDXkNeZ157XldefPC9oMT4KICAgICAgICAgIDxwPteh15XXkiDXkNeZ157XldefOiB7c3BvcnRMYWJlbCh3b3Jrb3V0LnNwb3J0KX08L3A+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9IndvcmtvdXQtaGVhZGVyLWRhdGUtY2FyZCI+CiAgICAgICAgICA8c3Bhbj7XqteQ16jXmdeaINeV16nXoteUPC9zcGFuPgogICAgICAgICAgPHN0cm9uZz57Zm9ybWF0RGlzcGxheURhdGVUaW1lKHdvcmtvdXQuc3RhcnRBdCl9PC9zdHJvbmc+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvaGVhZGVyPgogICAgICA8ZGl2IGNsYXNzTmFtZT17c2hvd1J1blNjb3JlVG9wID8gIndvcmtvdXQtZGV0YWlsLXRvcC1ncmlkIGhhcy1zY29yZSIgOiAid29ya291dC1kZXRhaWwtdG9wLWdyaWQifT4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0id29ya291dC1kZXRhaWwtYmFubmVyLXNoZWxsIj4KICAgICAgICAgIDxXb3Jrb3V0QmFubmVyIHNwb3J0PXt3b3Jrb3V0LnNwb3J0fSBtZXRyaWNzPXtiYW5uZXJNZXRyaWNzfSBydW5TY29yZT17bnVsbH0gLz4KICAgICAgICA8L2Rpdj4KICAgICAgICB7aXNSdW4gJiYgaHJTY29yZSA/ICgKICAgICAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0icnVuLXNjb3JlLWhlcm8iPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icnVuLXNjb3JlLW1haW4iPgogICAgICAgICAgICAgIDxwPtem15nXldefINeo15nXpteUPC9wPgogICAgICAgICAgICAgIDxzdHJvbmc+e2hyU2NvcmUuc2NvcmV9PC9zdHJvbmc+CiAgICAgICAgICAgICAgPHNwYW4+e2hyU2NvcmUubGFiZWx9PC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InJ1bi1zY29yZS1iYXIiPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0icnVuLXNjb3JlLWZpbGwiIHN0eWxlPXt7IHdpZHRoOiBgJHtoclNjb3JlLnNjb3JlfSVgIH19IC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8cCBjbGFzc05hbWU9Im5vdGUiPgogICAgICAgICAgICAgINem15nXldefID0g15HXodeZ16EgODAgKyDXqNem15nXpNeV16oge2hyU2NvcmUuYnJlYWtkb3duLmNvbnRpbnVpdHkgPj0gMCA/ICIrIiA6ICIifQogICAgICAgICAgICAgIHtoclNjb3JlLmJyZWFrZG93bi5jb250aW51aXR5fSArINeZ16bXmdeR15XXqiDXp9em15Ege2hyU2NvcmUuYnJlYWtkb3duLnN0YWJpbGl0eSA+PSAwID8gIisiIDogIiJ9CiAgICAgICAgICAgICAge2hyU2NvcmUuYnJlYWtkb3duLnN0YWJpbGl0eX0gKyDXoteV157XoSDXk9eV16TXpyB7aHJTY29yZS5icmVha2Rvd24ubG9hZCA+PSAwID8gIisiIDogIiJ9CiAgICAgICAgICAgICAge2hyU2NvcmUuYnJlYWtkb3duLmxvYWR9ICsg157XqdeV15Eg15DXmdep15kge2hyU2NvcmUuYnJlYWtkb3duLmZlZWRiYWNrID49IDAgPyAiKyIgOiAiIn0KICAgICAgICAgICAgICB7aHJTY29yZS5icmVha2Rvd24uZmVlZGJhY2t9CiAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAge2hyU2NvcmUucmVhc29ucy5sZW5ndGggPiAwID8gKAogICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0ibm90ZSI+157XlCDXlNep16TXmdeiINeU15vXmSDXlNeo15HXlDoge2hyU2NvcmUucmVhc29ucy5zbGljZSgwLCAzKS5qb2luKCIgwrcgIil9PC9wPgogICAgICAgICAgICApIDogbnVsbH0KICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICApIDogbnVsbH0KICAgICAgPC9kaXY+CgogICAgICB7aGFzUm91dGVNYXAgPyAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9InR3by1jb2wtcGFuZWxzIj4KICAgICAgICAgIDxTZWN0aW9uIHRpdGxlPSLXodeZ15vXldedINeQ15nXnteV158iIHN1YnRpdGxlPSLXm9ecINeU157XmdeT16Ig16nXltee15nXnyDXm9eo15LXoiDXkdee16LXqNeb16oiPgogICAgICAgICAgICA8dWwgY2xhc3NOYW1lPSJrdiBjb21wYWN0LWt2Ij4KICAgICAgICAgICAgICA8bGk+16HXldeSOiB7c3BvcnRMYWJlbCh3b3Jrb3V0LnNwb3J0KX08L2xpPgogICAgICAgICAgICAgIDxsaT7XqteQ16jXmdeaINeV16nXoteUOiB7Zm9ybWF0RGlzcGxheURhdGVUaW1lKHdvcmtvdXQuc3RhcnRBdCl9PC9saT4KICAgICAgICAgICAgICA8bGk+157XqdeaINeQ15nXnteV158gKNeb15XXnNecINei16bXmdeo15XXqik6IHtmb3JtYXRDbG9jayh3b3Jrb3V0LmR1cmF0aW9uU2VjKX08L2xpPgogICAgICAgICAgICAgIHtkZXRhaWwubW92aW5nRHVyYXRpb25TZWMgIT0gbnVsbCA/ICgKICAgICAgICAgICAgICAgIDxsaT57aXNSdW4gPyAi157XqdeaINeo15nXpteUINeR16TXldei15wiIDogItee16nXmiDXqteg15XXoteUINeR16TXldei15wifToge2Zvcm1hdENsb2NrKGRldGFpbC5tb3ZpbmdEdXJhdGlvblNlYyl9PC9saT4KICAgICAgICAgICAgICApIDogbnVsbH0KICAgICAgICAgICAgICB7c2hvd1BhdXNlUm93ID8gPGxpPteW157XnyDXotem15nXqNeV16o6IHtmb3JtYXRDbG9jayhkZXRhaWwucGF1c2VEdXJhdGlvblNlYyl9PC9saT4gOiBudWxsfQogICAgICAgICAgICAgIHtpc1J1biA/ICgKICAgICAgICAgICAgICAgIDxsaT4KICAgICAgICAgICAgICAgICAg15bXntefINeo16nXnteZOiB7Zm9ybWF0Q2xvY2socnVuRGlzcGxheUR1cmF0aW9uU2VjKX0KICAgICAgICAgICAgICAgICAgPFdvcmtvdXRPZmZpY2lhbER1cmF0aW9uRWRpdG9yCiAgICAgICAgICAgICAgICAgICAgd29ya291dElkPXt3b3Jrb3V0LmlkfQogICAgICAgICAgICAgICAgICAgIGN1cnJlbnRPZmZpY2lhbER1cmF0aW9uU2VjPXtydW5EaXNwbGF5RHVyYXRpb25TZWN9CiAgICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICA8L2xpPgogICAgICAgICAgICAgICkgOiBudWxsfQogICAgICAgICAgICAgIHtzaG93RGlzdGFuY2VHYXAgPyAoCiAgICAgICAgICAgICAgICA8PgogICAgICAgICAgICAgICAgICA8bGk+157XqNeX16cg16jXqdee15k6IHtmb3JtYXREaXN0YW5jZUttKGRldGFpbC5kaXN0YW5jZU9mZmljaWFsS20pfTwvbGk+CiAgICAgICAgICAgICAgICAgIDxsaT7Xnteo15fXpyBHUFMg15HXpNeV16LXnDoge2Zvcm1hdERpc3RhbmNlS20oZGV0YWlsLmRpc3RhbmNlUmF3S20pfTwvbGk+CiAgICAgICAgICAgICAgICA8Lz4KICAgICAgICAgICAgICApIDogKAogICAgICAgICAgICAgICAgPGxpPtee16jXl9enOiB7Zm9ybWF0RGlzdGFuY2VLbShkZXRhaWwuZGlzdGFuY2VPZmZpY2lhbEttID8/IGRldGFpbC5kaXN0YW5jZVJhd0ttKX08L2xpPgogICAgICAgICAgICAgICl9CiAgICAgICAgICAgICAge2lzUnVuID8gPGxpPten16bXkSDXqNeZ16bXlCDXkdek15XXotecOiB7Zm9ybWF0UGFjZShydW5EaXNwbGF5UGFjZU1pblBlckttKX08L2xpPiA6IG51bGx9CiAgICAgICAgICAgICAgPGxpPteT15XXpNenINee157Xldem16I6IHtkaXNwbGF5QXZnSHIgIT0gbnVsbCA/IE1hdGgucm91bmQoZGlzcGxheUF2Z0hyKSA6ICItIn08L2xpPgogICAgICAgICAgICAgIDxsaT7Xk9eV16TXpyDXnten16EnOiB7ZGlzcGxheU1heEhyICE9IG51bGwgPyBNYXRoLnJvdW5kKGRpc3BsYXlNYXhIcikgOiAiLSJ9PC9saT4KICAgICAgICAgICAgICA8bGk+15jXmdek15XXoToge3dvcmtvdXQuZWxldmF0aW9uTSA/IGAke01hdGgucm91bmQod29ya291dC5lbGV2YXRpb25NKX0g154nYCA6ICItIn08L2xpPgogICAgICAgICAgICAgIDxsaT7XoteV157XoToge01hdGgucm91bmQod29ya291dC50c3NMaWtlKX08L2xpPgogICAgICAgICAgICAgIDxsaT7Xnten15XXqDoge3dvcmtvdXQuc291cmNlfTwvbGk+CiAgICAgICAgICAgICAgPGxpPgogICAgICAgICAgICAgICAg16DXotecOnsiICJ9CiAgICAgICAgICAgICAgICB7aXNSdW4gPyAoCiAgICAgICAgICAgICAgICAgIDxXb3Jrb3V0U2hvZUlubGluZQogICAgICAgICAgICAgICAgICAgIHdvcmtvdXRJZD17d29ya291dC5pZH0KICAgICAgICAgICAgICAgICAgICBjdXJyZW50U2hvZUlkPXt3b3Jrb3V0LnNob2VJZCA/PyBudWxsfQogICAgICAgICAgICAgICAgICAgIGNvbXBhY3QKICAgICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICAgICkgOiAoCiAgICAgICAgICAgICAgICAgIHdvcmtvdXQuc2hvZU5hbWUgPz8gIi0iCiAgICAgICAgICAgICAgICApfQogICAgICAgICAgICAgIDwvbGk+CiAgICAgICAgICAgICAge2lzUnVuICYmIHdvcmtvdXQuc2hvZUlkICYmIHdvcmtvdXQuc2hvZUttQXRBc3NpZ24gIT0gbnVsbCA/ICgKICAgICAgICAgICAgICAgIDxsaT7Xp9e0154g15HXoNei15wg15DXl9eo15kg15TXkNeZ157XldefINeU15bXlDoge2Zvcm1hdFNob2VLbSh3b3Jrb3V0LnNob2VLbUF0QXNzaWduKX08L2xpPgogICAgICAgICAgICAgICkgOiBpc1J1biAmJiB3b3Jrb3V0LnNob2VJZCA/ICgKICAgICAgICAgICAgICAgIDxsaT7Xp9e0154g15HXkNeZ157XldefINeU15bXlCDXoteT15nXmdefINec15Ag16fXldeR16IuINeR15fXqCDXoNei15wg157Xl9eT16kg16TXotedINeQ15fXqiDXm9eT15kg15zXqdee15XXqCDXoteo15og16fXkdeV16IuPC9saT4KICAgICAgICAgICAgICApIDogbnVsbH0KICAgICAgICAgICAgPC91bD4KICAgICAgICAgIDwvU2VjdGlvbj4KCiAgICAgICAgICA8U2VjdGlvbiB0aXRsZT0i157XpNeqINee16HXnNeV15wiIHN1YnRpdGxlPSLXqteV16bXkiDXm9ep16fXmdeZ157XmdedINeg16rXldeg15kg157Xodec15XXnCDXnNeQ15nXnteV158iPgogICAgICAgICAgICA8V29ya291dFJvdXRlTWFwIHNlZ21lbnRzPXtkZXRhaWwucm91dGVTZWdtZW50c30gLz4KICAgICAgICAgIDwvU2VjdGlvbj4KICAgICAgICA8L2Rpdj4KICAgICAgKSA6ICgKICAgICAgICA8U2VjdGlvbiB0aXRsZT0i16HXmdeb15XXnSDXkNeZ157XldefIiBzdWJ0aXRsZT0i15vXnCDXlNee15nXk9eiINep15bXnteZ158g15vXqNeS16Ig15HXntei16jXm9eqIj4KICAgICAgICAgIDx1bCBjbGFzc05hbWU9Imt2IGNvbXBhY3Qta3YiPgogICAgICAgICAgICA8bGk+16HXldeSOiB7c3BvcnRMYWJlbCh3b3Jrb3V0LnNwb3J0KX08L2xpPgogICAgICAgICAgICA8bGk+16rXkNeo15nXmiDXldep16LXlDoge2Zvcm1hdERpc3BsYXlEYXRlVGltZSh3b3Jrb3V0LnN0YXJ0QXQpfTwvbGk+CiAgICAgICAgICAgIDxsaT7Xntep15og15DXmdee15XXnzoge2Zvcm1hdENsb2NrKHdvcmtvdXQuZHVyYXRpb25TZWMpfTwvbGk+CiAgICAgICAgICAgIHt3b3Jrb3V0LnNwb3J0ICE9PSAic3RyZW5ndGgiID8gKAogICAgICAgICAgICAgIDxsaT7Xnteo15fXpzoge2Zvcm1hdERpc3RhbmNlS20oZGV0YWlsLmRpc3RhbmNlT2ZmaWNpYWxLbSA/PyBkZXRhaWwuZGlzdGFuY2VSYXdLbSl9PC9saT4KICAgICAgICAgICAgKSA6IG51bGx9CiAgICAgICAgICAgIDxsaT7Xk9eV16TXpyDXntee15XXpteiOiB7ZGlzcGxheUF2Z0hyICE9IG51bGwgPyBNYXRoLnJvdW5kKGRpc3BsYXlBdmdIcikgOiAiLSJ9PC9saT4KICAgICAgICAgICAgPGxpPteT15XXpNenINee16fXoSc6IHtkaXNwbGF5TWF4SHIgIT0gbnVsbCA/IE1hdGgucm91bmQoZGlzcGxheU1heEhyKSA6ICItIn08L2xpPgogICAgICAgICAgICB7d29ya291dC5zcG9ydCA9PT0gInJ1biIgfHwgd29ya291dC5zcG9ydCA9PT0gImJpa2UiID8gKAogICAgICAgICAgICAgIDxsaT7XmNeZ16TXldehOiB7d29ya291dC5lbGV2YXRpb25NID8gYCR7TWF0aC5yb3VuZCh3b3Jrb3V0LmVsZXZhdGlvbk0pfSDXnidgIDogIi0ifTwvbGk+CiAgICAgICAgICAgICkgOiBudWxsfQogICAgICAgICAgICA8bGk+16LXldee16E6IHtNYXRoLnJvdW5kKHdvcmtvdXQudHNzTGlrZSl9PC9saT4KICAgICAgICAgICAgPGxpPtee16fXldeoOiB7d29ya291dC5zb3VyY2V9PC9saT4KICAgICAgICAgIDwvdWw+CiAgICAgICAgPC9TZWN0aW9uPgogICAgICApfQoKICAgICAge2lzUnVuICYmICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idHdvLWNvbC1wYW5lbHMiPgogICAgICAgICAgPFNlY3Rpb24gdGl0bGU9Itee16nXldeRINeQ15fXqNeZINeQ15nXnteV158iIHN1YnRpdGxlPSLXqten16bXmdeoINen15XXntek16fXmNeZINei150g15DXpNep16jXldeqINei16jXmdeb15QiPgogICAgICAgICAgICA8RmVlZGJhY2tJbmxpbmUKICAgICAgICAgICAgICB3b3Jrb3V0SWQ9e3dvcmtvdXQuaWR9CiAgICAgICAgICAgICAgc3BvcnQ9e3dvcmtvdXQuc3BvcnQgYXMgInJ1biIgfCAiYmlrZSIgfCAic3dpbSIgfCAic3RyZW5ndGgifQogICAgICAgICAgICAgIGRhdGU9e3dvcmtvdXQuc3RhcnRBdC5zbGljZSgwLCAxMCl9CiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L1NlY3Rpb24+CgogICAgICAgICAgPFNlY3Rpb24gdGl0bGU9IteX15zXlden16og16fXmdec15XXnteY16jXmdedIiBzdWJ0aXRsZT0i15vXnCDXp9e0154g15HXoNek16jXkyDXnNek15kg15bXntefLCDXp9em15Eg15XXk9eV16TXpyI+CiAgICAgICAgICAgIHtzcGxpdHMubGVuZ3RoID4gMCA/ICgKICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaGlzdG9yeS10YWJsZSB3b3Jrb3V0LXNwbGl0cy10YWJsZSI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaGlzdG9yeS1yb3cgaGVhZGVyIj4KICAgICAgICAgICAgICAgICAgPHNwYW4+16fXtNeePC9zcGFuPgogICAgICAgICAgICAgICAgICA8c3Bhbj7Xltee158g157Xp9eY16I8L3NwYW4+CiAgICAgICAgICAgICAgICAgIDxzcGFuPteW157XnyDXntem15jXkdeoPC9zcGFuPgogICAgICAgICAgICAgICAgICA8c3Bhbj7Xp9em15E8L3NwYW4+CiAgICAgICAgICAgICAgICAgIDxzcGFuPteT15XXpNenINee157Xldem16I8L3NwYW4+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIHtzcGxpdHMubWFwKChzcGxpdCkgPT4gKAogICAgICAgICAgICAgICAgICA8ZGl2IGtleT17c3BsaXQua219IGNsYXNzTmFtZT0iaGlzdG9yeS1yb3ciPgogICAgICAgICAgICAgICAgICAgIDxzcGFuPntzcGxpdC5rbX08L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgPHNwYW4+e2Zvcm1hdENsb2NrKHNwbGl0LnNwbGl0U2VjKX08L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgPHNwYW4+e2Zvcm1hdENsb2NrKHNwbGl0LmN1bXVsYXRpdmVTZWMpfTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICA8c3Bhbj57Zm9ybWF0UGFjZShzcGxpdC5wYWNlTWluUGVyS20pfTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICA8c3Bhbj57c3BsaXQuYXZnSHIgPz8gIi0ifTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgKSA6ICgKICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9Im5vdGUiPteQ15nXnyDXnteh16TXmdenINeg16rXldeg15kg157Xodec15XXnCDXm9eT15kg15zXl9ep15Eg15fXnNeV16fXqiDXp9eZ15zXldee15jXqNeZ150uPC9wPgogICAgICAgICAgICApfQogICAgICAgICAgPC9TZWN0aW9uPgogICAgICAgIDwvZGl2PgogICAgICApfQoKICAgICAgeyFpc1J1biAmJiAoCiAgICAgICAgPFNlY3Rpb24gdGl0bGU9Itee16nXldeRINeQ15fXqNeZINeQ15nXnteV158iIHN1YnRpdGxlPSLXodeZ15vXldedINeq15fXldep15Qg15XXnteQ157XpSI+CiAgICAgICAgICA8RmVlZGJhY2tJbmxpbmUKICAgICAgICAgICAgd29ya291dElkPXt3b3Jrb3V0LmlkfQogICAgICAgICAgICBzcG9ydD17d29ya291dC5zcG9ydCBhcyAicnVuIiB8ICJiaWtlIiB8ICJzd2ltIiB8ICJzdHJlbmd0aCJ9CiAgICAgICAgICAgIGRhdGU9e3dvcmtvdXQuc3RhcnRBdC5zbGljZSgwLCAxMCl9CiAgICAgICAgICAvPgogICAgICAgIDwvU2VjdGlvbj4KICAgICAgKX0KCiAgICAgIHtpc1J1biAmJiAoCiAgICAgICAgPFNlY3Rpb24gdGl0bGU9IteU157Xp9eY16LXmdedINeU15jXldeR15nXnSDXkdeQ15nXnteV158g15TXlteUIiBzdWJ0aXRsZT0i15bXnteg15kg16nXmdeQINeR16rXldeaINeU15DXmdee15XXnyDXnNek15kg157XqNeX16ciPgogICAgICAgICAge2Jlc3RFZmZvcnRzLmxlbmd0aCA+IDAgPyAoCiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJlZmZvcnRzLWdyaWQiPgogICAgICAgICAgICAgIHtiZXN0RWZmb3J0cy5tYXAoKGVmZm9ydCkgPT4gKAogICAgICAgICAgICAgICAgPGFydGljbGUga2V5PXtlZmZvcnQuaWR9IGNsYXNzTmFtZT0iZWZmb3J0LWNhcmQiPgogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZWZmb3J0LXRvcGxpbmUiPgogICAgICAgICAgICAgICAgICAgIDxzdHJvbmc+e2VmZm9ydERpc3RhbmNlTGFiZWwoZWZmb3J0LmRpc3RhbmNlS2V5LCBlZmZvcnQuZGlzdGFuY2VLbSl9PC9zdHJvbmc+CiAgICAgICAgICAgICAgICAgICAgPHNwYW4+e2Zvcm1hdENsb2NrKGVmZm9ydC50aW1lU2VjKX08L3NwYW4+CiAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZWZmb3J0LW1ldGEiPgogICAgICAgICAgICAgICAgICAgIDxzcGFuPntmb3JtYXRQYWNlKGVmZm9ydC5wYWNlTWluUGVyS20pfTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgIHtlZmZvcnQuc2VnbWVudFN0YXJ0U2VjICE9IG51bGwgJiYgZWZmb3J0LnNlZ21lbnRFbmRTZWMgIT0gbnVsbCAmJiAoCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImVmZm9ydC1tZXRhIj4KICAgICAgICAgICAgICAgICAgICAgIDxzcGFuPtee16rXldeaIHtmb3JtYXRDbG9jayhlZmZvcnQuc2VnbWVudFN0YXJ0U2VjKX0g16LXkyB7Zm9ybWF0Q2xvY2soZWZmb3J0LnNlZ21lbnRFbmRTZWMpfTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgICAgIDwvYXJ0aWNsZT4KICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApIDogKAogICAgICAgICAgICA8cCBjbGFzc05hbWU9Im5vdGUiPteQ15nXnyDXoteT15nXmdefINee16fXmNei15nXnSDXnteX15XXqdeR15nXnSDXnNeo15nXpteUINeU15bXlS48L3A+CiAgICAgICAgICApfQogICAgICAgIDwvU2VjdGlvbj4KICAgICAgKX0KCiAgICAgIHtpc1J1biAmJiAoCiAgICAgICAgPFNlY3Rpb24gdGl0bGU9IteS16jXoyDXk9eV16TXpyIgc3VidGl0bGU9IteT15XXpNenINec15DXldeo15og15TXqNeZ16bXlCwg15zXpNeZINeU16DXqteV16DXmdedINep16DXp9ec15jXlSDXkden15XXkdelIj4KICAgICAgICAgIHtoclNhbXBsZXMubGVuZ3RoID4gMSA/ICgKICAgICAgICAgICAgPEhlYXJ0UmF0ZUNoYXJ0IHNhbXBsZXM9e2hyU2FtcGxlc30gLz4KICAgICAgICAgICkgOiAoCiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0ibm90ZSI+15DXmdefINeg16rXldeg15kg15PXldek16cg157XpNeV16jXmNeZ150g15HXp9eV15HXpSDXqdecINeU15DXmdee15XXnyDXlNeW15QuPC9wPgogICAgICAgICAgKX0KICAgICAgICA8L1NlY3Rpb24+CiAgICAgICl9CgogICAgICA8TGluayBocmVmPSIvbG9nIiBjbGFzc05hbWU9Im5vdGUiPgogICAgICAgINeX15bXqNeUINec15nXldee158KICAgICAgPC9MaW5rPgogICAgPC9kaXY+CiAgKTsKfQo="}
+import Link from "next/link";
+import FeedbackInline from "@/components/workout-feedback-inline";
+import HeartRateChart from "@/components/heart-rate-chart";
+import WorkoutOfficialDurationEditor from "@/components/workout-official-duration-editor";
+import WorkoutShoeInline from "@/components/workout-shoe-inline";
+import WorkoutRouteMap from "@/components/workout-route-map-lazy";
+import { WorkoutBanner, buildWorkoutBannerMetrics } from "@/components/workout-banner";
+import { Section } from "@/components/cards";
+import {
+  getAdjacentWorkoutIds,
+  getTopEffortsForWorkout,
+  getWorkoutById,
+  getWorkoutFeedback,
+  getWorkoutOfficialDurationSec
+} from "@/lib/db";
+import {
+  cloudEnabled,
+  cloudGetAdjacentWorkoutIds,
+  cloudGetWorkoutById,
+  cloudGetWorkoutFeedback,
+  cloudGetWorkoutOfficialDurationSec
+} from "@/lib/cloud-db";
+import { formatDisplayDateTime } from "@/lib/date";
+import { computeRunScore } from "@/lib/run-score";
+import { decodeRouteParam, workoutDetailPath } from "@/lib/url";
+import { getWorkoutDetailData } from "@/lib/workout-detail";
+import { getCloudWorkoutDetailData } from "@/lib/strava-workout-detail";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+function sportLabel(sport: string) {
+  if (sport === "run") return "ריצה";
+  if (sport === "bike") return "אופניים";
+  if (sport === "strength") return "כוח";
+  return "שחייה";
+}
+
+function formatClock(sec: number | null) {
+  if (sec == null || !Number.isFinite(sec)) return "-";
+  const rounded = Math.round(sec);
+  const hours = Math.floor(rounded / 3600);
+  const minutes = Math.floor((rounded % 3600) / 60);
+  const seconds = rounded % 60;
+  if (hours > 0) return `${hours}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  return `${minutes}:${String(seconds).padStart(2, "0")}`;
+}
+
+function formatPace(paceMinPerKm: number | null) {
+  if (paceMinPerKm == null || !Number.isFinite(paceMinPerKm)) return "-";
+  const totalSec = Math.round(paceMinPerKm * 60);
+  const min = Math.floor(totalSec / 60);
+  const sec = totalSec % 60;
+  return `${min}:${String(sec).padStart(2, "0")} דק'/ק"מ`;
+}
+
+function formatDistanceKm(distanceKm: number | null) {
+  if (distanceKm == null || !Number.isFinite(distanceKm)) return "-";
+  const rounded = Math.round(distanceKm * 100) / 100;
+  return `${Number.isInteger(rounded) ? rounded.toFixed(0) : rounded.toFixed(2)} ק"מ`;
+}
+
+function formatShoeKm(km: number | null | undefined) {
+  if (km == null || !Number.isFinite(km)) return "-";
+  return `${km.toFixed(1)} ק"מ`;
+}
+
+function effortDistanceLabel(distanceKey: string, distanceKm: number) {
+  if (distanceKey === "half") return "חצי מרתון";
+  return `${Number.isInteger(distanceKm) ? distanceKm.toFixed(0) : distanceKm.toFixed(1)} ק"מ`;
+}
+
+export default async function WorkoutDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const workoutId = decodeRouteParam(id);
+  const useCloud = cloudEnabled();
+  const workout = useCloud ? await cloudGetWorkoutById(workoutId) : getWorkoutById(workoutId);
+
+  if (!workout) {
+    return (
+      <>
+        <header className="page-header">
+          <h1>אימון לא נמצא</h1>
+          <p>לא נמצאה רשומה תואמת.</p>
+        </header>
+        <Link href="/log">חזרה ליומן</Link>
+      </>
+    );
+  }
+
+  let detail = getWorkoutDetailData(workout);
+  if (useCloud && workout.source === "strava") {
+    try {
+      detail = await getCloudWorkoutDetailData(workout);
+    } catch (error) {
+      console.error("strava-detail-failed", { workoutId: workout.id, error });
+    }
+  }
+  const adjacent = useCloud ? await cloudGetAdjacentWorkoutIds(workout.id) : getAdjacentWorkoutIds(workout.id);
+  const isRun = workout.sport === "run";
+  const isBike = workout.sport === "bike";
+  const hasRouteMap = isRun || isBike;
+  const feedback = isRun ? (useCloud ? await cloudGetWorkoutFeedback(workout.id) : getWorkoutFeedback(workout.id)) : null;
+  const allEfforts = useCloud ? [] : getTopEffortsForWorkout(workout.id);
+  const bestEfforts = Array.from(
+    allEfforts.reduce((map, effort) => {
+      if (!map.has(effort.distanceKey)) {
+        map.set(effort.distanceKey, effort);
+      }
+      return map;
+    }, new Map<string, (typeof allEfforts)[number]>()).values()
+  );
+  const splits = isRun ? detail.splits : [];
+  const hrSamples = detail.heartRateSamples;
+  const displayAvgHr = detail.avgHrFromTrack ?? workout.avgHr ?? null;
+  const displayMaxHr = detail.maxHrFromTrack ?? workout.maxHr ?? null;
+  const hrScore = isRun
+    ? computeRunScore({
+        durationSec: workout.durationSec,
+        avgHr: displayAvgHr,
+        maxHr: displayMaxHr,
+        movingDurationSec: detail.movingDurationSec,
+        splits,
+        feedback: feedback ?? undefined
+      })
+    : null;
+  const officialDurationOverrideSec = useCloud
+    ? await cloudGetWorkoutOfficialDurationSec(workout.id)
+    : getWorkoutOfficialDurationSec(workout.id);
+  const runDisplayDistanceKm = isRun ? detail.distanceOfficialKm ?? detail.distanceRawKm : null;
+  const runDisplayDurationSec = isRun
+    ? officialDurationOverrideSec ?? detail.movingDurationSec ?? workout.durationSec
+    : workout.durationSec;
+  const runDisplayPaceMinPerKm =
+    runDisplayDistanceKm != null && runDisplayDistanceKm > 0 && runDisplayDurationSec > 0
+      ? runDisplayDurationSec / 60 / runDisplayDistanceKm
+      : null;
+  const showPauseRow = (detail.pauseDurationSec ?? 0) >= 60;
+  const distanceGapKm =
+    detail.distanceOfficialKm != null && detail.distanceRawKm != null
+      ? Math.abs(detail.distanceOfficialKm - detail.distanceRawKm)
+      : 0;
+  const showDistanceGap = distanceGapKm >= 0.03;
+  const showRunScoreTop = Boolean(isRun && hrScore);
+  const bannerMetrics = buildWorkoutBannerMetrics({
+    sport: workout.sport,
+    durationSec: workout.durationSec,
+    distanceKm: detail.distanceOfficialKm ?? detail.distanceRawKm,
+    paceMinPerKm: runDisplayPaceMinPerKm,
+    avgHr: displayAvgHr,
+    load: workout.tssLike
+  });
+
+  return (
+    <div className="workout-detail-page">
+      <div className="workout-detail-nav">
+        {adjacent.previous ? (
+          <Link href={workoutDetailPath(adjacent.previous.id)} className="workout-detail-nav-btn">
+            אימון קודם
+          </Link>
+        ) : (
+          <span className="workout-detail-nav-btn disabled">אימון קודם</span>
+        )}
+        <Link href="/log" className="workout-detail-nav-btn center">
+          חזרה ליומן
+        </Link>
+        {adjacent.next ? (
+          <Link href={workoutDetailPath(adjacent.next.id)} className="workout-detail-nav-btn">
+            אימון הבא
+          </Link>
+        ) : (
+          <span className="workout-detail-nav-btn disabled">אימון הבא</span>
+        )}
+      </div>
+
+      <header className="page-header workout-page-header">
+        <div className="workout-header-main">
+          <h1>פרטי אימון</h1>
+          <p>סוג אימון: {sportLabel(workout.sport)}</p>
+        </div>
+        <div className="workout-header-date-card">
+          <span>תאריך ושעה</span>
+          <strong>{formatDisplayDateTime(workout.startAt)}</strong>
+        </div>
+      </header>
+      <div className={showRunScoreTop ? "workout-detail-top-grid has-score" : "workout-detail-top-grid"}>
+        <div className="workout-detail-banner-shell">
+          <WorkoutBanner sport={workout.sport} metrics={bannerMetrics} runScore={null} />
+        </div>
+        {isRun && hrScore ? (
+          <section className="run-score-hero">
+            <div className="run-score-main">
+              <p>ציון ריצה</p>
+              <strong>{hrScore.score}</strong>
+              <span>{hrScore.label}</span>
+            </div>
+            <div className="run-score-bar">
+              <span className="run-score-fill" style={{ width: `${hrScore.score}%` }} />
+            </div>
+            <p className="note">
+              ציון = בסיס 80 + רציפות {hrScore.breakdown.continuity >= 0 ? "+" : ""}
+              {hrScore.breakdown.continuity} + יציבות קצב {hrScore.breakdown.stability >= 0 ? "+" : ""}
+              {hrScore.breakdown.stability} + עומס דופק {hrScore.breakdown.load >= 0 ? "+" : ""}
+              {hrScore.breakdown.load} + משוב אישי {hrScore.breakdown.feedback >= 0 ? "+" : ""}
+              {hrScore.breakdown.feedback}
+            </p>
+            {hrScore.reasons.length > 0 ? (
+              <p className="note">מה השפיע הכי הרבה: {hrScore.reasons.slice(0, 3).join(" · ")}</p>
+            ) : null}
+          </section>
+        ) : null}
+      </div>
+
+      {hasRouteMap ? (
+        <div className="two-col-panels">
+          <Section title="סיכום אימון" subtitle="כל המידע שזמין כרגע במערכת">
+            <ul className="kv compact-kv">
+              <li>סוג: {sportLabel(workout.sport)}</li>
+              <li>תאריך ושעה: {formatDisplayDateTime(workout.startAt)}</li>
+              <li>משך אימון (כולל עצירות): {formatClock(workout.durationSec)}</li>
+              {detail.movingDurationSec != null ? (
+                <li>{isRun ? "משך ריצה בפועל" : "משך תנועה בפועל"}: {formatClock(detail.movingDurationSec)}</li>
+              ) : null}
+              {showPauseRow ? <li>זמן עצירות: {formatClock(detail.pauseDurationSec)}</li> : null}
+              {isRun ? (
+                <li>
+                  זמן רשמי: {formatClock(runDisplayDurationSec)}
+                  <WorkoutOfficialDurationEditor
+                    workoutId={workout.id}
+                    currentOfficialDurationSec={runDisplayDurationSec}
+                  />
+                </li>
+              ) : null}
+              {showDistanceGap ? (
+                <>
+                  <li>מרחק רשמי: {formatDistanceKm(detail.distanceOfficialKm)}</li>
+                  <li>מרחק GPS בפועל: {formatDistanceKm(detail.distanceRawKm)}</li>
+                </>
+              ) : (
+                <li>מרחק: {formatDistanceKm(detail.distanceOfficialKm ?? detail.distanceRawKm)}</li>
+              )}
+              {isRun ? <li>קצב ריצה בפועל: {formatPace(runDisplayPaceMinPerKm)}</li> : null}
+              <li>דופק ממוצע: {displayAvgHr != null ? Math.round(displayAvgHr) : "-"}</li>
+              <li>דופק מקס': {displayMaxHr != null ? Math.round(displayMaxHr) : "-"}</li>
+              <li>טיפוס: {workout.elevationM ? `${Math.round(workout.elevationM)} מ'` : "-"}</li>
+              <li>עומס: {Math.round(workout.tssLike)}</li>
+              <li>מקור: {workout.source}</li>
+              <li>
+                נעל:{" "}
+                {isRun ? (
+                  <WorkoutShoeInline
+                    workoutId={workout.id}
+                    currentShoeId={workout.shoeId ?? null}
+                    compact
+                  />
+                ) : (
+                  workout.shoeName ?? "-"
+                )}
+              </li>
+              {isRun && workout.shoeId && workout.shoeKmAtAssign != null ? (
+                <li>ק״מ בנעל אחרי האימון הזה: {formatShoeKm(workout.shoeKmAtAssign)}</li>
+              ) : isRun && workout.shoeId ? (
+                <li>ק״מ באימון הזה עדיין לא קובע. בחר נעל מחדש פעם אחת כדי לשמור ערך קבוע.</li>
+              ) : null}
+            </ul>
+          </Section>
+
+          <Section title="מפת מסלול" subtitle="תוצג כשקיימים נתוני מסלול לאימון">
+            <WorkoutRouteMap segments={detail.routeSegments} />
+          </Section>
+        </div>
+      ) : (
+        <Section title="סיכום אימון" subtitle="כל המידע שזמין כרגע במערכת">
+          <ul className="kv compact-kv">
+            <li>סוג: {sportLabel(workout.sport)}</li>
+            <li>תאריך ושעה: {formatDisplayDateTime(workout.startAt)}</li>
+            <li>משך אימון: {formatClock(workout.durationSec)}</li>
+            {workout.sport !== "strength" ? (
+              <li>מרחק: {formatDistanceKm(detail.distanceOfficialKm ?? detail.distanceRawKm)}</li>
+            ) : null}
+            <li>דופק ממוצע: {displayAvgHr != null ? Math.round(displayAvgHr) : "-"}</li>
+            <li>דופק מקס': {displayMaxHr != null ? Math.round(displayMaxHr) : "-"}</li>
+            {workout.sport === "run" || workout.sport === "bike" ? (
+              <li>טיפוס: {workout.elevationM ? `${Math.round(workout.elevationM)} מ'` : "-"}</li>
+            ) : null}
+            <li>עומס: {Math.round(workout.tssLike)}</li>
+            <li>מקור: {workout.source}</li>
+          </ul>
+        </Section>
+      )}
+
+      {isRun && (
+        <div className="two-col-panels">
+          <Section title="משוב אחרי אימון" subtitle="תקציר קומפקטי עם אפשרות עריכה">
+            <FeedbackInline
+              workoutId={workout.id}
+              sport={workout.sport as "run" | "bike" | "swim" | "strength"}
+              date={workout.startAt.slice(0, 10)}
+            />
+          </Section>
+
+          <Section title="חלוקת קילומטרים" subtitle="כל ק״מ בנפרד לפי זמן, קצב ודופק">
+            {splits.length > 0 ? (
+              <div className="history-table workout-splits-table">
+                <div className="history-row header">
+                  <span>ק״מ</span>
+                  <span>זמן מקטע</span>
+                  <span>זמן מצטבר</span>
+                  <span>קצב</span>
+                  <span>דופק ממוצע</span>
+                </div>
+                {splits.map((split) => (
+                  <div key={split.km} className="history-row">
+                    <span>{split.km}</span>
+                    <span>{formatClock(split.splitSec)}</span>
+                    <span>{formatClock(split.cumulativeSec)}</span>
+                    <span>{formatPace(split.paceMinPerKm)}</span>
+                    <span>{split.avgHr ?? "-"}</span>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="note">אין מספיק נתוני מסלול כדי לחשב חלוקת קילומטרים.</p>
+            )}
+          </Section>
+        </div>
+      )}
+
+      {!isRun && (
+        <Section title="משוב אחרי אימון" subtitle="סיכום תחושה ומאמץ">
+          <FeedbackInline
+            workoutId={workout.id}
+            sport={workout.sport as "run" | "bike" | "swim" | "strength"}
+            date={workout.startAt.slice(0, 10)}
+          />
+        </Section>
+      )}
+
+      {isRun && (
+        <Section title="המקטעים הטובים באימון הזה" subtitle="זמני שיא בתוך האימון לפי מרחק">
+          {bestEfforts.length > 0 ? (
+            <div className="efforts-grid">
+              {bestEfforts.map((effort) => (
+                <article key={effort.id} className="effort-card">
+                  <div className="effort-topline">
+                    <strong>{effortDistanceLabel(effort.distanceKey, effort.distanceKm)}</strong>
+                    <span>{formatClock(effort.timeSec)}</span>
+                  </div>
+                  <div className="effort-meta">
+                    <span>{formatPace(effort.paceMinPerKm)}</span>
+                  </div>
+                  {effort.segmentStartSec != null && effort.segmentEndSec != null && (
+                    <div className="effort-meta">
+                      <span>מתוך {formatClock(effort.segmentStartSec)} עד {formatClock(effort.segmentEndSec)}</span>
+                    </div>
+                  )}
+                </article>
+              ))}
+            </div>
+          ) : (
+            <p className="note">אין עדיין מקטעים מחושבים לריצה הזו.</p>
+          )}
+        </Section>
+      )}
+
+      {isRun && (
+        <Section title="גרף דופק" subtitle="דופק לאורך הריצה, לפי הנתונים שנקלטו בקובץ">
+          {hrSamples.length > 1 ? (
+            <HeartRateChart samples={hrSamples} />
+          ) : (
+            <p className="note">אין נתוני דופק מפורטים בקובץ של האימון הזה.</p>
+          )}
+        </Section>
+      )}
+
+      <Link href="/log" className="note">
+        חזרה ליומן
+      </Link>
+    </div>
+  );
+}

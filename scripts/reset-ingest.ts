@@ -1,1 +1,18 @@
-{"data":"aW1wb3J0IHsgcmVzZXRJbmdlc3REYXRhIH0gZnJvbSAiLi4vc3JjL2xpYi9kYiI7CmltcG9ydCB7IHJ1bkluZ2VzdCB9IGZyb20gIi4uL3NyYy9saWIvaW5nZXN0IjsKCmFzeW5jIGZ1bmN0aW9uIG1haW4oKSB7CiAgcmVzZXRJbmdlc3REYXRhKCk7CiAgY29uc3QgcmVzdWx0ID0gYXdhaXQgcnVuSW5nZXN0KCk7CiAgY29uc29sZS5sb2coCiAgICBgUmVzZXQraW5nZXN0IGRvbmUuIHF1ZXVlZD0ke3Jlc3VsdC5maWxlc1F1ZXVlZH0gaW5nZXN0ZWQ9JHtyZXN1bHQuZmlsZXNJbmdlc3RlZH0gc2tpcHBlZD0ke3Jlc3VsdC5maWxlc1NraXBwZWR9IGVycm9ycz0ke3Jlc3VsdC5lcnJvcnMubGVuZ3RofWAKICApOwogIGlmIChyZXN1bHQuZXJyb3JzLmxlbmd0aCkgewogICAgY29uc29sZS5sb2cocmVzdWx0LmVycm9ycy5zbGljZSgwLCAyMCkpOwogIH0KfQoKbWFpbigpLmNhdGNoKChlcnIpID0+IHsKICBjb25zb2xlLmVycm9yKGVyciBpbnN0YW5jZW9mIEVycm9yID8gZXJyLm1lc3NhZ2UgOiBTdHJpbmcoZXJyKSk7CiAgcHJvY2Vzcy5leGl0KDEpOwp9KTsK"}
+import { resetIngestData } from "../src/lib/db";
+import { runIngest } from "../src/lib/ingest";
+
+async function main() {
+  resetIngestData();
+  const result = await runIngest();
+  console.log(
+    `Reset+ingest done. queued=${result.filesQueued} ingested=${result.filesIngested} skipped=${result.filesSkipped} errors=${result.errors.length}`
+  );
+  if (result.errors.length) {
+    console.log(result.errors.slice(0, 20));
+  }
+}
+
+main().catch((err) => {
+  console.error(err instanceof Error ? err.message : String(err));
+  process.exit(1);
+});

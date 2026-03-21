@@ -1,1 +1,73 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgYWRkUGFpbkFyZWEsIGxpc3RQYWluQXJlYXMgfSBmcm9tICJAL2xpYi9kYiI7CmltcG9ydCB7IGNsb3VkQWRkUGFpbkFyZWEsIGNsb3VkRW5hYmxlZCwgY2xvdWRMaXN0UGFpbkFyZWFzIH0gZnJvbSAiQC9saWIvY2xvdWQtZGIiOwoKZXhwb3J0IGNvbnN0IHJ1bnRpbWUgPSAibm9kZWpzIjsKCmNvbnN0IG9wdGlvbnMgPSB7CiAgZXhlcnRpb246IFsKICAgIHsgaWQ6ICJ2ZXJ5X2Vhc3kiLCBsYWJlbDogIten15wg157XkNeV15MiIH0sCiAgICB7IGlkOiAiZWFzeSIsIGxhYmVsOiAi16fXnCIgfSwKICAgIHsgaWQ6ICJtb2RlcmF0ZSIsIGxhYmVsOiAi15HXmdeg15XXoNeZIiB9LAogICAgeyBpZDogImhhcmQiLCBsYWJlbDogIten16nXlCIgfSwKICAgIHsgaWQ6ICJtYXgiLCBsYWJlbDogItee16fXodeZ157XnNeZIiB9CiAgXSwKICBzbGVlcDogWwogICAgeyBpZDogInBvb3IiLCBsYWJlbDogItep15nXoNeUINeX15zXqdeUIiB9LAogICAgeyBpZDogIm9rIiwgbGFiZWw6ICLXqdeZ16DXlCDXodeR15nXqNeUIiB9LAogICAgeyBpZDogImdvb2QiLCBsYWJlbDogItep15nXoNeUINeY15XXkdeUIiB9LAogICAgeyBpZDogImdyZWF0IiwgbGFiZWw6ICLXqdeZ16DXlCDXntem15XXmdeg16oiIH0KICBdLAogIGhydjogWwogICAgeyBpZDogImxvdyIsIGxhYmVsOiAi16DXnteV15oiIH0sCiAgICB7IGlkOiAibm9ybWFsIiwgbGFiZWw6ICLXqten15nXnyIgfSwKICAgIHsgaWQ6ICJoaWdoIiwgbGFiZWw6ICLXkteR15XXlCIgfQogIF0sCiAgcmVzdGluZ0hyOiBbCiAgICB7IGlkOiAiaGlnaCIsIGxhYmVsOiAi15LXkdeV15Qg157XlNeo15LXmdecIiB9LAogICAgeyBpZDogIm5vcm1hbCIsIGxhYmVsOiAi16jXkteZ15wiIH0sCiAgICB7IGlkOiAibG93IiwgbGFiZWw6ICLXoNee15XXmiDXnteU16jXkteZ15wiIH0KICBdLAogIG1vb2Q6IFsKICAgIHsgaWQ6ICJsb3ciLCBsYWJlbDogIteg157XldeaIiB9LAogICAgeyBpZDogIm9rIiwgbGFiZWw6ICLXkdeh15PXqCIgfSwKICAgIHsgaWQ6ICJnb29kIiwgbGFiZWw6ICLXmNeV15EiIH0sCiAgICB7IGlkOiAiZ3JlYXQiLCBsYWJlbDogItee16bXldeZ158iIH0KICBdLAogIHNvcmVuZXNzTGV2ZWw6IFsKICAgIHsgaWQ6ICJub25lIiwgbGFiZWw6ICLXnNec15Ag15vXkNeRIiB9LAogICAgeyBpZDogImxpZ2h0IiwgbGFiZWw6ICLXp9ecIiB9LAogICAgeyBpZDogIm1lZGl1bSIsIGxhYmVsOiAi15HXmdeg15XXoNeZIiB9LAogICAgeyBpZDogImhpZ2giLCBsYWJlbDogIteS15HXldeUIiB9CiAgXQp9OwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVCgpIHsKICBpZiAoY2xvdWRFbmFibGVkKCkpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7CiAgICAgIG9wdGlvbnMsCiAgICAgIHBhaW5BcmVhczogYXdhaXQgY2xvdWRMaXN0UGFpbkFyZWFzKCkKICAgIH0pOwogIH0KICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgb3B0aW9ucywKICAgIHBhaW5BcmVhczogbGlzdFBhaW5BcmVhcygpCiAgfSk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQT1NUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgY29uc3QgYm9keSA9IChhd2FpdCByZXF1ZXN0Lmpzb24oKSkgYXMgeyBuYW1lPzogc3RyaW5nIH07CiAgaWYgKGNsb3VkRW5hYmxlZCgpKSB7CiAgICBjb25zdCBjcmVhdGVkID0gYXdhaXQgY2xvdWRBZGRQYWluQXJlYShTdHJpbmcoYm9keS5uYW1lID8/ICIiKSk7CiAgICBpZiAoIWNyZWF0ZWQpIHsKICAgICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICLXqdedINeQ15bXldeoINeX16HXqCIgfSwgeyBzdGF0dXM6IDQwMCB9KTsKICAgIH0KICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGNyZWF0ZWQsIHBhaW5BcmVhczogYXdhaXQgY2xvdWRMaXN0UGFpbkFyZWFzKCkgfSk7CiAgfQogIGNvbnN0IGNyZWF0ZWQgPSBhZGRQYWluQXJlYShTdHJpbmcoYm9keS5uYW1lID8/ICIiKSk7CiAgaWYgKCFjcmVhdGVkKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogItep150g15DXlteV16gg15fXodeoIiB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgY3JlYXRlZCwgcGFpbkFyZWFzOiBsaXN0UGFpbkFyZWFzKCkgfSk7Cn0K"}
+import { NextRequest, NextResponse } from "next/server";
+import { addPainArea, listPainAreas } from "@/lib/db";
+import { cloudAddPainArea, cloudEnabled, cloudListPainAreas } from "@/lib/cloud-db";
+
+export const runtime = "nodejs";
+
+const options = {
+  exertion: [
+    { id: "very_easy", label: "קל מאוד" },
+    { id: "easy", label: "קל" },
+    { id: "moderate", label: "בינוני" },
+    { id: "hard", label: "קשה" },
+    { id: "max", label: "מקסימלי" }
+  ],
+  sleep: [
+    { id: "poor", label: "שינה חלשה" },
+    { id: "ok", label: "שינה סבירה" },
+    { id: "good", label: "שינה טובה" },
+    { id: "great", label: "שינה מצוינת" }
+  ],
+  hrv: [
+    { id: "low", label: "נמוך" },
+    { id: "normal", label: "תקין" },
+    { id: "high", label: "גבוה" }
+  ],
+  restingHr: [
+    { id: "high", label: "גבוה מהרגיל" },
+    { id: "normal", label: "רגיל" },
+    { id: "low", label: "נמוך מהרגיל" }
+  ],
+  mood: [
+    { id: "low", label: "נמוך" },
+    { id: "ok", label: "בסדר" },
+    { id: "good", label: "טוב" },
+    { id: "great", label: "מצוין" }
+  ],
+  sorenessLevel: [
+    { id: "none", label: "ללא כאב" },
+    { id: "light", label: "קל" },
+    { id: "medium", label: "בינוני" },
+    { id: "high", label: "גבוה" }
+  ]
+};
+
+export async function GET() {
+  if (cloudEnabled()) {
+    return NextResponse.json({
+      options,
+      painAreas: await cloudListPainAreas()
+    });
+  }
+  return NextResponse.json({
+    options,
+    painAreas: listPainAreas()
+  });
+}
+
+export async function POST(request: NextRequest) {
+  const body = (await request.json()) as { name?: string };
+  if (cloudEnabled()) {
+    const created = await cloudAddPainArea(String(body.name ?? ""));
+    if (!created) {
+      return NextResponse.json({ error: "שם אזור חסר" }, { status: 400 });
+    }
+    return NextResponse.json({ created, painAreas: await cloudListPainAreas() });
+  }
+  const created = addPainArea(String(body.name ?? ""));
+  if (!created) {
+    return NextResponse.json({ error: "שם אזור חסר" }, { status: 400 });
+  }
+
+  return NextResponse.json({ created, painAreas: listPainAreas() });
+}

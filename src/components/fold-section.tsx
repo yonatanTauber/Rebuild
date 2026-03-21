@@ -1,1 +1,36 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgUmVhY3ROb2RlLCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEZvbGRTZWN0aW9uKHsKICB0aXRsZSwKICBzdWJ0aXRsZSwKICBjaGlsZHJlbiwKICBkZWZhdWx0T3BlbiA9IHRydWUsCiAgY2xhc3NOYW1lID0gIiIKfTogewogIHRpdGxlOiBzdHJpbmc7CiAgc3VidGl0bGU/OiBzdHJpbmc7CiAgY2hpbGRyZW46IFJlYWN0Tm9kZTsKICBkZWZhdWx0T3Blbj86IGJvb2xlYW47CiAgY2xhc3NOYW1lPzogc3RyaW5nOwp9KSB7CiAgY29uc3QgW29wZW4sIHNldE9wZW5dID0gdXNlU3RhdGUoZGVmYXVsdE9wZW4pOwoKICByZXR1cm4gKAogICAgPHNlY3Rpb24gY2xhc3NOYW1lPXtgcGFuZWwgZm9sZC1wYW5lbCAke29wZW4gPyAib3BlbiIgOiAiY2xvc2VkIn0gJHtjbGFzc05hbWV9YC50cmltKCl9PgogICAgICA8aGVhZGVyIGNsYXNzTmFtZT0icGFuZWwtaGVhZGVyIj4KICAgICAgICA8ZGl2PgogICAgICAgICAgPGgyPnt0aXRsZX08L2gyPgogICAgICAgICAge3N1YnRpdGxlICYmIDxwPntzdWJ0aXRsZX08L3A+fQogICAgICAgIDwvZGl2PgogICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJmb2xkLXRvZ2dsZSIgb25DbGljaz17KCkgPT4gc2V0T3BlbigocHJldikgPT4gIXByZXYpfT4KICAgICAgICAgIHtvcGVuID8gIteU16HXqteoIiA6ICLXlNem15IifQogICAgICAgIDwvYnV0dG9uPgogICAgICA8L2hlYWRlcj4KICAgICAgPGRpdiBjbGFzc05hbWU9InBhbmVsLWJvZHkiIGFyaWEtaGlkZGVuPXshb3Blbn0+CiAgICAgICAge2NoaWxkcmVufQogICAgICA8L2Rpdj4KICAgIDwvc2VjdGlvbj4KICApOwp9Cg=="}
+"use client";
+
+import { ReactNode, useState } from "react";
+
+export default function FoldSection({
+  title,
+  subtitle,
+  children,
+  defaultOpen = true,
+  className = ""
+}: {
+  title: string;
+  subtitle?: string;
+  children: ReactNode;
+  defaultOpen?: boolean;
+  className?: string;
+}) {
+  const [open, setOpen] = useState(defaultOpen);
+
+  return (
+    <section className={`panel fold-panel ${open ? "open" : "closed"} ${className}`.trim()}>
+      <header className="panel-header">
+        <div>
+          <h2>{title}</h2>
+          {subtitle && <p>{subtitle}</p>}
+        </div>
+        <button className="fold-toggle" onClick={() => setOpen((prev) => !prev)}>
+          {open ? "הסתר" : "הצג"}
+        </button>
+      </header>
+      <div className="panel-body" aria-hidden={!open}>
+        {children}
+      </div>
+    </section>
+  );
+}

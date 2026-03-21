@@ -1,1 +1,32 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IHNldE1lYWxGZWVkYmFjayB9IGZyb20gIkAvbGliL251dHJpdGlvbi1lbmdpbmUiOwppbXBvcnQgeyBnZXREYlByb3ZpZGVyIH0gZnJvbSAiQC9saWIvZGItZHJpdmVyIjsKaW1wb3J0IHsgY2xvdWRTZXROdXRyaXRpb25NZWFsRmVlZGJhY2sgfSBmcm9tICJAL2xpYi9udXRyaXRpb24tY2xvdWQtbWVhbHMiOwoKZXhwb3J0IGNvbnN0IHJ1bnRpbWUgPSAibm9kZWpzIjsKCmNvbnN0IHNjaGVtYSA9IHoub2JqZWN0KHsKICBtZWFsSWQ6IHouc3RyaW5nKCkubWluKDEpLAogIGFjY2VwdGVkOiB6LmJvb2xlYW4oKS5udWxsYWJsZSgpCn0pOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBib2R5ID0gYXdhaXQgcmVxdWVzdC5qc29uKCkuY2F0Y2goKCkgPT4gKHt9KSk7CiAgY29uc3QgcGFyc2VkID0gc2NoZW1hLnNhZmVQYXJzZShib2R5KTsKICBpZiAoIXBhcnNlZC5zdWNjZXNzKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogcGFyc2VkLmVycm9yLmZsYXR0ZW4oKSB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KICBpZiAoZ2V0RGJQcm92aWRlcigpID09PSAicG9zdGdyZXMiKSB7CiAgICBjb25zdCByZXN1bHQgPSBhd2FpdCBjbG91ZFNldE51dHJpdGlvbk1lYWxGZWVkYmFjayhwYXJzZWQuZGF0YS5tZWFsSWQsIHBhcnNlZC5kYXRhLmFjY2VwdGVkKTsKICAgIGlmICghcmVzdWx0Lm9rKSB7CiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAibWVhbCBub3QgZm91bmQiIH0sIHsgc3RhdHVzOiA0MDQgfSk7CiAgICB9CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBvazogdHJ1ZSB9KTsKICB9CiAgY29uc3QgcmVzdWx0ID0gc2V0TWVhbEZlZWRiYWNrKHBhcnNlZC5kYXRhLm1lYWxJZCwgcGFyc2VkLmRhdGEuYWNjZXB0ZWQpOwogIGlmICghcmVzdWx0Lm9rKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogIm1lYWwgbm90IGZvdW5kIiB9LCB7IHN0YXR1czogNDA0IH0pOwogIH0KICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBvazogdHJ1ZSB9KTsKfQo="}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { setMealFeedback } from "@/lib/nutrition-engine";
+import { getDbProvider } from "@/lib/db-driver";
+import { cloudSetNutritionMealFeedback } from "@/lib/nutrition-cloud-meals";
+
+export const runtime = "nodejs";
+
+const schema = z.object({
+  mealId: z.string().min(1),
+  accepted: z.boolean().nullable()
+});
+
+export async function POST(request: NextRequest) {
+  const body = await request.json().catch(() => ({}));
+  const parsed = schema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+  if (getDbProvider() === "postgres") {
+    const result = await cloudSetNutritionMealFeedback(parsed.data.mealId, parsed.data.accepted);
+    if (!result.ok) {
+      return NextResponse.json({ error: "meal not found" }, { status: 404 });
+    }
+    return NextResponse.json({ ok: true });
+  }
+  const result = setMealFeedback(parsed.data.mealId, parsed.data.accepted);
+  if (!result.ok) {
+    return NextResponse.json({ error: "meal not found" }, { status: 404 });
+  }
+  return NextResponse.json({ ok: true });
+}

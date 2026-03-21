@@ -1,1 +1,242 @@
-{"data":"aW1wb3J0IHsgZ2V0VG9wRWZmb3J0cywgZ2V0V29ya291dHMgfSBmcm9tICJAL2xpYi9kYiI7CmltcG9ydCB7IGZvcm1hdElTT0RhdGUgfSBmcm9tICJAL2xpYi9kYXRlIjsKaW1wb3J0IHR5cGUgeyBTcG9ydCwgV29ya291dCB9IGZyb20gIkAvbGliL3R5cGVzIjsKaW1wb3J0IHsgUEJfRElTVEFOQ0VTIH0gZnJvbSAiQC9saWIvcGItZW5naW5lIjsKCmZ1bmN0aW9uIGttKHdvcmtvdXQ6IFdvcmtvdXQpIHsKICByZXR1cm4gTWF0aC5tYXgoMCwgKHdvcmtvdXQuZGlzdGFuY2VNID8/IDApIC8gMTAwMCk7Cn0KCmZ1bmN0aW9uIHBhY2VNaW5QZXJLbSh3b3Jrb3V0OiBXb3Jrb3V0KSB7CiAgY29uc3QgZGlzdGFuY2VLbSA9IGttKHdvcmtvdXQpOwogIGlmIChkaXN0YW5jZUttIDw9IDAgfHwgd29ya291dC5kdXJhdGlvblNlYyA8PSAwKSByZXR1cm4gbnVsbDsKICByZXR1cm4gd29ya291dC5kdXJhdGlvblNlYyAvIDYwIC8gZGlzdGFuY2VLbTsKfQoKZnVuY3Rpb24gaW5ZZWFyKHdvcmtvdXQ6IFdvcmtvdXQsIHllYXI6IG51bWJlcikgewogIHJldHVybiBuZXcgRGF0ZSh3b3Jrb3V0LnN0YXJ0QXQpLmdldEZ1bGxZZWFyKCkgPT09IHllYXI7Cn0KCmZ1bmN0aW9uIHRvT25lRGVjKHZhbHVlOiBudW1iZXIpIHsKICByZXR1cm4gTWF0aC5yb3VuZCh2YWx1ZSAqIDEwKSAvIDEwOwp9Cgp0eXBlIEJ1aWxkUmFuZ2VBcmdzID0gewogIHNwb3J0OiBTcG9ydDsKICB5ZWFyPzogbnVtYmVyOwogIGZyb21ZZWFyPzogbnVtYmVyOwogIHRvWWVhcj86IG51bWJlcjsKICBzaG9lSWQ/OiBzdHJpbmcgfCBudWxsOwogIGFsbFllYXJzPzogYm9vbGVhbjsKfTsKCmV4cG9ydCBmdW5jdGlvbiBidWlsZEFuYWx5dGljcyhhcmdzOiBCdWlsZFJhbmdlQXJncykgewogIGNvbnN0IHsgc3BvcnQsIGZyb21ZZWFyLCB0b1llYXIsIHNob2VJZCwgYWxsWWVhcnMgfSA9IGFyZ3M7CiAgY29uc3QgdG9kYXkgPSBmb3JtYXRJU09EYXRlKCk7CiAgY29uc3QgdG9kYXlEYXRlID0gbmV3IERhdGUoYCR7dG9kYXl9VDAwOjAwOjAwLjAwMFpgKTsKICBjb25zdCBjdXJyZW50WWVhciA9IHRvZGF5RGF0ZS5nZXRVVENGdWxsWWVhcigpOwogIGNvbnN0IGN1cnJlbnRNb250aCA9IHRvZGF5RGF0ZS5nZXRVVENNb250aCgpICsgMTsKCiAgY29uc3QgYWxsU3BvcnRXb3Jrb3V0cyA9IGdldFdvcmtvdXRzKDEwMDAwMCkuZmlsdGVyKCh3KSA9PiB3LnNwb3J0ID09PSBzcG9ydCk7CiAgY29uc3Qgd29ya291dHMgPQogICAgc3BvcnQgPT09ICJydW4iICYmIHNob2VJZAogICAgICA/IGFsbFNwb3J0V29ya291dHMuZmlsdGVyKCh3KSA9PiAoc2hvZUlkID09PSAidW5hc3NpZ25lZCIgPyAhdy5zaG9lSWQgOiAody5zaG9lSWQgPz8gIiIpID09PSBzaG9lSWQpKQogICAgICA6IGFsbFNwb3J0V29ya291dHM7CgogIGNvbnN0IHllYXJTZXQgPSBuZXcgU2V0PG51bWJlcj4oKTsKICBmb3IgKGNvbnN0IHcgb2Ygd29ya291dHMpIHsKICAgIHllYXJTZXQuYWRkKG5ldyBEYXRlKHcuc3RhcnRBdCkuZ2V0RnVsbFllYXIoKSk7CiAgfQoKICBsZXQgYXZhaWxhYmxlWWVhcnMgPSBBcnJheS5mcm9tKHllYXJTZXQpLnNvcnQoKGEsIGIpID0+IGIgLSBhKTsKICBpZiAoc3BvcnQgPT09ICJzd2ltIikgewogICAgYXZhaWxhYmxlWWVhcnMgPSBhdmFpbGFibGVZZWFycy5maWx0ZXIoKHkpID0+IHkgPj0gY3VycmVudFllYXIpOwogICAgaWYgKCFhdmFpbGFibGVZZWFycy5sZW5ndGgpIGF2YWlsYWJsZVllYXJzID0gW2N1cnJlbnRZZWFyXTsKICB9CiAgaWYgKCFhdmFpbGFibGVZZWFycy5sZW5ndGgpIGF2YWlsYWJsZVllYXJzID0gW2N1cnJlbnRZZWFyXTsKCiAgY29uc3QgYXNjZW5kaW5nWWVhcnMgPSBbLi4uYXZhaWxhYmxlWWVhcnNdLnNvcnQoKGEsIGIpID0+IGEgLSBiKTsKICBjb25zdCBlYXJsaWVzdFllYXIgPSBhc2NlbmRpbmdZZWFyc1swXSA/PyBjdXJyZW50WWVhcjsKICBjb25zdCBsYXRlc3RZZWFyID0gYXNjZW5kaW5nWWVhcnNbYXNjZW5kaW5nWWVhcnMubGVuZ3RoIC0gMV0gPz8gY3VycmVudFllYXI7CgogIGNvbnN0IGRlZmF1bHRGcm9tWWVhciA9IGFsbFllYXJzID8gZWFybGllc3RZZWFyIDogZnJvbVllYXIgPz8gbGF0ZXN0WWVhcjsKICBjb25zdCBkZWZhdWx0VG9ZZWFyID0gYWxsWWVhcnMgPyBsYXRlc3RZZWFyIDogdG9ZZWFyID8/IGRlZmF1bHRGcm9tWWVhcjsKICBjb25zdCByYW5nZUZyb21ZZWFyID0gTWF0aC5taW4oZGVmYXVsdEZyb21ZZWFyLCBkZWZhdWx0VG9ZZWFyKTsKICBjb25zdCByYW5nZVRvWWVhciA9IE1hdGgubWF4KGRlZmF1bHRGcm9tWWVhciwgZGVmYXVsdFRvWWVhcik7CgogIGNvbnN0IHRhcmdldFllYXIgPSBhcmdzLnllYXIgPz8gcmFuZ2VUb1llYXI7CiAgY29uc3Qgc2FmZVllYXIgPSBhdmFpbGFibGVZZWFycy5pbmNsdWRlcyh0YXJnZXRZZWFyKSA/IHRhcmdldFllYXIgOiBhdmFpbGFibGVZZWFyc1swXTsKCiAgY29uc3QgeWVhcmx5TWFwID0gbmV3IE1hcDxudW1iZXIsIHsga206IG51bWJlcjsgd29ya291dHM6IG51bWJlciB9PigpOwogIGZvciAoY29uc3QgdyBvZiB3b3Jrb3V0cykgewogICAgY29uc3QgeSA9IG5ldyBEYXRlKHcuc3RhcnRBdCkuZ2V0RnVsbFllYXIoKTsKICAgIGlmIChzcG9ydCA9PT0gInN3aW0iICYmIHkgPCBjdXJyZW50WWVhcikgY29udGludWU7CiAgICBjb25zdCBwcmV2ID0geWVhcmx5TWFwLmdldCh5KSA/PyB7IGttOiAwLCB3b3Jrb3V0czogMCB9OwogICAgcHJldi5rbSArPSBrbSh3KTsKICAgIHByZXYud29ya291dHMgKz0gMTsKICAgIHllYXJseU1hcC5zZXQoeSwgcHJldik7CiAgfQoKICBjb25zdCB5ZWFybHkgPSBBcnJheS5mcm9tKHllYXJseU1hcC5lbnRyaWVzKCkpCiAgICAubWFwKChbeSwgZGF0YV0pID0+ICh7IHllYXI6IHksIGttOiB0b09uZURlYyhkYXRhLmttKSwgd29ya291dHM6IGRhdGEud29ya291dHMgfSkpCiAgICAuc29ydCgoYSwgYikgPT4gYS55ZWFyIC0gYi55ZWFyKTsKCiAgY29uc3QgcmFuZ2VXb3Jrb3V0cyA9IHdvcmtvdXRzLmZpbHRlcigodykgPT4gewogICAgY29uc3QgeSA9IG5ldyBEYXRlKHcuc3RhcnRBdCkuZ2V0RnVsbFllYXIoKTsKICAgIHJldHVybiB5ID49IHJhbmdlRnJvbVllYXIgJiYgeSA8PSByYW5nZVRvWWVhcjsKICB9KTsKICBjb25zdCBzZWxlY3RlZFllYXJXb3Jrb3V0cyA9IHdvcmtvdXRzLmZpbHRlcigodykgPT4gaW5ZZWFyKHcsIHNhZmVZZWFyKSk7CiAgY29uc3QgbW9udGhseSA9IEFycmF5LmZyb20oeyBsZW5ndGg6IDEyIH0pLm1hcCgoXywgaWR4KSA9PiB7CiAgICBjb25zdCBtb250aCA9IGlkeCArIDE7CiAgICBjb25zdCBtb250aFdvcmtvdXRzID0gc2VsZWN0ZWRZZWFyV29ya291dHMuZmlsdGVyKCh3KSA9PiBuZXcgRGF0ZSh3LnN0YXJ0QXQpLmdldE1vbnRoKCkgKyAxID09PSBtb250aCk7CiAgICBjb25zdCBtb250aEttID0gbW9udGhXb3Jrb3V0cy5yZWR1Y2UoKHN1bSwgdykgPT4gc3VtICsga20odyksIDApOwogICAgY29uc3QgcGFjZXMgPSBtb250aFdvcmtvdXRzLm1hcChwYWNlTWluUGVyS20pLmZpbHRlcigoeCk6IHggaXMgbnVtYmVyID0+IHggIT0gbnVsbCk7CiAgICBjb25zdCBhdmdQYWNlID0gcGFjZXMubGVuZ3RoID8gdG9PbmVEZWMocGFjZXMucmVkdWNlKChzLCBwKSA9PiBzICsgcCwgMCkgLyBwYWNlcy5sZW5ndGgpIDogbnVsbDsKICAgIHJldHVybiB7CiAgICAgIG1vbnRoLAogICAgICBrbTogdG9PbmVEZWMobW9udGhLbSksCiAgICAgIHdvcmtvdXRzOiBtb250aFdvcmtvdXRzLmxlbmd0aCwKICAgICAgYXZnUGFjZU1pblBlckttOiBhdmdQYWNlCiAgICB9OwogIH0pOwoKICBjb25zdCB5ZWFyS20gPSBtb250aGx5LnJlZHVjZSgoc3VtLCBtKSA9PiBzdW0gKyBtLmttLCAwKTsKICBjb25zdCBtb250aEttID0gbW9udGhseS5maW5kKChtKSA9PiBtLm1vbnRoID09PSBjdXJyZW50TW9udGgpPy5rbSA/PyAwOwogIGNvbnN0IGFsbFllYXJXb3Jrb3V0cyA9IHdvcmtvdXRzLmZpbHRlcigodykgPT4gaW5ZZWFyKHcsIGN1cnJlbnRZZWFyKSk7CiAgY29uc3QgY3VycmVudFllYXJLbSA9IHRvT25lRGVjKGFsbFllYXJXb3Jrb3V0cy5yZWR1Y2UoKHN1bSwgdykgPT4gc3VtICsga20odyksIDApKTsKCiAgY29uc3QgcmFuZ2VLbSA9IHRvT25lRGVjKHJhbmdlV29ya291dHMucmVkdWNlKChzdW0sIHcpID0+IHN1bSArIGttKHcpLCAwKSk7CiAgY29uc3QgcmFuZ2VXb3Jrb3V0c0NvdW50ID0gcmFuZ2VXb3Jrb3V0cy5sZW5ndGg7CiAgY29uc3QgcmFuZ2VQYWNlcyA9IHJhbmdlV29ya291dHMubWFwKHBhY2VNaW5QZXJLbSkuZmlsdGVyKCh4KTogeCBpcyBudW1iZXIgPT4geCAhPSBudWxsKTsKICBjb25zdCByYW5nZUF2Z1BhY2UgPSByYW5nZVBhY2VzLmxlbmd0aCA/IHRvT25lRGVjKHJhbmdlUGFjZXMucmVkdWNlKChzLCBwKSA9PiBzICsgcCwgMCkgLyByYW5nZVBhY2VzLmxlbmd0aCkgOiBudWxsOwoKICBjb25zdCBydW5Xb3Jrb3V0cyA9IHJhbmdlV29ya291dHMuZmlsdGVyKCh3KSA9PiB3LnNwb3J0ID09PSAicnVuIiAmJiAody5kaXN0YW5jZU0gPz8gMCkgPiAwKTsKCiAgY29uc3QgZGlzdGFuY2VCdWNrZXRzID0gWwogICAgeyBpZDogInNob3J0IiwgbGFiZWw6ICLXoteTIDUg16dcIteeIiwgbWluOiAwLCBtYXg6IDUgfSwKICAgIHsgaWQ6ICJtaWQiLCBsYWJlbDogIjUtMTAg16dcIteeIiwgbWluOiA1LCBtYXg6IDEwIH0sCiAgICB7IGlkOiAibG9uZyIsIGxhYmVsOiAiMTAtMTUg16dcIteeIiwgbWluOiAxMCwgbWF4OiAxNSB9LAogICAgeyBpZDogInZlcnlfbG9uZyIsIGxhYmVsOiAiMTUtMjEuMSDXp1wi154iLCBtaW46IDE1LCBtYXg6IDIxLjEgfSwKICAgIHsgaWQ6ICJ1bHRyYSIsIGxhYmVsOiAiMjEuMSsg16dcIteeIiwgbWluOiAyMS4xLCBtYXg6IE51bWJlci5QT1NJVElWRV9JTkZJTklUWSB9CiAgXTsKCiAgY29uc3QgZHVyYXRpb25CdWNrZXRzID0gWwogICAgeyBpZDogImQxIiwgbGFiZWw6ICLXoteTIDMwINeT16cnIiwgbWluOiAwLCBtYXg6IDMwIH0sCiAgICB7IGlkOiAiZDIiLCBsYWJlbDogIjMwLTQ1INeT16cnIiwgbWluOiAzMCwgbWF4OiA0NSB9LAogICAgeyBpZDogImQzIiwgbGFiZWw6ICI0NS02MCDXk9enJyIsIG1pbjogNDUsIG1heDogNjAgfSwKICAgIHsgaWQ6ICJkNCIsIGxhYmVsOiAiNjAtOTAg15PXpyciLCBtaW46IDYwLCBtYXg6IDkwIH0sCiAgICB7IGlkOiAiZDUiLCBsYWJlbDogIjkwKyDXk9enJyIsIG1pbjogOTAsIG1heDogTnVtYmVyLlBPU0lUSVZFX0lORklOSVRZIH0KICBdOwoKICBjb25zdCBwYWNlQnVja2V0cyA9IFsKICAgIHsgaWQ6ICJwMSIsIGxhYmVsOiAiPDQ6MzAg15PXpycv16dcIteeIiwgbWluOiAwLCBtYXg6IDQuNSB9LAogICAgeyBpZDogInAyIiwgbGFiZWw6ICI0OjMwLTU6MDAiLCBtaW46IDQuNSwgbWF4OiA1IH0sCiAgICB7IGlkOiAicDMiLCBsYWJlbDogIjU6MDAtNTozMCIsIG1pbjogNSwgbWF4OiA1LjUgfSwKICAgIHsgaWQ6ICJwNCIsIGxhYmVsOiAiNTozMC02OjAwIiwgbWluOiA1LjUsIG1heDogNiB9LAogICAgeyBpZDogInA1IiwgbGFiZWw6ICI2OjAwKyIsIG1pbjogNiwgbWF4OiBOdW1iZXIuUE9TSVRJVkVfSU5GSU5JVFkgfQogIF07CgogIGNvbnN0IHJ1bkJyZWFrZG93biA9IHsKICAgIGJ5RGlzdGFuY2U6IGRpc3RhbmNlQnVja2V0cy5tYXAoKGJ1Y2tldCkgPT4gewogICAgICBjb25zdCByb3dzID0gcnVuV29ya291dHMuZmlsdGVyKCh3KSA9PiB7CiAgICAgICAgY29uc3QgZCA9IGttKHcpOwogICAgICAgIHJldHVybiBkID49IGJ1Y2tldC5taW4gJiYgZCA8IGJ1Y2tldC5tYXg7CiAgICAgIH0pOwogICAgICByZXR1cm4gewogICAgICAgIGlkOiBidWNrZXQuaWQsCiAgICAgICAgbGFiZWw6IGJ1Y2tldC5sYWJlbCwKICAgICAgICBjb3VudDogcm93cy5sZW5ndGgsCiAgICAgICAga206IHRvT25lRGVjKHJvd3MucmVkdWNlKChzdW0sIHcpID0+IHN1bSArIGttKHcpLCAwKSkKICAgICAgfTsKICAgIH0pLAogICAgYnlEdXJhdGlvbjogZHVyYXRpb25CdWNrZXRzLm1hcCgoYnVja2V0KSA9PiB7CiAgICAgIGNvbnN0IHJvd3MgPSBydW5Xb3Jrb3V0cy5maWx0ZXIoKHcpID0+IHsKICAgICAgICBjb25zdCBkdXJhdGlvbk1pbiA9IHcuZHVyYXRpb25TZWMgLyA2MDsKICAgICAgICByZXR1cm4gZHVyYXRpb25NaW4gPj0gYnVja2V0Lm1pbiAmJiBkdXJhdGlvbk1pbiA8IGJ1Y2tldC5tYXg7CiAgICAgIH0pOwogICAgICByZXR1cm4gewogICAgICAgIGlkOiBidWNrZXQuaWQsCiAgICAgICAgbGFiZWw6IGJ1Y2tldC5sYWJlbCwKICAgICAgICBjb3VudDogcm93cy5sZW5ndGgKICAgICAgfTsKICAgIH0pLAogICAgYnlQYWNlOiBwYWNlQnVja2V0cy5tYXAoKGJ1Y2tldCkgPT4gewogICAgICBjb25zdCByb3dzID0gcnVuV29ya291dHMuZmlsdGVyKCh3KSA9PiB7CiAgICAgICAgY29uc3QgcCA9IHBhY2VNaW5QZXJLbSh3KTsKICAgICAgICBpZiAocCA9PSBudWxsKSByZXR1cm4gZmFsc2U7CiAgICAgICAgcmV0dXJuIHAgPj0gYnVja2V0Lm1pbiAmJiBwIDwgYnVja2V0Lm1heDsKICAgICAgfSk7CiAgICAgIHJldHVybiB7CiAgICAgICAgaWQ6IGJ1Y2tldC5pZCwKICAgICAgICBsYWJlbDogYnVja2V0LmxhYmVsLAogICAgICAgIGNvdW50OiByb3dzLmxlbmd0aAogICAgICB9OwogICAgfSkKICB9OwoKICBjb25zdCBydW5TaG9lc01hcCA9IG5ldyBNYXA8c3RyaW5nLCB7IGlkOiBzdHJpbmc7IG5hbWU6IHN0cmluZzsgcnVuczogbnVtYmVyOyBrbTogbnVtYmVyIH0+KCk7CiAgZm9yIChjb25zdCByb3cgb2YgcnVuV29ya291dHMpIHsKICAgIGNvbnN0IGlkID0gcm93LnNob2VJZCA/PyAidW5hc3NpZ25lZCI7CiAgICBjb25zdCBuYW1lID0gcm93LnNob2VOYW1lID8/ICLXnNec15Ag16nXmdeV15oiOwogICAgY29uc3QgcHJldiA9IHJ1blNob2VzTWFwLmdldChpZCkgPz8geyBpZCwgbmFtZSwgcnVuczogMCwga206IDAgfTsKICAgIHByZXYucnVucyArPSAxOwogICAgcHJldi5rbSArPSBrbShyb3cpOwogICAgcnVuU2hvZXNNYXAuc2V0KGlkLCBwcmV2KTsKICB9CiAgY29uc3QgcnVuU2hvZXMgPSBBcnJheS5mcm9tKHJ1blNob2VzTWFwLnZhbHVlcygpKQogICAgLm1hcCgocm93KSA9PiAoeyAuLi5yb3csIGttOiB0b09uZURlYyhyb3cua20pIH0pKQogICAgLnNvcnQoKGEsIGIpID0+IGIua20gLSBhLmttKTsKCiAgY29uc3QgdG9kYXlSdW5zID0gcnVuV29ya291dHMKICAgIC5maWx0ZXIoKHcpID0+IHcuc3RhcnRBdC5zbGljZSgwLCAxMCkgPT09IHRvZGF5KQogICAgLm1hcCgodykgPT4gKHsKICAgICAgaWQ6IHcuaWQsCiAgICAgIHN0YXJ0QXQ6IHcuc3RhcnRBdCwKICAgICAgZGlzdGFuY2VLbTogdG9PbmVEZWMoa20odykpLAogICAgICBkdXJhdGlvblNlYzogdy5kdXJhdGlvblNlYywKICAgICAgc2hvZU5hbWU6IHcuc2hvZU5hbWUgPz8gItec15zXkCDXqdeZ15XXmiIKICAgIH0pKTsKCiAgY29uc3QgcGJzID0gUEJfRElTVEFOQ0VTLm1hcCgodGFyZ2V0KSA9PiB7CiAgICBjb25zdCBpbmNsdWRlU2VnbWVudHMgPSB0YXJnZXQua2V5ID09PSAiMWsiIHx8IHRhcmdldC5rZXkgPT09ICIzayI7CiAgICBjb25zdCBbYmVzdF0gPSBnZXRUb3BFZmZvcnRzKHRhcmdldC5rZXksIDEsIGluY2x1ZGVTZWdtZW50cyk7CiAgICByZXR1cm4gewogICAgICBkaXN0YW5jZUtleTogdGFyZ2V0LmtleSwKICAgICAgZGlzdGFuY2VMYWJlbDogdGFyZ2V0LmxhYmVsLAogICAgICBkaXN0YW5jZUttOiB0YXJnZXQua20sCiAgICAgIGJlc3RUaW1lU2VjOiBiZXN0ID8gTWF0aC5yb3VuZChiZXN0LnRpbWVTZWMpIDogbnVsbCwKICAgICAgcGFjZU1pblBlckttOiBiZXN0ID8gdG9PbmVEZWMoYmVzdC5wYWNlTWluUGVyS20pIDogbnVsbCwKICAgICAgd29ya291dElkOiBiZXN0Py53b3Jrb3V0SWQgPz8gbnVsbCwKICAgICAgZGF0ZTogYmVzdD8ud29ya291dFN0YXJ0QXQ/LnNsaWNlKDAsIDEwKSA/PyBudWxsLAogICAgICBzb3VyY2U6IGJlc3Q/LnNvdXJjZSA/PyBudWxsCiAgICB9OwogIH0pOwoKICBjb25zdCByYW5nZVN1bW1hcnkgPSB7CiAgICB0b3RhbENvdW50OiByYW5nZVdvcmtvdXRzQ291bnQsCiAgICB0b3RhbEttOiByYW5nZUttLAogICAgYXZnUGFjZTogcmFuZ2VBdmdQYWNlCiAgfTsKCiAgcmV0dXJuIHsKICAgIHNwb3J0LAogICAgc2VsZWN0ZWRTaG9lSWQ6IHNob2VJZCwKICAgIGN1cnJlbnRZZWFyLAogICAgc2VsZWN0ZWRZZWFyOiBzYWZlWWVhciwKICAgIGF2YWlsYWJsZVllYXJzLAogICAgcmFuZ2VGcm9tWWVhciwKICAgIHJhbmdlVG9ZZWFyLAogICAgcmFuZ2VTdW1tYXJ5LAogICAgc3VtbWFyeTogewogICAgICBzZWxlY3RlZFllYXJLbTogdG9PbmVEZWMoeWVhckttKSwKICAgICAgY3VycmVudFllYXJLbSwKICAgICAgY3VycmVudE1vbnRoS206IHRvT25lRGVjKG1vbnRoS20pCiAgICB9LAogICAgeWVhcmx5LAogICAgbW9udGhseSwKICAgIHJ1bkJyZWFrZG93biwKICAgIHJ1blNob2VzLAogICAgdG9kYXlSdW5zLAogICAgcGJzCiAgfTsKfQo="}
+import { getTopEfforts, getWorkouts } from "@/lib/db";
+import { formatISODate } from "@/lib/date";
+import type { Sport, Workout } from "@/lib/types";
+import { PB_DISTANCES } from "@/lib/pb-engine";
+
+function km(workout: Workout) {
+  return Math.max(0, (workout.distanceM ?? 0) / 1000);
+}
+
+function paceMinPerKm(workout: Workout) {
+  const distanceKm = km(workout);
+  if (distanceKm <= 0 || workout.durationSec <= 0) return null;
+  return workout.durationSec / 60 / distanceKm;
+}
+
+function inYear(workout: Workout, year: number) {
+  return new Date(workout.startAt).getFullYear() === year;
+}
+
+function toOneDec(value: number) {
+  return Math.round(value * 10) / 10;
+}
+
+type BuildRangeArgs = {
+  sport: Sport;
+  year?: number;
+  fromYear?: number;
+  toYear?: number;
+  shoeId?: string | null;
+  allYears?: boolean;
+};
+
+export function buildAnalytics(args: BuildRangeArgs) {
+  const { sport, fromYear, toYear, shoeId, allYears } = args;
+  const today = formatISODate();
+  const todayDate = new Date(`${today}T00:00:00.000Z`);
+  const currentYear = todayDate.getUTCFullYear();
+  const currentMonth = todayDate.getUTCMonth() + 1;
+
+  const allSportWorkouts = getWorkouts(100000).filter((w) => w.sport === sport);
+  const workouts =
+    sport === "run" && shoeId
+      ? allSportWorkouts.filter((w) => (shoeId === "unassigned" ? !w.shoeId : (w.shoeId ?? "") === shoeId))
+      : allSportWorkouts;
+
+  const yearSet = new Set<number>();
+  for (const w of workouts) {
+    yearSet.add(new Date(w.startAt).getFullYear());
+  }
+
+  let availableYears = Array.from(yearSet).sort((a, b) => b - a);
+  if (sport === "swim") {
+    availableYears = availableYears.filter((y) => y >= currentYear);
+    if (!availableYears.length) availableYears = [currentYear];
+  }
+  if (!availableYears.length) availableYears = [currentYear];
+
+  const ascendingYears = [...availableYears].sort((a, b) => a - b);
+  const earliestYear = ascendingYears[0] ?? currentYear;
+  const latestYear = ascendingYears[ascendingYears.length - 1] ?? currentYear;
+
+  const defaultFromYear = allYears ? earliestYear : fromYear ?? latestYear;
+  const defaultToYear = allYears ? latestYear : toYear ?? defaultFromYear;
+  const rangeFromYear = Math.min(defaultFromYear, defaultToYear);
+  const rangeToYear = Math.max(defaultFromYear, defaultToYear);
+
+  const targetYear = args.year ?? rangeToYear;
+  const safeYear = availableYears.includes(targetYear) ? targetYear : availableYears[0];
+
+  const yearlyMap = new Map<number, { km: number; workouts: number }>();
+  for (const w of workouts) {
+    const y = new Date(w.startAt).getFullYear();
+    if (sport === "swim" && y < currentYear) continue;
+    const prev = yearlyMap.get(y) ?? { km: 0, workouts: 0 };
+    prev.km += km(w);
+    prev.workouts += 1;
+    yearlyMap.set(y, prev);
+  }
+
+  const yearly = Array.from(yearlyMap.entries())
+    .map(([y, data]) => ({ year: y, km: toOneDec(data.km), workouts: data.workouts }))
+    .sort((a, b) => a.year - b.year);
+
+  const rangeWorkouts = workouts.filter((w) => {
+    const y = new Date(w.startAt).getFullYear();
+    return y >= rangeFromYear && y <= rangeToYear;
+  });
+  const selectedYearWorkouts = workouts.filter((w) => inYear(w, safeYear));
+  const monthly = Array.from({ length: 12 }).map((_, idx) => {
+    const month = idx + 1;
+    const monthWorkouts = selectedYearWorkouts.filter((w) => new Date(w.startAt).getMonth() + 1 === month);
+    const monthKm = monthWorkouts.reduce((sum, w) => sum + km(w), 0);
+    const paces = monthWorkouts.map(paceMinPerKm).filter((x): x is number => x != null);
+    const avgPace = paces.length ? toOneDec(paces.reduce((s, p) => s + p, 0) / paces.length) : null;
+    return {
+      month,
+      km: toOneDec(monthKm),
+      workouts: monthWorkouts.length,
+      avgPaceMinPerKm: avgPace
+    };
+  });
+
+  const yearKm = monthly.reduce((sum, m) => sum + m.km, 0);
+  const monthKm = monthly.find((m) => m.month === currentMonth)?.km ?? 0;
+  const allYearWorkouts = workouts.filter((w) => inYear(w, currentYear));
+  const currentYearKm = toOneDec(allYearWorkouts.reduce((sum, w) => sum + km(w), 0));
+
+  const rangeKm = toOneDec(rangeWorkouts.reduce((sum, w) => sum + km(w), 0));
+  const rangeWorkoutsCount = rangeWorkouts.length;
+  const rangePaces = rangeWorkouts.map(paceMinPerKm).filter((x): x is number => x != null);
+  const rangeAvgPace = rangePaces.length ? toOneDec(rangePaces.reduce((s, p) => s + p, 0) / rangePaces.length) : null;
+
+  const runWorkouts = rangeWorkouts.filter((w) => w.sport === "run" && (w.distanceM ?? 0) > 0);
+
+  const distanceBuckets = [
+    { id: "short", label: "עד 5 ק\"מ", min: 0, max: 5 },
+    { id: "mid", label: "5-10 ק\"מ", min: 5, max: 10 },
+    { id: "long", label: "10-15 ק\"מ", min: 10, max: 15 },
+    { id: "very_long", label: "15-21.1 ק\"מ", min: 15, max: 21.1 },
+    { id: "ultra", label: "21.1+ ק\"מ", min: 21.1, max: Number.POSITIVE_INFINITY }
+  ];
+
+  const durationBuckets = [
+    { id: "d1", label: "עד 30 דק'", min: 0, max: 30 },
+    { id: "d2", label: "30-45 דק'", min: 30, max: 45 },
+    { id: "d3", label: "45-60 דק'", min: 45, max: 60 },
+    { id: "d4", label: "60-90 דק'", min: 60, max: 90 },
+    { id: "d5", label: "90+ דק'", min: 90, max: Number.POSITIVE_INFINITY }
+  ];
+
+  const paceBuckets = [
+    { id: "p1", label: "<4:30 דק'/ק\"מ", min: 0, max: 4.5 },
+    { id: "p2", label: "4:30-5:00", min: 4.5, max: 5 },
+    { id: "p3", label: "5:00-5:30", min: 5, max: 5.5 },
+    { id: "p4", label: "5:30-6:00", min: 5.5, max: 6 },
+    { id: "p5", label: "6:00+", min: 6, max: Number.POSITIVE_INFINITY }
+  ];
+
+  const runBreakdown = {
+    byDistance: distanceBuckets.map((bucket) => {
+      const rows = runWorkouts.filter((w) => {
+        const d = km(w);
+        return d >= bucket.min && d < bucket.max;
+      });
+      return {
+        id: bucket.id,
+        label: bucket.label,
+        count: rows.length,
+        km: toOneDec(rows.reduce((sum, w) => sum + km(w), 0))
+      };
+    }),
+    byDuration: durationBuckets.map((bucket) => {
+      const rows = runWorkouts.filter((w) => {
+        const durationMin = w.durationSec / 60;
+        return durationMin >= bucket.min && durationMin < bucket.max;
+      });
+      return {
+        id: bucket.id,
+        label: bucket.label,
+        count: rows.length
+      };
+    }),
+    byPace: paceBuckets.map((bucket) => {
+      const rows = runWorkouts.filter((w) => {
+        const p = paceMinPerKm(w);
+        if (p == null) return false;
+        return p >= bucket.min && p < bucket.max;
+      });
+      return {
+        id: bucket.id,
+        label: bucket.label,
+        count: rows.length
+      };
+    })
+  };
+
+  const runShoesMap = new Map<string, { id: string; name: string; runs: number; km: number }>();
+  for (const row of runWorkouts) {
+    const id = row.shoeId ?? "unassigned";
+    const name = row.shoeName ?? "ללא שיוך";
+    const prev = runShoesMap.get(id) ?? { id, name, runs: 0, km: 0 };
+    prev.runs += 1;
+    prev.km += km(row);
+    runShoesMap.set(id, prev);
+  }
+  const runShoes = Array.from(runShoesMap.values())
+    .map((row) => ({ ...row, km: toOneDec(row.km) }))
+    .sort((a, b) => b.km - a.km);
+
+  const todayRuns = runWorkouts
+    .filter((w) => w.startAt.slice(0, 10) === today)
+    .map((w) => ({
+      id: w.id,
+      startAt: w.startAt,
+      distanceKm: toOneDec(km(w)),
+      durationSec: w.durationSec,
+      shoeName: w.shoeName ?? "ללא שיוך"
+    }));
+
+  const pbs = PB_DISTANCES.map((target) => {
+    const includeSegments = target.key === "1k" || target.key === "3k";
+    const [best] = getTopEfforts(target.key, 1, includeSegments);
+    return {
+      distanceKey: target.key,
+      distanceLabel: target.label,
+      distanceKm: target.km,
+      bestTimeSec: best ? Math.round(best.timeSec) : null,
+      paceMinPerKm: best ? toOneDec(best.paceMinPerKm) : null,
+      workoutId: best?.workoutId ?? null,
+      date: best?.workoutStartAt?.slice(0, 10) ?? null,
+      source: best?.source ?? null
+    };
+  });
+
+  const rangeSummary = {
+    totalCount: rangeWorkoutsCount,
+    totalKm: rangeKm,
+    avgPace: rangeAvgPace
+  };
+
+  return {
+    sport,
+    selectedShoeId: shoeId,
+    currentYear,
+    selectedYear: safeYear,
+    availableYears,
+    rangeFromYear,
+    rangeToYear,
+    rangeSummary,
+    summary: {
+      selectedYearKm: toOneDec(yearKm),
+      currentYearKm,
+      currentMonthKm: toOneDec(monthKm)
+    },
+    yearly,
+    monthly,
+    runBreakdown,
+    runShoes,
+    todayRuns,
+    pbs
+  };
+}

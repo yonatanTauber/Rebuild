@@ -1,1 +1,97 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgdXNlTWVtbywgdXNlU3RhdGUgfSBmcm9tICJyZWFjdCI7CgpmdW5jdGlvbiBmb3JtYXRDbG9jayhzZWM6IG51bWJlcikgewogIGNvbnN0IHJvdW5kZWQgPSBNYXRoLm1heCgwLCBNYXRoLnJvdW5kKHNlYykpOwogIGNvbnN0IGhvdXJzID0gTWF0aC5mbG9vcihyb3VuZGVkIC8gMzYwMCk7CiAgY29uc3QgbWludXRlcyA9IE1hdGguZmxvb3IoKHJvdW5kZWQgJSAzNjAwKSAvIDYwKTsKICBjb25zdCBzZWNvbmRzID0gcm91bmRlZCAlIDYwOwogIGlmIChob3VycyA+IDApIHJldHVybiBgJHtob3Vyc306JHtTdHJpbmcobWludXRlcykucGFkU3RhcnQoMiwgIjAiKX06JHtTdHJpbmcoc2Vjb25kcykucGFkU3RhcnQoMiwgIjAiKX1gOwogIHJldHVybiBgJHttaW51dGVzfToke1N0cmluZyhzZWNvbmRzKS5wYWRTdGFydCgyLCAiMCIpfWA7Cn0KCmZ1bmN0aW9uIHBhcnNlQ2xvY2tJbnB1dCh2YWx1ZTogc3RyaW5nKSB7CiAgY29uc3QgcGFydHMgPSB2YWx1ZQogICAgLnRyaW0oKQogICAgLnNwbGl0KCI6IikKICAgIC5tYXAoKHBhcnQpID0+IHBhcnQudHJpbSgpKQogICAgLmZpbHRlcihCb29sZWFuKTsKICBpZiAocGFydHMubGVuZ3RoIDwgMiB8fCBwYXJ0cy5sZW5ndGggPiAzKSByZXR1cm4gbnVsbDsKICBjb25zdCBudW1zID0gcGFydHMubWFwKChwYXJ0KSA9PiBOdW1iZXIocGFydCkpOwogIGlmIChudW1zLnNvbWUoKG4pID0+ICFOdW1iZXIuaXNGaW5pdGUobikgfHwgbiA8IDApKSByZXR1cm4gbnVsbDsKICBpZiAocGFydHMubGVuZ3RoID09PSAyKSB7CiAgICBjb25zdCBbbSwgc10gPSBudW1zOwogICAgcmV0dXJuIE1hdGgucm91bmQobSAqIDYwICsgcyk7CiAgfQogIGNvbnN0IFtoLCBtLCBzXSA9IG51bXM7CiAgcmV0dXJuIE1hdGgucm91bmQoaCAqIDM2MDAgKyBtICogNjAgKyBzKTsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gV29ya291dE9mZmljaWFsRHVyYXRpb25FZGl0b3IoewogIHdvcmtvdXRJZCwKICBjdXJyZW50T2ZmaWNpYWxEdXJhdGlvblNlYwp9OiB7CiAgd29ya291dElkOiBzdHJpbmc7CiAgY3VycmVudE9mZmljaWFsRHVyYXRpb25TZWM6IG51bWJlcjsKfSkgewogIGNvbnN0IFtlZGl0aW5nLCBzZXRFZGl0aW5nXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbdmFsdWUsIHNldFZhbHVlXSA9IHVzZVN0YXRlKGZvcm1hdENsb2NrKGN1cnJlbnRPZmZpY2lhbER1cmF0aW9uU2VjKSk7CiAgY29uc3QgW3NhdmluZywgc2V0U2F2aW5nXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbZXJyb3IsIHNldEVycm9yXSA9IHVzZVN0YXRlKCIiKTsKCiAgY29uc3QgcGFyc2VkID0gdXNlTWVtbygoKSA9PiBwYXJzZUNsb2NrSW5wdXQodmFsdWUpLCBbdmFsdWVdKTsKCiAgYXN5bmMgZnVuY3Rpb24gc2F2ZSgpIHsKICAgIGlmIChwYXJzZWQgPT0gbnVsbCB8fCBwYXJzZWQgPCA2MCkgewogICAgICBzZXRFcnJvcigi16TXldeo157XmCDXltee158g15zXkCDXqten15nXny4g15zXk9eV15LXnteUOiA0ODo0MiDXkNeVIDE6MTI6MDUiKTsKICAgICAgcmV0dXJuOwogICAgfQogICAgc2V0U2F2aW5nKHRydWUpOwogICAgc2V0RXJyb3IoIiIpOwogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goYC9hcGkvd29ya291dHMvJHt3b3Jrb3V0SWR9L29mZmljaWFsLWR1cmF0aW9uYCwgewogICAgICAgIG1ldGhvZDogIlBPU1QiLAogICAgICAgIGhlYWRlcnM6IHsgIkNvbnRlbnQtVHlwZSI6ICJhcHBsaWNhdGlvbi9qc29uIiB9LAogICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHsgb2ZmaWNpYWxEdXJhdGlvblNlYzogcGFyc2VkIH0pCiAgICAgIH0pOwogICAgICBpZiAoIXJlcy5vaykgewogICAgICAgIHNldEVycm9yKCLXqdee15nXqNeqINeW157XnyDXqNep157XmSDXoNeb16nXnNeULiIpOwogICAgICAgIHJldHVybjsKICAgICAgfQogICAgICBzZXRFZGl0aW5nKGZhbHNlKTsKICAgICAgd2luZG93LmxvY2F0aW9uLnJlbG9hZCgpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0U2F2aW5nKGZhbHNlKTsKICAgIH0KICB9CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ib2ZmaWNpYWwtdGltZS1pbmxpbmUiPgogICAgICB7IWVkaXRpbmcgPyAoCiAgICAgICAgPGJ1dHRvbiB0eXBlPSJidXR0b24iIGNsYXNzTmFtZT0iY2hvaWNlLWJ0biBjb21wYWN0IiBvbkNsaWNrPXsoKSA9PiBzZXRFZGl0aW5nKHRydWUpfT4KICAgICAgICAgINei16jXldeaINeW157XnyDXqNep157XmQogICAgICAgIDwvYnV0dG9uPgogICAgICApIDogKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJvZmZpY2lhbC10aW1lLWVkaXQiPgogICAgICAgICAgPGlucHV0IHZhbHVlPXt2YWx1ZX0gb25DaGFuZ2U9eyhldmVudCkgPT4gc2V0VmFsdWUoZXZlbnQudGFyZ2V0LnZhbHVlKX0gcGxhY2Vob2xkZXI9IteT15XXktee15Q6IDQ4OjQyIiAvPgogICAgICAgICAgPGJ1dHRvbiB0eXBlPSJidXR0b24iIGNsYXNzTmFtZT0iY2hvaWNlLWJ0biBjb21wYWN0IHNlbGVjdGVkIiBvbkNsaWNrPXtzYXZlfSBkaXNhYmxlZD17c2F2aW5nfT4KICAgICAgICAgICAge3NhdmluZyA/ICLXqdeV157XqC4uLiIgOiAi16nXnteV16gifQogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgIHR5cGU9ImJ1dHRvbiIKICAgICAgICAgICAgY2xhc3NOYW1lPSJjaG9pY2UtYnRuIGNvbXBhY3QiCiAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHsKICAgICAgICAgICAgICBzZXRFZGl0aW5nKGZhbHNlKTsKICAgICAgICAgICAgICBzZXRFcnJvcigiIik7CiAgICAgICAgICAgICAgc2V0VmFsdWUoZm9ybWF0Q2xvY2soY3VycmVudE9mZmljaWFsRHVyYXRpb25TZWMpKTsKICAgICAgICAgICAgfX0KICAgICAgICAgID4KICAgICAgICAgICAg16HXkteV16gKICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgIDwvZGl2PgogICAgICApfQogICAgICB7ZXJyb3IgPyA8c21hbGwgY2xhc3NOYW1lPSJub3RlIj57ZXJyb3J9PC9zbWFsbD4gOiBudWxsfQogICAgPC9kaXY+CiAgKTsKfQo="}
+"use client";
+
+import { useMemo, useState } from "react";
+
+function formatClock(sec: number) {
+  const rounded = Math.max(0, Math.round(sec));
+  const hours = Math.floor(rounded / 3600);
+  const minutes = Math.floor((rounded % 3600) / 60);
+  const seconds = rounded % 60;
+  if (hours > 0) return `${hours}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  return `${minutes}:${String(seconds).padStart(2, "0")}`;
+}
+
+function parseClockInput(value: string) {
+  const parts = value
+    .trim()
+    .split(":")
+    .map((part) => part.trim())
+    .filter(Boolean);
+  if (parts.length < 2 || parts.length > 3) return null;
+  const nums = parts.map((part) => Number(part));
+  if (nums.some((n) => !Number.isFinite(n) || n < 0)) return null;
+  if (parts.length === 2) {
+    const [m, s] = nums;
+    return Math.round(m * 60 + s);
+  }
+  const [h, m, s] = nums;
+  return Math.round(h * 3600 + m * 60 + s);
+}
+
+export default function WorkoutOfficialDurationEditor({
+  workoutId,
+  currentOfficialDurationSec
+}: {
+  workoutId: string;
+  currentOfficialDurationSec: number;
+}) {
+  const [editing, setEditing] = useState(false);
+  const [value, setValue] = useState(formatClock(currentOfficialDurationSec));
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState("");
+
+  const parsed = useMemo(() => parseClockInput(value), [value]);
+
+  async function save() {
+    if (parsed == null || parsed < 60) {
+      setError("פורמט זמן לא תקין. לדוגמה: 48:42 או 1:12:05");
+      return;
+    }
+    setSaving(true);
+    setError("");
+    try {
+      const res = await fetch(`/api/workouts/${workoutId}/official-duration`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ officialDurationSec: parsed })
+      });
+      if (!res.ok) {
+        setError("שמירת זמן רשמי נכשלה.");
+        return;
+      }
+      setEditing(false);
+      window.location.reload();
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  return (
+    <div className="official-time-inline">
+      {!editing ? (
+        <button type="button" className="choice-btn compact" onClick={() => setEditing(true)}>
+          ערוך זמן רשמי
+        </button>
+      ) : (
+        <div className="official-time-edit">
+          <input value={value} onChange={(event) => setValue(event.target.value)} placeholder="דוגמה: 48:42" />
+          <button type="button" className="choice-btn compact selected" onClick={save} disabled={saving}>
+            {saving ? "שומר..." : "שמור"}
+          </button>
+          <button
+            type="button"
+            className="choice-btn compact"
+            onClick={() => {
+              setEditing(false);
+              setError("");
+              setValue(formatClock(currentOfficialDurationSec));
+            }}
+          >
+            סגור
+          </button>
+        </div>
+      )}
+      {error ? <small className="note">{error}</small> : null}
+    </div>
+  );
+}

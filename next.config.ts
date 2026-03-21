@@ -1,1 +1,7 @@
-{"data":"aW1wb3J0IHR5cGUgeyBOZXh0Q29uZmlnIH0gZnJvbSAibmV4dCI7Cgpjb25zdCBuZXh0Q29uZmlnOiBOZXh0Q29uZmlnID0gewogIHR5cGVkUm91dGVzOiB0cnVlCn07CgpleHBvcnQgZGVmYXVsdCBuZXh0Q29uZmlnOwo="}
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  typedRoutes: true
+};
+
+export default nextConfig;

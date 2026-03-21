@@ -1,1 +1,220 @@
-{"data":"ZXhwb3J0IHR5cGUgU3BvcnQgPSAicnVuIiB8ICJiaWtlIiB8ICJzd2ltIiB8ICJzdHJlbmd0aCI7CgpleHBvcnQgdHlwZSBXb3Jrb3V0ID0gewogIGlkOiBzdHJpbmc7CiAgc291cmNlOiAic3RyYXZhIiB8ICJoZWFsdGhmaXQiIHwgImJhdmVsIiB8ICJzbWFzaHJ1biI7CiAgdXNlcklkPzogc3RyaW5nIHwgbnVsbDsKICBzcG9ydDogU3BvcnQ7CiAgc3RhcnRBdDogc3RyaW5nOwogIGR1cmF0aW9uU2VjOiBudW1iZXI7CiAgZGlzdGFuY2VNPzogbnVtYmVyIHwgbnVsbDsKICBhdmdIcj86IG51bWJlciB8IG51bGw7CiAgbWF4SHI/OiBudW1iZXIgfCBudWxsOwogIGVsZXZhdGlvbk0/OiBudW1iZXIgfCBudWxsOwogIHBvd2VyQXZnPzogbnVtYmVyIHwgbnVsbDsKICBwYWNlQXZnPzogbnVtYmVyIHwgbnVsbDsKICB0c3NMaWtlOiBudW1iZXI7CiAgdHJpbXA6IG51bWJlcjsKICBjYW5vbmljYWxLZXk/OiBzdHJpbmcgfCBudWxsOwogIHJhd0ZpbGVIYXNoOiBzdHJpbmc7CiAgcmF3RmlsZVBhdGg/OiBzdHJpbmcgfCBudWxsOwogIHNob2VJZD86IHN0cmluZyB8IG51bGw7CiAgc2hvZUttQXRBc3NpZ24/OiBudW1iZXIgfCBudWxsOwogIHNob2VOYW1lPzogc3RyaW5nIHwgbnVsbDsKfTsKCmV4cG9ydCB0eXBlIFdvcmtvdXRGdWVsaW5nRW50cnkgPSB7CiAgaWQ6IHN0cmluZzsKICB3b3Jrb3V0SWQ6IHN0cmluZzsKICBpdGVtTmFtZTogc3RyaW5nOwogIHF1YW50aXR5OiBudW1iZXI7CiAgdW5pdExhYmVsOiBzdHJpbmc7CiAgY2FyYnNHOiBudW1iZXI7CiAga2NhbDogbnVtYmVyIHwgbnVsbDsKICBjYWZmZWluZU1nOiBudW1iZXIgfCBudWxsOwogIG5vdGVzOiBzdHJpbmcgfCBudWxsOwogIGNyZWF0ZWRBdDogc3RyaW5nOwogIHVwZGF0ZWRBdDogc3RyaW5nOwp9OwoKZXhwb3J0IHR5cGUgUnVubmluZ1Nob2VCcmFuZCA9IHN0cmluZzsKCmV4cG9ydCB0eXBlIFJ1bm5pbmdTaG9lID0gewogIGlkOiBzdHJpbmc7CiAgbmFtZTogc3RyaW5nOwogIGJyYW5kOiBSdW5uaW5nU2hvZUJyYW5kOwogIHN0YXJ0S206IG51bWJlcjsKICB0YXJnZXRLbTogbnVtYmVyOwogIGlzRGVmYXVsdDogYm9vbGVhbjsKICBhY3RpdmU6IGJvb2xlYW47CiAgY3JlYXRlZEF0OiBzdHJpbmc7CiAgdXBkYXRlZEF0OiBzdHJpbmc7Cn07CgpleHBvcnQgdHlwZSBEYWlseVJlY292ZXJ5ID0gewogIGRhdGU6IHN0cmluZzsKICBycGU6IG51bWJlcjsKICBzbGVlcEhvdXJzPzogbnVtYmVyIHwgbnVsbDsKICBzbGVlcFF1YWxpdHk/OiBudW1iZXIgfCBudWxsOwogIGhydj86IG51bWJlciB8IG51bGw7CiAgcmVzdGluZ0hyPzogbnVtYmVyIHwgbnVsbDsKICBtb29kPzogbnVtYmVyIHwgbnVsbDsKICBzb3JlbmVzc0dsb2JhbD86IG51bWJlciB8IG51bGw7CiAgc29yZW5lc3NCeUFyZWE/OiBzdHJpbmcgfCBudWxsOwogIG5vdGVzPzogc3RyaW5nIHwgbnVsbDsKfTsKCmV4cG9ydCB0eXBlIExvZ2ljUnVsZXMgPSB7CiAgd2Vla2x5VGltZUJ1ZGdldEhvdXJzOiBudW1iZXI7CiAgcnVuUHJpb3JpdHk6IG51bWJlcjsKICBjcm9zc1RyYWluaW5nV2VpZ2h0OiBudW1iZXI7CiAgaGFyZERheXNQZXJXZWVrOiBudW1iZXI7CiAgbm9IYXJkSWZMb3dSZWFkaW5lc3M6IG51bWJlcjsKICBtaW5FYXN5QmV0d2VlbkhhcmQ6IG51bWJlcjsKICBpbmp1cnlGbGFnczogc3RyaW5nW107Cn07CgpleHBvcnQgdHlwZSBTY29yZVN1bW1hcnkgPSB7CiAgZml0bmVzc1Njb3JlOiBudW1iZXI7CiAgZmF0aWd1ZVNjb3JlOiBudW1iZXI7CiAgcmVhZGluZXNzU2NvcmU6IG51bWJlcjsKICBhdGw3OiBudW1iZXI7CiAgY3RsNDI6IG51bWJlcjsKICB0c2I6IG51bWJlcjsKICBzdGF0ZVRhZzogIm92ZXJ0cmFpbmluZ19yaXNrIiB8ICJvbl90aGVfc3BvdCIgfCAicGVha2luZyIgfCAibG9zaW5nX21vbWVudHVtIjsKICBzdGF0ZUxhYmVsOiBzdHJpbmc7CiAgc3RhdGVIaW50OiBzdHJpbmc7Cn07CgpleHBvcnQgdHlwZSBSZWNvbW1lbmRhdGlvbiA9IHsKICB3b3Jrb3V0VHlwZTogc3RyaW5nOwogIGR1cmF0aW9uTWluOiBudW1iZXI7CiAgaW50ZW5zaXR5Wm9uZTogc3RyaW5nOwogIGludGVuc2l0eUV4cGxhbmF0aW9uOiBzdHJpbmc7CiAgYWx0ZXJuYXRpdmVzOiBzdHJpbmdbXTsKICBleHBsYW5hdGlvbkZhY3RvcnM6IHN0cmluZ1tdOwogIGNvbmZpZGVuY2U6IG51bWJlcjsKICBsb25nRXhwbGFuYXRpb246IHN0cmluZzsKICByYXRpb25hbGVEZXRhaWxzOiBzdHJpbmdbXTsKICBwcmltYXJ5U2Vzc2lvbjogewogICAgc3BvcnQ6ICJydW4iIHwgImJpa2UiIHwgInN3aW0iOwogICAgc2Vzc2lvbk5hbWU6IHN0cmluZzsKICAgIGR1cmF0aW9uTWluOiBudW1iZXI7CiAgICB0YXJnZXQ6IHN0cmluZzsKICAgIHN0cnVjdHVyZTogc3RyaW5nOwogICAgd2h5OiBzdHJpbmc7CiAgfTsKICBhbHRlcm5hdGl2ZVNlc3Npb25zOiBBcnJheTx7CiAgICBzcG9ydDogInJ1biIgfCAiYmlrZSIgfCAic3dpbSI7CiAgICBzZXNzaW9uTmFtZTogc3RyaW5nOwogICAgZHVyYXRpb25NaW46IG51bWJlcjsKICAgIHRhcmdldDogc3RyaW5nOwogICAgc3RydWN0dXJlOiBzdHJpbmc7CiAgICB3aHk6IHN0cmluZzsKICB9PjsKICBkYXlTdGF0dXM/OiAidGFyZ2V0X2RvbmUiIHwgImNhbl9hZGRfc2hvcnQiIHwgIm1vcmVfcG9zc2libGUiOwogIGRheVN0YXR1c1RleHQ/OiBzdHJpbmc7Cn07CgpleHBvcnQgdHlwZSBBdGhsZXRlUHJvZmlsZSA9IHsKICByZXN0aW5nSHJCYXNlbGluZT86IG51bWJlciB8IG51bGw7CiAgaHJ2QmFzZWxpbmU/OiBudW1iZXIgfCBudWxsOwogIHZvMk1heEJhc2VsaW5lPzogbnVtYmVyIHwgbnVsbDsKICBzbGVlcEhvdXJzQmFzZWxpbmU/OiBudW1iZXIgfCBudWxsOwogIGltcG9ydGVkQXQ/OiBzdHJpbmcgfCBudWxsOwogIHNvdXJjZVN1bW1hcnlKc29uPzogc3RyaW5nIHwgbnVsbDsKfTsKCmV4cG9ydCB0eXBlIFBCRGlzdGFuY2VLZXkgPSAiMWsiIHwgIjNrIiB8ICI1ayIgfCAiMTBrIiB8ICIxNWsiIHwgImhhbGYiIHwgIjI1ayIgfCAiMzBrIjsKZXhwb3J0IHR5cGUgRWZmb3J0U291cmNlID0gIndob2xlX3dvcmtvdXQiIHwgInJvbGxpbmdfc2VnbWVudCI7CgpleHBvcnQgdHlwZSBUb3BFZmZvcnQgPSB7CiAgaWQ6IHN0cmluZzsKICBkaXN0YW5jZUtleTogUEJEaXN0YW5jZUtleTsKICBkaXN0YW5jZUttOiBudW1iZXI7CiAgdGltZVNlYzogbnVtYmVyOwogIHBhY2VNaW5QZXJLbTogbnVtYmVyOwogIHdvcmtvdXRJZDogc3RyaW5nOwogIHdvcmtvdXRTdGFydEF0OiBzdHJpbmc7CiAgc291cmNlOiBFZmZvcnRTb3VyY2U7CiAgc2VnbWVudFN0YXJ0U2VjOiBudW1iZXIgfCBudWxsOwogIHNlZ21lbnRFbmRTZWM6IG51bWJlciB8IG51bGw7Cn07CgpleHBvcnQgdHlwZSBOdXRyaXRpb25EYWlseVBsYW4gPSB7CiAgZGF0ZTogc3RyaW5nOwogIGNhcmJzRzogbnVtYmVyOwogIHByb3RlaW5HOiBudW1iZXI7CiAgZmF0RzogbnVtYmVyOwogIHRvdGFsS2NhbD86IG51bWJlcjsKICBoeWRyYXRpb25NbDogbnVtYmVyOwogIHByZVdvcmtvdXROb3RlOiBzdHJpbmc7CiAgcG9zdFdvcmtvdXROb3RlOiBzdHJpbmc7CiAgcmF0aW9uYWxlSnNvbjogc3RyaW5nOwogIHVwZGF0ZWRBdDogc3RyaW5nOwp9OwoKZXhwb3J0IHR5cGUgTWVhbFNsb3QgPSAiYnJlYWtmYXN0IiB8ICJwcmVfcnVuIiB8ICJsdW5jaCIgfCAiZGlubmVyIiB8ICJzbmFjayIgfCAiZHJpbmtzIjsKZXhwb3J0IHR5cGUgTnV0cml0aW9uVW5pdCA9ICJnIiB8ICJtbCIgfCAidW5pdCIgfCAidGJzcCIgfCAidHNwIjsKZXhwb3J0IHR5cGUgTnV0cml0aW9uSW5ncmVkaWVudENhdGVnb3J5ID0KICB8ICJwcm90ZWluIgogIHwgImNhcmIiCiAgfCAiZmF0IgogIHwgInN3ZWV0IgogIHwgInZlZ2V0YWJsZSIKICB8ICJmcnVpdCIKICB8ICJkYWlyeSIKICB8ICJoeWRyYXRpb24iCiAgfCAibWl4ZWQiOwoKZXhwb3J0IHR5cGUgTnV0cml0aW9uSW5ncmVkaWVudCA9IHsKICBpZDogc3RyaW5nOwogIG5hbWU6IHN0cmluZzsKICBjYXRlZ29yeTogTnV0cml0aW9uSW5ncmVkaWVudENhdGVnb3J5OwogIGtjYWxQZXIxMDA6IG51bWJlcjsKICBwcm90ZWluUGVyMTAwOiBudW1iZXI7CiAgY2FyYnNQZXIxMDA6IG51bWJlcjsKICBmYXRQZXIxMDA6IG51bWJlcjsKICBkZWZhdWx0VW5pdDogTnV0cml0aW9uVW5pdDsKICBncmFtc1BlclVuaXQ6IG51bWJlcjsKICBpc0J1aWx0SW46IGJvb2xlYW47CiAgY3JlYXRlZEF0OiBzdHJpbmc7CiAgdXBkYXRlZEF0OiBzdHJpbmc7Cn07CgpleHBvcnQgdHlwZSBOdXRyaXRpb25QYW50cnlJdGVtID0gewogIGlkOiBzdHJpbmc7CiAgZGF0ZTogc3RyaW5nOwogIGluZ3JlZGllbnRJZDogc3RyaW5nOwogIHF1YW50aXR5OiBudW1iZXI7CiAgdW5pdDogTnV0cml0aW9uVW5pdDsKICBncmFtc0VmZmVjdGl2ZTogbnVtYmVyOwogIGluZ3JlZGllbnROYW1lOiBzdHJpbmc7CiAgaW5ncmVkaWVudENhdGVnb3J5OiBOdXRyaXRpb25JbmdyZWRpZW50Q2F0ZWdvcnk7Cn07CgpleHBvcnQgdHlwZSBOdXRyaXRpb25NZWFsSXRlbSA9IHsKICBpbmdyZWRpZW50SWQ6IHN0cmluZzsKICBuYW1lOiBzdHJpbmc7CiAgZ3JhbXM6IG51bWJlcjsKICBxdWFudGl0eTogbnVtYmVyOwogIHVuaXQ6IE51dHJpdGlvblVuaXQ7CiAga2NhbDogbnVtYmVyOwogIHByb3RlaW5HOiBudW1iZXI7CiAgY2FyYnNHOiBudW1iZXI7CiAgZmF0RzogbnVtYmVyOwp9OwoKZXhwb3J0IHR5cGUgTnV0cml0aW9uTWVhbCA9IHsKICBpZDogc3RyaW5nOwogIGRhdGU6IHN0cmluZzsKICBzbG90OiBNZWFsU2xvdDsKICB0aXRsZTogc3RyaW5nOwogIGl0ZW1zOiBOdXRyaXRpb25NZWFsSXRlbVtdOwogIHRvdGFsS2NhbDogbnVtYmVyOwogIHByb3RlaW5HOiBudW1iZXI7CiAgY2FyYnNHOiBudW1iZXI7CiAgZmF0RzogbnVtYmVyOwogIGNvbXByb21pc2VOb3RlPzogc3RyaW5nOwogIGFjY2VwdGVkPzogYm9vbGVhbiB8IG51bGw7Cn07Cg=="}
+export type Sport = "run" | "bike" | "swim" | "strength";
+
+export type Workout = {
+  id: string;
+  source: "strava" | "healthfit" | "bavel" | "smashrun";
+  userId?: string | null;
+  sport: Sport;
+  startAt: string;
+  durationSec: number;
+  distanceM?: number | null;
+  avgHr?: number | null;
+  maxHr?: number | null;
+  elevationM?: number | null;
+  powerAvg?: number | null;
+  paceAvg?: number | null;
+  tssLike: number;
+  trimp: number;
+  canonicalKey?: string | null;
+  rawFileHash: string;
+  rawFilePath?: string | null;
+  shoeId?: string | null;
+  shoeKmAtAssign?: number | null;
+  shoeName?: string | null;
+};
+
+export type WorkoutFuelingEntry = {
+  id: string;
+  workoutId: string;
+  itemName: string;
+  quantity: number;
+  unitLabel: string;
+  carbsG: number;
+  kcal: number | null;
+  caffeineMg: number | null;
+  notes: string | null;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type RunningShoeBrand = string;
+
+export type RunningShoe = {
+  id: string;
+  name: string;
+  brand: RunningShoeBrand;
+  startKm: number;
+  targetKm: number;
+  isDefault: boolean;
+  active: boolean;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type DailyRecovery = {
+  date: string;
+  rpe: number;
+  sleepHours?: number | null;
+  sleepQuality?: number | null;
+  hrv?: number | null;
+  restingHr?: number | null;
+  mood?: number | null;
+  sorenessGlobal?: number | null;
+  sorenessByArea?: string | null;
+  notes?: string | null;
+};
+
+export type LogicRules = {
+  weeklyTimeBudgetHours: number;
+  runPriority: number;
+  crossTrainingWeight: number;
+  hardDaysPerWeek: number;
+  noHardIfLowReadiness: number;
+  minEasyBetweenHard: number;
+  injuryFlags: string[];
+};
+
+export type ScoreSummary = {
+  fitnessScore: number;
+  fatigueScore: number;
+  readinessScore: number;
+  atl7: number;
+  ctl42: number;
+  tsb: number;
+  stateTag: "overtraining_risk" | "on_the_spot" | "peaking" | "losing_momentum";
+  stateLabel: string;
+  stateHint: string;
+};
+
+export type Recommendation = {
+  workoutType: string;
+  durationMin: number;
+  intensityZone: string;
+  intensityExplanation: string;
+  alternatives: string[];
+  explanationFactors: string[];
+  confidence: number;
+  longExplanation: string;
+  rationaleDetails: string[];
+  primarySession: {
+    sport: "run" | "bike" | "swim";
+    sessionName: string;
+    durationMin: number;
+    target: string;
+    structure: string;
+    why: string;
+  };
+  alternativeSessions: Array<{
+    sport: "run" | "bike" | "swim";
+    sessionName: string;
+    durationMin: number;
+    target: string;
+    structure: string;
+    why: string;
+  }>;
+  dayStatus?: "target_done" | "can_add_short" | "more_possible";
+  dayStatusText?: string;
+};
+
+export type AthleteProfile = {
+  restingHrBaseline?: number | null;
+  hrvBaseline?: number | null;
+  vo2MaxBaseline?: number | null;
+  sleepHoursBaseline?: number | null;
+  importedAt?: string | null;
+  sourceSummaryJson?: string | null;
+};
+
+export type PBDistanceKey = "1k" | "3k" | "5k" | "10k" | "15k" | "half" | "25k" | "30k";
+export type EffortSource = "whole_workout" | "rolling_segment";
+
+export type TopEffort = {
+  id: string;
+  distanceKey: PBDistanceKey;
+  distanceKm: number;
+  timeSec: number;
+  paceMinPerKm: number;
+  workoutId: string;
+  workoutStartAt: string;
+  source: EffortSource;
+  segmentStartSec: number | null;
+  segmentEndSec: number | null;
+};
+
+export type NutritionDailyPlan = {
+  date: string;
+  carbsG: number;
+  proteinG: number;
+  fatG: number;
+  totalKcal?: number;
+  hydrationMl: number;
+  preWorkoutNote: string;
+  postWorkoutNote: string;
+  rationaleJson: string;
+  updatedAt: string;
+};
+
+export type MealSlot = "breakfast" | "pre_run" | "lunch" | "dinner" | "snack" | "drinks";
+export type NutritionUnit = "g" | "ml" | "unit" | "tbsp" | "tsp";
+export type NutritionIngredientCategory =
+  | "protein"
+  | "carb"
+  | "fat"
+  | "sweet"
+  | "vegetable"
+  | "fruit"
+  | "dairy"
+  | "hydration"
+  | "mixed";
+
+export type NutritionIngredient = {
+  id: string;
+  name: string;
+  category: NutritionIngredientCategory;
+  kcalPer100: number;
+  proteinPer100: number;
+  carbsPer100: number;
+  fatPer100: number;
+  defaultUnit: NutritionUnit;
+  gramsPerUnit: number;
+  isBuiltIn: boolean;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type NutritionPantryItem = {
+  id: string;
+  date: string;
+  ingredientId: string;
+  quantity: number;
+  unit: NutritionUnit;
+  gramsEffective: number;
+  ingredientName: string;
+  ingredientCategory: NutritionIngredientCategory;
+};
+
+export type NutritionMealItem = {
+  ingredientId: string;
+  name: string;
+  grams: number;
+  quantity: number;
+  unit: NutritionUnit;
+  kcal: number;
+  proteinG: number;
+  carbsG: number;
+  fatG: number;
+};
+
+export type NutritionMeal = {
+  id: string;
+  date: string;
+  slot: MealSlot;
+  title: string;
+  items: NutritionMealItem[];
+  totalKcal: number;
+  proteinG: number;
+  carbsG: number;
+  fatG: number;
+  compromiseNote?: string;
+  accepted?: boolean | null;
+};

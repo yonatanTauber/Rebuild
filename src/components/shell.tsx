@@ -1,1 +1,75 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IExpbmsgZnJvbSAibmV4dC9saW5rIjsKaW1wb3J0IHR5cGUgeyBSb3V0ZSB9IGZyb20gIm5leHQiOwppbXBvcnQgeyB1c2VQYXRobmFtZSB9IGZyb20gIm5leHQvbmF2aWdhdGlvbiI7CmltcG9ydCB7IHVzZUVmZmVjdCwgdXNlUmVmLCB0eXBlIFJlYWN0Tm9kZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgUmVidWlsZExvZ28gfSBmcm9tICJAL2NvbXBvbmVudHMvbG9nbyI7Cgpjb25zdCBwcmltYXJ5VGFiczogQXJyYXk8eyBocmVmOiBSb3V0ZTsgbGFiZWw6IHN0cmluZyB9PiA9IFsKICB7IGhyZWY6ICIvdG9kYXkiLCBsYWJlbDogIteU15nXldedIiB9LAogIHsgaHJlZjogIi9sb2ciLCBsYWJlbDogIteQ15nXnteV16DXmdedIiB9LAogIHsgaHJlZjogIi9qb3VybmFsIiwgbGFiZWw6ICLXqteW15XXoNeUIiB9LAogIHsgaHJlZjogIi9hbmFseXRpY3MiLCBsYWJlbDogIteg16rXldeg15nXnSDXldeU15nXodeY15XXqNeZ15QiIH0sCiAgeyBocmVmOiAiL3NldHRpbmdzIiwgbGFiZWw6ICLXlNeS15PXqNeV16oiIH0KXTsKCmNvbnN0IHNlY29uZGFyeVRhYnM6IEFycmF5PHsgaHJlZjogUm91dGU7IGxhYmVsOiBzdHJpbmcgfT4gPSBbCiAgeyBocmVmOiAiL2ZvcmVjYXN0IiwgbGFiZWw6ICLXqteX15bXmdeqIiB9LAogIHsgaHJlZjogIi9pbnNpZ2h0cyIsIGxhYmVsOiAi16rXldeR16DXldeqIiB9LAogIHsgaHJlZjogIi9jaGVja2luIiwgbGFiZWw6ICLXptez16ct15DXmdefIiB9LAogIHsgaHJlZjogIi9pbXBvcnQiLCBsYWJlbDogIteZ15nXkdeV15AiIH0sCiAgeyBocmVmOiAiL2xvZ2ljIiwgbGFiZWw6ICJMb2dpYyIgfQpdOwoKZXhwb3J0IGZ1bmN0aW9uIEFwcFNoZWxsKHsgY2hpbGRyZW4gfTogeyBjaGlsZHJlbjogUmVhY3ROb2RlIH0pIHsKICBjb25zdCBwYXRobmFtZSA9IHVzZVBhdGhuYW1lKCk7CiAgY29uc3QgYXV0b1N5bmNTdGFydGVkUmVmID0gdXNlUmVmKGZhbHNlKTsKICBjb25zdCBpc0FjdGl2ZSA9IChocmVmOiBSb3V0ZSkgPT4gcGF0aG5hbWUgPT09IGhyZWYgfHwgcGF0aG5hbWUuc3RhcnRzV2l0aChgJHtocmVmfS9gKTsKICBjb25zdCBtb3JlQWN0aXZlID0gc2Vjb25kYXJ5VGFicy5zb21lKChpdGVtKSA9PiBpc0FjdGl2ZShpdGVtLmhyZWYpKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGlmIChhdXRvU3luY1N0YXJ0ZWRSZWYuY3VycmVudCkgcmV0dXJuOwogICAgYXV0b1N5bmNTdGFydGVkUmVmLmN1cnJlbnQgPSB0cnVlOwogICAgdm9pZCBmZXRjaCgiL2FwaS9pbmdlc3QvcmVzY2FuIiwgeyBtZXRob2Q6ICJQT1NUIiB9KS5jYXRjaCgoKSA9PiB7CiAgICAgIC8vIFNpbGVudCBiYWNrZ3JvdW5kIHN5bmM7IGZhaWx1cmVzIGFyZSBoYW5kbGVkIGluIGltcG9ydC9zZXR0aW5ncyBvciBtYW51YWwgc3luYyBjb250cm9scy4KICAgIH0pOwogIH0sIFtdKTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJhcHAtc2hlbGwgdG9wLXRhYnMtc2hlbGwiPgogICAgICA8aGVhZGVyIGNsYXNzTmFtZT0iYXBwLXRvcC1uYXYiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhcHAtdG9wLW5hdi1pbm5lciI+CiAgICAgICAgICA8UmVidWlsZExvZ28gLz4KICAgICAgICAgIDxuYXYgY2xhc3NOYW1lPSJ0b3AtdGFicyIgYXJpYS1sYWJlbD0i16DXmdeV15XXmCDXqNeQ16nXmSI+CiAgICAgICAgICAgIHtwcmltYXJ5VGFicy5tYXAoKGl0ZW0pID0+ICgKICAgICAgICAgICAgICA8TGluawogICAgICAgICAgICAgICAga2V5PXtpdGVtLmhyZWZ9CiAgICAgICAgICAgICAgICBocmVmPXtpdGVtLmhyZWZ9CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2lzQWN0aXZlKGl0ZW0uaHJlZikgPyAidG9wLXRhYiBhY3RpdmUiIDogInRvcC10YWIifQogICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgIHtpdGVtLmxhYmVsfQogICAgICAgICAgICAgIDwvTGluaz4KICAgICAgICAgICAgKSl9CiAgICAgICAgICAgIDxkZXRhaWxzIGNsYXNzTmFtZT17bW9yZUFjdGl2ZSA/ICJ0b3AtbW9yZSBhY3RpdmUiIDogInRvcC1tb3JlIn0+CiAgICAgICAgICAgICAgPHN1bW1hcnkgY2xhc3NOYW1lPSJ0b3AtdGFiIHRvcC1tb3JlLXRyaWdnZXIiPtei15XXkzwvc3VtbWFyeT4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idG9wLW1vcmUtbWVudSIgcm9sZT0ibWVudSIgYXJpYS1sYWJlbD0i16DXmdeV15XXmCDXntep16DXmSI+CiAgICAgICAgICAgICAgICB7c2Vjb25kYXJ5VGFicy5tYXAoKGl0ZW0pID0+ICgKICAgICAgICAgICAgICAgICAgPExpbmsKICAgICAgICAgICAgICAgICAgICBrZXk9e2l0ZW0uaHJlZn0KICAgICAgICAgICAgICAgICAgICBocmVmPXtpdGVtLmhyZWZ9CiAgICAgICAgICAgICAgICAgICAgcm9sZT0ibWVudWl0ZW0iCiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtpc0FjdGl2ZShpdGVtLmhyZWYpID8gInRvcC1tb3JlLWl0ZW0gYWN0aXZlIiA6ICJ0b3AtbW9yZS1pdGVtIn0KICAgICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICAgIHtpdGVtLmxhYmVsfQogICAgICAgICAgICAgICAgICA8L0xpbms+CiAgICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kZXRhaWxzPgogICAgICAgICAgPC9uYXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvaGVhZGVyPgogICAgICA8bWFpbiBjbGFzc05hbWU9ImNvbnRlbnQiPntjaGlsZHJlbn08L21haW4+CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+"use client";
+
+import Link from "next/link";
+import type { Route } from "next";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef, type ReactNode } from "react";
+import { RebuildLogo } from "@/components/logo";
+
+const primaryTabs: Array<{ href: Route; label: string }> = [
+  { href: "/today", label: "היום" },
+  { href: "/log", label: "אימונים" },
+  { href: "/journal", label: "תזונה" },
+  { href: "/analytics", label: "נתונים והיסטוריה" },
+  { href: "/settings", label: "הגדרות" }
+];
+
+const secondaryTabs: Array<{ href: Route; label: string }> = [
+  { href: "/forecast", label: "תחזית" },
+  { href: "/insights", label: "תובנות" },
+  { href: "/checkin", label: "צ׳ק-אין" },
+  { href: "/import", label: "ייבוא" },
+  { href: "/logic", label: "Logic" }
+];
+
+export function AppShell({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
+  const autoSyncStartedRef = useRef(false);
+  const isActive = (href: Route) => pathname === href || pathname.startsWith(`${href}/`);
+  const moreActive = secondaryTabs.some((item) => isActive(item.href));
+
+  useEffect(() => {
+    if (autoSyncStartedRef.current) return;
+    autoSyncStartedRef.current = true;
+    void fetch("/api/ingest/rescan", { method: "POST" }).catch(() => {
+      // Silent background sync; failures are handled in import/settings or manual sync controls.
+    });
+  }, []);
+
+  return (
+    <div className="app-shell top-tabs-shell">
+      <header className="app-top-nav">
+        <div className="app-top-nav-inner">
+          <RebuildLogo />
+          <nav className="top-tabs" aria-label="ניווט ראשי">
+            {primaryTabs.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={isActive(item.href) ? "top-tab active" : "top-tab"}
+              >
+                {item.label}
+              </Link>
+            ))}
+            <details className={moreActive ? "top-more active" : "top-more"}>
+              <summary className="top-tab top-more-trigger">עוד</summary>
+              <div className="top-more-menu" role="menu" aria-label="ניווט משני">
+                {secondaryTabs.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    role="menuitem"
+                    className={isActive(item.href) ? "top-more-item active" : "top-more-item"}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </details>
+          </nav>
+        </div>
+      </header>
+      <main className="content">{children}</main>
+    </div>
+  );
+}

@@ -1,1 +1,82 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IGFkZE51dHJpdGlvbkluZ3JlZGllbnQgfSBmcm9tICJAL2xpYi9udXRyaXRpb24tZW5naW5lIjsKaW1wb3J0IHsgZ2V0RGJQcm92aWRlciwgZGJRdWVyeU9uZSwgZGJRdWVyeSB9IGZyb20gIkAvbGliL2RiLWRyaXZlciI7CmltcG9ydCB7IG1pZ3JhdGVEYiB9IGZyb20gIkAvbGliL2RiLW1pZ3JhdGUiOwppbXBvcnQgeyBlbnN1cmVDbG91ZE51dHJpdGlvblNlZWQgfSBmcm9tICJAL2xpYi9udXRyaXRpb24tY2xvdWQiOwppbXBvcnQgeyByYW5kb21VVUlEIH0gZnJvbSAibm9kZTpjcnlwdG8iOwoKZXhwb3J0IGNvbnN0IHJ1bnRpbWUgPSAibm9kZWpzIjsKCmNvbnN0IHNjaGVtYSA9IHoub2JqZWN0KHsKICBuYW1lOiB6LnN0cmluZygpLm1pbigxKS5tYXgoMTIwKSwKICBjYXRlZ29yeTogei5lbnVtKFsicHJvdGVpbiIsICJjYXJiIiwgImZhdCIsICJzd2VldCIsICJ2ZWdldGFibGUiLCAiZnJ1aXQiLCAiZGFpcnkiLCAiaHlkcmF0aW9uIiwgIm1peGVkIl0pLAogIGtjYWxQZXIxMDA6IHoubnVtYmVyKCkubWluKDApLm1heCgxMDAwKS5vcHRpb25hbCgpLAogIHByb3RlaW5QZXIxMDA6IHoubnVtYmVyKCkubWluKDApLm1heCgxMDApLAogIGNhcmJzUGVyMTAwOiB6Lm51bWJlcigpLm1pbigwKS5tYXgoMTAwKSwKICBmYXRQZXIxMDA6IHoubnVtYmVyKCkubWluKDApLm1heCgxMDApLAogIGRlZmF1bHRVbml0OiB6LmVudW0oWyJnIiwgIm1sIiwgInVuaXQiXSksCiAgZ3JhbXNQZXJVbml0OiB6Lm51bWJlcigpLm1pbigwLjEpLm1heCgyMDAwKQp9KTsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQT1NUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgY29uc3QgYm9keSA9IGF3YWl0IHJlcXVlc3QuanNvbigpLmNhdGNoKCgpID0+ICh7fSkpOwogIGNvbnN0IHBhcnNlZCA9IHNjaGVtYS5zYWZlUGFyc2UoYm9keSk7CiAgaWYgKCFwYXJzZWQuc3VjY2VzcykgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6IHBhcnNlZC5lcnJvci5mbGF0dGVuKCkgfSwgeyBzdGF0dXM6IDQwMCB9KTsKICB9CgogIGlmIChnZXREYlByb3ZpZGVyKCkgIT09ICJwb3N0Z3JlcyIpIHsKICAgIGNvbnN0IGluZ3JlZGllbnQgPSBhZGROdXRyaXRpb25JbmdyZWRpZW50KHBhcnNlZC5kYXRhKTsKICAgIGlmICghaW5ncmVkaWVudCkgewogICAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogImZhaWxlZCB0byBjcmVhdGUgaW5ncmVkaWVudCIgfSwgeyBzdGF0dXM6IDQwMCB9KTsKICAgIH0KICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlLCBpbmdyZWRpZW50IH0pOwogIH0KCiAgYXdhaXQgbWlncmF0ZURiKCk7CiAgYXdhaXQgZW5zdXJlQ2xvdWROdXRyaXRpb25TZWVkKCk7CgogIGNvbnN0IG5hbWUgPSBwYXJzZWQuZGF0YS5uYW1lLnRyaW0oKTsKICBjb25zdCBleGlzdGluZyA9IGF3YWl0IGRiUXVlcnlPbmU8UmVjb3JkPHN0cmluZywgdW5rbm93bj4+KAogICAgIlNFTEVDVCAqIEZST00gbnV0cml0aW9uX2luZ3JlZGllbnRzIFdIRVJFIExPV0VSKG5hbWUpID0gTE9XRVIoJDEpIExJTUlUIDEiLAogICAgW25hbWVdCiAgKTsKICBpZiAoZXhpc3RpbmcpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlLCBpbmdyZWRpZW50OiBleGlzdGluZyB9KTsKICB9CgogIGNvbnN0IG5vdyA9IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKTsKICBjb25zdCBrY2FsUGVyMTAwID0KICAgIHR5cGVvZiBwYXJzZWQuZGF0YS5rY2FsUGVyMTAwID09PSAibnVtYmVyIiAmJiBOdW1iZXIuaXNGaW5pdGUocGFyc2VkLmRhdGEua2NhbFBlcjEwMCkgJiYgcGFyc2VkLmRhdGEua2NhbFBlcjEwMCA+IDAKICAgICAgPyBwYXJzZWQuZGF0YS5rY2FsUGVyMTAwCiAgICAgIDogTWF0aC5yb3VuZChwYXJzZWQuZGF0YS5wcm90ZWluUGVyMTAwICogNCArIHBhcnNlZC5kYXRhLmNhcmJzUGVyMTAwICogNCArIHBhcnNlZC5kYXRhLmZhdFBlcjEwMCAqIDkpOwoKICBjb25zdCBpZCA9IHJhbmRvbVVVSUQoKTsKICBhd2FpdCBkYlF1ZXJ5KAogICAgYAogICAgSU5TRVJUIElOVE8gbnV0cml0aW9uX2luZ3JlZGllbnRzCiAgICAgIChpZCwgbmFtZSwgY2F0ZWdvcnksIGtjYWxQZXIxMDAsIHByb3RlaW5QZXIxMDAsIGNhcmJzUGVyMTAwLCBmYXRQZXIxMDAsIGRlZmF1bHRVbml0LCBncmFtc1BlclVuaXQsIGlzQnVpbHRJbiwgY3JlYXRlZEF0LCB1cGRhdGVkQXQpCiAgICBWQUxVRVMKICAgICAgKCQxLCQyLCQzLCQ0LCQ1LCQ2LCQ3LCQ4LCQ5LDAsJDEwLCQxMCkKICAgIGAsCiAgICBbCiAgICAgIGlkLAogICAgICBuYW1lLAogICAgICBwYXJzZWQuZGF0YS5jYXRlZ29yeSwKICAgICAga2NhbFBlcjEwMCwKICAgICAgcGFyc2VkLmRhdGEucHJvdGVpblBlcjEwMCwKICAgICAgcGFyc2VkLmRhdGEuY2FyYnNQZXIxMDAsCiAgICAgIHBhcnNlZC5kYXRhLmZhdFBlcjEwMCwKICAgICAgcGFyc2VkLmRhdGEuZGVmYXVsdFVuaXQsCiAgICAgIHBhcnNlZC5kYXRhLmdyYW1zUGVyVW5pdCwKICAgICAgbm93CiAgICBdCiAgKTsKCiAgY29uc3QgY3JlYXRlZCA9IGF3YWl0IGRiUXVlcnlPbmU8UmVjb3JkPHN0cmluZywgdW5rbm93bj4+KCJTRUxFQ1QgKiBGUk9NIG51dHJpdGlvbl9pbmdyZWRpZW50cyBXSEVSRSBpZCA9ICQxIiwgW2lkXSk7CiAgaWYgKCFjcmVhdGVkKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogImZhaWxlZCB0byBjcmVhdGUgaW5ncmVkaWVudCIgfSwgeyBzdGF0dXM6IDQwMCB9KTsKICB9CiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgb2s6IHRydWUsIGluZ3JlZGllbnQ6IGNyZWF0ZWQgfSk7Cn0K"}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { addNutritionIngredient } from "@/lib/nutrition-engine";
+import { getDbProvider, dbQueryOne, dbQuery } from "@/lib/db-driver";
+import { migrateDb } from "@/lib/db-migrate";
+import { ensureCloudNutritionSeed } from "@/lib/nutrition-cloud";
+import { randomUUID } from "node:crypto";
+
+export const runtime = "nodejs";
+
+const schema = z.object({
+  name: z.string().min(1).max(120),
+  category: z.enum(["protein", "carb", "fat", "sweet", "vegetable", "fruit", "dairy", "hydration", "mixed"]),
+  kcalPer100: z.number().min(0).max(1000).optional(),
+  proteinPer100: z.number().min(0).max(100),
+  carbsPer100: z.number().min(0).max(100),
+  fatPer100: z.number().min(0).max(100),
+  defaultUnit: z.enum(["g", "ml", "unit"]),
+  gramsPerUnit: z.number().min(0.1).max(2000)
+});
+
+export async function POST(request: NextRequest) {
+  const body = await request.json().catch(() => ({}));
+  const parsed = schema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  if (getDbProvider() !== "postgres") {
+    const ingredient = addNutritionIngredient(parsed.data);
+    if (!ingredient) {
+      return NextResponse.json({ error: "failed to create ingredient" }, { status: 400 });
+    }
+    return NextResponse.json({ ok: true, ingredient });
+  }
+
+  await migrateDb();
+  await ensureCloudNutritionSeed();
+
+  const name = parsed.data.name.trim();
+  const existing = await dbQueryOne<Record<string, unknown>>(
+    "SELECT * FROM nutrition_ingredients WHERE LOWER(name) = LOWER($1) LIMIT 1",
+    [name]
+  );
+  if (existing) {
+    return NextResponse.json({ ok: true, ingredient: existing });
+  }
+
+  const now = new Date().toISOString();
+  const kcalPer100 =
+    typeof parsed.data.kcalPer100 === "number" && Number.isFinite(parsed.data.kcalPer100) && parsed.data.kcalPer100 > 0
+      ? parsed.data.kcalPer100
+      : Math.round(parsed.data.proteinPer100 * 4 + parsed.data.carbsPer100 * 4 + parsed.data.fatPer100 * 9);
+
+  const id = randomUUID();
+  await dbQuery(
+    `
+    INSERT INTO nutrition_ingredients
+      (id, name, category, kcalPer100, proteinPer100, carbsPer100, fatPer100, defaultUnit, gramsPerUnit, isBuiltIn, createdAt, updatedAt)
+    VALUES
+      ($1,$2,$3,$4,$5,$6,$7,$8,$9,0,$10,$10)
+    `,
+    [
+      id,
+      name,
+      parsed.data.category,
+      kcalPer100,
+      parsed.data.proteinPer100,
+      parsed.data.carbsPer100,
+      parsed.data.fatPer100,
+      parsed.data.defaultUnit,
+      parsed.data.gramsPerUnit,
+      now
+    ]
+  );
+
+  const created = await dbQueryOne<Record<string, unknown>>("SELECT * FROM nutrition_ingredients WHERE id = $1", [id]);
+  if (!created) {
+    return NextResponse.json({ error: "failed to create ingredient" }, { status: 400 });
+  }
+  return NextResponse.json({ ok: true, ingredient: created });
+}

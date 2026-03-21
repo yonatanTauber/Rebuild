@@ -1,1 +1,133 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgZ2V0V29ya291dHNCZXR3ZWVuIH0gZnJvbSAiQC9saWIvZGIiOwppbXBvcnQgeyBmb3JtYXRMb2NhbElTT0RhdGUsIHBhcnNlTG9jYWxJU09EYXRlIH0gZnJvbSAiQC9saWIvZGF0ZSI7CmltcG9ydCB7IHNxbCB9IGZyb20gIkB2ZXJjZWwvcG9zdGdyZXMiOwoKZXhwb3J0IGNvbnN0IHJ1bnRpbWUgPSAibm9kZWpzIjsKCmZ1bmN0aW9uIGlzb0RhdGUoZGF0ZTogRGF0ZSkgewogIHJldHVybiBmb3JtYXRMb2NhbElTT0RhdGUoZGF0ZSk7Cn0KCmZ1bmN0aW9uIHBhcnNlQW5jaG9yKHJhdzogc3RyaW5nIHwgbnVsbCkgewogIGlmICghcmF3KSByZXR1cm4gbmV3IERhdGUoKTsKICBjb25zdCBwYXJzZWQgPSBwYXJzZUxvY2FsSVNPRGF0ZShyYXcpOwogIHJldHVybiBOdW1iZXIuaXNGaW5pdGUocGFyc2VkLmdldFRpbWUoKSkgPyBwYXJzZWQgOiBuZXcgRGF0ZSgpOwp9CgpmdW5jdGlvbiBzdGFydE9mV2VlayhkOiBEYXRlKSB7CiAgY29uc3QgZGF0ZSA9IG5ldyBEYXRlKGQpOwogIGNvbnN0IGRheSA9IGRhdGUuZ2V0RGF5KCk7CiAgZGF0ZS5zZXREYXRlKGRhdGUuZ2V0RGF0ZSgpIC0gZGF5KTsKICBkYXRlLnNldEhvdXJzKDAsIDAsIDAsIDApOwogIHJldHVybiBkYXRlOwp9CgpmdW5jdGlvbiBzdGFydE9mTW9udGgoZDogRGF0ZSkgewogIGNvbnN0IGRhdGUgPSBuZXcgRGF0ZShkLmdldEZ1bGxZZWFyKCksIGQuZ2V0TW9udGgoKSwgMSk7CiAgZGF0ZS5zZXRIb3VycygwLCAwLCAwLCAwKTsKICByZXR1cm4gZGF0ZTsKfQoKZnVuY3Rpb24gYWRkRGF5cyhkOiBEYXRlLCBkYXlzOiBudW1iZXIpIHsKICBjb25zdCBkYXRlID0gbmV3IERhdGUoZCk7CiAgZGF0ZS5zZXREYXRlKGRhdGUuZ2V0RGF0ZSgpICsgZGF5cyk7CiAgcmV0dXJuIGRhdGU7Cn0KCmZ1bmN0aW9uIGFkZE1vbnRocyhkOiBEYXRlLCBtb250aHM6IG51bWJlcikgewogIHJldHVybiBuZXcgRGF0ZShkLmdldEZ1bGxZZWFyKCksIGQuZ2V0TW9udGgoKSArIG1vbnRocywgMSk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCB2aWV3ID0gcmVxdWVzdC5uZXh0VXJsLnNlYXJjaFBhcmFtcy5nZXQoInZpZXciKSA9PT0gIndlZWsiID8gIndlZWsiIDogIm1vbnRoIjsKICBjb25zdCBhbmNob3IgPSBwYXJzZUFuY2hvcihyZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zLmdldCgiZGF0ZSIpKTsKCiAgY29uc3QgcmFuZ2VTdGFydCA9IHZpZXcgPT09ICJ3ZWVrIiA/IHN0YXJ0T2ZXZWVrKGFuY2hvcikgOiBzdGFydE9mV2VlayhzdGFydE9mTW9udGgoYW5jaG9yKSk7CiAgY29uc3QgcmFuZ2VFbmQgPSB2aWV3ID09PSAid2VlayIgPyBhZGREYXlzKHJhbmdlU3RhcnQsIDcpIDogc3RhcnRPZldlZWsoYWRkTW9udGhzKHN0YXJ0T2ZNb250aChhbmNob3IpLCAxKSk7CgogIGNvbnN0IHVzZUNsb3VkID0gcHJvY2Vzcy5lbnYuVkVSQ0VMID09PSAiMSIgJiYgQm9vbGVhbihwcm9jZXNzLmVudi5QT1NUR1JFU19VUkwgfHwgcHJvY2Vzcy5lbnYuREFUQUJBU0VfVVJMKTsKCiAgbGV0IHdvcmtvdXRzOiBBcnJheTx7CiAgICBpZDogc3RyaW5nOwogICAgc3BvcnQ6ICJydW4iIHwgImJpa2UiIHwgInN3aW0iIHwgInN0cmVuZ3RoIjsKICAgIHNvdXJjZTogInN0cmF2YSIgfCAiaGVhbHRoZml0IiB8ICJiYXZlbCIgfCAic21hc2hydW4iOwogICAgc3RhcnRBdDogc3RyaW5nOwogICAgZHVyYXRpb25TZWM6IG51bWJlcjsKICAgIGRpc3RhbmNlTTogbnVtYmVyIHwgbnVsbDsKICAgIGF2Z0hyOiBudW1iZXIgfCBudWxsOwogICAgZWxldmF0aW9uTTogbnVtYmVyIHwgbnVsbDsKICAgIHRzc0xpa2U6IG51bWJlcjsKICAgIHNob2VJZDogc3RyaW5nIHwgbnVsbDsKICAgIHNob2VOYW1lOiBzdHJpbmcgfCBudWxsOwogIH0+ID0gW107CgogIGlmICh1c2VDbG91ZCkgewogICAgLy8gUmVhZCBmcm9tIFZlcmNlbCBQb3N0Z3JlcyAoY2xvdWQgbW9kZSkuIE5vdGU6IHNvbWUgZmllbGRzIG1heSBiZSBtaXNzaW5nIHVudGlsIHdlIHBvcnQgbW9yZSB0YWJsZXMuCiAgICBjb25zdCByZXMgPSBhd2FpdCBzcWw8ewogICAgICBpZDogc3RyaW5nOwogICAgICBzcG9ydDogc3RyaW5nOwogICAgICBzb3VyY2U6IHN0cmluZzsKICAgICAgc3RhcnRBdDogc3RyaW5nOwogICAgICBkdXJhdGlvblNlYzogbnVtYmVyOwogICAgICBkaXN0YW5jZU06IG51bWJlciB8IG51bGw7CiAgICAgIGF2Z0hyOiBudW1iZXIgfCBudWxsOwogICAgICBlbGV2YXRpb25NOiBudW1iZXIgfCBudWxsOwogICAgICB0c3NMaWtlOiBudW1iZXI7CiAgICAgIHNob2VJZDogc3RyaW5nIHwgbnVsbDsKICAgICAgc2hvZU5hbWU6IHN0cmluZyB8IG51bGw7CiAgICB9PmAKICAgICAgU0VMRUNUCiAgICAgICAgaWQsCiAgICAgICAgc3BvcnQsCiAgICAgICAgc291cmNlLAogICAgICAgIHN0YXJ0YXQgYXMgInN0YXJ0QXQiLAogICAgICAgIGR1cmF0aW9uc2VjIGFzICJkdXJhdGlvblNlYyIsCiAgICAgICAgZGlzdGFuY2VtIGFzICJkaXN0YW5jZU0iLAogICAgICAgIGF2Z2hyIGFzICJhdmdIciIsCiAgICAgICAgZWxldmF0aW9ubSBhcyAiZWxldmF0aW9uTSIsCiAgICAgICAgdHNzbGlrZSBhcyAidHNzTGlrZSIsCiAgICAgICAgc2hvZWlkIGFzICJzaG9lSWQiLAogICAgICAgIE5VTEw6OnRleHQgYXMgInNob2VOYW1lIgogICAgICBGUk9NIHdvcmtvdXRzCiAgICAgIFdIRVJFIHN0YXJ0YXQgPj0gJHtyYW5nZVN0YXJ0LnRvSVNPU3RyaW5nKCl9IEFORCBzdGFydGF0IDwgJHtyYW5nZUVuZC50b0lTT1N0cmluZygpfQogICAgICBPUkRFUiBCWSBzdGFydGF0IERFU0MKICAgIGA7CgogICAgd29ya291dHMgPSByZXMucm93cy5tYXAoKHJvdykgPT4gKHsKICAgICAgaWQ6IHJvdy5pZCwKICAgICAgc3BvcnQ6IChyb3cuc3BvcnQgYXMgInJ1biIgfCAiYmlrZSIgfCAic3dpbSIgfCAic3RyZW5ndGgiKSA/PyAicnVuIiwKICAgICAgc291cmNlOiAocm93LnNvdXJjZSBhcyAic3RyYXZhIiB8ICJoZWFsdGhmaXQiIHwgImJhdmVsIiB8ICJzbWFzaHJ1biIpID8/ICJzdHJhdmEiLAogICAgICBzdGFydEF0OiByb3cuc3RhcnRBdCwKICAgICAgZHVyYXRpb25TZWM6IE51bWJlcihyb3cuZHVyYXRpb25TZWMgPz8gMCksCiAgICAgIGRpc3RhbmNlTTogcm93LmRpc3RhbmNlTSA9PSBudWxsID8gbnVsbCA6IE51bWJlcihyb3cuZGlzdGFuY2VNKSwKICAgICAgYXZnSHI6IHJvdy5hdmdIciA9PSBudWxsID8gbnVsbCA6IE51bWJlcihyb3cuYXZnSHIpLAogICAgICBlbGV2YXRpb25NOiByb3cuZWxldmF0aW9uTSA9PSBudWxsID8gbnVsbCA6IE51bWJlcihyb3cuZWxldmF0aW9uTSksCiAgICAgIHRzc0xpa2U6IE51bWJlcihyb3cudHNzTGlrZSA/PyAwKSwKICAgICAgc2hvZUlkOiByb3cuc2hvZUlkID8/IG51bGwsCiAgICAgIHNob2VOYW1lOiByb3cuc2hvZU5hbWUgPz8gbnVsbAogICAgfSkpOwogIH0gZWxzZSB7CiAgICB3b3Jrb3V0cyA9IGdldFdvcmtvdXRzQmV0d2VlbihyYW5nZVN0YXJ0LnRvSVNPU3RyaW5nKCksIHJhbmdlRW5kLnRvSVNPU3RyaW5nKCkpLm1hcCgodykgPT4gKHsKICAgICAgaWQ6IHcuaWQsCiAgICAgIHNwb3J0OiB3LnNwb3J0LAogICAgICBzb3VyY2U6IHcuc291cmNlLAogICAgICBzdGFydEF0OiB3LnN0YXJ0QXQsCiAgICAgIGR1cmF0aW9uU2VjOiB3LmR1cmF0aW9uU2VjLAogICAgICBkaXN0YW5jZU06IHcuZGlzdGFuY2VNID8/IG51bGwsCiAgICAgIGF2Z0hyOiB3LmF2Z0hyID8/IG51bGwsCiAgICAgIGVsZXZhdGlvbk06IHcuZWxldmF0aW9uTSA/PyBudWxsLAogICAgICB0c3NMaWtlOiB3LnRzc0xpa2UsCiAgICAgIHNob2VJZDogdy5zaG9lSWQgPz8gbnVsbCwKICAgICAgc2hvZU5hbWU6IHcuc2hvZU5hbWUgPz8gbnVsbAogICAgfSkpOwogIH0KCiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsKICAgIHZpZXcsCiAgICBhbmNob3JEYXRlOiBpc29EYXRlKGFuY2hvciksCiAgICBmcm9tOiBpc29EYXRlKHJhbmdlU3RhcnQpLAogICAgdG86IGlzb0RhdGUoYWRkRGF5cyhyYW5nZUVuZCwgLTEpKSwKICAgIHdvcmtvdXRzCiAgfSk7Cn0K"}
+import { NextRequest, NextResponse } from "next/server";
+import { getWorkoutsBetween } from "@/lib/db";
+import { formatLocalISODate, parseLocalISODate } from "@/lib/date";
+import { sql } from "@vercel/postgres";
+
+export const runtime = "nodejs";
+
+function isoDate(date: Date) {
+  return formatLocalISODate(date);
+}
+
+function parseAnchor(raw: string | null) {
+  if (!raw) return new Date();
+  const parsed = parseLocalISODate(raw);
+  return Number.isFinite(parsed.getTime()) ? parsed : new Date();
+}
+
+function startOfWeek(d: Date) {
+  const date = new Date(d);
+  const day = date.getDay();
+  date.setDate(date.getDate() - day);
+  date.setHours(0, 0, 0, 0);
+  return date;
+}
+
+function startOfMonth(d: Date) {
+  const date = new Date(d.getFullYear(), d.getMonth(), 1);
+  date.setHours(0, 0, 0, 0);
+  return date;
+}
+
+function addDays(d: Date, days: number) {
+  const date = new Date(d);
+  date.setDate(date.getDate() + days);
+  return date;
+}
+
+function addMonths(d: Date, months: number) {
+  return new Date(d.getFullYear(), d.getMonth() + months, 1);
+}
+
+export async function GET(request: NextRequest) {
+  const view = request.nextUrl.searchParams.get("view") === "week" ? "week" : "month";
+  const anchor = parseAnchor(request.nextUrl.searchParams.get("date"));
+
+  const rangeStart = view === "week" ? startOfWeek(anchor) : startOfWeek(startOfMonth(anchor));
+  const rangeEnd = view === "week" ? addDays(rangeStart, 7) : startOfWeek(addMonths(startOfMonth(anchor), 1));
+
+  const useCloud = process.env.VERCEL === "1" && Boolean(process.env.POSTGRES_URL || process.env.DATABASE_URL);
+
+  let workouts: Array<{
+    id: string;
+    sport: "run" | "bike" | "swim" | "strength";
+    source: "strava" | "healthfit" | "bavel" | "smashrun";
+    startAt: string;
+    durationSec: number;
+    distanceM: number | null;
+    avgHr: number | null;
+    elevationM: number | null;
+    tssLike: number;
+    shoeId: string | null;
+    shoeName: string | null;
+  }> = [];
+
+  if (useCloud) {
+    // Read from Vercel Postgres (cloud mode). Note: some fields may be missing until we port more tables.
+    const res = await sql<{
+      id: string;
+      sport: string;
+      source: string;
+      startAt: string;
+      durationSec: number;
+      distanceM: number | null;
+      avgHr: number | null;
+      elevationM: number | null;
+      tssLike: number;
+      shoeId: string | null;
+      shoeName: string | null;
+    }>`
+      SELECT
+        id,
+        sport,
+        source,
+        startat as "startAt",
+        durationsec as "durationSec",
+        distancem as "distanceM",
+        avghr as "avgHr",
+        elevationm as "elevationM",
+        tsslike as "tssLike",
+        shoeid as "shoeId",
+        NULL::text as "shoeName"
+      FROM workouts
+      WHERE startat >= ${rangeStart.toISOString()} AND startat < ${rangeEnd.toISOString()}
+      ORDER BY startat DESC
+    `;
+
+    workouts = res.rows.map((row) => ({
+      id: row.id,
+      sport: (row.sport as "run" | "bike" | "swim" | "strength") ?? "run",
+      source: (row.source as "strava" | "healthfit" | "bavel" | "smashrun") ?? "strava",
+      startAt: row.startAt,
+      durationSec: Number(row.durationSec ?? 0),
+      distanceM: row.distanceM == null ? null : Number(row.distanceM),
+      avgHr: row.avgHr == null ? null : Number(row.avgHr),
+      elevationM: row.elevationM == null ? null : Number(row.elevationM),
+      tssLike: Number(row.tssLike ?? 0),
+      shoeId: row.shoeId ?? null,
+      shoeName: row.shoeName ?? null
+    }));
+  } else {
+    workouts = getWorkoutsBetween(rangeStart.toISOString(), rangeEnd.toISOString()).map((w) => ({
+      id: w.id,
+      sport: w.sport,
+      source: w.source,
+      startAt: w.startAt,
+      durationSec: w.durationSec,
+      distanceM: w.distanceM ?? null,
+      avgHr: w.avgHr ?? null,
+      elevationM: w.elevationM ?? null,
+      tssLike: w.tssLike,
+      shoeId: w.shoeId ?? null,
+      shoeName: w.shoeName ?? null
+    }));
+  }
+
+  return NextResponse.json({
+    view,
+    anchorDate: isoDate(anchor),
+    from: isoDate(rangeStart),
+    to: isoDate(addDays(rangeEnd, -1)),
+    workouts
+  });
+}

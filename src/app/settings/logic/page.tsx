@@ -1,1 +1,112 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IExpbmsgZnJvbSAibmV4dC9saW5rIjsKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgU2VjdGlvbiB9IGZyb20gIkAvY29tcG9uZW50cy9jYXJkcyI7Cgp0eXBlIFJ1bGVzID0gewogIHdlZWtseVRpbWVCdWRnZXRIb3VyczogbnVtYmVyOwogIHJ1blByaW9yaXR5OiBudW1iZXI7CiAgY3Jvc3NUcmFpbmluZ1dlaWdodDogbnVtYmVyOwogIGhhcmREYXlzUGVyV2VlazogbnVtYmVyOwogIG5vSGFyZElmTG93UmVhZGluZXNzOiBudW1iZXI7CiAgbWluRWFzeUJldHdlZW5IYXJkOiBudW1iZXI7CiAgaW5qdXJ5RmxhZ3M6IHN0cmluZ1tdOwp9OwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gU2V0dGluZ3NMb2dpY1BhZ2UoKSB7CiAgY29uc3QgW3J1bGVzLCBzZXRSdWxlc10gPSB1c2VTdGF0ZTxSdWxlcyB8IG51bGw+KG51bGwpOwogIGNvbnN0IFtzdGF0dXMsIHNldFN0YXR1c10gPSB1c2VTdGF0ZSgiIik7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICB2b2lkIGZldGNoKCIvYXBpL2xvZ2ljL3J1bGVzIikKICAgICAgLnRoZW4oKHIpID0+IHIuanNvbigpKQogICAgICAudGhlbigoZGF0YSkgPT4gc2V0UnVsZXMoZGF0YSBhcyBSdWxlcykpOwogIH0sIFtdKTsKCiAgYXN5bmMgZnVuY3Rpb24gc2F2ZSgpIHsKICAgIGlmICghcnVsZXMpIHJldHVybjsKICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKCIvYXBpL2xvZ2ljL3J1bGVzIiwgewogICAgICBtZXRob2Q6ICJQT1NUIiwKICAgICAgaGVhZGVyczogeyAiQ29udGVudC1UeXBlIjogImFwcGxpY2F0aW9uL2pzb24iIH0sCiAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHJ1bGVzKQogICAgfSk7CgogICAgc2V0U3RhdHVzKHJlcy5vayA/ICLXlNec15XXkteZ16fXlCDXoNep157XqNeULiIgOiAi16nXnteZ16jXlCDXoNeb16nXnNeULiIpOwogIH0KCiAgaWYgKCFydWxlcykgewogICAgcmV0dXJuIDxwPteY15XXotefINec15XXkteZ16fXlC4uLjwvcD47CiAgfQoKICByZXR1cm4gKAogICAgPD4KICAgICAgPGhlYWRlciBjbGFzc05hbWU9InBhZ2UtaGVhZGVyIj4KICAgICAgICA8aDE+TG9naWMgU3R1ZGlvPC9oMT4KICAgICAgICA8cD7Xm9eQ158g15DXqteUINee15vXldeV158g15DXqiDXlNee16DXldeiINeU15DXmdep15kuPC9wPgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxTZWN0aW9uIHRpdGxlPSLXm9ec15zXmSDXnteg15XXoiIgc3VidGl0bGU9Itep15nXoNeV15nXmdedINeb15DXnyDXntep16TXmdei15nXnSDXotecINeU157XnNem15XXqiDXlNeZ15XXnSDXlNeR15AiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyb3ciPgogICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iZmllbGQiPgogICAgICAgICAgICDXqten16bXmdeRINeW157XnyDXqdeR15XXoteZICjXqdei15XXqikKICAgICAgICAgICAgPGlucHV0CiAgICAgICAgICAgICAgdHlwZT0ibnVtYmVyIgogICAgICAgICAgICAgIHZhbHVlPXtydWxlcy53ZWVrbHlUaW1lQnVkZ2V0SG91cnN9CiAgICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRSdWxlcygocCkgPT4gKHAgPyB7IC4uLnAsIHdlZWtseVRpbWVCdWRnZXRIb3VyczogTnVtYmVyKGUudGFyZ2V0LnZhbHVlKSB9IDogcCkpfQogICAgICAgICAgICAvPgogICAgICAgICAgPC9sYWJlbD4KICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9ImZpZWxkIj4KICAgICAgICAgICAg157Xqden15wg16fXqNeV16Et15jXqNeZ15nXoNeZ16DXkgogICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICB0eXBlPSJudW1iZXIiCiAgICAgICAgICAgICAgc3RlcD0iMC4wNSIKICAgICAgICAgICAgICB2YWx1ZT17cnVsZXMuY3Jvc3NUcmFpbmluZ1dlaWdodH0KICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldFJ1bGVzKChwKSA9PiAocCA/IHsgLi4ucCwgY3Jvc3NUcmFpbmluZ1dlaWdodDogTnVtYmVyKGUudGFyZ2V0LnZhbHVlKSB9IDogcCkpfQogICAgICAgICAgICAvPgogICAgICAgICAgPC9sYWJlbD4KICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9ImZpZWxkIj4KICAgICAgICAgICAg15nXnteZINeQ15nXm9eV16og15HXqdeR15XXogogICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICB0eXBlPSJudW1iZXIiCiAgICAgICAgICAgICAgdmFsdWU9e3J1bGVzLmhhcmREYXlzUGVyV2Vla30KICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldFJ1bGVzKChwKSA9PiAocCA/IHsgLi4ucCwgaGFyZERheXNQZXJXZWVrOiBOdW1iZXIoZS50YXJnZXQudmFsdWUpIH0gOiBwKSl9CiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L2xhYmVsPgogICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iZmllbGQiPgogICAgICAgICAgICDXodejINee15XXm9eg15XXqiDXnNeQ15nXodeV16gg15DXmdee15XXnyDXp9ep15QKICAgICAgICAgICAgPGlucHV0CiAgICAgICAgICAgICAgdHlwZT0ibnVtYmVyIgogICAgICAgICAgICAgIHZhbHVlPXtydWxlcy5ub0hhcmRJZkxvd1JlYWRpbmVzc30KICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldFJ1bGVzKChwKSA9PiAocCA/IHsgLi4ucCwgbm9IYXJkSWZMb3dSZWFkaW5lc3M6IE51bWJlcihlLnRhcmdldC52YWx1ZSkgfSA6IHApKX0KICAgICAgICAgICAgLz4KICAgICAgICAgIDwvbGFiZWw+CiAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJmaWVsZCI+CiAgICAgICAgICAgINeZ157XmSDXp9ecINeR15nXnyDXkNeZ157Xldeg15kg15DXmdeb15XXqgogICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICB0eXBlPSJudW1iZXIiCiAgICAgICAgICAgICAgdmFsdWU9e3J1bGVzLm1pbkVhc3lCZXR3ZWVuSGFyZH0KICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldFJ1bGVzKChwKSA9PiAocCA/IHsgLi4ucCwgbWluRWFzeUJldHdlZW5IYXJkOiBOdW1iZXIoZS50YXJnZXQudmFsdWUpIH0gOiBwKSl9CiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L2xhYmVsPgogICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iZmllbGQiPgogICAgICAgICAgICBJbmp1cnkgZmxhZ3MgKGNvbW1hIHNlcGFyYXRlZCkKICAgICAgICAgICAgPGlucHV0CiAgICAgICAgICAgICAgdmFsdWU9e3J1bGVzLmluanVyeUZsYWdzLmpvaW4oIiwiKX0KICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+CiAgICAgICAgICAgICAgICBzZXRSdWxlcygocCkgPT4gKHAgPyB7IC4uLnAsIGluanVyeUZsYWdzOiBlLnRhcmdldC52YWx1ZS5zcGxpdCgiLCIpLm1hcCgoeCkgPT4geC50cmltKCkpLmZpbHRlcihCb29sZWFuKSB9IDogcCkpCiAgICAgICAgICAgICAgfQogICAgICAgICAgICAvPgogICAgICAgICAgPC9sYWJlbD4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icm93Ij4KICAgICAgICAgIDxidXR0b24gb25DbGljaz17c2F2ZX0+16nXnteV16gg15zXldeS15nXp9eUPC9idXR0b24+CiAgICAgICAgICA8TGluayBocmVmPSIvc2V0dGluZ3MiIGNsYXNzTmFtZT0iaW5saW5lLWN0YS1saW5rIHN1YnRsZS1saW5rIj4KICAgICAgICAgICAg15fXlteo15Qg15zXlNeS15PXqNeV16oKICAgICAgICAgIDwvTGluaz4KICAgICAgICAgIHtzdGF0dXMgJiYgPHAgY2xhc3NOYW1lPSJub3RlIj57c3RhdHVzfTwvcD59CiAgICAgICAgPC9kaXY+CiAgICAgIDwvU2VjdGlvbj4KICAgIDwvPgogICk7Cn0K"}
+"use client";
+
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { Section } from "@/components/cards";
+
+type Rules = {
+  weeklyTimeBudgetHours: number;
+  runPriority: number;
+  crossTrainingWeight: number;
+  hardDaysPerWeek: number;
+  noHardIfLowReadiness: number;
+  minEasyBetweenHard: number;
+  injuryFlags: string[];
+};
+
+export default function SettingsLogicPage() {
+  const [rules, setRules] = useState<Rules | null>(null);
+  const [status, setStatus] = useState("");
+
+  useEffect(() => {
+    void fetch("/api/logic/rules")
+      .then((r) => r.json())
+      .then((data) => setRules(data as Rules));
+  }, []);
+
+  async function save() {
+    if (!rules) return;
+    const res = await fetch("/api/logic/rules", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(rules)
+    });
+
+    setStatus(res.ok ? "הלוגיקה נשמרה." : "שמירה נכשלה.");
+  }
+
+  if (!rules) {
+    return <p>טוען לוגיקה...</p>;
+  }
+
+  return (
+    <>
+      <header className="page-header">
+        <h1>Logic Studio</h1>
+        <p>כאן אתה מכוון את המנוע האישי.</p>
+      </header>
+
+      <Section title="כללי מנוע" subtitle="שינויים כאן משפיעים על המלצות היום הבא">
+        <div className="row">
+          <label className="field">
+            תקציב זמן שבועי (שעות)
+            <input
+              type="number"
+              value={rules.weeklyTimeBudgetHours}
+              onChange={(e) => setRules((p) => (p ? { ...p, weeklyTimeBudgetHours: Number(e.target.value) } : p))}
+            />
+          </label>
+          <label className="field">
+            משקל קרוס-טריינינג
+            <input
+              type="number"
+              step="0.05"
+              value={rules.crossTrainingWeight}
+              onChange={(e) => setRules((p) => (p ? { ...p, crossTrainingWeight: Number(e.target.value) } : p))}
+            />
+          </label>
+          <label className="field">
+            ימי איכות בשבוע
+            <input
+              type="number"
+              value={rules.hardDaysPerWeek}
+              onChange={(e) => setRules((p) => (p ? { ...p, hardDaysPerWeek: Number(e.target.value) } : p))}
+            />
+          </label>
+          <label className="field">
+            סף מוכנות לאיסור אימון קשה
+            <input
+              type="number"
+              value={rules.noHardIfLowReadiness}
+              onChange={(e) => setRules((p) => (p ? { ...p, noHardIfLowReadiness: Number(e.target.value) } : p))}
+            />
+          </label>
+          <label className="field">
+            ימי קל בין אימוני איכות
+            <input
+              type="number"
+              value={rules.minEasyBetweenHard}
+              onChange={(e) => setRules((p) => (p ? { ...p, minEasyBetweenHard: Number(e.target.value) } : p))}
+            />
+          </label>
+          <label className="field">
+            Injury flags (comma separated)
+            <input
+              value={rules.injuryFlags.join(",")}
+              onChange={(e) =>
+                setRules((p) => (p ? { ...p, injuryFlags: e.target.value.split(",").map((x) => x.trim()).filter(Boolean) } : p))
+              }
+            />
+          </label>
+        </div>
+        <div className="row">
+          <button onClick={save}>שמור לוגיקה</button>
+          <Link href="/settings" className="inline-cta-link subtle-link">
+            חזרה להגדרות
+          </Link>
+          {status && <p className="note">{status}</p>}
+        </div>
+      </Section>
+    </>
+  );
+}

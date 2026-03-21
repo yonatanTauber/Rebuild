@@ -1,1 +1,169 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7CiAgY2xlYXJEYWlseUNoZWNraW5Qcm9ncmVzcywKICBnZXRBdGhsZXRlUHJvZmlsZSwKICBnZXREYWlseUNoZWNraW5Qcm9ncmVzcywKICBnZXRSZWNvdmVyeSwKICBoYXNSZWNvdmVyeUZvckRhdGUsCiAgdXBzZXJ0RGFpbHlDaGVja2luUHJvZ3Jlc3MsCiAgdXBzZXJ0RGFpbHlSZWNvdmVyeQp9IGZyb20gIkAvbGliL2RiIjsKaW1wb3J0IHsKICBjbG91ZENsZWFyRGFpbHlDaGVja2luUHJvZ3Jlc3MsCiAgY2xvdWRFbmFibGVkLAogIGNsb3VkR2V0QXRobGV0ZVByb2ZpbGUsCiAgY2xvdWRHZXREYWlseUNoZWNraW5Qcm9ncmVzcywKICBjbG91ZEdldFJlY292ZXJ5LAogIGNsb3VkSGFzUmVjb3ZlcnksCiAgY2xvdWRVcHNlcnREYWlseUNoZWNraW5Qcm9ncmVzcywKICBjbG91ZFVwc2VydFJlY292ZXJ5Cn0gZnJvbSAiQC9saWIvY2xvdWQtZGIiOwppbXBvcnQgeyBmb3JtYXRJU09EYXRlIH0gZnJvbSAiQC9saWIvZGF0ZSI7CgpleHBvcnQgY29uc3QgcnVudGltZSA9ICJub2RlanMiOwoKY29uc3Qgc2NoZW1hID0gei5vYmplY3QoewogIGRhdGU6IHouc3RyaW5nKCksCiAgZXhlcnRpb246IHouZW51bShbInZlcnlfZWFzeSIsICJlYXN5IiwgIm1vZGVyYXRlIiwgImhhcmQiLCAibWF4Il0pLAogIHNsZWVwOiB6LmVudW0oWyJwb29yIiwgIm9rIiwgImdvb2QiLCAiZ3JlYXQiXSksCiAgaHJ2OiB6LmVudW0oWyJsb3ciLCAibm9ybWFsIiwgImhpZ2giXSksCiAgcmVzdGluZ0hyOiB6LmVudW0oWyJoaWdoIiwgIm5vcm1hbCIsICJsb3ciXSksCiAgbW9vZDogei5lbnVtKFsibG93IiwgIm9rIiwgImdvb2QiLCAiZ3JlYXQiXSksCiAgc29yZW5lc3NMZXZlbDogei5lbnVtKFsibm9uZSIsICJsaWdodCIsICJtZWRpdW0iLCAiaGlnaCJdKSwKICBwYWluQXJlYXM6IHouYXJyYXkoei5zdHJpbmcoKSkuZGVmYXVsdChbXSksCiAgc2xlZXBIb3Vyc0FjdHVhbDogei5udW1iZXIoKS5taW4oMCkubWF4KDE0KS5udWxsYWJsZSgpLm9wdGlvbmFsKCksCiAgaHJ2QWN0dWFsOiB6Lm51bWJlcigpLm1pbigwKS5tYXgoMjUwKS5udWxsYWJsZSgpLm9wdGlvbmFsKCksCiAgcmVzdGluZ0hyQWN0dWFsOiB6Lm51bWJlcigpLm1pbigyMCkubWF4KDEyMCkubnVsbGFibGUoKS5vcHRpb25hbCgpCn0pOwoKY29uc3QgcGFydGlhbFNjaGVtYSA9IHoub2JqZWN0KHsKICBkYXRlOiB6LnN0cmluZygpLAogIHNhdmVQYXJ0aWFsOiB6LmxpdGVyYWwodHJ1ZSksCiAgZXhlcnRpb246IHouZW51bShbInZlcnlfZWFzeSIsICJlYXN5IiwgIm1vZGVyYXRlIiwgImhhcmQiLCAibWF4Il0pLm9wdGlvbmFsKCksCiAgc2xlZXA6IHouZW51bShbInBvb3IiLCAib2siLCAiZ29vZCIsICJncmVhdCJdKS5vcHRpb25hbCgpLAogIGhydjogei5lbnVtKFsibG93IiwgIm5vcm1hbCIsICJoaWdoIl0pLm9wdGlvbmFsKCksCiAgcmVzdGluZ0hyOiB6LmVudW0oWyJoaWdoIiwgIm5vcm1hbCIsICJsb3ciXSkub3B0aW9uYWwoKSwKICBtb29kOiB6LmVudW0oWyJsb3ciLCAib2siLCAiZ29vZCIsICJncmVhdCJdKS5vcHRpb25hbCgpLAogIHNvcmVuZXNzTGV2ZWw6IHouZW51bShbIm5vbmUiLCAibGlnaHQiLCAibWVkaXVtIiwgImhpZ2giXSkub3B0aW9uYWwoKSwKICBwYWluQXJlYXM6IHouYXJyYXkoei5zdHJpbmcoKSkub3B0aW9uYWwoKSwKICBsYXN0U3RlcDogei5udW1iZXIoKS5pbnQoKS5taW4oMCkubWF4KDIwKS5vcHRpb25hbCgpCn0pOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBib2R5ID0gYXdhaXQgcmVxdWVzdC5qc29uKCk7CiAgY29uc3QgcGFydGlhbCA9IHBhcnRpYWxTY2hlbWEuc2FmZVBhcnNlKGJvZHkpOwogIGlmIChwYXJ0aWFsLnN1Y2Nlc3MpIHsKICAgIGNvbnN0IHBheWxvYWQgPSBwYXJ0aWFsLmRhdGE7CiAgICBpZiAoY2xvdWRFbmFibGVkKCkpIHsKICAgICAgYXdhaXQgY2xvdWRVcHNlcnREYWlseUNoZWNraW5Qcm9ncmVzcyh7CiAgICAgICAgZGF0ZTogcGF5bG9hZC5kYXRlLAogICAgICAgIGV4ZXJ0aW9uOiBwYXlsb2FkLmV4ZXJ0aW9uID8/IG51bGwsCiAgICAgICAgc2xlZXA6IHBheWxvYWQuc2xlZXAgPz8gbnVsbCwKICAgICAgICBocnY6IHBheWxvYWQuaHJ2ID8/IG51bGwsCiAgICAgICAgcmVzdGluZ0hyOiBwYXlsb2FkLnJlc3RpbmdIciA/PyBudWxsLAogICAgICAgIG1vb2Q6IHBheWxvYWQubW9vZCA/PyBudWxsLAogICAgICAgIHNvcmVuZXNzTGV2ZWw6IHBheWxvYWQuc29yZW5lc3NMZXZlbCA/PyBudWxsLAogICAgICAgIHBhaW5BcmVhczogcGF5bG9hZC5wYWluQXJlYXMgPz8gbnVsbCwKICAgICAgICBsYXN0U3RlcDogcGF5bG9hZC5sYXN0U3RlcCA/PyBudWxsCiAgICAgIH0pOwogICAgfSBlbHNlIHsKICAgICAgdXBzZXJ0RGFpbHlDaGVja2luUHJvZ3Jlc3MoewogICAgICAgIGRhdGU6IHBheWxvYWQuZGF0ZSwKICAgICAgICBleGVydGlvbjogcGF5bG9hZC5leGVydGlvbiA/PyBudWxsLAogICAgICAgIHNsZWVwOiBwYXlsb2FkLnNsZWVwID8/IG51bGwsCiAgICAgICAgaHJ2OiBwYXlsb2FkLmhydiA/PyBudWxsLAogICAgICAgIHJlc3RpbmdIcjogcGF5bG9hZC5yZXN0aW5nSHIgPz8gbnVsbCwKICAgICAgICBtb29kOiBwYXlsb2FkLm1vb2QgPz8gbnVsbCwKICAgICAgICBzb3JlbmVzc0xldmVsOiBwYXlsb2FkLnNvcmVuZXNzTGV2ZWwgPz8gbnVsbCwKICAgICAgICBwYWluQXJlYXM6IHBheWxvYWQucGFpbkFyZWFzID8/IG51bGwsCiAgICAgICAgbGFzdFN0ZXA6IHBheWxvYWQubGFzdFN0ZXAgPz8gbnVsbAogICAgICB9KTsKICAgIH0KICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IHNhdmVkOiB0cnVlLCBwYXJ0aWFsOiB0cnVlIH0pOwogIH0KCiAgY29uc3QgcGFyc2VkID0gc2NoZW1hLnNhZmVQYXJzZShib2R5KTsKICBpZiAoIXBhcnNlZC5zdWNjZXNzKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogcGFyc2VkLmVycm9yLmZsYXR0ZW4oKSB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgY29uc3QgcGF5bG9hZCA9IHBhcnNlZC5kYXRhOwogIGNvbnN0IHByb2ZpbGUgPSBjbG91ZEVuYWJsZWQoKSA/IGF3YWl0IGNsb3VkR2V0QXRobGV0ZVByb2ZpbGUoKSA6IGdldEF0aGxldGVQcm9maWxlKCk7CiAgY29uc3Qgc2xlZXBCYXNlID0gcHJvZmlsZS5zbGVlcEhvdXJzQmFzZWxpbmUgPz8gNy4xOwogIGNvbnN0IGhydkJhc2UgPSBwcm9maWxlLmhydkJhc2VsaW5lID8/IDQ1OwogIGNvbnN0IHJlc3RpbmdCYXNlID0gcHJvZmlsZS5yZXN0aW5nSHJCYXNlbGluZSA/PyA1ODsKCiAgY29uc3QgbWFwcyA9IHsKICAgIGV4ZXJ0aW9uOiB7IHZlcnlfZWFzeTogMiwgZWFzeTogNCwgbW9kZXJhdGU6IDYsIGhhcmQ6IDgsIG1heDogMTAgfSwKICAgIHNsZWVwSG91cnM6IHsKICAgICAgcG9vcjogTWF0aC5tYXgoNC41LCBOdW1iZXIoKHNsZWVwQmFzZSAtIDEuNCkudG9GaXhlZCgxKSkpLAogICAgICBvazogTWF0aC5tYXgoNS41LCBOdW1iZXIoKHNsZWVwQmFzZSAtIDAuNSkudG9GaXhlZCgxKSkpLAogICAgICBnb29kOiBNYXRoLm1pbigxMC41LCBOdW1iZXIoKHNsZWVwQmFzZSArIDAuNCkudG9GaXhlZCgxKSkpLAogICAgICBncmVhdDogTWF0aC5taW4oMTEuNSwgTnVtYmVyKChzbGVlcEJhc2UgKyAxLjEpLnRvRml4ZWQoMSkpKQogICAgfSwKICAgIHNsZWVwUXVhbGl0eTogeyBwb29yOiAxLCBvazogMywgZ29vZDogNCwgZ3JlYXQ6IDUgfSwKICAgIGhydjogewogICAgICBsb3c6IE1hdGgubWF4KDIwLCBNYXRoLnJvdW5kKGhydkJhc2UgKiAwLjgyKSksCiAgICAgIG5vcm1hbDogTWF0aC5yb3VuZChocnZCYXNlKSwKICAgICAgaGlnaDogTWF0aC5taW4oMTIwLCBNYXRoLnJvdW5kKGhydkJhc2UgKiAxLjE4KSkKICAgIH0sCiAgICByZXN0aW5nSHI6IHsKICAgICAgaGlnaDogTWF0aC5taW4oOTUsIE1hdGgucm91bmQocmVzdGluZ0Jhc2UgKyA2KSksCiAgICAgIG5vcm1hbDogTWF0aC5yb3VuZChyZXN0aW5nQmFzZSksCiAgICAgIGxvdzogTWF0aC5tYXgoMzUsIE1hdGgucm91bmQocmVzdGluZ0Jhc2UgLSA2KSkKICAgIH0sCiAgICBtb29kOiB7IGxvdzogMSwgb2s6IDMsIGdvb2Q6IDQsIGdyZWF0OiA1IH0sCiAgICBzb3JlbmVzczogeyBub25lOiAxLCBsaWdodDogMywgbWVkaXVtOiA2LCBoaWdoOiA4IH0KICB9IGFzIGNvbnN0OwoKICBpZiAoY2xvdWRFbmFibGVkKCkpIHsKICAgIGF3YWl0IGNsb3VkVXBzZXJ0UmVjb3ZlcnkoewogICAgICBkYXRlOiBwYXlsb2FkLmRhdGUsCiAgICAgIHJwZTogbWFwcy5leGVydGlvbltwYXlsb2FkLmV4ZXJ0aW9uXSwKICAgICAgc2xlZXBIb3VyczogcGF5bG9hZC5zbGVlcEhvdXJzQWN0dWFsID8/IG1hcHMuc2xlZXBIb3Vyc1twYXlsb2FkLnNsZWVwXSwKICAgICAgc2xlZXBRdWFsaXR5OiBtYXBzLnNsZWVwUXVhbGl0eVtwYXlsb2FkLnNsZWVwXSwKICAgICAgaHJ2OiBwYXlsb2FkLmhydkFjdHVhbCA/PyBtYXBzLmhydltwYXlsb2FkLmhydl0sCiAgICAgIHJlc3RpbmdIcjogcGF5bG9hZC5yZXN0aW5nSHJBY3R1YWwgPz8gbWFwcy5yZXN0aW5nSHJbcGF5bG9hZC5yZXN0aW5nSHJdLAogICAgICBtb29kOiBtYXBzLm1vb2RbcGF5bG9hZC5tb29kXSwKICAgICAgc29yZW5lc3NHbG9iYWw6IG1hcHMuc29yZW5lc3NbcGF5bG9hZC5zb3JlbmVzc0xldmVsXSwKICAgICAgc29yZW5lc3NCeUFyZWE6IEpTT04uc3RyaW5naWZ5KHBheWxvYWQucGFpbkFyZWFzKSwKICAgICAgbm90ZXM6IG51bGwKICAgIH0pOwogICAgYXdhaXQgY2xvdWRDbGVhckRhaWx5Q2hlY2tpblByb2dyZXNzKHBheWxvYWQuZGF0ZSk7CiAgfSBlbHNlIHsKICAgIHVwc2VydERhaWx5UmVjb3ZlcnkoewogICAgICBkYXRlOiBwYXlsb2FkLmRhdGUsCiAgICAgIHJwZTogbWFwcy5leGVydGlvbltwYXlsb2FkLmV4ZXJ0aW9uXSwKICAgICAgc2xlZXBIb3VyczogcGF5bG9hZC5zbGVlcEhvdXJzQWN0dWFsID8/IG1hcHMuc2xlZXBIb3Vyc1twYXlsb2FkLnNsZWVwXSwKICAgICAgc2xlZXBRdWFsaXR5OiBtYXBzLnNsZWVwUXVhbGl0eVtwYXlsb2FkLnNsZWVwXSwKICAgICAgaHJ2OiBwYXlsb2FkLmhydkFjdHVhbCA/PyBtYXBzLmhydltwYXlsb2FkLmhydl0sCiAgICAgIHJlc3RpbmdIcjogcGF5bG9hZC5yZXN0aW5nSHJBY3R1YWwgPz8gbWFwcy5yZXN0aW5nSHJbcGF5bG9hZC5yZXN0aW5nSHJdLAogICAgICBtb29kOiBtYXBzLm1vb2RbcGF5bG9hZC5tb29kXSwKICAgICAgc29yZW5lc3NHbG9iYWw6IG1hcHMuc29yZW5lc3NbcGF5bG9hZC5zb3JlbmVzc0xldmVsXSwKICAgICAgc29yZW5lc3NCeUFyZWE6IEpTT04uc3RyaW5naWZ5KHBheWxvYWQucGFpbkFyZWFzKSwKICAgICAgbm90ZXM6IG51bGwKICAgIH0pOwogICAgY2xlYXJEYWlseUNoZWNraW5Qcm9ncmVzcyhwYXlsb2FkLmRhdGUpOwogIH0KICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBzYXZlZDogdHJ1ZSB9KTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IGRhdGUgPSByZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zLmdldCgiZGF0ZSIpID8/IGZvcm1hdElTT0RhdGUoKTsKICBpZiAoY2xvdWRFbmFibGVkKCkpIHsKICAgIGNvbnN0IGV4aXN0cyA9IGF3YWl0IGNsb3VkSGFzUmVjb3ZlcnkoZGF0ZSk7CiAgICBjb25zdCByZWNvdmVyeSA9IGF3YWl0IGNsb3VkR2V0UmVjb3ZlcnkoZGF0ZSk7CiAgICBjb25zdCBwcm9ncmVzcyA9IGV4aXN0cyA/IG51bGwgOiBhd2FpdCBjbG91ZEdldERhaWx5Q2hlY2tpblByb2dyZXNzKGRhdGUpOwogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZGF0ZSwgZXhpc3RzLCByZWNvdmVyeSwgcHJvZ3Jlc3MgfSk7CiAgfQogIGNvbnN0IGV4aXN0cyA9IGhhc1JlY292ZXJ5Rm9yRGF0ZShkYXRlKTsKICBjb25zdCByZWNvdmVyeSA9IGdldFJlY292ZXJ5KGRhdGUpOwogIGNvbnN0IHByb2dyZXNzID0gZXhpc3RzID8gbnVsbCA6IGdldERhaWx5Q2hlY2tpblByb2dyZXNzKGRhdGUpOwogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7CiAgICBkYXRlLAogICAgZXhpc3RzLAogICAgcmVjb3ZlcnksCiAgICBwcm9ncmVzcwogIH0pOwp9Cg=="}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import {
+  clearDailyCheckinProgress,
+  getAthleteProfile,
+  getDailyCheckinProgress,
+  getRecovery,
+  hasRecoveryForDate,
+  upsertDailyCheckinProgress,
+  upsertDailyRecovery
+} from "@/lib/db";
+import {
+  cloudClearDailyCheckinProgress,
+  cloudEnabled,
+  cloudGetAthleteProfile,
+  cloudGetDailyCheckinProgress,
+  cloudGetRecovery,
+  cloudHasRecovery,
+  cloudUpsertDailyCheckinProgress,
+  cloudUpsertRecovery
+} from "@/lib/cloud-db";
+import { formatISODate } from "@/lib/date";
+
+export const runtime = "nodejs";
+
+const schema = z.object({
+  date: z.string(),
+  exertion: z.enum(["very_easy", "easy", "moderate", "hard", "max"]),
+  sleep: z.enum(["poor", "ok", "good", "great"]),
+  hrv: z.enum(["low", "normal", "high"]),
+  restingHr: z.enum(["high", "normal", "low"]),
+  mood: z.enum(["low", "ok", "good", "great"]),
+  sorenessLevel: z.enum(["none", "light", "medium", "high"]),
+  painAreas: z.array(z.string()).default([]),
+  sleepHoursActual: z.number().min(0).max(14).nullable().optional(),
+  hrvActual: z.number().min(0).max(250).nullable().optional(),
+  restingHrActual: z.number().min(20).max(120).nullable().optional()
+});
+
+const partialSchema = z.object({
+  date: z.string(),
+  savePartial: z.literal(true),
+  exertion: z.enum(["very_easy", "easy", "moderate", "hard", "max"]).optional(),
+  sleep: z.enum(["poor", "ok", "good", "great"]).optional(),
+  hrv: z.enum(["low", "normal", "high"]).optional(),
+  restingHr: z.enum(["high", "normal", "low"]).optional(),
+  mood: z.enum(["low", "ok", "good", "great"]).optional(),
+  sorenessLevel: z.enum(["none", "light", "medium", "high"]).optional(),
+  painAreas: z.array(z.string()).optional(),
+  lastStep: z.number().int().min(0).max(20).optional()
+});
+
+export async function POST(request: NextRequest) {
+  const body = await request.json();
+  const partial = partialSchema.safeParse(body);
+  if (partial.success) {
+    const payload = partial.data;
+    if (cloudEnabled()) {
+      await cloudUpsertDailyCheckinProgress({
+        date: payload.date,
+        exertion: payload.exertion ?? null,
+        sleep: payload.sleep ?? null,
+        hrv: payload.hrv ?? null,
+        restingHr: payload.restingHr ?? null,
+        mood: payload.mood ?? null,
+        sorenessLevel: payload.sorenessLevel ?? null,
+        painAreas: payload.painAreas ?? null,
+        lastStep: payload.lastStep ?? null
+      });
+    } else {
+      upsertDailyCheckinProgress({
+        date: payload.date,
+        exertion: payload.exertion ?? null,
+        sleep: payload.sleep ?? null,
+        hrv: payload.hrv ?? null,
+        restingHr: payload.restingHr ?? null,
+        mood: payload.mood ?? null,
+        sorenessLevel: payload.sorenessLevel ?? null,
+        painAreas: payload.painAreas ?? null,
+        lastStep: payload.lastStep ?? null
+      });
+    }
+    return NextResponse.json({ saved: true, partial: true });
+  }
+
+  const parsed = schema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  const payload = parsed.data;
+  const profile = cloudEnabled() ? await cloudGetAthleteProfile() : getAthleteProfile();
+  const sleepBase = profile.sleepHoursBaseline ?? 7.1;
+  const hrvBase = profile.hrvBaseline ?? 45;
+  const restingBase = profile.restingHrBaseline ?? 58;
+
+  const maps = {
+    exertion: { very_easy: 2, easy: 4, moderate: 6, hard: 8, max: 10 },
+    sleepHours: {
+      poor: Math.max(4.5, Number((sleepBase - 1.4).toFixed(1))),
+      ok: Math.max(5.5, Number((sleepBase - 0.5).toFixed(1))),
+      good: Math.min(10.5, Number((sleepBase + 0.4).toFixed(1))),
+      great: Math.min(11.5, Number((sleepBase + 1.1).toFixed(1)))
+    },
+    sleepQuality: { poor: 1, ok: 3, good: 4, great: 5 },
+    hrv: {
+      low: Math.max(20, Math.round(hrvBase * 0.82)),
+      normal: Math.round(hrvBase),
+      high: Math.min(120, Math.round(hrvBase * 1.18))
+    },
+    restingHr: {
+      high: Math.min(95, Math.round(restingBase + 6)),
+      normal: Math.round(restingBase),
+      low: Math.max(35, Math.round(restingBase - 6))
+    },
+    mood: { low: 1, ok: 3, good: 4, great: 5 },
+    soreness: { none: 1, light: 3, medium: 6, high: 8 }
+  } as const;
+
+  if (cloudEnabled()) {
+    await cloudUpsertRecovery({
+      date: payload.date,
+      rpe: maps.exertion[payload.exertion],
+      sleepHours: payload.sleepHoursActual ?? maps.sleepHours[payload.sleep],
+      sleepQuality: maps.sleepQuality[payload.sleep],
+      hrv: payload.hrvActual ?? maps.hrv[payload.hrv],
+      restingHr: payload.restingHrActual ?? maps.restingHr[payload.restingHr],
+      mood: maps.mood[payload.mood],
+      sorenessGlobal: maps.soreness[payload.sorenessLevel],
+      sorenessByArea: JSON.stringify(payload.painAreas),
+      notes: null
+    });
+    await cloudClearDailyCheckinProgress(payload.date);
+  } else {
+    upsertDailyRecovery({
+      date: payload.date,
+      rpe: maps.exertion[payload.exertion],
+      sleepHours: payload.sleepHoursActual ?? maps.sleepHours[payload.sleep],
+      sleepQuality: maps.sleepQuality[payload.sleep],
+      hrv: payload.hrvActual ?? maps.hrv[payload.hrv],
+      restingHr: payload.restingHrActual ?? maps.restingHr[payload.restingHr],
+      mood: maps.mood[payload.mood],
+      sorenessGlobal: maps.soreness[payload.sorenessLevel],
+      sorenessByArea: JSON.stringify(payload.painAreas),
+      notes: null
+    });
+    clearDailyCheckinProgress(payload.date);
+  }
+  return NextResponse.json({ saved: true });
+}
+
+export async function GET(request: NextRequest) {
+  const date = request.nextUrl.searchParams.get("date") ?? formatISODate();
+  if (cloudEnabled()) {
+    const exists = await cloudHasRecovery(date);
+    const recovery = await cloudGetRecovery(date);
+    const progress = exists ? null : await cloudGetDailyCheckinProgress(date);
+    return NextResponse.json({ date, exists, recovery, progress });
+  }
+  const exists = hasRecoveryForDate(date);
+  const recovery = getRecovery(date);
+  const progress = exists ? null : getDailyCheckinProgress(date);
+  return NextResponse.json({
+    date,
+    exists,
+    recovery,
+    progress
+  });
+}

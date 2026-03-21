@@ -1,1 +1,44 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IGVkaXROdXRyaXRpb25NZWFsIH0gZnJvbSAiQC9saWIvbnV0cml0aW9uLWVuZ2luZSI7CmltcG9ydCB7IGdldERiUHJvdmlkZXIgfSBmcm9tICJAL2xpYi9kYi1kcml2ZXIiOwppbXBvcnQgeyBjbG91ZEVkaXROdXRyaXRpb25NZWFsIH0gZnJvbSAiQC9saWIvbnV0cml0aW9uLWNsb3VkLW1lYWxzIjsKCmV4cG9ydCBjb25zdCBydW50aW1lID0gIm5vZGVqcyI7Cgpjb25zdCBzY2hlbWEgPSB6Lm9iamVjdCh7CiAgbWVhbElkOiB6LnN0cmluZygpLm1pbigxKSwKICBpdGVtczogegogICAgLmFycmF5KAogICAgICB6Lm9iamVjdCh7CiAgICAgICAgaW5ncmVkaWVudElkOiB6LnN0cmluZygpLm1pbigxKSwKICAgICAgICBxdWFudGl0eTogei5udW1iZXIoKS5wb3NpdGl2ZSgpLAogICAgICAgIHVuaXQ6IHouZW51bShbImciLCAibWwiLCAidW5pdCIsICJ0YnNwIiwgInRzcCJdKQogICAgICB9KQogICAgKQogICAgLm1pbigxKQogICAgLm1heCgxMikKfSk7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gUE9TVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IGJvZHkgPSBhd2FpdCByZXF1ZXN0Lmpzb24oKS5jYXRjaCgoKSA9PiAoe30pKTsKICBjb25zdCBwYXJzZWQgPSBzY2hlbWEuc2FmZVBhcnNlKGJvZHkpOwogIGlmICghcGFyc2VkLnN1Y2Nlc3MpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiBwYXJzZWQuZXJyb3IuZmxhdHRlbigpIH0sIHsgc3RhdHVzOiA0MDAgfSk7CiAgfQoKICBpZiAoZ2V0RGJQcm92aWRlcigpID09PSAicG9zdGdyZXMiKSB7CiAgICBjb25zdCByZXN1bHQgPSBhd2FpdCBjbG91ZEVkaXROdXRyaXRpb25NZWFsKHBhcnNlZC5kYXRhLm1lYWxJZCwgcGFyc2VkLmRhdGEuaXRlbXMpOwogICAgaWYgKCFyZXN1bHQub2sgfHwgIXJlc3VsdC5tZWFsKSB7CiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAibWVhbCBub3QgZm91bmQgb3IgaW52YWxpZCBpdGVtcyIgfSwgeyBzdGF0dXM6IDQwNCB9KTsKICAgIH0KICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlLCBtZWFsOiByZXN1bHQubWVhbCB9KTsKICB9CgogIGNvbnN0IHVwZGF0ZWQgPSBlZGl0TnV0cml0aW9uTWVhbChwYXJzZWQuZGF0YS5tZWFsSWQsIHBhcnNlZC5kYXRhLml0ZW1zKTsKICBpZiAoIXVwZGF0ZWQpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAibWVhbCBub3QgZm91bmQgb3IgaW52YWxpZCBpdGVtcyIgfSwgeyBzdGF0dXM6IDQwNCB9KTsKICB9CgogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlLCAuLi51cGRhdGVkIH0pOwp9Cg=="}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { editNutritionMeal } from "@/lib/nutrition-engine";
+import { getDbProvider } from "@/lib/db-driver";
+import { cloudEditNutritionMeal } from "@/lib/nutrition-cloud-meals";
+
+export const runtime = "nodejs";
+
+const schema = z.object({
+  mealId: z.string().min(1),
+  items: z
+    .array(
+      z.object({
+        ingredientId: z.string().min(1),
+        quantity: z.number().positive(),
+        unit: z.enum(["g", "ml", "unit", "tbsp", "tsp"])
+      })
+    )
+    .min(1)
+    .max(12)
+});
+
+export async function POST(request: NextRequest) {
+  const body = await request.json().catch(() => ({}));
+  const parsed = schema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  if (getDbProvider() === "postgres") {
+    const result = await cloudEditNutritionMeal(parsed.data.mealId, parsed.data.items);
+    if (!result.ok || !result.meal) {
+      return NextResponse.json({ error: "meal not found or invalid items" }, { status: 404 });
+    }
+    return NextResponse.json({ ok: true, meal: result.meal });
+  }
+
+  const updated = editNutritionMeal(parsed.data.mealId, parsed.data.items);
+  if (!updated) {
+    return NextResponse.json({ error: "meal not found or invalid items" }, { status: 404 });
+  }
+
+  return NextResponse.json({ ok: true, ...updated });
+}

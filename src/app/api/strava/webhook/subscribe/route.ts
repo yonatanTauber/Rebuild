@@ -1,1 +1,57 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgc3FsIH0gZnJvbSAiQHZlcmNlbC9wb3N0Z3JlcyI7CmltcG9ydCB7IGVuc3VyZVN0cmF2YVRhYmxlcywgZ2V0U3RyYXZhRW52LCBnZXRTdHJhdmFWZXJpZnlUb2tlbiB9IGZyb20gIkAvYXBwL2FwaS9zdHJhdmEvX2xpYiI7CgpleHBvcnQgY29uc3QgcnVudGltZSA9ICJub2RlanMiOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBhd2FpdCBlbnN1cmVTdHJhdmFUYWJsZXMoKTsKICBjb25zdCBlbnYgPSBnZXRTdHJhdmFFbnYoKTsKICBpZiAoIWVudikgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKAogICAgICB7IG9rOiBmYWxzZSwgZXJyb3I6ICJNaXNzaW5nIFNUUkFWQV9DTElFTlRfSUQvU1RSQVZBX0NMSUVOVF9TRUNSRVQiIH0sCiAgICAgIHsgc3RhdHVzOiA1MDAgfQogICAgKTsKICB9CgogIGNvbnN0IHZlcmlmeVRva2VuID0gZ2V0U3RyYXZhVmVyaWZ5VG9rZW4oKTsKICBpZiAoIXZlcmlmeVRva2VuKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBvazogZmFsc2UsIGVycm9yOiAiTWlzc2luZyBTVFJBVkFfVkVSSUZZX1RPS0VOIiB9LCB7IHN0YXR1czogNTAwIH0pOwogIH0KCiAgY29uc3QgY2FsbGJhY2tVcmwgPQogICAgcHJvY2Vzcy5lbnYuU1RSQVZBX1dFQkhPT0tfQ0FMTEJBQ0tfVVJMPy50cmltKCkgfHwgYCR7cmVxdWVzdC5uZXh0VXJsLm9yaWdpbn0vYXBpL3N0cmF2YS93ZWJob29rYDsKCiAgLy8gQ3JlYXRlIHN1YnNjcmlwdGlvbi4gU3RyYXZhIHdpbGwgaW1tZWRpYXRlbHkgdmVyaWZ5IHZpYSBHRVQgaHViLmNoYWxsZW5nZSBvbiBjYWxsYmFja1VybC4KICBjb25zdCBib2R5ID0gbmV3IFVSTFNlYXJjaFBhcmFtcygpOwogIGJvZHkuc2V0KCJjbGllbnRfaWQiLCBlbnYuY2xpZW50SWQpOwogIGJvZHkuc2V0KCJjbGllbnRfc2VjcmV0IiwgZW52LmNsaWVudFNlY3JldCk7CiAgYm9keS5zZXQoImNhbGxiYWNrX3VybCIsIGNhbGxiYWNrVXJsKTsKICBib2R5LnNldCgidmVyaWZ5X3Rva2VuIiwgdmVyaWZ5VG9rZW4pOwoKICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaCgiaHR0cHM6Ly93d3cuc3RyYXZhLmNvbS9hcGkvdjMvcHVzaF9zdWJzY3JpcHRpb25zIiwgewogICAgbWV0aG9kOiAiUE9TVCIsCiAgICBoZWFkZXJzOiB7ICJDb250ZW50LVR5cGUiOiAiYXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkIiB9LAogICAgYm9keQogIH0pOwoKICBjb25zdCB0ZXh0ID0gYXdhaXQgcmVzLnRleHQoKTsKICBpZiAoIXJlcy5vaykgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgb2s6IGZhbHNlLCBlcnJvcjogYFN0cmF2YSBzdWJzY3JpYmUgZmFpbGVkICgke3Jlcy5zdGF0dXN9KTogJHt0ZXh0fWAgfSwgeyBzdGF0dXM6IDUwMCB9KTsKICB9CgogIGNvbnN0IGpzb24gPSBKU09OLnBhcnNlKHRleHQpIGFzIHsgaWQ/OiBudW1iZXIgfTsKICBjb25zdCBzdWJzY3JpcHRpb25JZCA9IGpzb24uaWQgIT0gbnVsbCA/IFN0cmluZyhqc29uLmlkKSA6IG51bGw7CgogIGF3YWl0IHNxbGAKICAgIElOU0VSVCBJTlRPIHN0cmF2YV93ZWJob29rIChpZCwgc3Vic2NyaXB0aW9uX2lkLCBjYWxsYmFja191cmwsIGNyZWF0ZWRfYXQsIHVwZGF0ZWRfYXQpCiAgICBWQUxVRVMgKDEsICR7c3Vic2NyaXB0aW9uSWR9LCAke2NhbGxiYWNrVXJsfSwgbm93KCksIG5vdygpKQogICAgT04gQ09ORkxJQ1QgKGlkKSBETyBVUERBVEUKICAgICAgU0VUIHN1YnNjcmlwdGlvbl9pZCA9IEVYQ0xVREVELnN1YnNjcmlwdGlvbl9pZCwKICAgICAgICAgIGNhbGxiYWNrX3VybCA9IEVYQ0xVREVELmNhbGxiYWNrX3VybCwKICAgICAgICAgIHVwZGF0ZWRfYXQgPSBub3coKQogIGA7CgogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlLCBzdWJzY3JpcHRpb25JZCwgY2FsbGJhY2tVcmwgfSk7Cn0KCg=="}
+import { NextRequest, NextResponse } from "next/server";
+import { sql } from "@vercel/postgres";
+import { ensureStravaTables, getStravaEnv, getStravaVerifyToken } from "@/app/api/strava/_lib";
+
+export const runtime = "nodejs";
+
+export async function POST(request: NextRequest) {
+  await ensureStravaTables();
+  const env = getStravaEnv();
+  if (!env) {
+    return NextResponse.json(
+      { ok: false, error: "Missing STRAVA_CLIENT_ID/STRAVA_CLIENT_SECRET" },
+      { status: 500 }
+    );
+  }
+
+  const verifyToken = getStravaVerifyToken();
+  if (!verifyToken) {
+    return NextResponse.json({ ok: false, error: "Missing STRAVA_VERIFY_TOKEN" }, { status: 500 });
+  }
+
+  const callbackUrl =
+    process.env.STRAVA_WEBHOOK_CALLBACK_URL?.trim() || `${request.nextUrl.origin}/api/strava/webhook`;
+
+  // Create subscription. Strava will immediately verify via GET hub.challenge on callbackUrl.
+  const body = new URLSearchParams();
+  body.set("client_id", env.clientId);
+  body.set("client_secret", env.clientSecret);
+  body.set("callback_url", callbackUrl);
+  body.set("verify_token", verifyToken);
+
+  const res = await fetch("https://www.strava.com/api/v3/push_subscriptions", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body
+  });
+
+  const text = await res.text();
+  if (!res.ok) {
+    return NextResponse.json({ ok: false, error: `Strava subscribe failed (${res.status}): ${text}` }, { status: 500 });
+  }
+
+  const json = JSON.parse(text) as { id?: number };
+  const subscriptionId = json.id != null ? String(json.id) : null;
+
+  await sql`
+    INSERT INTO strava_webhook (id, subscription_id, callback_url, created_at, updated_at)
+    VALUES (1, ${subscriptionId}, ${callbackUrl}, now(), now())
+    ON CONFLICT (id) DO UPDATE
+      SET subscription_id = EXCLUDED.subscription_id,
+          callback_url = EXCLUDED.callback_url,
+          updated_at = now()
+  `;
+
+  return NextResponse.json({ ok: true, subscriptionId, callbackUrl });
+}
+

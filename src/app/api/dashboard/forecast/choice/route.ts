@@ -1,1 +1,33 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IHNldEZvcmVjYXN0T3ZlcnJpZGUgfSBmcm9tICJAL2xpYi9kYiI7Cgpjb25zdCBvcHRpb25TY2hlbWEgPSB6Lm9iamVjdCh7CiAgaWQ6IHouc3RyaW5nKCksCiAgc3BvcnQ6IHouZW51bShbInJ1biIsICJiaWtlIiwgInN3aW0iXSksCiAgd29ya291dFR5cGU6IHouc3RyaW5nKCksCiAgZHVyYXRpb25NaW46IHoubnVtYmVyKCksCiAgaW50ZW5zaXR5Wm9uZTogei5zdHJpbmcoKSwKICB0YXJnZXQ6IHouc3RyaW5nKCksCiAgc3RydWN0dXJlOiB6LnN0cmluZygpLAogIHdoeTogei5zdHJpbmcoKSwKICBub3Rlczogei5zdHJpbmcoKSwKICBwbGFubmVkTG9hZDogei5udW1iZXIoKQp9KTsKCmNvbnN0IHNjaGVtYSA9IHoub2JqZWN0KHsKICBkYXRlOiB6LnN0cmluZygpLAogIG9wdGlvbklkOiB6LnN0cmluZygpLAogIG9wdGlvbjogb3B0aW9uU2NoZW1hCn0pOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBwYXlsb2FkID0gYXdhaXQgcmVxdWVzdC5qc29uKCk7CiAgY29uc3QgcGFyc2VkID0gc2NoZW1hLnNhZmVQYXJzZShwYXlsb2FkKTsKICBpZiAoIXBhcnNlZC5zdWNjZXNzKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogcGFyc2VkLmVycm9yLmZsYXR0ZW4oKSB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgc2V0Rm9yZWNhc3RPdmVycmlkZShwYXJzZWQuZGF0YS5kYXRlLCBwYXJzZWQuZGF0YS5vcHRpb25JZCwgSlNPTi5zdHJpbmdpZnkocGFyc2VkLmRhdGEub3B0aW9uKSk7CiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgc2F2ZWQ6IHRydWUgfSk7Cn0K"}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { setForecastOverride } from "@/lib/db";
+
+const optionSchema = z.object({
+  id: z.string(),
+  sport: z.enum(["run", "bike", "swim"]),
+  workoutType: z.string(),
+  durationMin: z.number(),
+  intensityZone: z.string(),
+  target: z.string(),
+  structure: z.string(),
+  why: z.string(),
+  notes: z.string(),
+  plannedLoad: z.number()
+});
+
+const schema = z.object({
+  date: z.string(),
+  optionId: z.string(),
+  option: optionSchema
+});
+
+export async function POST(request: NextRequest) {
+  const payload = await request.json();
+  const parsed = schema.safeParse(payload);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  setForecastOverride(parsed.data.date, parsed.data.optionId, JSON.stringify(parsed.data.option));
+  return NextResponse.json({ saved: true });
+}

@@ -1,1 +1,18 @@
-{"data":"aW1wb3J0IHsKICBjbGVhckJlc3RFZmZvcnRzRm9yV29ya291dCwKICBnZXRUb3BFZmZvcnRzLAogIGdldFdvcmtvdXRCeUlkLAogIGdldFdvcmtvdXRzLAogIHVwc2VydE51dHJpdGlvbkRhaWx5UGxhbiwKICBpbnNlcnRCZXN0RWZmb3J0cwp9IGZyb20gIkAvbGliL2RiIjsKaW1wb3J0IHR5cGUgeyBTdG9yYWdlQWRhcHRlciB9IGZyb20gIkAvbGliL3N0b3JhZ2UvYWRhcHRlciI7CgpleHBvcnQgY29uc3Qgc3FsaXRlU3RvcmFnZUFkYXB0ZXI6IFN0b3JhZ2VBZGFwdGVyID0gewogIGxpc3RXb3Jrb3V0czogKGxpbWl0KSA9PiBnZXRXb3Jrb3V0cyhsaW1pdCA/PyAxMDAwMDApLAogIGdldFdvcmtvdXRCeUlkLAogIGNsZWFyQmVzdEVmZm9ydHNGb3JXb3Jrb3V0LAogIGluc2VydEJlc3RFZmZvcnRzLAogIGdldFRvcEVmZm9ydHMsCiAgdXBzZXJ0TnV0cml0aW9uRGFpbHlQbGFuCn07Cg=="}
+import {
+  clearBestEffortsForWorkout,
+  getTopEfforts,
+  getWorkoutById,
+  getWorkouts,
+  upsertNutritionDailyPlan,
+  insertBestEfforts
+} from "@/lib/db";
+import type { StorageAdapter } from "@/lib/storage/adapter";
+
+export const sqliteStorageAdapter: StorageAdapter = {
+  listWorkouts: (limit) => getWorkouts(limit ?? 100000),
+  getWorkoutById,
+  clearBestEffortsForWorkout,
+  insertBestEfforts,
+  getTopEfforts,
+  upsertNutritionDailyPlan
+};

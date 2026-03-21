@@ -1,1 +1,119 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IGZvcm1hdElTT0RhdGUgfSBmcm9tICJAL2xpYi9kYXRlIjsKaW1wb3J0IHsgZ2V0TnV0cml0aW9uUGFudHJ5QnVuZGxlLCB1cHNlcnROdXRyaXRpb25QYW50cnkgfSBmcm9tICJAL2xpYi9udXRyaXRpb24tZW5naW5lIjsKaW1wb3J0IHsgZ2V0RGJQcm92aWRlciwgZGJRdWVyeSB9IGZyb20gIkAvbGliL2RiLWRyaXZlciI7CmltcG9ydCB7IG1pZ3JhdGVEYiB9IGZyb20gIkAvbGliL2RiLW1pZ3JhdGUiOwppbXBvcnQgeyBlbnN1cmVDbG91ZE51dHJpdGlvblNlZWQsIGNsb3VkTGlzdE51dHJpdGlvbkluZ3JlZGllbnRzIH0gZnJvbSAiQC9saWIvbnV0cml0aW9uLWNsb3VkIjsKaW1wb3J0IHsgcmFuZG9tVVVJRCB9IGZyb20gIm5vZGU6Y3J5cHRvIjsKCmV4cG9ydCBjb25zdCBydW50aW1lID0gIm5vZGVqcyI7Cgpjb25zdCBwYW50cnlJdGVtU2NoZW1hID0gei5vYmplY3QoewogIGluZ3JlZGllbnRJZDogei5zdHJpbmcoKS5taW4oMSksCiAgcXVhbnRpdHk6IHoubnVtYmVyKCkucG9zaXRpdmUoKSwKICB1bml0OiB6LmVudW0oWyJnIiwgIm1sIiwgInVuaXQiLCAidGJzcCIsICJ0c3AiXSkKfSk7Cgpjb25zdCBwb3N0U2NoZW1hID0gei5vYmplY3QoewogIGRhdGU6IHouc3RyaW5nKCkucmVnZXgoL15cZHs0fS1cZHsyfS1cZHsyfSQvKS5vcHRpb25hbCgpLAogIGl0ZW1zOiB6LmFycmF5KHBhbnRyeUl0ZW1TY2hlbWEpLm1heCgyMDApCn0pOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IGRhdGUgPSByZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zLmdldCgiZGF0ZSIpID8/IGZvcm1hdElTT0RhdGUoKTsKICBpZiAoZ2V0RGJQcm92aWRlcigpICE9PSAicG9zdGdyZXMiKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oZ2V0TnV0cml0aW9uUGFudHJ5QnVuZGxlKGRhdGUpKTsKICB9CgogIGF3YWl0IG1pZ3JhdGVEYigpOwogIGF3YWl0IGVuc3VyZUNsb3VkTnV0cml0aW9uU2VlZCgpOwoKICBjb25zdCBpbmdyZWRpZW50cyA9IGF3YWl0IGNsb3VkTGlzdE51dHJpdGlvbkluZ3JlZGllbnRzKCk7CiAgY29uc3QgaXRlbXNSZXMgPSBhd2FpdCBkYlF1ZXJ5PHsKICAgIGlkOiBzdHJpbmc7CiAgICBkYXRlOiBzdHJpbmc7CiAgICBpbmdyZWRpZW50aWQ6IHN0cmluZzsKICAgIHF1YW50aXR5OiBudW1iZXI7CiAgICB1bml0OiBzdHJpbmc7CiAgICBncmFtc2VmZmVjdGl2ZTogbnVtYmVyOwogICAgaW5ncmVkaWVudG5hbWU6IHN0cmluZzsKICAgIGluZ3JlZGllbnRjYXRlZ29yeTogc3RyaW5nOwogIH0+KAogICAgYAogICAgU0VMRUNUCiAgICAgIHAuaWQsCiAgICAgIHAuZGF0ZSwKICAgICAgcC5pbmdyZWRpZW50SWQsCiAgICAgIHAucXVhbnRpdHksCiAgICAgIHAudW5pdCwKICAgICAgcC5ncmFtc0VmZmVjdGl2ZSwKICAgICAgaS5uYW1lIEFTIGluZ3JlZGllbnROYW1lLAogICAgICBpLmNhdGVnb3J5IEFTIGluZ3JlZGllbnRDYXRlZ29yeQogICAgRlJPTSBudXRyaXRpb25fcGFudHJ5X2l0ZW1zIHAKICAgIEpPSU4gbnV0cml0aW9uX2luZ3JlZGllbnRzIGkgT04gaS5pZCA9IHAuaW5ncmVkaWVudElkCiAgICBXSEVSRSBwLmRhdGUgPSAkMQogICAgT1JERVIgQlkgaS5jYXRlZ29yeSBBU0MsIGkubmFtZSBBU0MKICAgIGAsCiAgICBbZGF0ZV0KICApOwoKICBjb25zdCBpdGVtcyA9IGl0ZW1zUmVzLnJvd3MubWFwKChyb3cpID0+ICh7CiAgICBpZDogU3RyaW5nKChyb3cgYXMgYW55KS5pZCksCiAgICBkYXRlOiBTdHJpbmcoKHJvdyBhcyBhbnkpLmRhdGUpLAogICAgaW5ncmVkaWVudElkOiBTdHJpbmcoKHJvdyBhcyBhbnkpLmluZ3JlZGllbnRpZCA/PyAocm93IGFzIGFueSkuaW5ncmVkaWVudElkKSwKICAgIHF1YW50aXR5OiBOdW1iZXIoKHJvdyBhcyBhbnkpLnF1YW50aXR5ID8/IDApLAogICAgdW5pdDogU3RyaW5nKChyb3cgYXMgYW55KS51bml0KSwKICAgIGdyYW1zRWZmZWN0aXZlOiBOdW1iZXIoKHJvdyBhcyBhbnkpLmdyYW1zZWZmZWN0aXZlID8/IChyb3cgYXMgYW55KS5ncmFtc0VmZmVjdGl2ZSA/PyAwKSwKICAgIGluZ3JlZGllbnROYW1lOiBTdHJpbmcoKHJvdyBhcyBhbnkpLmluZ3JlZGllbnRuYW1lID8/IChyb3cgYXMgYW55KS5pbmdyZWRpZW50TmFtZSA/PyAiIiksCiAgICBpbmdyZWRpZW50Q2F0ZWdvcnk6IFN0cmluZygocm93IGFzIGFueSkuaW5ncmVkaWVudGNhdGVnb3J5ID8/IChyb3cgYXMgYW55KS5pbmdyZWRpZW50Q2F0ZWdvcnkgPz8gIiIpCiAgfSkpOwoKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBkYXRlLCBpbmdyZWRpZW50cywgaXRlbXMgfSk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQT1NUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgY29uc3QgYm9keSA9IGF3YWl0IHJlcXVlc3QuanNvbigpLmNhdGNoKCgpID0+ICh7fSkpOwogIGNvbnN0IHBhcnNlZCA9IHBvc3RTY2hlbWEuc2FmZVBhcnNlKGJvZHkpOwogIGlmICghcGFyc2VkLnN1Y2Nlc3MpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiBwYXJzZWQuZXJyb3IuZmxhdHRlbigpIH0sIHsgc3RhdHVzOiA0MDAgfSk7CiAgfQogIGNvbnN0IGRhdGUgPSBwYXJzZWQuZGF0YS5kYXRlID8/IGZvcm1hdElTT0RhdGUoKTsKICBpZiAoZ2V0RGJQcm92aWRlcigpICE9PSAicG9zdGdyZXMiKSB7CiAgICBjb25zdCBwYXlsb2FkID0gdXBzZXJ0TnV0cml0aW9uUGFudHJ5KGRhdGUsIHBhcnNlZC5kYXRhLml0ZW1zKTsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlLCAuLi5wYXlsb2FkIH0pOwogIH0KCiAgYXdhaXQgbWlncmF0ZURiKCk7CiAgYXdhaXQgZW5zdXJlQ2xvdWROdXRyaXRpb25TZWVkKCk7CgogIC8vIFJlcGxhY2UgZm9yIGRhdGUgKGNsb3VkIG1vZGUpCiAgYXdhaXQgZGJRdWVyeSgiREVMRVRFIEZST00gbnV0cml0aW9uX3BhbnRyeV9pdGVtcyBXSEVSRSBkYXRlID0gJDEiLCBbZGF0ZV0pOwogIGNvbnN0IG5vdyA9IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKTsKICBmb3IgKGNvbnN0IGl0ZW0gb2YgcGFyc2VkLmRhdGEuaXRlbXMpIHsKICAgIGNvbnN0IHF1YW50aXR5ID0gTnVtYmVyKGl0ZW0ucXVhbnRpdHkpOwogICAgaWYgKCFOdW1iZXIuaXNGaW5pdGUocXVhbnRpdHkpIHx8IHF1YW50aXR5IDw9IDApIGNvbnRpbnVlOwogICAgYXdhaXQgZGJRdWVyeSgKICAgICAgYAogICAgICBJTlNFUlQgSU5UTyBudXRyaXRpb25fcGFudHJ5X2l0ZW1zCiAgICAgICAgKGlkLCBkYXRlLCBpbmdyZWRpZW50SWQsIHF1YW50aXR5LCB1bml0LCBncmFtc0VmZmVjdGl2ZSwgY3JlYXRlZEF0LCB1cGRhdGVkQXQpCiAgICAgIFNFTEVDVAogICAgICAgICQxLCAkMiwgaS5pZCwgJDMsICQ0LAogICAgICAgIENBU0UKICAgICAgICAgIFdIRU4gJDQgPSAnZycgVEhFTiAkMwogICAgICAgICAgV0hFTiAkNCA9ICdtbCcgVEhFTiAkMwogICAgICAgICAgV0hFTiAkNCA9ICd1bml0JyBUSEVOICQzICogaS5ncmFtc1BlclVuaXQKICAgICAgICAgIFdIRU4gJDQgPSAndGJzcCcgVEhFTiAkMyAqIGkuZ3JhbXNQZXJVbml0CiAgICAgICAgICBXSEVOICQ0ID0gJ3RzcCcgVEhFTiAkMyAqIGkuZ3JhbXNQZXJVbml0CiAgICAgICAgICBFTFNFICQzCiAgICAgICAgRU5ELAogICAgICAgICQ1LCAkNQogICAgICBGUk9NIG51dHJpdGlvbl9pbmdyZWRpZW50cyBpCiAgICAgIFdIRVJFIGkuaWQgPSAkNgogICAgICBgLAogICAgICBbcmFuZG9tVVVJRCgpLCBkYXRlLCBxdWFudGl0eSwgaXRlbS51bml0LCBub3csIGl0ZW0uaW5ncmVkaWVudElkXQogICAgKTsKICB9CgogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG9rOiB0cnVlLCBkYXRlIH0pOwp9Cg=="}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { formatISODate } from "@/lib/date";
+import { getNutritionPantryBundle, upsertNutritionPantry } from "@/lib/nutrition-engine";
+import { getDbProvider, dbQuery } from "@/lib/db-driver";
+import { migrateDb } from "@/lib/db-migrate";
+import { ensureCloudNutritionSeed, cloudListNutritionIngredients } from "@/lib/nutrition-cloud";
+import { randomUUID } from "node:crypto";
+
+export const runtime = "nodejs";
+
+const pantryItemSchema = z.object({
+  ingredientId: z.string().min(1),
+  quantity: z.number().positive(),
+  unit: z.enum(["g", "ml", "unit", "tbsp", "tsp"])
+});
+
+const postSchema = z.object({
+  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  items: z.array(pantryItemSchema).max(200)
+});
+
+export async function GET(request: NextRequest) {
+  const date = request.nextUrl.searchParams.get("date") ?? formatISODate();
+  if (getDbProvider() !== "postgres") {
+    return NextResponse.json(getNutritionPantryBundle(date));
+  }
+
+  await migrateDb();
+  await ensureCloudNutritionSeed();
+
+  const ingredients = await cloudListNutritionIngredients();
+  const itemsRes = await dbQuery<{
+    id: string;
+    date: string;
+    ingredientid: string;
+    quantity: number;
+    unit: string;
+    gramseffective: number;
+    ingredientname: string;
+    ingredientcategory: string;
+  }>(
+    `
+    SELECT
+      p.id,
+      p.date,
+      p.ingredientId,
+      p.quantity,
+      p.unit,
+      p.gramsEffective,
+      i.name AS ingredientName,
+      i.category AS ingredientCategory
+    FROM nutrition_pantry_items p
+    JOIN nutrition_ingredients i ON i.id = p.ingredientId
+    WHERE p.date = $1
+    ORDER BY i.category ASC, i.name ASC
+    `,
+    [date]
+  );
+
+  const items = itemsRes.rows.map((row) => ({
+    id: String((row as any).id),
+    date: String((row as any).date),
+    ingredientId: String((row as any).ingredientid ?? (row as any).ingredientId),
+    quantity: Number((row as any).quantity ?? 0),
+    unit: String((row as any).unit),
+    gramsEffective: Number((row as any).gramseffective ?? (row as any).gramsEffective ?? 0),
+    ingredientName: String((row as any).ingredientname ?? (row as any).ingredientName ?? ""),
+    ingredientCategory: String((row as any).ingredientcategory ?? (row as any).ingredientCategory ?? "")
+  }));
+
+  return NextResponse.json({ date, ingredients, items });
+}
+
+export async function POST(request: NextRequest) {
+  const body = await request.json().catch(() => ({}));
+  const parsed = postSchema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+  const date = parsed.data.date ?? formatISODate();
+  if (getDbProvider() !== "postgres") {
+    const payload = upsertNutritionPantry(date, parsed.data.items);
+    return NextResponse.json({ ok: true, ...payload });
+  }
+
+  await migrateDb();
+  await ensureCloudNutritionSeed();
+
+  // Replace for date (cloud mode)
+  await dbQuery("DELETE FROM nutrition_pantry_items WHERE date = $1", [date]);
+  const now = new Date().toISOString();
+  for (const item of parsed.data.items) {
+    const quantity = Number(item.quantity);
+    if (!Number.isFinite(quantity) || quantity <= 0) continue;
+    await dbQuery(
+      `
+      INSERT INTO nutrition_pantry_items
+        (id, date, ingredientId, quantity, unit, gramsEffective, createdAt, updatedAt)
+      SELECT
+        $1, $2, i.id, $3, $4,
+        CASE
+          WHEN $4 = 'g' THEN $3
+          WHEN $4 = 'ml' THEN $3
+          WHEN $4 = 'unit' THEN $3 * i.gramsPerUnit
+          WHEN $4 = 'tbsp' THEN $3 * i.gramsPerUnit
+          WHEN $4 = 'tsp' THEN $3 * i.gramsPerUnit
+          ELSE $3
+        END,
+        $5, $5
+      FROM nutrition_ingredients i
+      WHERE i.id = $6
+      `,
+      [randomUUID(), date, quantity, item.unit, now, item.ingredientId]
+    );
+  }
+
+  return NextResponse.json({ ok: true, date });
+}

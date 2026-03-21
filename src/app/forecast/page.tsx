@@ -1,1 +1,323 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgU2VjdGlvbiB9IGZyb20gIkAvY29tcG9uZW50cy9jYXJkcyI7CmltcG9ydCB7IGZvcm1hdERpc3BsYXlEYXRlLCBmb3JtYXRJU09EYXRlIH0gZnJvbSAiQC9saWIvZGF0ZSI7Cgp0eXBlIENvbXBsaWFuY2VTdGF0ZSA9ICJvbl90YXJnZXQiIHwgInVuZGVyIiB8ICJvdmVyIiB8ICJza2lwcGVkIiB8ICJ1bnBsYW5uZWQiOwoKdHlwZSBGb3JlY2FzdCA9IHsKICBkYXlzOiBBcnJheTx7CiAgICBkYXRlOiBzdHJpbmc7CiAgICBkYXlOYW1lOiBzdHJpbmc7CiAgICBwbGFubmVkTG9hZDogbnVtYmVyOwogICAgZWZmZWN0aXZlTG9hZDogbnVtYmVyOwogICAgcHJvamVjdGVkRmF0aWd1ZTogbnVtYmVyOwogICAgcHJvamVjdGVkUmVhZGluZXNzOiBudW1iZXI7CiAgICBzZWxlY3RlZE9wdGlvbklkOiBzdHJpbmc7CiAgICByZWNvbW1lbmRhdGlvbjogc3RyaW5nOwogICAgZXhlY3V0aW9uRmVlZGJhY2s6ICJsaWdodCIgfCAiYXNfcGxhbm5lZCIgfCAiaGFyZCIgfCAic2tpcHBlZCIgfCBudWxsOwogICAgY29tcGxpYW5jZVN0YXRlOiBDb21wbGlhbmNlU3RhdGU7CiAgICBvcHRpb25zOiBBcnJheTx7CiAgICAgIGlkOiBzdHJpbmc7CiAgICAgIHNwb3J0OiAicnVuIiB8ICJiaWtlIiB8ICJzd2ltIjsKICAgICAgd29ya291dFR5cGU6IHN0cmluZzsKICAgICAgZHVyYXRpb25NaW46IG51bWJlcjsKICAgICAgaW50ZW5zaXR5Wm9uZTogc3RyaW5nOwogICAgICB0YXJnZXQ6IHN0cmluZzsKICAgICAgc3RydWN0dXJlOiBzdHJpbmc7CiAgICAgIHdoeTogc3RyaW5nOwogICAgICBub3Rlczogc3RyaW5nOwogICAgICBwbGFubmVkTG9hZDogbnVtYmVyOwogICAgfT47CiAgfT47CiAgd2Vla2x5UGxhbjogewogICAgcHJvZmlsZTogImZyZWUiIHwgImJhbGFuY2VkIiB8ICJidXN5IiB8ICJ2YWNhdGlvbiI7CiAgICBhdmFpbGFiaWxpdHk6ICJsb3ciIHwgIm5vcm1hbCIgfCAiaGlnaCI7CiAgICB0YXJnZXRXZWVrU3RhcnQ6IHN0cmluZzsKICAgIGxvY2tlZFdlZWtTdGFydDogc3RyaW5nIHwgbnVsbDsKICAgIGlzTG9ja2VkOiBib29sZWFuOwogICAgY2FuRWRpdDogYm9vbGVhbjsKICB9Owp9OwoKdHlwZSBOdXRyaXRpb25EYXkgPSB7CiAgZGF0ZTogc3RyaW5nOwogIGNhcmJzRzogbnVtYmVyOwogIHByb3RlaW5HOiBudW1iZXI7CiAgZmF0RzogbnVtYmVyOwogIGh5ZHJhdGlvbk1sOiBudW1iZXI7CiAgcHJlV29ya291dE5vdGU6IHN0cmluZzsKICBwb3N0V29ya291dE5vdGU6IHN0cmluZzsKfTsKCnR5cGUgRGF5TW9kZSA9ICJlYXN5IiB8ICJub3JtYWwiIHwgImhhcmQiOwoKZnVuY3Rpb24gc3BvcnRMYWJlbChzcG9ydDogInJ1biIgfCAiYmlrZSIgfCAic3dpbSIpIHsKICBpZiAoc3BvcnQgPT09ICJydW4iKSByZXR1cm4gIteo15nXpteUIjsKICBpZiAoc3BvcnQgPT09ICJiaWtlIikgcmV0dXJuICLXkNeV16TXoNeZ15nXnSI7CiAgcmV0dXJuICLXqdeX15nXmdeUIjsKfQoKZnVuY3Rpb24gZ2V0TW9kZU9wdGlvbnMoCiAgb3B0aW9uczogRm9yZWNhc3RbImRheXMiXVtudW1iZXJdWyJvcHRpb25zIl0KKTogUmVjb3JkPERheU1vZGUsIEZvcmVjYXN0WyJkYXlzIl1bbnVtYmVyXVsib3B0aW9ucyJdW251bWJlcl0+IHwgbnVsbCB7CiAgaWYgKCFvcHRpb25zLmxlbmd0aCkgcmV0dXJuIG51bGw7CiAgY29uc3Qgc29ydGVkID0gWy4uLm9wdGlvbnNdLnNvcnQoKGEsIGIpID0+IGEucGxhbm5lZExvYWQgLSBiLnBsYW5uZWRMb2FkKTsKICByZXR1cm4gewogICAgZWFzeTogc29ydGVkWzBdLAogICAgbm9ybWFsOiBzb3J0ZWRbTWF0aC5mbG9vcihzb3J0ZWQubGVuZ3RoIC8gMildLAogICAgaGFyZDogc29ydGVkW3NvcnRlZC5sZW5ndGggLSAxXQogIH07Cn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEZvcmVjYXN0UGFnZSgpIHsKICBjb25zdCBbZm9yZWNhc3QsIHNldEZvcmVjYXN0XSA9IHVzZVN0YXRlPEZvcmVjYXN0IHwgbnVsbD4obnVsbCk7CiAgY29uc3QgW251dHJpdGlvbiwgc2V0TnV0cml0aW9uXSA9IHVzZVN0YXRlPE51dHJpdGlvbkRheVtdPihbXSk7CiAgY29uc3QgY3VycmVudERhdGUgPSBmb3JtYXRJU09EYXRlKCk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICB2b2lkIGxvYWRGb3JlY2FzdCgpOwogIH0sIFtdKTsKCiAgYXN5bmMgZnVuY3Rpb24gbG9hZEZvcmVjYXN0KCkgewogICAgY29uc3QgW2YsIG5dID0gYXdhaXQgUHJvbWlzZS5hbGwoWwogICAgICBmZXRjaCgiL2FwaS9kYXNoYm9hcmQvZm9yZWNhc3Q/ZGF5cz03IikudGhlbigocmVzKSA9PiByZXMuanNvbigpKSwKICAgICAgZmV0Y2goIi9hcGkvbnV0cml0aW9uL2ZvcmVjYXN0P2RheXM9NyIpLnRoZW4oKHJlcykgPT4gcmVzLmpzb24oKSkKICAgIF0pOwogICAgc2V0Rm9yZWNhc3QoZiBhcyBGb3JlY2FzdCk7CiAgICBzZXROdXRyaXRpb24oKChuIGFzIHsgZGF5cz86IE51dHJpdGlvbkRheVtdIH0pLmRheXMgPz8gW10pIGFzIE51dHJpdGlvbkRheVtdKTsKICB9CgogIGFzeW5jIGZ1bmN0aW9uIHJlcG9ydEV4ZWN1dGlvbihkYXlEYXRlOiBzdHJpbmcsIGVmZm9ydDogImxpZ2h0IiB8ICJhc19wbGFubmVkIiB8ICJoYXJkIiB8ICJza2lwcGVkIikgewogICAgYXdhaXQgZmV0Y2goIi9hcGkvZGFzaGJvYXJkL2ZvcmVjYXN0L2ZlZWRiYWNrIiwgewogICAgICBtZXRob2Q6ICJQT1NUIiwKICAgICAgaGVhZGVyczogeyAiQ29udGVudC1UeXBlIjogImFwcGxpY2F0aW9uL2pzb24iIH0sCiAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHsgZGF0ZTogZGF5RGF0ZSwgZWZmb3J0IH0pCiAgICB9KTsKICAgIGF3YWl0IGxvYWRGb3JlY2FzdCgpOwogIH0KCiAgYXN5bmMgZnVuY3Rpb24gYXBwbHlEYXlPcHRpb24oZGF5RGF0ZTogc3RyaW5nLCBvcHRpb246IEZvcmVjYXN0WyJkYXlzIl1bbnVtYmVyXVsib3B0aW9ucyJdW251bWJlcl0pIHsKICAgIGF3YWl0IGZldGNoKCIvYXBpL2Rhc2hib2FyZC9mb3JlY2FzdC9jaG9pY2UiLCB7CiAgICAgIG1ldGhvZDogIlBPU1QiLAogICAgICBoZWFkZXJzOiB7ICJDb250ZW50LVR5cGUiOiAiYXBwbGljYXRpb24vanNvbiIgfSwKICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkoewogICAgICAgIGRhdGU6IGRheURhdGUsCiAgICAgICAgb3B0aW9uSWQ6IG9wdGlvbi5pZCwKICAgICAgICBvcHRpb24KICAgICAgfSkKICAgIH0pOwogICAgYXdhaXQgbG9hZEZvcmVjYXN0KCk7CiAgfQoKICBhc3luYyBmdW5jdGlvbiBhcHBseURheU1vZGUoZGF5OiBGb3JlY2FzdFsiZGF5cyJdW251bWJlcl0sIG1vZGU6IERheU1vZGUpIHsKICAgIGNvbnN0IG1vZGVzID0gZ2V0TW9kZU9wdGlvbnMoZGF5Lm9wdGlvbnMpOwogICAgaWYgKCFtb2RlcykgcmV0dXJuOwogICAgYXdhaXQgYXBwbHlEYXlPcHRpb24oZGF5LmRhdGUsIG1vZGVzW21vZGVdKTsKICB9CgogIGFzeW5jIGZ1bmN0aW9uIHNldFdlZWtseVBsYW4ocHJvZmlsZTogImZyZWUiIHwgImJhbGFuY2VkIiB8ICJidXN5IiB8ICJ2YWNhdGlvbiIpIHsKICAgIGF3YWl0IGZldGNoKCIvYXBpL2Rhc2hib2FyZC93ZWVrbHktcGxhbiIsIHsKICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgIGhlYWRlcnM6IHsgIkNvbnRlbnQtVHlwZSI6ICJhcHBsaWNhdGlvbi9qc29uIiB9LAogICAgICBib2R5OiBKU09OLnN0cmluZ2lmeSh7IHByb2ZpbGUsIGRhdGU6IGN1cnJlbnREYXRlIH0pCiAgICB9KTsKICAgIGF3YWl0IGxvYWRGb3JlY2FzdCgpOwogIH0KCiAgYXN5bmMgZnVuY3Rpb24gdW5sb2NrV2VlaygpIHsKICAgIGF3YWl0IGZldGNoKCIvYXBpL2Rhc2hib2FyZC93ZWVrbHktcGxhbiIsIHsKICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgIGhlYWRlcnM6IHsgIkNvbnRlbnQtVHlwZSI6ICJhcHBsaWNhdGlvbi9qc29uIiB9LAogICAgICBib2R5OiBKU09OLnN0cmluZ2lmeSh7IHVubG9jazogdHJ1ZSwgZGF0ZTogY3VycmVudERhdGUgfSkKICAgIH0pOwogICAgYXdhaXQgbG9hZEZvcmVjYXN0KCk7CiAgfQoKICBmdW5jdGlvbiBjb21wbGlhbmNlTGFiZWwoc3RhdGU6IENvbXBsaWFuY2VTdGF0ZSkgewogICAgaWYgKHN0YXRlID09PSAib25fdGFyZ2V0IikgcmV0dXJuICLXm9ee16rXldeb16DXnyI7CiAgICBpZiAoc3RhdGUgPT09ICJ1bmRlciIpIHJldHVybiAi157XqteX16og15zXqteb16DXldefIjsKICAgIGlmIChzdGF0ZSA9PT0gIm92ZXIiKSByZXR1cm4gItee16LXnCDXlNeq15vXoNeV158iOwogICAgaWYgKHN0YXRlID09PSAic2tpcHBlZCIpIHJldHVybiAi15PXldec15IiOwogICAgcmV0dXJuICLXnNeQINee16rXldeb16DXnyI7CiAgfQoKICBjb25zdCB3ZWVrTG9hZFBsYW5uZWQgPSAoZm9yZWNhc3Q/LmRheXMgPz8gW10pLnJlZHVjZSgoc3VtLCBkYXkpID0+IHN1bSArIGRheS5wbGFubmVkTG9hZCwgMCk7CiAgY29uc3Qgd2Vla0xvYWRFZmZlY3RpdmUgPSAoZm9yZWNhc3Q/LmRheXMgPz8gW10pLnJlZHVjZSgoc3VtLCBkYXkpID0+IHN1bSArIGRheS5lZmZlY3RpdmVMb2FkLCAwKTsKCiAgcmV0dXJuICgKICAgIDw+CiAgICAgIDxoZWFkZXIgY2xhc3NOYW1lPSJwYWdlLWhlYWRlciI+CiAgICAgICAgPGgxPteq15fXlteZ16ogNyDXmdee15nXnTwvaDE+CiAgICAgICAgPHA+16rXldeb16DXmdeqINep15HXldei15nXqiDXntek15XXqNeY16og16LXnSDXlNeq15DXnteUINec16TXmSDXlNeR15nXpteV16Ig15HXpNeV16LXnC48L3A+CiAgICAgIDwvaGVhZGVyPgoKICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJ0b2RheS1oZXJvIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaGVyby1ncmlkIj4KICAgICAgICAgIDxhcnRpY2xlIGNsYXNzTmFtZT0iaGVyby1tYWluIj4KICAgICAgICAgICAgPGgzPtee15HXmCDXqdeR15XXoteZPC9oMz4KICAgICAgICAgICAgPHA+CiAgICAgICAgICAgICAg16LXldee16Eg157XqteV15vXoNefINep15HXldei15k6IHt3ZWVrTG9hZFBsYW5uZWR9IHwg16LXldee16Eg15DXpNen15jXmdeR15kg16nXkdeV16LXmToge3dlZWtMb2FkRWZmZWN0aXZlfQogICAgICAgICAgICA8L3A+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmb3JlY2FzdC1sb2NrLXN0cmlwIj4KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9e2ZvcmVjYXN0Py53ZWVrbHlQbGFuLmlzTG9ja2VkID8gImNvbXBsaWFuY2UtYmFkZ2Ugb25fdGFyZ2V0IiA6ICJjb21wbGlhbmNlLWJhZGdlIHVucGxhbm5lZCJ9PgogICAgICAgICAgICAgICAge2ZvcmVjYXN0Py53ZWVrbHlQbGFuLmlzTG9ja2VkID8gIteU16nXkdeV16Ig16DXoteV15wiIDogIteU16nXkdeV16Ig16TXqteV15cifQogICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9Im5vdGUiPgogICAgICAgICAgICAgICAge2ZvcmVjYXN0Py53ZWVrbHlQbGFuLnRhcmdldFdlZWtTdGFydAogICAgICAgICAgICAgICAgICA/IGDXl9ecINei15wg15TXqdeR15XXoiDXqdee16rXl9eZ15wg15HWviR7Zm9ybWF0RGlzcGxheURhdGUoZm9yZWNhc3Qud2Vla2x5UGxhbi50YXJnZXRXZWVrU3RhcnQpfWAKICAgICAgICAgICAgICAgICAgOiAi4oCUIn0KICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9hcnRpY2xlPgogICAgICAgICAgPGFydGljbGUgY2xhc3NOYW1lPSJoZXJvLXNpZGUgY2FsbSI+CiAgICAgICAgICAgIDxwPteU157XnNem16og16TXqteZ15fXlCDXnNep15HXldeiPC9wPgogICAgICAgICAgICA8c3Ryb25nPntmb3JlY2FzdD8uZGF5c1swXT8ucmVjb21tZW5kYXRpb24gPz8gIteY15XXotefINeq15fXlteZ16ouLi4ifTwvc3Ryb25nPgogICAgICAgICAgPC9hcnRpY2xlPgogICAgICAgIDwvZGl2PgogICAgICA8L3NlY3Rpb24+CgogICAgICA8U2VjdGlvbiB0aXRsZT0i16rXm9eg15XXnyDXqdeR15XXoiIgc3VidGl0bGU9Iteh15XXkiDXqdeR15XXoiDXp9eV15HXoiDXkNeqINeq16fXpteZ15Eg15TXoteV157XoSI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9IndlZWtseS1wbGFuLWNvbnRyb2xzIj4KICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgIDxwPteh15XXkiDXqdeR15XXojwvcD4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImNob2ljZS1yb3ciPgogICAgICAgICAgICAgIHtbCiAgICAgICAgICAgICAgICB7IGlkOiAiZnJlZSIsIGxhYmVsOiAi16TXoNeV15kiIH0sCiAgICAgICAgICAgICAgICB7IGlkOiAiYmFsYW5jZWQiLCBsYWJlbDogItee15DXldeW158iIH0sCiAgICAgICAgICAgICAgICB7IGlkOiAiYnVzeSIsIGxhYmVsOiAi16LXnteV16EiIH0sCiAgICAgICAgICAgICAgICB7IGlkOiAidmFjYXRpb24iLCBsYWJlbDogIteX15XXpNep15QiIH0KICAgICAgICAgICAgICBdLm1hcCgocCkgPT4gKAogICAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgICBrZXk9e3AuaWR9CiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17Zm9yZWNhc3Q/LndlZWtseVBsYW4ucHJvZmlsZSA9PT0gcC5pZCA/ICJjaG9pY2UtYnRuIHNlbGVjdGVkIiA6ICJjaG9pY2UtYnRuIn0KICAgICAgICAgICAgICAgICAgZGlzYWJsZWQ9e0Jvb2xlYW4oZm9yZWNhc3Q/LndlZWtseVBsYW4uaXNMb2NrZWQpfQogICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRXZWVrbHlQbGFuKHAuaWQgYXMgImZyZWUiIHwgImJhbGFuY2VkIiB8ICJidXN5IiB8ICJ2YWNhdGlvbiIpfQogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICB7cC5sYWJlbH0KICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgICkpfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9IndlZWtseS1sb2NrLXBhbmVsIj4KICAgICAgICAgICAgPHA+16DXoteZ15zXqiDXqdeR15XXojwvcD4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9IndlZWtseS1sb2NrLWFjdGlvbnMiPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0ibm90ZSI+CiAgICAgICAgICAgICAgICB7Zm9yZWNhc3Q/LndlZWtseVBsYW4uaXNMb2NrZWQKICAgICAgICAgICAgICAgICAgPyAi15DXldek15kg15TXqdeR15XXoiDXoNen15HXoiDXldeg16nXkNeoINen15HXldeiINei15Mg16nXqtek16rXlyDXkNeV16rXlS4iCiAgICAgICAgICAgICAgICAgIDogIteR15fXqCDXkNeV16TXmSDXqdeR15XXoiDXpNei150g15DXl9eqINeV15TXldeQINeZ15nXoNei15wuIn0KICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9ImNob2ljZS1idG4iIG9uQ2xpY2s9e3VubG9ja1dlZWt9IGRpc2FibGVkPXshZm9yZWNhc3Q/LndlZWtseVBsYW4uaXNMb2NrZWR9PgogICAgICAgICAgICAgICAg16TXqteXINeQ16og15TXqdeR15XXogogICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L1NlY3Rpb24+CgogICAgICA8U2VjdGlvbiB0aXRsZT0i15TXqteV15vXoNeZ16og15TXmdeV157XmdeqIiBzdWJ0aXRsZT0i16rXpteV15LXlCDXp9eV157XpNen15jXmdeqLiDXpNeV16rXl9eZ150g15nXldedINeo16cg15vXqdem16jXmdeaINek15nXqNeV15giPgogICAgICAgIDx1bCBjbGFzc05hbWU9ImZvcmVjYXN0IGZvcmVjYXN0LWdyaWQiPgogICAgICAgICAge2ZvcmVjYXN0Py5kYXlzLm1hcCgoZCkgPT4gKAogICAgICAgICAgICA8bGkga2V5PXtkLmRhdGV9PgogICAgICAgICAgICAgIDxkZXRhaWxzIGNsYXNzTmFtZT0iZXhwYW5kLWJsb2NrIj4KICAgICAgICAgICAgICAgIDxzdW1tYXJ5PgogICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImZvcmVjYXN0LWRheS1oZWFkIj4KICAgICAgICAgICAgICAgICAgICA8c3Ryb25nPgogICAgICAgICAgICAgICAgICAgICAge2QuZGF5TmFtZX0ge2Zvcm1hdERpc3BsYXlEYXRlKGQuZGF0ZSl9CiAgICAgICAgICAgICAgICAgICAgPC9zdHJvbmc+CiAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPXtgY29tcGxpYW5jZS1iYWRnZSAke2QuY29tcGxpYW5jZVN0YXRlfWB9Pntjb21wbGlhbmNlTGFiZWwoZC5jb21wbGlhbmNlU3RhdGUpfTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9Im5vdGUiPntkLnJlY29tbWVuZGF0aW9ufTwvc3Bhbj4KICAgICAgICAgICAgICAgIDwvc3VtbWFyeT4KICAgICAgICAgICAgICAgIDx1bCBjbGFzc05hbWU9Imt2IGNvbXBhY3Qta3YiPgogICAgICAgICAgICAgICAgICA8bGk+16LXldee16Eg157XqteV15vXoNefOiB7ZC5wbGFubmVkTG9hZH08L2xpPgogICAgICAgICAgICAgICAgICA8bGk+16LXldee16Eg15DXpNen15jXmdeR15k6IHtkLmVmZmVjdGl2ZUxvYWR9PC9saT4KICAgICAgICAgICAgICAgICAgPGxpPtee15XXm9eg15XXqiDXl9eW15XXmdeUOiB7ZC5wcm9qZWN0ZWRSZWFkaW5lc3N9PC9saT4KICAgICAgICAgICAgICAgICAgPGxpPtei15nXmdek15XXqiDXl9eW15XXmdeUOiB7ZC5wcm9qZWN0ZWRGYXRpZ3VlfTwvbGk+CiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgeygoKSA9PiB7CiAgICAgICAgICAgICAgICAgIGNvbnN0IHNlbGVjdGVkID0gZC5vcHRpb25zLmZpbmQoKG9wdGlvbikgPT4gb3B0aW9uLmlkID09PSBkLnNlbGVjdGVkT3B0aW9uSWQpID8/IGQub3B0aW9uc1swXTsKICAgICAgICAgICAgICAgICAgY29uc3QgYWx0ZXJuYXRpdmVzID0gZC5vcHRpb25zLmZpbHRlcigob3B0aW9uKSA9PiBvcHRpb24uaWQgIT09IHNlbGVjdGVkPy5pZCkuc2xpY2UoMCwgMyk7CiAgICAgICAgICAgICAgICAgIHJldHVybiBzZWxlY3RlZCA/ICgKICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9yZWNhc3QtZGF5LWxheW91dCI+CiAgICAgICAgICAgICAgICAgICAgICA8YXJ0aWNsZSBjbGFzc05hbWU9ImZvcmVjYXN0LWZlYXR1cmUtY2FyZCI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmb3JlY2FzdC1mZWF0dXJlLWhlYWQiPgogICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT17YHNwb3J0LXRhZyAke3NlbGVjdGVkLnNwb3J0fWB9PntzcG9ydExhYmVsKHNlbGVjdGVkLnNwb3J0KX08L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICAgICAgPHN0cm9uZz57c2VsZWN0ZWQud29ya291dFR5cGV9PC9zdHJvbmc+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9Im5vdGUiPntzZWxlY3RlZC5kdXJhdGlvbk1pbn0g15PXp9ezIMK3IHtzZWxlY3RlZC5pbnRlbnNpdHlab25lfSDCtyDXoteV157XoSB7c2VsZWN0ZWQucGxhbm5lZExvYWR9PC9wPgogICAgICAgICAgICAgICAgICAgICAgICA8dWwgY2xhc3NOYW1lPSJrdiBjb21wYWN0LWt2Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+157XmNeo15Q6IHtzZWxlY3RlZC50YXJnZXR9PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+157Xkdeg15Q6IHtzZWxlY3RlZC5zdHJ1Y3R1cmV9PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+15zXnteUOiB7c2VsZWN0ZWQud2h5fTwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJjaG9pY2Utcm93Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0iY2hvaWNlLWJ0biIgb25DbGljaz17KCkgPT4gYXBwbHlEYXlNb2RlKGQsICJlYXN5Iil9Pten15wg15nXldeq16g8L2J1dHRvbj4KICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0iY2hvaWNlLWJ0biIgb25DbGljaz17KCkgPT4gYXBwbHlEYXlNb2RlKGQsICJub3JtYWwiKX0+15DXmdeW15XXnzwvYnV0dG9uPgogICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJjaG9pY2UtYnRuIiBvbkNsaWNrPXsoKSA9PiBhcHBseURheU1vZGUoZCwgImhhcmQiKX0+15fXkyDXmdeV16rXqDwvYnV0dG9uPgogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgIDwvYXJ0aWNsZT4KICAgICAgICAgICAgICAgICAgICAgIHthbHRlcm5hdGl2ZXMubGVuZ3RoID4gMCAmJiAoCiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmb3JlY2FzdC1hbHQtbGlzdCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAge2FsdGVybmF0aXZlcy5tYXAoKG9wdGlvbikgPT4gKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBrZXk9e29wdGlvbi5pZH0gY2xhc3NOYW1lPSJmb3JlY2FzdC1hbHQtY2FyZCIgb25DbGljaz17KCkgPT4gYXBwbHlEYXlPcHRpb24oZC5kYXRlLCBvcHRpb24pfT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPXtgc3BvcnQtdGFnICR7b3B0aW9uLnNwb3J0fWB9PntzcG9ydExhYmVsKG9wdGlvbi5zcG9ydCl9PC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3Ryb25nPntvcHRpb24ud29ya291dFR5cGV9PC9zdHJvbmc+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzbWFsbD57b3B0aW9uLmR1cmF0aW9uTWlufSDXk9en17Mgwrcge29wdGlvbi5pbnRlbnNpdHlab25lfTwvc21hbGw+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICApfQogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICApIDogbnVsbDsKICAgICAgICAgICAgICAgIH0pKCl9CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9yZWNhc3QtZmVlZGJhY2stcm93Ij4KICAgICAgICAgICAgICAgICAgPHNwYW4+15PXmdeV15XXlyDXkNeX16jXmSDXkdeZ16bXldeiOjwvc3Bhbj4KICAgICAgICAgICAgICAgICAge1sKICAgICAgICAgICAgICAgICAgICB7IGlkOiAibGlnaHQiLCBsYWJlbDogIteU15nXlCDXp9ecIiB9LAogICAgICAgICAgICAgICAgICAgIHsgaWQ6ICJhc19wbGFubmVkIiwgbGFiZWw6ICLXm9ee16rXldeb16DXnyIgfSwKICAgICAgICAgICAgICAgICAgICB7IGlkOiAiaGFyZCIsIGxhYmVsOiAi15TXmdeUINen16nXlCIgfSwKICAgICAgICAgICAgICAgICAgICB7IGlkOiAic2tpcHBlZCIsIGxhYmVsOiAi15PXmdec15LXqteZIiB9CiAgICAgICAgICAgICAgICAgIF0ubWFwKChmKSA9PiAoCiAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgICAgICAga2V5PXtgJHtkLmRhdGV9LSR7Zi5pZH1gfQogICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtkLmV4ZWN1dGlvbkZlZWRiYWNrID09PSBmLmlkID8gImZvcmVjYXN0LWZlZWRiYWNrLWJ0biBzZWxlY3RlZCIgOiAiZm9yZWNhc3QtZmVlZGJhY2stYnRuIn0KICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHJlcG9ydEV4ZWN1dGlvbihkLmRhdGUsIGYuaWQgYXMgImxpZ2h0IiB8ICJhc19wbGFubmVkIiB8ICJoYXJkIiB8ICJza2lwcGVkIil9CiAgICAgICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICAgICAge2YubGFiZWx9CiAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICAgICkpfQogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9kZXRhaWxzPgogICAgICAgICAgICA8L2xpPgogICAgICAgICAgKSl9CiAgICAgICAgPC91bD4KICAgICAgPC9TZWN0aW9uPgoKICAgICAgPFNlY3Rpb24gdGl0bGU9Iteq15bXldeg15Qg15zXqdeR15XXoiDXlNen16jXldeRIiBzdWJ0aXRsZT0i157Xqtei15PXm9efINeQ15XXmNeV157XmNeZ16og15zXpNeZINei15XXntehINeU15DXmdee15XXoNeZ150g16nXoNen15zXmCI+CiAgICAgICAgPHVsIGNsYXNzTmFtZT0iZm9yZWNhc3QgZm9yZWNhc3QtZ3JpZCI+CiAgICAgICAgICB7bnV0cml0aW9uLm1hcCgoZGF5KSA9PiAoCiAgICAgICAgICAgIDxsaSBrZXk9e2BudXRyaXRpb24tJHtkYXkuZGF0ZX1gfT4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9yZWNhc3QtZGF5LWhlYWQiPgogICAgICAgICAgICAgICAgPHN0cm9uZz57Zm9ybWF0RGlzcGxheURhdGUoZGF5LmRhdGUpfTwvc3Ryb25nPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJjb21wbGlhbmNlLWJhZGdlIHVuZGVyIj5OdXRyaXRpb248L3NwYW4+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPHVsIGNsYXNzTmFtZT0ia3YgY29tcGFjdC1rdiI+CiAgICAgICAgICAgICAgICA8bGk+16TXl9ee15nXnteV16o6IHtkYXkuY2FyYnNHfSDXkteo1508L2xpPgogICAgICAgICAgICAgICAgPGxpPteX15zXkdeV1586IHtkYXkucHJvdGVpbkd9INeS16jXnTwvbGk+CiAgICAgICAgICAgICAgICA8bGk+16nXldee1586IHtkYXkuZmF0R30g15LXqNedPC9saT4KICAgICAgICAgICAgICAgIDxsaT7XoNeV15bXnNeZ1506IHtkYXkuaHlkcmF0aW9uTWx9INeeItecPC9saT4KICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgIDxkZXRhaWxzIGNsYXNzTmFtZT0iZXhwYW5kLWJsb2NrIj4KICAgICAgICAgICAgICAgIDxzdW1tYXJ5PteU16DXl9eZ15XXqiDXnNek16DXmS/XkNeX16jXmSDXkNeZ157XldefPC9zdW1tYXJ5PgogICAgICAgICAgICAgICAgPHA+e2RheS5wcmVXb3Jrb3V0Tm90ZX08L3A+CiAgICAgICAgICAgICAgICA8cD57ZGF5LnBvc3RXb3Jrb3V0Tm90ZX08L3A+CiAgICAgICAgICAgICAgPC9kZXRhaWxzPgogICAgICAgICAgICA8L2xpPgogICAgICAgICAgKSl9CiAgICAgICAgPC91bD4KICAgICAgPC9TZWN0aW9uPgogICAgPC8+CiAgKTsKfQo="}
+"use client";
+
+import { useEffect, useState } from "react";
+import { Section } from "@/components/cards";
+import { formatDisplayDate, formatISODate } from "@/lib/date";
+
+type ComplianceState = "on_target" | "under" | "over" | "skipped" | "unplanned";
+
+type Forecast = {
+  days: Array<{
+    date: string;
+    dayName: string;
+    plannedLoad: number;
+    effectiveLoad: number;
+    projectedFatigue: number;
+    projectedReadiness: number;
+    selectedOptionId: string;
+    recommendation: string;
+    executionFeedback: "light" | "as_planned" | "hard" | "skipped" | null;
+    complianceState: ComplianceState;
+    options: Array<{
+      id: string;
+      sport: "run" | "bike" | "swim";
+      workoutType: string;
+      durationMin: number;
+      intensityZone: string;
+      target: string;
+      structure: string;
+      why: string;
+      notes: string;
+      plannedLoad: number;
+    }>;
+  }>;
+  weeklyPlan: {
+    profile: "free" | "balanced" | "busy" | "vacation";
+    availability: "low" | "normal" | "high";
+    targetWeekStart: string;
+    lockedWeekStart: string | null;
+    isLocked: boolean;
+    canEdit: boolean;
+  };
+};
+
+type NutritionDay = {
+  date: string;
+  carbsG: number;
+  proteinG: number;
+  fatG: number;
+  hydrationMl: number;
+  preWorkoutNote: string;
+  postWorkoutNote: string;
+};
+
+type DayMode = "easy" | "normal" | "hard";
+
+function sportLabel(sport: "run" | "bike" | "swim") {
+  if (sport === "run") return "ריצה";
+  if (sport === "bike") return "אופניים";
+  return "שחייה";
+}
+
+function getModeOptions(
+  options: Forecast["days"][number]["options"]
+): Record<DayMode, Forecast["days"][number]["options"][number]> | null {
+  if (!options.length) return null;
+  const sorted = [...options].sort((a, b) => a.plannedLoad - b.plannedLoad);
+  return {
+    easy: sorted[0],
+    normal: sorted[Math.floor(sorted.length / 2)],
+    hard: sorted[sorted.length - 1]
+  };
+}
+
+export default function ForecastPage() {
+  const [forecast, setForecast] = useState<Forecast | null>(null);
+  const [nutrition, setNutrition] = useState<NutritionDay[]>([]);
+  const currentDate = formatISODate();
+
+  useEffect(() => {
+    void loadForecast();
+  }, []);
+
+  async function loadForecast() {
+    const [f, n] = await Promise.all([
+      fetch("/api/dashboard/forecast?days=7").then((res) => res.json()),
+      fetch("/api/nutrition/forecast?days=7").then((res) => res.json())
+    ]);
+    setForecast(f as Forecast);
+    setNutrition(((n as { days?: NutritionDay[] }).days ?? []) as NutritionDay[]);
+  }
+
+  async function reportExecution(dayDate: string, effort: "light" | "as_planned" | "hard" | "skipped") {
+    await fetch("/api/dashboard/forecast/feedback", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ date: dayDate, effort })
+    });
+    await loadForecast();
+  }
+
+  async function applyDayOption(dayDate: string, option: Forecast["days"][number]["options"][number]) {
+    await fetch("/api/dashboard/forecast/choice", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        date: dayDate,
+        optionId: option.id,
+        option
+      })
+    });
+    await loadForecast();
+  }
+
+  async function applyDayMode(day: Forecast["days"][number], mode: DayMode) {
+    const modes = getModeOptions(day.options);
+    if (!modes) return;
+    await applyDayOption(day.date, modes[mode]);
+  }
+
+  async function setWeeklyPlan(profile: "free" | "balanced" | "busy" | "vacation") {
+    await fetch("/api/dashboard/weekly-plan", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ profile, date: currentDate })
+    });
+    await loadForecast();
+  }
+
+  async function unlockWeek() {
+    await fetch("/api/dashboard/weekly-plan", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ unlock: true, date: currentDate })
+    });
+    await loadForecast();
+  }
+
+  function complianceLabel(state: ComplianceState) {
+    if (state === "on_target") return "כמתוכנן";
+    if (state === "under") return "מתחת לתכנון";
+    if (state === "over") return "מעל התכנון";
+    if (state === "skipped") return "דולג";
+    return "לא מתוכנן";
+  }
+
+  const weekLoadPlanned = (forecast?.days ?? []).reduce((sum, day) => sum + day.plannedLoad, 0);
+  const weekLoadEffective = (forecast?.days ?? []).reduce((sum, day) => sum + day.effectiveLoad, 0);
+
+  return (
+    <>
+      <header className="page-header">
+        <h1>תחזית 7 ימים</h1>
+        <p>תוכנית שבועית מפורטת עם התאמה לפי הביצוע בפועל.</p>
+      </header>
+
+      <section className="today-hero">
+        <div className="hero-grid">
+          <article className="hero-main">
+            <h3>מבט שבועי</h3>
+            <p>
+              עומס מתוכנן שבועי: {weekLoadPlanned} | עומס אפקטיבי שבועי: {weekLoadEffective}
+            </p>
+            <div className="forecast-lock-strip">
+              <span className={forecast?.weeklyPlan.isLocked ? "compliance-badge on_target" : "compliance-badge unplanned"}>
+                {forecast?.weeklyPlan.isLocked ? "השבוע נעול" : "השבוע פתוח"}
+              </span>
+              <span className="note">
+                {forecast?.weeklyPlan.targetWeekStart
+                  ? `חל על השבוע שמתחיל ב־${formatDisplayDate(forecast.weeklyPlan.targetWeekStart)}`
+                  : "—"}
+              </span>
+            </div>
+          </article>
+          <article className="hero-side calm">
+            <p>המלצת פתיחה לשבוע</p>
+            <strong>{forecast?.days[0]?.recommendation ?? "טוען תחזית..."}</strong>
+          </article>
+        </div>
+      </section>
+
+      <Section title="תכנון שבוע" subtitle="סוג שבוע קובע את תקציב העומס">
+        <div className="weekly-plan-controls">
+          <div>
+            <p>סוג שבוע</p>
+            <div className="choice-row">
+              {[
+                { id: "free", label: "פנוי" },
+                { id: "balanced", label: "מאוזן" },
+                { id: "busy", label: "עמוס" },
+                { id: "vacation", label: "חופשה" }
+              ].map((p) => (
+                <button
+                  key={p.id}
+                  className={forecast?.weeklyPlan.profile === p.id ? "choice-btn selected" : "choice-btn"}
+                  disabled={Boolean(forecast?.weeklyPlan.isLocked)}
+                  onClick={() => setWeeklyPlan(p.id as "free" | "balanced" | "busy" | "vacation")}
+                >
+                  {p.label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="weekly-lock-panel">
+            <p>נעילת שבוע</p>
+            <div className="weekly-lock-actions">
+              <span className="note">
+                {forecast?.weeklyPlan.isLocked
+                  ? "אופי השבוע נקבע ונשאר קבוע עד שתפתח אותו."
+                  : "בחר אופי שבוע פעם אחת והוא יינעל."}
+              </span>
+              <button className="choice-btn" onClick={unlockWeek} disabled={!forecast?.weeklyPlan.isLocked}>
+                פתח את השבוע
+              </button>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section title="התוכנית היומית" subtitle="תצוגה קומפקטית. פותחים יום רק כשצריך פירוט">
+        <ul className="forecast forecast-grid">
+          {forecast?.days.map((d) => (
+            <li key={d.date}>
+              <details className="expand-block">
+                <summary>
+                  <span className="forecast-day-head">
+                    <strong>
+                      {d.dayName} {formatDisplayDate(d.date)}
+                    </strong>
+                    <span className={`compliance-badge ${d.complianceState}`}>{complianceLabel(d.complianceState)}</span>
+                  </span>
+                  <span className="note">{d.recommendation}</span>
+                </summary>
+                <ul className="kv compact-kv">
+                  <li>עומס מתוכנן: {d.plannedLoad}</li>
+                  <li>עומס אפקטיבי: {d.effectiveLoad}</li>
+                  <li>מוכנות חזויה: {d.projectedReadiness}</li>
+                  <li>עייפות חזויה: {d.projectedFatigue}</li>
+                </ul>
+                {(() => {
+                  const selected = d.options.find((option) => option.id === d.selectedOptionId) ?? d.options[0];
+                  const alternatives = d.options.filter((option) => option.id !== selected?.id).slice(0, 3);
+                  return selected ? (
+                    <div className="forecast-day-layout">
+                      <article className="forecast-feature-card">
+                        <div className="forecast-feature-head">
+                          <span className={`sport-tag ${selected.sport}`}>{sportLabel(selected.sport)}</span>
+                          <strong>{selected.workoutType}</strong>
+                        </div>
+                        <p className="note">{selected.durationMin} דק׳ · {selected.intensityZone} · עומס {selected.plannedLoad}</p>
+                        <ul className="kv compact-kv">
+                          <li>מטרה: {selected.target}</li>
+                          <li>מבנה: {selected.structure}</li>
+                          <li>למה: {selected.why}</li>
+                        </ul>
+                        <div className="choice-row">
+                          <button className="choice-btn" onClick={() => applyDayMode(d, "easy")}>קל יותר</button>
+                          <button className="choice-btn" onClick={() => applyDayMode(d, "normal")}>איזון</button>
+                          <button className="choice-btn" onClick={() => applyDayMode(d, "hard")}>חד יותר</button>
+                        </div>
+                      </article>
+                      {alternatives.length > 0 && (
+                        <div className="forecast-alt-list">
+                          {alternatives.map((option) => (
+                            <button key={option.id} className="forecast-alt-card" onClick={() => applyDayOption(d.date, option)}>
+                              <span className={`sport-tag ${option.sport}`}>{sportLabel(option.sport)}</span>
+                              <strong>{option.workoutType}</strong>
+                              <small>{option.durationMin} דק׳ · {option.intensityZone}</small>
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : null;
+                })()}
+                <div className="forecast-feedback-row">
+                  <span>דיווח אחרי ביצוע:</span>
+                  {[
+                    { id: "light", label: "היה קל" },
+                    { id: "as_planned", label: "כמתוכנן" },
+                    { id: "hard", label: "היה קשה" },
+                    { id: "skipped", label: "דילגתי" }
+                  ].map((f) => (
+                    <button
+                      key={`${d.date}-${f.id}`}
+                      className={d.executionFeedback === f.id ? "forecast-feedback-btn selected" : "forecast-feedback-btn"}
+                      onClick={() => reportExecution(d.date, f.id as "light" | "as_planned" | "hard" | "skipped")}
+                    >
+                      {f.label}
+                    </button>
+                  ))}
+                </div>
+              </details>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      <Section title="תזונה לשבוע הקרוב" subtitle="מתעדכן אוטומטית לפי עומס האימונים שנקלט">
+        <ul className="forecast forecast-grid">
+          {nutrition.map((day) => (
+            <li key={`nutrition-${day.date}`}>
+              <div className="forecast-day-head">
+                <strong>{formatDisplayDate(day.date)}</strong>
+                <span className="compliance-badge under">Nutrition</span>
+              </div>
+              <ul className="kv compact-kv">
+                <li>פחמימות: {day.carbsG} גרם</li>
+                <li>חלבון: {day.proteinG} גרם</li>
+                <li>שומן: {day.fatG} גרם</li>
+                <li>נוזלים: {day.hydrationMl} מ"ל</li>
+              </ul>
+              <details className="expand-block">
+                <summary>הנחיות לפני/אחרי אימון</summary>
+                <p>{day.preWorkoutNote}</p>
+                <p>{day.postWorkoutNote}</p>
+              </details>
+            </li>
+          ))}
+        </ul>
+      </Section>
+    </>
+  );
+}

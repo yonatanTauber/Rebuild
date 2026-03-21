@@ -1,1 +1,42 @@
-{"data":"ewogICJjb21waWxlck9wdGlvbnMiOiB7CiAgICAidGFyZ2V0IjogIkVTMjAyMiIsCiAgICAibGliIjogWwogICAgICAiZG9tIiwKICAgICAgImRvbS5pdGVyYWJsZSIsCiAgICAgICJlczIwMjIiCiAgICBdLAogICAgImFsbG93SnMiOiBmYWxzZSwKICAgICJza2lwTGliQ2hlY2siOiB0cnVlLAogICAgInN0cmljdCI6IHRydWUsCiAgICAibm9FbWl0IjogdHJ1ZSwKICAgICJlc01vZHVsZUludGVyb3AiOiB0cnVlLAogICAgIm1vZHVsZSI6ICJlc25leHQiLAogICAgIm1vZHVsZVJlc29sdXRpb24iOiAiYnVuZGxlciIsCiAgICAicmVzb2x2ZUpzb25Nb2R1bGUiOiB0cnVlLAogICAgImlzb2xhdGVkTW9kdWxlcyI6IHRydWUsCiAgICAianN4IjogInJlYWN0LWpzeCIsCiAgICAiaW5jcmVtZW50YWwiOiB0cnVlLAogICAgInBsdWdpbnMiOiBbCiAgICAgIHsKICAgICAgICAibmFtZSI6ICJuZXh0IgogICAgICB9CiAgICBdLAogICAgImJhc2VVcmwiOiAiLiIsCiAgICAicGF0aHMiOiB7CiAgICAgICJALyoiOiBbCiAgICAgICAgIi4vc3JjLyoiCiAgICAgIF0KICAgIH0KICB9LAogICJpbmNsdWRlIjogWwogICAgIm5leHQtZW52LmQudHMiLAogICAgIioqLyoudHMiLAogICAgIioqLyoudHN4IiwKICAgICIubmV4dC90eXBlcy8qKi8qLnRzIiwKICAgICIubmV4dC9kZXYvdHlwZXMvKiovKi50cyIKICBdLAogICJleGNsdWRlIjogWwogICAgIm5vZGVfbW9kdWxlcyIKICBdCn0K"}
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es2022"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

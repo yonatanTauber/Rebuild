@@ -1,1 +1,163 @@
-{"data":"aW1wb3J0IGZzIGZyb20gIm5vZGU6ZnMiOwppbXBvcnQgcmVhZGxpbmUgZnJvbSAibm9kZTpyZWFkbGluZSI7CmltcG9ydCB7IHVwc2VydEF0aGxldGVQcm9maWxlIH0gZnJvbSAiQC9saWIvZGIiOwppbXBvcnQgdHlwZSB7IEF0aGxldGVQcm9maWxlIH0gZnJvbSAiQC9saWIvdHlwZXMiOwoKdHlwZSBNZXRyaWNLZXkgPSAicmVzdGluZ0hyIiB8ICJocnYiIHwgInZvMm1heCI7Cgp0eXBlIE1ldHJpY0J1Y2tldCA9IHsKICBhbGw6IG51bWJlcltdOwogIHJlY2VudDM2NTogbnVtYmVyW107Cn07Cgp0eXBlIEltcG9ydFN1bW1hcnkgPSB7CiAgc291cmNlRmlsZTogc3RyaW5nOwogIHNjYW5uZWRSZWNvcmRzOiBudW1iZXI7CiAgcGFyc2VkQXQ6IHN0cmluZzsKICBtZXRyaWNzOiB7CiAgICByZXN0aW5nSHI6IHsgY291bnQ6IG51bWJlcjsgcmVjZW50MzY1Q291bnQ6IG51bWJlcjsgYmFzZWxpbmU6IG51bWJlciB8IG51bGwgfTsKICAgIGhydjogeyBjb3VudDogbnVtYmVyOyByZWNlbnQzNjVDb3VudDogbnVtYmVyOyBiYXNlbGluZTogbnVtYmVyIHwgbnVsbCB9OwogICAgdm8ybWF4OiB7IGNvdW50OiBudW1iZXI7IHJlY2VudDM2NUNvdW50OiBudW1iZXI7IGJhc2VsaW5lOiBudW1iZXIgfCBudWxsIH07CiAgICBzbGVlcEhvdXJzOiB7IGRheXNDb3VudDogbnVtYmVyOyByZWNlbnQzNjVEYXlzQ291bnQ6IG51bWJlcjsgYmFzZWxpbmU6IG51bWJlciB8IG51bGwgfTsKICB9Owp9OwoKY29uc3QgVFlQRV9UT19LRVk6IFJlY29yZDxzdHJpbmcsIE1ldHJpY0tleT4gPSB7CiAgSEtRdWFudGl0eVR5cGVJZGVudGlmaWVyUmVzdGluZ0hlYXJ0UmF0ZTogInJlc3RpbmdIciIsCiAgSEtRdWFudGl0eVR5cGVJZGVudGlmaWVySGVhcnRSYXRlVmFyaWFiaWxpdHlTRE5OOiAiaHJ2IiwKICBIS1F1YW50aXR5VHlwZUlkZW50aWZpZXJWTzJNYXg6ICJ2bzJtYXgiCn07CgpmdW5jdGlvbiBtZWRpYW4odmFsdWVzOiBudW1iZXJbXSkgewogIGlmICghdmFsdWVzLmxlbmd0aCkgcmV0dXJuIG51bGw7CiAgY29uc3Qgc29ydGVkID0gWy4uLnZhbHVlc10uc29ydCgoYSwgYikgPT4gYSAtIGIpOwogIGNvbnN0IG1pZCA9IE1hdGguZmxvb3Ioc29ydGVkLmxlbmd0aCAvIDIpOwogIGlmIChzb3J0ZWQubGVuZ3RoICUgMiA9PT0gMCkgewogICAgcmV0dXJuIE51bWJlcigoKHNvcnRlZFttaWQgLSAxXSArIHNvcnRlZFttaWRdKSAvIDIpLnRvRml4ZWQoMikpOwogIH0KICByZXR1cm4gTnVtYmVyKHNvcnRlZFttaWRdLnRvRml4ZWQoMikpOwp9CgpmdW5jdGlvbiBwYXJzZUF0dHJpYnV0ZXMobGluZTogc3RyaW5nKSB7CiAgY29uc3QgYXR0cnM6IFJlY29yZDxzdHJpbmcsIHN0cmluZz4gPSB7fTsKICBjb25zdCByZWdleCA9IC8oW0EtWmEtejAtOV86LV0rKT0iKFteIl0qKSIvZzsKICBsZXQgbWF0Y2g6IFJlZ0V4cEV4ZWNBcnJheSB8IG51bGwgPSByZWdleC5leGVjKGxpbmUpOwogIHdoaWxlIChtYXRjaCkgewogICAgYXR0cnNbbWF0Y2hbMV1dID0gbWF0Y2hbMl07CiAgICBtYXRjaCA9IHJlZ2V4LmV4ZWMobGluZSk7CiAgfQogIHJldHVybiBhdHRyczsKfQoKZnVuY3Rpb24gcGlja0Jhc2VsaW5lKGJ1Y2tldDogTWV0cmljQnVja2V0KSB7CiAgaWYgKGJ1Y2tldC5yZWNlbnQzNjUubGVuZ3RoID49IDIwKSByZXR1cm4gbWVkaWFuKGJ1Y2tldC5yZWNlbnQzNjUpOwogIHJldHVybiBtZWRpYW4oYnVja2V0LmFsbCk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBpbXBvcnRBcHBsZUhlYWx0aFByb2ZpbGUoZXhwb3J0WG1sUGF0aDogc3RyaW5nKSB7CiAgaWYgKCFmcy5leGlzdHNTeW5jKGV4cG9ydFhtbFBhdGgpKSB7CiAgICB0aHJvdyBuZXcgRXJyb3IoYEV4cG9ydCBmaWxlIG5vdCBmb3VuZDogJHtleHBvcnRYbWxQYXRofWApOwogIH0KCiAgY29uc3Qgbm93ID0gRGF0ZS5ub3coKTsKICBjb25zdCBjdXRvZmYzNjUgPSBub3cgLSAzNjUgKiAyNCAqIDYwICogNjAgKiAxMDAwOwoKICBjb25zdCBtZXRyaWNzOiBSZWNvcmQ8TWV0cmljS2V5LCBNZXRyaWNCdWNrZXQ+ID0gewogICAgcmVzdGluZ0hyOiB7IGFsbDogW10sIHJlY2VudDM2NTogW10gfSwKICAgIGhydjogeyBhbGw6IFtdLCByZWNlbnQzNjU6IFtdIH0sCiAgICB2bzJtYXg6IHsgYWxsOiBbXSwgcmVjZW50MzY1OiBbXSB9CiAgfTsKCiAgY29uc3Qgc2xlZXBCeURheSA9IG5ldyBNYXA8c3RyaW5nLCBudW1iZXI+KCk7CiAgbGV0IHNjYW5uZWRSZWNvcmRzID0gMDsKCiAgY29uc3QgcmwgPSByZWFkbGluZS5jcmVhdGVJbnRlcmZhY2UoewogICAgaW5wdXQ6IGZzLmNyZWF0ZVJlYWRTdHJlYW0oZXhwb3J0WG1sUGF0aCwgeyBlbmNvZGluZzogInV0ZjgiIH0pLAogICAgY3JsZkRlbGF5OiBJbmZpbml0eQogIH0pOwoKICBmb3IgYXdhaXQgKGNvbnN0IGxpbmUgb2YgcmwpIHsKICAgIGlmICghbGluZS5pbmNsdWRlcygiPFJlY29yZCAiKSkgY29udGludWU7CiAgICBzY2FubmVkUmVjb3JkcyArPSAxOwoKICAgIGNvbnN0IGF0dHJzID0gcGFyc2VBdHRyaWJ1dGVzKGxpbmUpOwogICAgY29uc3QgdHlwZSA9IGF0dHJzLnR5cGU7CiAgICBpZiAoIXR5cGUpIGNvbnRpbnVlOwoKICAgIGNvbnN0IHN0YXJ0RGF0ZVN0ciA9IGF0dHJzLnN0YXJ0RGF0ZTsKICAgIGNvbnN0IHN0YXJ0VHMgPSBzdGFydERhdGVTdHIgPyBEYXRlLnBhcnNlKHN0YXJ0RGF0ZVN0cikgOiBOYU47CiAgICBjb25zdCBpc1JlY2VudCA9IE51bWJlci5pc0Zpbml0ZShzdGFydFRzKSAmJiBzdGFydFRzID49IGN1dG9mZjM2NTsKCiAgICBjb25zdCBrZXkgPSBUWVBFX1RPX0tFWVt0eXBlXTsKICAgIGlmIChrZXkpIHsKICAgICAgY29uc3QgcmF3ID0gTnVtYmVyKGF0dHJzLnZhbHVlKTsKICAgICAgaWYgKE51bWJlci5pc0Zpbml0ZShyYXcpICYmIHJhdyA+IDApIHsKICAgICAgICBtZXRyaWNzW2tleV0uYWxsLnB1c2gocmF3KTsKICAgICAgICBpZiAoaXNSZWNlbnQpIG1ldHJpY3Nba2V5XS5yZWNlbnQzNjUucHVzaChyYXcpOwogICAgICB9CiAgICAgIGNvbnRpbnVlOwogICAgfQoKICAgIGlmICh0eXBlID09PSAiSEtDYXRlZ29yeVR5cGVJZGVudGlmaWVyU2xlZXBBbmFseXNpcyIgJiYgYXR0cnMudmFsdWU/LmluY2x1ZGVzKCJBc2xlZXAiKSkgewogICAgICBjb25zdCBlbmRUcyA9IGF0dHJzLmVuZERhdGUgPyBEYXRlLnBhcnNlKGF0dHJzLmVuZERhdGUpIDogTmFOOwogICAgICBpZiAoIU51bWJlci5pc0Zpbml0ZShzdGFydFRzKSB8fCAhTnVtYmVyLmlzRmluaXRlKGVuZFRzKSB8fCBlbmRUcyA8PSBzdGFydFRzKSBjb250aW51ZTsKCiAgICAgIGNvbnN0IGR1cmF0aW9uSG91cnMgPSAoZW5kVHMgLSBzdGFydFRzKSAvIDM2MDAwMDA7CiAgICAgIGlmIChkdXJhdGlvbkhvdXJzIDw9IDAgfHwgZHVyYXRpb25Ib3VycyA+IDE4KSBjb250aW51ZTsKCiAgICAgIGNvbnN0IGRheSA9IG5ldyBEYXRlKHN0YXJ0VHMpLnRvSVNPU3RyaW5nKCkuc2xpY2UoMCwgMTApOwogICAgICBzbGVlcEJ5RGF5LnNldChkYXksIChzbGVlcEJ5RGF5LmdldChkYXkpID8/IDApICsgZHVyYXRpb25Ib3Vycyk7CiAgICB9CiAgfQoKICBjb25zdCBzbGVlcEFsbCA9IEFycmF5LmZyb20oc2xlZXBCeURheS52YWx1ZXMoKSkuZmlsdGVyKChoKSA9PiBoID4gMi41ICYmIGggPCAxMi41KTsKICBjb25zdCBzbGVlcFJlY2VudCA9IEFycmF5LmZyb20oc2xlZXBCeURheS5lbnRyaWVzKCkpCiAgICAuZmlsdGVyKChbZGF5XSkgPT4gRGF0ZS5wYXJzZShgJHtkYXl9VDAwOjAwOjAwLjAwMFpgKSA+PSBjdXRvZmYzNjUpCiAgICAubWFwKChbLCBob3Vyc10pID0+IGhvdXJzKQogICAgLmZpbHRlcigoaCkgPT4gaCA+IDIuNSAmJiBoIDwgMTIuNSk7CgogIGNvbnN0IHByb2ZpbGU6IEF0aGxldGVQcm9maWxlID0gewogICAgcmVzdGluZ0hyQmFzZWxpbmU6IHBpY2tCYXNlbGluZShtZXRyaWNzLnJlc3RpbmdIciksCiAgICBocnZCYXNlbGluZTogcGlja0Jhc2VsaW5lKG1ldHJpY3MuaHJ2KSwKICAgIHZvMk1heEJhc2VsaW5lOiBwaWNrQmFzZWxpbmUobWV0cmljcy52bzJtYXgpLAogICAgc2xlZXBIb3Vyc0Jhc2VsaW5lOiBzbGVlcFJlY2VudC5sZW5ndGggPj0gMjAgPyBtZWRpYW4oc2xlZXBSZWNlbnQpIDogbWVkaWFuKHNsZWVwQWxsKQogIH07CgogIGNvbnN0IHN1bW1hcnk6IEltcG9ydFN1bW1hcnkgPSB7CiAgICBzb3VyY2VGaWxlOiBleHBvcnRYbWxQYXRoLAogICAgc2Nhbm5lZFJlY29yZHMsCiAgICBwYXJzZWRBdDogbmV3IERhdGUoKS50b0lTT1N0cmluZygpLAogICAgbWV0cmljczogewogICAgICByZXN0aW5nSHI6IHsKICAgICAgICBjb3VudDogbWV0cmljcy5yZXN0aW5nSHIuYWxsLmxlbmd0aCwKICAgICAgICByZWNlbnQzNjVDb3VudDogbWV0cmljcy5yZXN0aW5nSHIucmVjZW50MzY1Lmxlbmd0aCwKICAgICAgICBiYXNlbGluZTogcHJvZmlsZS5yZXN0aW5nSHJCYXNlbGluZSA/PyBudWxsCiAgICAgIH0sCiAgICAgIGhydjogewogICAgICAgIGNvdW50OiBtZXRyaWNzLmhydi5hbGwubGVuZ3RoLAogICAgICAgIHJlY2VudDM2NUNvdW50OiBtZXRyaWNzLmhydi5yZWNlbnQzNjUubGVuZ3RoLAogICAgICAgIGJhc2VsaW5lOiBwcm9maWxlLmhydkJhc2VsaW5lID8/IG51bGwKICAgICAgfSwKICAgICAgdm8ybWF4OiB7CiAgICAgICAgY291bnQ6IG1ldHJpY3Mudm8ybWF4LmFsbC5sZW5ndGgsCiAgICAgICAgcmVjZW50MzY1Q291bnQ6IG1ldHJpY3Mudm8ybWF4LnJlY2VudDM2NS5sZW5ndGgsCiAgICAgICAgYmFzZWxpbmU6IHByb2ZpbGUudm8yTWF4QmFzZWxpbmUgPz8gbnVsbAogICAgICB9LAogICAgICBzbGVlcEhvdXJzOiB7CiAgICAgICAgZGF5c0NvdW50OiBzbGVlcEFsbC5sZW5ndGgsCiAgICAgICAgcmVjZW50MzY1RGF5c0NvdW50OiBzbGVlcFJlY2VudC5sZW5ndGgsCiAgICAgICAgYmFzZWxpbmU6IHByb2ZpbGUuc2xlZXBIb3Vyc0Jhc2VsaW5lID8/IG51bGwKICAgICAgfQogICAgfQogIH07CgogIHVwc2VydEF0aGxldGVQcm9maWxlKHsKICAgIC4uLnByb2ZpbGUsCiAgICBzb3VyY2VTdW1tYXJ5SnNvbjogSlNPTi5zdHJpbmdpZnkoc3VtbWFyeSkKICB9KTsKCiAgcmV0dXJuIHsKICAgIHByb2ZpbGUsCiAgICBzdW1tYXJ5CiAgfTsKfQo="}
+import fs from "node:fs";
+import readline from "node:readline";
+import { upsertAthleteProfile } from "@/lib/db";
+import type { AthleteProfile } from "@/lib/types";
+
+type MetricKey = "restingHr" | "hrv" | "vo2max";
+
+type MetricBucket = {
+  all: number[];
+  recent365: number[];
+};
+
+type ImportSummary = {
+  sourceFile: string;
+  scannedRecords: number;
+  parsedAt: string;
+  metrics: {
+    restingHr: { count: number; recent365Count: number; baseline: number | null };
+    hrv: { count: number; recent365Count: number; baseline: number | null };
+    vo2max: { count: number; recent365Count: number; baseline: number | null };
+    sleepHours: { daysCount: number; recent365DaysCount: number; baseline: number | null };
+  };
+};
+
+const TYPE_TO_KEY: Record<string, MetricKey> = {
+  HKQuantityTypeIdentifierRestingHeartRate: "restingHr",
+  HKQuantityTypeIdentifierHeartRateVariabilitySDNN: "hrv",
+  HKQuantityTypeIdentifierVO2Max: "vo2max"
+};
+
+function median(values: number[]) {
+  if (!values.length) return null;
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  if (sorted.length % 2 === 0) {
+    return Number(((sorted[mid - 1] + sorted[mid]) / 2).toFixed(2));
+  }
+  return Number(sorted[mid].toFixed(2));
+}
+
+function parseAttributes(line: string) {
+  const attrs: Record<string, string> = {};
+  const regex = /([A-Za-z0-9_:-]+)="([^"]*)"/g;
+  let match: RegExpExecArray | null = regex.exec(line);
+  while (match) {
+    attrs[match[1]] = match[2];
+    match = regex.exec(line);
+  }
+  return attrs;
+}
+
+function pickBaseline(bucket: MetricBucket) {
+  if (bucket.recent365.length >= 20) return median(bucket.recent365);
+  return median(bucket.all);
+}
+
+export async function importAppleHealthProfile(exportXmlPath: string) {
+  if (!fs.existsSync(exportXmlPath)) {
+    throw new Error(`Export file not found: ${exportXmlPath}`);
+  }
+
+  const now = Date.now();
+  const cutoff365 = now - 365 * 24 * 60 * 60 * 1000;
+
+  const metrics: Record<MetricKey, MetricBucket> = {
+    restingHr: { all: [], recent365: [] },
+    hrv: { all: [], recent365: [] },
+    vo2max: { all: [], recent365: [] }
+  };
+
+  const sleepByDay = new Map<string, number>();
+  let scannedRecords = 0;
+
+  const rl = readline.createInterface({
+    input: fs.createReadStream(exportXmlPath, { encoding: "utf8" }),
+    crlfDelay: Infinity
+  });
+
+  for await (const line of rl) {
+    if (!line.includes("<Record ")) continue;
+    scannedRecords += 1;
+
+    const attrs = parseAttributes(line);
+    const type = attrs.type;
+    if (!type) continue;
+
+    const startDateStr = attrs.startDate;
+    const startTs = startDateStr ? Date.parse(startDateStr) : NaN;
+    const isRecent = Number.isFinite(startTs) && startTs >= cutoff365;
+
+    const key = TYPE_TO_KEY[type];
+    if (key) {
+      const raw = Number(attrs.value);
+      if (Number.isFinite(raw) && raw > 0) {
+        metrics[key].all.push(raw);
+        if (isRecent) metrics[key].recent365.push(raw);
+      }
+      continue;
+    }
+
+    if (type === "HKCategoryTypeIdentifierSleepAnalysis" && attrs.value?.includes("Asleep")) {
+      const endTs = attrs.endDate ? Date.parse(attrs.endDate) : NaN;
+      if (!Number.isFinite(startTs) || !Number.isFinite(endTs) || endTs <= startTs) continue;
+
+      const durationHours = (endTs - startTs) / 3600000;
+      if (durationHours <= 0 || durationHours > 18) continue;
+
+      const day = new Date(startTs).toISOString().slice(0, 10);
+      sleepByDay.set(day, (sleepByDay.get(day) ?? 0) + durationHours);
+    }
+  }
+
+  const sleepAll = Array.from(sleepByDay.values()).filter((h) => h > 2.5 && h < 12.5);
+  const sleepRecent = Array.from(sleepByDay.entries())
+    .filter(([day]) => Date.parse(`${day}T00:00:00.000Z`) >= cutoff365)
+    .map(([, hours]) => hours)
+    .filter((h) => h > 2.5 && h < 12.5);
+
+  const profile: AthleteProfile = {
+    restingHrBaseline: pickBaseline(metrics.restingHr),
+    hrvBaseline: pickBaseline(metrics.hrv),
+    vo2MaxBaseline: pickBaseline(metrics.vo2max),
+    sleepHoursBaseline: sleepRecent.length >= 20 ? median(sleepRecent) : median(sleepAll)
+  };
+
+  const summary: ImportSummary = {
+    sourceFile: exportXmlPath,
+    scannedRecords,
+    parsedAt: new Date().toISOString(),
+    metrics: {
+      restingHr: {
+        count: metrics.restingHr.all.length,
+        recent365Count: metrics.restingHr.recent365.length,
+        baseline: profile.restingHrBaseline ?? null
+      },
+      hrv: {
+        count: metrics.hrv.all.length,
+        recent365Count: metrics.hrv.recent365.length,
+        baseline: profile.hrvBaseline ?? null
+      },
+      vo2max: {
+        count: metrics.vo2max.all.length,
+        recent365Count: metrics.vo2max.recent365.length,
+        baseline: profile.vo2MaxBaseline ?? null
+      },
+      sleepHours: {
+        daysCount: sleepAll.length,
+        recent365DaysCount: sleepRecent.length,
+        baseline: profile.sleepHoursBaseline ?? null
+      }
+    }
+  };
+
+  upsertAthleteProfile({
+    ...profile,
+    sourceSummaryJson: JSON.stringify(summary)
+  });
+
+  return {
+    profile,
+    summary
+  };
+}

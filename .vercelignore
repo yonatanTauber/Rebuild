@@ -1,1 +1,20 @@
-{"data":"bm9kZV9tb2R1bGVzCi5uZXh0Ci5naXQKLkRTX1N0b3JlCi5lbnYKLmVudi5sb2NhbAouYnVpbGQKCiMgTmF0aXZlIGFwcCBhbmQgZGVzaWduIGFzc2V0cyAobm90IG5lZWRlZCBmb3Igd2ViIGRlcGxveSkKaW9zCmRlc2lnbi1tb2NrdXBzCnJlYnVpbGQgaWNvbi8KMjAyNi0wMy0xMlQxM180MV8yMS40NDJaLS1tYjVPRkNKV2VjTC5qcGcKMjAyNi0wMy0xMlQxM181MF8zNy4wOTNaLW5RQXhxZVNzYXE2TC5qcGcKMjAyNi0wMy0xMlQxM181Nl8xOC44NDFaLVY2SlphNjBGVXY4ZC5qcGcKCiMgUmF3IGltcG9ydCBhcmNoaXZlcyAoa2VlcCBsaXZlIERCIGZvciB3ZWIgcnVudGltZSkKZGF0YS9uZXctc21hc2hydW4vCmRhdGEvc21hc2hydW4tZXhwb3J0LwpkYXRhL2ltcG9ydC8K"}
+node_modules
+.next
+.git
+.DS_Store
+.env
+.env.local
+.build
+
+# Native app and design assets (not needed for web deploy)
+ios
+design-mockups
+rebuild icon/
+2026-03-12T13_41_21.442Z--mb5OFCJWecL.jpg
+2026-03-12T13_50_37.093Z-nQAxqeSsaq6L.jpg
+2026-03-12T13_56_18.841Z-V6JZa60FUv8d.jpg
+
+# Raw import archives (keep live DB for web runtime)
+data/new-smashrun/
+data/smashrun-export/
+data/import/

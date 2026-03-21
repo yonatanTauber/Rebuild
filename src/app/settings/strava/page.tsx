@@ -1,1 +1,165 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKCnR5cGUgU3RyYXZhU3RhdHVzID0gewogIGNvbm5lY3RlZDogYm9vbGVhbjsKICBhdGhsZXRlSWQ/OiBzdHJpbmcgfCBudWxsOwogIGV4cGlyZXNBdD86IG51bWJlciB8IG51bGw7CiAgc3luY1N0YXRlPzogeyBuZXh0UGFnZTogbnVtYmVyOyBkb25lOiBib29sZWFuOyB1cGRhdGVkQXQ6IHN0cmluZyB8IG51bGwgfTsKICB3ZWJob29rPzogewogICAgc3Vic2NyaWJlZDogYm9vbGVhbjsKICAgIHN1YnNjcmlwdGlvbklkPzogc3RyaW5nIHwgbnVsbDsKICAgIGNhbGxiYWNrVXJsPzogc3RyaW5nIHwgbnVsbDsKICB9Owp9OwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gU3RyYXZhU2V0dGluZ3NQYWdlKCkgewogIGNvbnN0IFtzdGF0dXMsIHNldFN0YXR1c10gPSB1c2VTdGF0ZTxTdHJhdmFTdGF0dXMgfCBudWxsPihudWxsKTsKICBjb25zdCBbc3luY2luZywgc2V0U3luY2luZ10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW3N1YnNjcmliaW5nLCBzZXRTdWJzY3JpYmluZ10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW3RvYXN0LCBzZXRUb2FzdF0gPSB1c2VTdGF0ZSgiIik7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICB2b2lkIChhc3luYyAoKSA9PiB7CiAgICAgIHRyeSB7CiAgICAgICAgY29uc3QgW3NSZXMsIHdSZXNdID0gYXdhaXQgUHJvbWlzZS5hbGwoW2ZldGNoKCIvYXBpL3N0cmF2YS9zdGF0dXMiKSwgZmV0Y2goIi9hcGkvc3RyYXZhL3dlYmhvb2svc3RhdHVzIildKTsKICAgICAgICBjb25zdCBzSnNvbiA9IChhd2FpdCBzUmVzLmpzb24oKSkgYXMgU3RyYXZhU3RhdHVzOwogICAgICAgIGNvbnN0IHdKc29uID0gKGF3YWl0IHdSZXMuanNvbigpKSBhcyB7IHN1YnNjcmliZWQ6IGJvb2xlYW47IHN1YnNjcmlwdGlvbklkPzogc3RyaW5nIHwgbnVsbDsgY2FsbGJhY2tVcmw/OiBzdHJpbmcgfCBudWxsIH07CiAgICAgICAgc2V0U3RhdHVzKHsgLi4uc0pzb24sIHdlYmhvb2s6IHdKc29uIH0pOwogICAgICB9IGNhdGNoIHsKICAgICAgICBzZXRTdGF0dXMoeyBjb25uZWN0ZWQ6IGZhbHNlIH0pOwogICAgICB9CiAgICB9KSgpOwogIH0sIFtdKTsKCiAgYXN5bmMgZnVuY3Rpb24gdHJpZ2dlclN5bmMoKSB7CiAgICBpZiAoc3luY2luZykgcmV0dXJuOwogICAgc2V0U3luY2luZyh0cnVlKTsKICAgIHNldFRvYXN0KCIiKTsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKCIvYXBpL3N0cmF2YS9zeW5jIiwgeyBtZXRob2Q6ICJQT1NUIiB9KTsKICAgICAgY29uc3QganNvbiA9IChhd2FpdCByZXMuanNvbigpKSBhcyB7IG9rPzogYm9vbGVhbjsgaW1wb3J0ZWQ/OiBudW1iZXI7IHVwZGF0ZWQ/OiBudW1iZXI7IGVycm9yPzogc3RyaW5nIH07CiAgICAgIGlmICghcmVzLm9rIHx8ICFqc29uLm9rKSB7CiAgICAgICAgc2V0VG9hc3QoanNvbi5lcnJvciB8fCAi15TXodeg15vXqNeV158g16DXm9ep15wuIik7CiAgICAgICAgcmV0dXJuOwogICAgICB9CiAgICAgIHNldFRvYXN0KGDXodeV16DXm9eo16DXlSAke2pzb24uaW1wb3J0ZWQgPz8gMH0g16TXoteZ15zXldeZ15XXqiAo16LXldeT15vXoNeVICR7anNvbi51cGRhdGVkID8/IDB9KS5gKTsKICAgICAgY29uc3Qgc3RhdHVzUmVzID0gYXdhaXQgZmV0Y2goIi9hcGkvc3RyYXZhL3N0YXR1cyIpOwogICAgICBzZXRTdGF0dXMoKGF3YWl0IHN0YXR1c1Jlcy5qc29uKCkpIGFzIFN0cmF2YVN0YXR1cyk7CiAgICB9IGNhdGNoIHsKICAgICAgc2V0VG9hc3QoIteU16HXoNeb16jXldefINeg15vXqdecLiIpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0U3luY2luZyhmYWxzZSk7CiAgICB9CiAgfQoKICBhc3luYyBmdW5jdGlvbiB0cmlnZ2VyQmFja2ZpbGwoKSB7CiAgICBpZiAoc3luY2luZykgcmV0dXJuOwogICAgc2V0U3luY2luZyh0cnVlKTsKICAgIHNldFRvYXN0KCIiKTsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKCIvYXBpL3N0cmF2YS9zeW5jP21vZGU9YmFja2ZpbGwmcGFnZXM9NiIsIHsgbWV0aG9kOiAiUE9TVCIgfSk7CiAgICAgIGNvbnN0IGpzb24gPSAoYXdhaXQgcmVzLmpzb24oKSkgYXMgewogICAgICAgIG9rPzogYm9vbGVhbjsKICAgICAgICBpbXBvcnRlZD86IG51bWJlcjsKICAgICAgICB1cGRhdGVkPzogbnVtYmVyOwogICAgICAgIGVycm9yPzogc3RyaW5nOwogICAgICAgIG5leHRQYWdlPzogbnVtYmVyOwogICAgICAgIGRvbmU/OiBib29sZWFuOwogICAgICB9OwogICAgICBpZiAoIXJlcy5vayB8fCAhanNvbi5vaykgewogICAgICAgIHNldFRvYXN0KGpzb24uZXJyb3IgfHwgIteU16HXoNeb16jXldefINeg15vXqdecLiIpOwogICAgICAgIHJldHVybjsKICAgICAgfQogICAgICBpZiAoanNvbi5kb25lKSB7CiAgICAgICAgc2V0VG9hc3QoYNeh16DXm9eo15XXnyDXlNeZ16HXmNeV16jXmdeUINeU15XXqdec150uICjXmdeZ15HXldeQICR7anNvbi5pbXBvcnRlZCA/PyAwfSwg16LXk9eb15XXnyAke2pzb24udXBkYXRlZCA/PyAwfSlgKTsKICAgICAgfSBlbHNlIHsKICAgICAgICBzZXRUb2FzdChg15nXmdeR15XXkCAke2pzb24uaW1wb3J0ZWQgPz8gMH0gKNei15XXk9eb16DXlSAke2pzb24udXBkYXRlZCA/PyAwfSkuINeU157XqdeaOiDXotee15XXkyAke2pzb24ubmV4dFBhZ2UgPz8gIj8ifWApOwogICAgICB9CiAgICAgIGNvbnN0IHN0YXR1c1JlcyA9IGF3YWl0IGZldGNoKCIvYXBpL3N0cmF2YS9zdGF0dXMiKTsKICAgICAgc2V0U3RhdHVzKChhd2FpdCBzdGF0dXNSZXMuanNvbigpKSBhcyBTdHJhdmFTdGF0dXMpOwogICAgfSBjYXRjaCB7CiAgICAgIHNldFRvYXN0KCLXlNeh16DXm9eo15XXnyDXoNeb16nXnC4iKTsKICAgIH0gZmluYWxseSB7CiAgICAgIHNldFN5bmNpbmcoZmFsc2UpOwogICAgfQogIH0KCiAgYXN5bmMgZnVuY3Rpb24gZW5hYmxlV2ViaG9vaygpIHsKICAgIGlmIChzdWJzY3JpYmluZykgcmV0dXJuOwogICAgc2V0U3Vic2NyaWJpbmcodHJ1ZSk7CiAgICBzZXRUb2FzdCgiIik7CiAgICB0cnkgewogICAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaCgiL2FwaS9zdHJhdmEvd2ViaG9vay9zdWJzY3JpYmUiLCB7IG1ldGhvZDogIlBPU1QiIH0pOwogICAgICBjb25zdCBqc29uID0gKGF3YWl0IHJlcy5qc29uKCkpIGFzIHsgb2s/OiBib29sZWFuOyBlcnJvcj86IHN0cmluZyB9OwogICAgICBpZiAoIXJlcy5vayB8fCAhanNvbi5vaykgewogICAgICAgIHNldFRvYXN0KGpzb24uZXJyb3IgfHwgIteU15TXpNei15zXlCDXoNeb16nXnNeULiIpOwogICAgICAgIHJldHVybjsKICAgICAgfQogICAgICBzZXRUb2FzdCgi16HXoNeb16jXldefINeQ15XXmNeV157XmNeZINeU15XXpNei15wuINek16LXmdec15XXqiDXl9eT16nXlCDXkda+U3RyYXZhINeq15nXm9eg16Eg15DXldeY15XXnteY15nXqi4iKTsKICAgICAgY29uc3QgW3NSZXMsIHdSZXNdID0gYXdhaXQgUHJvbWlzZS5hbGwoW2ZldGNoKCIvYXBpL3N0cmF2YS9zdGF0dXMiKSwgZmV0Y2goIi9hcGkvc3RyYXZhL3dlYmhvb2svc3RhdHVzIildKTsKICAgICAgY29uc3Qgc0pzb24gPSAoYXdhaXQgc1Jlcy5qc29uKCkpIGFzIFN0cmF2YVN0YXR1czsKICAgICAgY29uc3Qgd0pzb24gPSAoYXdhaXQgd1Jlcy5qc29uKCkpIGFzIHsgc3Vic2NyaWJlZDogYm9vbGVhbjsgc3Vic2NyaXB0aW9uSWQ/OiBzdHJpbmcgfCBudWxsOyBjYWxsYmFja1VybD86IHN0cmluZyB8IG51bGwgfTsKICAgICAgc2V0U3RhdHVzKHsgLi4uc0pzb24sIHdlYmhvb2s6IHdKc29uIH0pOwogICAgfSBjYXRjaCB7CiAgICAgIHNldFRvYXN0KCLXlNeU16TXotec15Qg16DXm9ep15zXlC4iKTsKICAgIH0gZmluYWxseSB7CiAgICAgIHNldFN1YnNjcmliaW5nKGZhbHNlKTsKICAgIH0KICB9CgogIGNvbnN0IGNvbm5lY3RlZCA9IEJvb2xlYW4oc3RhdHVzPy5jb25uZWN0ZWQpOwogIGNvbnN0IHdlYmhvb2tTdWJzY3JpYmVkID0gQm9vbGVhbihzdGF0dXM/LndlYmhvb2s/LnN1YnNjcmliZWQpOwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9InNldHRpbmdzLXBhZ2UiPgogICAgICA8aGVhZGVyIGNsYXNzTmFtZT0icGFnZS1oZWFkZXIiPgogICAgICAgIDxoMT5TdHJhdmE8L2gxPgogICAgICAgIDxwPteX15nXkdeV16ggU3RyYXZhINee15DXpNep16gg15zXodeg15vXqNefINeQ15nXnteV16DXmdedINec15LXqNeh16og15TXkNeq16ggKFZlcmNlbCkg15HXnNeZINeq15nXp9eZ15XXqiBpQ2xvdWQuPC9wPgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0icGFuZWwiPgogICAgICAgIDxoMj7XodeY15jXldehPC9oMj4KICAgICAgICA8dWwgY2xhc3NOYW1lPSJrdiBjb21wYWN0LWt2Ij4KICAgICAgICAgIDxsaT7XnteX15XXkdeoOiB7Y29ubmVjdGVkID8gIteb158iIDogItec15AifTwvbGk+CiAgICAgICAgICA8bGk+QXRobGV0ZSBJRDoge3N0YXR1cz8uYXRobGV0ZUlkID8/ICItIn08L2xpPgogICAgICAgICAgPGxpPteh16DXm9eo15XXnyDXkNeV15jXldee15jXmToge3dlYmhvb2tTdWJzY3JpYmVkID8gItek16LXmdecIiA6ICLXm9eR15XXmSJ9PC9saT4KICAgICAgICAgIDxsaT4KICAgICAgICAgICAg15TXmdeh15jXldeo15nXlDp7IiAifQogICAgICAgICAgICB7c3RhdHVzPy5zeW5jU3RhdGU/LmRvbmUKICAgICAgICAgICAgICA/ICLXlNeV16nXnNedIgogICAgICAgICAgICAgIDogc3RhdHVzPy5zeW5jU3RhdGU/Lm5leHRQYWdlCiAgICAgICAgICAgICAgICA/IGDXotee15XXkyDXlNeR15AgJHtzdGF0dXMuc3luY1N0YXRlLm5leHRQYWdlfWAKICAgICAgICAgICAgICAgIDogItec15Ag15TXqteX15nXnCJ9CiAgICAgICAgICA8L2xpPgogICAgICAgIDwvdWw+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJidG4tcm93Ij4KICAgICAgICAgIHtjb25uZWN0ZWQgPyBudWxsIDogKAogICAgICAgICAgICA8YSBjbGFzc05hbWU9ImNob2ljZS1idG4gc2VsZWN0ZWQiIGhyZWY9Ii9hcGkvc3RyYXZhL2F1dGgiPgogICAgICAgICAgICAgINeX15HXqCBTdHJhdmEKICAgICAgICAgICAgPC9hPgogICAgICAgICAgKX0KICAgICAgICAgIHtjb25uZWN0ZWQgPyAoCiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJjaG9pY2UtYnRuIiBvbkNsaWNrPXt0cmlnZ2VyU3luY30gZGlzYWJsZWQ9e3N5bmNpbmd9PgogICAgICAgICAgICAgIHtzeW5jaW5nID8gItee16HXoNeb16jXny4uLiIgOiAi16HXoNeb16jXldefINei15vXqdeZ15UifQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICkgOiBudWxsfQogICAgICAgICAge2Nvbm5lY3RlZCA/ICgKICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9ImNob2ljZS1idG4iIG9uQ2xpY2s9e3RyaWdnZXJCYWNrZmlsbH0gZGlzYWJsZWQ9e3N5bmNpbmd9PgogICAgICAgICAgICAgIHtzeW5jaW5nID8gItee16HXoNeb16jXny4uLiIgOiAi16HXoNeb16jXldefINeU15nXodeY15XXqNeZ15QifQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICkgOiBudWxsfQogICAgICAgICAge2Nvbm5lY3RlZCAmJiAhd2ViaG9va1N1YnNjcmliZWQgPyAoCiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJjaG9pY2UtYnRuIHNlbGVjdGVkIiBvbkNsaWNrPXtlbmFibGVXZWJob29rfSBkaXNhYmxlZD17c3Vic2NyaWJpbmd9PgogICAgICAgICAgICAgIHtzdWJzY3JpYmluZyA/ICLXntek16LXmdecLi4uIiA6ICLXlNek16LXnCDXodeg15vXqNeV158g15DXldeY15XXnteY15kifQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICkgOiBudWxsfQogICAgICAgIDwvZGl2PgoKICAgICAgICB7dG9hc3QgPyA8cCBjbGFzc05hbWU9Im5vdGUiPnt0b2FzdH08L3A+IDogbnVsbH0KICAgICAgPC9zZWN0aW9uPgogICAgPC9kaXY+CiAgKTsKfQo="}
+"use client";
+
+import { useEffect, useState } from "react";
+
+type StravaStatus = {
+  connected: boolean;
+  athleteId?: string | null;
+  expiresAt?: number | null;
+  syncState?: { nextPage: number; done: boolean; updatedAt: string | null };
+  webhook?: {
+    subscribed: boolean;
+    subscriptionId?: string | null;
+    callbackUrl?: string | null;
+  };
+};
+
+export default function StravaSettingsPage() {
+  const [status, setStatus] = useState<StravaStatus | null>(null);
+  const [syncing, setSyncing] = useState(false);
+  const [subscribing, setSubscribing] = useState(false);
+  const [toast, setToast] = useState("");
+
+  useEffect(() => {
+    void (async () => {
+      try {
+        const [sRes, wRes] = await Promise.all([fetch("/api/strava/status"), fetch("/api/strava/webhook/status")]);
+        const sJson = (await sRes.json()) as StravaStatus;
+        const wJson = (await wRes.json()) as { subscribed: boolean; subscriptionId?: string | null; callbackUrl?: string | null };
+        setStatus({ ...sJson, webhook: wJson });
+      } catch {
+        setStatus({ connected: false });
+      }
+    })();
+  }, []);
+
+  async function triggerSync() {
+    if (syncing) return;
+    setSyncing(true);
+    setToast("");
+    try {
+      const res = await fetch("/api/strava/sync", { method: "POST" });
+      const json = (await res.json()) as { ok?: boolean; imported?: number; updated?: number; error?: string };
+      if (!res.ok || !json.ok) {
+        setToast(json.error || "הסנכרון נכשל.");
+        return;
+      }
+      setToast(`סונכרנו ${json.imported ?? 0} פעילויות (עודכנו ${json.updated ?? 0}).`);
+      const statusRes = await fetch("/api/strava/status");
+      setStatus((await statusRes.json()) as StravaStatus);
+    } catch {
+      setToast("הסנכרון נכשל.");
+    } finally {
+      setSyncing(false);
+    }
+  }
+
+  async function triggerBackfill() {
+    if (syncing) return;
+    setSyncing(true);
+    setToast("");
+    try {
+      const res = await fetch("/api/strava/sync?mode=backfill&pages=6", { method: "POST" });
+      const json = (await res.json()) as {
+        ok?: boolean;
+        imported?: number;
+        updated?: number;
+        error?: string;
+        nextPage?: number;
+        done?: boolean;
+      };
+      if (!res.ok || !json.ok) {
+        setToast(json.error || "הסנכרון נכשל.");
+        return;
+      }
+      if (json.done) {
+        setToast(`סנכרון היסטוריה הושלם. (ייבוא ${json.imported ?? 0}, עדכון ${json.updated ?? 0})`);
+      } else {
+        setToast(`ייבוא ${json.imported ?? 0} (עודכנו ${json.updated ?? 0}). המשך: עמוד ${json.nextPage ?? "?"}`);
+      }
+      const statusRes = await fetch("/api/strava/status");
+      setStatus((await statusRes.json()) as StravaStatus);
+    } catch {
+      setToast("הסנכרון נכשל.");
+    } finally {
+      setSyncing(false);
+    }
+  }
+
+  async function enableWebhook() {
+    if (subscribing) return;
+    setSubscribing(true);
+    setToast("");
+    try {
+      const res = await fetch("/api/strava/webhook/subscribe", { method: "POST" });
+      const json = (await res.json()) as { ok?: boolean; error?: string };
+      if (!res.ok || !json.ok) {
+        setToast(json.error || "ההפעלה נכשלה.");
+        return;
+      }
+      setToast("סנכרון אוטומטי הופעל. פעילות חדשה ב־Strava תיכנס אוטומטית.");
+      const [sRes, wRes] = await Promise.all([fetch("/api/strava/status"), fetch("/api/strava/webhook/status")]);
+      const sJson = (await sRes.json()) as StravaStatus;
+      const wJson = (await wRes.json()) as { subscribed: boolean; subscriptionId?: string | null; callbackUrl?: string | null };
+      setStatus({ ...sJson, webhook: wJson });
+    } catch {
+      setToast("ההפעלה נכשלה.");
+    } finally {
+      setSubscribing(false);
+    }
+  }
+
+  const connected = Boolean(status?.connected);
+  const webhookSubscribed = Boolean(status?.webhook?.subscribed);
+
+  return (
+    <div className="settings-page">
+      <header className="page-header">
+        <h1>Strava</h1>
+        <p>חיבור Strava מאפשר לסנכרן אימונים לגרסת האתר (Vercel) בלי תיקיות iCloud.</p>
+      </header>
+
+      <section className="panel">
+        <h2>סטטוס</h2>
+        <ul className="kv compact-kv">
+          <li>מחובר: {connected ? "כן" : "לא"}</li>
+          <li>Athlete ID: {status?.athleteId ?? "-"}</li>
+          <li>סנכרון אוטומטי: {webhookSubscribed ? "פעיל" : "כבוי"}</li>
+          <li>
+            היסטוריה:{" "}
+            {status?.syncState?.done
+              ? "הושלם"
+              : status?.syncState?.nextPage
+                ? `עמוד הבא ${status.syncState.nextPage}`
+                : "לא התחיל"}
+          </li>
+        </ul>
+
+        <div className="btn-row">
+          {connected ? null : (
+            <a className="choice-btn selected" href="/api/strava/auth">
+              חבר Strava
+            </a>
+          )}
+          {connected ? (
+            <button className="choice-btn" onClick={triggerSync} disabled={syncing}>
+              {syncing ? "מסנכרן..." : "סנכרון עכשיו"}
+            </button>
+          ) : null}
+          {connected ? (
+            <button className="choice-btn" onClick={triggerBackfill} disabled={syncing}>
+              {syncing ? "מסנכרן..." : "סנכרון היסטוריה"}
+            </button>
+          ) : null}
+          {connected && !webhookSubscribed ? (
+            <button className="choice-btn selected" onClick={enableWebhook} disabled={subscribing}>
+              {subscribing ? "מפעיל..." : "הפעל סנכרון אוטומטי"}
+            </button>
+          ) : null}
+        </div>
+
+        {toast ? <p className="note">{toast}</p> : null}
+      </section>
+    </div>
+  );
+}

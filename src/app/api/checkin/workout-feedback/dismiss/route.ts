@@ -1,1 +1,25 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IGRpc21pc3NXb3Jrb3V0RmVlZGJhY2sgfSBmcm9tICJAL2xpYi9kYiI7CmltcG9ydCB7IGNsb3VkRGlzbWlzc1dvcmtvdXRGZWVkYmFjaywgY2xvdWRFbmFibGVkIH0gZnJvbSAiQC9saWIvY2xvdWQtZGIiOwoKZXhwb3J0IGNvbnN0IHJ1bnRpbWUgPSAibm9kZWpzIjsKCmNvbnN0IHNjaGVtYSA9IHoub2JqZWN0KHsKICB3b3Jrb3V0SWQ6IHouc3RyaW5nKCkubWluKDEpCn0pOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBib2R5ID0gYXdhaXQgcmVxdWVzdC5qc29uKCk7CiAgY29uc3QgcGFyc2VkID0gc2NoZW1hLnNhZmVQYXJzZShib2R5KTsKICBpZiAoIXBhcnNlZC5zdWNjZXNzKSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogcGFyc2VkLmVycm9yLmZsYXR0ZW4oKSB9LCB7IHN0YXR1czogNDAwIH0pOwogIH0KCiAgaWYgKGNsb3VkRW5hYmxlZCgpKSB7CiAgICBhd2FpdCBjbG91ZERpc21pc3NXb3Jrb3V0RmVlZGJhY2socGFyc2VkLmRhdGEud29ya291dElkKTsKICB9IGVsc2UgewogICAgZGlzbWlzc1dvcmtvdXRGZWVkYmFjayhwYXJzZWQuZGF0YS53b3Jrb3V0SWQpOwogIH0KICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBkaXNtaXNzZWQ6IHRydWUgfSk7Cn0K"}
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { dismissWorkoutFeedback } from "@/lib/db";
+import { cloudDismissWorkoutFeedback, cloudEnabled } from "@/lib/cloud-db";
+
+export const runtime = "nodejs";
+
+const schema = z.object({
+  workoutId: z.string().min(1)
+});
+
+export async function POST(request: NextRequest) {
+  const body = await request.json();
+  const parsed = schema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
+  }
+
+  if (cloudEnabled()) {
+    await cloudDismissWorkoutFeedback(parsed.data.workoutId);
+  } else {
+    dismissWorkoutFeedback(parsed.data.workoutId);
+  }
+  return NextResponse.json({ dismissed: true });
+}

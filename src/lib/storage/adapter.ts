@@ -1,1 +1,19 @@
-{"data":"aW1wb3J0IHR5cGUgeyBOdXRyaXRpb25EYWlseVBsYW4sIFRvcEVmZm9ydCwgV29ya291dCB9IGZyb20gIkAvbGliL3R5cGVzIjsKCmV4cG9ydCB0eXBlIFN0b3JhZ2VBZGFwdGVyID0gewogIGxpc3RXb3Jrb3V0czogKGxpbWl0PzogbnVtYmVyKSA9PiBXb3Jrb3V0W107CiAgZ2V0V29ya291dEJ5SWQ6IChpZDogc3RyaW5nKSA9PiBXb3Jrb3V0IHwgbnVsbDsKICBjbGVhckJlc3RFZmZvcnRzRm9yV29ya291dDogKHdvcmtvdXRJZDogc3RyaW5nKSA9PiB2b2lkOwogIGluc2VydEJlc3RFZmZvcnRzOiAoCiAgICB3b3Jrb3V0SWQ6IHN0cmluZywKICAgIGVmZm9ydHM6IEFycmF5PHsKICAgICAgZGlzdGFuY2VLZXk6IHN0cmluZzsKICAgICAgdGltZVNlYzogbnVtYmVyOwogICAgICBzb3VyY2U6IHN0cmluZzsKICAgICAgc2VnbWVudFN0YXJ0U2VjOiBudW1iZXIgfCBudWxsOwogICAgICBzZWdtZW50RW5kU2VjOiBudW1iZXIgfCBudWxsOwogICAgfT4KICApID0+IHZvaWQ7CiAgZ2V0VG9wRWZmb3J0czogKGRpc3RhbmNlS2V5OiBzdHJpbmcsIGxpbWl0PzogbnVtYmVyKSA9PiBUb3BFZmZvcnRbXTsKICB1cHNlcnROdXRyaXRpb25EYWlseVBsYW46IChpbnB1dDogT21pdDxOdXRyaXRpb25EYWlseVBsYW4sICJ1cGRhdGVkQXQiPikgPT4gdm9pZDsKfTsK"}
+import type { NutritionDailyPlan, TopEffort, Workout } from "@/lib/types";
+
+export type StorageAdapter = {
+  listWorkouts: (limit?: number) => Workout[];
+  getWorkoutById: (id: string) => Workout | null;
+  clearBestEffortsForWorkout: (workoutId: string) => void;
+  insertBestEfforts: (
+    workoutId: string,
+    efforts: Array<{
+      distanceKey: string;
+      timeSec: number;
+      source: string;
+      segmentStartSec: number | null;
+      segmentEndSec: number | null;
+    }>
+  ) => void;
+  getTopEfforts: (distanceKey: string, limit?: number) => TopEffort[];
+  upsertNutritionDailyPlan: (input: Omit<NutritionDailyPlan, "updatedAt">) => void;
+};

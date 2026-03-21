@@ -1,1 +1,39 @@
-{"data":"IyEvYmluL2Jhc2gKCiMgTW9iaWxlIE9wdGltaXphdGlvbiBEZXBsb3kgU2NyaXB0CiMgUnVuIHRoaXMgaW4geW91ciByZWJ1aWxkIGRpcmVjdG9yeQoKZWNobyAi8J+agCBTdGFydGluZyBkZXBsb3kuLi4iCgojIDEuIENoZWNrIGdpdCBzdGF0dXMKZWNobyAi8J+TiyBHaXQgc3RhdHVzOiIKZ2l0IHN0YXR1cwoKIyAyLiBBZGQgdGhlIENTUyBmaWxlCmVjaG8gIvCfk50gQWRkaW5nIGdsb2JhbHMuY3NzLi4uIgpnaXQgYWRkIHNyYy9hcHAvZ2xvYmFscy5jc3MKCiMgMy4gQ29tbWl0CmVjaG8gIuKcje+4jyBDcmVhdGluZyBjb21taXQuLi4iCmdpdCBjb21taXQgLW0gImNob3JlOiBhZGQgbW9iaWxlIG9wdGltaXphdGlvbiBmb3IgaVBob25lICgzNzUtNDMwcHgpIGJyZWFrcG9pbnQKCi0gQWRkZWQgQG1lZGlhIChtYXgtd2lkdGg6IDQzMHB4KSBicmVha3BvaW50IGZvciBpUGhvbmUgU0UvMTIgbWluaQotIE9wdGltaXplZCB0eXBvZ3JhcGh5LCBzcGFjaW5nLCBhbmQgbGF5b3V0IGZvciBzbWFsbCBzY3JlZW5zCi0gRW5zdXJlZCBhbGwgdG91Y2ggdGFyZ2V0cyBhcmUgbWluaW11bSA0NHg0NHB4IChhY2Nlc3NpYmlsaXR5KQotIEltcGxlbWVudGVkIHJlc3BvbnNpdmUgZ3JpZCBzdGFja2luZwotIEltcHJvdmVkIG1vYmlsZSBuYXZpZ2F0aW9uIGFuZCBmb3JtIGVsZW1lbnRzIgoKIyA0LiBQdXNoIHRvIEdpdEh1YgplY2hvICLwn5qAIFB1c2hpbmcgdG8gR2l0SHViLi4uIgpnaXQgcHVzaCBvcmlnaW4gbWFzdGVyCgojIDUuIENoZWNrIGlmIHN1Y2Nlc3NmdWwKaWYgWyAkPyAtZXEgMCBdOyB0aGVuCiAgICBlY2hvICLinIUgRGVwbG95IHN1Y2Nlc3NmdWwhIgogICAgZWNobyAiVmVyY2VsIHdpbGwgYXV0by1kZXBsb3kgeW91ciBjaGFuZ2VzIG5vdy4iCiAgICBlY2hvICJDaGVjazogaHR0cHM6Ly92ZXJjZWwuY29tL3lvbmF0YW4tdGF1YmVycy1wcm9qZWN0cy9yZWJ1aWxkIgplbHNlCiAgICBlY2hvICLinYwgUHVzaCBmYWlsZWQuIFRyeToiCiAgICBlY2hvICIgICBnaXQgcHVzaCBvcmlnaW4gbWFpbiIKICAgIGVjaG8gIihpZiB5b3VyIGJyYW5jaCBpcyAnbWFpbicgaW5zdGVhZCBvZiAnbWFzdGVyJykiCmZpCg=="}
+#!/bin/bash
+
+# Mobile Optimization Deploy Script
+# Run this in your rebuild directory
+
+echo "🚀 Starting deploy..."
+
+# 1. Check git status
+echo "📋 Git status:"
+git status
+
+# 2. Add the CSS file
+echo "📝 Adding globals.css..."
+git add src/app/globals.css
+
+# 3. Commit
+echo "✍️ Creating commit..."
+git commit -m "chore: add mobile optimization for iPhone (375-430px) breakpoint
+
+- Added @media (max-width: 430px) breakpoint for iPhone SE/12 mini
+- Optimized typography, spacing, and layout for small screens
+- Ensured all touch targets are minimum 44x44px (accessibility)
+- Implemented responsive grid stacking
+- Improved mobile navigation and form elements"
+
+# 4. Push to GitHub
+echo "🚀 Pushing to GitHub..."
+git push origin master
+
+# 5. Check if successful
+if [ $? -eq 0 ]; then
+    echo "✅ Deploy successful!"
+    echo "Vercel will auto-deploy your changes now."
+    echo "Check: https://vercel.com/yonatan-taubers-projects/rebuild"
+else
+    echo "❌ Push failed. Try:"
+    echo "   git push origin main"
+    echo "(if your branch is 'main' instead of 'master')"
+fi

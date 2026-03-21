@@ -1,1 +1,27 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgZ2V0U3RyYXZhRW52IH0gZnJvbSAiQC9hcHAvYXBpL3N0cmF2YS9fbGliIjsKCmV4cG9ydCBjb25zdCBydW50aW1lID0gIm5vZGVqcyI7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7CiAgY29uc3QgZW52ID0gZ2V0U3RyYXZhRW52KCk7CiAgaWYgKCFlbnYpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbigKICAgICAgeyBvazogZmFsc2UsIGVycm9yOiAiTWlzc2luZyBTVFJBVkFfQ0xJRU5UX0lEL1NUUkFWQV9DTElFTlRfU0VDUkVUIiB9LAogICAgICB7IHN0YXR1czogNTAwIH0KICAgICk7CiAgfQoKICBjb25zdCByZWRpcmVjdFVyaSA9CiAgICBwcm9jZXNzLmVudi5TVFJBVkFfUkVESVJFQ1RfVVJJPy50cmltKCkgfHwgYCR7cmVxdWVzdC5uZXh0VXJsLm9yaWdpbn0vYXBpL3N0cmF2YS9jYWxsYmFja2A7CgogIGNvbnN0IGF1dGhVcmwgPSBuZXcgVVJMKCJodHRwczovL3d3dy5zdHJhdmEuY29tL29hdXRoL2F1dGhvcml6ZSIpOwogIGF1dGhVcmwuc2VhcmNoUGFyYW1zLnNldCgiY2xpZW50X2lkIiwgZW52LmNsaWVudElkKTsKICBhdXRoVXJsLnNlYXJjaFBhcmFtcy5zZXQoInJlZGlyZWN0X3VyaSIsIHJlZGlyZWN0VXJpKTsKICBhdXRoVXJsLnNlYXJjaFBhcmFtcy5zZXQoInJlc3BvbnNlX3R5cGUiLCAiY29kZSIpOwogIGF1dGhVcmwuc2VhcmNoUGFyYW1zLnNldCgiYXBwcm92YWxfcHJvbXB0IiwgImF1dG8iKTsKICBhdXRoVXJsLnNlYXJjaFBhcmFtcy5zZXQoInNjb3BlIiwgInJlYWQsYWN0aXZpdHk6cmVhZF9hbGwiKTsKCiAgcmV0dXJuIE5leHRSZXNwb25zZS5yZWRpcmVjdChhdXRoVXJsLnRvU3RyaW5nKCkpOwp9Cgo="}
+import { NextRequest, NextResponse } from "next/server";
+import { getStravaEnv } from "@/app/api/strava/_lib";
+
+export const runtime = "nodejs";
+
+export async function GET(request: NextRequest) {
+  const env = getStravaEnv();
+  if (!env) {
+    return NextResponse.json(
+      { ok: false, error: "Missing STRAVA_CLIENT_ID/STRAVA_CLIENT_SECRET" },
+      { status: 500 }
+    );
+  }
+
+  const redirectUri =
+    process.env.STRAVA_REDIRECT_URI?.trim() || `${request.nextUrl.origin}/api/strava/callback`;
+
+  const authUrl = new URL("https://www.strava.com/oauth/authorize");
+  authUrl.searchParams.set("client_id", env.clientId);
+  authUrl.searchParams.set("redirect_uri", redirectUri);
+  authUrl.searchParams.set("response_type", "code");
+  authUrl.searchParams.set("approval_prompt", "auto");
+  authUrl.searchParams.set("scope", "read,activity:read_all");
+
+  return NextResponse.redirect(authUrl.toString());
+}
+

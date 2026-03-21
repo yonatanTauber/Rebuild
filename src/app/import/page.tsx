@@ -1,1 +1,5 @@
-{"data":"aW1wb3J0IHsgcmVkaXJlY3QgfSBmcm9tICJuZXh0L25hdmlnYXRpb24iOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTGVnYWN5SW1wb3J0UGFnZSgpIHsKICByZWRpcmVjdCgiL3NldHRpbmdzL2ltcG9ydCIpOwp9Cg=="}
+import { redirect } from "next/navigation";
+
+export default function LegacyImportPage() {
+  redirect("/settings/import");
+}

@@ -1,1 +1,15 @@
-{"data":"InVzZSBjbGllbnQiOwoKaW1wb3J0IGR5bmFtaWMgZnJvbSAibmV4dC9keW5hbWljIjsKCnR5cGUgUm91dGVQb2ludCA9IHsgbGF0OiBudW1iZXI7IGxvbjogbnVtYmVyIH07Cgpjb25zdCBXb3Jrb3V0Um91dGVNYXAgPSBkeW5hbWljKCgpID0+IGltcG9ydCgiLi93b3Jrb3V0LXJvdXRlLW1hcCIpLCB7CiAgc3NyOiBmYWxzZSwKICBsb2FkaW5nOiAoKSA9PiA8cCBjbGFzc05hbWU9Im5vdGUiPteY15XXotefINee16TXlC4uLjwvcD4KfSk7CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBXb3Jrb3V0Um91dGVNYXBMYXp5KHsgc2VnbWVudHMgfTogeyBzZWdtZW50czogUm91dGVQb2ludFtdW10gfSkgewogIHJldHVybiA8V29ya291dFJvdXRlTWFwIHNlZ21lbnRzPXtzZWdtZW50c30gLz47Cn0KCg=="}
+"use client";
+
+import dynamic from "next/dynamic";
+
+type RoutePoint = { lat: number; lon: number };
+
+const WorkoutRouteMap = dynamic(() => import("./workout-route-map"), {
+  ssr: false,
+  loading: () => <p className="note">טוען מפה...</p>
+});
+
+export default function WorkoutRouteMapLazy({ segments }: { segments: RoutePoint[][] }) {
+  return <WorkoutRouteMap segments={segments} />;
+}
+

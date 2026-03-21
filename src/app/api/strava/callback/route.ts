@@ -1,1 +1,57 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gIm5leHQvc2VydmVyIjsKaW1wb3J0IHsgZ2V0U3RyYXZhRW52LCB1cHNlcnRUb2tlbiB9IGZyb20gIkAvYXBwL2FwaS9zdHJhdmEvX2xpYiI7CgpleHBvcnQgY29uc3QgcnVudGltZSA9ICJub2RlanMiOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IGVudiA9IGdldFN0cmF2YUVudigpOwogIGlmICghZW52KSB7CiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oCiAgICAgIHsgb2s6IGZhbHNlLCBlcnJvcjogIk1pc3NpbmcgU1RSQVZBX0NMSUVOVF9JRC9TVFJBVkFfQ0xJRU5UX1NFQ1JFVCIgfSwKICAgICAgeyBzdGF0dXM6IDUwMCB9CiAgICApOwogIH0KCiAgY29uc3QgY29kZSA9IHJlcXVlc3QubmV4dFVybC5zZWFyY2hQYXJhbXMuZ2V0KCJjb2RlIik7CiAgY29uc3QgZXJyb3IgPSByZXF1ZXN0Lm5leHRVcmwuc2VhcmNoUGFyYW1zLmdldCgiZXJyb3IiKTsKICBpZiAoZXJyb3IpIHsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UucmVkaXJlY3QobmV3IFVSTChgL3NldHRpbmdzL3N0cmF2YT9lcnJvcj0ke2VuY29kZVVSSUNvbXBvbmVudChlcnJvcil9YCwgcmVxdWVzdC5uZXh0VXJsKSk7CiAgfQogIGlmICghY29kZSkgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5yZWRpcmVjdChuZXcgVVJMKCIvc2V0dGluZ3Mvc3RyYXZhP2Vycm9yPW1pc3NpbmdfY29kZSIsIHJlcXVlc3QubmV4dFVybCkpOwogIH0KCiAgY29uc3QgdG9rZW5SZXMgPSBhd2FpdCBmZXRjaCgiaHR0cHM6Ly93d3cuc3RyYXZhLmNvbS9vYXV0aC90b2tlbiIsIHsKICAgIG1ldGhvZDogIlBPU1QiLAogICAgaGVhZGVyczogeyAiQ29udGVudC1UeXBlIjogImFwcGxpY2F0aW9uL2pzb24iIH0sCiAgICBib2R5OiBKU09OLnN0cmluZ2lmeSh7CiAgICAgIGNsaWVudF9pZDogZW52LmNsaWVudElkLAogICAgICBjbGllbnRfc2VjcmV0OiBlbnYuY2xpZW50U2VjcmV0LAogICAgICBjb2RlLAogICAgICBncmFudF90eXBlOiAiYXV0aG9yaXphdGlvbl9jb2RlIgogICAgfSkKICB9KTsKCiAgaWYgKCF0b2tlblJlcy5vaykgewogICAgcmV0dXJuIE5leHRSZXNwb25zZS5yZWRpcmVjdChuZXcgVVJMKGAvc2V0dGluZ3Mvc3RyYXZhP2Vycm9yPXRva2VuXyR7dG9rZW5SZXMuc3RhdHVzfWAsIHJlcXVlc3QubmV4dFVybCkpOwogIH0KCiAgY29uc3QganNvbiA9IChhd2FpdCB0b2tlblJlcy5qc29uKCkpIGFzIHsKICAgIGFjY2Vzc190b2tlbjogc3RyaW5nOwogICAgcmVmcmVzaF90b2tlbjogc3RyaW5nOwogICAgZXhwaXJlc19hdDogbnVtYmVyOwogICAgYXRobGV0ZT86IHsgaWQ/OiBudW1iZXIgfTsKICAgIHNjb3BlPzogc3RyaW5nOwogIH07CgogIGF3YWl0IHVwc2VydFRva2VuKHsKICAgIGF0aGxldGVfaWQ6IGpzb24uYXRobGV0ZT8uaWQgIT0gbnVsbCA/IFN0cmluZyhqc29uLmF0aGxldGUuaWQpIDogbnVsbCwKICAgIGFjY2Vzc190b2tlbjoganNvbi5hY2Nlc3NfdG9rZW4sCiAgICByZWZyZXNoX3Rva2VuOiBqc29uLnJlZnJlc2hfdG9rZW4sCiAgICBleHBpcmVzX2F0OiBqc29uLmV4cGlyZXNfYXQsCiAgICBzY29wZToganNvbi5zY29wZSA/PyBudWxsCiAgfSk7CgogIHJldHVybiBOZXh0UmVzcG9uc2UucmVkaXJlY3QobmV3IFVSTCgiL3NldHRpbmdzL3N0cmF2YT9jb25uZWN0ZWQ9MSIsIHJlcXVlc3QubmV4dFVybCkpOwp9Cgo="}
+import { NextRequest, NextResponse } from "next/server";
+import { getStravaEnv, upsertToken } from "@/app/api/strava/_lib";
+
+export const runtime = "nodejs";
+
+export async function GET(request: NextRequest) {
+  const env = getStravaEnv();
+  if (!env) {
+    return NextResponse.json(
+      { ok: false, error: "Missing STRAVA_CLIENT_ID/STRAVA_CLIENT_SECRET" },
+      { status: 500 }
+    );
+  }
+
+  const code = request.nextUrl.searchParams.get("code");
+  const error = request.nextUrl.searchParams.get("error");
+  if (error) {
+    return NextResponse.redirect(new URL(`/settings/strava?error=${encodeURIComponent(error)}`, request.nextUrl));
+  }
+  if (!code) {
+    return NextResponse.redirect(new URL("/settings/strava?error=missing_code", request.nextUrl));
+  }
+
+  const tokenRes = await fetch("https://www.strava.com/oauth/token", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      client_id: env.clientId,
+      client_secret: env.clientSecret,
+      code,
+      grant_type: "authorization_code"
+    })
+  });
+
+  if (!tokenRes.ok) {
+    return NextResponse.redirect(new URL(`/settings/strava?error=token_${tokenRes.status}`, request.nextUrl));
+  }
+
+  const json = (await tokenRes.json()) as {
+    access_token: string;
+    refresh_token: string;
+    expires_at: number;
+    athlete?: { id?: number };
+    scope?: string;
+  };
+
+  await upsertToken({
+    athlete_id: json.athlete?.id != null ? String(json.athlete.id) : null,
+    access_token: json.access_token,
+    refresh_token: json.refresh_token,
+    expires_at: json.expires_at,
+    scope: json.scope ?? null
+  });
+
+  return NextResponse.redirect(new URL("/settings/strava?connected=1", request.nextUrl));
+}
+
