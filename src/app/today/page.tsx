@@ -2691,8 +2691,8 @@ export default function TodayPage() {
         </div>
       </section>
 
-      <div className="today-metrics-energy">
-        <div className="today-metrics-stack">
+      <div className="today-row-scores-workout">
+        <div className="today-scores-col">
           {/* Kinetic Lab Bento Grid */}
           <div className="kinetic-bento-grid">
             {/* Hero: Readiness */}
@@ -2753,56 +2753,6 @@ export default function TodayPage() {
               </div>
             </div>
           </div>
-
-          {/* Morning Checkin Section */}
-          <section className="morning-checkin-section">
-            <h3>צ'ק-אין בוקר</h3>
-            <p>איך הרגשת כשהתעוררת הבוקר?</p>
-            <div className="sentiment-buttons-row">
-              <button className="sentiment-button" title="מאוד מרוצה">
-                <span className="material-symbols-outlined">sentiment_very_satisfied</span>
-              </button>
-              <button className="sentiment-button" title="מרוצה">
-                <span className="material-symbols-outlined">sentiment_satisfied</span>
-              </button>
-              <button className="sentiment-button selected" title="ניטרלי">
-                <span className="material-symbols-outlined">sentiment_neutral</span>
-              </button>
-              <button className="sentiment-button" title="לא מרוצה">
-                <span className="material-symbols-outlined">sentiment_dissatisfied</span>
-              </button>
-              <button className="sentiment-button" title="מאוד לא מרוצה">
-                <span className="material-symbols-outlined">sentiment_very_dissatisfied</span>
-              </button>
-            </div>
-          </section>
-
-          {journal?.energyBattery ? (
-            <section className="energy-battery-card energy-battery-focus">
-              <div className="energy-battery-head">
-                <strong>Energy Battery</strong>
-                <span>
-                  {journal.energyBattery.current}/100
-                {journal.energyBattery.isEstimated ? " · הערכה" : ""}
-              </span>
-            </div>
-            <div className="energy-battery-single">
-              <div className={`mini-track ${percentToTone(journal.energyBattery.current)}`}>
-                <i style={{ width: `${clampPercent(journal.energyBattery.current)}%` }} />
-              </div>
-              <div className="energy-battery-points">
-                <span>בוקר: {journal.energyBattery.start}</span>
-                <span>עכשיו: {journal.energyBattery.current}</span>
-                <span>סוף יום: {journal.energyBattery.end}</span>
-              </div>
-            </div>
-            <div className="energy-battery-meta">
-              <span>מגמה: {journal.energyBattery.start} → {journal.energyBattery.current} → {journal.energyBattery.end}</span>
-              {journal.dailyScore ? <span>ציון יומי: {journal.dailyScore.value} · {journal.dailyScore.label}</span> : null}
-            </div>
-            {journal.dailyScore?.partial ? <small className="note">הציון מבוסס נתונים חלקיים</small> : null}
-            </section>
-          ) : null}
 
         </div>
 
@@ -2995,6 +2945,59 @@ export default function TodayPage() {
 
         </div>
       </section>
+
+      {/* Row 4: Checkin + Energy Battery */}
+      <div className="today-row-checkin-energy">
+        <section className="morning-checkin-section">
+          <h3>צ'ק-אין בוקר</h3>
+          <p>איך הרגשת כשהתעוררת הבוקר?</p>
+          <div className="sentiment-buttons-row">
+            <button className="sentiment-button" title="מאוד מרוצה">
+              <span className="material-symbols-outlined">sentiment_very_satisfied</span>
+            </button>
+            <button className="sentiment-button" title="מרוצה">
+              <span className="material-symbols-outlined">sentiment_satisfied</span>
+            </button>
+            <button className="sentiment-button selected" title="ניטרלי">
+              <span className="material-symbols-outlined">sentiment_neutral</span>
+            </button>
+            <button className="sentiment-button" title="לא מרוצה">
+              <span className="material-symbols-outlined">sentiment_dissatisfied</span>
+            </button>
+            <button className="sentiment-button" title="מאוד לא מרוצה">
+              <span className="material-symbols-outlined">sentiment_very_dissatisfied</span>
+            </button>
+          </div>
+        </section>
+
+        {journal?.energyBattery ? (
+          <section className="energy-battery-card energy-battery-focus">
+            <div className="energy-battery-head">
+              <strong>Energy Battery</strong>
+              <span>{journal.energyBattery.current}/100{journal.energyBattery.isEstimated ? " · הערכה" : ""}</span>
+            </div>
+            <div className="energy-battery-single">
+              <div className={`mini-track ${percentToTone(journal.energyBattery.current)}`}>
+                <i style={{ width: `${clampPercent(journal.energyBattery.current)}%` }} />
+              </div>
+              <div className="energy-battery-points">
+                <span>בוקר: {journal.energyBattery.start}</span>
+                <span>עכשיו: {journal.energyBattery.current}</span>
+                <span>סוף יום: {journal.energyBattery.end}</span>
+              </div>
+            </div>
+            <div className="energy-battery-meta">
+              <span>מגמה: {journal.energyBattery.start} → {journal.energyBattery.current} → {journal.energyBattery.end}</span>
+              {journal.dailyScore ? <span>ציון יומי: {journal.dailyScore.value} · {journal.dailyScore.label}</span> : null}
+            </div>
+          </section>
+        ) : (
+          <section className="energy-battery-card energy-battery-focus">
+            <div className="energy-battery-head"><strong>Energy Battery</strong></div>
+            <p style={{opacity:0.5, fontSize:"0.85rem"}}>אין נתוני סוללה להיום</p>
+          </section>
+        )}
+      </div>
 
       <section className="today-surface today-surface-macro">
         <div className="macro-card">

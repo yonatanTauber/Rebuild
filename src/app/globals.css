@@ -7060,3 +7060,75 @@ button.alt {
 .today-surface-macro { order: 2; }
 .today-surface-a     { order: 3; }
 .today-surface-c     { order: 4; }
+
+/* ── Today Page New Layout ───────────────── */
+.today-page-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem 5rem;
+}
+
+/* Row 2: Water + Food */
+.top-input-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  order: 2;
+}
+
+/* Row 3: Scores + Workout */
+.today-row-scores-workout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  order: 3;
+}
+.today-scores-col {
+  background: #1a1a1a;
+  border-radius: 14px;
+  padding: 0.85rem;
+}
+
+/* Row 4: Checkin + Energy */
+.today-row-checkin-energy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  order: 4;
+}
+
+/* Row 5: Macro */
+.today-surface-macro { order: 5; }
+
+/* Section A stays in flow */
+.today-surface-a { order: 10; }
+.today-surface-b { display: none; }
+.today-surface-c { display: none; }
+
+/* Mobile: single column, compact */
+@media (max-width: 600px) {
+  .top-input-section,
+  .today-row-scores-workout,
+  .today-row-checkin-energy {
+    grid-template-columns: 1fr;
+  }
+  .today-page-flow {
+    gap: 0.5rem;
+    padding: 0.4rem 0.5rem 4.5rem;
+  }
+  .water-input-card,
+  .food-input-card,
+  .morning-checkin-section,
+  .energy-battery-card,
+  .today-scores-col {
+    padding: 0.65rem;
+  }
+  .sentiment-button {
+    font-size: 1.1rem;
+    padding: 0.3rem;
+  }
+  .kinetic-hero-number { font-size: 2rem !important; }
+  .kinetic-small-number { font-size: 1.4rem !important; }
+  .water-input-amount { font-size: 1.6rem !important; }
+}
