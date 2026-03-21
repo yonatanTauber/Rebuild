@@ -7141,3 +7141,21 @@ button.alt {
 .today-surface-macro      { order: 5 !important; }
 .today-surface-b          { order: 6 !important; display: none !important; }
 .today-surface-c          { order: 99 !important; display: none !important; }
+
+/* ── Force 2-col on all screen sizes ─── */
+.top-input-section,
+.today-row-scores-workout,
+.today-row-checkin-energy {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 0.6rem;
+}
+
+/* Only go 1-col on very tiny screens */
+@media (max-width: 380px) {
+  .top-input-section,
+  .today-row-scores-workout,
+  .today-row-checkin-energy {
+    grid-template-columns: 1fr !important;
+  }
+}
