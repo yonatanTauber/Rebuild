@@ -2848,7 +2848,7 @@ export default function TodayPage() {
                     <div
                       className="macro-bar-fill"
                       style={{
-                        width: `${Math.min(((journal?.nutrition.totals.carbsG ?? 0) / (journal?.nutrition.target.carbG ?? 1)) * 100, 100)}%`,
+                        width: `${Math.min(((journal?.nutrition.totals.carbsG ?? 0) / (journal?.nutrition.target.carbsG ?? 1)) * 100, 100)}%`,
                         background: "#fdd848"
                       }}
                     />
