@@ -25,7 +25,7 @@ interface TodayHeroProps {
 
 // Memoized score card to prevent unnecessary renders
 const ScoreCardMemo = memo(({ label, value, tone }: any) => (
-  <ScoreCard label={label} value={value} tone={tone} />
+  <ScoreCard title={label} value={value} tone={tone} />
 ));
 ScoreCardMemo.displayName = "ScoreCardMemo";
 
