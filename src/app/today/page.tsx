@@ -2631,6 +2631,14 @@ export default function TodayPage() {
         <div className="water-input-card">
           <div className="water-input-header">
             <h3>מים</h3>
+            <button
+              className="water-input-add-btn"
+              onClick={quickAddWater}
+              disabled={addingWaterIntake}
+              title="הוסף 200 מ״ל מים"
+            >
+              +200 מ״ל
+            </button>
           </div>
           <div className="water-input-display">
             <div className="water-input-amount">
@@ -2651,15 +2659,6 @@ export default function TodayPage() {
               </span>
             </div>
           </div>
-          <button
-            className="water-input-add-btn"
-            onClick={quickAddWater}
-            disabled={addingWaterIntake}
-            title="הוסף 200 מ״ל מים"
-          >
-            <span className="material-symbols-outlined">add</span>
-            <span className="water-input-btn-text">+200 מ״ל</span>
-          </button>
         </div>
 
         {/* Food Section */}
