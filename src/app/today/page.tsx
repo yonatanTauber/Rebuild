@@ -3014,6 +3014,7 @@ export default function TodayPage() {
             </div>
 
             <div className="today-food-targets" aria-label="יעדים">
+              {console.log("topNutritionTargets:", topNutritionTargets)}
               {topNutritionTargets.map((row) => (
                 <div key={row.key} className="today-macro-row" data-tone={row.tone}>
                   <div className="today-macro-side" aria-label="אחוז ויעד">
