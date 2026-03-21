@@ -2990,20 +2990,6 @@ export default function TodayPage() {
                 onCreate={openNewIngredientModal}
                 maxVisibleOptions={16}
               />
-              <div className="today-food-quick-meta">
-                <div className="today-food-quick-actions" aria-label="פעולות תזונה">
-                  <button type="button" className="choice-btn today-drink-btn" onClick={quickAddWater} title="הוסף כוס מים">
-                    + כוס מים
-                  </button>
-                  <button type="button" className="choice-btn" onClick={openEmptyNewIngredientModal} title="פנטרי">
-                    פנטרי
-                  </button>
-                  <Link href="/journal" className="inline-cta-link subtle-link">
-                    דף תזונה
-                  </Link>
-                </div>
-                <span>שתייה היום: {drinksSummary.totalMl} מ״ל</span>
-              </div>
             </div>
           </div>
 
