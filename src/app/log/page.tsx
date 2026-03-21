@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { WorkoutBanner, buildWorkoutBannerMetrics } from "@/components/workout-banner";
 import { formatDisplayDate, formatDisplayDateTime, formatLocalISODate } from "@/lib/date";
 import { workoutDetailPath } from "@/lib/url";
 
@@ -57,16 +56,25 @@ function sportLabel(sport: WorkoutItem["sport"]) {
   return "שחייה";
 }
 
-function weekdayLabels() {
-  return ["ראשון", "שני", "שלישי", "רביעי", "חמישי", "שישי", "שבת"];
+function sportColor(sport: WorkoutItem["sport"]) {
+  if (sport === "run") return "#72dcff";
+  if (sport === "bike") return "#fdd848";
+  if (sport === "strength") return "#fd8b00";
+  return "#c3ffcd";
+}
+
+function sportEmoji(sport: WorkoutItem["sport"]) {
+  if (sport === "run") return "🏃";
+  if (sport === "bike") return "🚴";
+  if (sport === "strength") return "💪";
+  return "🏊";
 }
 
 export default function LogPage() {
   const [view, setView] = useState<CalendarView>("week");
   const [anchorDate, setAnchorDate] = useState<string>(isoDate(new Date()));
-  const [selectedDate, setSelectedDate] = useState<string>(isoDate(new Date()));
-  const [activeWorkoutId, setActiveWorkoutId] = useState<string | null>(null);
   const [data, setData] = useState<CalendarResponse | null>(null);
+  const [sportFilter, setSportFilter] = useState<"all" | "run" | "bike" | "swim" | "strength">("all");
 
   useEffect(() => {
     void fetch(`/api/workouts?view=${view}&date=${anchorDate}`)
@@ -74,63 +82,13 @@ export default function LogPage() {
       .then((payload) => setData(payload as CalendarResponse));
   }, [view, anchorDate]);
 
-  const workoutsByDate = useMemo(() => {
-    const map = new Map<string, WorkoutItem[]>();
-    for (const workout of data?.workouts ?? []) {
-      const key = formatLocalISODate(workout.startAt);
-      const list = map.get(key) ?? [];
-      list.push(workout);
-      map.set(key, list);
-    }
-
-    for (const [key, list] of map.entries()) {
-      map.set(
-        key,
-        [...list].sort((a, b) => new Date(a.startAt).getTime() - new Date(b.startAt).getTime())
-      );
-    }
-
-    return map;
-  }, [data]);
-
-  const visibleDays = useMemo(() => {
-    if (!data) return [] as Date[];
-    const from = new Date(data.from);
-    const to = new Date(data.to);
-
-    const days: Date[] = [];
-    for (let d = new Date(from); d <= to; d = addDays(d, 1)) {
-      days.push(new Date(d));
-    }
-    return days;
-  }, [data]);
-
-  useEffect(() => {
-    if (!data) return;
-    if (selectedDate >= data.from && selectedDate <= data.to) return;
-    setSelectedDate(data.anchorDate ?? isoDate(new Date()));
-  }, [data, selectedDate]);
-
-  const selectedWorkouts = workoutsByDate.get(selectedDate) ?? [];
-
-  useEffect(() => {
-    if (!selectedWorkouts.length) {
-      setActiveWorkoutId(null);
-      return;
-    }
-    if (activeWorkoutId && selectedWorkouts.some((w) => w.id === activeWorkoutId)) return;
-    setActiveWorkoutId(selectedWorkouts[0].id);
-  }, [activeWorkoutId, selectedWorkouts]);
-
-  const activeWorkout = selectedWorkouts.find((item) => item.id === activeWorkoutId) ?? selectedWorkouts[0] ?? null;
-
   const anchor = new Date(anchorDate);
   const title =
     view === "month"
       ? `${String(anchor.getMonth() + 1).padStart(2, "0")}-${String(anchor.getFullYear()).slice(-2)}`
       : data
-        ? `שבוע ${formatDisplayDate(data.from)} עד ${formatDisplayDate(data.to)}`
-        : `שבוע ${formatDisplayDate(anchor)}`;
+        ? `${formatDisplayDate(data.from)} – ${formatDisplayDate(data.to)}`
+        : `${formatDisplayDate(anchor)}`;
 
   function goPrevious() {
     const date = new Date(anchorDate);
@@ -142,131 +100,154 @@ export default function LogPage() {
     setAnchorDate(isoDate(view === "month" ? addMonths(date, 1) : addDays(date, 7)));
   }
 
+  const allWorkouts = useMemo(() => {
+    const list = [...(data?.workouts ?? [])];
+    return list.sort((a, b) => new Date(b.startAt).getTime() - new Date(a.startAt).getTime());
+  }, [data]);
+
+  const filteredWorkouts = useMemo(() => {
+    if (sportFilter === "all") return allWorkouts;
+    return allWorkouts.filter((w) => w.sport === sportFilter);
+  }, [allWorkouts, sportFilter]);
+
+  const totalKm = filteredWorkouts.reduce((sum, w) => sum + (w.distanceM ? w.distanceM / 1000 : 0), 0);
+  const totalCount = filteredWorkouts.length;
+
+  const filters: { key: "all" | "run" | "bike" | "swim" | "strength"; label: string }[] = [
+    { key: "all", label: "הכל" },
+    { key: "run", label: "ריצה" },
+    { key: "bike", label: "אופניים" },
+    { key: "swim", label: "שחייה" },
+    { key: "strength", label: "כוח" },
+  ];
+
   return (
-    <div className="log-page">
-      <header className="page-header">
+    <div className="log-kinetic-page">
+      <div className="log-kinetic-hero">
         <h1>יומן אימונים</h1>
-        <p>יומן רציף: בוחרים יום ורואים מיד את האימון הפעיל באותו משטח.</p>
-      </header>
+        <p>כל האימונים שלך במקום אחד</p>
+      </div>
 
-      <section className="log-surface">
-        <div className="log-toolbar">
-          <div className="calendar-switch" role="tablist" aria-label="תצוגת יומן">
-            <button
-              className={view === "month" ? "calendar-tab active" : "calendar-tab"}
-              onClick={() => setView("month")}
-            >
-              חודשי
-            </button>
-            <button className={view === "week" ? "calendar-tab active" : "calendar-tab"} onClick={() => setView("week")}>
-              שבועי
-            </button>
-          </div>
-
-          <div className="calendar-nav">
-            <button onClick={goPrevious}>הקודם</button>
-            <strong>{title}</strong>
-            <button onClick={goNext}>הבא</button>
-          </div>
+      <div className="log-kinetic-period-nav">
+        <button onClick={goPrevious} aria-label="תקופה קודמת">‹</button>
+        <span className="log-kinetic-period-title">{title}</span>
+        <button onClick={goNext} aria-label="תקופה הבאה">›</button>
+        <div className="log-kinetic-view-toggle">
+          <button
+            className={view === "week" ? "active" : ""}
+            onClick={() => setView("week")}
+          >
+            שבועי
+          </button>
+          <button
+            className={view === "month" ? "active" : ""}
+            onClick={() => setView("month")}
+          >
+            חודשי
+          </button>
         </div>
+      </div>
 
-        <div className="log-surface-layout">
-          <div className="log-calendar-grid">
-            {weekdayLabels().map((label) => (
-              <div key={label} className="calendar-weekday">
-                {label}
-              </div>
-            ))}
+      <div className="log-kinetic-filter-bar">
+        {filters.map((f) => (
+          <button
+            key={f.key}
+            className={`log-kinetic-chip${sportFilter === f.key ? " active" : ""}`}
+            onClick={() => setSportFilter(f.key)}
+          >
+            {f.label}
+          </button>
+        ))}
+      </div>
 
-            {visibleDays.map((day) => {
-              const dayKey = isoDate(day);
-              const items = workoutsByDate.get(dayKey) ?? [];
-              const inCurrentMonth = day.getMonth() === new Date(anchorDate).getMonth();
-              const selected = dayKey === selectedDate;
+      <div className="log-kinetic-stats">
+        <div className="log-kinetic-stat-card">
+          <span className="log-stat-label">מרחק כולל</span>
+          <span className="log-stat-value">{totalKm.toFixed(1)} <small>ק"מ</small></span>
+        </div>
+        <div className="log-kinetic-stat-card">
+          <span className="log-stat-label">סה"כ אימונים</span>
+          <span className="log-stat-value">{totalCount}</span>
+        </div>
+      </div>
 
-              return (
-                <button
-                  key={dayKey}
-                  type="button"
-                  className={[
-                    "log-day-cell",
-                    inCurrentMonth ? "" : "muted",
-                    selected ? "selected" : "",
-                    items.length > 0 ? "has-workout" : ""
-                  ]
-                    .join(" ")
-                    .trim()}
-                  onClick={() => setSelectedDate(dayKey)}
-                >
-                  <span className="log-day-date">{formatDisplayDate(day)}</span>
-                  <span className="log-day-count">{items.length} אימונים</span>
-                  {items.length > 0 ? <i aria-hidden className="log-day-dot" /> : null}
-                </button>
-              );
-            })}
-          </div>
+      <div className="log-kinetic-list">
+        {filteredWorkouts.length === 0 ? (
+          <div className="log-kinetic-empty">אין אימונים בתקופה זו</div>
+        ) : (
+          filteredWorkouts.map((workout) => {
+            const intensityBars = Math.min(5, Math.ceil(workout.tssLike / 16));
+            const km = workout.distanceM ? (workout.distanceM / 1000).toFixed(1) : null;
+            const paceMinPerKm =
+              workout.distanceM && workout.distanceM > 0
+                ? workout.durationSec / 60 / (workout.distanceM / 1000)
+                : null;
+            const paceStr =
+              paceMinPerKm != null
+                ? `${Math.floor(paceMinPerKm)}:${String(Math.round((paceMinPerKm % 1) * 60)).padStart(2, "0")}/ק"מ`
+                : null;
 
-          <aside className="log-active-panel">
-            <div className="log-active-head">
-              <strong>{formatDisplayDate(selectedDate)}</strong>
-              <span>{selectedWorkouts.length} אימונים</span>
-            </div>
-
-            {selectedWorkouts.length > 1 ? (
-              <div className="log-day-workout-tabs" role="tablist" aria-label="אימוני היום">
-                {selectedWorkouts.map((item) => (
-                  <button
-                    key={item.id}
-                    type="button"
-                    className={item.id === activeWorkout?.id ? "log-day-workout-tab active" : "log-day-workout-tab"}
-                    onClick={() => setActiveWorkoutId(item.id)}
+            return (
+              <Link
+                key={workout.id}
+                href={workoutDetailPath(workout.id)}
+                className="log-workout-card-k"
+              >
+                <div className="log-workout-card-k-header">
+                  <div
+                    className="log-workout-card-k-icon"
+                    style={{ background: sportColor(workout.sport) + "22", borderColor: sportColor(workout.sport) + "55" }}
                   >
-                    {sportLabel(item.sport)} · {formatDuration(item.durationSec)}
-                  </button>
-                ))}
-              </div>
-            ) : null}
-
-            {activeWorkout ? (
-              <article className="log-active-workout-card">
-                <div className="log-active-workout-main">
-                  <WorkoutBanner
-                    sport={activeWorkout.sport}
-                    className="log-active-banner"
-                    metrics={buildWorkoutBannerMetrics({
-                      sport: activeWorkout.sport,
-                      durationSec: activeWorkout.durationSec,
-                      distanceKm: activeWorkout.distanceM != null ? activeWorkout.distanceM / 1000 : null,
-                      avgHr: activeWorkout.avgHr ?? null,
-                      load: activeWorkout.tssLike
-                    })}
-                    runScore={null}
-                  />
-
-                  <div className="log-active-meta">
-                    <h3>{sportLabel(activeWorkout.sport)}</h3>
-                    <p>{formatDisplayDateTime(activeWorkout.startAt)}</p>
-                    <div className="log-active-pills">
-                      <span>משך: {formatDuration(activeWorkout.durationSec)}</span>
-                      {activeWorkout.distanceM != null ? <span>מרחק: {(activeWorkout.distanceM / 1000).toFixed(1)} ק"מ</span> : null}
-                      <span>עומס: {Math.round(activeWorkout.tssLike)}</span>
-                      {activeWorkout.avgHr ? <span>דופק: {Math.round(activeWorkout.avgHr)}</span> : null}
+                    <span style={{ fontSize: "1.5rem" }}>{sportEmoji(workout.sport)}</span>
+                  </div>
+                  <div className="log-workout-card-k-info">
+                    <strong style={{ color: sportColor(workout.sport) }}>{sportLabel(workout.sport)}</strong>
+                    <span>{formatDisplayDateTime(workout.startAt)}</span>
+                    <span className="log-card-source">{workout.source}</span>
+                  </div>
+                  <div className="log-workout-card-k-chevron">›</div>
+                </div>
+                <div className="log-workout-card-k-metrics">
+                  {km ? (
+                    <div className="log-workout-metric-k">
+                      <span className="log-metric-label">מרחק</span>
+                      <span className="log-metric-value">{km} ק"מ</span>
                     </div>
-                    {activeWorkout.shoeName ? <small>נעל: {activeWorkout.shoeName}</small> : null}
-                    <div className="log-active-actions">
-                      <Link href={workoutDetailPath(activeWorkout.id)} className="inline-cta-link">
-                        פתיחת אימון מלא
-                      </Link>
+                  ) : (
+                    <div className="log-workout-metric-k">
+                      <span className="log-metric-label">משך</span>
+                      <span className="log-metric-value">{formatDuration(workout.durationSec)}</span>
+                    </div>
+                  )}
+                  {paceStr ? (
+                    <div className="log-workout-metric-k">
+                      <span className="log-metric-label">קצב</span>
+                      <span className="log-metric-value">{paceStr}</span>
+                    </div>
+                  ) : workout.avgHr ? (
+                    <div className="log-workout-metric-k">
+                      <span className="log-metric-label">דופק</span>
+                      <span className="log-metric-value">{Math.round(workout.avgHr)}</span>
+                    </div>
+                  ) : null}
+                  <div className="log-workout-metric-k">
+                    <span className="log-metric-label">עומס</span>
+                    <div className="log-intensity-bars">
+                      {[1, 2, 3, 4, 5].map((i) => (
+                        <div
+                          key={i}
+                          className={`log-intensity-bar${i <= intensityBars ? " filled" : ""}`}
+                          style={i <= intensityBars ? { background: sportColor(workout.sport) } : {}}
+                        />
+                      ))}
                     </div>
                   </div>
                 </div>
-              </article>
-            ) : (
-              <div className="log-empty">לא נמצא אימון ביום הנבחר.</div>
-            )}
-          </aside>
-        </div>
-      </section>
+              </Link>
+            );
+          })
+        )}
+      </div>
     </div>
   );
 }

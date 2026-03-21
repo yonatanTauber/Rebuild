@@ -151,38 +151,64 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
     load: workout.tssLike
   });
 
+  const sportIconChar = workout.sport === "run" ? "🏃" : workout.sport === "bike" ? "🚴" : workout.sport === "strength" ? "💪" : "🏊";
+  const sportColorVal = workout.sport === "run" ? "#72dcff" : workout.sport === "bike" ? "#fdd848" : workout.sport === "strength" ? "#fd8b00" : "#c3ffcd";
+  const displayDistanceKm = detail.distanceOfficialKm ?? detail.distanceRawKm;
+
   return (
-    <div className="workout-detail-page">
-      <div className="workout-detail-nav">
+    <div className="workout-kinetic-page">
+      <div className="workout-kinetic-back-bar">
         {adjacent.previous ? (
-          <Link href={workoutDetailPath(adjacent.previous.id)} className="workout-detail-nav-btn">
-            אימון קודם
-          </Link>
+          <Link href={workoutDetailPath(adjacent.previous.id)} className="workout-kinetic-adj-btn" title="אימון קודם">‹</Link>
         ) : (
-          <span className="workout-detail-nav-btn disabled">אימון קודם</span>
+          <span className="workout-kinetic-adj-btn disabled">‹</span>
         )}
-        <Link href="/log" className="workout-detail-nav-btn center">
-          חזרה ליומן
-        </Link>
+        <Link href="/log" className="workout-kinetic-back-link">← יומן אימונים</Link>
         {adjacent.next ? (
-          <Link href={workoutDetailPath(adjacent.next.id)} className="workout-detail-nav-btn">
-            אימון הבא
-          </Link>
+          <Link href={workoutDetailPath(adjacent.next.id)} className="workout-kinetic-adj-btn" title="אימון הבא">›</Link>
         ) : (
-          <span className="workout-detail-nav-btn disabled">אימון הבא</span>
+          <span className="workout-kinetic-adj-btn disabled">›</span>
         )}
       </div>
 
-      <header className="page-header workout-page-header">
-        <div className="workout-header-main">
-          <h1>פרטי אימון</h1>
-          <p>סוג אימון: {sportLabel(workout.sport)}</p>
+      <div className="workout-kinetic-hero">
+        <div className="workout-kinetic-hero-left">
+          <span className="workout-kinetic-session-label">SESSION OVERVIEW</span>
+          <h1 style={{ color: sportColorVal }}>{sportLabel(workout.sport)}</h1>
+          <p>{formatDisplayDateTime(workout.startAt)}</p>
         </div>
-        <div className="workout-header-date-card">
-          <span>תאריך ושעה</span>
-          <strong>{formatDisplayDateTime(workout.startAt)}</strong>
+        <div className="workout-kinetic-hero-right">
+          <span className="workout-kinetic-sport-icon">{sportIconChar}</span>
         </div>
-      </header>
+      </div>
+
+      <div className="workout-kinetic-bento">
+        {displayDistanceKm != null ? (
+          <div className="workout-kinetic-metric">
+            <span className="workout-kinetic-metric-label">מרחק</span>
+            <span className="workout-kinetic-metric-number">{displayDistanceKm.toFixed(2)}</span>
+            <span className="workout-kinetic-metric-unit">ק"מ</span>
+          </div>
+        ) : null}
+        <div className="workout-kinetic-metric">
+          <span className="workout-kinetic-metric-label">זמן</span>
+          <span className="workout-kinetic-metric-number">{formatClock(runDisplayDurationSec)}</span>
+          <span className="workout-kinetic-metric-unit">שע:דק:שנ</span>
+        </div>
+        {displayAvgHr != null ? (
+          <div className="workout-kinetic-metric">
+            <span className="workout-kinetic-metric-label">דופק ממוצע</span>
+            <span className="workout-kinetic-metric-number">{Math.round(displayAvgHr)}</span>
+            <span className="workout-kinetic-metric-unit">bpm</span>
+          </div>
+        ) : null}
+        <div className="workout-kinetic-metric">
+          <span className="workout-kinetic-metric-label">עומס</span>
+          <span className="workout-kinetic-metric-number">{Math.round(workout.tssLike)}</span>
+          <span className="workout-kinetic-metric-unit">TSS</span>
+        </div>
+      </div>
+
       <div className={showRunScoreTop ? "workout-detail-top-grid has-score" : "workout-detail-top-grid"}>
         <div className="workout-detail-banner-shell">
           <WorkoutBanner sport={workout.sport} metrics={bannerMetrics} runScore={null} />
@@ -379,3 +405,4 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
     </div>
   );
 }
+

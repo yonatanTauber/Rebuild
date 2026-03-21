@@ -7173,3 +7173,506 @@ button.alt {
     gap: 0.6rem;
   }
 }
+
+/* ════════════════════════════════════════════════════════════
+   KINETIC LAB — LOG LIST PAGE
+   ════════════════════════════════════════════════════════════ */
+
+.log-kinetic-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  direction: rtl;
+}
+
+/* Hero */
+.log-kinetic-hero {
+  margin-bottom: 2rem;
+}
+
+.log-kinetic-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-family: var(--font-display), "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  color: var(--on-surface);
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.log-kinetic-hero p {
+  color: var(--on-surface-variant);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Period nav */
+.log-kinetic-period-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.log-kinetic-period-nav > button {
+  background: var(--surface-container);
+  border: 1px solid var(--outline-variant);
+  color: var(--on-surface);
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.log-kinetic-period-nav > button:hover {
+  background: var(--surface-container-high);
+}
+
+.log-kinetic-period-title {
+  flex: 1;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--on-surface);
+  text-align: center;
+}
+
+.log-kinetic-view-toggle {
+  display: flex;
+  background: var(--surface-container-low);
+  border: 1px solid var(--outline-variant);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.log-kinetic-view-toggle button {
+  background: transparent;
+  border: none;
+  color: var(--on-surface-variant);
+  padding: 0.35rem 0.75rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.log-kinetic-view-toggle button.active {
+  background: var(--surface-container-high);
+  color: var(--on-surface);
+  font-weight: 600;
+}
+
+/* Sport filter chips */
+.log-kinetic-filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  scrollbar-width: none;
+}
+
+.log-kinetic-filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.log-kinetic-chip {
+  background: var(--surface-container);
+  border: 1px solid var(--outline-variant);
+  color: var(--on-surface-variant);
+  border-radius: 999px;
+  padding: 0.35rem 1rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  flex-shrink: 0;
+}
+
+.log-kinetic-chip:hover {
+  background: var(--surface-container-high);
+  color: var(--on-surface);
+}
+
+.log-kinetic-chip.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #0e0e0e;
+  font-weight: 700;
+}
+
+/* Stats row */
+.log-kinetic-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.log-kinetic-stat-card {
+  background: var(--surface-container);
+  border: 1px solid var(--outline-variant);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.log-stat-label {
+  font-size: 0.75rem;
+  color: var(--on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.log-stat-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--on-surface);
+  line-height: 1;
+}
+
+.log-stat-value small {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--on-surface-variant);
+}
+
+/* List */
+.log-kinetic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.log-kinetic-empty {
+  text-align: center;
+  color: var(--on-surface-variant);
+  padding: 3rem 0;
+  font-size: 0.95rem;
+}
+
+/* Workout card */
+.log-workout-card-k {
+  display: block;
+  background: var(--surface-container);
+  border: 1px solid var(--outline-variant);
+  border-radius: 14px;
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+  color: var(--on-surface);
+  transition: background 0.15s, border-color 0.15s;
+  cursor: pointer;
+}
+
+.log-workout-card-k:hover {
+  background: var(--surface-container-high);
+  border-color: #5a5a59;
+}
+
+.log-workout-card-k-header {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.log-workout-card-k-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.log-workout-card-k-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.log-workout-card-k-info strong {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.log-workout-card-k-info span {
+  font-size: 0.8rem;
+  color: var(--on-surface-variant);
+}
+
+.log-card-source {
+  font-size: 0.72rem !important;
+  color: #6a6a6a !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.log-workout-card-k-chevron {
+  font-size: 1.25rem;
+  color: var(--on-surface-variant);
+  opacity: 0.5;
+}
+
+/* Metrics row */
+.log-workout-card-k-metrics {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  padding-top: 0.625rem;
+  border-top: 1px solid var(--outline-variant);
+}
+
+.log-workout-metric-k {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.log-metric-label {
+  font-size: 0.68rem;
+  color: var(--on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.log-metric-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+/* Intensity bars */
+.log-intensity-bars {
+  display: flex;
+  gap: 3px;
+  align-items: flex-end;
+  height: 20px;
+}
+
+.log-intensity-bar {
+  width: 6px;
+  border-radius: 2px;
+  background: var(--outline-variant);
+  transition: background 0.15s;
+}
+
+.log-intensity-bar:nth-child(1) { height: 8px; }
+.log-intensity-bar:nth-child(2) { height: 11px; }
+.log-intensity-bar:nth-child(3) { height: 14px; }
+.log-intensity-bar:nth-child(4) { height: 17px; }
+.log-intensity-bar:nth-child(5) { height: 20px; }
+
+.log-intensity-bar.filled {
+  /* color set via inline style */
+}
+
+/* ════════════════════════════════════════════════════════════
+   KINETIC LAB — WORKOUT DETAIL PAGE
+   ════════════════════════════════════════════════════════════ */
+
+.workout-kinetic-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+  direction: rtl;
+}
+
+/* Back bar */
+.workout-kinetic-back-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.workout-kinetic-back-link {
+  flex: 1;
+  font-size: 0.9rem;
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.workout-kinetic-back-link:hover {
+  color: var(--on-surface);
+}
+
+.workout-kinetic-adj-btn {
+  background: var(--surface-container);
+  border: 1px solid var(--outline-variant);
+  color: var(--on-surface);
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.workout-kinetic-adj-btn:hover {
+  background: var(--surface-container-high);
+}
+
+.workout-kinetic-adj-btn.disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Hero */
+.workout-kinetic-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface-container);
+  border: 1px solid var(--outline-variant);
+  border-radius: 18px;
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.25rem;
+  gap: 1rem;
+}
+
+.workout-kinetic-hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.workout-kinetic-session-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  font-weight: 600;
+}
+
+.workout-kinetic-hero-left h1 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-family: var(--font-display), "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.workout-kinetic-hero-left p {
+  font-size: 0.9rem;
+  color: var(--on-surface-variant);
+  margin: 0;
+}
+
+.workout-kinetic-hero-right {
+  flex-shrink: 0;
+}
+
+.workout-kinetic-sport-icon {
+  font-size: 3.5rem;
+  line-height: 1;
+  display: block;
+}
+
+/* Bento grid */
+.workout-kinetic-bento {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.workout-kinetic-metric {
+  background: var(--surface-container-low);
+  border: 1px solid var(--outline-variant);
+  border-radius: 14px;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.workout-kinetic-metric-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  font-weight: 600;
+}
+
+.workout-kinetic-metric-number {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: var(--on-surface);
+  line-height: 1;
+  font-family: var(--font-display), "Be Vietnam Pro", sans-serif;
+}
+
+.workout-kinetic-metric-unit {
+  font-size: 0.75rem;
+  color: var(--on-surface-variant);
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .log-kinetic-page {
+    padding: 1.25rem 0.875rem 3rem;
+  }
+
+  .log-kinetic-hero h1 {
+    font-size: 2rem;
+  }
+
+  .log-kinetic-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .log-workout-card-k-metrics {
+    gap: 0.875rem;
+  }
+
+  /* Detail bento: 2 cols on mobile */
+  .workout-kinetic-bento {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .workout-kinetic-hero {
+    padding: 1.25rem 1.25rem;
+  }
+
+  .workout-kinetic-hero-left h1 {
+    font-size: 1.75rem;
+  }
+
+  .workout-kinetic-sport-icon {
+    font-size: 2.5rem;
+  }
+
+  .workout-kinetic-metric-number {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .workout-kinetic-bento {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .log-kinetic-period-nav {
+    gap: 0.35rem;
+  }
+
+  .log-kinetic-period-title {
+    font-size: 0.85rem;
+  }
+}
