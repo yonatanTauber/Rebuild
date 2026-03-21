@@ -2661,8 +2661,8 @@ export default function TodayPage() {
               <div className="kinetic-hero-text">
                 <span className="kinetic-label">מוכנות</span>
                 <div className="kinetic-hero-number" style={{color:"#c3ffcd"}}>
-                  {today?.readinessScore ?? "-"}
                   <span className="kinetic-unit">/100</span>
+                  {today?.readinessScore ?? "-"}
                 </div>
                 <span className="kinetic-sublabel">
                   {(today?.readinessScore ?? 0) >= 70 ? "מצב אופטימלי" : (today?.readinessScore ?? 0) >= 50 ? "מצב בינוני" : "דרוש מנוחה"}
@@ -2682,8 +2682,8 @@ export default function TodayPage() {
             <div className="kinetic-small-card">
               <span className="kinetic-label">עייפות</span>
               <div className="kinetic-small-number" style={{color:"#fd8b00"}}>
-                {today?.fatigueScore ?? "-"}
                 <span className="kinetic-unit-sm" style={{color:"rgba(253,139,0,0.6)"}}>%</span>
+                {today?.fatigueScore ?? "-"}
               </div>
               <div className="kinetic-bar-track">
                 <div className="kinetic-bar-fill" style={{width:`${Math.min(today?.fatigueScore ?? 0,100)}%`, background:"#fd8b00"}}/>
@@ -2693,8 +2693,8 @@ export default function TodayPage() {
             <div className="kinetic-small-card">
               <span className="kinetic-label">כושר</span>
               <div className="kinetic-small-number" style={{color:"#72dcff"}}>
-                {today?.fitnessScore ?? "-"}
                 <span className="kinetic-unit-sm" style={{color:"rgba(114,220,255,0.6)"}}>VO2</span>
+                {today?.fitnessScore ?? "-"}
               </div>
               <div className="kinetic-bar-track">
                 <div className="kinetic-bar-fill" style={{width:`${Math.min(today?.fitnessScore ?? 0,100)}%`, background:"#72dcff"}}/>
