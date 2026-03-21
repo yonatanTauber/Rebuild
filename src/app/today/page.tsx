@@ -2551,11 +2551,31 @@ export default function TodayPage() {
     <div className="today-page today-page-flow">
       <section className="panel today-panel-row">
         <div className="journal-topbar">
-          <div className="journal-topline">
+          {/* Row 1: nav + quick actions */}
+          <div className="journal-topbar-row1">
+            <div className="journal-nav">
+              <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate((prev) => addDaysISO(prev, -1))} title="יום קודם">
+                ‹
+              </button>
+              <strong className="journal-date-title">{formatDisplayDate(activeDate)}</strong>
+              <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate((prev) => addDaysISO(prev, 1))} title="יום הבא">
+                ›
+              </button>
+            </div>
             <div className="journal-quick-actions">
+              <button className="choice-btn journal-today-btn" onClick={() => setActiveDate(formatISODate())}>
+                היום
+              </button>
+              {isHistoricalDay ? (
+                <button
+                  className={historicalEditMode ? "choice-btn icon-compact selected" : "choice-btn icon-compact"}
+                  onClick={() => setHistoricalEditMode((prev) => !prev)}
+                >
+                  {historicalEditMode ? "סגור" : "עריכה"}
+                </button>
+              ) : null}
               <button className="choice-btn icon-compact" onClick={triggerSync} disabled={syncing} title="רענון אימונים">
                 <span aria-hidden>↻</span>
-                <small>{syncing ? "מרענן" : "רענון"}</small>
               </button>
               <button
                 className={morningDone ? "choice-btn icon-compact morning-done" : "choice-btn icon-compact morning-missing"}
@@ -2563,31 +2583,10 @@ export default function TodayPage() {
                 title="עדכון בוקר"
               >
                 <span aria-hidden>{morningDone ? "✓" : "☀"}</span>
-                <small>{morningDone ? "עדכון בוקר הוזן" : "עדכון בוקר"}</small>
               </button>
             </div>
-
-            <button className="choice-btn journal-today-btn" onClick={() => setActiveDate(formatISODate())}>
-              היום
-            </button>
-            {isHistoricalDay ? (
-              <button
-                className={historicalEditMode ? "choice-btn journal-today-btn selected" : "choice-btn journal-today-btn"}
-                onClick={() => setHistoricalEditMode((prev) => !prev)}
-              >
-                {historicalEditMode ? "סגור עריכה" : "עריכה"}
-              </button>
-            ) : null}
           </div>
-          <div className="journal-nav">
-            <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate((prev) => addDaysISO(prev, -1))}>
-              יום קודם
-            </button>
-            <strong className="journal-date-title">{formatDisplayDate(activeDate)}</strong>
-            <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate((prev) => addDaysISO(prev, 1))}>
-              יום הבא
-            </button>
-          </div>
+          {/* Row 2: status */}
           <div className="journal-status-strip">
             <span className="journal-status-pill">{journal?.dayStatus.label ?? "-"}</span>
             <span className={`journal-target-pill ${journal?.nutrition.status.kcal ?? "on_target"}`}>
