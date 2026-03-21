@@ -7106,31 +7106,69 @@ button.alt {
 .today-surface-b { display: none; }
 .today-surface-c { display: none; }
 
-/* Mobile: single column, compact */
-@media (max-width: 600px) {
+/* Mobile: full-width single column, compact */
+@media (max-width: 768px) {
+  /* Override 2-col to full-width single column */
   .top-input-section,
   .today-row-scores-workout,
   .today-row-checkin-energy {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
+
+  /* Top bar: nav buttons much smaller */
+  .journal-nav-btn {
+    padding: 0.15rem 0.3rem;
+    font-size: 0.65rem;
+    border-radius: 6px;
+  }
+  .journal-date-title {
+    font-size: 0.82rem;
+    min-width: 80px;
+  }
+  .journal-topbar {
+    gap: 0.3rem;
+  }
+  .journal-nav {
+    gap: 0.3rem;
+  }
+  .icon-compact small {
+    font-size: 0.6rem;
+  }
+  .icon-compact {
+    padding: 0.15rem 0.3rem;
+    font-size: 0.65rem;
+  }
+
+  /* Compact page layout */
   .today-page-flow {
-    gap: 0.5rem;
-    padding: 0.4rem 0.5rem 4.5rem;
+    gap: 0.45rem;
+    padding: 0.35rem 0.5rem 4.5rem;
   }
+
+  /* Compact cards */
   .water-input-card,
   .food-input-card,
   .morning-checkin-section,
   .energy-battery-card,
   .today-scores-col {
-    padding: 0.65rem;
+    padding: 0.6rem 0.75rem;
   }
+
+  /* Compact scores */
+  .kinetic-hero-number { font-size: 1.9rem !important; }
+  .kinetic-small-number { font-size: 1.3rem !important; }
+  .water-input-amount { font-size: 1.5rem !important; }
+
+  /* Sentiment buttons compact */
   .sentiment-button {
-    font-size: 1.1rem;
-    padding: 0.3rem;
+    font-size: 1rem;
+    padding: 0.25rem;
   }
-  .kinetic-hero-number { font-size: 2rem !important; }
-  .kinetic-small-number { font-size: 1.4rem !important; }
-  .water-input-amount { font-size: 1.6rem !important; }
+
+  /* Workout banner full width */
+  .today-activity-side {
+    width: 100%;
+  }
 }
 
 /* ── Today Page Direct Children Order Fix ── */
@@ -7142,20 +7180,13 @@ button.alt {
 .today-surface-b          { order: 6 !important; display: none !important; }
 .today-surface-c          { order: 99 !important; display: none !important; }
 
-/* ── Force 2-col on all screen sizes ─── */
-.top-input-section,
-.today-row-scores-workout,
-.today-row-checkin-energy {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 0.6rem;
-}
-
-/* Only go 1-col on very tiny screens */
-@media (max-width: 380px) {
+/* ── Force 2-col on desktop ─── */
+@media (min-width: 769px) {
   .top-input-section,
   .today-row-scores-workout,
   .today-row-checkin-energy {
-    grid-template-columns: 1fr !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.6rem;
   }
 }

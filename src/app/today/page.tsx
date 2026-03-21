@@ -1915,27 +1915,26 @@ export default function TodayPage() {
     if (addingWaterIntake) return;
     setAddingWaterIntake(true);
     try {
-      const res = await fetch("/api/nutrition/meal-create", {
+      const res = await fetch("/api/nutrition/favorites/add", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           date: activeDate,
+          favoriteId: `ingredient:${waterIngredientId}`,
           slot: "drinks",
-          ingredientId: waterIngredientId,
           quantity: 200,
           unit: "ml"
         })
       });
       if (!res.ok) {
         showToast("הוספת מים נכשלה.");
-        setAddingWaterIntake(false);
         return;
       }
       showToast("נוסף מים (200 מ״ל).");
       await loadDashboard(activeDate);
-      setAddingWaterIntake(false);
     } catch {
       showToast("הוספת מים נכשלה.");
+    } finally {
       setAddingWaterIntake(false);
     }
   }
