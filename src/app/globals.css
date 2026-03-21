@@ -7050,3 +7050,13 @@ button.alt {
 .macro-row-track[data-key="protein"] .macro-row-fill { background: #7effa0; }
 .macro-row-track[data-key="carbs"]   .macro-row-fill { background: #5bc8f5; }
 .macro-row-track[data-key="fat"]     .macro-row-fill { background: #f5a623; }
+
+/* ── Section Order: Nutrition First ─────── */
+.today-page-flow {
+  display: flex;
+  flex-direction: column;
+}
+.today-surface-b     { order: 1; }
+.today-surface-macro { order: 2; }
+.today-surface-a     { order: 3; }
+.today-surface-c     { order: 4; }
