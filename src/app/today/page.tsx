@@ -1590,57 +1590,34 @@ export default function TodayPage() {
       pct: number;
       tone: "low" | "mid" | "good";
     }>;
-    const kcalTarget = Math.max(1, journal.nutrition.target.kcal);
     const proteinTarget = Math.max(1, journal.nutrition.target.proteinG);
+    const carbsTarget = Math.max(1, journal.nutrition.target.carbsG || 300);
     const fatTarget = Math.max(1, journal.nutrition.target.fatG);
-    const hydrationTargetMl = Math.max(1, journal.nutrition.plan.hydrationMl);
-    const hydrationActualMl = Math.round(
-      (journal.nutrition.meals ?? [])
-        .filter((meal) => meal.accepted === true)
-        .reduce(
-          (total, meal) =>
-            total +
-            meal.items.reduce((mealTotal, item) => {
-              if (item.unit === "ml") return mealTotal + (Number(item.quantity) || 0);
-              if (item.name.includes("מים")) return mealTotal + (Number(item.grams) || 0);
-              return mealTotal;
-            }, 0),
-          0
-        )
-    );
 
     const rows = [
       {
-        key: "kcal",
-        label: "קלוריות מול יעד",
-        actual: journal.nutrition.totals.kcal,
-        target: kcalTarget,
-        actualLabel: `${journal.nutrition.totals.kcal}`,
-        targetLabel: `${kcalTarget} קק״ל`
-      },
-      {
         key: "protein",
-        label: "חלבון מול יעד",
+        label: "חלבון",
         actual: journal.nutrition.totals.proteinG,
         target: proteinTarget,
-        actualLabel: `${Math.round(journal.nutrition.totals.proteinG)} ג׳`,
-        targetLabel: `${Math.round(proteinTarget)} ג׳`
+        actualLabel: `${Math.round(journal.nutrition.totals.proteinG)}G`,
+        targetLabel: `${Math.round(proteinTarget)}G`
+      },
+      {
+        key: "carbs",
+        label: "פחמימות",
+        actual: journal.nutrition.totals.carbsG || 0,
+        target: carbsTarget,
+        actualLabel: `${Math.round(journal.nutrition.totals.carbsG || 0)}G`,
+        targetLabel: `${Math.round(carbsTarget)}G`
       },
       {
         key: "fat",
-        label: "שומן מול יעד",
+        label: "שומנים",
         actual: journal.nutrition.totals.fatG,
         target: fatTarget,
-        actualLabel: `${Math.round(journal.nutrition.totals.fatG)} ג׳`,
-        targetLabel: `${Math.round(fatTarget)} ג׳`
-      },
-      {
-        key: "hydration",
-        label: "נוזלים מול יעד",
-        actual: hydrationActualMl,
-        target: hydrationTargetMl,
-        actualLabel: `${hydrationActualMl} מ״ל`,
-        targetLabel: `${hydrationTargetMl} מ״ל`
+        actualLabel: `${Math.round(journal.nutrition.totals.fatG)}G`,
+        targetLabel: `${Math.round(fatTarget)}G`
       }
     ];
 
