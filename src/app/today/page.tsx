@@ -3005,26 +3005,26 @@ export default function TodayPage() {
                 <span>שתייה היום: {drinksSummary.totalMl} מ״ל</span>
               </div>
             </div>
+          </div>
 
-            <div className="today-food-targets" aria-label="יעדים">
-              {topNutritionTargets.map((row) => (
-                <div key={row.key} className="today-macro-row" data-tone={row.tone}>
-                  <div className="today-macro-side" aria-label="אחוז ויעד">
-                    <div className="today-macro-percent">{row.pct}%</div>
-                    <div className="today-macro-side-target">{row.targetLabel}</div>
+          <div className="today-food-targets" aria-label="יעדים">
+            {topNutritionTargets.map((row) => (
+              <div key={row.key} className="today-macro-row" data-tone={row.tone}>
+                <div className="today-macro-side" aria-label="אחוז ויעד">
+                  <div className="today-macro-percent">{row.pct}%</div>
+                  <div className="today-macro-side-target">{row.targetLabel}</div>
+                </div>
+                <div className="today-macro-main">
+                  <div className="today-macro-head">
+                    <span className="today-macro-label">{row.label}</span>
+                    <strong className="today-macro-actual">{row.actualLabel}</strong>
                   </div>
-                  <div className="today-macro-main">
-                    <div className="today-macro-head">
-                      <span className="today-macro-label">{row.label}</span>
-                      <strong className="today-macro-actual">{row.actualLabel}</strong>
-                    </div>
-                    <div className={`today-macro-track ${row.tone}`} role="progressbar" aria-valuenow={row.pct}>
-                      <i style={{ width: `${row.pct}%` }} />
-                    </div>
+                  <div className={`today-macro-track ${row.tone}`} role="progressbar" aria-valuenow={row.pct}>
+                    <i style={{ width: `${row.pct}%` }} />
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
