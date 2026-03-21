@@ -6405,3 +6405,120 @@ button.alt {
   gap: 0.6rem;
   min-height: 48px;
 }
+
+/* ── Kinetic Lab Bento Grid ── */
+.kinetic-bento-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.kinetic-hero-card {
+  grid-column: 1 / -1;
+  background: #20201f;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  min-height: 140px;
+}
+
+.kinetic-hero-text {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.kinetic-label {
+  color: #adaaaa;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.kinetic-hero-number {
+  font-family: var(--font-display), 'Be Vietnam Pro', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row-reverse;
+  gap: 0.25rem;
+}
+
+.kinetic-unit {
+  font-size: 0.85rem;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.kinetic-sublabel {
+  font-size: 12px;
+  color: #5bef90;
+  margin-top: 0.25rem;
+}
+
+.kinetic-ring-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.kinetic-glow {
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  width: 160px;
+  height: 160px;
+  filter: blur(40px);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.kinetic-small-card {
+  background: #1a1a1a;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 140px;
+  text-align: right;
+}
+
+.kinetic-small-number {
+  font-family: var(--font-display), 'Be Vietnam Pro', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row-reverse;
+  gap: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.kinetic-unit-sm {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.kinetic-bar-track {
+  width: 100%;
+  height: 6px;
+  background: #262626;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.kinetic-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.6s ease;
+}

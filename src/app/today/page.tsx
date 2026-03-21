@@ -2654,37 +2654,52 @@ export default function TodayPage() {
 
       <div className="today-metrics-energy">
         <div className="today-metrics-stack">
-          <div className="grid-3 score-strip">
-            <ScoreCard
-              title="Readiness"
-              value={today?.readinessScore ?? "-"}
-              tone={statusToneByScore(today?.readinessScore)}
-              ranges={[
-                { label: "נמוך", from: 0, to: 39, meaning: "התאוששות לא מספקת. מומלץ אימון קל או מנוחה." },
-                { label: "בינוני", from: 40, to: 69, meaning: "אפשר אירובי קל-בינוני, בלי עומס איכות גבוה." },
-                { label: "גבוה", from: 70, to: 100, meaning: "חלון טוב לאימון איכות לפי התוכנית." }
-              ]}
-            />
-            <ScoreCard
-              title="Fatigue"
-              value={today?.fatigueScore ?? "-"}
-              tone={statusToneByScore(today?.fatigueScore, "lower_is_better")}
-              ranges={[
-                { label: "נמוך", from: 0, to: 34, meaning: "עייפות מצטברת נמוכה." },
-                { label: "בינוני", from: 35, to: 64, meaning: "עומס סביר, חשוב לנטר סימנים." },
-                { label: "גבוה", from: 65, to: 100, meaning: "עומס מצטבר גבוה, מומלץ להוריד עצימות." }
-              ]}
-            />
-            <ScoreCard
-              title="Fitness"
-              value={today?.fitnessScore ?? "-"}
-              tone={toneForFitness(today?.fitnessScore)}
-              ranges={[
-                { label: "בסיס", from: 0, to: 39, meaning: "שלב בניית בסיס." },
-                { label: "מתפתח", from: 40, to: 69, meaning: "כושר מתפתח, אפשר התקדמות מדודה." },
-                { label: "חזק", from: 70, to: 100, meaning: "כושר גבוה יחסית, לשמור איזון עומס." }
-              ]}
-            />
+          {/* Kinetic Lab Bento Grid */}
+          <div className="kinetic-bento-grid">
+            {/* Hero: Readiness */}
+            <div className="kinetic-hero-card">
+              <div className="kinetic-hero-text">
+                <span className="kinetic-label">מוכנות</span>
+                <div className="kinetic-hero-number" style={{color:"#c3ffcd"}}>
+                  {today?.readinessScore ?? "-"}
+                  <span className="kinetic-unit">/100</span>
+                </div>
+                <span className="kinetic-sublabel">
+                  {(today?.readinessScore ?? 0) >= 70 ? "מצב אופטימלי" : (today?.readinessScore ?? 0) >= 50 ? "מצב בינוני" : "דרוש מנוחה"}
+                </span>
+              </div>
+              <div className="kinetic-ring-wrap">
+                <svg width="96" height="96" style={{transform:"rotate(-90deg)"}}>
+                  <circle cx="48" cy="48" r="40" fill="transparent" stroke="#262626" strokeWidth="8"/>
+                  <circle cx="48" cy="48" r="40" fill="transparent" stroke="#c3ffcd" strokeWidth="8"
+                    strokeLinecap="round" strokeDasharray="251.2"
+                    strokeDashoffset={251.2 - (251.2 * Math.min(today?.readinessScore ?? 0, 100) / 100)}/>
+                </svg>
+              </div>
+              <div className="kinetic-glow" style={{background:"rgba(195,255,205,0.05)"}}/>
+            </div>
+            {/* Fatigue */}
+            <div className="kinetic-small-card">
+              <span className="kinetic-label">עייפות</span>
+              <div className="kinetic-small-number" style={{color:"#fd8b00"}}>
+                {today?.fatigueScore ?? "-"}
+                <span className="kinetic-unit-sm" style={{color:"rgba(253,139,0,0.6)"}}>%</span>
+              </div>
+              <div className="kinetic-bar-track">
+                <div className="kinetic-bar-fill" style={{width:`${Math.min(today?.fatigueScore ?? 0,100)}%`, background:"#fd8b00"}}/>
+              </div>
+            </div>
+            {/* Fitness */}
+            <div className="kinetic-small-card">
+              <span className="kinetic-label">כושר</span>
+              <div className="kinetic-small-number" style={{color:"#72dcff"}}>
+                {today?.fitnessScore ?? "-"}
+                <span className="kinetic-unit-sm" style={{color:"rgba(114,220,255,0.6)"}}>VO2</span>
+              </div>
+              <div className="kinetic-bar-track">
+                <div className="kinetic-bar-fill" style={{width:`${Math.min(today?.fitnessScore ?? 0,100)}%`, background:"#72dcff"}}/>
+              </div>
+            </div>
           </div>
           {journal?.energyBattery ? (
             <section className="energy-battery-card energy-battery-focus">
