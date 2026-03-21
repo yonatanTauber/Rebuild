@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 import {
-export const dynamic = "force-dynamic";
   deleteWorkoutByStravaActivityId,
   ensureStravaTables,
   getStoredToken,
@@ -8,6 +7,8 @@ export const dynamic = "force-dynamic";
   refreshTokenIfNeeded,
   upsertWorkoutFromStravaActivity
 } from "@/app/api/strava/_lib";
+
+export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
 
