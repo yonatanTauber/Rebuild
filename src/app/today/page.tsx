@@ -3007,25 +3007,24 @@ export default function TodayPage() {
             </div>
           </div>
 
-          <div className="today-food-targets" aria-label="יעדים">
-            {topNutritionTargets.map((row) => (
-              <div key={row.key} className="today-macro-row" data-tone={row.tone}>
-                <div className="today-macro-side" aria-label="אחוז ויעד">
-                  <div className="today-macro-percent">{row.pct}%</div>
-                  <div className="today-macro-side-target">{row.targetLabel}</div>
-                </div>
-                <div className="today-macro-main">
-                  <div className="today-macro-head">
-                    <span className="today-macro-label">{row.label}</span>
-                    <strong className="today-macro-actual">{row.actualLabel}</strong>
-                  </div>
-                  <div className={`today-macro-track ${row.tone}`} role="progressbar" aria-valuenow={row.pct}>
-                    <i style={{ width: `${row.pct}%` }} />
-                  </div>
-                </div>
-              </div>
-            ))}
+        </div>
+      </section>
+
+      <section className="today-surface today-surface-macro">
+        <div className="macro-card">
+          <div className="macro-card-header">
+            <strong className="macro-card-title">תזונה</strong>
+            <span className="macro-card-kcal">{journal ? Math.max(0, Math.round((journal.nutrition.target.kcal ?? 2000) - (journal.nutrition.totals.kcal ?? 0))) : 2000} קלוריות נותרו</span>
           </div>
+          {topNutritionTargets.map((row) => (
+            <div key={row.key} className="macro-row">
+              <span className="macro-row-label">{row.label}</span>
+              <span className="macro-row-values">{row.actualLabel} / {row.targetLabel}</span>
+              <div className="macro-row-track" data-key={row.key}>
+                <div className="macro-row-fill" style={{ width: `${row.pct}%` }} />
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

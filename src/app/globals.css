@@ -6969,3 +6969,84 @@ button.alt {
     gap: 0.5rem;
   }
 }
+
+/* ── Macro Card ─────────────────────────── */
+.today-surface-macro {
+  padding: 0;
+}
+
+.macro-card {
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 1.25rem 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.macro-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.macro-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.macro-card-kcal {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.65);
+}
+
+.macro-row {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.2rem 0.75rem;
+  align-items: center;
+}
+
+.macro-row-label {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.macro-row-values {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.85);
+  font-weight: 600;
+  text-align: left;
+  grid-row: 1;
+  grid-column: 2;
+  direction: ltr;
+}
+
+.macro-row-track {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  height: 6px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.macro-row-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.macro-row-track[data-tone="good"] .macro-row-fill { background: #7effa0; }
+.macro-row-track[data-tone="mid"]  .macro-row-fill { background: #5bc8f5; }
+.macro-row-track[data-tone="low"]  .macro-row-fill { background: #f5a623; }
+
+/* macro colors by key */
+.macro-row-track[data-key="protein"] .macro-row-fill { background: #7effa0; }
+.macro-row-track[data-key="carbs"]   .macro-row-fill { background: #5bc8f5; }
+.macro-row-track[data-key="fat"]     .macro-row-fill { background: #f5a623; }
