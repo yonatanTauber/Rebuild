@@ -1331,6 +1331,7 @@ export default function TodayPage() {
   const [todayFoodQuantity, setTodayFoodQuantity] = useState(1);
   const [todayFoodUnit, setTodayFoodUnit] = useState<NutritionUnit>("unit");
   const [addingTodayFood, setAddingTodayFood] = useState(false);
+  const [addingWaterIntake, setAddingWaterIntake] = useState(false);
 
   const [newIngredientModalOpen, setNewIngredientModalOpen] = useState(false);
   const [newIngredientDraft, setNewIngredientDraft] = useState<NewIngredientDraft | null>(null);
@@ -1941,6 +1942,8 @@ export default function TodayPage() {
       showToast("לא נמצא פריט מים בקטלוג.");
       return;
     }
+    if (addingWaterIntake) return;
+    setAddingWaterIntake(true);
     try {
       const res = await fetch("/api/nutrition/meal-create", {
         method: "POST",
@@ -1949,18 +1952,21 @@ export default function TodayPage() {
           date: activeDate,
           slot: "drinks",
           ingredientId: waterIngredientId,
-          quantity: 250,
+          quantity: 200,
           unit: "ml"
         })
       });
       if (!res.ok) {
         showToast("הוספת מים נכשלה.");
+        setAddingWaterIntake(false);
         return;
       }
-      showToast("נוסף מים (250 מ״ל).");
+      showToast("נוסף מים (200 מ״ל).");
       await loadDashboard(activeDate);
+      setAddingWaterIntake(false);
     } catch {
       showToast("הוספת מים נכשלה.");
+      setAddingWaterIntake(false);
     }
   }
 
@@ -2652,29 +2658,66 @@ export default function TodayPage() {
         </div>
       </section>
 
-      {/* Search/Input Bars at Top */}
-      <section className="search-input-row">
-        <div className="search-input-wrapper">
-          <span className="search-input-icon material-symbols-outlined">water_drop</span>
-          <input
-            type="text"
-            placeholder="הוסף מים..."
-            className="search-input"
-            onClick={() => {
-              // Open water modal or trigger water add flow
-            }}
-          />
+      {/* Water & Food Input Sections at Top */}
+      <section className="top-input-section">
+        {/* Water Section */}
+        <div className="water-input-card">
+          <div className="water-input-header">
+            <h3>מים</h3>
+          </div>
+          <div className="water-input-display">
+            <div className="water-input-amount">
+              {Math.round((drinksSummary.totalMl / (journal?.nutrition.plan.hydrationMl ?? 2000)) * 100)}%
+            </div>
+            <div className="water-input-progress">
+              <div className="water-input-bar-track">
+                <div
+                  className="water-input-bar-fill"
+                  style={{
+                    width: `${Math.min(((drinksSummary.totalMl ?? 0) / (journal?.nutrition.plan.hydrationMl ?? 2000)) * 100, 100)}%`,
+                    background: "linear-gradient(90deg, #72dcff 0%, #72dcff 100%)"
+                  }}
+                />
+              </div>
+              <span className="water-input-label">
+                {drinksSummary.totalMl} / {journal?.nutrition.plan.hydrationMl ?? 2000} מ״ל
+              </span>
+            </div>
+          </div>
+          <button
+            className="water-input-add-btn"
+            onClick={quickAddWater}
+            disabled={addingWaterIntake}
+            title="הוסף 200 מ״ל מים"
+          >
+            <span className="material-symbols-outlined">add</span>
+            <span className="water-input-btn-text">+200 מ״ל</span>
+          </button>
         </div>
-        <div className="search-input-wrapper">
-          <span className="search-input-icon material-symbols-outlined">restaurant</span>
-          <input
-            type="text"
-            placeholder="הוסף אוכל..."
-            className="search-input"
-            onClick={() => {
-              // Open food modal or trigger food add flow
-            }}
+
+        {/* Food Section */}
+        <div className="food-input-card">
+          <div className="food-input-header">
+            <h3>אוכל</h3>
+          </div>
+          <UiSelect
+            value=""
+            options={todayFoodOptions}
+            onChange={(nextValue) => openTodayFoodModal(nextValue)}
+            placeholder="חפש או הוסף מזון..."
+            searchable
+            creatable
+            onCreate={openNewIngredientModal}
+            maxVisibleOptions={16}
           />
+          <div className="food-input-meta">
+            <button type="button" className="choice-btn" onClick={openEmptyNewIngredientModal} title="הוסף מזון חדש">
+              + חדש
+            </button>
+            <Link href="/journal" className="inline-cta-link subtle-link">
+              דף תזונה
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -2791,88 +2834,6 @@ export default function TodayPage() {
             </section>
           ) : null}
 
-          {/* Water & Nutrition Section */}
-          <div className="water-nutrition-grid">
-            {/* Water Section */}
-            <section className="water-section">
-              <div className="water-header">
-                <h3>מים</h3>
-                <button className="water-add-btn" title="הוסף מים">
-                  <span className="material-symbols-outlined">add</span>
-                </button>
-              </div>
-              <div className="water-progress">
-                <div className="water-bar-track">
-                  <div
-                    className="water-bar-fill"
-                    style={{
-                      width: "45%",
-                      background: "linear-gradient(90deg, #72dcff 0%, #72dcff 100%)"
-                    }}
-                  />
-                </div>
-                <span className="water-amount">
-                  900 / {journal?.nutrition.plan.hydrationMl ?? 2000} מ״ל
-                </span>
-              </div>
-            </section>
-
-            {/* Nutrition Section */}
-            <section className="nutrition-section">
-              <div className="nutrition-header">
-                <h3>תזונה</h3>
-                <span className="nutrition-total">
-                  {journal?.nutrition.totals.kcal ?? 0} קק״ל / {journal?.nutrition.target.kcal ?? 0}
-                </span>
-              </div>
-              <div className="nutrition-macros">
-                {/* Protein */}
-                <div className="macro-bar">
-                  <label>חלבון</label>
-                  <div className="macro-bar-track">
-                    <div
-                      className="macro-bar-fill"
-                      style={{
-                        width: `${Math.min(((journal?.nutrition.totals.proteinG ?? 0) / (journal?.nutrition.target.proteinG ?? 1)) * 100, 100)}%`,
-                        background: "#c3ffcd"
-                      }}
-                    />
-                  </div>
-                  <span className="macro-amount">{journal?.nutrition.totals.proteinG ?? 0}ג׳</span>
-                </div>
-
-                {/* Carbs */}
-                <div className="macro-bar">
-                  <label>פחמימות</label>
-                  <div className="macro-bar-track">
-                    <div
-                      className="macro-bar-fill"
-                      style={{
-                        width: `${Math.min(((journal?.nutrition.totals.carbsG ?? 0) / (journal?.nutrition.target.carbsG ?? 1)) * 100, 100)}%`,
-                        background: "#fdd848"
-                      }}
-                    />
-                  </div>
-                  <span className="macro-amount">{journal?.nutrition.totals.carbsG ?? 0}ג׳</span>
-                </div>
-
-                {/* Fats */}
-                <div className="macro-bar">
-                  <label>שומנים</label>
-                  <div className="macro-bar-track">
-                    <div
-                      className="macro-bar-fill"
-                      style={{
-                        width: `${Math.min(((journal?.nutrition.totals.fatG ?? 0) / (journal?.nutrition.target.fatG ?? 1)) * 100, 100)}%`,
-                        background: "#fd8b00"
-                      }}
-                    />
-                  </div>
-                  <span className="macro-amount">{journal?.nutrition.totals.fatG ?? 0}ג׳</span>
-                </div>
-              </div>
-            </section>
-          </div>
         </div>
 
         <div className="today-activity-side" aria-label="האימון והמלצה">
