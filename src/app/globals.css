@@ -7132,3 +7132,12 @@ button.alt {
   .kinetic-small-number { font-size: 1.4rem !important; }
   .water-input-amount { font-size: 1.6rem !important; }
 }
+
+/* ── Today Page Direct Children Order Fix ── */
+.today-panel-row          { order: 1 !important; }
+.top-input-section        { order: 2 !important; }
+.today-row-scores-workout { order: 3 !important; }
+.today-row-checkin-energy { order: 4 !important; }
+.today-surface-macro      { order: 5 !important; }
+.today-surface-b          { order: 6 !important; display: none !important; }
+.today-surface-c          { order: 99 !important; display: none !important; }

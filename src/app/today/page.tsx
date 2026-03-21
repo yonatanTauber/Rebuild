@@ -2550,8 +2550,7 @@ export default function TodayPage() {
 
   return (
     <div className="today-page today-page-flow">
-      <section className="today-surface today-surface-a">
-      <section className="panel">
+      <section className="panel today-panel-row">
         <div className="journal-topbar">
           <div className="journal-topline">
             <div className="journal-quick-actions">
@@ -2921,7 +2920,6 @@ export default function TodayPage() {
           ) : null}
         </div>
       </div>
-      </section>
 
       <section className="today-surface today-surface-b">
         <div className="today-nutrition-morning-grid">
