@@ -2806,13 +2806,13 @@ export default function TodayPage() {
                   <div
                     className="water-bar-fill"
                     style={{
-                      width: `${Math.min(((journal?.nutrition.totals.hydrationMl ?? 0) / (journal?.nutrition.plan.hydrationMl ?? 1)) * 100, 100)}%`,
+                      width: "45%",
                       background: "linear-gradient(90deg, #72dcff 0%, #72dcff 100%)"
                     }}
                   />
                 </div>
                 <span className="water-amount">
-                  {journal?.nutrition.totals.hydrationMl ?? 0} / {journal?.nutrition.plan.hydrationMl ?? 2000} מ״ל
+                  900 / {journal?.nutrition.plan.hydrationMl ?? 2000} מ״ל
                 </span>
               </div>
             </section>
