@@ -2652,6 +2652,32 @@ export default function TodayPage() {
         </div>
       </section>
 
+      {/* Search/Input Bars at Top */}
+      <section className="search-input-row">
+        <div className="search-input-wrapper">
+          <span className="search-input-icon material-symbols-outlined">water_drop</span>
+          <input
+            type="text"
+            placeholder="הוסף מים..."
+            className="search-input"
+            onClick={() => {
+              // Open water modal or trigger water add flow
+            }}
+          />
+        </div>
+        <div className="search-input-wrapper">
+          <span className="search-input-icon material-symbols-outlined">restaurant</span>
+          <input
+            type="text"
+            placeholder="הוסף אוכל..."
+            className="search-input"
+            onClick={() => {
+              // Open food modal or trigger food add flow
+            }}
+          />
+        </div>
+      </section>
+
       <div className="today-metrics-energy">
         <div className="today-metrics-stack">
           {/* Kinetic Lab Bento Grid */}
@@ -2669,11 +2695,24 @@ export default function TodayPage() {
                 </span>
               </div>
               <div className="kinetic-ring-wrap">
-                <svg width="96" height="96" style={{transform:"rotate(-90deg)"}}>
+                <svg width="96" height="96" viewBox="0 0 96 96" style={{transform:"rotate(-90deg)"}}>
                   <circle cx="48" cy="48" r="40" fill="transparent" stroke="#262626" strokeWidth="8"/>
-                  <circle cx="48" cy="48" r="40" fill="transparent" stroke="#c3ffcd" strokeWidth="8"
-                    strokeLinecap="round" strokeDasharray="251.2"
-                    strokeDashoffset={251.2 - (251.2 * Math.min(today?.readinessScore ?? 0, 100) / 100)}/>
+                  <circle
+                    cx="48"
+                    cy="48"
+                    r="40"
+                    fill="transparent"
+                    stroke="#c3ffcd"
+                    strokeWidth="8"
+                    strokeLinecap="round"
+                    strokeDasharray="251.2"
+                    strokeDashoffset={251.2 - (251.2 * Math.min(today?.readinessScore ?? 0, 100) / 100)}
+                  />
+                  <g style={{transform: "rotate(90deg)", transformOrigin: "48px 48px"}}>
+                    <text x="48" y="55" textAnchor="middle" fontSize="24" fill="#c3ffcd" className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                      auto_awesome
+                    </text>
+                  </g>
                 </svg>
               </div>
               <div className="kinetic-glow" style={{background:"rgba(195,255,205,0.05)"}}/>
@@ -2701,6 +2740,30 @@ export default function TodayPage() {
               </div>
             </div>
           </div>
+
+          {/* Morning Checkin Section */}
+          <section className="morning-checkin-section">
+            <h3>צ'ק-אין בוקר</h3>
+            <p>איך הרגשת כשהתעוררת הבוקר?</p>
+            <div className="sentiment-buttons-row">
+              <button className="sentiment-button" title="מאוד מרוצה">
+                <span className="material-symbols-outlined">sentiment_very_satisfied</span>
+              </button>
+              <button className="sentiment-button" title="מרוצה">
+                <span className="material-symbols-outlined">sentiment_satisfied</span>
+              </button>
+              <button className="sentiment-button selected" title="ניטרלי">
+                <span className="material-symbols-outlined">sentiment_neutral</span>
+              </button>
+              <button className="sentiment-button" title="לא מרוצה">
+                <span className="material-symbols-outlined">sentiment_dissatisfied</span>
+              </button>
+              <button className="sentiment-button" title="מאוד לא מרוצה">
+                <span className="material-symbols-outlined">sentiment_very_dissatisfied</span>
+              </button>
+            </div>
+          </section>
+
           {journal?.energyBattery ? (
             <section className="energy-battery-card energy-battery-focus">
               <div className="energy-battery-head">
@@ -2727,6 +2790,89 @@ export default function TodayPage() {
             {journal.dailyScore?.partial ? <small className="note">הציון מבוסס נתונים חלקיים</small> : null}
             </section>
           ) : null}
+
+          {/* Water & Nutrition Section */}
+          <div className="water-nutrition-grid">
+            {/* Water Section */}
+            <section className="water-section">
+              <div className="water-header">
+                <h3>מים</h3>
+                <button className="water-add-btn" title="הוסף מים">
+                  <span className="material-symbols-outlined">add</span>
+                </button>
+              </div>
+              <div className="water-progress">
+                <div className="water-bar-track">
+                  <div
+                    className="water-bar-fill"
+                    style={{
+                      width: `${Math.min(((journal?.nutrition.totals.hydrationMl ?? 0) / (journal?.nutrition.plan.hydrationMl ?? 1)) * 100, 100)}%`,
+                      background: "linear-gradient(90deg, #72dcff 0%, #72dcff 100%)"
+                    }}
+                  />
+                </div>
+                <span className="water-amount">
+                  {journal?.nutrition.totals.hydrationMl ?? 0} / {journal?.nutrition.plan.hydrationMl ?? 2000} מ״ל
+                </span>
+              </div>
+            </section>
+
+            {/* Nutrition Section */}
+            <section className="nutrition-section">
+              <div className="nutrition-header">
+                <h3>תזונה</h3>
+                <span className="nutrition-total">
+                  {journal?.nutrition.totals.kcal ?? 0} קק״ל / {journal?.nutrition.target.kcal ?? 0}
+                </span>
+              </div>
+              <div className="nutrition-macros">
+                {/* Protein */}
+                <div className="macro-bar">
+                  <label>חלבון</label>
+                  <div className="macro-bar-track">
+                    <div
+                      className="macro-bar-fill"
+                      style={{
+                        width: `${Math.min(((journal?.nutrition.totals.proteinG ?? 0) / (journal?.nutrition.target.proteinG ?? 1)) * 100, 100)}%`,
+                        background: "#c3ffcd"
+                      }}
+                    />
+                  </div>
+                  <span className="macro-amount">{journal?.nutrition.totals.proteinG ?? 0}ג׳</span>
+                </div>
+
+                {/* Carbs */}
+                <div className="macro-bar">
+                  <label>פחמימות</label>
+                  <div className="macro-bar-track">
+                    <div
+                      className="macro-bar-fill"
+                      style={{
+                        width: `${Math.min(((journal?.nutrition.totals.carbsG ?? 0) / (journal?.nutrition.target.carbG ?? 1)) * 100, 100)}%`,
+                        background: "#fdd848"
+                      }}
+                    />
+                  </div>
+                  <span className="macro-amount">{journal?.nutrition.totals.carbsG ?? 0}ג׳</span>
+                </div>
+
+                {/* Fats */}
+                <div className="macro-bar">
+                  <label>שומנים</label>
+                  <div className="macro-bar-track">
+                    <div
+                      className="macro-bar-fill"
+                      style={{
+                        width: `${Math.min(((journal?.nutrition.totals.fatG ?? 0) / (journal?.nutrition.target.fatG ?? 1)) * 100, 100)}%`,
+                        background: "#fd8b00"
+                      }}
+                    />
+                  </div>
+                  <span className="macro-amount">{journal?.nutrition.totals.fatG ?? 0}ג׳</span>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
 
         <div className="today-activity-side" aria-label="האימון והמלצה">
