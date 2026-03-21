@@ -136,12 +136,12 @@ export const TodayHero = memo(function TodayHero({ data, loading, onDateChange }
       {data.coachAgent && (
         <div className="panel coach-report" role="region" aria-label="דוח המאמן">
           <h3>💬 המאמן אומר</h3>
-          {data.coachAgent.summary && (
-            <p>{data.coachAgent.summary}</p>
+          {data.coachAgent.dailyNarrative && (
+            <p>{data.coachAgent.dailyNarrative}</p>
           )}
-          {data.coachAgent.recommendations && (
+          {data.coachAgent.reasoning && (
             <ul>
-              {data.coachAgent.recommendations.map((rec, idx) => (
+              {data.coachAgent.reasoning.map((rec, idx) => (
                 <li key={idx}>{rec}</li>
               ))}
             </ul>
