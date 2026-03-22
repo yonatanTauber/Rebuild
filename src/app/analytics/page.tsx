@@ -2,8 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { Section } from "@/components/cards";
-import UiSelect from "@/components/ui-select";
 import { formatDisplayDate } from "@/lib/date";
 import { workoutDetailPath } from "@/lib/url";
 import type { HistoryResult, HistoryWorkout } from "@/lib/history-types";
@@ -114,6 +112,73 @@ function historySortValue(workout: HistoryWorkout, field: HistorySortField) {
       return 0;
   }
 }
+
+// ── BarChart component ──────────────────────────────────────────────────────
+function BarChart({
+  data,
+  maxVal,
+  labelKey,
+  valueKey,
+  highlightKey,
+  height = 160
+}: {
+  data: Array<Record<string, unknown>>;
+  maxVal: number;
+  labelKey: string;
+  valueKey: string;
+  highlightKey?: string | number;
+  height?: number;
+}) {
+  const W = 600, H = height, BAR_GAP = 4;
+  const n = data.length;
+  const barW = n > 0 ? Math.floor((W - BAR_GAP * (n - 1)) / n) : 20;
+  return (
+    <svg viewBox={`0 0 ${W} ${H + 28}`} className="anl-bar-svg" preserveAspectRatio="xMidYMid meet">
+      {data.map((d, i) => {
+        const val = Number(d[valueKey]) || 0;
+        const bh = maxVal > 0 ? Math.max(4, (val / maxVal) * H) : 4;
+        const x = i * (barW + BAR_GAP);
+        const isHighlight =
+          highlightKey !== undefined &&
+          (d[labelKey] === highlightKey || d[labelKey] === String(highlightKey));
+        return (
+          <g key={i}>
+            <rect
+              x={x}
+              y={H - bh}
+              width={barW}
+              height={bh}
+              rx={4}
+              fill="#72dcff"
+              opacity={isHighlight ? 1 : 0.45}
+            />
+            {val > 0 && (
+              <text
+                x={x + barW / 2}
+                y={H - bh - 4}
+                textAnchor="middle"
+                fontSize="9"
+                fill="#72dcff"
+                opacity={isHighlight ? 1 : 0.6}
+              >
+                {val}
+              </text>
+            )}
+            <text x={x + barW / 2} y={H + 16} textAnchor="middle" fontSize="9" fill="#888">
+              {String(d[labelKey])}
+            </text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+const SPORTS = [
+  { id: "run" as Sport, label: "ריצה" },
+  { id: "swim" as Sport, label: "שחייה" },
+  { id: "bike" as Sport, label: "אופניים" }
+];
 
 export default function AnalyticsPage() {
   const monthRange = currentMonthRange();
@@ -258,143 +323,187 @@ export default function AnalyticsPage() {
   const canPrevYear = data ? yearIndex >= 0 && yearIndex < data.availableYears.length - 1 : false;
   const canNextYear = data ? yearIndex > 0 : false;
 
-  return (
-    <>
-      <header className="page-header">
-        <h1>נתונים והיסטוריה</h1>
-        <p>מבט מאקרו ומיקרו על נפח אימונים, מגמות ושיאים אישיים.</p>
-      </header>
+  // Computed formatted values for bento cards
+  // Use rangeSummary (full selected range) — NOT historyResult (which is just the date-filter table)
+  // Correct formula: time = km × pace(min/km) × 60 → seconds
+  const totalTimeSec = data?.rangeSummary && data.rangeSummary.avgPace
+    ? Math.round(data.rangeSummary.totalKm * data.rangeSummary.avgPace * 60)
+    : null;
+  const totalTimeFormatted = totalTimeSec != null ? formatDuration(totalTimeSec) : "–";
 
-      <Section title="פילטרים" subtitle="ענף + שנה לניתוח">
-        <div className="row">
-          {[
-            { id: "run", label: "ריצה" },
-            { id: "swim", label: "שחייה" },
-            { id: "bike", label: "אופניים" }
-          ].map((item) => (
+  const avgDurationSec =
+    totalTimeSec != null && (data?.rangeSummary.totalCount ?? 0) > 0
+      ? Math.round(totalTimeSec / data!.rangeSummary.totalCount)
+      : null;
+  const avgDurationFormatted = avgDurationSec != null ? formatDuration(avgDurationSec) : "–";
+
+  // Monthly chart data with string labels
+  const monthlyChartData = (data?.monthly ?? []).map((m) => ({
+    label: monthLabel(m.month),
+    km: m.km
+  }));
+
+  // Shoe dropdown for run
+  const shoeDropdown =
+    sport === "run" ? (
+      <select
+        className="anl-shoe-select"
+        value={shoeId}
+        onChange={(e) => setShoeId(e.target.value)}
+      >
+        <option value="">כל הנעליים</option>
+        {(data?.runShoes ?? []).map((shoe) => (
+          <option key={shoe.id} value={shoe.id}>
+            {shoe.name} ({shoe.km} ק&quot;מ)
+          </option>
+        ))}
+      </select>
+    ) : null;
+
+  // Max shoe km for bar ratio
+  const maxShoeKm = useMemo(
+    () => Math.max(1, ...(data?.runShoes ?? []).map((s) => s.km)),
+    [data?.runShoes]
+  );
+
+  function prevYear() {
+    if (data && canPrevYear) setYear(data.availableYears[yearIndex + 1]);
+  }
+
+  function nextYear() {
+    if (data && canNextYear) setYear(data.availableYears[yearIndex - 1]);
+  }
+
+  return (
+    <div className="anl-page" dir="rtl">
+      {/* Hero header */}
+      <div className="anl-hero">
+        <span className="anl-session-label">ANALYTICS &amp; HISTORY</span>
+        <h1 className="anl-title">נתונים והיסטוריה</h1>
+        <p className="anl-subtitle">מבט מאקרו ומיקרו על נפח אימונים, מגמות ושיאים אישיים.</p>
+      </div>
+
+      {/* Controls bar */}
+      <div className="anl-controls">
+        <div className="anl-sport-chips">
+          {SPORTS.map((s) => (
             <button
-              key={item.id}
-              className={sport === item.id ? "choice-btn selected" : "choice-btn"}
-              onClick={() => setSport(item.id as Sport)}
+              key={s.id}
+              className={`anl-chip ${sport === s.id ? "active" : ""}`}
+              onClick={() => setSport(s.id)}
             >
-              {item.label}
+              {s.label}
             </button>
           ))}
-          <div className="year-nav-inline">
-            <button
-              className="choice-btn"
-              onClick={() => data && canPrevYear && setYear(data.availableYears[yearIndex + 1])}
-              disabled={!canPrevYear}
-            >
-              שנה קודמת
-            </button>
-            <strong>{data?.selectedYear ?? year}</strong>
-            <button
-              className="choice-btn"
-              onClick={() => data && canNextYear && setYear(data.availableYears[yearIndex - 1])}
-              disabled={!canNextYear}
-            >
-              שנה הבאה
-            </button>
-          </div>
-          <UiSelect
-            value={String(data?.selectedYear ?? year)}
-            onChange={(nextValue) => setYear(Number(nextValue))}
-            options={(data?.availableYears ?? [year]).map((y) => ({ value: String(y), label: String(y) }))}
-          />
-          {sport === "run" && (
-            <UiSelect
-              value={shoeId}
-              onChange={(nextValue) => setShoeId(nextValue)}
-              options={[
-                { value: "", label: "כל הנעליים" },
-                ...((data?.runShoes ?? []).map((shoe) => ({ value: shoe.id, label: shoe.name })))
-              ]}
-            />
-          )}
         </div>
-        <div className="row range-controls">
-          <label>
-            מ־
-            <UiSelect
-              value={String(fromYear ?? data?.rangeFromYear ?? year)}
-              onChange={(nextValue) => setFromYear(Number(nextValue))}
-              disabled={allYears}
-              options={(data?.availableYears ?? [year]).map((y) => ({ value: String(y), label: String(y) }))}
-            />
-          </label>
-          <label>
-            עד־
-            <UiSelect
-              value={String(toYear ?? data?.rangeToYear ?? year)}
-              onChange={(nextValue) => setToYear(Number(nextValue))}
-              disabled={allYears}
-              options={(data?.availableYears ?? [year]).map((y) => ({ value: String(y), label: String(y) }))}
-            />
-          </label>
-          <button className={allYears ? "choice-btn selected" : "choice-btn"} onClick={handleToggleAllYears}>
-            {allYears ? "כל השנים" : "הצג כל השנים"}
+        <div className="anl-year-nav">
+          <button className="anl-chip" onClick={prevYear} disabled={!canPrevYear}>
+            ‹ שנה קודמת
+          </button>
+          <strong className="anl-year-display">{data?.selectedYear ?? year}</strong>
+          <button className="anl-chip" onClick={nextYear} disabled={!canNextYear}>
+            שנה הבאה ›
           </button>
         </div>
-        <div className="row range-summary">
-          <span>טווח ניתוח: {allYears ? "כל השנים" : `${fromYear ?? data?.rangeFromYear ?? year}-${toYear ?? data?.rangeToYear ?? year}`}</span>
-          <span>סה"כ ק"מ בטווח: {data?.rangeSummary.totalKm ?? 0}</span>
-          <span>קצב ממוצע: {data?.rangeSummary.avgPace ? formatPace(data.rangeSummary.avgPace) : "-"}</span>
+        <button
+          className={`anl-chip ${allYears ? "active" : ""}`}
+          onClick={handleToggleAllYears}
+        >
+          {allYears ? "✓ כל השנים" : "הצג כל השנים"}
+        </button>
+        {shoeDropdown}
+      </div>
+
+      {/* Range summary strip */}
+      <div className="anl-range-strip">
+        <span>טווח: {allYears ? "כל השנים" : `${fromYear ?? year}–${toYear ?? year}`}</span>
+        <span>· {data?.rangeSummary.totalKm ?? 0} ק&quot;מ</span>
+        <span>· קצב {data?.rangeSummary.avgPace ? formatPace(data.rangeSummary.avgPace) : "-"}</span>
+        <span>· {data?.rangeSummary.totalCount ?? 0} אימונים</span>
+      </div>
+
+      {/* Bento 4 metrics */}
+      <div className="anl-bento">
+        <div className="anl-metric">
+          <span className="anl-metric-lbl">זמן כולל</span>
+          <strong className="anl-metric-val">{totalTimeFormatted}</strong>
         </div>
-      </Section>
-
-      <div className="grid-3">
-        <article className="score-card yellow">
-          <p className="score-label">ק"מ השנה ({data?.currentYear ?? year})</p>
-          <strong className="score-value">{data?.summary.currentYearKm ?? 0}</strong>
-        </article>
-        <article className="score-card red">
-          <p className="score-label">ק"מ החודש</p>
-          <strong className="score-value">{data?.summary.currentMonthKm ?? 0}</strong>
-        </article>
-        <article className="score-card black">
-          <p className="score-label">ק"מ בשנת ניתוח</p>
-          <strong className="score-value">{data?.summary.selectedYearKm ?? 0}</strong>
-        </article>
+        <div className="anl-metric">
+          <span className="anl-metric-lbl">משך ממוצע</span>
+          <strong className="anl-metric-val">{avgDurationFormatted}</strong>
+        </div>
+        <div className="anl-metric">
+          <span className="anl-metric-lbl">קצב ממוצע</span>
+          <strong className="anl-metric-val">
+            {data?.rangeSummary.avgPace ? formatPace(data.rangeSummary.avgPace) : "–"}
+          </strong>
+        </div>
+        <div className="anl-metric">
+          <span className="anl-metric-lbl">מרחק כולל</span>
+          <strong className="anl-metric-val anl-metric-cyan">
+            {data?.rangeSummary.totalKm ?? 0}
+            <small> ק&quot;מ</small>
+          </strong>
+        </div>
       </div>
 
-      <div className="two-col-panels">
-        <Section title="מבט על שנתי" subtitle="סה״כ ק״מ לכל שנה">
-          <div className="trend-chart">
-            {(data?.yearly ?? []).map((y) => (
-              <div key={y.year} className="trend-bar-item" title={`${y.km} ק״מ · ${y.workouts} אימונים`}>
-                <div className="trend-bar" style={{ height: `${Math.max(8, (y.km / yearlyMax) * 180)}px` }} />
-                <span>{y.year}</span>
-                <small>{y.km}</small>
-              </div>
-            ))}
-          </div>
-        </Section>
+      {/* Main 2-col: yearly chart + summary stack */}
+      <div className="anl-main-grid">
+        <section className="anl-card anl-yearly-card">
+          <h2 className="anl-card-title">
+            מבט על שנתי <span className="anl-card-sub">ק&quot;מ לפי שנה</span>
+          </h2>
+          <BarChart
+            data={(data?.yearly ?? []).map((y) => ({ year: String(y.year), km: y.km }))}
+            maxVal={yearlyMax}
+            labelKey="year"
+            valueKey="km"
+            highlightKey={String(data?.selectedYear ?? year)}
+          />
+        </section>
 
-        <Section title={`מיקרו חודשי · ${data?.selectedYear ?? year}`} subtitle="חלוקה לפי חודשים עם זום פנימה לביצועים">
-          <div className="trend-chart monthly">
-            {(data?.monthly ?? []).map((m) => (
-              <div
-                key={m.month}
-                className="trend-bar-item"
-                title={`${m.km} ק״מ · ${m.workouts} אימונים${sport === "run" && m.avgPaceMinPerKm ? ` · קצב ממוצע ${formatPace(m.avgPaceMinPerKm)}` : ""}`}
-              >
-                <div className="trend-bar" style={{ height: `${Math.max(8, (m.km / monthlyMax) * 180)}px` }} />
-                <span>{monthLabel(m.month)}</span>
-                <small>{m.km}</small>
-              </div>
-            ))}
+        <aside className="anl-summary-stack">
+          <div className="anl-summary-card">
+            <span>ק&quot;מ השנה ({data?.currentYear ?? year})</span>
+            <strong className="anl-cyan">{data?.summary.currentYearKm ?? 0}</strong>
           </div>
-        </Section>
+          <div className="anl-summary-card">
+            <span>ק&quot;מ החודש</span>
+            <strong>{data?.summary.currentMonthKm ?? 0}</strong>
+          </div>
+          <div className="anl-summary-card">
+            <span>ק&quot;מ בשנת ניתוח</span>
+            <strong>{data?.summary.selectedYearKm ?? 0}</strong>
+          </div>
+        </aside>
       </div>
 
+      {/* Monthly micro chart */}
+      <section className="anl-card">
+        <h2 className="anl-card-title">
+          מיקרו חודשי <span className="anl-card-sub">{data?.selectedYear ?? year}</span>
+        </h2>
+        <BarChart
+          data={monthlyChartData}
+          maxVal={monthlyMax}
+          labelKey="label"
+          valueKey="km"
+          height={140}
+        />
+      </section>
+
+      {/* History section — run only */}
       {sport === "run" && (
-        <Section title="פילוח היסטוריית אימונים" subtitle="בחר טווח ועקוב אחרי כל העמודות בטבלה מסודרת">
-          <div className="history-controls">
-            <label>
+        <section className="anl-card">
+          <h2 className="anl-card-title">
+            היסטוריית אימונים <span className="anl-card-sub">חיפוש לפי תאריך</span>
+          </h2>
+          <div className="anl-hist-controls">
+            <label className="anl-hist-label">
               מ־
               <input
                 type="date"
+                className="anl-date-input"
                 value={historyFromDate}
                 disabled={allYears}
                 onChange={(e) => {
@@ -403,10 +512,11 @@ export default function AnalyticsPage() {
                 }}
               />
             </label>
-            <label>
-              עד־
+            <label className="anl-hist-label">
+              עד
               <input
                 type="date"
+                className="anl-date-input"
                 value={historyToDate}
                 disabled={allYears}
                 onChange={(e) => {
@@ -415,122 +525,162 @@ export default function AnalyticsPage() {
                 }}
               />
             </label>
-            <button className={allYears ? "choice-btn selected" : "choice-btn"} onClick={handleToggleAllYears}>
-              {allYears ? "כל השנים" : "הצג כל השנים"}
+            <button
+              className={`anl-chip ${allYears ? "active" : ""}`}
+              onClick={handleToggleAllYears}
+            >
+              {allYears ? "✓ כל השנים" : "הצג כל השנים"}
             </button>
-            <button className="choice-btn" onClick={applyHistoryFilters}>
+            <button className="anl-chip" onClick={applyHistoryFilters}>
               הצג
             </button>
           </div>
-          {historyLoading && <p className="note">טוען נתונים...</p>}
+
+          {historyLoading && (
+            <p className="anl-loading">טוען נתונים...</p>
+          )}
+
           {!historyLoading && historyResult && (
             <>
-              <div className="history-summary-row">
-                <span>סה"כ אימונים: {historyResult.summary.totalCount}</span>
-                <span>סה"כ ק"מ: {historyResult.summary.totalKm}</span>
-                <span>קצב ממוצע: {historyResult.summary.avgPace ? formatPace(historyResult.summary.avgPace) : "-"}</span>
-                <span>קצב שיא: {formatPace(historyResult.summary.bestPace)}</span>
+              <div className="anl-hist-summary">
+                <span className="anl-hist-pill">אימונים {historyResult.summary.totalCount}</span>
+                <span className="anl-hist-pill">ק&quot;מ {historyResult.summary.totalKm}</span>
+                <span className="anl-hist-pill">
+                  קצב ממוצע {historyResult.summary.avgPace ? formatPace(historyResult.summary.avgPace) : "-"}
+                </span>
+                <span className="anl-hist-pill">
+                  קצב שיא {formatPace(historyResult.summary.bestPace)}
+                </span>
               </div>
-              <div className="history-table">
-                <div className="history-row header">
-                  <button onClick={() => toggleHistorySort("date")}>תאריך {historySortIndicator("date")}</button>
-                  <button onClick={() => toggleHistorySort("distance")}>מרחק {historySortIndicator("distance")}</button>
-                  <button onClick={() => toggleHistorySort("pace")}>קצב {historySortIndicator("pace")}</button>
-                  <button onClick={() => toggleHistorySort("time")}>זמן {historySortIndicator("time")}</button>
-                  <button onClick={() => toggleHistorySort("tss")}>TSS {historySortIndicator("tss")}</button>
-                  <span>נעל</span>
-                  <span>מקור</span>
-                </div>
-                {sortedHistoryWorkouts.length > 0 ? (
-                  sortedHistoryWorkouts.map((work) => (
-                    <Link key={work.id} href={workoutDetailPath(work.id)} className="history-row history-link">
-                      <span>{formatDisplayDate(work.startAt)}</span>
-                      <span>{formatDistanceKm(work.distanceDisplayKm ?? (work.distanceM != null ? work.distanceM / 1000 : null))}</span>
-                      <span>{formatPace(work.paceMinPerKm)}</span>
-                      <span>{formatDuration(work.durationSec)}</span>
-                      <span>{work.tssLike}</span>
-                      <span>{work.shoeName ?? "-"}</span>
-                      <span>{work.source}</span>
-                    </Link>
-                  ))
-                ) : (
-                  <div className="history-row empty">
-                    <span>אין אימונים בטווח שנבחר.</span>
-                  </div>
-                )}
+
+              <div className="anl-hist-table-wrap">
+                <table className="anl-hist-table">
+                  <thead>
+                    <tr>
+                      <th>
+                        <button onClick={() => toggleHistorySort("date")}>
+                          תאריך {historySortIndicator("date")}
+                        </button>
+                      </th>
+                      <th>
+                        <button onClick={() => toggleHistorySort("distance")}>
+                          מרחק {historySortIndicator("distance")}
+                        </button>
+                      </th>
+                      <th>
+                        <button onClick={() => toggleHistorySort("pace")}>
+                          קצב {historySortIndicator("pace")}
+                        </button>
+                      </th>
+                      <th>
+                        <button onClick={() => toggleHistorySort("time")}>
+                          זמן {historySortIndicator("time")}
+                        </button>
+                      </th>
+                      <th>
+                        <button onClick={() => toggleHistorySort("tss")}>
+                          TSS {historySortIndicator("tss")}
+                        </button>
+                      </th>
+                      <th>נעל</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {sortedHistoryWorkouts.length > 0 ? (
+                      sortedHistoryWorkouts.map((work) => (
+                        <tr key={work.id}>
+                          <td>
+                            <Link href={workoutDetailPath(work.id)} className="anl-hist-link">
+                              {formatDisplayDate(work.startAt)}
+                            </Link>
+                          </td>
+                          <td>{formatDistanceKm(work.distanceDisplayKm ?? (work.distanceM != null ? work.distanceM / 1000 : null))}</td>
+                          <td>{formatPace(work.paceMinPerKm)}</td>
+                          <td>{formatDuration(work.durationSec)}</td>
+                          <td>{work.tssLike ?? "–"}</td>
+                          <td>{work.shoeName ?? "–"}</td>
+                        </tr>
+                      ))
+                    ) : (
+                      <tr>
+                        <td colSpan={6} className="anl-hist-empty">
+                          אין אימונים בטווח שנבחר.
+                        </td>
+                      </tr>
+                    )}
+                  </tbody>
+                </table>
               </div>
             </>
           )}
-          {!historyLoading && !historyResult && <p className="note">בצע פילוח כדי לראות אימונים.</p>}
-        </Section>
+
+          {!historyLoading && !historyResult && (
+            <p className="anl-loading">בחר טווח תאריכים ולחץ הצג.</p>
+          )}
+        </section>
       )}
 
-      {sport === "run" && (
-        <div className="two-col-panels">
-          <Section title="מיון לפי נעל" subtitle="כמות ריצות וק״מ לכל נעל">
-            <ul className="list">
-              {(data?.runShoes ?? []).map((shoe) => (
-                <li key={shoe.id} className="metric-row">
-                  <span>{shoe.name}</span>
-                  <strong>{shoe.runs} ריצות · {shoe.km} ק"מ</strong>
-                </li>
-              ))}
-            </ul>
-          </Section>
-
-          <Section title="ריצות היום לפי נעל" subtitle="מעקב יומי על שיוך נעליים">
-            <ul className="list">
-              {(data?.todayRuns ?? []).map((run) => (
-                <li key={run.id} className="metric-row">
-                  <span>
-                    {formatDisplayDate(run.startAt)} · {run.distanceKm} ק"מ
-                  </span>
-                  <strong>{run.shoeName}</strong>
-                </li>
-              ))}
-              {(!data?.todayRuns || data.todayRuns.length === 0) && <li>אין ריצות היום.</li>}
-            </ul>
-          </Section>
-        </div>
-      )}
-
+      {/* Personal Bests — run only */}
       {sport === "run" && data?.pbs && data.pbs.length > 0 && (
-        <Section title="שיאים אישיים" subtitle="Top5 לכל מרחק שנבדק">
-          <div className="pb-grid">
+        <section className="anl-card">
+          <h2 className="anl-card-title">
+            שיאים אישיים <span className="anl-card-sub">Top לכל מרחק</span>
+          </h2>
+          <div className="anl-pb-grid">
             {data.pbs.map((pb) => (
-              <div key={`${pb.distanceKey}-${pb.date ?? pb.bestTimeSec}`} className="pb-card">
-                <div className="pb-distance">
-                  <Link href={`/analytics/pb/${pb.distanceKey}`} className="pb-distance-link">
+              <div
+                key={`${pb.distanceKey}-${pb.date ?? pb.bestTimeSec}`}
+                className="anl-pb-card"
+              >
+                <span className="anl-pb-dist">
+                  <Link href={`/analytics/pb/${pb.distanceKey}`} className="anl-pb-dist-link">
                     {pb.distanceLabel}
                   </Link>
-                </div>
-                <div className="pb-time">{formatDuration(pb.bestTimeSec)}</div>
-                <div className="pb-details">
-                  <span>{pb.distanceKm.toFixed(1)} ק"מ</span>
-                  <span>{pb.paceMinPerKm ? formatPace(pb.paceMinPerKm) : "-"}</span>
-                </div>
-                <div className="pb-meta">
-                  <span>{pb.date ? formatDisplayDate(pb.date) : "תאריך לא ידוע"}</span>
-                  <span className="pb-source">
-                    {pb.source === "rolling_segment" ? "חלק מריצה" : pb.source === "whole_workout" ? "ריצה" : "-"}
-                  </span>
-                </div>
+                </span>
+                <span className="anl-pb-time">{formatDuration(pb.bestTimeSec)}</span>
+                <span className="anl-pb-pace">
+                  {pb.paceMinPerKm ? `${formatPace(pb.paceMinPerKm)} דק/ק"מ` : "–"}
+                </span>
+                <span className="anl-pb-date">
+                  {pb.date ? formatDisplayDate(pb.date) : "תאריך לא ידוע"}
+                </span>
                 {pb.workoutId && (
-                  <Link href={workoutDetailPath(pb.workoutId)} className="pb-link">
-                    לאימון
+                  <Link href={workoutDetailPath(pb.workoutId)} className="anl-pb-link">
+                    לאימון ←
                   </Link>
                 )}
               </div>
             ))}
           </div>
-        </Section>
+        </section>
       )}
 
-      {sport === "swim" && (
-        <Section title="הערה לשחייה" subtitle="לפי ההגדרה, שחייה מוצגת מהשנה הנוכחית והלאה">
-          <p className="note">אם תרצה, אפשר לפתוח בהמשך גם שנים קודמות לשחייה.</p>
-        </Section>
+      {/* Shoes — run only */}
+      {sport === "run" && data?.runShoes && data.runShoes.length > 0 && (
+        <section className="anl-card">
+          <h2 className="anl-card-title">
+            נעליים <span className="anl-card-sub">ק&quot;מ לפי נעל</span>
+          </h2>
+          <ul className="anl-shoe-list">
+            {data.runShoes.map((shoe) => (
+              <li key={shoe.id} className="anl-shoe-item">
+                <div className="anl-shoe-row">
+                  <span>{shoe.name}</span>
+                  <span>
+                    {shoe.runs} ריצות · {shoe.km} ק&quot;מ
+                  </span>
+                </div>
+                <div className="anl-shoe-bar-track">
+                  <div
+                    className="anl-shoe-bar-fill"
+                    style={{ width: `${Math.round((shoe.km / maxShoeKm) * 100)}%` }}
+                  />
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
-    </>
+    </div>
   );
 }

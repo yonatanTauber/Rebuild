@@ -391,6 +391,24 @@ export async function migrateDb() {
       await addColumnIfMissing("workout_feedback", "strengthFocusArea", "TEXT");
       await addColumnIfMissing("workout_feedback", "fuelingSource", "TEXT");
       await addColumnIfMissing("workout_feedback", "fuelingQuantity", "REAL");
+
+      // Recipes table
+      await dbExec(`
+        CREATE TABLE IF NOT EXISTS nutrition_recipes (
+          id TEXT PRIMARY KEY,
+          name TEXT NOT NULL,
+          servings INTEGER NOT NULL DEFAULT 1,
+          ingredientsJson TEXT NOT NULL DEFAULT '[]',
+          totalGrams REAL DEFAULT 0,
+          kcalPerServing REAL DEFAULT 0,
+          proteinPerServing REAL DEFAULT 0,
+          carbsPerServing REAL DEFAULT 0,
+          fatPerServing REAL DEFAULT 0,
+          ingredientId TEXT,
+          notes TEXT,
+          createdAt TEXT NOT NULL
+        )
+      `);
     })();
   }
   await migratePromise;

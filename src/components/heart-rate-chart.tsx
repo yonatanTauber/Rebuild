@@ -42,13 +42,15 @@ function findNearestSample(samples: HrSample[], sec: number) {
 export default function HeartRateChart({ samples }: { samples: HrSample[] }) {
   const [hoverSec, setHoverSec] = useState<number | null>(null);
 
+  const BUCKET_COUNT = 10;
+
   const chart = useMemo(() => {
     const width = 920;
-    const height = 260;
-    const padLeft = 56;
-    const padRight = 16;
-    const padTop = 12;
-    const padBottom = 34;
+    const height = 240;
+    const padLeft = 8;
+    const padRight = 8;
+    const padTop = 8;
+    const padBottom = 30;
     const plotW = width - padLeft - padRight;
     const plotH = height - padTop - padBottom;
     const durationSec = Math.max(1, samples[samples.length - 1]?.sec ?? 1);
@@ -66,19 +68,23 @@ export default function HeartRateChart({ samples }: { samples: HrSample[] }) {
       .map((sample, idx) => `${idx === 0 ? "M" : "L"}${toX(sample.sec).toFixed(2)},${toY(sample.bpm).toFixed(2)}`)
       .join(" ");
 
-    const yTicks: number[] = [];
-    for (let bpm = yMin; bpm <= yMax; bpm += 10) {
-      yTicks.push(bpm);
-    }
+    // Compute bar buckets
+    const bucketW = durationSec / BUCKET_COUNT;
+    const bars = Array.from({ length: BUCKET_COUNT }, (_, i) => {
+      const start = i * bucketW;
+      const end = (i + 1) * bucketW;
+      const slice = samples.filter((s) => s.sec >= start && s.sec < end);
+      const avg = slice.length > 0 ? slice.reduce((acc, s) => acc + s.bpm, 0) / slice.length : yMin;
+      const heightPct = clamp((avg - yMin) / ySpan, 0, 1);
+      return { x: toX(start), width: (plotW / BUCKET_COUNT) - 3, heightPct, barH: heightPct * plotH };
+    });
 
     const xTicks: number[] = [];
-    const stepSec = 600;
-    for (let sec = 0; sec <= durationSec; sec += stepSec) {
-      xTicks.push(sec);
-    }
+    const stepSec = durationSec <= 1800 ? 300 : durationSec <= 3600 ? 600 : 900;
+    for (let sec = 0; sec <= durationSec; sec += stepSec) xTicks.push(sec);
     if (!xTicks.includes(durationSec)) xTicks.push(durationSec);
 
-    return { width, height, padLeft, padRight, padTop, padBottom, plotW, plotH, durationSec, yMin, yMax, ySpan, toX, toY, path, yTicks, xTicks };
+    return { width, height, padLeft, padRight, padTop, padBottom, plotW, plotH, durationSec, yMin, yMax, ySpan, toX, toY, path, xTicks, bars };
   }, [samples]);
 
   const active = useMemo(() => {
@@ -90,7 +96,7 @@ export default function HeartRateChart({ samples }: { samples: HrSample[] }) {
   const activeY = active ? chart.toY(active.bpm) : null;
 
   return (
-    <div className="hr-chart-card interactive">
+    <div className="hr-chart-card interactive hr-chart-card-kinetic">
       <svg
         className="hr-chart"
         viewBox={`0 0 ${chart.width} ${chart.height}`}
@@ -105,36 +111,42 @@ export default function HeartRateChart({ samples }: { samples: HrSample[] }) {
         }}
         onMouseLeave={() => setHoverSec(null)}
       >
-        {chart.yTicks.map((bpm) => (
-          <g key={`y-${bpm}`}>
-            <line x1={chart.padLeft} x2={chart.width - chart.padRight} y1={chart.toY(bpm)} y2={chart.toY(bpm)} className="hr-chart-grid" />
-            <text x={chart.padLeft - 8} y={chart.toY(bpm) + 4} className="hr-chart-tick">{bpm}</text>
-          </g>
+        {/* Amber bars */}
+        {chart.bars.map((bar, i) => (
+          <rect
+            key={i}
+            x={bar.x}
+            y={chart.padTop + chart.plotH - bar.barH}
+            width={bar.width}
+            height={bar.barH}
+            fill="#ed8200"
+            opacity={0.25 + bar.heightPct * 0.45}
+            rx={3}
+          />
         ))}
 
+        {/* Orange trend line */}
+        <path d={chart.path} fill="none" stroke="#fd8b00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+
+        {/* X-axis time labels */}
         {chart.xTicks.map((sec) => (
-          <g key={`x-${sec}`}>
-            <line x1={chart.toX(sec)} x2={chart.toX(sec)} y1={chart.padTop} y2={chart.height - chart.padBottom} className="hr-chart-grid v" />
-            <text x={chart.toX(sec)} y={chart.height - 8} textAnchor="middle" className="hr-chart-tick">
-              {formatClock(sec)}
-            </text>
-          </g>
+          <text key={`x-${sec}`} x={chart.toX(sec)} y={chart.height - 8} textAnchor="middle" className="hr-chart-tick">
+            {formatClock(sec)}
+          </text>
         ))}
-
-        <path d={chart.path} fill="none" className="hr-chart-line" />
 
         {active && activeX != null && activeY != null && (
           <>
-            <line x1={activeX} x2={activeX} y1={chart.padTop} y2={chart.height - chart.padBottom} className="hr-chart-cursor" />
-            <circle cx={activeX} cy={activeY} r={4} className="hr-chart-dot" />
+            <line x1={activeX} x2={activeX} y1={chart.padTop} y2={chart.height - chart.padBottom} stroke="#fd8b00" strokeWidth="1" strokeDasharray="4,4" opacity={0.6} />
+            <circle cx={activeX} cy={activeY} r={5} fill="#fd8b00" />
           </>
         )}
       </svg>
 
       {active && (
         <div className="hr-chart-tooltip">
-          <span>זמן: {formatClock(active.sec)}</span>
-          <strong>דופק: {Math.round(active.bpm)} bpm</strong>
+          <span>{formatClock(active.sec)}</span>
+          <strong>{Math.round(active.bpm)} bpm</strong>
         </div>
       )}
     </div>

@@ -1,13 +1,24 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { addNutritionIngredient } from "@/lib/nutrition-engine";
+import { listNutritionIngredients } from "@/lib/db";
 import { getDbProvider, dbQueryOne, dbQuery } from "@/lib/db-driver";
 import { migrateDb } from "@/lib/db-migrate";
-import { ensureCloudNutritionSeed } from "@/lib/nutrition-cloud";
+import { ensureCloudNutritionSeed, cloudListNutritionIngredients } from "@/lib/nutrition-cloud";
 import { randomUUID } from "node:crypto";
 export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
+
+export async function GET() {
+  if (getDbProvider() === "postgres") {
+    await migrateDb();
+    await ensureCloudNutritionSeed();
+    const ingredients = await cloudListNutritionIngredients();
+    return NextResponse.json({ ingredients });
+  }
+  return NextResponse.json({ ingredients: listNutritionIngredients() });
+}
 
 const schema = z.object({
   name: z.string().min(1).max(120),

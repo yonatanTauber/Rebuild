@@ -374,8 +374,12 @@ const mealSlotOptions: Array<{ value: MealSlot; label: string }> = [
 ];
 
 function looksLikeDrinkName(name: string) {
-  const normalized = name.trim().toLowerCase();
-  return /מים|קפה|תה|אספרסו|משקה|drink|coffee|tea|water/.test(normalized);
+  const normalized = ` ${name.trim().toLowerCase()} `;
+  // Explicit food exclusions — these contain drink-like words but are solid food
+  if (normalized.includes("מרק") || normalized.includes("חביתה") || normalized.includes("ביצה")) return false;
+  // Wrap in spaces to simulate word boundaries (Hebrew has no \b for Unicode)
+  return /\sמים\s|\sקפה\s|\sתה\s|\sאספרסו\s|\sמשקה\s|\sdrink\s|\scoffee\s|\stea\s|\swater\s/.test(normalized)
+    || /^(מים|קפה|תה|אספרסו|משקה|drink|coffee|tea|water)\s/.test(normalized.trimStart());
 }
 
 function formatDuration(sec: number) {
@@ -1292,6 +1296,7 @@ export default function TodayPage() {
   const [forecastToday, setForecastToday] = useState<ForecastDay | null>(null);
   const [toast, setToast] = useState("");
   const [selectedSport, setSelectedSport] = useState<ForecastOption["sport"]>("run");
+  const [expandedSport, setExpandedSport] = useState<ForecastOption["sport"] | null>(null);
 
   const [checkinOptions, setCheckinOptions] = useState<CheckinOptions | null>(null);
   const [morningDone, setMorningDone] = useState<boolean>(false);
@@ -1390,6 +1395,7 @@ export default function TodayPage() {
 
   useEffect(() => {
     setSelectionOverride(null);
+    setExpandedSport(null);
   }, [forecastToday?.date]);
 
   useEffect(() => {
@@ -2528,7 +2534,9 @@ export default function TodayPage() {
   }
 
   function handleSportSelect(sport: ForecastOption["sport"]) {
+    const sameSport = selectedSport === sport;
     setSelectedSport(sport);
+    setExpandedSport((prev) => (sameSport && prev === sport ? null : sport));
     setSelectionOverride(null);
     setVariantIndex(0);
     if (!forecastToday?.options?.length) return;
@@ -2553,13 +2561,47 @@ export default function TodayPage() {
         <div className="journal-topbar">
           {/* Row 1: nav + quick actions */}
           <div className="journal-topbar-row1">
+            <div className="journal-mobile-inline-nav" aria-label="ניווט יום במובייל">
+              <button
+                className="choice-btn journal-nav-btn mobile-nav-next"
+                onClick={() => setActiveDate((prev) => addDaysISO(prev, 1))}
+                title="יום הבא"
+              >
+                ‹
+              </button>
+              <button className="choice-btn icon-compact mobile-nav-sync" onClick={triggerSync} disabled={syncing} title="רענון אימונים">
+                <span aria-hidden>↻</span>
+              </button>
+              <button
+                className={
+                  morningDone
+                    ? "choice-btn icon-compact morning-done mobile-nav-morning"
+                    : "choice-btn icon-compact morning-missing mobile-nav-morning"
+                }
+                onClick={openMorningUpdate}
+                title="עדכון בוקר"
+              >
+                <span aria-hidden>{morningDone ? "✓" : "☀"}</span>
+              </button>
+              <strong className="journal-date-title journal-date-title-inline">{formatDisplayDate(activeDate)}</strong>
+              <button className="choice-btn journal-today-btn mobile-nav-today" onClick={() => setActiveDate(formatISODate())}>
+                היום
+              </button>
+              <button
+                className="choice-btn journal-nav-btn mobile-nav-prev"
+                onClick={() => setActiveDate((prev) => addDaysISO(prev, -1))}
+                title="יום קודם"
+              >
+                ›
+              </button>
+            </div>
             <div className="journal-nav">
               <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate((prev) => addDaysISO(prev, -1))} title="יום קודם">
-                ‹
+                ›
               </button>
               <strong className="journal-date-title">{formatDisplayDate(activeDate)}</strong>
               <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate((prev) => addDaysISO(prev, 1))} title="יום הבא">
-                ›
+                ‹
               </button>
             </div>
             <div className="journal-quick-actions">
@@ -2680,7 +2722,7 @@ export default function TodayPage() {
             <button type="button" className="choice-btn" onClick={openEmptyNewIngredientModal} title="הוסף מזון חדש">
               + חדש
             </button>
-            <Link href="/journal" className="inline-cta-link subtle-link">
+            <Link href="/nutrition" className="inline-cta-link subtle-link">
               דף תזונה
             </Link>
           </div>
@@ -2855,6 +2897,7 @@ export default function TodayPage() {
                       type="button"
                       className={`combo-button ${selectedSport === sport ? "selected" : ""}`}
                       onClick={() => handleSportSelect(sport)}
+                      aria-expanded={expandedSport === sport}
                     >
                       {sportLabel(sport)}
                     </button>
@@ -2894,9 +2937,8 @@ export default function TodayPage() {
                 {rec?.dayStatus === "can_add_short" ? (
                   <p className="note">האימון הושלם חלקית. אפשר אימון קצר נוסף או מנוחה.</p>
                 ) : null}
-                {displayWorkout && (
-                  <details className="expand-block workout-details">
-                    <summary>פירוט האימון</summary>
+                {displayWorkout && expandedSport === selectedSport ? (
+                  <div className="expand-block workout-details is-open">
                     <ul className="kv compact-kv">
                       <li>ענף: {sportLabel(displayWorkout.sport)}</li>
                       <li>משך: {displayWorkout.durationMin} דק׳</li>
@@ -2906,8 +2948,8 @@ export default function TodayPage() {
                       <li>למה זה מתאים היום: {displayWorkout.why ?? "-"}</li>
                       <li>דגשים לביצוע: {displayWorkout.notes ?? "-"}</li>
                     </ul>
-                  </details>
-                )}
+                  </div>
+                ) : null}
               </article>
             </div>
           ) : null}
@@ -3230,26 +3272,55 @@ export default function TodayPage() {
                 )}
               </label>
               <label className="field">
-                כמות
-                <input
-                  type="number"
-                  min={0.5}
-                  step={0.5}
-                  value={todayFoodQuantity}
-                  onChange={(event) => setTodayFoodQuantity(Math.max(0.5, Number(event.target.value) || 0.5))}
-                />
-              </label>
-              <label className="field">
                 יחידה
                 {todayFoodSelected.kind === "ingredient" ? (
                   <UiSelect
                     value={todayFoodUnit}
-                    onChange={(nextValue) => setTodayFoodUnit(nextValue as NutritionUnit)}
+                    onChange={(nextValue) => {
+                      const u = nextValue as NutritionUnit;
+                      setTodayFoodUnit(u);
+                      // Reset quantity to a sensible default for the new unit
+                      setTodayFoodQuantity(u === "g" || u === "ml" ? 100 : 1);
+                    }}
                     options={todayFoodUnitOptions}
                   />
                 ) : (
                   <div className="today-food-unit-chip">{nutritionUnitLabel(todayFoodUnit)}</div>
                 )}
+              </label>
+              <label className="field" style={{ gridColumn: "1 / -1" }}>
+                כמות
+                <div className="qty-stepper">
+                  <button
+                    type="button"
+                    className="qty-stepper-btn"
+                    onClick={() => {
+                      const step = todayFoodUnit === "g" || todayFoodUnit === "ml" ? 25 : 0.5;
+                      setTodayFoodQuantity((prev) => Math.max(step, Math.round((prev - step) * 10) / 10));
+                    }}
+                    aria-label="הורד כמות"
+                  >−</button>
+                  <input
+                    type="number"
+                    className="qty-stepper-input"
+                    min={todayFoodUnit === "g" || todayFoodUnit === "ml" ? 25 : 0.5}
+                    step={todayFoodUnit === "g" || todayFoodUnit === "ml" ? 25 : 0.5}
+                    value={todayFoodQuantity}
+                    onChange={(event) => {
+                      const min = todayFoodUnit === "g" || todayFoodUnit === "ml" ? 25 : 0.5;
+                      setTodayFoodQuantity(Math.max(min, Number(event.target.value) || min));
+                    }}
+                  />
+                  <button
+                    type="button"
+                    className="qty-stepper-btn"
+                    onClick={() => {
+                      const step = todayFoodUnit === "g" || todayFoodUnit === "ml" ? 25 : 0.5;
+                      setTodayFoodQuantity((prev) => Math.round((prev + step) * 10) / 10);
+                    }}
+                    aria-label="הוסף כמות"
+                  >+</button>
+                </div>
               </label>
             </div>
 

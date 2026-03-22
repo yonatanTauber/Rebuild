@@ -90,30 +90,44 @@ export default function UiSelect({
     function updatePlacement() {
       if (!rootRef.current) return;
       const rect = rootRef.current.getBoundingClientRect();
+      const vv = window.visualViewport;
+      const viewportTop = vv?.offsetTop ?? 0;
+      const viewportBottom = (vv?.height ?? window.innerHeight) + viewportTop;
+      const viewportWidth = vv?.width ?? window.innerWidth;
+      const isMobileViewport = viewportWidth <= 768;
       const estimatedMenuHeight = Math.min(260, Math.max(120, filteredOptions.length * 34 + 16));
-      const spaceBelow = window.innerHeight - rect.bottom;
-      const spaceAbove = rect.top;
-      const shouldOpenUp = spaceBelow < estimatedMenuHeight && spaceAbove > spaceBelow;
+      const spaceBelow = viewportBottom - rect.bottom;
+      const spaceAbove = rect.top - viewportTop;
+      const shouldOpenUp = isMobileViewport ? false : (spaceBelow < estimatedMenuHeight && spaceAbove > spaceBelow);
       const isRtl = getComputedStyle(rootRef.current).direction === "rtl";
 
       setMenuUpwards(shouldOpenUp);
-      const availableSpace = Math.max(120, Math.floor((shouldOpenUp ? spaceAbove : spaceBelow) - 12));
-      setMenuMaxHeight(Math.min(estimatedMenuHeight, availableSpace));
+      const availableSpace = Math.max(96, Math.floor((shouldOpenUp ? spaceAbove : spaceBelow) - 12));
+      const nextMaxHeight = Math.min(estimatedMenuHeight, availableSpace);
+      setMenuMaxHeight(nextMaxHeight);
+      const menuTop = shouldOpenUp
+        ? Math.max(viewportTop + 8, rect.top - 6)
+        : Math.min(rect.bottom + 6, viewportBottom - nextMaxHeight - 8);
+
       setMenuViewportPos({
-        top: shouldOpenUp ? rect.top - 6 : rect.bottom + 6,
-        left: rect.left,
-        right: window.innerWidth - rect.right,
+        top: menuTop,
+        left: Math.max(6, rect.left),
+        right: Math.max(6, window.innerWidth - rect.right),
         rtl: isRtl,
-        width: rect.width
+        width: Math.min(rect.width, window.innerWidth - 12)
       });
     }
 
     updatePlacement();
     window.addEventListener("resize", updatePlacement);
     window.addEventListener("scroll", updatePlacement, true);
+    window.visualViewport?.addEventListener("resize", updatePlacement);
+    window.visualViewport?.addEventListener("scroll", updatePlacement);
     return () => {
       window.removeEventListener("resize", updatePlacement);
       window.removeEventListener("scroll", updatePlacement, true);
+      window.visualViewport?.removeEventListener("resize", updatePlacement);
+      window.visualViewport?.removeEventListener("scroll", updatePlacement);
     };
   }, [open, filteredOptions.length]);
 

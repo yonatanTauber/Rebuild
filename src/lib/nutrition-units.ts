@@ -12,12 +12,27 @@ function lowerName(name: string | null | undefined) {
   return (name ?? "").trim().toLowerCase();
 }
 
+/**
+ * Returns grams per spoon for spreadable / soft foods.
+ * "כף" here is an Israeli "eating tablespoon" (~30–40 g for soft dairy),
+ * not the 15 ml cooking measure.
+ */
 function spreadSpoonGramsByName(name: string) {
   if (!name) return null;
-  if (name.includes("דבש")) return { tbsp: 21, tsp: 7 };
-  if (name.includes("טחינה")) return { tbsp: 13, tsp: 4.3 };
-  if (name.includes("קוטג")) return { tbsp: 15, tsp: 5 };
-  if (name.includes("חומוס")) return { tbsp: 15, tsp: 5 };
+  // Honey / jam / syrup – dense, pourable
+  if (name.includes("דבש") || name.includes("ריבה") || name.includes("סילאן")) return { tbsp: 25, tsp: 8 };
+  // Tahini / nut butters – thick paste
+  if (name.includes("טחינה") || name.includes("חמאת בוטנים") || name.includes("חמאת שקדים")) return { tbsp: 16, tsp: 5.5 };
+  // Cottage cheese / labane / soft white cheese – a heaped serving spoon
+  if (name.includes("קוטג") || name.includes("לבנה") || name.includes("גבינה לבנה") || name.includes("ריקוטה")) return { tbsp: 40, tsp: 13 };
+  // Cream cheese / soft cheese spreads
+  if (name.includes("קרם גבינה") || name.includes("גבינת שמנת") || name.includes("פילדלפיה")) return { tbsp: 30, tsp: 10 };
+  // Hummus / other thick dips
+  if (name.includes("חומוס") || name.includes("בבגנוש") || name.includes("מוטבל")) return { tbsp: 30, tsp: 10 };
+  // Greek yogurt / regular yogurt
+  if (name.includes("יוגורט")) return { tbsp: 35, tsp: 12 };
+  // Olive oil / oils
+  if (name.includes("שמן")) return { tbsp: 13, tsp: 4.3 };
   return null;
 }
 

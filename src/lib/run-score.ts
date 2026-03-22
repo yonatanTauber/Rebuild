@@ -74,6 +74,9 @@ export function computeRunScore(args: {
     const pain = args.feedback.painScore;
     const overall = args.feedback.overallLoadScore;
     const preFuel = args.feedback.preRunNutritionScore;
+    const rpe = args.feedback.rpeScore;
+    const legs = args.feedback.legsLoadScore;
+    const breathing = args.feedback.breathingScore;
     const contributors: number[] = [];
 
     if (satisfaction != null) {
@@ -87,11 +90,15 @@ export function computeRunScore(args: {
       if (pain >= 3) reasons.push("כאב מורגש במהלך הריצה");
     }
     if (overall != null) contributors.push(6 - overall);
+    if (rpe != null) contributors.push(6 - rpe);
+    if (legs != null) contributors.push(6 - legs);
+    if (breathing != null) contributors.push(6 - breathing);
     if (preFuel != null && preFuel >= 4) reasons.push("תחושת חוסר אנרגיה מהתזונה לפני הריצה");
 
     if (contributors.length > 0) {
       const avg = contributors.reduce((sum, value) => sum + value, 0) / contributors.length;
-      feedbackDelta = clamp((avg - 3) * 5, -10, 12);
+      // Personal feedback has a higher impact so the score better reflects how the workout felt.
+      feedbackDelta = clamp((avg - 3) * 8, -18, 20);
       score += feedbackDelta;
     }
   }
