@@ -5,9 +5,11 @@ import { useEffect, useState, useCallback } from "react";
 import { formatISODate, addDaysISO, formatDisplayDate } from "@/lib/date";
 
 type NutritionMealItem = {
+  ingredientId: string;
   name: string;
   quantity: number;
   unit: string;
+  grams?: number;
   kcal: number;
   proteinG: number;
   carbsG: number;
@@ -29,13 +31,30 @@ type JournalData = {
   };
 };
 
+type EditTarget = {
+  meal: NutritionMeal;
+  itemIdx: number;
+  item: NutritionMealItem;
+};
+
+const UNIT_OPTIONS = [
+  { value: "g", label: "גרם" },
+  { value: "ml", label: "מ״ל" },
+  { value: "unit", label: "יח׳" },
+  { value: "tbsp", label: "כף" },
+  { value: "tsp", label: "כפית" },
+];
+
+const SLOT_OPTIONS = [
+  { value: "breakfast", label: "ארוחת בוקר" },
+  { value: "lunch", label: "ארוחת צהריים" },
+  { value: "dinner", label: "ארוחת ערב" },
+  { value: "snack", label: "חטיף" },
+  { value: "drinks", label: "שתייה" },
+];
+
 function slotLabel(slot: string) {
-  if (slot === "breakfast") return "ארוחת בוקר";
-  if (slot === "lunch") return "ארוחת צהריים";
-  if (slot === "dinner") return "ארוחת ערב";
-  if (slot === "snack") return "חטיף";
-  if (slot === "drinks") return "שתייה";
-  return slot;
+  return SLOT_OPTIONS.find((s) => s.value === slot)?.label ?? slot;
 }
 
 function slotIcon(slot: string) {
@@ -58,6 +77,10 @@ function mealMl(meal: NutritionMeal) {
   }, 0);
 }
 
+function stepForUnit(unit: string) {
+  return unit === "g" || unit === "ml" ? 25 : 0.5;
+}
+
 const MEAL_SLOTS = ["breakfast", "lunch", "dinner", "snack", "drinks"];
 
 export default function NutritionPage() {
@@ -66,6 +89,13 @@ export default function NutritionPage() {
   const [loading, setLoading] = useState(true);
   const [addingWater, setAddingWater] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
+
+  // Edit modal state
+  const [editTarget, setEditTarget] = useState<EditTarget | null>(null);
+  const [editQty, setEditQty] = useState(1);
+  const [editUnit, setEditUnit] = useState("g");
+  const [editSlot, setEditSlot] = useState("breakfast");
+  const [saving, setSaving] = useState(false);
 
   const showToast = (msg: string) => {
     setToast(msg);
@@ -97,7 +127,6 @@ export default function NutritionPage() {
   const carbsPct = Math.min(Math.round((totals.carbsG / Math.max(1, target.carbsG)) * 100), 100);
   const fatPct = Math.min(Math.round((totals.fatG / Math.max(1, target.fatG)) * 100), 100);
 
-  // Circular SVG ring for kcal
   const R = 44;
   const circumference = 2 * Math.PI * R;
   const kcalOffset = circumference - (circumference * kcalPct) / 100;
@@ -115,6 +144,107 @@ export default function NutritionPage() {
     } catch { /* silent */ } finally { setAddingWater(false); }
   }
 
+  function openEdit(meal: NutritionMeal, itemIdx: number, item: NutritionMealItem) {
+    setEditTarget({ meal, itemIdx, item });
+    setEditQty(item.quantity);
+    setEditUnit(item.unit);
+    setEditSlot(meal.slot);
+  }
+
+  function closeEdit() {
+    setEditTarget(null);
+  }
+
+  async function saveEdit() {
+    if (!editTarget) return;
+    setSaving(true);
+    const { meal, itemIdx, item } = editTarget;
+    const slotChanged = editSlot !== meal.slot;
+    const qtyChanged = editQty !== item.quantity || editUnit !== item.unit;
+
+    try {
+      // Step 1: remove item from current meal
+      const remaining = meal.items
+        .filter((_, i) => i !== itemIdx)
+        .map((it) => ({ ingredientId: it.ingredientId, quantity: it.quantity, unit: it.unit }));
+
+      if (remaining.length === 0) {
+        // Delete the whole meal
+        await fetch("/api/nutrition/meal-delete", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ mealId: meal.id })
+        });
+      } else {
+        // Update meal without this item
+        await fetch("/api/nutrition/meal-edit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ mealId: meal.id, items: remaining })
+        });
+      }
+
+      // Step 2: add back to target slot (possibly same slot, new qty/unit)
+      if (slotChanged || qtyChanged) {
+        await fetch("/api/nutrition/favorites/add", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            date,
+            favoriteId: `ingredient:${item.ingredientId}`,
+            slot: editSlot,
+            quantity: editQty,
+            unit: editUnit
+          })
+        });
+      } else if (!slotChanged && !qtyChanged) {
+        // Nothing changed — just close
+        closeEdit();
+        return;
+      }
+
+      showToast("✓ עודכן");
+      closeEdit();
+      await load(date);
+    } catch {
+      showToast("שגיאה בשמירה");
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  async function deleteItem() {
+    if (!editTarget) return;
+    setSaving(true);
+    const { meal, itemIdx } = editTarget;
+    const remaining = meal.items
+      .filter((_, i) => i !== itemIdx)
+      .map((it) => ({ ingredientId: it.ingredientId, quantity: it.quantity, unit: it.unit }));
+
+    try {
+      if (remaining.length === 0) {
+        await fetch("/api/nutrition/meal-delete", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ mealId: meal.id })
+        });
+      } else {
+        await fetch("/api/nutrition/meal-edit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ mealId: meal.id, items: remaining })
+        });
+      }
+      showToast("🗑 נמחק");
+      closeEdit();
+      await load(date);
+    } catch {
+      showToast("שגיאה במחיקה");
+    } finally {
+      setSaving(false);
+    }
+  }
+
   const mealsBySlot = new Map<string, NutritionMeal[]>();
   for (const slot of MEAL_SLOTS) mealsBySlot.set(slot, []);
   for (const meal of nutrition?.meals ?? []) {
@@ -128,6 +258,79 @@ export default function NutritionPage() {
 
       {/* Toast */}
       {toast && <div className="nutr-toast">{toast}</div>}
+
+      {/* Edit modal */}
+      {editTarget && (
+        <div className="nutr-modal-backdrop" onClick={(e) => { if (e.target === e.currentTarget) closeEdit(); }}>
+          <div className="nutr-modal">
+            <div className="nutr-modal-header">
+              <span className="nutr-modal-title">{editTarget.item.name}</span>
+              <button className="nutr-modal-close" onClick={closeEdit}>✕</button>
+            </div>
+
+            <div className="nutr-modal-body">
+              {/* Quantity stepper */}
+              <label className="nutr-modal-label">כמות</label>
+              <div className="qty-stepper nutr-modal-stepper">
+                <button
+                  className="qty-stepper-btn"
+                  onClick={() => setEditQty((p) => Math.max(stepForUnit(editUnit), Math.round((p - stepForUnit(editUnit)) * 10) / 10))}
+                >−</button>
+                <input
+                  className="qty-stepper-input"
+                  type="number"
+                  min={stepForUnit(editUnit)}
+                  step={stepForUnit(editUnit)}
+                  value={editQty}
+                  onChange={(e) => setEditQty(Math.max(stepForUnit(editUnit), Number(e.target.value) || stepForUnit(editUnit)))}
+                />
+                <button
+                  className="qty-stepper-btn"
+                  onClick={() => setEditQty((p) => Math.round((p + stepForUnit(editUnit)) * 10) / 10)}
+                >+</button>
+              </div>
+
+              {/* Unit selector */}
+              <label className="nutr-modal-label">יחידה</label>
+              <div className="nutr-modal-unit-row">
+                {UNIT_OPTIONS.map((u) => (
+                  <button
+                    key={u.value}
+                    className={`nutr-modal-unit-btn${editUnit === u.value ? " active" : ""}`}
+                    onClick={() => {
+                      setEditUnit(u.value);
+                      setEditQty(u.value === "g" || u.value === "ml" ? 100 : 1);
+                    }}
+                  >{u.label}</button>
+                ))}
+              </div>
+
+              {/* Slot selector */}
+              <label className="nutr-modal-label">ארוחה</label>
+              <div className="nutr-modal-slot-row">
+                {SLOT_OPTIONS.map((s) => (
+                  <button
+                    key={s.value}
+                    className={`nutr-modal-slot-btn${editSlot === s.value ? " active" : ""}`}
+                    onClick={() => setEditSlot(s.value)}
+                  >
+                    {slotIcon(s.value)} {s.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="nutr-modal-actions">
+              <button className="nutr-modal-delete-btn" onClick={deleteItem} disabled={saving}>
+                🗑 מחק
+              </button>
+              <button className="nutr-modal-save-btn" onClick={saveEdit} disabled={saving}>
+                {saving ? "שומר…" : "✓ שמור"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Header */}
       <div className="nutr-header">
@@ -235,6 +438,10 @@ export default function NutritionPage() {
           const meals = mealsBySlot.get(slot) ?? [];
           const kcal = meals.reduce((sum, m) => sum + mealKcal(m), 0);
           const hasItems = meals.some((m) => m.items.length > 0);
+          // Flat list with meal reference per item
+          const flatItems = meals.flatMap((meal) =>
+            meal.items.map((item, itemIdx) => ({ meal, item, itemIdx }))
+          );
           return (
             <details key={slot} className="nutr-meal-fold" open={hasItems}>
               <summary className="nutr-meal-summary">
@@ -245,12 +452,17 @@ export default function NutritionPage() {
               </summary>
               <div className="nutr-meal-body">
                 {hasItems ? (
-                  meals.flatMap((m) => m.items).map((item, i) => (
-                    <div key={i} className="nutr-meal-item">
+                  flatItems.map(({ meal, item, itemIdx }, i) => (
+                    <button
+                      key={i}
+                      className="nutr-meal-item nutr-meal-item-btn"
+                      onClick={() => openEdit(meal, itemIdx, item)}
+                    >
                       <span className="nutr-item-name">{item.name}</span>
                       <span className="nutr-item-qty">{item.quantity} {item.unit}</span>
                       <span className="nutr-item-kcal">{Math.round(item.kcal)} קל׳</span>
-                    </div>
+                      <span className="nutr-item-edit-hint">›</span>
+                    </button>
                   ))
                 ) : (
                   <p className="nutr-meal-empty">לא הוזן מזון</p>
@@ -260,7 +472,7 @@ export default function NutritionPage() {
           );
         })}
 
-        {/* Drinks section — shows individual items beyond the hydration bar */}
+        {/* Drinks section */}
         {drinkMeals.some((m) => m.items.length > 0) && (
           <details className="nutr-meal-fold nutr-drinks-fold" open>
             <summary className="nutr-meal-summary">
@@ -270,14 +482,21 @@ export default function NutritionPage() {
               <span className="nutr-fold-chevron">›</span>
             </summary>
             <div className="nutr-meal-body">
-              {drinkMeals.flatMap((m) => m.items).map((item, i) => (
-                <div key={i} className="nutr-meal-item">
+              {drinkMeals.flatMap((meal) =>
+                meal.items.map((item, itemIdx) => ({ meal, item, itemIdx }))
+              ).map(({ meal, item, itemIdx }, i) => (
+                <button
+                  key={i}
+                  className="nutr-meal-item nutr-meal-item-btn"
+                  onClick={() => openEdit(meal, itemIdx, item)}
+                >
                   <span className="nutr-item-name">{item.name}</span>
                   <span className="nutr-item-qty">{item.quantity} {item.unit}</span>
                   <span className="nutr-item-kcal" style={{ color: "#72dcff" }}>
                     {item.unit === "ml" ? `${item.quantity} מ״ל` : `${Math.round(item.kcal)} קל׳`}
                   </span>
-                </div>
+                  <span className="nutr-item-edit-hint">›</span>
+                </button>
               ))}
             </div>
           </details>

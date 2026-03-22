@@ -8780,9 +8780,188 @@ button.alt {
 }
 .nutr-meal-item:last-child { border-bottom: none; }
 
-.nutr-item-name { flex: 1; color: var(--on-surface); }
+/* Clickable item button variant */
+.nutr-meal-item-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: right;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.12s;
+  padding: 0.35rem 0.4rem;
+  margin: 0 -0.4rem;
+  width: calc(100% + 0.8rem);
+}
+.nutr-meal-item-btn:hover,
+.nutr-meal-item-btn:focus-visible {
+  background: rgba(255,255,255,0.05);
+}
+.nutr-meal-item-btn:active {
+  background: rgba(114,220,255,0.1);
+}
+
+.nutr-item-edit-hint {
+  color: var(--on-surface-variant);
+  opacity: 0.35;
+  font-size: 0.8rem;
+  margin-right: auto;
+  flex-shrink: 0;
+}
+
+.nutr-item-name { flex: 1; color: var(--on-surface); text-align: right; }
 .nutr-item-qty { color: var(--on-surface-variant); font-size: 0.75rem; }
 .nutr-item-kcal { color: var(--on-surface-variant); font-size: 0.75rem; min-width: 3.5rem; text-align: left; }
+
+/* ── Edit Item Modal ── */
+.nutr-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 200;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 0 env(safe-area-inset-bottom, 0);
+}
+
+@media (min-width: 500px) {
+  .nutr-modal-backdrop {
+    align-items: center;
+  }
+}
+
+.nutr-modal {
+  background: var(--surface-container);
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  max-width: 480px;
+  padding: 1.25rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+@media (min-width: 500px) {
+  .nutr-modal {
+    border-radius: 16px;
+    margin: 1rem;
+  }
+}
+
+.nutr-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nutr-modal-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+.nutr-modal-close {
+  background: none;
+  border: none;
+  color: var(--on-surface-variant);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 6px;
+  line-height: 1;
+}
+.nutr-modal-close:hover { color: var(--on-surface); }
+
+.nutr-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.nutr-modal-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.1rem;
+}
+
+.nutr-modal-stepper {
+  width: 100%;
+}
+
+.nutr-modal-unit-row,
+.nutr-modal-slot-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.nutr-modal-unit-btn,
+.nutr-modal-slot-btn {
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  border: 1px solid var(--outline-variant);
+  background: var(--surface-container-high);
+  color: var(--on-surface-variant);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.13s;
+}
+
+.nutr-modal-unit-btn.active,
+.nutr-modal-slot-btn.active {
+  background: #72dcff;
+  color: #0e0e0e;
+  border-color: transparent;
+}
+
+.nutr-modal-unit-btn:not(.active):hover,
+.nutr-modal-slot-btn:not(.active):hover {
+  background: rgba(255,255,255,0.07);
+  color: var(--on-surface);
+}
+
+.nutr-modal-actions {
+  display: flex;
+  gap: 0.6rem;
+  padding-top: 0.25rem;
+}
+
+.nutr-modal-delete-btn {
+  padding: 0.55rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,80,80,0.35);
+  background: rgba(255,80,80,0.1);
+  color: #ff6b6b;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.13s;
+  flex-shrink: 0;
+}
+.nutr-modal-delete-btn:hover { background: rgba(255,80,80,0.2); }
+.nutr-modal-delete-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.nutr-modal-save-btn {
+  flex: 1;
+  padding: 0.55rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: #72dcff;
+  color: #0e0e0e;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.13s;
+}
+.nutr-modal-save-btn:hover { opacity: 0.85; }
+.nutr-modal-save-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
 .nutr-meal-empty {
   font-size: 0.78rem;
