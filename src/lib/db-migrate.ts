@@ -295,6 +295,11 @@ export async function migrateDb() {
           FOREIGN KEY(ingredientId) REFERENCES nutrition_ingredients(id) ON DELETE CASCADE
         );
 
+        CREATE TABLE IF NOT EXISTS nutrition_ingredient_hidden (
+          name TEXT PRIMARY KEY,
+          hiddenAt TEXT NOT NULL
+        );
+
         CREATE TABLE IF NOT EXISTS nutrition_meal_history (
           id TEXT PRIMARY KEY,
           date TEXT NOT NULL,

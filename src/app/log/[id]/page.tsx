@@ -165,15 +165,27 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
       {/* ── Back / Adjacent nav ── */}
       <div className="wkd-back-bar">
         {adjacent.previous ? (
-          <Link href={workoutDetailPath(adjacent.previous.id)} className="wkd-adj-btn">‹</Link>
+          <Link href={workoutDetailPath(adjacent.previous.id)} className="wkd-adj-btn" title="אימון קודם">
+            <span className="material-symbols-outlined" aria-hidden>arrow_forward_ios</span>
+            <small>קודם</small>
+          </Link>
         ) : (
-          <span className="wkd-adj-btn disabled">‹</span>
+          <span className="wkd-adj-btn disabled" aria-hidden>
+            <span className="material-symbols-outlined">arrow_forward_ios</span>
+            <small>קודם</small>
+          </span>
         )}
-        <Link href="/log" className="wkd-back-link">יומן אימונים ←</Link>
+        <Link href="/log" className="wkd-back-link">חזרה ליומן אימונים</Link>
         {adjacent.next ? (
-          <Link href={workoutDetailPath(adjacent.next.id)} className="wkd-adj-btn">›</Link>
+          <Link href={workoutDetailPath(adjacent.next.id)} className="wkd-adj-btn" title="אימון הבא">
+            <small>הבא</small>
+            <span className="material-symbols-outlined" aria-hidden>arrow_back_ios</span>
+          </Link>
         ) : (
-          <span className="wkd-adj-btn disabled">›</span>
+          <span className="wkd-adj-btn disabled" aria-hidden>
+            <small>הבא</small>
+            <span className="material-symbols-outlined">arrow_back_ios</span>
+          </span>
         )}
       </div>
 

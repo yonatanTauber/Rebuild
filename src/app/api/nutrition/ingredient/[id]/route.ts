@@ -70,8 +70,33 @@ export async function DELETE(_request: NextRequest, { params }: { params: Promis
   }
 
   await migrateDb();
+  const ingredient = await dbQueryOne<{ id: string; name: string; isbuiltin?: number; isBuiltIn?: number }>(
+    "SELECT id, name, isBuiltIn FROM nutrition_ingredients WHERE id = $1 LIMIT 1",
+    [id]
+  );
+  if (!ingredient) {
+    return NextResponse.json({ error: "ingredient not found" }, { status: 404 });
+  }
 
+  const isBuiltIn = Number((ingredient as any).isbuiltin ?? (ingredient as any).isBuiltIn ?? 0) === 1;
+  const name = String((ingredient as any).name ?? "").trim();
+  const now = new Date().toISOString();
+
+  if (isBuiltIn && name) {
+    await dbQuery(
+      `
+      INSERT INTO nutrition_ingredient_hidden (name, hiddenAt)
+      VALUES ($1, $2)
+      ON CONFLICT(name) DO UPDATE SET hiddenAt = EXCLUDED.hiddenAt
+      `,
+      [name, now]
+    );
+  }
+
+  await dbQuery("DELETE FROM nutrition_ingredient_favorites WHERE ingredientId = $1", [id]);
+  await dbQuery("DELETE FROM nutrition_preferences WHERE ingredientId = $1", [id]);
+  await dbQuery("DELETE FROM nutrition_pantry_items WHERE ingredientId = $1", [id]);
   await dbQuery("DELETE FROM nutrition_ingredients WHERE id = $1", [id]);
 
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true, deletedId: id, hiddenBuiltIn: isBuiltIn });
 }

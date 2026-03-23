@@ -107,9 +107,12 @@ const seedIngredients: SeedIngredient[] = [
 
 export async function ensureCloudNutritionSeed() {
   const now = new Date().toISOString();
+  const hidden = await dbQuery<{ name: string }>("SELECT name FROM nutrition_ingredient_hidden");
+  const hiddenNames = new Set(hidden.rows.map((row) => String((row as any).name).toLowerCase()));
   // Always upsert built-in ingredients so macro / unit corrections propagate on deploy.
   // User-created ingredients are NOT overwritten (isBuiltIn=0 rows are untouched).
   for (const item of seedIngredients) {
+    if (hiddenNames.has(item.name.toLowerCase())) continue;
     await dbQuery(
       `
       INSERT INTO nutrition_ingredients
@@ -192,4 +195,3 @@ export async function cloudListNutritionIngredients(): Promise<NutritionIngredie
     updatedAt: String((row as any).updatedat ?? (row as any).updatedAt ?? "")
   }));
 }
-

@@ -8269,34 +8269,87 @@ button.alt {
 .wkd-back-bar {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  justify-content: center;
+  gap: 0.62rem;
+  margin-bottom: 1.1rem;
 }
 
 .wkd-adj-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  background: var(--surface-container-high);
+  gap: 0.22rem;
+  min-width: 86px;
+  height: 36px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface-container-high) 78%, #0f131a 22%);
   color: var(--on-surface);
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 800;
   text-decoration: none;
   border: 1px solid var(--outline-variant);
-  transition: background 0.15s;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
 }
-.wkd-adj-btn:hover { background: var(--surface-container-highest); }
-.wkd-adj-btn.disabled { opacity: 0.3; cursor: default; }
+.wkd-adj-btn .material-symbols-outlined {
+  font-size: 16px;
+  line-height: 1;
+}
+.wkd-adj-btn small {
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+.wkd-adj-btn:hover {
+  background: var(--surface-container-highest);
+  border-color: var(--line-focus);
+  transform: translateY(-1px);
+}
+.wkd-adj-btn.disabled {
+  opacity: 0.38;
+  cursor: default;
+  pointer-events: none;
+}
 
 .wkd-back-link {
-  font-size: 0.82rem;
-  color: var(--on-surface-variant);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 196px;
+  height: 38px;
+  border-radius: 999px;
+  border: 1px solid var(--primary);
+  background: color-mix(in srgb, var(--primary) 16%, transparent 84%);
+  font-size: 0.84rem;
+  font-weight: 900;
+  color: var(--on-surface);
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
+  transition: background 0.15s, transform 0.15s;
 }
-.wkd-back-link:hover { color: var(--on-surface); }
+.wkd-back-link:hover {
+  background: color-mix(in srgb, var(--primary) 24%, transparent 76%);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .wkd-back-bar {
+    gap: 0.38rem;
+  }
+
+  .wkd-adj-btn {
+    min-width: 64px;
+    height: 34px;
+  }
+
+  .wkd-adj-btn small {
+    display: none;
+  }
+
+  .wkd-back-link {
+    min-width: 154px;
+    height: 36px;
+    font-size: 0.78rem;
+  }
+}
 
 /* ── Hero ── */
 .wkd-hero {

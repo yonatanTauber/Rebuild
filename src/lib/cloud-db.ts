@@ -275,7 +275,7 @@ function mapWorkoutRow(row: Record<string, unknown>): CloudWorkout {
     rawFilePath: get("rawfilepath") == null ? null : String(get("rawfilepath")),
     shoeId: get("shoeid") == null ? null : String(get("shoeid")),
     shoeKmAtAssign: get("shoekmatassign") == null ? null : Number(get("shoekmatassign")),
-    shoeName: null
+    shoeName: get("shoename") == null ? (get("shoeName") == null ? null : String(get("shoeName"))) : String(get("shoename"))
   };
 }
 
@@ -566,7 +566,13 @@ export async function cloudGetTopEffortsForWorkout(workoutId: string): Promise<C
 
 export async function cloudGetWorkoutById(id: string): Promise<CloudWorkout | null> {
   await ensureCloudWorkoutTable();
-  const res = await sql<Record<string, unknown>>`SELECT * FROM workouts WHERE id = ${id} LIMIT 1`;
+  const res = await sql<Record<string, unknown>>`
+    SELECT w.*, s.name as shoeName
+    FROM workouts w
+    LEFT JOIN running_shoes s ON s.id = w.shoeId
+    WHERE w.id = ${id}
+    LIMIT 1
+  `;
   const row = res.rows[0];
   return row ? mapWorkoutRow(row) : null;
 }
@@ -576,34 +582,19 @@ export async function cloudGetAdjacentWorkoutIds(workoutId: string): Promise<{
   next: { id: string; startAt: string } | null;
 }> {
   await ensureCloudWorkoutTable();
-  const current = await sql<{ id: string; startAt: string }>`
+  const ordered = await sql<{ id: string; startAt: string }>`
     SELECT id, startAt
     FROM workouts
-    WHERE id = ${workoutId}
-    LIMIT 1
-  `;
-  const cur = current.rows[0];
-  if (!cur) return { previous: null, next: null };
-
-  const prev = await sql<{ id: string; startAt: string }>`
-    SELECT id, startAt
-    FROM workouts
-    WHERE startAt < ${cur.startAt}
-       OR (startAt = ${cur.startAt} AND id < ${cur.id})
-    ORDER BY startAt DESC, id DESC
-    LIMIT 1
-  `;
-  const next = await sql<{ id: string; startAt: string }>`
-    SELECT id, startAt
-    FROM workouts
-    WHERE startAt > ${cur.startAt}
-       OR (startAt = ${cur.startAt} AND id > ${cur.id})
     ORDER BY startAt ASC, id ASC
-    LIMIT 1
   `;
+  if (!ordered.rows.length) return { previous: null, next: null };
+  const idx = ordered.rows.findIndex((row) => String((row as any).id) === workoutId);
+  if (idx === -1) return { previous: null, next: null };
+  const prevRow = idx > 0 ? ordered.rows[idx - 1] : null;
+  const nextRow = idx < ordered.rows.length - 1 ? ordered.rows[idx + 1] : null;
   return {
-    previous: prev.rows[0] ? { id: prev.rows[0].id, startAt: prev.rows[0].startAt } : null,
-    next: next.rows[0] ? { id: next.rows[0].id, startAt: next.rows[0].startAt } : null
+    previous: prevRow ? { id: String((prevRow as any).id), startAt: String((prevRow as any).startAt) } : null,
+    next: nextRow ? { id: String((nextRow as any).id), startAt: String((nextRow as any).startAt) } : null
   };
 }
 

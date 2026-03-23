@@ -134,7 +134,8 @@ export default function NutritionCatalogPage() {
         closeEdit();
         await load();
       } else {
-        showToast("שגיאה במחיקה");
+        const err = await res.json().catch(() => null);
+        showToast(err?.error ? `שגיאה במחיקה: ${err.error}` : "שגיאה במחיקה");
       }
     } catch {
       showToast("שגיאה במחיקה");
