@@ -3485,6 +3485,38 @@ button.alt {
   }
 }
 
+/* Force mobile carousel on real touch phones even when browser requests desktop width */
+@media (hover: none) and (pointer: coarse) {
+  .today-workouts-desktop-list {
+    display: none !important;
+  }
+
+  .today-workouts-mobile-carousel-shell {
+    display: grid !important;
+    gap: 0.4rem;
+  }
+
+  .today-workouts-mobile-carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 0.45rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .today-workouts-mobile-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .today-workouts-mobile-carousel .actual-workout-banner {
+    scroll-snap-align: start;
+    margin: 0;
+  }
+}
+
 .journal-target-pill.on_target {
   background: rgba(195, 255, 205, 0.1);
   border-color: rgba(195, 255, 205, 0.4);
