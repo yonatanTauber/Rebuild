@@ -1344,6 +1344,9 @@ export default function TodayPage() {
   const [newIngredientSaving, setNewIngredientSaving] = useState(false);
   const [scoreTrend, setScoreTrend] = useState<Array<{ date: string; readiness: number; fatigue: number; fitness: number }>>([]);
   const [morningTrend, setMorningTrend] = useState<MorningTrendPoint[]>([]);
+  const [mobileWorkoutIndex, setMobileWorkoutIndex] = useState(0);
+  const [showMobileMoreWorkouts, setShowMobileMoreWorkouts] = useState(false);
+  const mobileWorkoutCarouselRef = useRef<HTMLDivElement | null>(null);
 
   const activePendingWorkout = pendingFeedback[0] ?? null;
   const isRunFeedback = activePendingWorkout?.sport === "run";
@@ -1439,7 +1442,63 @@ export default function TodayPage() {
     : shouldLockRecommendationToDayStatus
       ? fallbackRecOption
       : workoutVariants[variantIndex] ?? selectedWorkoutBase ?? fallbackRecOption;
-  const firstWorkout = today?.todayWorkouts?.[0] ?? null;
+  const orderedTodayWorkouts = useMemo(() => {
+    const workouts = [...(today?.todayWorkouts ?? [])];
+    if (!workouts.length) return [];
+    const primary = [...workouts].sort((a, b) => {
+      const runPriority = Number(b.sport === "run") - Number(a.sport === "run");
+      if (runPriority !== 0) return runPriority;
+      const loadPriority = (b.tssLike ?? 0) - (a.tssLike ?? 0);
+      if (loadPriority !== 0) return loadPriority;
+      return new Date(b.startAt).getTime() - new Date(a.startAt).getTime();
+    })[0];
+    const rest = workouts
+      .filter((workout) => workout.id !== primary.id)
+      .sort((a, b) => new Date(b.startAt).getTime() - new Date(a.startAt).getTime());
+    return [primary, ...rest];
+  }, [today?.todayWorkouts]);
+  const primaryWorkout = orderedTodayWorkouts[0] ?? null;
+
+  const workoutSummaryPartsFor = (workout: NonNullable<TodayData["todayWorkouts"]>[number]) => {
+    const runScore =
+      workout.sport === "run" && typeof workout.runScore === "number" ? workout.runScore : null;
+    const parts = [
+      ...(runScore != null ? [`${faceByScore(runScore)} ציון ריצה: ${runScore}`] : []),
+      ...(() => {
+        const moving = workout.movingDurationSec;
+        const total = workout.durationSec;
+        if (workout.sport === "run" && moving != null && moving > 0 && Math.abs(total - moving) >= 60) {
+          return [`משך ריצה: ${formatDuration(moving)}`, `משך כלל אימון: ${formatDuration(total)}`];
+        }
+        return [`משך כלל אימון: ${formatDuration(total)}`];
+      })(),
+      ...(getDisplayDistanceKm(workout) != null ? [`${formatDistanceKm(getDisplayDistanceKm(workout))} ק״מ`] : []),
+      ...(workout.paceDisplayMinPerKm != null ? [formatPace(workout.paceDisplayMinPerKm)] : [])
+    ];
+    return parts;
+  };
+
+  const workoutsDisplayData = useMemo(
+    () =>
+      orderedTodayWorkouts.map((workout) => ({
+        workout,
+        runScore:
+          workout.sport === "run" && typeof workout.runScore === "number" ? workout.runScore : null,
+        metrics: buildWorkoutBannerMetrics({
+          sport: workout.sport,
+          durationSec: workout.durationSec,
+          distanceKm: getDisplayDistanceKm(workout),
+          paceMinPerKm: workout.paceDisplayMinPerKm ?? null,
+          avgHr: workout.avgHr ?? null,
+          load: workout.tssLike ?? null
+        }),
+        summaryParts: workoutSummaryPartsFor(workout)
+      })),
+    [orderedTodayWorkouts]
+  );
+  const mobileCarouselWorkouts = workoutsDisplayData.slice(0, 2);
+  const hiddenMobileWorkouts = workoutsDisplayData.slice(2);
+
   const feedbackByWorkoutId = useMemo(
     () =>
       new Map(
@@ -1447,29 +1506,12 @@ export default function TodayPage() {
       ),
     [journal?.workoutFeedback]
   );
-  const firstWorkoutFeedback = firstWorkout ? feedbackByWorkoutId.get(firstWorkout.id) ?? null : null;
+  const firstWorkoutFeedback = primaryWorkout ? feedbackByWorkoutId.get(primaryWorkout.id) ?? null : null;
   const selectedWorkoutShoe = shoes.find((shoe) => shoe.id === selectedWorkoutShoeId) ?? null;
   const selectedShoeProgress =
     selectedWorkoutShoe?.targetKm && selectedWorkoutShoe.targetKm > 0
       ? Math.max(0, Math.min(100, ((selectedWorkoutShoe.totalKm ?? 0) / selectedWorkoutShoe.targetKm) * 100))
       : 0;
-  const runScoreToday =
-    firstWorkout?.sport === "run" && typeof firstWorkout.runScore === "number" ? firstWorkout.runScore : null;
-  const firstWorkoutBannerMetrics = useMemo(
-    () =>
-      firstWorkout
-        ? buildWorkoutBannerMetrics({
-            sport: firstWorkout.sport,
-            durationSec: firstWorkout.durationSec,
-            distanceKm: getDisplayDistanceKm(firstWorkout),
-            paceMinPerKm: firstWorkout.paceDisplayMinPerKm ?? null,
-            avgHr: firstWorkout.avgHr ?? null,
-            load: firstWorkout.tssLike ?? null
-          })
-        : null,
-    [firstWorkout]
-  );
-
   const feedbackBalance = useMemo(() => {
     if (!firstWorkoutFeedback) return null;
     const loadRaw = [
@@ -1498,26 +1540,28 @@ export default function TodayPage() {
     return { loadPct, qualityPct };
   }, [firstWorkoutFeedback]);
 
-  const hasWorkoutOnDay = Boolean(firstWorkout);
-  const todayWorkoutSummaryParts = firstWorkout
-    ? [
-        ...(runScoreToday != null ? [`${faceByScore(runScoreToday)} ציון ריצה: ${runScoreToday}`] : []),
-        ...(() => {
-          const moving = firstWorkout.movingDurationSec;
-          const total = firstWorkout.durationSec;
-          if (firstWorkout.sport === "run" && moving != null && moving > 0 && Math.abs(total - moving) >= 60) {
-            return [`משך ריצה: ${formatDuration(moving)}`, `משך כלל אימון: ${formatDuration(total)}`];
-          }
-          return [`משך כלל אימון: ${formatDuration(total)}`];
-        })(),
-        ...(getDisplayDistanceKm(firstWorkout) != null ? [`${formatDistanceKm(getDisplayDistanceKm(firstWorkout))} ק״מ`] : []),
-        ...(firstWorkout.paceDisplayMinPerKm != null ? [formatPace(firstWorkout.paceDisplayMinPerKm)] : [])
-      ]
-    : [];
+  const hasWorkoutOnDay = Boolean(primaryWorkout);
   const showRecommendationPanel = !isHistoricalDay;
   const showRestHistoricalCard = isHistoricalDay && !hasWorkoutOnDay;
   const showMorningSideCard = showRecommendationPanel && !hasWorkoutOnDay && !showRestHistoricalCard;
   const topGridClassName = hasWorkoutOnDay || showMorningSideCard ? "today-top-grid split" : "today-top-grid";
+
+  useEffect(() => {
+    setMobileWorkoutIndex(0);
+    setShowMobileMoreWorkouts(false);
+    if (mobileWorkoutCarouselRef.current) {
+      mobileWorkoutCarouselRef.current.scrollTo({ left: 0, behavior: "auto" });
+    }
+  }, [activeDate, workoutsDisplayData.length]);
+
+  const handleWorkoutCarouselScroll = () => {
+    const node = mobileWorkoutCarouselRef.current;
+    if (!node) return;
+    const width = node.clientWidth;
+    if (width <= 0) return;
+    const nextIndex = Math.round(node.scrollLeft / width);
+    setMobileWorkoutIndex(Math.max(0, Math.min(nextIndex, mobileCarouselWorkouts.length - 1)));
+  };
   const todayFoodOptions = useMemo(() => {
     const favoriteOptions: QuickFoodOption[] = nutritionFavorites.map((favorite) => ({
       value: favorite.id,
@@ -2570,7 +2614,9 @@ export default function TodayPage() {
                 onClick={() => setActiveDate((prev) => addDaysISO(prev, 1))}
                 title="יום הבא"
               >
-                ‹
+                <span className="material-symbols-outlined" aria-hidden>
+                  chevron_left
+                </span>
               </button>
               <button className="choice-btn icon-compact mobile-nav-sync" onClick={triggerSync} disabled={syncing} title="רענון אימונים">
                 <span aria-hidden>↻</span>
@@ -2595,16 +2641,22 @@ export default function TodayPage() {
                 onClick={() => setActiveDate((prev) => addDaysISO(prev, -1))}
                 title="יום קודם"
               >
-                ›
+                <span className="material-symbols-outlined" aria-hidden>
+                  chevron_right
+                </span>
               </button>
             </div>
             <div className="journal-nav">
               <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate((prev) => addDaysISO(prev, -1))} title="יום קודם">
-                ›
+                <span className="material-symbols-outlined" aria-hidden>
+                  chevron_right
+                </span>
               </button>
               <strong className="journal-date-title">{formatDisplayDate(activeDate)}</strong>
               <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate((prev) => addDaysISO(prev, 1))} title="יום הבא">
-                ‹
+                <span className="material-symbols-outlined" aria-hidden>
+                  chevron_left
+                </span>
               </button>
             </div>
             <div className="journal-quick-actions">
@@ -2798,47 +2850,136 @@ export default function TodayPage() {
         </div>
 
         <div className="today-activity-side" aria-label="האימון והמלצה">
-          {hasWorkoutOnDay && firstWorkout ? (
+          {hasWorkoutOnDay && primaryWorkout ? (
             <>
-              <article
-                className="actual-workout-banner clickable"
-                role="button"
-                tabIndex={0}
-                aria-label="פתח פרטי אימון"
-                onClick={() => router.push(workoutDetailPath(firstWorkout.id))}
-                onKeyDown={(event) => {
-                  if (event.key === "Enter" || event.key === " ") {
-                    event.preventDefault();
-                    router.push(workoutDetailPath(firstWorkout.id));
-                  }
-                }}
-              >
-                <button
-                  type="button"
-                  className="workout-edit-mini"
-                  title="ערוך אימון"
-                  aria-label="ערוך אימון"
-                  onClick={(event) => {
-                    event.stopPropagation();
-                    router.push(workoutDetailPath(firstWorkout.id));
-                  }}
+              <div className="today-workouts-desktop-list" aria-label="אימוני היום בדסקטופ">
+                {workoutsDisplayData.map((entry, index) => (
+                  <article
+                    key={entry.workout.id}
+                    className={`actual-workout-banner clickable ${index === 0 ? "primary" : "compact-secondary"}`}
+                    role="button"
+                    tabIndex={0}
+                    aria-label="פתח פרטי אימון"
+                    onClick={() => router.push(workoutDetailPath(entry.workout.id))}
+                    onKeyDown={(event) => {
+                      if (event.key === "Enter" || event.key === " ") {
+                        event.preventDefault();
+                        router.push(workoutDetailPath(entry.workout.id));
+                      }
+                    }}
+                  >
+                    <button
+                      type="button"
+                      className="workout-edit-mini"
+                      title="ערוך אימון"
+                      aria-label="ערוך אימון"
+                      onClick={(event) => {
+                        event.stopPropagation();
+                        router.push(workoutDetailPath(entry.workout.id));
+                      }}
+                    >
+                      ✎
+                    </button>
+                    <WorkoutBanner sport={entry.workout.sport} metrics={entry.metrics} runScore={entry.runScore} />
+                    <div className="workout-banner-head">
+                      <p>
+                        האימון שבוצע ביום הזה: {sportLabel(entry.workout.sport)}
+                        {index > 0 ? ` · אימון ${index + 1}` : ""}
+                      </p>
+                    </div>
+                    <div className="workout-summary-line">
+                      {entry.summaryParts.map((part, idx) => (
+                        <span key={`${entry.workout.id}-${part}-${idx}`} className="workout-summary-pill">
+                          {part}
+                        </span>
+                      ))}
+                    </div>
+                  </article>
+                ))}
+              </div>
+
+              <div className="today-workouts-mobile-carousel-shell" aria-label="אימוני היום במובייל">
+                <div
+                  className="today-workouts-mobile-carousel"
+                  ref={mobileWorkoutCarouselRef}
+                  onScroll={handleWorkoutCarouselScroll}
                 >
-                  ✎
-                </button>
-                {firstWorkoutBannerMetrics ? (
-                  <WorkoutBanner sport={firstWorkout.sport} metrics={firstWorkoutBannerMetrics} runScore={runScoreToday} />
-                ) : null}
-                <div className="workout-banner-head">
-                  <p>האימון שבוצע ביום הזה: {sportLabel(firstWorkout.sport)}</p>
-                </div>
-                <div className="workout-summary-line">
-                  {todayWorkoutSummaryParts.map((part, idx) => (
-                    <span key={`${part}-${idx}`} className="workout-summary-pill">
-                      {part}
-                    </span>
+                  {mobileCarouselWorkouts.map((entry, index) => (
+                    <article
+                      key={`mobile-${entry.workout.id}`}
+                      className={`actual-workout-banner clickable mobile ${index === 0 ? "primary" : "compact-secondary"}`}
+                      role="button"
+                      tabIndex={0}
+                      aria-label="פתח פרטי אימון"
+                      onClick={() => router.push(workoutDetailPath(entry.workout.id))}
+                      onKeyDown={(event) => {
+                        if (event.key === "Enter" || event.key === " ") {
+                          event.preventDefault();
+                          router.push(workoutDetailPath(entry.workout.id));
+                        }
+                      }}
+                    >
+                      <button
+                        type="button"
+                        className="workout-edit-mini"
+                        title="ערוך אימון"
+                        aria-label="ערוך אימון"
+                        onClick={(event) => {
+                          event.stopPropagation();
+                          router.push(workoutDetailPath(entry.workout.id));
+                        }}
+                      >
+                        ✎
+                      </button>
+                      <WorkoutBanner sport={entry.workout.sport} metrics={entry.metrics} runScore={entry.runScore} />
+                      <div className="workout-banner-head">
+                        <p>
+                          האימון שבוצע ביום הזה: {sportLabel(entry.workout.sport)}
+                          {index > 0 ? ` · אימון ${index + 1}` : ""}
+                        </p>
+                      </div>
+                      <div className="workout-summary-line">
+                        {entry.summaryParts.map((part, idx) => (
+                          <span key={`mobile-${entry.workout.id}-${part}-${idx}`} className="workout-summary-pill">
+                            {part}
+                          </span>
+                        ))}
+                      </div>
+                    </article>
                   ))}
                 </div>
-              </article>
+                <div className="today-workouts-mobile-meta">
+                  <div className="today-workouts-mobile-dots" aria-label="מיקום בקרוסלה">
+                    {mobileCarouselWorkouts.map((entry, index) => (
+                      <i key={`dot-${entry.workout.id}`} className={index === mobileWorkoutIndex ? "active" : ""} />
+                    ))}
+                  </div>
+                  {hiddenMobileWorkouts.length > 0 ? (
+                    <button
+                      type="button"
+                      className="choice-btn small"
+                      onClick={() => setShowMobileMoreWorkouts((prev) => !prev)}
+                    >
+                      {showMobileMoreWorkouts ? "סגור" : `+ עוד ${hiddenMobileWorkouts.length}`}
+                    </button>
+                  ) : null}
+                </div>
+                {showMobileMoreWorkouts && hiddenMobileWorkouts.length > 0 ? (
+                  <div className="today-workouts-mobile-more-list">
+                    {hiddenMobileWorkouts.map((entry, index) => (
+                      <Link key={entry.workout.id} href={workoutDetailPath(entry.workout.id)} className="today-workout-mini-link">
+                        <strong>{sportLabel(entry.workout.sport)} · אימון {index + 3}</strong>
+                        <span>
+                          {formatDuration(entry.workout.durationSec)} ·{" "}
+                          {getDisplayDistanceKm(entry.workout) != null
+                            ? `${formatDistanceKm(getDisplayDistanceKm(entry.workout))} ק״מ`
+                            : "ללא מרחק"}
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
 
               {!isHistoricalDay && rec?.dayStatus === "can_add_short" && showRecommendationPanel && displayWorkout ? (
                 <div className="today-next-session-line" aria-label="המלצה להמשך היום">
@@ -2853,29 +2994,6 @@ export default function TodayPage() {
                   ) : null}
                 </div>
               ) : null}
-
-              <article className="day-mini-summary-card">
-                <header>
-                  <p>סיכום היום</p>
-                  {runScoreToday != null ? (
-                    <div className="day-summary-score">
-                      <span className="day-face">{faceByScore(runScoreToday)}</span>
-                      <strong>{runScoreToday}</strong>
-                    </div>
-                  ) : (
-                    <div className="day-summary-score muted">
-                      <span className="day-face">🗒️</span>
-                      <strong>-</strong>
-                    </div>
-                  )}
-                </header>
-                <ul className="kv compact-kv day-summary-list">
-                  <li>סטטוס יום: {journal?.dayStatus.label ?? "-"}</li>
-                  <li>קלוריות: {journal?.nutrition.status.kcalLabel ?? "-"}</li>
-                  <li>חלבון: {journal?.nutrition.status.proteinLabel ?? "-"}</li>
-                  <li>{runScoreToday != null ? labelByScore(runScoreToday) : "ממתין למשוב ריצה"}</li>
-                </ul>
-              </article>
             </>
           ) : showRestHistoricalCard ? (
             <article className="actual-workout-banner rest-day-banner" aria-label="יום מנוחה">
@@ -2986,30 +3104,8 @@ export default function TodayPage() {
         </div>
       </section>
 
-      {/* Row 4: Checkin + Energy Battery */}
+      {/* Energy battery */}
       <div className="today-row-checkin-energy">
-        <section className="morning-checkin-section">
-          <h3>צ'ק-אין בוקר</h3>
-          <p>איך הרגשת כשהתעוררת הבוקר?</p>
-          <div className="sentiment-buttons-row">
-            <button className="sentiment-button" title="מאוד מרוצה">
-              <span className="material-symbols-outlined">sentiment_very_satisfied</span>
-            </button>
-            <button className="sentiment-button" title="מרוצה">
-              <span className="material-symbols-outlined">sentiment_satisfied</span>
-            </button>
-            <button className="sentiment-button selected" title="ניטרלי">
-              <span className="material-symbols-outlined">sentiment_neutral</span>
-            </button>
-            <button className="sentiment-button" title="לא מרוצה">
-              <span className="material-symbols-outlined">sentiment_dissatisfied</span>
-            </button>
-            <button className="sentiment-button" title="מאוד לא מרוצה">
-              <span className="material-symbols-outlined">sentiment_very_dissatisfied</span>
-            </button>
-          </div>
-        </section>
-
         {journal?.energyBattery ? (
           <section className="energy-battery-card energy-battery-focus">
             <div className="energy-battery-head">

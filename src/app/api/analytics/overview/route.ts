@@ -28,5 +28,7 @@ export async function GET(request: Request) {
   }
 
   const { sport, year, shoeId, fromYear, toYear, allYears } = parsed.data;
-  return NextResponse.json(buildAnalytics({ sport, year, shoeId: shoeId ?? null, fromYear, toYear, allYears: Boolean(allYears) }));
+  return NextResponse.json(
+    await buildAnalytics({ sport, year, shoeId: shoeId ?? null, fromYear, toYear, allYears: Boolean(allYears) })
+  );
 }

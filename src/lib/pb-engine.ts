@@ -20,6 +20,7 @@ function wholeWorkoutToleranceKm(targetKm: number) {
   if (targetKm <= 10) return 0.18;
   if (targetKm <= 16) return 0.28;
   if (targetKm <= 25) return 0.4;
+  if (targetKm >= 30) return 1.2;
   return 0.6;
 }
 

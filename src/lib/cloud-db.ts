@@ -122,6 +122,19 @@ export type CloudWorkout = {
   shoeName?: string | null;
 };
 
+export type CloudTopEffort = {
+  id: string;
+  distanceKey: string;
+  timeSec: number;
+  paceMinPerKm: number;
+  workoutId: string;
+  workoutStartAt: string;
+  source: "whole_workout" | "rolling_segment";
+  segmentStartSec: number | null;
+  segmentEndSec: number | null;
+  distanceKm: number;
+};
+
 export type CloudWorkoutFeedback = {
   workoutId: string;
   date: string;
@@ -312,6 +325,68 @@ function mapWorkoutFeedbackRow(row: Record<string, unknown>): CloudWorkoutFeedba
   };
 }
 
+function withinDuplicateTolerance(a: CloudWorkout, b: CloudWorkout) {
+  const aStart = Date.parse(a.startAt);
+  const bStart = Date.parse(b.startAt);
+  if (!Number.isFinite(aStart) || !Number.isFinite(bStart)) return false;
+  const startDiffSec = Math.abs(aStart - bStart) / 1000;
+  if (startDiffSec > 10800) return false;
+
+  const durTol = Math.max(420, Number(a.durationSec ?? 0) * 0.18);
+  if (Math.abs(Number(a.durationSec ?? 0) - Number(b.durationSec ?? 0)) > durTol) return false;
+
+  const aDist = a.distanceM == null ? null : Number(a.distanceM);
+  const bDist = b.distanceM == null ? null : Number(b.distanceM);
+  if (aDist != null && bDist != null) {
+    const distTol = Math.max(1200, aDist * 0.15);
+    if (Math.abs(aDist - bDist) > distTol) return false;
+  }
+
+  return true;
+}
+
+function sourcePriority(source: string) {
+  if (source === "strava") return 4;
+  if (source === "smashrun") return 3;
+  if (source === "healthfit") return 2;
+  return 1;
+}
+
+function dedupeCloudWorkouts(rows: CloudWorkout[]): CloudWorkout[] {
+  const out: CloudWorkout[] = [];
+  for (const row of rows) {
+    let matchedIndex = -1;
+    for (let i = out.length - 1; i >= 0; i -= 1) {
+      const candidate = out[i];
+      if (candidate.sport !== row.sport) continue;
+      if (!withinDuplicateTolerance(candidate, row)) continue;
+      matchedIndex = i;
+      break;
+    }
+    if (matchedIndex < 0) {
+      out.push(row);
+      continue;
+    }
+
+    const existing = out[matchedIndex];
+    const rowScore =
+      sourcePriority(row.source) * 1000 +
+      (row.avgHr != null ? 50 : 0) +
+      (row.maxHr != null ? 30 : 0) +
+      (row.elevationM != null ? 20 : 0) +
+      (row.rawFilePath ? 5 : 0);
+    const existingScore =
+      sourcePriority(existing.source) * 1000 +
+      (existing.avgHr != null ? 50 : 0) +
+      (existing.maxHr != null ? 30 : 0) +
+      (existing.elevationM != null ? 20 : 0) +
+      (existing.rawFilePath ? 5 : 0);
+
+    if (rowScore > existingScore) out[matchedIndex] = row;
+  }
+  return out;
+}
+
 export async function cloudGetWorkoutsBetween(startInclusive: string, endExclusive: string): Promise<CloudWorkout[]> {
   await ensureCloudWorkoutTable();
   const res = await sql<Record<string, unknown>>`
@@ -320,7 +395,7 @@ export async function cloudGetWorkoutsBetween(startInclusive: string, endExclusi
     WHERE startAt >= ${startInclusive} AND startAt < ${endExclusive}
     ORDER BY startAt ASC
   `;
-  return res.rows.map(mapWorkoutRow);
+  return dedupeCloudWorkouts(res.rows.map(mapWorkoutRow));
 }
 
 export async function cloudGetWorkoutsSince(isoDate: string): Promise<CloudWorkout[]> {
@@ -331,7 +406,162 @@ export async function cloudGetWorkoutsSince(isoDate: string): Promise<CloudWorko
     WHERE startAt >= ${isoDate}
     ORDER BY startAt DESC
   `;
-  return res.rows.map(mapWorkoutRow);
+  return dedupeCloudWorkouts(res.rows.map(mapWorkoutRow));
+}
+
+export async function cloudGetTopEfforts(distanceKey: string, limit = 5, includeSegments = false): Promise<CloudTopEffort[]> {
+  await ensureCloudWorkoutTable();
+  await sql`
+    CREATE TABLE IF NOT EXISTS workout_best_efforts (
+      id TEXT PRIMARY KEY,
+      workoutId TEXT NOT NULL,
+      distanceKey TEXT NOT NULL,
+      timeSec DOUBLE PRECISION NOT NULL,
+      source TEXT NOT NULL,
+      segmentStartSec DOUBLE PRECISION,
+      segmentEndSec DOUBLE PRECISION,
+      createdAt TEXT NOT NULL,
+      UNIQUE(workoutId, distanceKey, source, segmentStartSec, segmentEndSec)
+    );
+  `;
+  const res = await sql<Record<string, unknown>>`
+    SELECT
+      e.id,
+      e.distanceKey,
+      e.timeSec,
+      ((e.timeSec / 60.0) / CASE e.distanceKey
+        WHEN '1k' THEN 1
+        WHEN '3k' THEN 3
+        WHEN '5k' THEN 5
+        WHEN '10k' THEN 10
+        WHEN '15k' THEN 15
+        WHEN 'half' THEN 21.0975
+        WHEN '25k' THEN 25
+        WHEN '30k' THEN 30
+        ELSE 1 END
+      ) as paceMinPerKm,
+      w.id as workoutId,
+      w.startAt as workoutStartAt,
+      e.source,
+      e.segmentStartSec,
+      e.segmentEndSec
+    FROM workout_best_efforts e
+    JOIN workouts w ON w.id = e.workoutId
+    WHERE e.distanceKey = ${distanceKey}
+      AND (${includeSegments ? 1 : 0} = 1 OR e.source = 'whole_workout')
+    ORDER BY e.timeSec ASC,
+             CASE WHEN e.source = 'rolling_segment' THEN 0 ELSE 1 END ASC,
+             w.startAt DESC
+    LIMIT ${limit}
+  `;
+
+  const distanceKm =
+    distanceKey === "1k"
+      ? 1
+      : distanceKey === "3k"
+        ? 3
+        : distanceKey === "5k"
+          ? 5
+          : distanceKey === "10k"
+            ? 10
+            : distanceKey === "15k"
+              ? 15
+              : distanceKey === "half"
+                ? 21.0975
+                : distanceKey === "25k"
+                  ? 25
+                  : 30;
+
+  return res.rows.map((row) => ({
+    id: String(row.id),
+    distanceKey: String(row.distancekey ?? row.distanceKey),
+    timeSec: Number(row.timesec ?? row.timeSec ?? 0),
+    paceMinPerKm: Number(row.paceminperkm ?? row.paceMinPerKm ?? 0),
+    workoutId: String(row.workoutid ?? row.workoutId),
+    workoutStartAt: String(row.workoutstartat ?? row.workoutStartAt),
+    source: String(row.source) === "rolling_segment" ? "rolling_segment" : "whole_workout",
+    segmentStartSec: row.segmentstartsec == null ? null : Number(row.segmentstartsec),
+    segmentEndSec: row.segmentendsec == null ? null : Number(row.segmentendsec),
+    distanceKm
+  }));
+}
+
+export async function cloudGetTopEffortsForWorkout(workoutId: string): Promise<CloudTopEffort[]> {
+  await ensureCloudWorkoutTable();
+  await sql`
+    CREATE TABLE IF NOT EXISTS workout_best_efforts (
+      id TEXT PRIMARY KEY,
+      workoutId TEXT NOT NULL,
+      distanceKey TEXT NOT NULL,
+      timeSec DOUBLE PRECISION NOT NULL,
+      source TEXT NOT NULL,
+      segmentStartSec DOUBLE PRECISION,
+      segmentEndSec DOUBLE PRECISION,
+      createdAt TEXT NOT NULL,
+      UNIQUE(workoutId, distanceKey, source, segmentStartSec, segmentEndSec)
+    );
+  `;
+  const res = await sql<Record<string, unknown>>`
+    SELECT
+      e.id,
+      e.distanceKey,
+      e.timeSec,
+      ((e.timeSec / 60.0) / CASE e.distanceKey
+        WHEN '1k' THEN 1
+        WHEN '3k' THEN 3
+        WHEN '5k' THEN 5
+        WHEN '10k' THEN 10
+        WHEN '15k' THEN 15
+        WHEN 'half' THEN 21.0975
+        WHEN '25k' THEN 25
+        WHEN '30k' THEN 30
+        ELSE 1 END
+      ) as paceMinPerKm,
+      w.id as workoutId,
+      w.startAt as workoutStartAt,
+      e.source,
+      e.segmentStartSec,
+      e.segmentEndSec
+    FROM workout_best_efforts e
+    JOIN workouts w ON w.id = e.workoutId
+    WHERE e.workoutId = ${workoutId}
+    ORDER BY CASE e.distanceKey
+      WHEN '1k' THEN 1
+      WHEN '3k' THEN 3
+      WHEN '5k' THEN 5
+      WHEN '10k' THEN 10
+      WHEN '15k' THEN 15
+      WHEN 'half' THEN 21.0975
+      WHEN '25k' THEN 25
+      WHEN '30k' THEN 30
+      ELSE 999 END ASC,
+      e.timeSec ASC,
+      CASE WHEN e.source = 'rolling_segment' THEN 0 ELSE 1 END ASC
+  `;
+
+  const distanceByKey: Record<string, number> = {
+    "1k": 1,
+    "3k": 3,
+    "5k": 5,
+    "10k": 10,
+    "15k": 15,
+    half: 21.0975,
+    "25k": 25,
+    "30k": 30
+  };
+
+  return res.rows.map((row) => ({
+    id: String(row.id),
+    distanceKey: String(row.distancekey ?? row.distanceKey),
+    timeSec: Number(row.timesec ?? row.timeSec ?? 0),
+    paceMinPerKm: Number(row.paceminperkm ?? row.paceMinPerKm ?? 0),
+    workoutId: String(row.workoutid ?? row.workoutId),
+    workoutStartAt: String(row.workoutstartat ?? row.workoutStartAt),
+    source: String(row.source) === "rolling_segment" ? "rolling_segment" : "whole_workout",
+    segmentStartSec: row.segmentstartsec == null ? null : Number(row.segmentstartsec),
+    segmentEndSec: row.segmentendsec == null ? null : Number(row.segmentendsec),
+    distanceKm: distanceByKey[String(row.distancekey ?? row.distanceKey)] ?? 0
+  }));
 }
 
 export async function cloudGetWorkoutById(id: string): Promise<CloudWorkout | null> {

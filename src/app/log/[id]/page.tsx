@@ -16,7 +16,8 @@ import {
   cloudGetAdjacentWorkoutIds,
   cloudGetWorkoutById,
   cloudGetWorkoutFeedback,
-  cloudGetWorkoutOfficialDurationSec
+  cloudGetWorkoutOfficialDurationSec,
+  cloudGetTopEffortsForWorkout
 } from "@/lib/cloud-db";
 import { formatDisplayDateTime } from "@/lib/date";
 import { computeRunScore } from "@/lib/run-score";
@@ -106,7 +107,7 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
   const isBike = workout.sport === "bike";
   const hasRouteMap = isRun || isBike;
   const feedback = isRun ? (useCloud ? await cloudGetWorkoutFeedback(workout.id) : getWorkoutFeedback(workout.id)) : null;
-  const allEfforts = useCloud ? [] : getTopEffortsForWorkout(workout.id);
+  const allEfforts = useCloud ? await cloudGetTopEffortsForWorkout(workout.id) : getTopEffortsForWorkout(workout.id);
   const bestEfforts = Array.from(
     allEfforts.reduce((map, effort) => {
       if (!map.has(effort.distanceKey)) {
@@ -150,11 +151,6 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
 
   const sportColor = workout.sport === "run" ? "#72dcff" : workout.sport === "bike" ? "#fdd848" : workout.sport === "strength" ? "#fd8b00" : "#c3ffcd";
   const sportIconChar = workout.sport === "run" ? "🏃" : workout.sport === "bike" ? "🚴" : workout.sport === "strength" ? "💪" : "🏊";
-
-  // Find best pace km for highlight
-  const bestPaceKm = splits.length > 0
-    ? splits.reduce((best, s) => (s.paceMinPerKm != null && (best == null || s.paceMinPerKm < best.paceMinPerKm!)) ? s : best, splits[0])?.km
-    : null;
 
   const displayHours = Math.floor(runDisplayDurationSec / 3600);
   const displayMins = Math.floor((runDisplayDurationSec % 3600) / 60);
@@ -264,33 +260,6 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
         </section>
       )}
 
-      {/* ── Splits table (visible directly) ── */}
-      {isRun && splits.length > 0 && (
-        <section className="wkd-splits-section">
-          <div className="wkd-section-header">
-            <h2>סגמנטים (Splits)</h2>
-          </div>
-          <div className="wkd-splits-table">
-            <div className="wkd-splits-row wkd-splits-head">
-              <span>ק״מ</span>
-              <span>קצב (PACE)</span>
-              <span>דופק ממוצע</span>
-              <span>זמן מצטבר</span>
-            </div>
-            {splits.map((split) => (
-              <div key={split.km} className="wkd-splits-row">
-                <span className="wkd-split-km">{split.km}</span>
-                <span style={{ color: split.km === bestPaceKm ? "#72dcff" : "inherit" }}>
-                  {formatPace(split.paceMinPerKm)}
-                </span>
-                <span>{split.avgHr != null ? `${split.avgHr} bpm` : "-"}</span>
-                <span>{formatClock(split.cumulativeSec)}</span>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
       {/* ── Run Score (fold) ── */}
       {isRun && hrScore && (
         <details className="wkd-fold">
@@ -388,7 +357,7 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
       )}
 
       {/* ── Feedback (fold) ── */}
-      <details className="wkd-fold">
+      <details className="wkd-fold wkd-fold-feedback">
         <summary className="wkd-fold-summary">
           משוב אחרי אימון
           <span className="wkd-fold-icon">›</span>
@@ -434,13 +403,13 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
 
       {/* ── Best Efforts (fold, if isRun) ── */}
       {isRun && bestEfforts.length > 0 && (
-        <details className="wkd-fold">
+        <details className="wkd-fold wkd-fold-segments">
           <summary className="wkd-fold-summary">
             המקטעים הטובים ביותר
             <span className="wkd-fold-icon">›</span>
           </summary>
           <div className="wkd-fold-body">
-            <div className="efforts-grid">
+            <div className="efforts-grid efforts-grid-compact">
               {bestEfforts.map((effort) => (
                 <article key={effort.id} className="effort-card">
                   <div className="effort-topline">

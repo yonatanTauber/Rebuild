@@ -120,6 +120,74 @@ async function findCloudWorkoutMatch(localWorkout: AnyRow) {
   return best?.id ? String(best.id) : null;
 }
 
+async function upsertWorkouts(rows: AnyRow[]) {
+  let inserted = 0;
+  let updated = 0;
+  for (const w of rows) {
+    const id = String(w.id ?? "");
+    const source = String(w.source ?? "import");
+    const sport = String(w.sport ?? "");
+    const startAt = String(w.startAt ?? "");
+    const durationSec = Number(w.durationSec ?? 0);
+    const rawFileHash = strOrNull(w.rawFileHash) ?? `${source}:${id || startAt}:${durationSec}`;
+    if (!id || !sport || !startAt || !Number.isFinite(durationSec) || durationSec <= 0) continue;
+
+    const res = await dbQuery<{ inserted: boolean }>(
+      `
+      INSERT INTO workouts
+        (id, source, userId, sport, startAt, durationSec, distanceM, avgHr, maxHr, elevationM, powerAvg, paceAvg, tssLike, trimp, canonicalKey, rawFileHash, rawFilePath, shoeId, shoeKmAtAssign)
+      VALUES
+        ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19)
+      ON CONFLICT (id) DO UPDATE SET
+        source = EXCLUDED.source,
+        userId = EXCLUDED.userId,
+        sport = EXCLUDED.sport,
+        startAt = EXCLUDED.startAt,
+        durationSec = EXCLUDED.durationSec,
+        distanceM = EXCLUDED.distanceM,
+        avgHr = EXCLUDED.avgHr,
+        maxHr = EXCLUDED.maxHr,
+        elevationM = EXCLUDED.elevationM,
+        powerAvg = EXCLUDED.powerAvg,
+        paceAvg = EXCLUDED.paceAvg,
+        tssLike = EXCLUDED.tssLike,
+        trimp = EXCLUDED.trimp,
+        canonicalKey = EXCLUDED.canonicalKey,
+        rawFileHash = EXCLUDED.rawFileHash,
+        rawFilePath = EXCLUDED.rawFilePath,
+        shoeId = EXCLUDED.shoeId,
+        shoeKmAtAssign = EXCLUDED.shoeKmAtAssign
+      RETURNING (xmax = 0) AS inserted
+      `,
+      [
+        id,
+        source,
+        strOrNull(w.userId),
+        sport,
+        startAt,
+        Math.round(durationSec),
+        numOrNull(w.distanceM),
+        numOrNull(w.avgHr),
+        numOrNull(w.maxHr),
+        numOrNull(w.elevationM),
+        numOrNull(w.powerAvg),
+        numOrNull(w.paceAvg),
+        Number(w.tssLike ?? 0),
+        Number(w.trimp ?? 0),
+        strOrNull(w.canonicalKey),
+        rawFileHash,
+        strOrNull(w.rawFilePath),
+        strOrNull(w.shoeId),
+        numOrNull(w.shoeKmAtAssign)
+      ]
+    );
+    const created = Boolean(res.rows[0]?.inserted);
+    if (created) inserted += 1;
+    else updated += 1;
+  }
+  return { inserted, updated };
+}
+
 async function upsertDailyRecovery(rows: AnyRow[]) {
   for (const r of rows) {
     await dbQuery(
@@ -751,6 +819,32 @@ async function upsertRulesAndPlans(localDb: SqliteDb) {
   }
 }
 
+async function upsertWorkoutBestEfforts(rows: AnyRow[]) {
+  for (const row of rows) {
+    await dbQuery(
+      `
+      INSERT INTO workout_best_efforts
+        (id, workoutId, distanceKey, timeSec, source, segmentStartSec, segmentEndSec, createdAt)
+      VALUES
+        ($1,$2,$3,$4,$5,$6,$7,$8)
+      ON CONFLICT (workoutId, distanceKey, source, segmentStartSec, segmentEndSec) DO UPDATE SET
+        timeSec = LEAST(workout_best_efforts.timeSec, EXCLUDED.timeSec),
+        createdAt = EXCLUDED.createdAt
+      `,
+      [
+        String(row.id),
+        String(row.workoutId ?? row.workoutid ?? ""),
+        String(row.distanceKey ?? row.distancekey ?? ""),
+        Number(row.timeSec ?? row.timesec ?? 0),
+        String(row.source ?? "whole_workout"),
+        row.segmentStartSec == null ? null : Number(row.segmentStartSec),
+        row.segmentEndSec == null ? null : Number(row.segmentEndSec),
+        isoOrNull(row.createdAt) ?? new Date().toISOString()
+      ]
+    );
+  }
+}
+
 async function main() {
   // Load .env.local (DATABASE_URL) for local one-time migration runs.
   loadEnvConfig(process.cwd(), true);
@@ -787,10 +881,15 @@ async function main() {
     : [];
   const pantryItems = hasTable(local, "nutrition_pantry_items") ? safeAll(local, "SELECT * FROM nutrition_pantry_items") : [];
   const preferences = hasTable(local, "nutrition_preferences") ? safeAll(local, "SELECT * FROM nutrition_preferences") : [];
+  const bestEfforts = hasTable(local, "workout_best_efforts") ? safeAll(local, "SELECT * FROM workout_best_efforts") : [];
 
   // Workouts (for mapping feedback/overrides/fueling/shoes).
   const localWorkouts = hasTable(local, "workouts") ? safeAll(local, "SELECT * FROM workouts") : [];
   const localWorkoutsById = new Map(localWorkouts.map((w) => [String(w.id), w]));
+
+  console.log(`Migrating workouts (${localWorkouts.length})...`);
+  const workoutRes = await upsertWorkouts(localWorkouts);
+  console.log(`Workouts upserted: inserted=${workoutRes.inserted} updated=${workoutRes.updated}`);
 
   // Prepare shoe assignment mapping (best-effort) by matching workouts to cloud.
   const shoeIdByCloudWorkoutId = new Map<string, { shoeId: string; shoeKmAtAssign: number | null }>();
@@ -843,6 +942,9 @@ async function main() {
   console.log("Migrating workout-linked data (feedback/overrides/fueling/shoe assignments)...");
   const linkRes = await migrateWorkoutLinkedTables({ localDb: local, localWorkoutsById, shoeIdByCloudWorkoutId });
   console.log(`Workout feedback matched=${linkRes.matched} unmatched=${linkRes.unmatched}`);
+
+  console.log("Migrating workout best efforts...");
+  await upsertWorkoutBestEfforts(bestEfforts);
 
   console.log("Migrating weekly/forecast/logic tables...");
   await upsertRulesAndPlans(local);

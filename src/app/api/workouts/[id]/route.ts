@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { getTopEffortsForWorkout, getWorkoutById } from "@/lib/db";
 import { getWorkoutDetailData, mapBounds } from "@/lib/workout-detail";
-import { cloudEnabled, cloudGetWorkoutById } from "@/lib/cloud-db";
+import { cloudEnabled, cloudGetWorkoutById, cloudGetTopEffortsForWorkout } from "@/lib/cloud-db";
 import { decodeRouteParam } from "@/lib/url";
 import { getCloudWorkoutDetailData } from "@/lib/strava-workout-detail";
 export const dynamic = "force-dynamic";
@@ -48,6 +48,6 @@ export async function GET(_: Request, { params }: { params: Promise<{ id: string
     paceDisplayMinPerKm,
     splits: detail.splits,
     heartRateSamples: detail.heartRateSamples,
-    bestEfforts: cloudEnabled() ? [] : getTopEffortsForWorkout(workout.id)
+    bestEfforts: cloudEnabled() ? await cloudGetTopEffortsForWorkout(workout.id) : getTopEffortsForWorkout(workout.id)
   });
 }

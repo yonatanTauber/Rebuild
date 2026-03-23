@@ -2,6 +2,7 @@ import { getTopEfforts, getWorkouts } from "@/lib/db";
 import { formatISODate } from "@/lib/date";
 import type { Sport, Workout } from "@/lib/types";
 import { PB_DISTANCES } from "@/lib/pb-engine";
+import { cloudEnabled, cloudGetTopEfforts, cloudGetWorkoutsSince } from "@/lib/cloud-db";
 
 function km(workout: Workout) {
   return Math.max(0, (workout.distanceM ?? 0) / 1000);
@@ -30,14 +31,67 @@ type BuildRangeArgs = {
   allYears?: boolean;
 };
 
-export function buildAnalytics(args: BuildRangeArgs) {
+function wholeWorkoutToleranceKm(targetKm: number) {
+  if (targetKm <= 3) return 0.1;
+  if (targetKm <= 5) return 0.12;
+  if (targetKm <= 10) return 0.18;
+  if (targetKm <= 16) return 0.28;
+  if (targetKm <= 25) return 0.4;
+  if (targetKm >= 30) return 1.2;
+  return 0.6;
+}
+
+function buildCloudWholeWorkoutPbs(workouts: Workout[]) {
+  const runs = workouts.filter((w) => w.sport === "run" && (w.distanceM ?? 0) > 0 && w.durationSec > 0);
+  return PB_DISTANCES.map((target) => {
+    const tolerance = wholeWorkoutToleranceKm(target.km);
+    const candidates = runs.filter((w) => Math.abs(((w.distanceM ?? 0) / 1000) - target.km) <= tolerance);
+    const best = candidates.sort((a, b) => a.durationSec - b.durationSec || Date.parse(b.startAt) - Date.parse(a.startAt))[0];
+    const pace = best ? best.durationSec / 60 / target.km : null;
+    return {
+      distanceKey: target.key,
+      distanceLabel: target.label,
+      distanceKm: target.km,
+      bestTimeSec: best ? Math.round(best.durationSec) : null,
+      paceMinPerKm: pace != null ? toOneDec(pace) : null,
+      workoutId: best?.id ?? null,
+      date: best?.startAt?.slice(0, 10) ?? null,
+      source: best ? ("whole_workout" as const) : null
+    };
+  });
+}
+
+async function buildCloudPbs() {
+  const pbs = [];
+  for (const target of PB_DISTANCES) {
+    const includeSegments = target.key === "1k" || target.key === "3k";
+    const top = await cloudGetTopEfforts(target.key, 1, includeSegments);
+    const best = top[0];
+    pbs.push({
+      distanceKey: target.key,
+      distanceLabel: target.label,
+      distanceKm: target.km,
+      bestTimeSec: best ? Math.round(best.timeSec) : null,
+      paceMinPerKm: best ? toOneDec(best.paceMinPerKm) : null,
+      workoutId: best?.workoutId ?? null,
+      date: best?.workoutStartAt?.slice(0, 10) ?? null,
+      source: best?.source ?? null
+    });
+  }
+  return pbs;
+}
+
+export async function buildAnalytics(args: BuildRangeArgs) {
   const { sport, fromYear, toYear, shoeId, allYears } = args;
   const today = formatISODate();
   const todayDate = new Date(`${today}T00:00:00.000Z`);
   const currentYear = todayDate.getUTCFullYear();
   const currentMonth = todayDate.getUTCMonth() + 1;
 
-  const allSportWorkouts = getWorkouts(100000).filter((w) => w.sport === sport);
+  const sourceWorkouts = cloudEnabled()
+    ? (await cloudGetWorkoutsSince("1900-01-01T00:00:00.000Z")) as Workout[]
+    : getWorkouts(100000);
+  const allSportWorkouts = sourceWorkouts.filter((w) => w.sport === sport);
   const workouts =
     sport === "run" && shoeId
       ? allSportWorkouts.filter((w) => (shoeId === "unassigned" ? !w.shoeId : (w.shoeId ?? "") === shoeId))
@@ -197,20 +251,22 @@ export function buildAnalytics(args: BuildRangeArgs) {
       shoeName: w.shoeName ?? "ללא שיוך"
     }));
 
-  const pbs = PB_DISTANCES.map((target) => {
-    const includeSegments = target.key === "1k" || target.key === "3k";
-    const [best] = getTopEfforts(target.key, 1, includeSegments);
-    return {
-      distanceKey: target.key,
-      distanceLabel: target.label,
-      distanceKm: target.km,
-      bestTimeSec: best ? Math.round(best.timeSec) : null,
-      paceMinPerKm: best ? toOneDec(best.paceMinPerKm) : null,
-      workoutId: best?.workoutId ?? null,
-      date: best?.workoutStartAt?.slice(0, 10) ?? null,
-      source: best?.source ?? null
-    };
-  });
+  const pbs = cloudEnabled()
+    ? await buildCloudPbs()
+    : PB_DISTANCES.map((target) => {
+        const includeSegments = target.key === "1k" || target.key === "3k";
+        const [best] = getTopEfforts(target.key, 1, includeSegments);
+        return {
+          distanceKey: target.key,
+          distanceLabel: target.label,
+          distanceKm: target.km,
+          bestTimeSec: best ? Math.round(best.timeSec) : null,
+          paceMinPerKm: best ? toOneDec(best.paceMinPerKm) : null,
+          workoutId: best?.workoutId ?? null,
+          date: best?.workoutStartAt?.slice(0, 10) ?? null,
+          source: best?.source ?? null
+        };
+      });
 
   const rangeSummary = {
     totalCount: rangeWorkoutsCount,

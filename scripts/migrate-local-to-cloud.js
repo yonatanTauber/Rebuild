@@ -262,6 +262,17 @@ async function ensureSchema(sql) {
       notes TEXT,
       createdAt TEXT NOT NULL,
       updatedAt TEXT NOT NULL
+    )`,
+    `CREATE TABLE IF NOT EXISTS workout_best_efforts (
+      id TEXT PRIMARY KEY,
+      workoutId TEXT NOT NULL,
+      distanceKey TEXT NOT NULL,
+      timeSec DOUBLE PRECISION NOT NULL,
+      source TEXT NOT NULL,
+      segmentStartSec DOUBLE PRECISION,
+      segmentEndSec DOUBLE PRECISION,
+      createdAt TEXT NOT NULL,
+      UNIQUE(workoutId, distanceKey, source, segmentStartSec, segmentEndSec)
     )`
   ];
   for (const stmt of stmts) await sql.query(stmt);
@@ -308,6 +319,73 @@ async function findCloudWorkoutMatch(sql, localWorkout) {
   return best?.id ? String(best.id) : null;
 }
 
+async function upsertWorkouts(sql, rows) {
+  let inserted = 0;
+  let updated = 0;
+  for (const w of rows) {
+    const id = String(w.id ?? "");
+    const source = String(w.source ?? "import");
+    const sport = String(w.sport ?? "");
+    const startAt = String(w.startAt ?? "");
+    const durationSec = Number(w.durationSec ?? 0);
+    const rawFileHash = strOrNull(w.rawFileHash) || `${source}:${id || startAt}:${durationSec}`;
+    if (!id || !sport || !startAt || !Number.isFinite(durationSec) || durationSec <= 0) continue;
+
+    const res = await sql.query(
+      `INSERT INTO workouts
+        (id, source, userId, sport, startAt, durationSec, distanceM, avgHr, maxHr, elevationM, powerAvg, paceAvg, tssLike, trimp, canonicalKey, rawFileHash, rawFilePath, shoeId, shoeKmAtAssign)
+       VALUES
+        ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19)
+       ON CONFLICT (id) DO UPDATE SET
+        source=EXCLUDED.source,
+        userId=EXCLUDED.userId,
+        sport=EXCLUDED.sport,
+        startAt=EXCLUDED.startAt,
+        durationSec=EXCLUDED.durationSec,
+        distanceM=EXCLUDED.distanceM,
+        avgHr=EXCLUDED.avgHr,
+        maxHr=EXCLUDED.maxHr,
+        elevationM=EXCLUDED.elevationM,
+        powerAvg=EXCLUDED.powerAvg,
+        paceAvg=EXCLUDED.paceAvg,
+        tssLike=EXCLUDED.tssLike,
+        trimp=EXCLUDED.trimp,
+        canonicalKey=EXCLUDED.canonicalKey,
+        rawFileHash=EXCLUDED.rawFileHash,
+        rawFilePath=EXCLUDED.rawFilePath,
+        shoeId=EXCLUDED.shoeId,
+        shoeKmAtAssign=EXCLUDED.shoeKmAtAssign
+       RETURNING (xmax = 0) AS inserted`,
+      [
+        id,
+        source,
+        strOrNull(w.userId),
+        sport,
+        startAt,
+        Math.round(durationSec),
+        numOrNull(w.distanceM),
+        numOrNull(w.avgHr),
+        numOrNull(w.maxHr),
+        numOrNull(w.elevationM),
+        numOrNull(w.powerAvg),
+        numOrNull(w.paceAvg),
+        Number(w.tssLike ?? 0),
+        Number(w.trimp ?? 0),
+        strOrNull(w.canonicalKey),
+        rawFileHash,
+        strOrNull(w.rawFilePath),
+        strOrNull(w.shoeId),
+        numOrNull(w.shoeKmAtAssign)
+      ]
+    );
+
+    const created = Boolean(res?.[0]?.inserted);
+    if (created) inserted += 1;
+    else updated += 1;
+  }
+  return { inserted, updated };
+}
+
 async function main() {
   loadDotEnvLocal();
   const url = process.env.DATABASE_URL || process.env.POSTGRES_URL || process.env.POSTGRES_PRISMA_URL;
@@ -339,12 +417,38 @@ async function main() {
   const favorites = safeAll(local, "SELECT * FROM nutrition_ingredient_favorites");
   const pantryItems = safeAll(local, "SELECT * FROM nutrition_pantry_items");
   const preferences = safeAll(local, "SELECT * FROM nutrition_preferences");
+  const bestEfforts = safeAll(local, "SELECT * FROM workout_best_efforts");
 
   const localWorkouts = safeAll(local, "SELECT * FROM workouts");
   const localWorkoutsById = new Map(localWorkouts.map((w) => [String(w.id), w]));
 
   console.log(`Local DB: ${sqlitePath()}`);
-  console.log(`Rows: recovery=${localRecovery.length} meals=${mealHistory.length} shoes=${shoes.length} feedback=${safeAll(local, "SELECT * FROM workout_feedback").length}`);
+  console.log(`Rows: recovery=${localRecovery.length} meals=${mealHistory.length} shoes=${shoes.length} feedback=${safeAll(local, "SELECT * FROM workout_feedback").length} bestEfforts=${bestEfforts.length}`);
+
+  console.log(`Migrating workouts (${localWorkouts.length})...`);
+  const workoutRes = await upsertWorkouts(sql, localWorkouts);
+  console.log(`Workouts upserted: inserted=${workoutRes.inserted} updated=${workoutRes.updated}`);
+
+  // workout_best_efforts
+  for (const row of bestEfforts) {
+    await sql.query(
+      `INSERT INTO workout_best_efforts (id, workoutId, distanceKey, timeSec, source, segmentStartSec, segmentEndSec, createdAt)
+       VALUES ($1,$2,$3,$4,$5,$6,$7,$8)
+       ON CONFLICT (workoutId, distanceKey, source, segmentStartSec, segmentEndSec) DO UPDATE SET
+         timeSec = LEAST(workout_best_efforts.timeSec, EXCLUDED.timeSec),
+         createdAt = EXCLUDED.createdAt`,
+      [
+        String(row.id),
+        String(row.workoutId ?? row.workoutid ?? ""),
+        String(row.distanceKey ?? row.distancekey ?? ""),
+        Number(row.timeSec ?? row.timesec ?? 0),
+        String(row.source ?? "whole_workout"),
+        row.segmentStartSec == null ? null : Number(row.segmentStartSec),
+        row.segmentEndSec == null ? null : Number(row.segmentEndSec),
+        strOrNull(row.createdAt) || new Date().toISOString()
+      ]
+    );
+  }
 
   // daily_recovery
   for (const r of localRecovery) {

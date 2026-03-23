@@ -3441,6 +3441,50 @@ button.alt {
   }
 }
 
+@media (max-width: 768px) {
+  .today-workouts-desktop-list {
+    display: none;
+  }
+
+  .today-workouts-mobile-carousel-shell {
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .today-workouts-mobile-carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 0.45rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .today-workouts-mobile-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .today-workouts-mobile-carousel .actual-workout-banner {
+    scroll-snap-align: start;
+    margin: 0;
+  }
+
+  .today-workouts-mobile-carousel .actual-workout-banner .workout-banner {
+    min-height: 104px;
+  }
+
+  .today-workouts-mobile-carousel .actual-workout-banner .workout-summary-line {
+    gap: 0.34rem;
+  }
+
+  .today-workouts-mobile-carousel .actual-workout-banner .workout-summary-pill {
+    font-size: 0.76rem;
+    padding: 0.18rem 0.42rem;
+  }
+}
+
 .journal-target-pill.on_target {
   background: rgba(195, 255, 205, 0.1);
   border-color: rgba(195, 255, 205, 0.4);
@@ -5120,10 +5164,16 @@ button.alt {
   gap: 0.85rem;
 }
 
+.efforts-grid-compact {
+  grid-template-columns: 1fr;
+  gap: 0.45rem;
+}
+
 .effort-card {
-  border-radius: 18px;
-  padding: 0.9rem 1rem;
-  background: var(--surface-container);
+  border-radius: 12px;
+  padding: 0.48rem 0.62rem;
+  background: var(--surface-container-high);
+  border: 1px solid var(--outline-variant);
   color: var(--on-surface);
 }
 
@@ -5139,13 +5189,14 @@ button.alt {
 
 .effort-topline {
   font-weight: 700;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.14rem;
+  font-size: 0.84rem;
 }
 
 .effort-meta {
   color: var(--on-surface-variant);
-  font-size: 0.92rem;
-  margin-top: 0.25rem;
+  font-size: 0.78rem;
+  margin-top: 0.06rem;
   flex-wrap: wrap;
 }
 
@@ -5395,6 +5446,83 @@ button.alt {
   display: grid;
   gap: 0.65rem;
   align-content: start;
+}
+
+.today-workouts-desktop-list {
+  display: grid;
+  gap: 0.52rem;
+}
+
+.today-workouts-mobile-carousel-shell {
+  display: none;
+}
+
+.actual-workout-banner.compact-secondary {
+  padding: 0.54rem 0.62rem;
+}
+
+.actual-workout-banner.compact-secondary .workout-banner {
+  min-height: 96px;
+}
+
+.actual-workout-banner.compact-secondary .workout-summary-pill {
+  font-size: 0.78rem;
+  padding: 0.2rem 0.44rem;
+}
+
+.today-workouts-mobile-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.today-workouts-mobile-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.26rem;
+}
+
+.today-workouts-mobile-dots i {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--outline-variant);
+  opacity: 0.8;
+}
+
+.today-workouts-mobile-dots i.active {
+  background: var(--primary);
+  opacity: 1;
+}
+
+.today-workouts-mobile-more-list {
+  border-radius: 12px;
+  border: 1px solid var(--outline-variant);
+  background: var(--surface-container-high);
+  padding: 0.45rem;
+  display: grid;
+  gap: 0.38rem;
+}
+
+.today-workout-mini-link {
+  border-radius: 10px;
+  border: 1px solid var(--outline-variant);
+  background: var(--surface-container);
+  padding: 0.38rem 0.5rem;
+  text-decoration: none;
+  color: var(--on-surface);
+  display: grid;
+  gap: 0.14rem;
+}
+
+.today-workout-mini-link strong {
+  font-size: 0.8rem;
+}
+
+.today-workout-mini-link span {
+  font-size: 0.74rem;
+  color: var(--on-surface-variant);
 }
 
 .today-next-session-line {
@@ -8376,6 +8504,44 @@ button.alt {
   color: var(--on-surface-variant);
   font-size: 0.83rem;
   padding: 0.2rem 0;
+}
+
+.wkd-fold-feedback .wkd-fold-body {
+  padding: 0.3rem 0 0.65rem;
+}
+
+.wkd-fold-feedback .run-feedback-shell {
+  gap: 0.32rem;
+  max-width: 100%;
+}
+
+.wkd-fold-feedback .run-feedback-summary-card {
+  padding: 0.4rem;
+  border-radius: 10px;
+  gap: 0.3rem;
+}
+
+.wkd-fold-feedback .run-feedback-summary-grid {
+  gap: 0.22rem;
+}
+
+.wkd-fold-feedback .run-feedback-summary-row {
+  padding: 0.28rem 0.34rem;
+  border-radius: 8px;
+  grid-template-columns: minmax(86px, auto) minmax(76px, 1fr) auto;
+}
+
+.wkd-fold-feedback .run-feedback-summary-label {
+  font-size: 0.72rem;
+}
+
+.wkd-fold-feedback .run-feedback-summary-text {
+  font-size: 0.78rem;
+}
+
+.wkd-fold-feedback .feedback-score-visual i {
+  width: 10px;
+  height: 4px;
 }
 
 .wkd-empty-note {

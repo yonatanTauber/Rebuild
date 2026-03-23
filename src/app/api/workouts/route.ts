@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getWorkoutsBetween } from "@/lib/db";
+import { cloudGetWorkoutsBetween } from "@/lib/cloud-db";
 import { formatLocalISODate, parseLocalISODate } from "@/lib/date";
-import { sql } from "@vercel/postgres";
 export const dynamic = "force-dynamic";
 
 export const runtime = "nodejs";
@@ -64,50 +64,22 @@ export async function GET(request: NextRequest) {
   }> = [];
 
   if (useCloud) {
-    // Read from Vercel Postgres (cloud mode). Note: some fields may be missing until we port more tables.
-    const res = await sql<{
-      id: string;
-      sport: string;
-      source: string;
-      startAt: string;
-      durationSec: number;
-      distanceM: number | null;
-      avgHr: number | null;
-      elevationM: number | null;
-      tssLike: number;
-      shoeId: string | null;
-      shoeName: string | null;
-    }>`
-      SELECT
-        id,
-        sport,
-        source,
-        startat as "startAt",
-        durationsec as "durationSec",
-        distancem as "distanceM",
-        avghr as "avgHr",
-        elevationm as "elevationM",
-        tsslike as "tssLike",
-        shoeid as "shoeId",
-        NULL::text as "shoeName"
-      FROM workouts
-      WHERE startat >= ${rangeStart.toISOString()} AND startat < ${rangeEnd.toISOString()}
-      ORDER BY startat DESC
-    `;
-
-    workouts = res.rows.map((row) => ({
-      id: row.id,
-      sport: (row.sport as "run" | "bike" | "swim" | "strength") ?? "run",
-      source: (row.source as "strava" | "healthfit" | "bavel" | "smashrun") ?? "strava",
-      startAt: row.startAt,
-      durationSec: Number(row.durationSec ?? 0),
-      distanceM: row.distanceM == null ? null : Number(row.distanceM),
-      avgHr: row.avgHr == null ? null : Number(row.avgHr),
-      elevationM: row.elevationM == null ? null : Number(row.elevationM),
-      tssLike: Number(row.tssLike ?? 0),
-      shoeId: row.shoeId ?? null,
-      shoeName: row.shoeName ?? null
-    }));
+    const cloudRows = await cloudGetWorkoutsBetween(rangeStart.toISOString(), rangeEnd.toISOString());
+    workouts = cloudRows
+      .sort((a, b) => Date.parse(b.startAt) - Date.parse(a.startAt))
+      .map((row) => ({
+        id: row.id,
+        sport: row.sport,
+        source: row.source,
+        startAt: row.startAt,
+        durationSec: Number(row.durationSec ?? 0),
+        distanceM: row.distanceM == null ? null : Number(row.distanceM),
+        avgHr: row.avgHr == null ? null : Number(row.avgHr),
+        elevationM: row.elevationM == null ? null : Number(row.elevationM),
+        tssLike: Number(row.tssLike ?? 0),
+        shoeId: row.shoeId ?? null,
+        shoeName: row.shoeName ?? null
+      }));
   } else {
     workouts = getWorkoutsBetween(rangeStart.toISOString(), rangeEnd.toISOString()).map((w) => ({
       id: w.id,
