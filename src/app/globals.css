@@ -7577,6 +7577,8 @@ button.alt {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
+  margin: 0;
+  padding: 0;
   order: 2;
 }
 
@@ -7599,6 +7601,7 @@ button.alt {
   grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
   order: 4;
+  align-items: stretch;
 }
 
 /* Row 5: Macro */
@@ -7638,6 +7641,10 @@ button.alt {
   .today-page-flow {
     gap: 0.45rem;
     padding: 0.35rem 0.5rem 4.5rem;
+  }
+
+  .today-row-checkin-energy {
+    gap: 0.5rem;
   }
 
   /* Compact cards */

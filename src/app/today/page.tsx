@@ -3210,7 +3210,7 @@ export default function TodayPage() {
         </div>
       </section>
 
-      {/* Energy battery */}
+      {/* Energy + Macro side by side */}
       <div className="today-row-checkin-energy">
         {journal?.energyBattery ? (
           <section className="energy-battery-card energy-battery-focus">
@@ -3236,28 +3236,30 @@ export default function TodayPage() {
         ) : (
           <section className="energy-battery-card energy-battery-focus">
             <div className="energy-battery-head"><strong>Energy Battery</strong></div>
-            <p style={{opacity:0.5, fontSize:"0.85rem"}}>אין נתוני סוללה להיום</p>
+            <p style={{ opacity: 0.5, fontSize: "0.85rem" }}>אין נתוני סוללה להיום</p>
           </section>
         )}
-      </div>
 
-      <section className="today-surface today-surface-macro">
-        <div className="macro-card">
-          <div className="macro-card-header">
-            <strong className="macro-card-title">תזונה</strong>
-            <span className="macro-card-kcal">{journal ? Math.max(0, Math.round((journal.nutrition.target.kcal ?? 2000) - (journal.nutrition.totals.kcal ?? 0))) : 2000} קלוריות נותרו</span>
-          </div>
-          {topNutritionTargets.map((row) => (
-            <div key={row.key} className="macro-row">
-              <span className="macro-row-label">{row.label}</span>
-              <span className="macro-row-values">{row.actualLabel} / {row.targetLabel}</span>
-              <div className="macro-row-track" data-key={row.key}>
-                <div className="macro-row-fill" style={{ width: `${row.pct}%` }} />
-              </div>
+        <section className="today-surface today-surface-macro">
+          <div className="macro-card">
+            <div className="macro-card-header">
+              <strong className="macro-card-title">תזונה</strong>
+              <span className="macro-card-kcal">
+                {journal ? Math.max(0, Math.round((journal.nutrition.target.kcal ?? 2000) - (journal.nutrition.totals.kcal ?? 0))) : 2000} קלוריות נותרו
+              </span>
             </div>
-          ))}
-        </div>
-      </section>
+            {topNutritionTargets.map((row) => (
+              <div key={row.key} className="macro-row">
+                <span className="macro-row-label">{row.label}</span>
+                <span className="macro-row-values">{row.actualLabel} / {row.targetLabel}</span>
+                <div className="macro-row-track" data-key={row.key}>
+                  <div className="macro-row-fill" style={{ width: `${row.pct}%` }} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
 
       <section className="today-surface today-surface-c">
       <Section title="מאמן בקצרה" subtitle="תקציר יומי ממוקד">
