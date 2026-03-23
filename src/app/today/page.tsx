@@ -1323,6 +1323,7 @@ export default function TodayPage() {
   const router = useRouter();
   const autoMorningPromptedDateRef = useRef<string | null>(null);
   const morningRestoreAttemptedRef = useRef<Set<string>>(new Set());
+  const dashboardHashRef = useRef<string>("");
   const [activeDate, setActiveDate] = useState(formatISODate());
   const [historicalEditMode, setHistoricalEditMode] = useState(false);
   const [today, setToday] = useState<TodayData | null>(null);
@@ -2114,8 +2115,15 @@ export default function TodayPage() {
       setCoachAgent(cachedDashboard.coachAgent);
       setScoreTrend(cachedDashboard.scoreTrend ?? []);
       setMorningTrend(cachedDashboard.morningTrend ?? []);
+      dashboardHashRef.current = JSON.stringify({
+        date: cachedDashboard.date,
+        today: cachedDashboard.today,
+        recommendation: cachedDashboard.recommendation,
+        workouts: cachedDashboard.journal?.workouts ?? [],
+        scores: cachedDashboard.journal?.scores ?? null
+      });
     }
-    void loadDashboard(activeDate);
+    void loadDashboard(activeDate, { quiet: Boolean(cachedDashboard) });
   }, [activeDate]);
 
   useEffect(() => {
@@ -2151,8 +2159,11 @@ export default function TodayPage() {
     }
   }
 
-  async function loadDashboard(date = activeDate) {
-    setDashboardRefreshing(true);
+  async function loadDashboard(date = activeDate, options?: { quiet?: boolean }) {
+    const quiet = Boolean(options?.quiet);
+    if (!quiet) {
+      setDashboardRefreshing(true);
+    }
     setLoadError(null);
 
     const emptyJournalFallback: DayJournalBundle = {
@@ -2199,18 +2210,17 @@ export default function TodayPage() {
     if (errors.length) setLoadError(errors.join(" · "));
 
     const bundle = (journalRes.data ?? emptyJournalFallback) as DayJournalBundle & {
-    scores?: {
-      readinessScore: number;
-      fatigueScore: number;
-      fitnessScore: number;
-      stateTag?: "overtraining_risk" | "on_the_spot" | "peaking" | "losing_momentum";
-      stateLabel?: string;
-      stateHint?: string;
-    };
+      scores?: {
+        readinessScore: number;
+        fatigueScore: number;
+        fitnessScore: number;
+        stateTag?: "overtraining_risk" | "on_the_spot" | "peaking" | "losing_momentum";
+        stateLabel?: string;
+        stateHint?: string;
+      };
       recommendation?: Recommendation;
       coachAgent?: CoachAgentReport | null;
     };
-    setJournal(bundle);
     const feedItems = ((journalFeedRes.data as any)?.items ?? []) as Array<{
       date?: string;
       scores?: { readinessScore?: number; fatigueScore?: number; fitnessScore?: number };
@@ -2221,17 +2231,15 @@ export default function TodayPage() {
         hrv?: number | null;
       } | null;
     }>;
-    setScoreTrend(
-      feedItems
-        .filter((item) => typeof item.date === "string")
-        .map((item) => ({
-          date: String(item.date),
-          readiness: Number(item.scores?.readinessScore ?? 0),
-          fatigue: Number(item.scores?.fatigueScore ?? 0),
-          fitness: Number(item.scores?.fitnessScore ?? 0)
-        }))
-        .reverse()
-    );
+    const nextScoreTrend = feedItems
+      .filter((item) => typeof item.date === "string")
+      .map((item) => ({
+        date: String(item.date),
+        readiness: Number(item.scores?.readinessScore ?? 0),
+        fatigue: Number(item.scores?.fatigueScore ?? 0),
+        fitness: Number(item.scores?.fitnessScore ?? 0)
+      }))
+      .reverse();
 
     const clamp5 = (value: number) => Math.max(1, Math.min(5, value));
     const sleepScore5 = (hours?: number | null) => (hours == null ? null : clamp5((hours / 8) * 5));
@@ -2244,18 +2252,16 @@ export default function TodayPage() {
     const hrvScore5 = (value?: number | null) =>
       value == null ? null : clamp5(Math.max(10, Math.min(100, (value / 80) * 100)) / 20);
 
-    setMorningTrend(
-      feedItems
-        .filter((item) => typeof item.date === "string")
-        .map((item) => ({
-          date: String(item.date),
-          sleep: sleepScore5(item.recovery?.sleepHours),
-          soreness: sorenessScore5(item.recovery?.sorenessGlobal),
-          restingHr: restingHrScore5(item.recovery?.restingHr),
-          hrv: hrvScore5(item.recovery?.hrv)
-        }))
-        .reverse()
-    );
+    const nextMorningTrend = feedItems
+      .filter((item) => typeof item.date === "string")
+      .map((item) => ({
+        date: String(item.date),
+        sleep: sleepScore5(item.recovery?.sleepHours),
+        soreness: sorenessScore5(item.recovery?.sorenessGlobal),
+        restingHr: restingHrScore5(item.recovery?.restingHr),
+        hrv: hrvScore5(item.recovery?.hrv)
+      }))
+      .reverse();
     const mappedTodayWorkouts = bundle.workouts?.map((workout) => ({
       id: workout.id,
       sport: workout.sport,
@@ -2287,9 +2293,26 @@ export default function TodayPage() {
       alerts: [],
       todayWorkouts: mappedTodayWorkouts
     };
-    setToday(nextTodayData);
-    setRec(bundle.recommendation ?? null);
-    setCoachAgent(bundle.coachAgent ?? null);
+    const nextDashboardHash = JSON.stringify({
+      date,
+      today: nextTodayData,
+      recommendation: bundle.recommendation ?? null,
+      workouts: bundle.workouts ?? [],
+      scores: bundle.scores ?? null
+    });
+    const hasMeaningfulChange = nextDashboardHash !== dashboardHashRef.current;
+
+    if (hasMeaningfulChange) {
+      setJournal(bundle);
+      setScoreTrend(nextScoreTrend);
+      setMorningTrend(nextMorningTrend);
+    }
+    if (hasMeaningfulChange) {
+      setToday(nextTodayData);
+      setRec(bundle.recommendation ?? null);
+      setCoachAgent(bundle.coachAgent ?? null);
+      dashboardHashRef.current = nextDashboardHash;
+    }
     setCheckinOptions(optsRes.data as CheckinOptions);
     const checkinDaily = (checkinDailyRes.data as CheckinDailyStatus) ?? {};
     const hasMorning = Boolean(checkinDaily.exists || bundle.recovery);
@@ -2368,31 +2391,16 @@ export default function TodayPage() {
       journal: bundle,
       recommendation: bundle.recommendation ?? null,
       coachAgent: bundle.coachAgent ?? null,
-      scoreTrend: feedItems
-        .filter((item) => typeof item.date === "string")
-        .map((item) => ({
-          date: String(item.date),
-          readiness: Number(item.scores?.readinessScore ?? 0),
-          fatigue: Number(item.scores?.fatigueScore ?? 0),
-          fitness: Number(item.scores?.fitnessScore ?? 0)
-        }))
-        .reverse(),
-      morningTrend: feedItems
-        .filter((item) => typeof item.date === "string")
-        .map((item) => ({
-          date: String(item.date),
-          sleep: sleepScore5(item.recovery?.sleepHours),
-          soreness: sorenessScore5(item.recovery?.sorenessGlobal),
-          restingHr: restingHrScore5(item.recovery?.restingHr),
-          hrv: hrvScore5(item.recovery?.hrv)
-        }))
-        .reverse()
+      scoreTrend: nextScoreTrend,
+      morningTrend: nextMorningTrend
     });
 
     if (morningReminderStartDate) {
       void loadMissingMorningUpdates(morningReminderStartDate);
     }
-    setDashboardRefreshing(false);
+    if (!quiet) {
+      setDashboardRefreshing(false);
+    }
   }
 
   useEffect(() => {
