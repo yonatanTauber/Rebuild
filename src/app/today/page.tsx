@@ -488,6 +488,7 @@ const intensityLabels: Record<DailyMode, string> = { easy: "קל", normal: "בי
 const sportPriority: ForecastOption["sport"][] = ["run", "bike", "swim"];
 const MORNING_REMINDER_START_KEY = "rebuild-morning-reminder-start";
 const MORNING_CHECKIN_CACHE_KEY_PREFIX = "rebuild-morning-checkin-cache";
+const TODAY_DASHBOARD_CACHE_KEY_PREFIX = "rebuild-today-dashboard-cache";
 
 const nutritionCategoryOptions: Array<{ value: NewIngredientDraft["category"]; label: string }> = [
   { value: "protein", label: "חלבון" },
@@ -505,6 +506,17 @@ type MorningCheckinCache = {
   form: MorningForm;
   completed: boolean;
   savedAt: string;
+};
+
+type TodayDashboardCache = {
+  date: string;
+  savedAt: string;
+  today: TodayData | null;
+  journal: DayJournalBundle | null;
+  recommendation: Recommendation | null;
+  coachAgent: CoachAgentReport | null;
+  scoreTrend: Array<{ date: string; readiness: number; fatigue: number; fitness: number }>;
+  morningTrend: MorningTrendPoint[];
 };
 
 function getMorningCheckinCacheKey(date: string) {
@@ -558,6 +570,32 @@ function writeMorningCheckinCache(form: MorningForm, completed: boolean) {
     window.localStorage.setItem(getMorningCheckinCacheKey(form.date), JSON.stringify(payload));
   } catch {
     // Ignore localStorage quota/privacy mode failures
+  }
+}
+
+function getTodayDashboardCacheKey(date: string) {
+  return `${TODAY_DASHBOARD_CACHE_KEY_PREFIX}:${date}`;
+}
+
+function readTodayDashboardCache(date: string): TodayDashboardCache | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = window.localStorage.getItem(getTodayDashboardCacheKey(date));
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as TodayDashboardCache | null;
+    if (!parsed || parsed.date !== date) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+function writeTodayDashboardCache(cache: TodayDashboardCache) {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.setItem(getTodayDashboardCacheKey(cache.date), JSON.stringify(cache));
+  } catch {
+    // ignore storage failures
   }
 }
 
@@ -1290,6 +1328,7 @@ export default function TodayPage() {
   const [today, setToday] = useState<TodayData | null>(null);
   const [journal, setJournal] = useState<DayJournalBundle | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const [dashboardRefreshing, setDashboardRefreshing] = useState(false);
   const [rec, setRec] = useState<Recommendation | null>(null);
   const [coachAgent, setCoachAgent] = useState<CoachAgentReport | null>(null);
   const [syncing, setSyncing] = useState(false);
@@ -2067,6 +2106,15 @@ export default function TodayPage() {
   useEffect(() => {
     setMorningForm((prev) => ({ ...prev, date: activeDate }));
     setHistoricalEditMode(false);
+    const cachedDashboard = readTodayDashboardCache(activeDate);
+    if (cachedDashboard) {
+      setToday(cachedDashboard.today);
+      setJournal(cachedDashboard.journal);
+      setRec(cachedDashboard.recommendation);
+      setCoachAgent(cachedDashboard.coachAgent);
+      setScoreTrend(cachedDashboard.scoreTrend ?? []);
+      setMorningTrend(cachedDashboard.morningTrend ?? []);
+    }
     void loadDashboard(activeDate);
   }, [activeDate]);
 
@@ -2104,6 +2152,7 @@ export default function TodayPage() {
   }
 
   async function loadDashboard(date = activeDate) {
+    setDashboardRefreshing(true);
     setLoadError(null);
 
     const emptyJournalFallback: DayJournalBundle = {
@@ -2207,7 +2256,26 @@ export default function TodayPage() {
         }))
         .reverse()
     );
-    setToday({
+    const mappedTodayWorkouts = bundle.workouts?.map((workout) => ({
+      id: workout.id,
+      sport: workout.sport,
+      startAt: workout.startAt,
+      durationSec: workout.durationSec,
+      distanceM: workout.distanceM,
+      distanceDisplayKm: workout.distanceDisplayKm ?? null,
+      distanceRawKm: workout.distanceRawKm ?? null,
+      distanceOfficialKm: workout.distanceOfficialKm ?? null,
+      durationForPaceSec: workout.durationForPaceSec ?? null,
+      movingDurationSec: workout.movingDurationSec ?? null,
+      pauseDurationSec: workout.pauseDurationSec ?? null,
+      paceDisplayMinPerKm: workout.paceDisplayMinPerKm ?? null,
+      avgHr: workout.avgHr ?? null,
+      tssLike: workout.tssLike ?? null,
+      runScore: (workout as { runScore?: number | null }).runScore ?? null,
+      runScoreLabel: (workout as { runScoreLabel?: string | null }).runScoreLabel ?? null
+    }));
+
+    const nextTodayData: TodayData = {
       readinessScore: bundle.scores?.readinessScore ?? 0,
       fatigueScore: bundle.scores?.fatigueScore ?? 0,
       fitnessScore: bundle.scores?.fitnessScore ?? 0,
@@ -2217,25 +2285,9 @@ export default function TodayPage() {
       recommendation: bundle.recommendation?.workoutType ?? "",
       explanation: (bundle.recommendation as { explanationFactors?: string[] } | null | undefined)?.explanationFactors?.join("; ") ?? "",
       alerts: [],
-      todayWorkouts: bundle.workouts?.map((workout) => ({
-        id: workout.id,
-        sport: workout.sport,
-        startAt: workout.startAt,
-        durationSec: workout.durationSec,
-        distanceM: workout.distanceM,
-        distanceDisplayKm: workout.distanceDisplayKm ?? null,
-        distanceRawKm: workout.distanceRawKm ?? null,
-        distanceOfficialKm: workout.distanceOfficialKm ?? null,
-        durationForPaceSec: workout.durationForPaceSec ?? null,
-        movingDurationSec: workout.movingDurationSec ?? null,
-        pauseDurationSec: workout.pauseDurationSec ?? null,
-        paceDisplayMinPerKm: workout.paceDisplayMinPerKm ?? null,
-        avgHr: workout.avgHr ?? null,
-        tssLike: workout.tssLike ?? null,
-        runScore: (workout as { runScore?: number | null }).runScore ?? null,
-        runScoreLabel: (workout as { runScoreLabel?: string | null }).runScoreLabel ?? null
-      }))
-    });
+      todayWorkouts: mappedTodayWorkouts
+    };
+    setToday(nextTodayData);
     setRec(bundle.recommendation ?? null);
     setCoachAgent(bundle.coachAgent ?? null);
     setCheckinOptions(optsRes.data as CheckinOptions);
@@ -2259,6 +2311,7 @@ export default function TodayPage() {
         });
         if (restoreRes.ok) {
           await loadDashboard(date);
+          setDashboardRefreshing(false);
           return;
         }
       }
@@ -2307,9 +2360,39 @@ export default function TodayPage() {
     );
     const days = ((fRes.data as { days?: ForecastDay[] }).days ?? []) as ForecastDay[];
     setForecastToday(days[0] ?? null);
+
+    writeTodayDashboardCache({
+      date,
+      savedAt: new Date().toISOString(),
+      today: nextTodayData,
+      journal: bundle,
+      recommendation: bundle.recommendation ?? null,
+      coachAgent: bundle.coachAgent ?? null,
+      scoreTrend: feedItems
+        .filter((item) => typeof item.date === "string")
+        .map((item) => ({
+          date: String(item.date),
+          readiness: Number(item.scores?.readinessScore ?? 0),
+          fatigue: Number(item.scores?.fatigueScore ?? 0),
+          fitness: Number(item.scores?.fitnessScore ?? 0)
+        }))
+        .reverse(),
+      morningTrend: feedItems
+        .filter((item) => typeof item.date === "string")
+        .map((item) => ({
+          date: String(item.date),
+          sleep: sleepScore5(item.recovery?.sleepHours),
+          soreness: sorenessScore5(item.recovery?.sorenessGlobal),
+          restingHr: restingHrScore5(item.recovery?.restingHr),
+          hrv: hrvScore5(item.recovery?.hrv)
+        }))
+        .reverse()
+    });
+
     if (morningReminderStartDate) {
       void loadMissingMorningUpdates(morningReminderStartDate);
     }
+    setDashboardRefreshing(false);
   }
 
   useEffect(() => {
@@ -2685,6 +2768,7 @@ export default function TodayPage() {
           </div>
           {/* Row 2: status */}
           <div className="journal-status-strip">
+            {dashboardRefreshing ? <span className="journal-status-pill">מרענן נתונים…</span> : null}
             <span className="journal-status-pill">{journal?.dayStatus.label ?? "-"}</span>
             <span className={`journal-target-pill ${journal?.nutrition.status.kcal ?? "on_target"}`}>
               קלוריות: {journal?.nutrition.status.kcalLabel ?? "-"}
