@@ -76,6 +76,15 @@ function hrLoadLabel(tss: number): string {
   return "גבוה מאוד (Threshold)";
 }
 
+function FoldTitle({ icon, title }: { icon: string; title: string }) {
+  return (
+    <span className="wkd-fold-title">
+      <span className="material-symbols-outlined" aria-hidden>{icon}</span>
+      <span>{title}</span>
+    </span>
+  );
+}
+
 export default async function WorkoutDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const workoutId = decodeRouteParam(id);
@@ -192,11 +201,15 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
       {/* ── Hero ── */}
       <div className="wkd-hero">
         <div className="wkd-hero-left">
-          <span className="wkd-session-label">SESSION OVERVIEW</span>
+          <span className="wkd-session-label">יומן אימונים</span>
           <h1 className="wkd-title">פרטי אימון</h1>
-          <p className="wkd-subtitle" style={{ color: sportColor }}>
-            {sportLabel(workout.sport)} · {formatDisplayDateTime(workout.startAt)}
-          </p>
+          <div className="wkd-subline">
+            <span className="wkd-subline-chip" style={{ borderColor: `${sportColor}66`, color: sportColor }}>
+              {sportLabel(workout.sport)}
+            </span>
+            <span className="wkd-subline-dot" aria-hidden>•</span>
+            <span className="wkd-subline-date">{formatDisplayDateTime(workout.startAt)}</span>
+          </div>
         </div>
         {isRun && hrScore ? (
           <div className="wkd-run-score-mini" aria-label="ציון אימון ומשוב אישי">
@@ -227,13 +240,13 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
           <span className="wkd-metric-label">זמן כולל</span>
           <div className="wkd-metric-value">
             <span className="wkd-metric-number">{timeDisplay}</span>
-            <span className="wkd-metric-unit">{timeUnit}</span>
+            <span className="wkd-metric-unit">{displayHours > 0 ? "שעות" : "דק׳"}</span>
           </div>
         </div>
         <div className="wkd-metric wkd-metric-dist">
           <span className="wkd-metric-label">מרחק</span>
           <div className="wkd-metric-value">
-            <span className="wkd-metric-unit">KM</span>
+            <span className="wkd-metric-unit">ק״מ</span>
             <span className="wkd-metric-number">
               {displayDistanceKm != null ? formatDistanceKm(displayDistanceKm) : "-"}
             </span>
@@ -243,13 +256,13 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
           <span className="wkd-metric-label">עומס</span>
           <div className="wkd-metric-value">
             <span className="wkd-metric-number">{Math.round(workout.tssLike)}</span>
-            <span className="wkd-metric-unit">TSS</span>
+            <span className="wkd-metric-unit">עומס</span>
           </div>
         </div>
         <div className="wkd-metric wkd-metric-hr">
           <span className="wkd-metric-label">דופק ממוצע</span>
           <div className="wkd-metric-value">
-            <span className="wkd-metric-unit">BPM</span>
+            <span className="wkd-metric-unit">פעימות</span>
             <span className="wkd-metric-number">
               {displayAvgHr != null ? Math.round(displayAvgHr) : "-"}
             </span>
@@ -276,7 +289,7 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
       {isRun && hrScore && (
         <details className="wkd-fold">
           <summary className="wkd-fold-summary">
-            ציון ריצה
+            <FoldTitle icon="social_leaderboard" title="ציון ריצה" />
             <span className="wkd-fold-icon">›</span>
           </summary>
           <div className="wkd-fold-body">
@@ -303,21 +316,22 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
       {/* ── Workout Summary (fold) ── */}
       <details className="wkd-fold">
         <summary className="wkd-fold-summary">
-          סיכום אימון
+          <FoldTitle icon="description" title="סיכום אימון" />
           <span className="wkd-fold-icon">›</span>
         </summary>
         <div className="wkd-fold-body">
           <ul className="kv compact-kv">
-            <li>סוג: {sportLabel(workout.sport)}</li>
-            <li>תאריך ושעה: {formatDisplayDateTime(workout.startAt)}</li>
-            <li>משך אימון (כולל עצירות): {formatClock(workout.durationSec)}</li>
+            <li><span>סוג</span><strong>{sportLabel(workout.sport)}</strong></li>
+            <li><span>תאריך ושעה</span><strong>{formatDisplayDateTime(workout.startAt)}</strong></li>
+            <li><span>משך אימון (כולל עצירות)</span><strong>{formatClock(workout.durationSec)}</strong></li>
             {detail.movingDurationSec != null && (
-              <li>{isRun ? "משך ריצה בפועל" : "משך תנועה בפועל"}: {formatClock(detail.movingDurationSec)}</li>
+              <li><span>{isRun ? "משך ריצה בפועל" : "משך תנועה בפועל"}</span><strong>{formatClock(detail.movingDurationSec)}</strong></li>
             )}
-            {showPauseRow && <li>זמן עצירות: {formatClock(detail.pauseDurationSec)}</li>}
+            {showPauseRow && <li><span>זמן עצירות</span><strong>{formatClock(detail.pauseDurationSec)}</strong></li>}
             {isRun && (
               <li>
-                זמן רשמי: {formatClock(runDisplayDurationSec)}
+                <span>זמן רשמי</span>
+                <strong>{formatClock(runDisplayDurationSec)}</strong>
                 <WorkoutOfficialDurationEditor
                   workoutId={workout.id}
                   currentOfficialDurationSec={runDisplayDurationSec}
@@ -326,30 +340,30 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
             )}
             {showDistanceGap ? (
               <>
-                <li>מרחק רשמי: {formatDistanceKm(detail.distanceOfficialKm)} ק"מ</li>
-                <li>מרחק GPS בפועל: {formatDistanceKm(detail.distanceRawKm)} ק"מ</li>
+                <li><span>מרחק רשמי</span><strong>{formatDistanceKm(detail.distanceOfficialKm)} ק"מ</strong></li>
+                <li><span>מרחק GPS בפועל</span><strong>{formatDistanceKm(detail.distanceRawKm)} ק"מ</strong></li>
               </>
             ) : (
-              <li>מרחק: {formatDistanceKm(displayDistanceKm)} ק"מ</li>
+              <li><span>מרחק</span><strong>{formatDistanceKm(displayDistanceKm)} ק"מ</strong></li>
             )}
             {isRun && runDisplayPaceMinPerKm != null && (
-              <li>קצב: {formatPace(runDisplayPaceMinPerKm)} דק'/ק"מ</li>
+              <li><span>קצב</span><strong>{formatPace(runDisplayPaceMinPerKm)} דק'/ק"מ</strong></li>
             )}
-            <li>דופק ממוצע: {displayAvgHr != null ? Math.round(displayAvgHr) : "-"}</li>
-            <li>דופק מקס': {displayMaxHr != null ? Math.round(displayMaxHr) : "-"}</li>
-            <li>טיפוס: {workout.elevationM ? `${Math.round(workout.elevationM)} מ'` : "-"}</li>
-            <li>עומס: {Math.round(workout.tssLike)}</li>
-            <li>מקור: {workout.source}</li>
+            <li><span>דופק ממוצע</span><strong>{displayAvgHr != null ? Math.round(displayAvgHr) : "-"}</strong></li>
+            <li><span>דופק מקס'</span><strong>{displayMaxHr != null ? Math.round(displayMaxHr) : "-"}</strong></li>
+            <li><span>טיפוס</span><strong>{workout.elevationM ? `${Math.round(workout.elevationM)} מ'` : "-"}</strong></li>
+            <li><span>עומס</span><strong>{Math.round(workout.tssLike)}</strong></li>
+            <li><span>מקור</span><strong>{workout.source}</strong></li>
             <li>
-              נעל:{" "}
+              <span>נעל</span>
               {isRun ? (
                 <WorkoutShoeInline workoutId={workout.id} currentShoeId={workout.shoeId ?? null} compact />
               ) : (
-                workout.shoeName ?? "-"
+                <strong>{workout.shoeName ?? "-"}</strong>
               )}
             </li>
             {isRun && workout.shoeId && workout.shoeKmAtAssign != null && (
-              <li>ק״מ בנעל אחרי האימון הזה: {formatShoeKm(workout.shoeKmAtAssign)}</li>
+              <li><span>ק״מ בנעל אחרי האימון הזה</span><strong>{formatShoeKm(workout.shoeKmAtAssign)}</strong></li>
             )}
           </ul>
         </div>
@@ -359,7 +373,7 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
       {hasRouteMap && (
         <details className="wkd-fold">
           <summary className="wkd-fold-summary">
-            מפת מסלול
+            <FoldTitle icon="map" title="מפת מסלול" />
             <span className="wkd-fold-icon">›</span>
           </summary>
           <div className="wkd-fold-body">
@@ -371,7 +385,7 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
       {/* ── Feedback (fold) ── */}
       <details className="wkd-fold wkd-fold-feedback">
         <summary className="wkd-fold-summary">
-          משוב אחרי אימון
+          <FoldTitle icon="reviews" title="משוב אחרי אימון" />
           <span className="wkd-fold-icon">›</span>
         </summary>
         <div className="wkd-fold-body">
@@ -387,7 +401,7 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
       {isRun && splits.length > 0 && (
         <details className="wkd-fold">
           <summary className="wkd-fold-summary">
-            חלוקת קילומטרים
+            <FoldTitle icon="stairs_2" title="חלוקת קילומטרים" />
             <span className="wkd-fold-icon">›</span>
           </summary>
           <div className="wkd-fold-body">
@@ -417,7 +431,7 @@ export default async function WorkoutDetailPage({ params }: { params: Promise<{ 
       {isRun && bestEfforts.length > 0 && (
         <details className="wkd-fold wkd-fold-segments">
           <summary className="wkd-fold-summary">
-            המקטעים הטובים ביותר
+            <FoldTitle icon="bolt" title="המקטעים הטובים ביותר" />
             <span className="wkd-fold-icon">›</span>
           </summary>
           <div className="wkd-fold-body">

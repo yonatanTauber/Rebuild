@@ -8362,11 +8362,17 @@ button.alt {
 .wkd-hero-left { display: flex; flex-direction: column; gap: 0.25rem; }
 
 .wkd-session-label {
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid var(--outline-variant);
+  border-radius: 999px;
+  padding: 0.18rem 0.54rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
   color: var(--on-surface-variant);
   font-weight: 700;
+  background: var(--surface-container-high);
 }
 
 .wkd-title {
@@ -8382,6 +8388,33 @@ button.alt {
   font-weight: 600;
   margin: 0;
   opacity: 0.9;
+}
+
+.wkd-subline {
+  display: flex;
+  align-items: center;
+  gap: 0.44rem;
+  flex-wrap: wrap;
+}
+
+.wkd-subline-chip {
+  border: 1px solid var(--outline-variant);
+  border-radius: 999px;
+  padding: 0.12rem 0.56rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: color-mix(in srgb, var(--surface-container-high) 82%, transparent 18%);
+}
+
+.wkd-subline-dot {
+  color: var(--on-surface-variant);
+  opacity: 0.7;
+}
+
+.wkd-subline-date {
+  color: var(--on-surface);
+  font-size: 0.84rem;
+  font-weight: 600;
 }
 
 .wkd-hero-right { display: flex; align-items: center; }
@@ -8615,6 +8648,17 @@ button.alt {
 .wkd-fold-summary::-webkit-details-marker { display: none; }
 .wkd-fold-summary:hover { color: var(--on-surface); }
 
+.wkd-fold-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36rem;
+}
+
+.wkd-fold-title .material-symbols-outlined {
+  font-size: 1rem;
+  opacity: 0.88;
+}
+
 .wkd-fold-icon {
   font-size: 0.9rem;
   color: var(--on-surface-variant);
@@ -8635,9 +8679,26 @@ button.alt {
 
 .wkd-fold-body .kv li,
 .wkd-fold-body .compact-kv li {
-  color: var(--on-surface-variant);
+  color: var(--on-surface);
   font-size: 0.83rem;
-  padding: 0.2rem 0;
+  padding: 0.26rem 0;
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) minmax(120px, auto);
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wkd-fold-body .kv li > span,
+.wkd-fold-body .compact-kv li > span {
+  color: var(--on-surface-variant);
+  font-weight: 600;
+}
+
+.wkd-fold-body .kv li > strong,
+.wkd-fold-body .compact-kv li > strong {
+  color: var(--on-surface);
+  font-weight: 800;
+  text-align: left;
 }
 
 .wkd-fold-feedback .wkd-fold-body {
