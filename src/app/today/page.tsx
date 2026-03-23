@@ -1873,7 +1873,10 @@ export default function TodayPage() {
       Boolean(selected && looksLikeDrinkName(selected.label));
     const defaultSlot = isDrinkSelection ? "drinks" : mealSlotByHour();
     const defaultUnit = ingredient?.defaultUnit ?? selected.preview?.baseUnit ?? "unit";
-    const fallbackQuantity = defaultUnit === "unit" || defaultUnit === "tbsp" || defaultUnit === "tsp" ? 1 : 100;
+    // For g/ml units use ingredient's gramsPerUnit as default qty (e.g. 250ml water, 80g oats)
+    const fallbackQuantity = defaultUnit === "unit" || defaultUnit === "tbsp" || defaultUnit === "tsp"
+      ? 1
+      : (ingredient?.gramsPerUnit ?? 100);
     const defaultQuantity = selected.preview?.baseQuantity ?? fallbackQuantity;
     setTodayFoodSelected(selected);
     setTodayFoodSlot(defaultSlot);

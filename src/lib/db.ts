@@ -468,216 +468,94 @@ function migrate() {
     ).run(new Date().toISOString());
   }
 
-  const ingredientsCount = db.prepare("SELECT COUNT(*) as count FROM nutrition_ingredients").get() as { count: number };
-  if (ingredientsCount.count === 0) {
+  // ── Verified built-in ingredients ──────────────────────────────────────────
+  // Always upsert so macro / unit corrections propagate on next app restart.
+  // gramsPerUnit for g/ml items = default display quantity in the add-food modal.
+  // User-created ingredients (isBuiltIn=0) are never overwritten.
+  {
     const now = new Date().toISOString();
-    const seedIngredients: Array<{
-      name: string;
-      category: NutritionIngredientCategory;
-      kcalPer100: number;
-      proteinPer100: number;
-      carbsPer100: number;
-      fatPer100: number;
-      defaultUnit: NutritionUnit;
-      gramsPerUnit: number;
-    }> = [
-      { name: "שיבולת שועל", category: "carb", kcalPer100: 389, proteinPer100: 16.9, carbsPer100: 66.3, fatPer100: 6.9, defaultUnit: "g", gramsPerUnit: 40 },
-      { name: "יוגורט יווני", category: "dairy", kcalPer100: 97, proteinPer100: 10, carbsPer100: 3.6, fatPer100: 5, defaultUnit: "g", gramsPerUnit: 150 },
-      { name: "יוגורט 4% תנובה", category: "dairy", kcalPer100: 63, proteinPer100: 3.2, carbsPer100: 3.5, fatPer100: 4.0, defaultUnit: "g", gramsPerUnit: 100 },
-      { name: "יוגורט דנונה PRO 1.5% (200 גרם)", category: "dairy", kcalPer100: 70, proteinPer100: 10.0, carbsPer100: 3.4, fatPer100: 1.5, defaultUnit: "unit", gramsPerUnit: 200 },
-      { name: "יוגורט דנונה PRO 0% (200 גרם)", category: "dairy", kcalPer100: 65, proteinPer100: 10.0, carbsPer100: 5.6, fatPer100: 0.0, defaultUnit: "unit", gramsPerUnit: 200 },
-      { name: "קוטג׳ 5% תנובה", category: "dairy", kcalPer100: 95, proteinPer100: 11.0, carbsPer100: 1.5, fatPer100: 5.0, defaultUnit: "g", gramsPerUnit: 100 },
-      { name: "חלב 3% תנובה", category: "dairy", kcalPer100: 60, proteinPer100: 3.3, carbsPer100: 4.7, fatPer100: 3.0, defaultUnit: "ml", gramsPerUnit: 1 },
-      { name: "אספרסו כפול", category: "hydration", kcalPer100: 9, proteinPer100: 0.1, carbsPer100: 1.7, fatPer100: 0.2, defaultUnit: "ml", gramsPerUnit: 60 },
-      { name: "אספרסו כפול עם חלב", category: "dairy", kcalPer100: 60, proteinPer100: 3.3, carbsPer100: 4.7, fatPer100: 3.0, defaultUnit: "ml", gramsPerUnit: 50 },
-      { name: "ביצה", category: "protein", kcalPer100: 143, proteinPer100: 12.6, carbsPer100: 0.7, fatPer100: 9.5, defaultUnit: "unit", gramsPerUnit: 50 },
-      { name: "ביצה קשה", category: "protein", kcalPer100: 143, proteinPer100: 12.6, carbsPer100: 0.7, fatPer100: 9.5, defaultUnit: "unit", gramsPerUnit: 50 },
-      { name: "חביתה", category: "protein", kcalPer100: 168, proteinPer100: 11.9, carbsPer100: 1.6, fatPer100: 13.2, defaultUnit: "unit", gramsPerUnit: 110 },
-      { name: "לחם מלא", category: "carb", kcalPer100: 247, proteinPer100: 13, carbsPer100: 41, fatPer100: 4.2, defaultUnit: "unit", gramsPerUnit: 35 },
-      { name: "אורז מבושל", category: "carb", kcalPer100: 130, proteinPer100: 2.7, carbsPer100: 28, fatPer100: 0.3, defaultUnit: "g", gramsPerUnit: 150 },
-      { name: "קינואה מבושלת", category: "carb", kcalPer100: 120, proteinPer100: 4.4, carbsPer100: 21.3, fatPer100: 1.9, defaultUnit: "g", gramsPerUnit: 160 },
-      { name: "כוסמת מבושלת", category: "carb", kcalPer100: 92, proteinPer100: 3.4, carbsPer100: 19.9, fatPer100: 0.6, defaultUnit: "g", gramsPerUnit: 160 },
-      { name: "פסטה מבושלת", category: "carb", kcalPer100: 158, proteinPer100: 5.8, carbsPer100: 30.9, fatPer100: 0.9, defaultUnit: "g", gramsPerUnit: 180 },
-      { name: "פסטה ברוטב עגבניות", category: "carb", kcalPer100: 135, proteinPer100: 4.5, carbsPer100: 24.0, fatPer100: 2.5, defaultUnit: "unit", gramsPerUnit: 250 },
-      { name: "לזניה צמחונית", category: "carb", kcalPer100: 130, proteinPer100: 5.6, carbsPer100: 12.0, fatPer100: 4.6, defaultUnit: "unit", gramsPerUnit: 250 },
-      { name: "בטטה", category: "carb", kcalPer100: 86, proteinPer100: 1.6, carbsPer100: 20.1, fatPer100: 0.1, defaultUnit: "unit", gramsPerUnit: 180 },
-      { name: "חזה עוף", category: "protein", kcalPer100: 165, proteinPer100: 31, carbsPer100: 0, fatPer100: 3.6, defaultUnit: "g", gramsPerUnit: 150 },
-      { name: "טונה במים", category: "protein", kcalPer100: 116, proteinPer100: 26, carbsPer100: 0, fatPer100: 1, defaultUnit: "unit", gramsPerUnit: 120 },
-      { name: "טופו", category: "protein", kcalPer100: 76, proteinPer100: 8, carbsPer100: 1.9, fatPer100: 4.8, defaultUnit: "g", gramsPerUnit: 120 },
-      { name: "עדשים מבושלות", category: "protein", kcalPer100: 116, proteinPer100: 9, carbsPer100: 20, fatPer100: 0.4, defaultUnit: "g", gramsPerUnit: 150 },
-      { name: "אבוקדו", category: "fat", kcalPer100: 160, proteinPer100: 2, carbsPer100: 9, fatPer100: 15, defaultUnit: "unit", gramsPerUnit: 140 },
-      { name: "שקדים", category: "fat", kcalPer100: 579, proteinPer100: 21, carbsPer100: 22, fatPer100: 50, defaultUnit: "g", gramsPerUnit: 20 },
-      { name: "טחינה גולמית", category: "fat", kcalPer100: 595, proteinPer100: 17, carbsPer100: 21, fatPer100: 53, defaultUnit: "g", gramsPerUnit: 15 },
-      { name: "חומוס (ממרח)", category: "fat", kcalPer100: 237, proteinPer100: 7.9, carbsPer100: 14.3, fatPer100: 17.8, defaultUnit: "g", gramsPerUnit: 30 },
-      { name: "דבש", category: "carb", kcalPer100: 304, proteinPer100: 0.3, carbsPer100: 82.4, fatPer100: 0, defaultUnit: "g", gramsPerUnit: 21 },
-      { name: "Kinder Happy Hippo", category: "sweet", kcalPer100: 565, proteinPer100: 8.2, carbsPer100: 52.0, fatPer100: 36.0, defaultUnit: "unit", gramsPerUnit: 21 },
-      { name: "פסק זמן", category: "sweet", kcalPer100: 520, proteinPer100: 6.5, carbsPer100: 58.0, fatPer100: 29.0, defaultUnit: "unit", gramsPerUnit: 45 },
-      { name: "פלאפל", category: "carb", kcalPer100: 333, proteinPer100: 13.3, carbsPer100: 31.8, fatPer100: 17.8, defaultUnit: "unit", gramsPerUnit: 17 },
-      { name: "שמן זית", category: "fat", kcalPer100: 884, proteinPer100: 0, carbsPer100: 0, fatPer100: 100, defaultUnit: "g", gramsPerUnit: 13 },
-      { name: "בננה", category: "fruit", kcalPer100: 89, proteinPer100: 1.1, carbsPer100: 23, fatPer100: 0.3, defaultUnit: "unit", gramsPerUnit: 120 },
-      { name: "תמר מג׳הול", category: "fruit", kcalPer100: 277, proteinPer100: 1.8, carbsPer100: 75, fatPer100: 0.2, defaultUnit: "unit", gramsPerUnit: 24 },
-      { name: "רוקט", category: "vegetable", kcalPer100: 25, proteinPer100: 2.6, carbsPer100: 3.7, fatPer100: 0.7, defaultUnit: "g", gramsPerUnit: 40 },
-      { name: "פטרוזיליה", category: "vegetable", kcalPer100: 36, proteinPer100: 3.0, carbsPer100: 6.3, fatPer100: 0.8, defaultUnit: "g", gramsPerUnit: 30 },
-      { name: "מלח", category: "mixed", kcalPer100: 0, proteinPer100: 0, carbsPer100: 0, fatPer100: 0, defaultUnit: "g", gramsPerUnit: 6 },
-      { name: "תפוח", category: "fruit", kcalPer100: 52, proteinPer100: 0.3, carbsPer100: 14, fatPer100: 0.2, defaultUnit: "unit", gramsPerUnit: 150 },
-      { name: "מלפפון", category: "vegetable", kcalPer100: 15, proteinPer100: 0.7, carbsPer100: 3.6, fatPer100: 0.1, defaultUnit: "unit", gramsPerUnit: 120 },
-      { name: "עגבנייה", category: "vegetable", kcalPer100: 18, proteinPer100: 0.9, carbsPer100: 3.9, fatPer100: 0.2, defaultUnit: "unit", gramsPerUnit: 120 },
-      { name: "מים", category: "hydration", kcalPer100: 0, proteinPer100: 0, carbsPer100: 0, fatPer100: 0, defaultUnit: "ml", gramsPerUnit: 1 }
+    type SI = { name: string; category: NutritionIngredientCategory; kcalPer100: number; proteinPer100: number; carbsPer100: number; fatPer100: number; defaultUnit: NutritionUnit; gramsPerUnit: number };
+    const builtIns: SI[] = [
+      // Hydration (USDA + Israeli label data)
+      { name: "מים",                            category: "hydration", kcalPer100: 0,   proteinPer100: 0,    carbsPer100: 0,    fatPer100: 0,    defaultUnit: "ml",   gramsPerUnit: 250 },
+      { name: "אספרסו כפול",                    category: "hydration", kcalPer100: 3,   proteinPer100: 0.1,  carbsPer100: 0.5,  fatPer100: 0.2,  defaultUnit: "unit", gramsPerUnit: 60  },
+      { name: "אספרסו כפול עם חלב",             category: "hydration", kcalPer100: 34,  proteinPer100: 1.8,  carbsPer100: 2.9,  fatPer100: 1.7,  defaultUnit: "unit", gramsPerUnit: 130 },
+      // Dairy (Tenuva / Danone Israel labels, Open Food Facts)
+      { name: "חלב 3% תנובה",                   category: "dairy",     kcalPer100: 60,  proteinPer100: 3.3,  carbsPer100: 5.0,  fatPer100: 3.0,  defaultUnit: "ml",   gramsPerUnit: 200 },
+      { name: "קוטג׳ 5% תנובה",                 category: "dairy",     kcalPer100: 95,  proteinPer100: 11.0, carbsPer100: 1.5,  fatPer100: 5.0,  defaultUnit: "unit", gramsPerUnit: 250 },
+      { name: "יוגורט יווני",                   category: "dairy",     kcalPer100: 97,  proteinPer100: 10.0, carbsPer100: 3.6,  fatPer100: 5.0,  defaultUnit: "unit", gramsPerUnit: 200 },
+      { name: "יוגורט 4% תנובה",                category: "dairy",     kcalPer100: 63,  proteinPer100: 3.3,  carbsPer100: 4.5,  fatPer100: 4.0,  defaultUnit: "unit", gramsPerUnit: 200 },
+      { name: "יוגורט דנונה PRO 1.5% (200 גרם)", category: "dairy",    kcalPer100: 70,  proteinPer100: 10.0, carbsPer100: 3.4,  fatPer100: 1.5,  defaultUnit: "unit", gramsPerUnit: 200 },
+      { name: "יוגורט דנונה PRO 0% (200 גרם)",  category: "dairy",     kcalPer100: 58,  proteinPer100: 10.5, carbsPer100: 3.3,  fatPer100: 0.0,  defaultUnit: "unit", gramsPerUnit: 200 },
+      // Protein
+      { name: "ביצה",                           category: "protein",   kcalPer100: 143, proteinPer100: 12.6, carbsPer100: 0.7,  fatPer100: 9.5,  defaultUnit: "unit", gramsPerUnit: 55  },
+      { name: "ביצה קשה",                       category: "protein",   kcalPer100: 143, proteinPer100: 12.6, carbsPer100: 0.7,  fatPer100: 9.5,  defaultUnit: "unit", gramsPerUnit: 55  },
+      { name: "חביתה",                          category: "protein",   kcalPer100: 168, proteinPer100: 11.9, carbsPer100: 1.6,  fatPer100: 13.2, defaultUnit: "unit", gramsPerUnit: 110 },
+      { name: "חזה עוף",                        category: "protein",   kcalPer100: 165, proteinPer100: 31.0, carbsPer100: 0.0,  fatPer100: 3.6,  defaultUnit: "g",    gramsPerUnit: 150 },
+      { name: "טונה במים",                      category: "protein",   kcalPer100: 116, proteinPer100: 26.0, carbsPer100: 0.0,  fatPer100: 1.0,  defaultUnit: "unit", gramsPerUnit: 120 },
+      { name: "טופו",                           category: "protein",   kcalPer100: 76,  proteinPer100: 8.0,  carbsPer100: 1.9,  fatPer100: 4.8,  defaultUnit: "g",    gramsPerUnit: 120 },
+      { name: "עדשים מבושלות",                  category: "protein",   kcalPer100: 116, proteinPer100: 9.0,  carbsPer100: 20.0, fatPer100: 0.4,  defaultUnit: "g",    gramsPerUnit: 150 },
+      // Carbs / grains (USDA FoodData Central)
+      { name: "שיבולת שועל",                    category: "carb",      kcalPer100: 389, proteinPer100: 17.0, carbsPer100: 66.0, fatPer100: 7.0,  defaultUnit: "g",    gramsPerUnit: 80  },
+      { name: "אורז מבושל",                     category: "carb",      kcalPer100: 130, proteinPer100: 2.7,  carbsPer100: 28.0, fatPer100: 0.3,  defaultUnit: "g",    gramsPerUnit: 185 },
+      { name: "קינואה מבושלת",                  category: "carb",      kcalPer100: 120, proteinPer100: 4.4,  carbsPer100: 21.3, fatPer100: 1.9,  defaultUnit: "g",    gramsPerUnit: 185 },
+      { name: "כוסמת מבושלת",                   category: "carb",      kcalPer100: 92,  proteinPer100: 3.4,  carbsPer100: 19.9, fatPer100: 0.6,  defaultUnit: "g",    gramsPerUnit: 170 },
+      { name: "פסטה מבושלת",                    category: "carb",      kcalPer100: 158, proteinPer100: 5.8,  carbsPer100: 30.9, fatPer100: 0.9,  defaultUnit: "g",    gramsPerUnit: 200 },
+      { name: "לחם מלא",                        category: "carb",      kcalPer100: 247, proteinPer100: 13.0, carbsPer100: 41.0, fatPer100: 4.2,  defaultUnit: "unit", gramsPerUnit: 35  },
+      { name: "בטטה",                           category: "carb",      kcalPer100: 86,  proteinPer100: 1.6,  carbsPer100: 20.1, fatPer100: 0.1,  defaultUnit: "unit", gramsPerUnit: 200 },
+      // Cooked dishes
+      { name: "פסטה ברוטב עגבניות",             category: "carb",      kcalPer100: 130, proteinPer100: 4.0,  carbsPer100: 22.0, fatPer100: 2.0,  defaultUnit: "unit", gramsPerUnit: 300 },
+      { name: "לזניה צמחונית",                  category: "carb",      kcalPer100: 130, proteinPer100: 6.0,  carbsPer100: 14.0, fatPer100: 5.5,  defaultUnit: "unit", gramsPerUnit: 285 },
+      // Street food
+      { name: "פלאפל",                          category: "carb",      kcalPer100: 333, proteinPer100: 13.3, carbsPer100: 31.8, fatPer100: 17.8, defaultUnit: "unit", gramsPerUnit: 20  },
+      // Fats / spreads (USDA + Achla by Strauss Israeli label)
+      { name: "טחינה גולמית",                   category: "fat",       kcalPer100: 595, proteinPer100: 17.0, carbsPer100: 21.0, fatPer100: 53.0, defaultUnit: "tbsp", gramsPerUnit: 15  },
+      { name: "חומוס (ממרח)",                   category: "fat",       kcalPer100: 214, proteinPer100: 7.1,  carbsPer100: 10.7, fatPer100: 16.1, defaultUnit: "tbsp", gramsPerUnit: 25  },
+      { name: "אבוקדו",                         category: "fat",       kcalPer100: 160, proteinPer100: 2.0,  carbsPer100: 9.0,  fatPer100: 15.0, defaultUnit: "unit", gramsPerUnit: 140 },
+      { name: "שקדים",                          category: "fat",       kcalPer100: 579, proteinPer100: 21.0, carbsPer100: 22.0, fatPer100: 50.0, defaultUnit: "g",    gramsPerUnit: 25  },
+      { name: "שמן זית",                        category: "fat",       kcalPer100: 884, proteinPer100: 0.0,  carbsPer100: 0.0,  fatPer100: 100.0, defaultUnit: "tbsp", gramsPerUnit: 13 },
+      // Sweeteners
+      { name: "דבש",                            category: "sweet",     kcalPer100: 304, proteinPer100: 0.3,  carbsPer100: 82.0, fatPer100: 0.0,  defaultUnit: "tbsp", gramsPerUnit: 21  },
+      // Fruit (USDA FoodData Central)
+      { name: "בננה",                           category: "fruit",     kcalPer100: 89,  proteinPer100: 1.1,  carbsPer100: 22.8, fatPer100: 0.3,  defaultUnit: "unit", gramsPerUnit: 118 },
+      { name: "תפוח",                           category: "fruit",     kcalPer100: 52,  proteinPer100: 0.3,  carbsPer100: 13.8, fatPer100: 0.2,  defaultUnit: "unit", gramsPerUnit: 182 },
+      { name: "תמר מג׳הול",                     category: "fruit",     kcalPer100: 277, proteinPer100: 1.8,  carbsPer100: 75.0, fatPer100: 0.2,  defaultUnit: "unit", gramsPerUnit: 24  },
+      // Vegetables
+      { name: "מלפפון",                         category: "vegetable", kcalPer100: 15,  proteinPer100: 0.7,  carbsPer100: 3.6,  fatPer100: 0.1,  defaultUnit: "unit", gramsPerUnit: 120 },
+      { name: "עגבנייה",                        category: "vegetable", kcalPer100: 18,  proteinPer100: 0.9,  carbsPer100: 3.9,  fatPer100: 0.2,  defaultUnit: "unit", gramsPerUnit: 120 },
+      { name: "רוקט",                           category: "vegetable", kcalPer100: 25,  proteinPer100: 2.6,  carbsPer100: 3.7,  fatPer100: 0.7,  defaultUnit: "g",    gramsPerUnit: 40  },
+      { name: "פטרוזיליה",                      category: "vegetable", kcalPer100: 36,  proteinPer100: 3.0,  carbsPer100: 6.3,  fatPer100: 0.8,  defaultUnit: "g",    gramsPerUnit: 20  },
+      // Misc
+      { name: "מלח",                            category: "mixed",     kcalPer100: 0,   proteinPer100: 0.0,  carbsPer100: 0.0,  fatPer100: 0.0,  defaultUnit: "g",    gramsPerUnit: 5   },
+      // Sweets (FatSecret / Eat This Much)
+      { name: "Kinder Happy Hippo",             category: "sweet",     kcalPer100: 545, proteinPer100: 8.5,  carbsPer100: 57.0, fatPer100: 31.0, defaultUnit: "unit", gramsPerUnit: 21  },
+      { name: "פסק זמן",                        category: "sweet",     kcalPer100: 556, proteinPer100: 6.0,  carbsPer100: 51.0, fatPer100: 33.0, defaultUnit: "unit", gramsPerUnit: 45  },
     ];
-    const stmt = db.prepare(
+    const upsert = db.prepare(
       `INSERT INTO nutrition_ingredients
-       (id, name, category, kcalPer100, proteinPer100, carbsPer100, fatPer100, defaultUnit, gramsPerUnit, isBuiltIn, createdAt, updatedAt)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 1, ?, ?)`
+         (id, name, category, kcalPer100, proteinPer100, carbsPer100, fatPer100, defaultUnit, gramsPerUnit, isBuiltIn, createdAt, updatedAt)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 1, ?, ?)
+       ON CONFLICT(name) DO UPDATE SET
+         category      = excluded.category,
+         kcalPer100    = excluded.kcalPer100,
+         proteinPer100 = excluded.proteinPer100,
+         carbsPer100   = excluded.carbsPer100,
+         fatPer100     = excluded.fatPer100,
+         defaultUnit   = excluded.defaultUnit,
+         gramsPerUnit  = excluded.gramsPerUnit,
+         isBuiltIn     = 1,
+         updatedAt     = excluded.updatedAt`
     );
-    for (const item of seedIngredients) {
-      stmt.run(
-        randomUUID(),
-        item.name,
-        item.category,
-        item.kcalPer100,
-        item.proteinPer100,
-        item.carbsPer100,
-        item.fatPer100,
-        item.defaultUnit,
-        item.gramsPerUnit,
-        now,
-        now
-      );
+    const existing = new Set(
+      (db.prepare("SELECT name FROM nutrition_ingredients WHERE isBuiltIn = 1").all() as { name: string }[]).map(r => r.name)
+    );
+    for (const item of builtIns) {
+      const id = existing.has(item.name)
+        ? (db.prepare("SELECT id FROM nutrition_ingredients WHERE name = ? LIMIT 1").get(item.name) as { id: string }).id
+        : randomUUID();
+      upsert.run(id, item.name, item.category, item.kcalPer100, item.proteinPer100, item.carbsPer100, item.fatPer100, item.defaultUnit, item.gramsPerUnit, now, now);
     }
   }
-
-  db.prepare(
-    `UPDATE nutrition_ingredients
-     SET defaultUnit = 'ml',
-         gramsPerUnit = 50,
-         updatedAt = ?
-     WHERE LOWER(name) = LOWER(?)
-       AND (defaultUnit != 'ml' OR gramsPerUnit != 50)`
-  ).run(new Date().toISOString(), "אספרסו כפול עם חלב");
-
-  db.prepare(
-    `UPDATE nutrition_ingredients
-     SET category = 'hydration',
-         kcalPer100 = 9,
-         proteinPer100 = 0.1,
-         carbsPer100 = 1.7,
-         fatPer100 = 0.2,
-         defaultUnit = 'ml',
-         gramsPerUnit = 60,
-         updatedAt = ?
-     WHERE LOWER(name) = LOWER(?)
-       AND isBuiltIn = 1`
-  ).run(new Date().toISOString(), "אספרסו כפול");
-
-  db.prepare(
-    `UPDATE nutrition_ingredients
-     SET kcalPer100 = 333,
-         proteinPer100 = 13.3,
-         carbsPer100 = 31.8,
-         fatPer100 = 17.8,
-         defaultUnit = 'unit',
-         gramsPerUnit = 17,
-         updatedAt = ?
-     WHERE LOWER(name) = LOWER(?)
-       AND isBuiltIn = 1`
-  ).run(new Date().toISOString(), "פלאפל");
-
-  db.prepare(
-    `UPDATE nutrition_ingredients
-     SET kcalPer100 = 237,
-         proteinPer100 = 7.9,
-         carbsPer100 = 14.3,
-         fatPer100 = 17.8,
-         defaultUnit = 'g',
-         gramsPerUnit = 30,
-         updatedAt = ?
-     WHERE LOWER(name) = LOWER(?)
-       AND isBuiltIn = 1`
-  ).run(new Date().toISOString(), "חומוס (ממרח)");
-
-  db.prepare(
-    `UPDATE nutrition_ingredients
-     SET category = 'carb',
-         kcalPer100 = 130,
-         proteinPer100 = 5.6,
-         carbsPer100 = 12.0,
-         fatPer100 = 4.6,
-         defaultUnit = 'unit',
-         gramsPerUnit = 250,
-         updatedAt = ?
-     WHERE LOWER(name) = LOWER(?)
-       AND isBuiltIn = 1`
-  ).run(new Date().toISOString(), "לזניה צמחונית");
-
-  db.prepare(
-    `UPDATE nutrition_ingredients
-     SET category = 'sweet',
-         kcalPer100 = 565,
-         proteinPer100 = 8.2,
-         carbsPer100 = 52.0,
-         fatPer100 = 36.0,
-         defaultUnit = 'unit',
-         gramsPerUnit = 21,
-         updatedAt = ?
-     WHERE LOWER(name) = LOWER(?)
-       AND isBuiltIn = 1`
-  ).run(new Date().toISOString(), "Kinder Happy Hippo");
-
-  db.prepare(
-    `UPDATE nutrition_ingredients
-     SET category = 'sweet',
-         kcalPer100 = 520,
-         proteinPer100 = 6.5,
-         carbsPer100 = 58.0,
-         fatPer100 = 29.0,
-         defaultUnit = 'unit',
-         gramsPerUnit = 45,
-         updatedAt = ?
-     WHERE LOWER(name) = LOWER(?)
-       AND isBuiltIn = 1`
-  ).run(new Date().toISOString(), "פסק זמן");
-
-  const upsertBuiltInIngredient = db.prepare(
-    `INSERT OR IGNORE INTO nutrition_ingredients
-       (id, name, category, kcalPer100, proteinPer100, carbsPer100, fatPer100, defaultUnit, gramsPerUnit, isBuiltIn, createdAt, updatedAt)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 1, ?, ?)`
-  );
-  const nowBuiltIn = new Date().toISOString();
-  const ensureBuiltInIngredient = (
-    name: string,
-    category: NutritionIngredientCategory,
-    kcalPer100: number,
-    proteinPer100: number,
-    carbsPer100: number,
-    fatPer100: number,
-    defaultUnit: NutritionUnit,
-    gramsPerUnit: number
-  ) => {
-    const existing = db
-      .prepare("SELECT id FROM nutrition_ingredients WHERE LOWER(name) = LOWER(?) LIMIT 1")
-      .get(name) as { id: string } | undefined;
-    if (existing?.id) return;
-    upsertBuiltInIngredient.run(
-      randomUUID(),
-      name,
-      category,
-      kcalPer100,
-      proteinPer100,
-      carbsPer100,
-      fatPer100,
-      defaultUnit,
-      gramsPerUnit,
-      nowBuiltIn,
-      nowBuiltIn
-    );
-  };
-
-  ensureBuiltInIngredient("חומוס (ממרח)", "fat", 237, 7.9, 14.3, 17.8, "g", 30);
-  ensureBuiltInIngredient("פלאפל", "carb", 333, 13.3, 31.8, 17.8, "unit", 17);
-  ensureBuiltInIngredient("אספרסו כפול", "hydration", 9, 0.1, 1.7, 0.2, "ml", 60);
-  ensureBuiltInIngredient("לזניה צמחונית", "carb", 130, 5.6, 12.0, 4.6, "unit", 250);
-  ensureBuiltInIngredient("Kinder Happy Hippo", "sweet", 565, 8.2, 52.0, 36.0, "unit", 21);
-  ensureBuiltInIngredient("פסק זמן", "sweet", 520, 6.5, 58.0, 29.0, "unit", 45);
 
   if (!hasView("insight_day_view")) {
     db.exec(`
