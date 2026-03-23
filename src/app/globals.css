@@ -168,6 +168,8 @@ h3,
 
 .top-tabs-mobile {
   display: none;
+  position: relative;
+  overflow: visible;
 }
 
 .top-tab {
@@ -6025,7 +6027,7 @@ button.alt {
     margin-inline-start: auto;
     flex-wrap: nowrap;
     gap: 0.3rem;
-    overflow-x: auto;
+    overflow: visible;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
@@ -6207,6 +6209,7 @@ button.alt {
 
   .top-tabs-mobile {
     gap: 0.2rem;
+    overflow: visible;
   }
 
   .top-tabs-mobile .top-tab {
@@ -6304,13 +6307,13 @@ button.alt {
   }
 
   /* Tab-like structure */
-  .top-tabs {
+  .top-tabs-desktop {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
 
-  .top-tabs::-webkit-scrollbar {
+  .top-tabs-desktop::-webkit-scrollbar {
     display: none;
   }
 
@@ -6399,6 +6402,8 @@ button.alt {
   .top-more-menu {
     min-width: 150px;
     font-size: 0.8rem;
+    max-height: min(56vh, 380px);
+    overflow-y: auto;
   }
 
   .top-more-item {
@@ -9722,17 +9727,40 @@ button.alt {
   cursor: default;
 }
 
-.anl-year-nav {
+/* Year range dropdowns */
+.anl-year-range {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  flex-wrap: wrap;
 }
 
-.anl-year-display {
-  font-size: 1rem;
+.anl-year-range-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--on-surface-variant);
+}
+
+.anl-year-select {
+  background: var(--surface-container);
+  color: var(--on-surface);
+  border: 1px solid var(--outline-variant);
+  border-radius: 8px;
+  padding: 0.28rem 0.55rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  min-width: 3rem;
-  text-align: center;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.anl-year-select:focus {
+  border-color: #72dcff;
+}
+
+.anl-year-select:disabled {
+  opacity: 0.35;
+  cursor: default;
 }
 
 .anl-range-strip {
@@ -9758,26 +9786,29 @@ button.alt {
 }
 
 .anl-metric {
-  background: var(--surface-container);
-  border-radius: 14px;
-  padding: 1rem 1.1rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 0.65rem 0.85rem;
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.2rem;
 }
 
 .anl-metric-lbl {
-  font-size: 0.72rem;
+  font-size: 0.67rem;
   color: var(--on-surface-variant);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  opacity: 0.7;
 }
 
 .anl-metric-val {
-  font-size: 1.6rem;
+  font-size: 1.25rem;
   font-weight: 800;
   line-height: 1;
+  color: var(--on-surface-variant);
 }
 
 .anl-metric-cyan {
@@ -9939,17 +9970,18 @@ button.alt {
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
-.anl-hist-table tr:hover td {
-  background: var(--surface-container-high);
+.anl-hist-row {
+  cursor: pointer;
+  transition: background 0.1s;
 }
 
-.anl-hist-link {
-  text-decoration: none;
+.anl-hist-row:hover td {
+  background: rgba(114,220,255,0.07);
+}
+
+.anl-hist-date-cell {
   color: #72dcff;
-}
-
-.anl-hist-link:hover {
-  text-decoration: underline;
+  font-weight: 600;
 }
 
 .anl-hist-empty {
@@ -9972,6 +10004,24 @@ button.alt {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  border: 1px solid transparent;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.anl-pb-card-link {
+  cursor: pointer;
+}
+
+.anl-pb-card-link:hover {
+  border-color: rgba(114,220,255,0.3);
+  background: rgba(114,220,255,0.06);
+}
+
+.anl-pb-go {
+  font-size: 0.75rem;
+  color: #72dcff;
+  margin-top: 0.2rem;
+  font-weight: 600;
 }
 
 .anl-pb-dist {

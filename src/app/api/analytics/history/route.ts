@@ -3,8 +3,11 @@ import { z } from "zod";
 import { addDaysISO } from "@/lib/date";
 import { getWorkoutsBetween } from "@/lib/db";
 import { getWorkoutDetailData } from "@/lib/workout-detail";
+import { cloudEnabled, cloudGetWorkoutsBetween } from "@/lib/cloud-db";
 import type { Workout } from "@/lib/types";
 export const dynamic = "force-dynamic";
+
+export const runtime = "nodejs";
 
 const schema = z.object({
   from: z.string().datetime({ offset: true }).optional(),
@@ -46,8 +49,12 @@ export async function GET(request: Request) {
   const defaultStart = `${addDaysISO(new Date().toISOString().slice(0, 10), -365)}T00:00:00.000Z`;
   const defaultEnd = `${new Date().toISOString().slice(0, 10)}T23:59:59.999Z`;
   const start = from ? new Date(from).toISOString() : defaultStart;
+  // Use inclusive end: add 1ms so the end of the day is included
   const end = to ? new Date(to).toISOString() : defaultEnd;
-  const workouts = getWorkoutsBetween(start, end);
+
+  const rawWorkouts: Workout[] = cloudEnabled()
+    ? await cloudGetWorkoutsBetween(start, end)
+    : getWorkoutsBetween(start, end);
 
   type DisplayMetrics = {
     distanceDisplayKm: number;
@@ -112,7 +119,7 @@ export async function GET(request: Request) {
     return metric;
   };
 
-  const filtered = workouts.filter((w) => {
+  const filtered = rawWorkouts.filter((w) => {
     if (sport && w.sport !== sport) return false;
     const metric = metricsFor(w);
     const distanceKm = metric.distanceDisplayKm;

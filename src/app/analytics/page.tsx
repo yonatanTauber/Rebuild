@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 import { formatDisplayDate } from "@/lib/date";
 import { workoutDetailPath } from "@/lib/url";
 import type { HistoryResult, HistoryWorkout } from "@/lib/history-types";
@@ -54,9 +55,19 @@ type AnalyticsResponse = {
   }>;
 };
 
+const MONTH_LABELS = ["ינו", "פבר", "מרץ", "אפר", "מאי", "יונ", "יול", "אוג", "ספט", "אוק", "נוב", "דצמ"];
+
 function monthLabel(month: number) {
-  const labels = ["ינו", "פבר", "מרץ", "אפר", "מאי", "יונ", "יול", "אוג", "ספט", "אוק", "נוב", "דצמ"];
-  return labels[month - 1] ?? String(month);
+  return MONTH_LABELS[month - 1] ?? String(month);
+}
+
+function isoMonthRange(year: number, month: number) {
+  const m = String(month).padStart(2, "0");
+  const lastDay = new Date(year, month, 0).getDate();
+  return {
+    from: `${year}-${m}-01`,
+    to: `${year}-${m}-${String(lastDay).padStart(2, "0")}`
+  };
 }
 
 function formatDuration(sec: number | null) {
@@ -85,17 +96,6 @@ function maxValue(values: number[]) {
   return Math.max(1, ...values);
 }
 
-function currentMonthRange() {
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = String(now.getMonth() + 1).padStart(2, "0");
-  const day = String(now.getDate()).padStart(2, "0");
-  return {
-    from: `${year}-${month}-01`,
-    to: `${year}-${month}-${day}`
-  };
-}
-
 function historySortValue(workout: HistoryWorkout, field: HistorySortField) {
   switch (field) {
     case "date":
@@ -120,7 +120,8 @@ function BarChart({
   labelKey,
   valueKey,
   highlightKey,
-  height = 160
+  height = 160,
+  onBarClick
 }: {
   data: Array<Record<string, unknown>>;
   maxVal: number;
@@ -128,43 +129,62 @@ function BarChart({
   valueKey: string;
   highlightKey?: string | number;
   height?: number;
+  onBarClick?: (index: number, datum: Record<string, unknown>) => void;
 }) {
   const W = 600, H = height, BAR_GAP = 4;
+  const TOP_PAD = 18; // space above bars for labels
   const n = data.length;
   const barW = n > 0 ? Math.floor((W - BAR_GAP * (n - 1)) / n) : 20;
   return (
-    <svg viewBox={`0 0 ${W} ${H + 28}`} className="anl-bar-svg" preserveAspectRatio="xMidYMid meet">
+    <svg
+      viewBox={`0 0 ${W} ${H + TOP_PAD + 20}`}
+      className="anl-bar-svg"
+      preserveAspectRatio="xMidYMid meet"
+    >
       {data.map((d, i) => {
         const val = Number(d[valueKey]) || 0;
         const bh = maxVal > 0 ? Math.max(4, (val / maxVal) * H) : 4;
         const x = i * (barW + BAR_GAP);
+        const barY = TOP_PAD + H - bh;
         const isHighlight =
           highlightKey !== undefined &&
           (d[labelKey] === highlightKey || d[labelKey] === String(highlightKey));
+        const labelY = Math.max(TOP_PAD - 2, barY - 4);
         return (
-          <g key={i}>
+          <g
+            key={i}
+            style={{ cursor: onBarClick ? "pointer" : "default" }}
+            onClick={() => onBarClick?.(i, d)}
+          >
             <rect
               x={x}
-              y={H - bh}
+              y={barY}
               width={barW}
               height={bh}
               rx={4}
               fill="#72dcff"
-              opacity={isHighlight ? 1 : 0.45}
+              opacity={isHighlight ? 1 : 0.4}
             />
             {val > 0 && (
               <text
                 x={x + barW / 2}
-                y={H - bh - 4}
+                y={labelY}
                 textAnchor="middle"
                 fontSize="9"
                 fill="#72dcff"
-                opacity={isHighlight ? 1 : 0.6}
+                opacity={isHighlight ? 1 : 0.55}
               >
                 {val}
               </text>
             )}
-            <text x={x + barW / 2} y={H + 16} textAnchor="middle" fontSize="9" fill="#888">
+            <text
+              x={x + barW / 2}
+              y={TOP_PAD + H + 14}
+              textAnchor="middle"
+              fontSize="9"
+              fill={isHighlight ? "#72dcff" : "#888"}
+              fontWeight={isHighlight ? "700" : "400"}
+            >
               {String(d[labelKey])}
             </text>
           </g>
@@ -181,90 +201,68 @@ const SPORTS = [
 ];
 
 export default function AnalyticsPage() {
-  const monthRange = currentMonthRange();
+  const router = useRouter();
+
   const [sport, setSport] = useState<Sport>("run");
-  const [year, setYear] = useState<number>(new Date().getFullYear());
-  const [shoeId, setShoeId] = useState<string>("");
-  const [fromYear, setFromYear] = useState<number | undefined>(undefined);
-  const [toYear, setToYear] = useState<number | undefined>(undefined);
+  const [fromYear, setFromYear] = useState<number>(new Date().getFullYear());
+  const [toYear, setToYear] = useState<number>(new Date().getFullYear());
   const [allYears, setAllYears] = useState(false);
+  const [shoeId, setShoeId] = useState<string>("");
   const [data, setData] = useState<AnalyticsResponse | null>(null);
+
   const [historyResult, setHistoryResult] = useState<HistoryResult | null>(null);
   const [historyLoading, setHistoryLoading] = useState(false);
-  const [historyFromDate, setHistoryFromDate] = useState(monthRange.from);
-  const [historyToDate, setHistoryToDate] = useState(monthRange.to);
-  const [historyFilterDirty, setHistoryFilterDirty] = useState(false);
+  const [historyFromDate, setHistoryFromDate] = useState("");
+  const [historyToDate, setHistoryToDate] = useState("");
   const [historyRefreshToken, setHistoryRefreshToken] = useState(0);
   const [historySort, setHistorySort] = useState<{ field: HistorySortField; direction: "asc" | "desc" }>({
     field: "date",
     direction: "desc"
   });
 
-  useEffect(() => {
-    void load();
-  }, [sport, year, shoeId, fromYear, toYear, allYears]);
+  // The "display year" for the monthly micro chart and chart highlight
+  const displayYear = toYear;
 
+  // ── Load analytics overview ────────────────────────────────────────────
   useEffect(() => {
-    void loadHistoryTable();
-  }, [sport, fromYear, toYear, allYears, historyRefreshToken]);
+    void loadOverview();
+  }, [sport, fromYear, toYear, allYears, shoeId]);
 
-  useEffect(() => {
-    if (!allYears || !data) return;
-    const sorted = [...data.availableYears].sort((a, b) => a - b);
-    setFromYear(sorted[0]);
-    setToYear(sorted[sorted.length - 1]);
-  }, [allYears, data]);
-
-  useEffect(() => {
-    if (historyFilterDirty) return;
+  async function loadOverview() {
+    const params = new URLSearchParams({ sport, year: String(toYear) });
     if (allYears) {
-      setHistoryFromDate("");
-      setHistoryToDate("");
-      return;
+      params.set("allYears", "true");
+    } else {
+      params.set("fromYear", String(Math.min(fromYear, toYear)));
+      params.set("toYear", String(Math.max(fromYear, toYear)));
     }
-    const range = currentMonthRange();
-    setHistoryFromDate(range.from);
-    setHistoryToDate(range.to);
-  }, [allYears, historyFilterDirty, sport]);
-
-  async function load() {
-    const params = new URLSearchParams({
-      sport,
-      year: String(year)
-    });
-    if (fromYear) params.set("fromYear", String(fromYear));
-    if (toYear) params.set("toYear", String(toYear));
-    if (allYears) params.set("allYears", "true");
-    if (sport === "run" && shoeId) {
-      params.set("shoeId", shoeId);
-    }
+    if (sport === "run" && shoeId) params.set("shoeId", shoeId);
     const res = await fetch(`/api/analytics/overview?${params.toString()}`);
     const json = (await res.json()) as AnalyticsResponse;
     setData(json);
-    setYear(json.selectedYear);
+    // Sync allYears with server response
+    if (allYears && json.availableYears.length > 0) {
+      const sorted = [...json.availableYears].sort((a, b) => a - b);
+      setFromYear(sorted[0]);
+      setToYear(sorted[sorted.length - 1]);
+    }
   }
 
+  // ── Load history table ────────────────────────────────────────────────
+  useEffect(() => {
+    void loadHistoryTable();
+  }, [sport, historyRefreshToken]);
+
   async function loadHistoryTable() {
+    if (!historyFromDate || !historyToDate) return;
     setHistoryLoading(true);
     try {
-      const params = new URLSearchParams();
-      params.set("sport", sport);
-      if (!allYears) {
-        if (historyFromDate) {
-          params.set("from", `${historyFromDate}T00:00:00.000Z`);
-        } else {
-          params.set("from", `${monthRange.from}T00:00:00.000Z`);
-        }
-        if (historyToDate) {
-          params.set("to", `${historyToDate}T23:59:59.999Z`);
-        } else {
-          params.set("to", `${monthRange.to}T23:59:59.999Z`);
-        }
-      }
+      const params = new URLSearchParams({ sport });
+      params.set("from", `${historyFromDate}T00:00:00.000Z`);
+      params.set("to", `${historyToDate}T23:59:59.999Z`);
       const res = await fetch(`/api/analytics/history?${params.toString()}`);
       if (!res.ok) throw new Error("history fetch failed");
-      const payload = (await res.json()) as HistoryResult;
-      setHistoryResult(payload);
+      setHistoryResult((await res.json()) as HistoryResult);
     } catch (error) {
       console.error(error);
     } finally {
@@ -272,24 +270,29 @@ export default function AnalyticsPage() {
     }
   }
 
-  function applyHistoryFilters() {
-    setHistoryRefreshToken((prev) => prev + 1);
-    setHistoryFilterDirty(true);
-  }
-
   function handleToggleAllYears() {
-    setAllYears((prev) => {
-      const next = !prev;
-      if (!next) {
-        const range = currentMonthRange();
-        setHistoryFromDate(range.from);
-        setHistoryToDate(range.to);
-      }
-      return next;
-    });
-    setHistoryFilterDirty(false);
+    const next = !allYears;
+    setAllYears(next);
+    if (!next && data) {
+      const sorted = [...data.availableYears].sort((a, b) => b - a);
+      setFromYear(sorted[0]);
+      setToYear(sorted[0]);
+    }
   }
 
+  function handleMonthBarClick(monthIndex: number) {
+    const month = monthIndex + 1;
+    const range = isoMonthRange(displayYear, month);
+    setHistoryFromDate(range.from);
+    setHistoryToDate(range.to);
+    setHistoryRefreshToken((t) => t + 1);
+    // Scroll to history section
+    setTimeout(() => {
+      document.querySelector(".anl-hist-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 100);
+  }
+
+  // ── Computed values ────────────────────────────────────────────────────
   const yearlyMax = useMemo(() => maxValue((data?.yearly ?? []).map((y) => y.km)), [data]);
   const monthlyMax = useMemo(() => maxValue((data?.monthly ?? []).map((m) => m.km)), [data]);
 
@@ -299,17 +302,10 @@ export default function AnalyticsPage() {
     return [...workouts].sort((a, b) => {
       const valA = historySortValue(a, historySort.field);
       const valB = historySortValue(b, historySort.field);
-      if (valA === valB) {
-        return Date.parse(b.startAt) - Date.parse(a.startAt);
-      }
+      if (valA === valB) return Date.parse(b.startAt) - Date.parse(a.startAt);
       return dir * (valA - valB);
     });
   }, [historyResult?.workouts, historySort]);
-
-  const historySortIndicator = (field: HistorySortField) => {
-    if (historySort.field !== field) return "";
-    return historySort.direction === "asc" ? "▲" : "▼";
-  };
 
   function toggleHistorySort(field: HistorySortField) {
     setHistorySort((prev) =>
@@ -319,31 +315,26 @@ export default function AnalyticsPage() {
     );
   }
 
-  const yearIndex = data ? data.availableYears.indexOf(data.selectedYear) : -1;
-  const canPrevYear = data ? yearIndex >= 0 && yearIndex < data.availableYears.length - 1 : false;
-  const canNextYear = data ? yearIndex > 0 : false;
+  function historySortIndicator(field: HistorySortField) {
+    if (historySort.field !== field) return "";
+    return historySort.direction === "asc" ? "▲" : "▼";
+  }
 
-  // Computed formatted values for bento cards
-  // Use rangeSummary (full selected range) — NOT historyResult (which is just the date-filter table)
-  // Correct formula: time = km × pace(min/km) × 60 → seconds
-  const totalTimeSec = data?.rangeSummary && data.rangeSummary.avgPace
-    ? Math.round(data.rangeSummary.totalKm * data.rangeSummary.avgPace * 60)
-    : null;
-  const totalTimeFormatted = totalTimeSec != null ? formatDuration(totalTimeSec) : "–";
-
+  // Bento: use rangeSummary (already covers fromYear..toYear range)
+  const totalTimeSec =
+    data?.rangeSummary?.avgPace && data.rangeSummary.totalKm
+      ? Math.round(data.rangeSummary.totalKm * data.rangeSummary.avgPace * 60)
+      : null;
   const avgDurationSec =
     totalTimeSec != null && (data?.rangeSummary.totalCount ?? 0) > 0
       ? Math.round(totalTimeSec / data!.rangeSummary.totalCount)
       : null;
-  const avgDurationFormatted = avgDurationSec != null ? formatDuration(avgDurationSec) : "–";
 
-  // Monthly chart data with string labels
   const monthlyChartData = (data?.monthly ?? []).map((m) => ({
     label: monthLabel(m.month),
     km: m.km
   }));
 
-  // Shoe dropdown for run
   const shoeDropdown =
     sport === "run" ? (
       <select
@@ -360,19 +351,18 @@ export default function AnalyticsPage() {
       </select>
     ) : null;
 
-  // Max shoe km for bar ratio
   const maxShoeKm = useMemo(
     () => Math.max(1, ...(data?.runShoes ?? []).map((s) => s.km)),
     [data?.runShoes]
   );
 
-  function prevYear() {
-    if (data && canPrevYear) setYear(data.availableYears[yearIndex + 1]);
-  }
+  const availableYears = data?.availableYears ?? [new Date().getFullYear()];
 
-  function nextYear() {
-    if (data && canNextYear) setYear(data.availableYears[yearIndex - 1]);
-  }
+  const rangeLabel = allYears
+    ? "כל השנים"
+    : fromYear === toYear
+    ? String(fromYear)
+    : `${Math.min(fromYear, toYear)}–${Math.max(fromYear, toYear)}`;
 
   return (
     <div className="anl-page" dir="rtl">
@@ -385,6 +375,7 @@ export default function AnalyticsPage() {
 
       {/* Controls bar */}
       <div className="anl-controls">
+        {/* Sport chips */}
         <div className="anl-sport-chips">
           {SPORTS.map((s) => (
             <button
@@ -396,41 +387,65 @@ export default function AnalyticsPage() {
             </button>
           ))}
         </div>
-        <div className="anl-year-nav">
-          <button className="anl-chip" onClick={prevYear} disabled={!canPrevYear}>
-            ‹ שנה קודמת
-          </button>
-          <strong className="anl-year-display">{data?.selectedYear ?? year}</strong>
-          <button className="anl-chip" onClick={nextYear} disabled={!canNextYear}>
-            שנה הבאה ›
+
+        {/* Year range selector */}
+        <div className="anl-year-range">
+          <label className="anl-year-range-label">מ:</label>
+          <select
+            className="anl-year-select"
+            value={allYears ? "" : fromYear}
+            disabled={allYears}
+            onChange={(e) => {
+              setFromYear(Number(e.target.value));
+              setAllYears(false);
+            }}
+          >
+            {availableYears.map((y) => (
+              <option key={y} value={y}>{y}</option>
+            ))}
+          </select>
+          <label className="anl-year-range-label">עד:</label>
+          <select
+            className="anl-year-select"
+            value={allYears ? "" : toYear}
+            disabled={allYears}
+            onChange={(e) => {
+              setToYear(Number(e.target.value));
+              setAllYears(false);
+            }}
+          >
+            {availableYears.map((y) => (
+              <option key={y} value={y}>{y}</option>
+            ))}
+          </select>
+          <button
+            className={`anl-chip ${allYears ? "active" : ""}`}
+            onClick={handleToggleAllYears}
+          >
+            {allYears ? "✓ הכל" : "כל השנים"}
           </button>
         </div>
-        <button
-          className={`anl-chip ${allYears ? "active" : ""}`}
-          onClick={handleToggleAllYears}
-        >
-          {allYears ? "✓ כל השנים" : "הצג כל השנים"}
-        </button>
+
         {shoeDropdown}
       </div>
 
       {/* Range summary strip */}
       <div className="anl-range-strip">
-        <span>טווח: {allYears ? "כל השנים" : `${fromYear ?? year}–${toYear ?? year}`}</span>
+        <span>טווח: <strong>{rangeLabel}</strong></span>
         <span>· {data?.rangeSummary.totalKm ?? 0} ק&quot;מ</span>
         <span>· קצב {data?.rangeSummary.avgPace ? formatPace(data.rangeSummary.avgPace) : "-"}</span>
         <span>· {data?.rangeSummary.totalCount ?? 0} אימונים</span>
       </div>
 
-      {/* Bento 4 metrics */}
+      {/* Bento 4 metrics — shows range summary */}
       <div className="anl-bento">
         <div className="anl-metric">
           <span className="anl-metric-lbl">זמן כולל</span>
-          <strong className="anl-metric-val">{totalTimeFormatted}</strong>
+          <strong className="anl-metric-val">{totalTimeSec != null ? formatDuration(totalTimeSec) : "–"}</strong>
         </div>
         <div className="anl-metric">
           <span className="anl-metric-lbl">משך ממוצע</span>
-          <strong className="anl-metric-val">{avgDurationFormatted}</strong>
+          <strong className="anl-metric-val">{avgDurationSec != null ? formatDuration(avgDurationSec) : "–"}</strong>
         </div>
         <div className="anl-metric">
           <span className="anl-metric-lbl">קצב ממוצע</span>
@@ -458,13 +473,13 @@ export default function AnalyticsPage() {
             maxVal={yearlyMax}
             labelKey="year"
             valueKey="km"
-            highlightKey={String(data?.selectedYear ?? year)}
+            highlightKey={String(toYear)}
           />
         </section>
 
         <aside className="anl-summary-stack">
           <div className="anl-summary-card">
-            <span>ק&quot;מ השנה ({data?.currentYear ?? year})</span>
+            <span>ק&quot;מ השנה ({data?.currentYear ?? new Date().getFullYear()})</span>
             <strong className="anl-cyan">{data?.summary.currentYearKm ?? 0}</strong>
           </div>
           <div className="anl-summary-card">
@@ -472,8 +487,8 @@ export default function AnalyticsPage() {
             <strong>{data?.summary.currentMonthKm ?? 0}</strong>
           </div>
           <div className="anl-summary-card">
-            <span>ק&quot;מ בשנת ניתוח</span>
-            <strong>{data?.summary.selectedYearKm ?? 0}</strong>
+            <span>ק&quot;מ {rangeLabel}</span>
+            <strong>{data?.rangeSummary.totalKm ?? 0}</strong>
           </div>
         </aside>
       </div>
@@ -481,7 +496,7 @@ export default function AnalyticsPage() {
       {/* Monthly micro chart */}
       <section className="anl-card">
         <h2 className="anl-card-title">
-          מיקרו חודשי <span className="anl-card-sub">{data?.selectedYear ?? year}</span>
+          מיקרו חודשי <span className="anl-card-sub">{displayYear} · לחץ על עמודה לסינון היסטוריה</span>
         </h2>
         <BarChart
           data={monthlyChartData}
@@ -489,27 +504,30 @@ export default function AnalyticsPage() {
           labelKey="label"
           valueKey="km"
           height={140}
+          onBarClick={handleMonthBarClick}
         />
       </section>
 
-      {/* History section — run only */}
+      {/* History section */}
       {sport === "run" && (
-        <section className="anl-card">
+        <section className="anl-card anl-hist-section">
           <h2 className="anl-card-title">
-            היסטוריית אימונים <span className="anl-card-sub">חיפוש לפי תאריך</span>
+            היסטוריית אימונים{" "}
+            <span className="anl-card-sub">
+              {historyFromDate && historyToDate
+                ? `${historyFromDate} → ${historyToDate}`
+                : "לחץ על עמודה בגרף לסינון"}
+            </span>
           </h2>
+
           <div className="anl-hist-controls">
             <label className="anl-hist-label">
-              מ־
+              מ-
               <input
                 type="date"
                 className="anl-date-input"
                 value={historyFromDate}
-                disabled={allYears}
-                onChange={(e) => {
-                  setHistoryFromDate(e.target.value);
-                  setHistoryFilterDirty(true);
-                }}
+                onChange={(e) => setHistoryFromDate(e.target.value)}
               />
             </label>
             <label className="anl-hist-label">
@@ -518,26 +536,34 @@ export default function AnalyticsPage() {
                 type="date"
                 className="anl-date-input"
                 value={historyToDate}
-                disabled={allYears}
-                onChange={(e) => {
-                  setHistoryToDate(e.target.value);
-                  setHistoryFilterDirty(true);
-                }}
+                onChange={(e) => setHistoryToDate(e.target.value)}
               />
             </label>
             <button
-              className={`anl-chip ${allYears ? "active" : ""}`}
-              onClick={handleToggleAllYears}
+              className="anl-chip"
+              onClick={() => setHistoryRefreshToken((t) => t + 1)}
+              disabled={!historyFromDate || !historyToDate}
             >
-              {allYears ? "✓ כל השנים" : "הצג כל השנים"}
-            </button>
-            <button className="anl-chip" onClick={applyHistoryFilters}>
               הצג
             </button>
+            {historyResult && (
+              <button
+                className="anl-chip"
+                onClick={() => {
+                  setHistoryFromDate("");
+                  setHistoryToDate("");
+                  setHistoryResult(null);
+                }}
+              >
+                נקה
+              </button>
+            )}
           </div>
 
-          {historyLoading && (
-            <p className="anl-loading">טוען נתונים...</p>
+          {historyLoading && <p className="anl-loading">טוען נתונים...</p>}
+
+          {!historyLoading && !historyFromDate && !historyResult && (
+            <p className="anl-loading">לחץ על עמודה בגרף החודשי או בחר טווח תאריכים ולחץ הצג.</p>
           )}
 
           {!historyLoading && historyResult && (
@@ -557,43 +583,24 @@ export default function AnalyticsPage() {
                 <table className="anl-hist-table">
                   <thead>
                     <tr>
-                      <th>
-                        <button onClick={() => toggleHistorySort("date")}>
-                          תאריך {historySortIndicator("date")}
-                        </button>
-                      </th>
-                      <th>
-                        <button onClick={() => toggleHistorySort("distance")}>
-                          מרחק {historySortIndicator("distance")}
-                        </button>
-                      </th>
-                      <th>
-                        <button onClick={() => toggleHistorySort("pace")}>
-                          קצב {historySortIndicator("pace")}
-                        </button>
-                      </th>
-                      <th>
-                        <button onClick={() => toggleHistorySort("time")}>
-                          זמן {historySortIndicator("time")}
-                        </button>
-                      </th>
-                      <th>
-                        <button onClick={() => toggleHistorySort("tss")}>
-                          TSS {historySortIndicator("tss")}
-                        </button>
-                      </th>
+                      <th><button onClick={() => toggleHistorySort("date")}>תאריך {historySortIndicator("date")}</button></th>
+                      <th><button onClick={() => toggleHistorySort("distance")}>מרחק {historySortIndicator("distance")}</button></th>
+                      <th><button onClick={() => toggleHistorySort("pace")}>קצב {historySortIndicator("pace")}</button></th>
+                      <th><button onClick={() => toggleHistorySort("time")}>זמן {historySortIndicator("time")}</button></th>
+                      <th><button onClick={() => toggleHistorySort("tss")}>TSS {historySortIndicator("tss")}</button></th>
                       <th>נעל</th>
                     </tr>
                   </thead>
                   <tbody>
                     {sortedHistoryWorkouts.length > 0 ? (
                       sortedHistoryWorkouts.map((work) => (
-                        <tr key={work.id}>
-                          <td>
-                            <Link href={workoutDetailPath(work.id)} className="anl-hist-link">
-                              {formatDisplayDate(work.startAt)}
-                            </Link>
-                          </td>
+                        <tr
+                          key={work.id}
+                          className="anl-hist-row"
+                          onClick={() => router.push(workoutDetailPath(work.id))}
+                          title="לחץ לפתיחת האימון"
+                        >
+                          <td className="anl-hist-date-cell">{formatDisplayDate(work.startAt)}</td>
                           <td>{formatDistanceKm(work.distanceDisplayKm ?? (work.distanceM != null ? work.distanceM / 1000 : null))}</td>
                           <td>{formatPace(work.paceMinPerKm)}</td>
                           <td>{formatDuration(work.durationSec)}</td>
@@ -603,19 +610,13 @@ export default function AnalyticsPage() {
                       ))
                     ) : (
                       <tr>
-                        <td colSpan={6} className="anl-hist-empty">
-                          אין אימונים בטווח שנבחר.
-                        </td>
+                        <td colSpan={6} className="anl-hist-empty">אין אימונים בטווח שנבחר.</td>
                       </tr>
                     )}
                   </tbody>
                 </table>
               </div>
             </>
-          )}
-
-          {!historyLoading && !historyResult && (
-            <p className="anl-loading">בחר טווח תאריכים ולחץ הצג.</p>
           )}
         </section>
       )}
@@ -630,13 +631,11 @@ export default function AnalyticsPage() {
             {data.pbs.map((pb) => (
               <div
                 key={`${pb.distanceKey}-${pb.date ?? pb.bestTimeSec}`}
-                className="anl-pb-card"
+                className={`anl-pb-card${pb.workoutId ? " anl-pb-card-link" : ""}`}
+                onClick={() => pb.workoutId && router.push(workoutDetailPath(pb.workoutId))}
+                title={pb.workoutId ? "לחץ לפתיחת האימון" : undefined}
               >
-                <span className="anl-pb-dist">
-                  <Link href={`/analytics/pb/${pb.distanceKey}`} className="anl-pb-dist-link">
-                    {pb.distanceLabel}
-                  </Link>
-                </span>
+                <span className="anl-pb-dist">{pb.distanceLabel}</span>
                 <span className="anl-pb-time">{formatDuration(pb.bestTimeSec)}</span>
                 <span className="anl-pb-pace">
                   {pb.paceMinPerKm ? `${formatPace(pb.paceMinPerKm)} דק/ק"מ` : "–"}
@@ -645,9 +644,7 @@ export default function AnalyticsPage() {
                   {pb.date ? formatDisplayDate(pb.date) : "תאריך לא ידוע"}
                 </span>
                 {pb.workoutId && (
-                  <Link href={workoutDetailPath(pb.workoutId)} className="anl-pb-link">
-                    לאימון ←
-                  </Link>
+                  <span className="anl-pb-go">לאימון ←</span>
                 )}
               </div>
             ))}
@@ -666,9 +663,7 @@ export default function AnalyticsPage() {
               <li key={shoe.id} className="anl-shoe-item">
                 <div className="anl-shoe-row">
                   <span>{shoe.name}</span>
-                  <span>
-                    {shoe.runs} ריצות · {shoe.km} ק&quot;מ
-                  </span>
+                  <span>{shoe.runs} ריצות · {shoe.km} ק&quot;מ</span>
                 </div>
                 <div className="anl-shoe-bar-track">
                   <div
