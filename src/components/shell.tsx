@@ -82,9 +82,6 @@ export function AppShell({ children }: { children: ReactNode }) {
           <div className="brand-wrap">
             <RebuildLogo />
           </div>
-          <div className="top-nav-center-slot-wrap">
-            {isTodayScreen ? <div id="today-topbar-slot" className="today-topbar-slot" /> : null}
-          </div>
           <nav className="top-tabs top-tabs-desktop" aria-label="ניווט ראשי">
             {navItems.map((item) => (
               <Link
@@ -172,6 +169,13 @@ export function AppShell({ children }: { children: ReactNode }) {
             </div>
           </nav>
         </div>
+        {isTodayScreen ? (
+          <div className="app-top-nav-context">
+            <div className="app-top-nav-context-inner">
+              <div id="today-topbar-slot" className="today-topbar-slot" />
+            </div>
+          </div>
+        ) : null}
       </header>
       <main className="content">{children}</main>
     </div>

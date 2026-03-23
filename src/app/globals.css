@@ -47,6 +47,31 @@
   --morning-soreness: var(--tertiary);
   --morning-restinghr: var(--secondary);
   --morning-hrv: color-mix(in srgb, var(--primary) 55%, var(--tertiary));
+
+  /* Desktop layout scale */
+  --layout-max: 1280px;
+  --layout-gutter: 1rem;
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --layout-max: 1460px;
+    --layout-gutter: 1.15rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --layout-max: 1600px;
+    --layout-gutter: 1.25rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  :root {
+    --layout-max: 1760px;
+    --layout-gutter: 1.35rem;
+  }
 }
 
 * {
@@ -101,13 +126,25 @@ h3,
 }
 
 .app-top-nav-inner {
-  max-width: 1280px;
+  max-width: var(--layout-max);
   margin-inline: auto;
-  padding: 0.7rem 1.15rem;
+  padding: 0.7rem var(--layout-gutter);
   display: grid;
-  grid-template-columns: auto minmax(280px, 1fr) auto;
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
   gap: 0.75rem;
+}
+
+.app-top-nav-context {
+  display: none;
+  border-top: 1px solid color-mix(in srgb, var(--outline-variant) 70%, transparent);
+  background: rgba(26, 26, 26, 0.76);
+}
+
+.app-top-nav-context-inner {
+  max-width: var(--layout-max);
+  margin-inline: auto;
+  padding: 0.42rem var(--layout-gutter) 0.5rem;
 }
 
 .brand-wrap {
@@ -168,15 +205,18 @@ h3,
 }
 
 .top-nav-center-slot-wrap {
-  min-width: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 .today-topbar-slot {
   width: 100%;
-  max-width: 720px;
+  max-width: 100%;
+}
+
+@media (min-width: 1920px) {
+  .today-topbar-slot {
+    max-width: 1120px;
+  }
 }
 
 .today-topbar-portal {
@@ -294,8 +334,8 @@ h3,
 }
 
 .content {
-  padding: 1.1rem 1rem 2rem;
-  max-width: 1240px;
+  padding: 1.1rem var(--layout-gutter) 2rem;
+  max-width: var(--layout-max);
   width: 100%;
   margin-inline: auto;
 }
@@ -6216,6 +6256,10 @@ button.alt {
     align-items: center;
   }
 
+  .app-top-nav-context {
+    display: none;
+  }
+
   .top-nav-center-slot-wrap {
     display: none;
   }
@@ -6383,6 +6427,12 @@ button.alt {
 
   .today-nutrition-morning-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) {
+  .app-top-nav-context {
+    display: block;
   }
 }
 
@@ -7740,7 +7790,7 @@ button.alt {
 .today-surface-b          { order: 6 !important; display: none !important; }
 .today-surface-c          { order: 99 !important; display: none !important; }
 
-/* ── Force 2-col on desktop ─── */
+/* ── Today desktop layout ─── */
 @media (min-width: 769px) {
   .top-input-section,
   .today-row-scores-workout,
@@ -7751,14 +7801,35 @@ button.alt {
   }
 }
 
+@media (min-width: 1440px) {
+  .today-page-flow {
+    gap: 0.55rem;
+    padding: 0.45rem 0 4.6rem;
+  }
+
+  .top-input-section,
+  .today-row-scores-workout,
+  .today-row-checkin-energy {
+    gap: 0.78rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .top-input-section,
+  .today-row-scores-workout,
+  .today-row-checkin-energy {
+    gap: 0.88rem;
+  }
+}
+
 /* ════════════════════════════════════════════════════════════
    KINETIC LAB — LOG LIST PAGE
    ════════════════════════════════════════════════════════════ */
 
 .log-kinetic-page {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 2rem 1.25rem 4rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 2rem 0 4rem;
   direction: rtl;
 }
 
@@ -7924,6 +7995,21 @@ button.alt {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
+}
+
+@media (min-width: 1440px) {
+  .log-kinetic-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .log-kinetic-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.82rem;
+  }
 }
 
 .log-kinetic-empty {
@@ -8259,9 +8345,9 @@ button.alt {
    ══════════════════════════════════════════ */
 
 .wkd-page {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 1.5rem 1.25rem 4rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 1.5rem 0 4rem;
   direction: rtl;
 }
 
@@ -8472,6 +8558,12 @@ button.alt {
   grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1440px) {
+  .wkd-bento {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 .wkd-metric {
@@ -8789,9 +8881,9 @@ button.alt {
    ══════════════════════════════════════════ */
 
 .nutr-page {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 1.5rem 1.25rem 4rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 1.5rem 0 4rem;
   direction: rtl;
 }
 
@@ -8901,6 +8993,15 @@ button.alt {
   gap: 1rem;
   margin-bottom: 1rem;
   align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .nutr-stats-row {
+    display: grid;
+    grid-template-columns: minmax(300px, 360px) minmax(0, 1fr);
+    align-items: start;
+    gap: 1.1rem;
+  }
 }
 
 .nutr-kcal-card {
@@ -9997,9 +10098,9 @@ button.alt {
 
 /* ── Analytics page — Kinetic Lab dark design ─────────────────────────────── */
 .anl-page {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1rem 1rem 5rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 1rem 0 5rem;
   color: var(--on-surface);
 }
 
@@ -10189,6 +10290,13 @@ button.alt {
   gap: 0.75rem;
   margin-bottom: 0.75rem;
   align-items: start;
+}
+
+@media (min-width: 1440px) {
+  .anl-main-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 700px) {
