@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { createPortal } from "react-dom";
 import { ScoreCard, Section } from "@/components/cards";
 import { type DayJournalBundle } from "@/components/day-journal-grid";
 import RunFeedbackForm, { defaultRunFeedbackValues, type RunFeedbackValues } from "@/components/run-feedback-form";
@@ -1386,6 +1387,7 @@ export default function TodayPage() {
   const [morningTrend, setMorningTrend] = useState<MorningTrendPoint[]>([]);
   const [mobileWorkoutIndex, setMobileWorkoutIndex] = useState(0);
   const [showMobileMoreWorkouts, setShowMobileMoreWorkouts] = useState(false);
+  const [desktopTopbarSlot, setDesktopTopbarSlot] = useState<HTMLElement | null>(null);
   const mobileWorkoutCarouselRef = useRef<HTMLDivElement | null>(null);
 
   const activePendingWorkout = pendingFeedback[0] ?? null;
@@ -1403,6 +1405,11 @@ export default function TodayPage() {
     if (isIsoDate(requestedDate)) {
       setActiveDate(requestedDate);
     }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    setDesktopTopbarSlot(document.getElementById("today-topbar-slot"));
   }, []);
 
   useEffect(() => {
@@ -2695,6 +2702,49 @@ export default function TodayPage() {
 
   return (
     <div className="today-page today-page-flow">
+      {desktopTopbarSlot
+        ? createPortal(
+            <div className="today-topbar-portal" aria-label="ניווט יום בדסקטופ">
+              <div className="journal-nav">
+                <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate((prev) => addDaysISO(prev, -1))} title="יום קודם">
+                  <span className="material-symbols-outlined" aria-hidden>
+                    chevron_right
+                  </span>
+                </button>
+                <strong className="journal-date-title">{formatDisplayDate(activeDate)}</strong>
+                <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate((prev) => addDaysISO(prev, 1))} title="יום הבא">
+                  <span className="material-symbols-outlined" aria-hidden>
+                    chevron_left
+                  </span>
+                </button>
+              </div>
+              <div className="journal-quick-actions">
+                <button className="choice-btn journal-today-btn" onClick={() => setActiveDate(formatISODate())}>
+                  היום
+                </button>
+                {isHistoricalDay ? (
+                  <button
+                    className={historicalEditMode ? "choice-btn icon-compact selected" : "choice-btn icon-compact"}
+                    onClick={() => setHistoricalEditMode((prev) => !prev)}
+                  >
+                    {historicalEditMode ? "סגור" : "עריכה"}
+                  </button>
+                ) : null}
+                <button className="choice-btn icon-compact" onClick={triggerSync} disabled={syncing} title="רענון אימונים">
+                  <span aria-hidden>↻</span>
+                </button>
+                <button
+                  className={morningDone ? "choice-btn icon-compact morning-done" : "choice-btn icon-compact morning-missing"}
+                  onClick={openMorningUpdate}
+                  title="עדכון בוקר"
+                >
+                  <span aria-hidden>{morningDone ? "✓" : "☀"}</span>
+                </button>
+              </div>
+            </div>,
+            desktopTopbarSlot
+          )
+        : null}
       <section className="panel today-panel-row">
         <div className="journal-topbar">
           {/* Row 1: nav + quick actions */}
@@ -2735,42 +2785,6 @@ export default function TodayPage() {
                 <span className="material-symbols-outlined" aria-hidden>
                   chevron_right
                 </span>
-              </button>
-            </div>
-            <div className="journal-nav">
-              <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate((prev) => addDaysISO(prev, -1))} title="יום קודם">
-                <span className="material-symbols-outlined" aria-hidden>
-                  chevron_right
-                </span>
-              </button>
-              <strong className="journal-date-title">{formatDisplayDate(activeDate)}</strong>
-              <button className="choice-btn journal-nav-btn" onClick={() => setActiveDate((prev) => addDaysISO(prev, 1))} title="יום הבא">
-                <span className="material-symbols-outlined" aria-hidden>
-                  chevron_left
-                </span>
-              </button>
-            </div>
-            <div className="journal-quick-actions">
-              <button className="choice-btn journal-today-btn" onClick={() => setActiveDate(formatISODate())}>
-                היום
-              </button>
-              {isHistoricalDay ? (
-                <button
-                  className={historicalEditMode ? "choice-btn icon-compact selected" : "choice-btn icon-compact"}
-                  onClick={() => setHistoricalEditMode((prev) => !prev)}
-                >
-                  {historicalEditMode ? "סגור" : "עריכה"}
-                </button>
-              ) : null}
-              <button className="choice-btn icon-compact" onClick={triggerSync} disabled={syncing} title="רענון אימונים">
-                <span aria-hidden>↻</span>
-              </button>
-              <button
-                className={morningDone ? "choice-btn icon-compact morning-done" : "choice-btn icon-compact morning-missing"}
-                onClick={openMorningUpdate}
-                title="עדכון בוקר"
-              >
-                <span aria-hidden>{morningDone ? "✓" : "☀"}</span>
               </button>
             </div>
           </div>

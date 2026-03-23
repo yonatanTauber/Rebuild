@@ -45,6 +45,7 @@ export function AppShell({ children }: { children: ReactNode }) {
   const mobileMoreActive = mobileOverflowItems.some((item) => isActive(item.href));
   const isHomeFallback =
     !navItems.some((n) => isActive(n.href)) && !isSecondaryActive;
+  const isTodayScreen = pathname === "/today" || pathname.startsWith("/today/");
 
   useEffect(() => {
     if (autoSyncStartedRef.current) return;
@@ -80,6 +81,9 @@ export function AppShell({ children }: { children: ReactNode }) {
         <div className="app-top-nav-inner">
           <div className="brand-wrap">
             <RebuildLogo />
+          </div>
+          <div className="top-nav-center-slot-wrap">
+            {isTodayScreen ? <div id="today-topbar-slot" className="today-topbar-slot" /> : null}
           </div>
           <nav className="top-tabs top-tabs-desktop" aria-label="ניווט ראשי">
             {navItems.map((item) => (
