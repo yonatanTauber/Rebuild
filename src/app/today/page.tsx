@@ -1433,6 +1433,7 @@ function MorningTrendCard({
 export default function TodayPage() {
   const router = useRouter();
   const autoMorningPromptedDateRef = useRef<string | null>(null);
+  const autoWorkoutPromptedRef = useRef<string | null>(null);
   const morningRestoreAttemptedRef = useRef<Set<string>>(new Set());
   const dashboardHashRef = useRef<string>("");
   const [activeDate, setActiveDate] = useState(formatISODate());
@@ -2669,6 +2670,22 @@ export default function TodayPage() {
     setStrengthWorkoutForm(defaultStrengthFeedbackValues());
   }, [activePendingWorkout?.workoutId]);
 
+  useEffect(() => {
+    if (!activePendingWorkout) return;
+    if (showWorkoutModal || showMorningModal || showStrengthModal || todayFoodModalOpen || newIngredientModalOpen) return;
+    const promptKey = `${activePendingWorkout.workoutId}:${activePendingWorkout.startAt}`;
+    if (autoWorkoutPromptedRef.current === promptKey) return;
+    autoWorkoutPromptedRef.current = promptKey;
+    setShowWorkoutModal(true);
+  }, [
+    activePendingWorkout,
+    showWorkoutModal,
+    showMorningModal,
+    showStrengthModal,
+    todayFoodModalOpen,
+    newIngredientModalOpen
+  ]);
+
   async function triggerSync() {
     if (syncing) return;
     setSyncing(true);
@@ -3098,13 +3115,41 @@ export default function TodayPage() {
         return;
       }
       const json = await res.json();
-      applyStrengthSessionState((json?.session ?? null) as StrengthSession | null);
-      setStrengthFocusedExerciseId(exercise.id);
+      const nextSession = (json?.session ?? null) as StrengthSession | null;
+      applyStrengthSessionState(nextSession);
+      if (nextSession) {
+        const nextExerciseSameEquipment = nextSession.exercises.find(
+          (item) => item.equipmentType === exercise.equipmentType && item.completedSets < item.targetSets
+        );
+        if (nextExerciseSameEquipment) {
+          setStrengthFocusedEquipment(nextExerciseSameEquipment.equipmentType);
+          setStrengthFocusedExerciseId(nextExerciseSameEquipment.id);
+        } else {
+          moveToNextEquipment(nextSession, exercise.equipmentType);
+        }
+      }
       showToast(`סט ${exercise.completedSets + 1} נשמר.`);
     } catch {
       showToast("שמירת סט נכשלה.");
     } finally {
       setStrengthSaving(false);
+    }
+  }
+
+  function moveToNextEquipment(session: StrengthSession, currentEquipment: StrengthEquipmentType) {
+    if (!session.equipmentTypes.length) return;
+    const currentIndex = session.equipmentTypes.indexOf(currentEquipment);
+    const startIndex = currentIndex >= 0 ? currentIndex + 1 : 0;
+    const ordered = [...session.equipmentTypes.slice(startIndex), ...session.equipmentTypes.slice(0, startIndex)];
+    const nextWithPending = ordered.find((equipment) =>
+      session.exercises.some((exercise) => exercise.equipmentType === equipment && exercise.completedSets < exercise.targetSets)
+    );
+    const nextEquipment = nextWithPending ?? ordered[0] ?? currentEquipment;
+    setStrengthFocusedEquipment(nextEquipment);
+    const nextExercise = session.exercises.find((exercise) => exercise.equipmentType === nextEquipment);
+    setStrengthFocusedExerciseId(nextExercise?.id ?? null);
+    if (nextWithPending) {
+      showToast(`מעבר למתקן הבא: ${strengthEquipmentOptions.find((item) => item.value === nextEquipment)?.label ?? "אחר"}`);
     }
   }
 
@@ -4048,6 +4093,15 @@ export default function TodayPage() {
                 </div>
 
                 <div className="strength-session-footer">
+                  <button
+                    type="button"
+                    className="choice-btn compact"
+                    onClick={() => moveToNextEquipment(strengthSession, strengthFocusedEquipment)}
+                    disabled={strengthSaving || strengthSession.equipmentTypes.length < 2}
+                    title="מעבר למתקן הבא"
+                  >
+                    למתקן הבא
+                  </button>
                   <button type="button" className="choice-btn compact" onClick={pauseStrengthSessionFlow} disabled={strengthSaving}>
                     השהה אימון
                   </button>
