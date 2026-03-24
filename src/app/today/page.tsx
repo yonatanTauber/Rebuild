@@ -1410,6 +1410,7 @@ export default function TodayPage() {
   const [todayFoodUnit, setTodayFoodUnit] = useState<NutritionUnit>("unit");
   const [addingTodayFood, setAddingTodayFood] = useState(false);
   const [addingWaterIntake, setAddingWaterIntake] = useState(false);
+  const [optimisticWaterMl, setOptimisticWaterMl] = useState(0);
 
   const [newIngredientModalOpen, setNewIngredientModalOpen] = useState(false);
   const [newIngredientDraft, setNewIngredientDraft] = useState<NewIngredientDraft | null>(null);
@@ -1838,6 +1839,13 @@ export default function TodayPage() {
     );
     return { totalMl, entries };
   }, [journal]);
+  const hydrationTargetMl = Math.max(1, journal?.nutrition.plan.hydrationMl ?? 2000);
+  const waterTotalMl = Math.max(0, drinksSummary.totalMl + optimisticWaterMl);
+  const waterProgressPct = Math.min((waterTotalMl / hydrationTargetMl) * 100, 100);
+
+  useEffect(() => {
+    setOptimisticWaterMl(0);
+  }, [drinksSummary.totalMl, activeDate]);
   const morningSideMetrics = useMemo<MorningMetricVisual[]>(() => {
     if (!morningDone || !journal?.recovery) return [];
     const fields: Array<{ field: MorningMetricField; label: string }> = [
@@ -2098,6 +2106,7 @@ export default function TodayPage() {
     }
     if (addingWaterIntake) return;
     setAddingWaterIntake(true);
+    setOptimisticWaterMl((prev) => prev + 200);
     try {
       const res = await fetch("/api/nutrition/favorites/add", {
         method: "POST",
@@ -2111,12 +2120,14 @@ export default function TodayPage() {
         })
       });
       if (!res.ok) {
+        setOptimisticWaterMl((prev) => Math.max(0, prev - 200));
         showToast("הוספת מים נכשלה.");
         return;
       }
-      showToast("נוסף מים (200 מ״ל).");
+      showToast("התווספו 200 מ״ל מים.");
       await loadDashboard(activeDate);
     } catch {
+      setOptimisticWaterMl((prev) => Math.max(0, prev - 200));
       showToast("הוספת מים נכשלה.");
     } finally {
       setAddingWaterIntake(false);
@@ -2973,20 +2984,20 @@ export default function TodayPage() {
           </div>
           <div className="water-input-display">
             <div className="water-input-amount">
-              {Math.round((drinksSummary.totalMl / (journal?.nutrition.plan.hydrationMl ?? 2000)) * 100)}%
+              {Math.round(waterProgressPct)}%
             </div>
             <div className="water-input-progress">
               <div className="water-input-bar-track">
                 <div
                   className="water-input-bar-fill"
                   style={{
-                    width: `${Math.min(((drinksSummary.totalMl ?? 0) / (journal?.nutrition.plan.hydrationMl ?? 2000)) * 100, 100)}%`,
+                    width: `${waterProgressPct}%`,
                     background: "linear-gradient(90deg, #72dcff 0%, #72dcff 100%)"
                   }}
                 />
               </div>
               <span className="water-input-label">
-                {drinksSummary.totalMl} / {journal?.nutrition.plan.hydrationMl ?? 2000} מ״ל
+                {waterTotalMl} / {hydrationTargetMl} מ״ל
               </span>
             </div>
           </div>
