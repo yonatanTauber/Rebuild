@@ -5,17 +5,17 @@ import UiSelect from "@/components/ui-select";
 export type RunFuelingSource = "none" | "gel" | "date" | "other";
 
 export type RunFeedbackValues = {
-  rpeScore: 1 | 2 | 3 | 4 | 5;
-  legsLoadScore: 1 | 2 | 3 | 4 | 5;
-  painScore: 1 | 2 | 3 | 4 | 5;
+  rpeScore: 0 | 1 | 2 | 3 | 4 | 5;
+  legsLoadScore: 0 | 1 | 2 | 3 | 4 | 5;
+  painScore: 0 | 1 | 2 | 3 | 4 | 5;
   painArea: string;
-  addFiveKmScore: 1 | 2 | 3 | 4 | 5;
-  recoveryScore: 1 | 2 | 3 | 4 | 5;
-  breathingScore: 1 | 2 | 3 | 4 | 5;
-  overallLoadScore: 1 | 2 | 3 | 4 | 5;
-  preRunNutritionScore: 1 | 2 | 3 | 4 | 5;
-  environmentScore: 1 | 2 | 3 | 4 | 5;
-  satisfactionScore: 1 | 2 | 3 | 4 | 5;
+  addFiveKmScore: 0 | 1 | 2 | 3 | 4 | 5;
+  recoveryScore: 0 | 1 | 2 | 3 | 4 | 5;
+  breathingScore: 0 | 1 | 2 | 3 | 4 | 5;
+  overallLoadScore: 0 | 1 | 2 | 3 | 4 | 5;
+  preRunNutritionScore: 0 | 1 | 2 | 3 | 4 | 5;
+  environmentScore: 0 | 1 | 2 | 3 | 4 | 5;
+  satisfactionScore: 0 | 1 | 2 | 3 | 4 | 5;
   fuelingSource: RunFuelingSource;
   fuelingQuantity: number;
   openNote: string;
@@ -90,17 +90,17 @@ const scoreSets: Array<{
 
 export function defaultRunFeedbackValues(): RunFeedbackValues {
   return {
-    rpeScore: 3,
-    legsLoadScore: 3,
-    painScore: 1,
+    rpeScore: 0,
+    legsLoadScore: 0,
+    painScore: 0,
     painArea: "",
-    addFiveKmScore: 3,
-    recoveryScore: 3,
-    breathingScore: 3,
-    overallLoadScore: 3,
-    preRunNutritionScore: 3,
-    environmentScore: 3,
-    satisfactionScore: 3,
+    addFiveKmScore: 0,
+    recoveryScore: 0,
+    breathingScore: 0,
+    overallLoadScore: 0,
+    preRunNutritionScore: 0,
+    environmentScore: 0,
+    satisfactionScore: 0,
     fuelingSource: "none",
     fuelingQuantity: 0,
     openNote: ""
@@ -110,7 +110,7 @@ export function defaultRunFeedbackValues(): RunFeedbackValues {
 function scoreButtons(
   title: string,
   labels: [string, string, string, string, string],
-  value: 1 | 2 | 3 | 4 | 5,
+  value: 0 | 1 | 2 | 3 | 4 | 5,
   onPick: (score: 1 | 2 | 3 | 4 | 5) => void
 ) {
   return (

@@ -89,7 +89,7 @@ type ShoeOption = {
 
 type ForecastOption = {
   id: string;
-  sport: "run" | "bike" | "swim";
+  sport: "run" | "bike" | "swim" | "strength";
   workoutType: string;
   durationMin: number;
   intensityZone: string;
@@ -486,7 +486,8 @@ function sportLabel(sport: "run" | "bike" | "swim" | "strength") {
 
 const intensityOrder: DailyMode[] = ["easy", "normal", "hard"];
 const intensityLabels: Record<DailyMode, string> = { easy: "קל", normal: "בינוני", hard: "קשה" };
-const sportPriority: ForecastOption["sport"][] = ["run", "bike", "swim"];
+const sportPriority: ForecastOption["sport"][] = ["run", "bike", "swim", "strength"];
+const recommendationSportTabs: ForecastOption["sport"][] = ["run", "bike", "swim", "strength"];
 const MORNING_REMINDER_START_KEY = "rebuild-morning-reminder-start";
 const MORNING_CHECKIN_CACHE_KEY_PREFIX = "rebuild-morning-checkin-cache";
 const TODAY_DASHBOARD_CACHE_KEY_PREFIX = "rebuild-today-dashboard-cache";
@@ -683,6 +684,37 @@ function recommendationToOption(rec: Recommendation): ForecastOption {
     why: rec.primarySession.why,
     notes: rec.longExplanation,
     plannedLoad: rec.durationMin <= 0 || rec.primarySession.durationMin <= 0 ? 0 : Math.max(1, Math.round(rec.confidence * 50))
+  };
+}
+
+function strengthFallbackOption(readiness: number, fatigue: number, date: string): ForecastOption {
+  const recoveryMode = fatigue >= 75 || readiness < 45;
+  if (recoveryMode) {
+    return {
+      id: `today-strength-fallback-recovery-${date}`,
+      sport: "strength",
+      workoutType: "כוח קל / מוביליטי",
+      durationMin: 28,
+      intensityZone: "קל",
+      target: "שימור תנועה ושרירים בלי להוסיף עומס משמעותי",
+      structure: "8 דק׳ מוביליטי + 3 סבבים קלים של 6–8 תרגילים במשקל גוף + 5 דק׳ שחרור",
+      why: "המערכת מזהה עייפות גבוהה או מוכנות נמוכה, לכן עדיף גירוי קל בלבד.",
+      notes: "לעצור לפני כשל שרירי; לשמור נשימה נוחה.",
+      plannedLoad: 20
+    };
+  }
+
+  return {
+    id: `today-strength-fallback-functional-${date}`,
+    sport: "strength",
+    workoutType: "כוח פונקציונלי בינוני",
+    durationMin: 40,
+    intensityZone: "בינוני",
+    target: "חיזוק כללי ושיפור יציבות בלי להתנגש באימוני הסבולת",
+    structure: "10 דק׳ חימום + 4 בלוקים של 2 תרגילים (3 סטים בכל תרגיל) + 6 דק׳ שחרור",
+    why: "אין המלצת כוח ייעודית מהמנוע להיום, לכן מוצעת תבנית בטוחה ומאוזנת.",
+    notes: "עבודה בטכניקה נקייה, להשאיר 1-2 חזרות ברזרבה בכל סט.",
+    plannedLoad: 36
   };
 }
 
@@ -1337,7 +1369,7 @@ export default function TodayPage() {
   const [forecastToday, setForecastToday] = useState<ForecastDay | null>(null);
   const [toast, setToast] = useState("");
   const [selectedSport, setSelectedSport] = useState<ForecastOption["sport"]>("run");
-  const [expandedSport, setExpandedSport] = useState<ForecastOption["sport"] | null>(null);
+  const [recommendationModalSport, setRecommendationModalSport] = useState<ForecastOption["sport"] | null>(null);
 
   const [checkinOptions, setCheckinOptions] = useState<CheckinOptions | null>(null);
   const [morningDone, setMorningDone] = useState<boolean>(false);
@@ -1432,11 +1464,7 @@ export default function TodayPage() {
     [forecastToday?.options]
   );
 
-  const sportsAvailable = useMemo(() => {
-    const set = new Set<ForecastOption["sport"]>((forecastToday?.options ?? []).map((opt) => opt.sport));
-    if (!set.size) return sportPriority;
-    return sportPriority.filter((sport) => set.has(sport));
-  }, [forecastToday?.options]);
+  const sportsAvailable = useMemo(() => recommendationSportTabs, []);
 
   useEffect(() => {
     if (!sportsAvailable.length) return;
@@ -1445,7 +1473,7 @@ export default function TodayPage() {
 
   useEffect(() => {
     setSelectionOverride(null);
-    setExpandedSport(null);
+    setRecommendationModalSport(null);
   }, [forecastToday?.date]);
 
   useEffect(() => {
@@ -1454,6 +1482,17 @@ export default function TodayPage() {
     if (!selected) return;
     setSelectedSport(selected.sport);
   }, [forecastToday?.date, forecastToday?.selectedOptionId, forecastToday?.options]);
+
+  useEffect(() => {
+    if (!recommendationModalSport) return;
+    const onKeydown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setRecommendationModalSport(null);
+      }
+    };
+    window.addEventListener("keydown", onKeydown);
+    return () => window.removeEventListener("keydown", onKeydown);
+  }, [recommendationModalSport]);
 
   const [selectionOverride, setSelectionOverride] = useState<ForecastOption | null>(null);
   const [variantIndex, setVariantIndex] = useState(0);
@@ -1466,11 +1505,25 @@ export default function TodayPage() {
   );
 
   const selectedWorkoutBase = useMemo(() => {
+    if (selectedSport === "strength") {
+      const strengthOption = forecastToday?.options?.find((option) => option.sport === "strength");
+      return strengthOption ?? strengthFallbackOption(today?.readinessScore ?? 50, today?.fatigueScore ?? 50, activeDate);
+    }
     if (isForcedRestDay) return null;
     if (selectionOverride) return selectionOverride;
     if (!forecastToday?.options?.length) return null;
     return findWorkoutForCombination(forecastToday.options, selectedSport, intensityBuckets, recommendedMode);
-  }, [forecastToday?.options, selectedSport, intensityBuckets, recommendedMode, selectionOverride]);
+  }, [
+    activeDate,
+    forecastToday?.options,
+    intensityBuckets,
+    isForcedRestDay,
+    recommendedMode,
+    selectedSport,
+    selectionOverride,
+    today?.fatigueScore,
+    today?.readinessScore
+  ]);
 
   const workoutVariants = useMemo(
     () => (selectedWorkoutBase ? buildWorkoutVariants(selectedWorkoutBase, recommendedMode) : []),
@@ -1489,6 +1542,37 @@ export default function TodayPage() {
     : shouldLockRecommendationToDayStatus
       ? fallbackRecOption
       : workoutVariants[variantIndex] ?? selectedWorkoutBase ?? fallbackRecOption;
+  const recommendationBySport = useMemo(() => {
+    const map = new Map<ForecastOption["sport"], ForecastOption | null>();
+    for (const sport of recommendationSportTabs) {
+      if (sport === "strength") {
+        const strengthOption =
+          forecastToday?.options?.find((option) => option.sport === "strength") ??
+          strengthFallbackOption(today?.readinessScore ?? 50, today?.fatigueScore ?? 50, activeDate);
+        map.set("strength", strengthOption);
+        continue;
+      }
+      const option = forecastToday?.options?.length
+        ? findWorkoutForCombination(forecastToday.options, sport, intensityBuckets, recommendedMode)
+        : null;
+      map.set(sport, option ?? null);
+    }
+    return map;
+  }, [
+    activeDate,
+    forecastToday?.options,
+    intensityBuckets,
+    recommendedMode,
+    today?.fatigueScore,
+    today?.readinessScore
+  ]);
+  const activeRecommendationOption = recommendationModalSport
+    ? recommendationBySport.get(recommendationModalSport) ?? null
+    : null;
+  const activeRecommendationIsStrengthFallback = Boolean(
+    activeRecommendationOption?.sport === "strength" &&
+      activeRecommendationOption.id.startsWith("today-strength-fallback-")
+  );
   const orderedTodayWorkouts = useMemo(() => {
     const workouts = [...(today?.todayWorkouts ?? [])];
     if (!workouts.length) return [];
@@ -2550,6 +2634,40 @@ export default function TodayPage() {
 
   async function submitWorkoutFeedback() {
     if (!activePendingWorkout) return;
+    if (activePendingWorkout.sport === "run") {
+      const requiredRunAnswers = [
+        runWorkoutForm.rpeScore,
+        runWorkoutForm.legsLoadScore,
+        runWorkoutForm.painScore,
+        runWorkoutForm.addFiveKmScore,
+        runWorkoutForm.recoveryScore,
+        runWorkoutForm.breathingScore,
+        runWorkoutForm.overallLoadScore,
+        runWorkoutForm.preRunNutritionScore,
+        runWorkoutForm.environmentScore,
+        runWorkoutForm.satisfactionScore
+      ];
+      const hasMissingRunAnswer = requiredRunAnswers.some((value) => value < 1 || value > 5);
+      if (hasMissingRunAnswer) {
+        showToast("המשוב עדיין לא נענה במלואו.");
+        return;
+      }
+    }
+    if (activePendingWorkout.sport === "strength") {
+      const requiredStrengthAnswers = [
+        strengthWorkoutForm.strengthEffortScore,
+        strengthWorkoutForm.strengthMuscleLoadScore,
+        strengthWorkoutForm.strengthTechniqueScore,
+        strengthWorkoutForm.strengthFailureProximityScore,
+        strengthWorkoutForm.strengthPainScore,
+        strengthWorkoutForm.strengthRecoveryScore
+      ];
+      const hasMissingStrengthAnswer = requiredStrengthAnswers.some((value) => value < 1 || value > 5);
+      if (hasMissingStrengthAnswer) {
+        showToast("המשוב עדיין לא נענה במלואו.");
+        return;
+      }
+    }
     if (activePendingWorkout.sport === "run" && shoes.length > 0 && !selectedWorkoutShoeId) {
       showToast("בחר נעל לריצה או הוסף נעל ברירת מחדל.");
       return;
@@ -2572,6 +2690,16 @@ export default function TodayPage() {
             date: activePendingWorkout.startAt.slice(0, 10),
             sport: activePendingWorkout.sport,
             ...runWorkoutForm,
+            rpeScore: runWorkoutForm.rpeScore || undefined,
+            legsLoadScore: runWorkoutForm.legsLoadScore || undefined,
+            painScore: runWorkoutForm.painScore || undefined,
+            addFiveKmScore: runWorkoutForm.addFiveKmScore || undefined,
+            recoveryScore: runWorkoutForm.recoveryScore || undefined,
+            breathingScore: runWorkoutForm.breathingScore || undefined,
+            overallLoadScore: runWorkoutForm.overallLoadScore || undefined,
+            preRunNutritionScore: runWorkoutForm.preRunNutritionScore || undefined,
+            environmentScore: runWorkoutForm.environmentScore || undefined,
+            satisfactionScore: runWorkoutForm.satisfactionScore || undefined,
             painArea: runWorkoutForm.painScore >= 2 ? runWorkoutForm.painArea : ""
           }
         : activePendingWorkout.sport === "strength"
@@ -2580,6 +2708,12 @@ export default function TodayPage() {
               date: activePendingWorkout.startAt.slice(0, 10),
               sport: activePendingWorkout.sport,
               ...strengthWorkoutForm,
+              strengthEffortScore: strengthWorkoutForm.strengthEffortScore || undefined,
+              strengthMuscleLoadScore: strengthWorkoutForm.strengthMuscleLoadScore || undefined,
+              strengthTechniqueScore: strengthWorkoutForm.strengthTechniqueScore || undefined,
+              strengthFailureProximityScore: strengthWorkoutForm.strengthFailureProximityScore || undefined,
+              strengthPainScore: strengthWorkoutForm.strengthPainScore || undefined,
+              strengthRecoveryScore: strengthWorkoutForm.strengthRecoveryScore || undefined,
               strengthPainArea:
                 strengthWorkoutForm.strengthPainScore >= 2 ? strengthWorkoutForm.strengthPainArea : ""
             }
@@ -2679,16 +2813,10 @@ export default function TodayPage() {
   }
 
   function handleSportSelect(sport: ForecastOption["sport"]) {
-    const sameSport = selectedSport === sport;
     setSelectedSport(sport);
-    setExpandedSport((prev) => (sameSport && prev === sport ? null : sport));
     setSelectionOverride(null);
     setVariantIndex(0);
-    if (!forecastToday?.options?.length) return;
-    const option = findWorkoutForCombination(forecastToday.options, sport, intensityBuckets, recommendedMode);
-    if (!option) return;
-    setSelectionOverride(option);
-    void applyDailyOption(option);
+    setRecommendationModalSport((prev) => (prev === sport ? null : sport));
   }
 
   function refreshWorkoutVariant() {
@@ -3087,17 +3215,26 @@ export default function TodayPage() {
                 ) : null}
               </div>
 
-              {!isHistoricalDay && rec?.dayStatus === "can_add_short" && showRecommendationPanel && displayWorkout ? (
-                <div className="today-next-session-line" aria-label="המלצה להמשך היום">
-                  <span className="today-next-session-label">המשך מומלץ:</span>
-                  <span className="today-next-session-value">
-                    {displayWorkout.workoutType} · {displayWorkout.durationMin} דק׳ · {displayWorkout.intensityZone ?? "-"}
-                  </span>
-                  {workoutVariants.length > 1 && !shouldLockRecommendationToDayStatus ? (
-                    <button type="button" className="choice-btn icon-compact" onClick={refreshWorkoutVariant} title="רענון">
-                      ↻
-                    </button>
-                  ) : null}
+              {showRecommendationPanel ? (
+                <div className="recommendation-collapsed-card" aria-label="המלצות אימון יומיות">
+                  <div className="recommendation-collapsed-head">
+                    <strong>המלצה להמשך היום</strong>
+                    <small>לחץ על ענף לקבלת פירוט</small>
+                  </div>
+                  <div className="combo-row sport-row recommendation-sport-row" role="tablist" aria-label="בחירת ענף">
+                    {recommendationSportTabs.map((sport) => (
+                      <button
+                        key={`with-workout-${sport}`}
+                        type="button"
+                        className={`combo-button ${recommendationModalSport === sport ? "selected" : ""}`}
+                        onClick={() => handleSportSelect(sport)}
+                        aria-expanded={recommendationModalSport === sport}
+                      >
+                        {sportLabel(sport)}
+                      </button>
+                    ))}
+                  </div>
+                  {rec?.dayStatusText ? <p className="note">{rec.dayStatusText}</p> : null}
                 </div>
               ) : null}
             </>
@@ -3115,69 +3252,25 @@ export default function TodayPage() {
               <span className="note">לא נרשם אימון ביום הזה.</span>
             </article>
           ) : showRecommendationPanel ? (
-            <div className="combo-panel">
-              {!shouldLockRecommendationToDayStatus && (
-                <div className="combo-row sport-row" role="tablist" aria-label="בחירת ענף">
-                  {sportsAvailable.map((sport) => (
-                    <button
-                      key={sport}
-                      type="button"
-                      className={`combo-button ${selectedSport === sport ? "selected" : ""}`}
-                      onClick={() => handleSportSelect(sport)}
-                      aria-expanded={expandedSport === sport}
-                    >
-                      {sportLabel(sport)}
-                    </button>
-                  ))}
-                </div>
-              )}
-              <article className="selected-workout-card">
-                <div className="selected-workout-card__head">
-                  <p className="combo-meta-line">
-                    {shouldLockRecommendationToDayStatus
-                      ? "המלצה מעודכנת אחרי האימון שבוצע"
-                      : `קושי יומי מומלץ: ${intensityLabels[recommendedMode]} · ${sportLabel(selectedSport)}`}
-                  </p>
-                  <h3>{displayWorkout?.workoutType ?? "ממתין להמלצה אקטיבית"}</h3>
-                  <p className="combo-summary">
-                    {displayWorkout ? `${displayWorkout.durationMin} דק׳ · ${displayWorkout.intensityZone ?? "-"}` : "המערכת טוענת המלצה"}
-                  </p>
-                </div>
-                {displayWorkout && workoutVariants.length > 1 && !shouldLockRecommendationToDayStatus && (
-                  <div className="selected-workout-card__actions">
-                    <button type="button" className="choice-btn compact" onClick={refreshWorkoutVariant}>
-                      רענון
-                    </button>
-                    <span className="variant-counter">
-                      אפשרות {Math.min(variantIndex + 1, workoutVariants.length)} מתוך {workoutVariants.length}
-                    </span>
-                  </div>
-                )}
-                <div className="selected-workout-card__meta">
-                  <span>{displayWorkout ? `יעד: ${displayWorkout.target ?? "-"}` : "יעד: -"}</span>
-                  <span>{displayWorkout ? `עומס: ${displayWorkout.plannedLoad ?? "-"}` : "-"}</span>
-                  {rec && <span className="confidence-pill">ביטחון {Math.round(rec.confidence * 100)}%</span>}
-                </div>
-                {rec?.dayStatus === "target_done" ? (
-                  <p className="note">היעד היומי הושלם. אפשרות מומלצת כרגע: מנוחה או שחרור קצר.</p>
-                ) : null}
-                {rec?.dayStatus === "can_add_short" ? (
-                  <p className="note">האימון הושלם חלקית. אפשר אימון קצר נוסף או מנוחה.</p>
-                ) : null}
-                {displayWorkout && expandedSport === selectedSport ? (
-                  <div className="expand-block workout-details is-open">
-                    <ul className="kv compact-kv">
-                      <li>ענף: {sportLabel(displayWorkout.sport)}</li>
-                      <li>משך: {displayWorkout.durationMin} דק׳</li>
-                      <li>עצימות: {displayWorkout.intensityZone ?? "-"}</li>
-                      <li>מטרה: {displayWorkout.target ?? "-"}</li>
-                      <li>מבנה מלא: {displayWorkout.structure ?? "לא זמין"}</li>
-                      <li>למה זה מתאים היום: {displayWorkout.why ?? "-"}</li>
-                      <li>דגשים לביצוע: {displayWorkout.notes ?? "-"}</li>
-                    </ul>
-                  </div>
-                ) : null}
-              </article>
+            <div className="recommendation-collapsed-card" aria-label="המלצות אימון יומיות">
+              <div className="recommendation-collapsed-head">
+                <strong>המלצות ענף</strong>
+                <small>לחץ על ענף לקבלת פירוט</small>
+              </div>
+              <div className="combo-row sport-row recommendation-sport-row" role="tablist" aria-label="בחירת ענף">
+                {recommendationSportTabs.map((sport) => (
+                  <button
+                    key={sport}
+                    type="button"
+                    className={`combo-button ${recommendationModalSport === sport ? "selected" : ""}`}
+                    onClick={() => handleSportSelect(sport)}
+                    aria-expanded={recommendationModalSport === sport}
+                  >
+                    {sportLabel(sport)}
+                  </button>
+                ))}
+              </div>
+              {rec?.dayStatusText ? <p className="note">{rec.dayStatusText}</p> : null}
             </div>
           ) : null}
 
@@ -3189,8 +3282,36 @@ export default function TodayPage() {
 
       <section className="today-surface today-surface-b">
         <div className="today-nutrition-morning-grid">
-          <div>
-            <MorningTrendCard points={morningTrend} activeDate={activeDate} onEdit={openMorningUpdate} />
+          <div className="today-morning-mini-column">
+            <button
+              type="button"
+              className={`morning-mini-card ${morningSideExpanded ? "open" : ""}`}
+              onClick={() => setMorningSideExpanded((prev) => !prev)}
+              aria-expanded={morningSideExpanded}
+            >
+              <div className="morning-mini-card-head">
+                <strong>עדכון בוקר</strong>
+                <span>{morningDone && morningSideAverage5 != null ? `${morningSideAverage5}/5` : "לא הוזן"}</span>
+              </div>
+              {morningDone && morningSideLineData ? (
+                <svg viewBox={`0 0 ${morningSideLineData.width} ${morningSideLineData.height}`} className="morning-mini-line" aria-hidden>
+                  <polyline points={morningSideLineData.polyline} />
+                  {morningSideLineData.points.map((point) => (
+                    <g key={`mini-point-${point.field}`}>
+                      <text x={point.x} y={point.y - 8} textAnchor="middle">
+                        {point.icon}
+                      </text>
+                      <circle cx={point.x} cy={point.y} r={3.8} style={{ fill: point.color }} />
+                    </g>
+                  ))}
+                </svg>
+              ) : (
+                <p className="morning-mini-empty">הקש להזנת עדכון בוקר</p>
+              )}
+            </button>
+            {morningSideExpanded ? (
+              <MorningTrendCard points={morningTrend} activeDate={activeDate} onEdit={openMorningUpdate} />
+            ) : null}
           </div>
           <div className="today-food-quick" aria-label="תזונה">
             <div className="today-food-top-row">
@@ -3286,6 +3407,67 @@ export default function TodayPage() {
         </div>
       </Section>
       </section>
+
+      {showRecommendationPanel && recommendationModalSport ? (
+        <div
+          className="modal-overlay"
+          role="dialog"
+          aria-modal="true"
+          onClick={(event) => {
+            if (event.target === event.currentTarget) {
+              setRecommendationModalSport(null);
+            }
+          }}
+        >
+          <div className="modal-card recommendation-modal-card">
+            <div className="recommendation-modal-head">
+              <h3>המלצת {sportLabel(recommendationModalSport)}</h3>
+              <button className="choice-btn icon-compact" onClick={() => setRecommendationModalSport(null)} aria-label="סגור">
+                ✕
+              </button>
+            </div>
+            {activeRecommendationOption ? (
+              <div className="recommendation-modal-body">
+                <p className="recommendation-modal-main">{activeRecommendationOption.workoutType}</p>
+                <p className="recommendation-modal-sub">
+                  {activeRecommendationOption.durationMin} דק׳ · {activeRecommendationOption.intensityZone ?? "-"}
+                </p>
+                <ul className="kv compact-kv">
+                  <li>מטרה: {activeRecommendationOption.target ?? "-"}</li>
+                  <li>מבנה: {activeRecommendationOption.structure ?? "-"}</li>
+                  <li>למה היום: {activeRecommendationOption.why ?? "-"}</li>
+                  <li>דגשים: {activeRecommendationOption.notes ?? "-"}</li>
+                </ul>
+                <div className="recommendation-modal-actions">
+                  {!activeRecommendationIsStrengthFallback ? (
+                    <button
+                      type="button"
+                      className="choice-btn"
+                      onClick={async () => {
+                        await applyDailyOption(activeRecommendationOption);
+                      }}
+                    >
+                      בחר לאימון דומה
+                    </button>
+                  ) : (
+                    <span className="note">זו תבנית כוח חכמה (fallback) כי אין המלצת כוח ישירה מהמנוע.</span>
+                  )}
+                  <button className="choice-btn compact" onClick={() => setRecommendationModalSport(null)}>
+                    סגור
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <div className="recommendation-modal-body">
+                <p className="note">אין כרגע המלצה זמינה לענף הזה.</p>
+                <button className="choice-btn compact" onClick={() => setRecommendationModalSport(null)}>
+                  סגור
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      ) : null}
 
       {newIngredientModalOpen && newIngredientDraft ? (
         <div className="modal-overlay" role="dialog" aria-modal="true">

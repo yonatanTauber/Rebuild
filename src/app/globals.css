@@ -2266,6 +2266,129 @@ button.alt {
   color: #43554b;
 }
 
+.recommendation-collapsed-card {
+  border-radius: 14px;
+  border: 1px solid var(--outline-variant);
+  background: var(--surface-container);
+  padding: 0.62rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.recommendation-collapsed-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.recommendation-collapsed-head strong {
+  font-size: 0.9rem;
+}
+
+.recommendation-collapsed-head small {
+  color: var(--on-surface-variant);
+  font-size: 0.74rem;
+}
+
+.recommendation-sport-row {
+  gap: 0.42rem;
+}
+
+.recommendation-sport-row .combo-button {
+  min-width: 72px;
+  padding: 0.44rem 0.62rem;
+  font-size: 0.82rem;
+}
+
+.recommendation-modal-card {
+  width: min(700px, 94vw);
+}
+
+.recommendation-modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.recommendation-modal-body {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.recommendation-modal-main {
+  margin: 0;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.recommendation-modal-sub {
+  margin: 0;
+  color: var(--on-surface-variant);
+}
+
+.recommendation-modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.today-morning-mini-column {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.morning-mini-card {
+  border: 1px solid var(--outline-variant);
+  border-radius: 14px;
+  background: var(--surface-container);
+  padding: 0.56rem;
+  display: grid;
+  gap: 0.4rem;
+  text-align: inherit;
+  cursor: pointer;
+}
+
+.morning-mini-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.45rem;
+}
+
+.morning-mini-card-head strong {
+  font-size: 0.9rem;
+}
+
+.morning-mini-card-head span {
+  font-size: 0.82rem;
+  color: var(--on-surface-variant);
+}
+
+.morning-mini-line {
+  width: 100%;
+  height: 62px;
+}
+
+.morning-mini-line polyline {
+  fill: none;
+  stroke: color-mix(in srgb, var(--primary) 65%, var(--secondary));
+  stroke-width: 2.2;
+}
+
+.morning-mini-line text {
+  font-size: 12px;
+}
+
+.morning-mini-empty {
+  margin: 0;
+  color: var(--on-surface-variant);
+  font-size: 0.8rem;
+}
+
 .day-mini-summary-card {
   border-radius: 16px;
   background: var(--surface-container);

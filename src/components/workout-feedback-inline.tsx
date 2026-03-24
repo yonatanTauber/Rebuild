@@ -194,6 +194,38 @@ export default function FeedbackInline({ workoutId, date, sport }: Props) {
   }, [workoutId, sport]);
 
   async function save() {
+    if (sport === "run") {
+      const requiredRunAnswers = [
+        runForm.rpeScore,
+        runForm.legsLoadScore,
+        runForm.painScore,
+        runForm.addFiveKmScore,
+        runForm.recoveryScore,
+        runForm.breathingScore,
+        runForm.overallLoadScore,
+        runForm.preRunNutritionScore,
+        runForm.environmentScore,
+        runForm.satisfactionScore
+      ];
+      if (requiredRunAnswers.some((value) => value < 1 || value > 5)) {
+        setStatus("המשוב עדיין לא נענה במלואו.");
+        return;
+      }
+    }
+    if (sport === "strength") {
+      const requiredStrengthAnswers = [
+        strengthForm.strengthEffortScore,
+        strengthForm.strengthMuscleLoadScore,
+        strengthForm.strengthTechniqueScore,
+        strengthForm.strengthFailureProximityScore,
+        strengthForm.strengthPainScore,
+        strengthForm.strengthRecoveryScore
+      ];
+      if (requiredStrengthAnswers.some((value) => value < 1 || value > 5)) {
+        setStatus("המשוב עדיין לא נענה במלואו.");
+        return;
+      }
+    }
     const body =
       sport === "run"
         ? {
@@ -201,6 +233,16 @@ export default function FeedbackInline({ workoutId, date, sport }: Props) {
             date,
             sport,
             ...runForm,
+            rpeScore: runForm.rpeScore || undefined,
+            legsLoadScore: runForm.legsLoadScore || undefined,
+            painScore: runForm.painScore || undefined,
+            addFiveKmScore: runForm.addFiveKmScore || undefined,
+            recoveryScore: runForm.recoveryScore || undefined,
+            breathingScore: runForm.breathingScore || undefined,
+            overallLoadScore: runForm.overallLoadScore || undefined,
+            preRunNutritionScore: runForm.preRunNutritionScore || undefined,
+            environmentScore: runForm.environmentScore || undefined,
+            satisfactionScore: runForm.satisfactionScore || undefined,
             painArea: runForm.painScore >= 2 ? runForm.painArea : ""
           }
         : sport === "strength"
@@ -208,7 +250,13 @@ export default function FeedbackInline({ workoutId, date, sport }: Props) {
               workoutId,
               date,
               sport,
-              ...strengthForm
+              ...strengthForm,
+              strengthEffortScore: strengthForm.strengthEffortScore || undefined,
+              strengthMuscleLoadScore: strengthForm.strengthMuscleLoadScore || undefined,
+              strengthTechniqueScore: strengthForm.strengthTechniqueScore || undefined,
+              strengthFailureProximityScore: strengthForm.strengthFailureProximityScore || undefined,
+              strengthPainScore: strengthForm.strengthPainScore || undefined,
+              strengthRecoveryScore: strengthForm.strengthRecoveryScore || undefined
             }
           : {
             workoutId,
@@ -303,6 +351,7 @@ export default function FeedbackInline({ workoutId, date, sport }: Props) {
           </article>
         ) : (
           <div className="row">
+            <p className="note">משוב: לא נענה</p>
             <button onClick={() => setEditing(true)}>הוסף משוב ריצה</button>
             {status && <p className="note">{status}</p>}
           </div>
@@ -415,6 +464,7 @@ export default function FeedbackInline({ workoutId, date, sport }: Props) {
           </article>
         ) : (
           <div className="row">
+            <p className="note">משוב: לא נענה</p>
             <button onClick={() => setEditing(true)}>הוסף משוב כוח</button>
             {status && <p className="note">{status}</p>}
           </div>

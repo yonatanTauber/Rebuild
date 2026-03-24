@@ -5,12 +5,12 @@ import UiSelect from "@/components/ui-select";
 export type StrengthFocusArea = "full_body" | "upper_body" | "lower_body" | "core";
 
 export type StrengthFeedbackValues = {
-  strengthEffortScore: 1 | 2 | 3 | 4 | 5;
-  strengthMuscleLoadScore: 1 | 2 | 3 | 4 | 5;
-  strengthTechniqueScore: 1 | 2 | 3 | 4 | 5;
-  strengthFailureProximityScore: 1 | 2 | 3 | 4 | 5;
-  strengthPainScore: 1 | 2 | 3 | 4 | 5;
-  strengthRecoveryScore: 1 | 2 | 3 | 4 | 5;
+  strengthEffortScore: 0 | 1 | 2 | 3 | 4 | 5;
+  strengthMuscleLoadScore: 0 | 1 | 2 | 3 | 4 | 5;
+  strengthTechniqueScore: 0 | 1 | 2 | 3 | 4 | 5;
+  strengthFailureProximityScore: 0 | 1 | 2 | 3 | 4 | 5;
+  strengthPainScore: 0 | 1 | 2 | 3 | 4 | 5;
+  strengthRecoveryScore: 0 | 1 | 2 | 3 | 4 | 5;
   strengthFocusArea: StrengthFocusArea;
   strengthPainArea: string;
   strengthOpenNote: string;
@@ -77,12 +77,12 @@ const focusOptions: Array<{ value: StrengthFocusArea; label: string }> = [
 
 export function defaultStrengthFeedbackValues(): StrengthFeedbackValues {
   return {
-    strengthEffortScore: 3,
-    strengthMuscleLoadScore: 3,
-    strengthTechniqueScore: 2,
-    strengthFailureProximityScore: 3,
-    strengthPainScore: 1,
-    strengthRecoveryScore: 3,
+    strengthEffortScore: 0,
+    strengthMuscleLoadScore: 0,
+    strengthTechniqueScore: 0,
+    strengthFailureProximityScore: 0,
+    strengthPainScore: 0,
+    strengthRecoveryScore: 0,
     strengthFocusArea: "full_body",
     strengthPainArea: "",
     strengthOpenNote: ""
@@ -92,7 +92,7 @@ export function defaultStrengthFeedbackValues(): StrengthFeedbackValues {
 function scoreButtons(
   title: string,
   labels: [string, string, string, string, string],
-  value: 1 | 2 | 3 | 4 | 5,
+  value: 0 | 1 | 2 | 3 | 4 | 5,
   onPick: (score: 1 | 2 | 3 | 4 | 5) => void
 ) {
   return (
