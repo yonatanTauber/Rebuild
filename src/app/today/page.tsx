@@ -201,6 +201,53 @@ type NewIngredientDraft = {
   gramsPerUnit: number;
 };
 
+type StrengthEquipmentType =
+  | "dumbbell"
+  | "kettlebell"
+  | "barbell"
+  | "bench"
+  | "pullup"
+  | "cable"
+  | "leg_press"
+  | "row"
+  | "shoulder_press"
+  | "bodyweight"
+  | "other";
+
+type StrengthHandMode = "one" | "two";
+
+type StrengthSessionExercise = {
+  id: string;
+  sessionId: string;
+  equipmentType: StrengthEquipmentType;
+  exerciseKey: string;
+  exerciseName: string;
+  weightKg: number;
+  repsMin: number;
+  repsMax: number;
+  targetSets: number;
+  completedSets: number;
+  handMode: StrengthHandMode;
+  note: string | null;
+  orderIndex: number;
+  options: Array<{ value: string; label: string }>;
+  weightStepKg: number;
+};
+
+type StrengthSession = {
+  id: string;
+  date: string;
+  status: "active" | "paused" | "completed";
+  source: string;
+  workoutId: string | null;
+  startedAt: string;
+  completedAt: string | null;
+  lastExerciseId: string | null;
+  lastInputAt: string | null;
+  equipmentTypes: StrengthEquipmentType[];
+  exercises: StrengthSessionExercise[];
+};
+
 type MorningMetricField = keyof CheckinOptions["options"];
 type MorningMetricVisual = {
   field: MorningMetricField;
@@ -484,10 +531,41 @@ function sportLabel(sport: "run" | "bike" | "swim" | "strength") {
   return "שחייה";
 }
 
+function strengthEquipmentIcon(equipment: StrengthEquipmentType) {
+  if (equipment === "dumbbell") return "🏋️";
+  if (equipment === "kettlebell") return "⚫";
+  if (equipment === "barbell") return "🏋️‍♂️";
+  if (equipment === "bench") return "🪑";
+  if (equipment === "pullup") return "🧗";
+  if (equipment === "cable") return "🎛️";
+  if (equipment === "leg_press") return "🦵";
+  if (equipment === "row") return "🚣";
+  if (equipment === "shoulder_press") return "💪";
+  if (equipment === "bodyweight") return "🤸";
+  return "➕";
+}
+
 const intensityOrder: DailyMode[] = ["easy", "normal", "hard"];
 const intensityLabels: Record<DailyMode, string> = { easy: "קל", normal: "בינוני", hard: "קשה" };
 const sportPriority: ForecastOption["sport"][] = ["run", "bike", "swim", "strength"];
 const recommendationSportTabs: ForecastOption["sport"][] = ["run", "bike", "swim", "strength"];
+const strengthEquipmentOptions: Array<{ value: StrengthEquipmentType; label: string }> = [
+  { value: "dumbbell", label: "דאמבל" },
+  { value: "kettlebell", label: "קטלבל" },
+  { value: "barbell", label: "מוט אולימפי" },
+  { value: "bench", label: "מכונת לחיצה" },
+  { value: "pullup", label: "מתח" },
+  { value: "cable", label: "כבלים" },
+  { value: "leg_press", label: "לחיצת רגליים" },
+  { value: "row", label: "חתירה" },
+  { value: "shoulder_press", label: "לחיצת כתפיים" },
+  { value: "bodyweight", label: "משקל גוף" },
+  { value: "other", label: "אחר" }
+];
+const handModeOptions: Array<{ value: StrengthHandMode; label: string }> = [
+  { value: "one", label: "יד אחת" },
+  { value: "two", label: "שתי ידיים" }
+];
 const MORNING_REMINDER_START_KEY = "rebuild-morning-reminder-start";
 const MORNING_CHECKIN_CACHE_KEY_PREFIX = "rebuild-morning-checkin-cache";
 const TODAY_DASHBOARD_CACHE_KEY_PREFIX = "rebuild-today-dashboard-cache";
@@ -1370,6 +1448,13 @@ export default function TodayPage() {
   const [toast, setToast] = useState("");
   const [selectedSport, setSelectedSport] = useState<ForecastOption["sport"]>("run");
   const [recommendationModalSport, setRecommendationModalSport] = useState<ForecastOption["sport"] | null>(null);
+  const [showStrengthModal, setShowStrengthModal] = useState(false);
+  const [strengthSession, setStrengthSession] = useState<StrengthSession | null>(null);
+  const [strengthLoading, setStrengthLoading] = useState(false);
+  const [strengthSaving, setStrengthSaving] = useState(false);
+  const [strengthEquipmentDraft, setStrengthEquipmentDraft] = useState<StrengthEquipmentType[]>(["dumbbell"]);
+  const [strengthFocusedEquipment, setStrengthFocusedEquipment] = useState<StrengthEquipmentType>("dumbbell");
+  const [strengthFocusedExerciseId, setStrengthFocusedExerciseId] = useState<string | null>(null);
 
   const [checkinOptions, setCheckinOptions] = useState<CheckinOptions | null>(null);
   const [morningDone, setMorningDone] = useState<boolean>(false);
@@ -1432,6 +1517,37 @@ export default function TodayPage() {
     setTimeout(() => setToast(""), 2000);
   }
 
+  function applyStrengthSessionState(session: StrengthSession | null) {
+    setStrengthSession(session);
+    if (!session) {
+      setStrengthFocusedEquipment("dumbbell");
+      setStrengthFocusedExerciseId(null);
+      return;
+    }
+    const firstEquipment = session.equipmentTypes[0] ?? "dumbbell";
+    const focusEquipmentFromLast =
+      session.lastExerciseId != null
+        ? session.exercises.find((exercise) => exercise.id === session.lastExerciseId)?.equipmentType
+        : null;
+    const equipment = focusEquipmentFromLast ?? firstEquipment;
+    setStrengthFocusedEquipment(equipment);
+    const firstExerciseForEquipment = session.exercises.find((exercise) => exercise.equipmentType === equipment)?.id ?? null;
+    setStrengthFocusedExerciseId(session.lastExerciseId ?? firstExerciseForEquipment);
+  }
+
+  async function loadStrengthSession(date = activeDate, quiet = false) {
+    if (!quiet) setStrengthLoading(true);
+    try {
+      const res = await fetch(`/api/strength/session/active?date=${date}`).then((r) => r.json());
+      const session = (res?.session ?? null) as StrengthSession | null;
+      applyStrengthSessionState(session);
+    } catch {
+      if (!quiet) showToast("טעינת אימון כוח נכשלה.");
+    } finally {
+      if (!quiet) setStrengthLoading(false);
+    }
+  }
+
   useEffect(() => {
     if (typeof window === "undefined") return;
     const requestedDate = new URLSearchParams(window.location.search).get("date");
@@ -1439,6 +1555,17 @@ export default function TodayPage() {
       setActiveDate(requestedDate);
     }
   }, []);
+
+  useEffect(() => {
+    void loadStrengthSession(activeDate, true);
+  }, [activeDate]);
+
+  useEffect(() => {
+    if (!strengthSession) return;
+    if (!strengthSession.equipmentTypes.includes(strengthFocusedEquipment)) {
+      setStrengthFocusedEquipment(strengthSession.equipmentTypes[0] ?? "dumbbell");
+    }
+  }, [strengthSession, strengthFocusedEquipment]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -1574,6 +1701,24 @@ export default function TodayPage() {
     activeRecommendationOption?.sport === "strength" &&
       activeRecommendationOption.id.startsWith("today-strength-fallback-")
   );
+  const strengthExercisesForFocusedEquipment = useMemo(() => {
+    if (!strengthSession) return [];
+    return strengthSession.exercises.filter((exercise) => exercise.equipmentType === strengthFocusedEquipment);
+  }, [strengthFocusedEquipment, strengthSession]);
+  const focusedStrengthExercise = useMemo(() => {
+    if (!strengthExercisesForFocusedEquipment.length) return null;
+    if (strengthFocusedExerciseId) {
+      const found = strengthExercisesForFocusedEquipment.find((exercise) => exercise.id === strengthFocusedExerciseId);
+      if (found) return found;
+    }
+    return strengthExercisesForFocusedEquipment[0] ?? null;
+  }, [strengthExercisesForFocusedEquipment, strengthFocusedExerciseId]);
+  useEffect(() => {
+    if (!focusedStrengthExercise) return;
+    if (focusedStrengthExercise.id !== strengthFocusedExerciseId) {
+      setStrengthFocusedExerciseId(focusedStrengthExercise.id);
+    }
+  }, [focusedStrengthExercise, strengthFocusedExerciseId]);
   const orderedTodayWorkouts = useMemo(() => {
     const workouts = [...(today?.todayWorkouts ?? [])];
     if (!workouts.length) return [];
@@ -2823,6 +2968,194 @@ export default function TodayPage() {
     showToast("ההמלצה היומית עודכנה.");
   }
 
+  function toggleStrengthEquipmentDraft(equipment: StrengthEquipmentType) {
+    setStrengthEquipmentDraft((prev) => {
+      const exists = prev.includes(equipment);
+      if (exists) {
+        const next = prev.filter((value) => value !== equipment);
+        return next.length ? next : [equipment];
+      }
+      return [...prev, equipment];
+    });
+  }
+
+  async function openStrengthSessionFlow() {
+    setShowStrengthModal(true);
+    if (strengthSession) return;
+    await loadStrengthSession(activeDate);
+  }
+
+  async function startStrengthSessionFlow() {
+    if (strengthSaving) return;
+    const equipmentTypes = strengthEquipmentDraft.length ? strengthEquipmentDraft : ["dumbbell"];
+    setStrengthSaving(true);
+    try {
+      const res = await fetch("/api/strength/session/start", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          date: activeDate,
+          startedAt: new Date().toISOString(),
+          equipmentTypes
+        })
+      });
+      if (!res.ok) {
+        showToast("פתיחת אימון כוח נכשלה.");
+        return;
+      }
+      const json = await res.json();
+      applyStrengthSessionState((json?.session ?? null) as StrengthSession | null);
+      showToast("אימון כוח נפתח.");
+    } catch {
+      showToast("פתיחת אימון כוח נכשלה.");
+    } finally {
+      setStrengthSaving(false);
+    }
+  }
+
+  async function updateStrengthExercise(
+    exerciseId: string,
+    patch: {
+      exerciseKey?: string;
+      weightKg?: number;
+      repsMin?: number;
+      repsMax?: number;
+      targetSets?: number;
+      handMode?: StrengthHandMode;
+      note?: string | null;
+      setAsDefault?: boolean;
+    }
+  ) {
+    if (!strengthSession) return;
+    setStrengthSaving(true);
+    try {
+      const res = await fetch("/api/strength/session/item", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sessionId: strengthSession.id,
+          exerciseId,
+          ...patch
+        })
+      });
+      if (!res.ok) {
+        showToast("עדכון תרגיל נכשל.");
+        return;
+      }
+      const json = await res.json();
+      applyStrengthSessionState((json?.session ?? null) as StrengthSession | null);
+    } catch {
+      showToast("עדכון תרגיל נכשל.");
+    } finally {
+      setStrengthSaving(false);
+    }
+  }
+
+  async function addStrengthExerciseItem(equipmentType: StrengthEquipmentType, exerciseKey?: string) {
+    if (!strengthSession || strengthSaving) return;
+    setStrengthSaving(true);
+    try {
+      const res = await fetch("/api/strength/session/item", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sessionId: strengthSession.id,
+          equipmentType,
+          exerciseKey
+        })
+      });
+      if (!res.ok) {
+        showToast("הוספת תרגיל נכשלה.");
+        return;
+      }
+      const json = await res.json();
+      applyStrengthSessionState((json?.session ?? null) as StrengthSession | null);
+      showToast("תרגיל נוסף לאימון.");
+    } catch {
+      showToast("הוספת תרגיל נכשלה.");
+    } finally {
+      setStrengthSaving(false);
+    }
+  }
+
+  async function completeStrengthSet(exercise: StrengthSessionExercise) {
+    if (!strengthSession || strengthSaving) return;
+    setStrengthSaving(true);
+    try {
+      const targetReps = Math.max(1, Math.round((exercise.repsMin + exercise.repsMax) / 2));
+      const res = await fetch("/api/strength/session/set-complete", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sessionId: strengthSession.id,
+          exerciseId: exercise.id,
+          reps: targetReps,
+          weightKg: exercise.weightKg
+        })
+      });
+      if (!res.ok) {
+        showToast("שמירת סט נכשלה.");
+        return;
+      }
+      const json = await res.json();
+      applyStrengthSessionState((json?.session ?? null) as StrengthSession | null);
+      setStrengthFocusedExerciseId(exercise.id);
+      showToast(`סט ${exercise.completedSets + 1} נשמר.`);
+    } catch {
+      showToast("שמירת סט נכשלה.");
+    } finally {
+      setStrengthSaving(false);
+    }
+  }
+
+  async function pauseStrengthSessionFlow() {
+    if (!strengthSession || strengthSaving) return;
+    setStrengthSaving(true);
+    try {
+      const res = await fetch("/api/strength/session/pause", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sessionId: strengthSession.id })
+      });
+      if (!res.ok) {
+        showToast("השהיית אימון נכשלה.");
+        return;
+      }
+      const json = await res.json();
+      applyStrengthSessionState((json?.session ?? null) as StrengthSession | null);
+      showToast("האימון הושהה.");
+    } catch {
+      showToast("השהיית אימון נכשלה.");
+    } finally {
+      setStrengthSaving(false);
+    }
+  }
+
+  async function completeStrengthSessionFlow() {
+    if (!strengthSession || strengthSaving) return;
+    setStrengthSaving(true);
+    try {
+      const res = await fetch("/api/strength/session/complete", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sessionId: strengthSession.id, completedAt: new Date().toISOString() })
+      });
+      if (!res.ok) {
+        showToast("סיום אימון כוח נכשל.");
+        return;
+      }
+      const json = await res.json();
+      applyStrengthSessionState((json?.session ?? null) as StrengthSession | null);
+      setShowStrengthModal(false);
+      showToast("אימון כוח סומן כהושלם.");
+      await loadDashboard(activeDate, { quiet: true });
+    } catch {
+      showToast("סיום אימון כוח נכשל.");
+    } finally {
+      setStrengthSaving(false);
+    }
+  }
+
   function handleSportSelect(sport: ForecastOption["sport"]) {
     setSelectedSport(sport);
     setSelectionOverride(null);
@@ -3450,7 +3783,23 @@ export default function TodayPage() {
                   <li>דגשים: {activeRecommendationOption.notes ?? "-"}</li>
                 </ul>
                 <div className="recommendation-modal-actions">
-                  {!activeRecommendationIsStrengthFallback ? (
+                  {activeRecommendationOption.sport === "strength" ? (
+                    <>
+                      <button
+                        type="button"
+                        className="choice-btn"
+                        onClick={async () => {
+                          setRecommendationModalSport(null);
+                          await openStrengthSessionFlow();
+                        }}
+                      >
+                        {strengthSession ? "המשך אימון כוח" : "התחל אימון כוח"}
+                      </button>
+                      {activeRecommendationIsStrengthFallback ? (
+                        <span className="note">זו תבנית כוח חכמה (fallback) כי אין המלצת כוח ישירה מהמנוע.</span>
+                      ) : null}
+                    </>
+                  ) : !activeRecommendationIsStrengthFallback ? (
                     <button
                       type="button"
                       className="choice-btn"
@@ -3460,9 +3809,7 @@ export default function TodayPage() {
                     >
                       בחר לאימון דומה
                     </button>
-                  ) : (
-                    <span className="note">זו תבנית כוח חכמה (fallback) כי אין המלצת כוח ישירה מהמנוע.</span>
-                  )}
+                  ) : null}
                   <button className="choice-btn compact" onClick={() => setRecommendationModalSport(null)}>
                     סגור
                   </button>
@@ -3474,6 +3821,240 @@ export default function TodayPage() {
                 <button className="choice-btn compact" onClick={() => setRecommendationModalSport(null)}>
                   סגור
                 </button>
+              </div>
+            )}
+          </div>
+        </div>
+      ) : null}
+
+      {showStrengthModal ? (
+        <div
+          className="modal-overlay"
+          role="dialog"
+          aria-modal="true"
+          onClick={(event) => {
+            if (event.target === event.currentTarget) {
+              setShowStrengthModal(false);
+            }
+          }}
+        >
+          <div className="modal-card strength-session-modal-card">
+            <div className="strength-session-head">
+              <h3>אימון כוח · {formatDisplayDate(activeDate)}</h3>
+              <button className="choice-btn icon-compact" onClick={() => setShowStrengthModal(false)} aria-label="סגור">
+                ✕
+              </button>
+            </div>
+
+            {strengthLoading ? (
+              <p className="note">טוען אימון כוח פעיל...</p>
+            ) : !strengthSession ? (
+              <div className="strength-session-start">
+                <p className="note">בחר את המתקנים שהיו באימון ונפתח סשן פעיל עם שמירה אוטומטית אחרי כל סט.</p>
+                <div className="strength-equipment-grid">
+                  {strengthEquipmentOptions.map((equipment) => (
+                    <button
+                      key={`draft-${equipment.value}`}
+                      type="button"
+                      className={`strength-equipment-chip ${strengthEquipmentDraft.includes(equipment.value) ? "selected" : ""}`}
+                      onClick={() => toggleStrengthEquipmentDraft(equipment.value)}
+                    >
+                      <span aria-hidden>{strengthEquipmentIcon(equipment.value)}</span>
+                      {equipment.label}
+                    </button>
+                  ))}
+                </div>
+                <div className="strength-session-start-actions">
+                  <button type="button" className="choice-btn" onClick={startStrengthSessionFlow} disabled={strengthSaving}>
+                    {strengthSaving ? "פותח..." : "התחל אימון כוח"}
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <div className="strength-session-body">
+                <div className="strength-session-meta">
+                  <span className={`strength-status ${strengthSession.status}`}>
+                    {strengthSession.status === "paused" ? "מושהה" : "פעיל"}
+                  </span>
+                  <small>
+                    {strengthSession.lastInputAt
+                      ? `עדכון אחרון: ${new Date(strengthSession.lastInputAt).toLocaleTimeString("he-IL", {
+                          hour: "2-digit",
+                          minute: "2-digit"
+                        })}`
+                      : "טרם נשמרו סטים"}
+                  </small>
+                </div>
+
+                <div className="strength-stepper-strip" role="tablist" aria-label="מתקנים באימון">
+                  {strengthSession.equipmentTypes.map((equipment) => {
+                    const label = strengthEquipmentOptions.find((item) => item.value === equipment)?.label ?? equipment;
+                    const doneSets = strengthSession.exercises
+                      .filter((exercise) => exercise.equipmentType === equipment)
+                      .reduce((sum, exercise) => sum + exercise.completedSets, 0);
+                    return (
+                      <button
+                        key={`focus-${equipment}`}
+                        type="button"
+                        className={`strength-stepper-item ${strengthFocusedEquipment === equipment ? "selected" : ""}`}
+                        onClick={() => setStrengthFocusedEquipment(equipment)}
+                      >
+                        <span aria-hidden>{strengthEquipmentIcon(equipment)}</span>
+                        <span>{label}</span>
+                        <small>{doneSets} סטים</small>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                <div className="strength-session-inline-actions">
+                  <button
+                    type="button"
+                    className="choice-btn compact"
+                    disabled={strengthSaving}
+                    onClick={() => addStrengthExerciseItem(strengthFocusedEquipment)}
+                  >
+                    + תרגיל
+                  </button>
+                  <span className="note">המערכת שומרת אוטומטית כל שינוי.</span>
+                </div>
+
+                <div className="strength-exercises-list">
+                  {strengthExercisesForFocusedEquipment.length ? (
+                    strengthExercisesForFocusedEquipment.map((exercise) => (
+                      <article
+                        key={exercise.id}
+                        className={`strength-exercise-card ${focusedStrengthExercise?.id === exercise.id ? "active" : ""}`}
+                      >
+                        <div className="strength-exercise-head">
+                          <strong>{exercise.exerciseName}</strong>
+                          <span>
+                            {exercise.completedSets}/{exercise.targetSets} סטים
+                          </span>
+                        </div>
+
+                        <div className="strength-exercise-grid">
+                          <label className="field">
+                            תרגיל
+                            <UiSelect
+                              value={exercise.exerciseKey}
+                              options={exercise.options}
+                              onChange={(nextValue) => {
+                                void updateStrengthExercise(exercise.id, { exerciseKey: nextValue });
+                              }}
+                            />
+                          </label>
+
+                          <label className="field">
+                            יד
+                            <UiSelect
+                              value={exercise.handMode}
+                              options={handModeOptions}
+                              onChange={(nextValue) =>
+                                void updateStrengthExercise(exercise.id, { handMode: nextValue as StrengthHandMode })
+                              }
+                            />
+                          </label>
+
+                          <label className="field">
+                            משקל (ק״ג)
+                            <div className="strength-stepper">
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  void updateStrengthExercise(exercise.id, {
+                                    weightKg: Math.max(0, Number((exercise.weightKg - exercise.weightStepKg).toFixed(2)))
+                                  })
+                                }
+                              >
+                                −
+                              </button>
+                              <input
+                                type="number"
+                                value={exercise.weightKg}
+                                min={0}
+                                step={exercise.weightStepKg || 1}
+                                onFocus={() => setStrengthFocusedExerciseId(exercise.id)}
+                                onChange={(event) => {
+                                  const next = Math.max(0, Number(event.target.value) || 0);
+                                  void updateStrengthExercise(exercise.id, { weightKg: next });
+                                }}
+                              />
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  void updateStrengthExercise(exercise.id, {
+                                    weightKg: Number((exercise.weightKg + exercise.weightStepKg).toFixed(2))
+                                  })
+                                }
+                              >
+                                +
+                              </button>
+                            </div>
+                          </label>
+
+                          <label className="field">
+                            חזרות
+                            <div className="strength-range-row">
+                              <input
+                                type="number"
+                                min={1}
+                                max={100}
+                                value={exercise.repsMin}
+                                onFocus={() => setStrengthFocusedExerciseId(exercise.id)}
+                                onChange={(event) => {
+                                  const next = Math.max(1, Number(event.target.value) || 1);
+                                  void updateStrengthExercise(exercise.id, { repsMin: next });
+                                }}
+                              />
+                              <span>עד</span>
+                              <input
+                                type="number"
+                                min={1}
+                                max={100}
+                                value={exercise.repsMax}
+                                onFocus={() => setStrengthFocusedExerciseId(exercise.id)}
+                                onChange={(event) => {
+                                  const next = Math.max(exercise.repsMin, Number(event.target.value) || exercise.repsMin);
+                                  void updateStrengthExercise(exercise.id, { repsMax: next });
+                                }}
+                              />
+                            </div>
+                          </label>
+                        </div>
+
+                        <div className="strength-exercise-actions">
+                          <button type="button" className="choice-btn compact" onClick={() => completeStrengthSet(exercise)} disabled={strengthSaving}>
+                            סט הושלם
+                          </button>
+                          <button
+                            type="button"
+                            className="choice-btn compact"
+                            onClick={() =>
+                              void updateStrengthExercise(exercise.id, {
+                                setAsDefault: true
+                              })
+                            }
+                            disabled={strengthSaving}
+                          >
+                            שמור כברירת מחדל
+                          </button>
+                        </div>
+                      </article>
+                    ))
+                  ) : (
+                    <p className="note">אין תרגילים למתקן הזה עדיין. אפשר להוסיף עם + תרגיל.</p>
+                  )}
+                </div>
+
+                <div className="strength-session-footer">
+                  <button type="button" className="choice-btn compact" onClick={pauseStrengthSessionFlow} disabled={strengthSaving}>
+                    השהה אימון
+                  </button>
+                  <button type="button" className="choice-btn" onClick={completeStrengthSessionFlow} disabled={strengthSaving}>
+                    סיום אימון כוח
+                  </button>
+                </div>
               </div>
             )}
           </div>

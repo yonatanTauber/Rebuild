@@ -7,6 +7,7 @@ import {
   refreshTokenIfNeeded,
   upsertWorkoutFromStravaActivity
 } from "@/app/api/strava/_lib";
+import { attachOpenStrengthSessionsForDate } from "@/lib/strength-session";
 
 export const dynamic = "force-dynamic";
 
@@ -71,6 +72,7 @@ export async function POST(request: NextRequest) {
   }
   const activity = (await activityRes.json()) as Parameters<typeof upsertWorkoutFromStravaActivity>[0];
   await upsertWorkoutFromStravaActivity(activity);
+  const date = new Date(activity.start_date).toISOString().slice(0, 10);
+  await attachOpenStrengthSessionsForDate(date);
   return NextResponse.json({ ok: true });
 }
-

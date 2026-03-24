@@ -4303,6 +4303,219 @@ button.alt {
   margin: 0;
 }
 
+.strength-session-modal-card {
+  width: min(900px, 100%);
+}
+
+.strength-session-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.strength-session-start,
+.strength-session-body {
+  margin-top: 0.75rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.strength-equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.strength-equipment-chip {
+  border: 1px solid var(--outline-variant);
+  border-radius: 12px;
+  background: var(--surface-container-high);
+  color: var(--on-surface);
+  padding: 0.45rem 0.55rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.strength-equipment-chip.selected {
+  border-color: color-mix(in srgb, var(--primary) 68%, transparent);
+  background: color-mix(in srgb, var(--primary) 16%, var(--surface-container-high));
+}
+
+.strength-session-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.strength-status {
+  border: 1px solid var(--outline-variant);
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.strength-status.active {
+  border-color: color-mix(in srgb, var(--status-good) 70%, transparent);
+  color: var(--status-good);
+}
+
+.strength-status.paused {
+  border-color: color-mix(in srgb, var(--status-mid) 70%, transparent);
+  color: var(--status-mid);
+}
+
+.strength-stepper-strip {
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+}
+
+.strength-stepper-item {
+  border: 1px solid var(--outline-variant);
+  border-radius: 11px;
+  background: var(--surface-container-high);
+  color: var(--on-surface);
+  padding: 0.35rem 0.55rem;
+  min-width: 108px;
+  display: grid;
+  gap: 0.12rem;
+  justify-items: start;
+  text-align: right;
+  font-size: 0.78rem;
+}
+
+.strength-stepper-item span:first-child {
+  font-size: 0.9rem;
+}
+
+.strength-stepper-item small {
+  font-size: 0.68rem;
+  color: var(--on-surface-variant);
+}
+
+.strength-stepper-item.selected {
+  border-color: color-mix(in srgb, var(--secondary) 70%, transparent);
+  background: color-mix(in srgb, var(--secondary) 10%, var(--surface-container-high));
+}
+
+.strength-session-inline-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.strength-exercises-list {
+  display: grid;
+  gap: 0.55rem;
+  max-height: min(46vh, 520px);
+  overflow: auto;
+  padding-inline-end: 0.2rem;
+}
+
+.strength-exercise-card {
+  border: 1px solid var(--outline-variant);
+  border-radius: 12px;
+  background: var(--surface-container-high);
+  padding: 0.6rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.strength-exercise-card.active {
+  border-color: color-mix(in srgb, var(--tertiary) 58%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--tertiary) 35%, transparent);
+}
+
+.strength-exercise-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.45rem;
+  font-size: 0.86rem;
+}
+
+.strength-exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.strength-stepper {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) 34px;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.strength-stepper button {
+  min-height: 34px;
+  border-radius: 9px;
+  border: 1px solid var(--outline-variant);
+  background: var(--surface-container);
+  color: var(--on-surface);
+  font-weight: 700;
+}
+
+.strength-stepper input {
+  width: 100%;
+  min-height: 34px;
+  border: 1px solid var(--outline-variant);
+  border-radius: 9px;
+  background: var(--surface-container);
+  color: var(--on-surface);
+  text-align: center;
+}
+
+.strength-range-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.strength-range-row input {
+  width: 100%;
+  min-height: 34px;
+  border: 1px solid var(--outline-variant);
+  border-radius: 9px;
+  background: var(--surface-container);
+  color: var(--on-surface);
+  text-align: center;
+}
+
+.strength-range-row span {
+  color: var(--on-surface-variant);
+  font-size: 0.75rem;
+}
+
+.strength-exercise-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.4rem;
+}
+
+.strength-session-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.strength-session-start-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .modal-step {
   margin: 0.45rem 0 0;
   font-size: 0.82rem;
@@ -4317,6 +4530,40 @@ button.alt {
 .modal-actions {
   margin-top: 0.8rem;
   justify-content: flex-end;
+}
+
+@media (max-width: 900px) {
+  .strength-equipment-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .strength-exercise-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 430px) {
+  .strength-session-modal-card {
+    width: min(96vw, 96vw);
+    max-height: 92vh;
+    padding: 0.75rem;
+  }
+
+  .strength-stepper-item {
+    min-width: 96px;
+  }
+
+  .strength-exercises-list {
+    max-height: 52vh;
+  }
+
+  .strength-session-footer {
+    flex-wrap: wrap;
+  }
+
+  .strength-session-footer .choice-btn {
+    flex: 1 1 calc(50% - 0.3rem);
+  }
 }
 
 .run-feedback-shell {

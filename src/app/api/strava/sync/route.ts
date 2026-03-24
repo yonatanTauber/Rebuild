@@ -7,6 +7,7 @@ import {
   getStravaSyncState,
   upsertWorkoutFromStravaActivity
 } from "@/app/api/strava/_lib";
+import { attachOpenStrengthSessionsForDate } from "@/lib/strength-session";
 
 export const runtime = "nodejs";
 
@@ -33,6 +34,7 @@ export async function POST(request: Request) {
   const perPage = 50;
   let imported = 0;
   let updated = 0;
+  const touchedDates = new Set<string>();
 
   let startPage = 1;
   let done = false;
@@ -68,6 +70,8 @@ export async function POST(request: Request) {
       const inserted = await upsertWorkoutFromStravaActivity(act);
       if (inserted) imported += 1;
       else updated += 1;
+      const d = new Date(act.start_date).toISOString().slice(0, 10);
+      touchedDates.add(d);
     }
 
     if (activities.length < perPage) {
@@ -79,6 +83,10 @@ export async function POST(request: Request) {
   const nextPage = mode === "backfill" ? (done ? lastPageFetched : lastPageFetched + 1) : 1;
   if (mode === "backfill") {
     await upsertStravaSyncState({ nextPage, done });
+  }
+
+  for (const date of touchedDates) {
+    await attachOpenStrengthSessionsForDate(date);
   }
 
   return NextResponse.json({ ok: true, mode, imported, updated, done, nextPage });
