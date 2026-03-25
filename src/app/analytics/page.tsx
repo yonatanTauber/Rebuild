@@ -33,6 +33,7 @@ type AnalyticsResponse = {
   };
   yearly: Array<{ year: number; km: number; workouts: number }>;
   monthly: Array<{ month: number; km: number; workouts: number; avgPaceMinPerKm: number | null }>;
+  daily: Array<{ day: number; km: number; workouts: number }>;
   runBreakdown: {
     byDistance: Array<{ id: string; label: string; count: number; km: number }>;
     byDuration: Array<{ id: string; label: string; count: number }>;
@@ -419,6 +420,24 @@ export default function AnalyticsPage() {
   }
 
   function handleBarDrilldown(index: number, datum: Record<string, unknown>) {
+    if (singleYearSelection && selectedMonthRange && selectedMonthRange.fromMonth === selectedMonthRange.toMonth) {
+      const day = Number(datum.day);
+      if (!Number.isFinite(day)) return;
+      const year = selectedYears[0];
+      const month = selectedMonthRange.fromMonth;
+      const date = `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+      setHistoryDrilldown((prev) =>
+        prev?.from === date && prev?.to === date
+          ? null
+          : {
+              from: date,
+              to: date,
+              label: `${String(day).padStart(2, "0")}-${String(month).padStart(2, "0")}-${String(year).slice(-2)}`
+            }
+      );
+      return;
+    }
+
     if (singleYearSelection) {
       const month = Number(datum.month);
       if (!Number.isFinite(month)) return;
@@ -527,6 +546,14 @@ export default function AnalyticsPage() {
     : `${activeYearRange.fromYear}–${activeYearRange.toYear}`;
 
   const chartData = useMemo(() => {
+    if (singleYearSelection && selectedMonthRange && selectedMonthRange.fromMonth === selectedMonthRange.toMonth) {
+      return (data?.daily ?? []).map((dayRow) => ({
+        day: dayRow.day,
+        label: String(dayRow.day),
+        km: dayRow.km
+      }));
+    }
+
     if (singleYearSelection) {
       return (data?.monthly ?? [])
         .filter((monthRow) => {
@@ -547,7 +574,15 @@ export default function AnalyticsPage() {
         label: String(yearRow.year),
         km: yearRow.km
       }));
-  }, [activeYearRange.fromYear, activeYearRange.toYear, data?.monthly, data?.yearly, selectedMonthRange, singleYearSelection]);
+  }, [
+    activeYearRange.fromYear,
+    activeYearRange.toYear,
+    data?.daily,
+    data?.monthly,
+    data?.yearly,
+    selectedMonthRange,
+    singleYearSelection
+  ]);
 
   const chartMax = useMemo(() => maxValue(chartData.map((item) => item.km as number)), [chartData]);
   const historyScopeLabel = historyDrilldown?.label ?? rangeLabel;
@@ -673,9 +708,15 @@ export default function AnalyticsPage() {
 
       <section className="anl-card">
         <h2 className="anl-card-title">
-          {singleYearSelection ? "מבט חודשי" : "מבט שנתי"}
+          {singleYearSelection && selectedMonthRange && selectedMonthRange.fromMonth === selectedMonthRange.toMonth
+            ? "מבט יומי"
+            : singleYearSelection
+            ? "מבט חודשי"
+            : "מבט שנתי"}
           <span className="anl-card-sub">
-            {singleYearSelection
+            {singleYearSelection && selectedMonthRange && selectedMonthRange.fromMonth === selectedMonthRange.toMonth
+              ? `לחץ על יום כדי להציג את האימונים שלו`
+              : singleYearSelection
               ? `לחץ על חודש כדי להציג את האימונים שלו`
               : `לחץ על שנה כדי להציג את האימונים שלה`}
           </span>

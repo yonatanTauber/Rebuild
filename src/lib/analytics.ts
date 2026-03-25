@@ -163,6 +163,34 @@ export async function buildAnalytics(args: BuildRangeArgs) {
     };
   });
 
+  let daily: Array<{ day: number; km: number; workouts: number }> = [];
+  if (rangeStart && rangeEnd) {
+    const sameMonth =
+      rangeStart.getUTCFullYear() === rangeEnd.getUTCFullYear() &&
+      rangeStart.getUTCMonth() === rangeEnd.getUTCMonth();
+    if (sameMonth) {
+      const year = rangeStart.getUTCFullYear();
+      const monthIndex = rangeStart.getUTCMonth();
+      const daysInMonth = new Date(Date.UTC(year, monthIndex + 1, 0)).getUTCDate();
+      daily = Array.from({ length: daysInMonth }).map((_, idx) => {
+        const day = idx + 1;
+        const dayRows = rangeWorkouts.filter((workout) => {
+          const startedAt = new Date(workout.startAt);
+          return (
+            startedAt.getUTCFullYear() === year &&
+            startedAt.getUTCMonth() === monthIndex &&
+            startedAt.getUTCDate() === day
+          );
+        });
+        return {
+          day,
+          km: toOneDec(dayRows.reduce((sum, workout) => sum + km(workout), 0)),
+          workouts: dayRows.length
+        };
+      });
+    }
+  }
+
   const yearKm = monthly.reduce((sum, m) => sum + m.km, 0);
   const monthKm = monthly.find((m) => m.month === currentMonth)?.km ?? 0;
   const allYearWorkouts = workouts.filter((w) => inYear(w, currentYear));
@@ -299,6 +327,7 @@ export async function buildAnalytics(args: BuildRangeArgs) {
     },
     yearly,
     monthly,
+    daily,
     runBreakdown,
     runShoes,
     todayRuns,
