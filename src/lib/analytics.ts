@@ -27,6 +27,8 @@ type BuildRangeArgs = {
   year?: number;
   fromYear?: number;
   toYear?: number;
+  fromDate?: string;
+  toDate?: string;
   shoeId?: string | null;
   allYears?: boolean;
 };
@@ -82,7 +84,7 @@ async function buildCloudPbs() {
 }
 
 export async function buildAnalytics(args: BuildRangeArgs) {
-  const { sport, fromYear, toYear, shoeId, allYears } = args;
+  const { sport, fromYear, toYear, fromDate, toDate, shoeId, allYears } = args;
   const today = formatISODate();
   const todayDate = new Date(`${today}T00:00:00.000Z`);
   const currentYear = todayDate.getUTCFullYear();
@@ -135,8 +137,15 @@ export async function buildAnalytics(args: BuildRangeArgs) {
     .map(([y, data]) => ({ year: y, km: toOneDec(data.km), workouts: data.workouts }))
     .sort((a, b) => a.year - b.year);
 
+  const rangeStart = fromDate ? new Date(`${fromDate}T00:00:00.000Z`) : null;
+  const rangeEnd = toDate ? new Date(`${toDate}T23:59:59.999Z`) : null;
+
   const rangeWorkouts = workouts.filter((w) => {
-    const y = new Date(w.startAt).getFullYear();
+    const startedAt = new Date(w.startAt);
+    if (rangeStart && startedAt < rangeStart) return false;
+    if (rangeEnd && startedAt > rangeEnd) return false;
+    if (rangeStart || rangeEnd) return true;
+    const y = startedAt.getFullYear();
     return y >= rangeFromYear && y <= rangeToYear;
   });
   const selectedYearWorkouts = workouts.filter((w) => inYear(w, safeYear));

@@ -9,6 +9,8 @@ import type { HistoryResult, HistoryWorkout } from "@/lib/history-types";
 
 type Sport = "run" | "swim" | "bike";
 type HistorySortField = "date" | "distance" | "pace" | "time" | "tss";
+type Direction = "asc" | "desc";
+type DateRange = { from: string; to: string };
 
 type AnalyticsResponse = {
   sport: Sport;
@@ -55,18 +57,29 @@ type AnalyticsResponse = {
   }>;
 };
 
-const MONTH_LABELS = ["ינו", "פבר", "מרץ", "אפר", "מאי", "יונ", "יול", "אוג", "ספט", "אוק", "נוב", "דצמ"];
+const MONTH_LABELS = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 
 function monthLabel(month: number) {
   return MONTH_LABELS[month - 1] ?? String(month);
 }
 
-function isoMonthRange(year: number, month: number) {
-  const m = String(month).padStart(2, "0");
-  const lastDay = new Date(year, month, 0).getDate();
+function buildMonthRange(year: number, fromMonth: number, toMonth: number): DateRange {
+  const startMonth = Math.min(fromMonth, toMonth);
+  const endMonth = Math.max(fromMonth, toMonth);
+  const start = `${year}-${String(startMonth).padStart(2, "0")}-01`;
+  const endDay = new Date(year, endMonth, 0).getDate();
   return {
-    from: `${year}-${m}-01`,
-    to: `${year}-${m}-${String(lastDay).padStart(2, "0")}`
+    from: start,
+    to: `${year}-${String(endMonth).padStart(2, "0")}-${String(endDay).padStart(2, "0")}`
+  };
+}
+
+function buildYearRange(fromYear: number, toYear: number): DateRange {
+  const startYear = Math.min(fromYear, toYear);
+  const endYear = Math.max(fromYear, toYear);
+  return {
+    from: `${startYear}-01-01`,
+    to: `${endYear}-12-31`
   };
 }
 
@@ -111,6 +124,33 @@ function historySortValue(workout: HistoryWorkout, field: HistorySortField) {
     default:
       return 0;
   }
+}
+
+function computeHistorySummary(workouts: HistoryWorkout[]) {
+  const totalKm = workouts.reduce(
+    (sum, workout) => sum + (workout.distanceDisplayKm ?? (workout.distanceM ? workout.distanceM / 1000 : 0)),
+    0
+  );
+  const paceDurationSec = workouts.reduce(
+    (sum, workout) =>
+      sum +
+      (workout.durationForPaceSec ??
+        workout.movingDurationSec ??
+        workout.durationSec),
+    0
+  );
+  const bestPace = workouts.reduce<number | null>((best, workout) => {
+    const pace = workout.paceMinPerKm;
+    if (pace == null || !Number.isFinite(pace)) return best;
+    return best == null ? pace : Math.min(best, pace);
+  }, null);
+
+  return {
+    totalCount: workouts.length,
+    totalKm: Math.round(totalKm * 10) / 10,
+    avgPace: workouts.length && totalKm > 0 ? Math.round((paceDurationSec / 60 / totalKm) * 10) / 10 : null,
+    bestPace: bestPace != null ? Math.round(bestPace * 100) / 100 : null
+  };
 }
 
 // ── BarChart component ──────────────────────────────────────────────────────
@@ -202,64 +242,99 @@ const SPORTS = [
 
 export default function AnalyticsPage() {
   const router = useRouter();
+  const currentCalendarYear = new Date().getFullYear();
 
   const [sport, setSport] = useState<Sport>("run");
-  const [fromYear, setFromYear] = useState<number>(new Date().getFullYear());
-  const [toYear, setToYear] = useState<number>(new Date().getFullYear());
+  const [selectedYears, setSelectedYears] = useState<number[]>([currentCalendarYear]);
+  const [selectedMonths, setSelectedMonths] = useState<number[]>([]);
   const [allYears, setAllYears] = useState(false);
   const [shoeId, setShoeId] = useState<string>("");
   const [data, setData] = useState<AnalyticsResponse | null>(null);
 
   const [historyResult, setHistoryResult] = useState<HistoryResult | null>(null);
   const [historyLoading, setHistoryLoading] = useState(false);
-  const [historyFromDate, setHistoryFromDate] = useState("");
-  const [historyToDate, setHistoryToDate] = useState("");
-  const [historyRefreshToken, setHistoryRefreshToken] = useState(0);
-  const [historySort, setHistorySort] = useState<{ field: HistorySortField; direction: "asc" | "desc" }>({
+  const [historySort, setHistorySort] = useState<{ field: HistorySortField; direction: Direction }>({
     field: "date",
     direction: "desc"
   });
 
-  // The "display year" for the monthly micro chart and chart highlight
-  const displayYear = toYear;
+  const availableYears = data?.availableYears ?? [currentCalendarYear];
+  const ascendingYears = useMemo(() => [...availableYears].sort((a, b) => a - b), [availableYears]);
+  const singleYearSelection = !allYears && selectedYears.length === 1;
+
+  const activeYearRange = useMemo(() => {
+    if (allYears) {
+      return {
+        fromYear: ascendingYears[0] ?? currentCalendarYear,
+        toYear: ascendingYears[ascendingYears.length - 1] ?? currentCalendarYear
+      };
+    }
+    if (selectedYears.length === 0) {
+      return { fromYear: currentCalendarYear, toYear: currentCalendarYear };
+    }
+    if (selectedYears.length === 1) {
+      return { fromYear: selectedYears[0], toYear: selectedYears[0] };
+    }
+    return {
+      fromYear: Math.min(selectedYears[0], selectedYears[1]),
+      toYear: Math.max(selectedYears[0], selectedYears[1])
+    };
+  }, [allYears, ascendingYears, currentCalendarYear, selectedYears]);
+
+  const activeDateRange = useMemo(() => {
+    if (allYears) {
+      return buildYearRange(activeYearRange.fromYear, activeYearRange.toYear);
+    }
+    if (singleYearSelection && selectedMonths.length > 0) {
+      const [fromMonth, toMonth = selectedMonths[0]] = selectedMonths;
+      return buildMonthRange(selectedYears[0], fromMonth, toMonth);
+    }
+    return buildYearRange(activeYearRange.fromYear, activeYearRange.toYear);
+  }, [activeYearRange.fromYear, activeYearRange.toYear, allYears, selectedMonths, selectedYears, singleYearSelection]);
 
   // ── Load analytics overview ────────────────────────────────────────────
   useEffect(() => {
     void loadOverview();
-  }, [sport, fromYear, toYear, allYears, shoeId]);
+  }, [
+    activeDateRange.from,
+    activeDateRange.to,
+    activeYearRange.fromYear,
+    activeYearRange.toYear,
+    allYears,
+    selectedYears,
+    shoeId,
+    sport,
+    singleYearSelection
+  ]);
 
   async function loadOverview() {
-    const params = new URLSearchParams({ sport, year: String(toYear) });
+    const displayYear = singleYearSelection ? selectedYears[0] : activeYearRange.toYear;
+    const params = new URLSearchParams({ sport, year: String(displayYear) });
     if (allYears) {
       params.set("allYears", "true");
     } else {
-      params.set("fromYear", String(Math.min(fromYear, toYear)));
-      params.set("toYear", String(Math.max(fromYear, toYear)));
+      params.set("fromYear", String(activeYearRange.fromYear));
+      params.set("toYear", String(activeYearRange.toYear));
+      params.set("fromDate", activeDateRange.from);
+      params.set("toDate", activeDateRange.to);
     }
     if (sport === "run" && shoeId) params.set("shoeId", shoeId);
     const res = await fetch(`/api/analytics/overview?${params.toString()}`);
     const json = (await res.json()) as AnalyticsResponse;
     setData(json);
-    // Sync allYears with server response
-    if (allYears && json.availableYears.length > 0) {
-      const sorted = [...json.availableYears].sort((a, b) => a - b);
-      setFromYear(sorted[0]);
-      setToYear(sorted[sorted.length - 1]);
-    }
   }
 
   // ── Load history table ────────────────────────────────────────────────
   useEffect(() => {
     void loadHistoryTable();
-  }, [sport, historyRefreshToken]);
+  }, [activeDateRange.from, activeDateRange.to, sport]);
 
   async function loadHistoryTable() {
-    if (!historyFromDate || !historyToDate) return;
     setHistoryLoading(true);
     try {
       const params = new URLSearchParams({ sport });
-      params.set("from", `${historyFromDate}T00:00:00.000Z`);
-      params.set("to", `${historyToDate}T23:59:59.999Z`);
+      params.set("from", `${activeDateRange.from}T00:00:00.000Z`);
+      params.set("to", `${activeDateRange.to}T23:59:59.999Z`);
       const res = await fetch(`/api/analytics/history?${params.toString()}`);
       if (!res.ok) throw new Error("history fetch failed");
       setHistoryResult((await res.json()) as HistoryResult);
@@ -270,42 +345,74 @@ export default function AnalyticsPage() {
     }
   }
 
-  function handleToggleAllYears() {
-    const next = !allYears;
-    setAllYears(next);
-    if (!next && data) {
-      const sorted = [...data.availableYears].sort((a, b) => b - a);
-      setFromYear(sorted[0]);
-      setToYear(sorted[0]);
+  useEffect(() => {
+    if (!data?.availableYears?.length) return;
+    const allowed = new Set(data.availableYears);
+    setSelectedYears((prev) => {
+      const valid = prev.filter((year) => allowed.has(year));
+      const next = valid.length ? valid.slice(0, 2) : [data.availableYears[0]];
+      if (prev.length === next.length && prev.every((value, index) => value === next[index])) {
+        return prev;
+      }
+      return next;
+    });
+  }, [data?.availableYears]);
+
+  useEffect(() => {
+    if (!singleYearSelection && selectedMonths.length) {
+      setSelectedMonths([]);
     }
+  }, [selectedMonths.length, singleYearSelection]);
+
+  function handleToggleAllYears() {
+    setAllYears((prev) => !prev);
+    setSelectedMonths([]);
   }
 
-  function handleMonthBarClick(monthIndex: number) {
-    const month = monthIndex + 1;
-    const range = isoMonthRange(displayYear, month);
-    setHistoryFromDate(range.from);
-    setHistoryToDate(range.to);
-    setHistoryRefreshToken((t) => t + 1);
-    // Scroll to history section
-    setTimeout(() => {
-      document.querySelector(".anl-hist-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 100);
+  function handleYearChipClick(year: number) {
+    setAllYears(false);
+    setSelectedMonths([]);
+    setSelectedYears((prev) => {
+      if (prev.length === 1) {
+        return prev[0] === year ? prev : [prev[0], year];
+      }
+      return [year];
+    });
+  }
+
+  function handleMonthChipClick(month: number) {
+    if (!singleYearSelection) return;
+    setSelectedMonths((prev) => {
+      if (prev.length === 0) return [month];
+      if (prev.length === 1) return prev[0] === month ? prev : [prev[0], month];
+      return [month];
+    });
   }
 
   // ── Computed values ────────────────────────────────────────────────────
-  const yearlyMax = useMemo(() => maxValue((data?.yearly ?? []).map((y) => y.km)), [data]);
-  const monthlyMax = useMemo(() => maxValue((data?.monthly ?? []).map((m) => m.km)), [data]);
+  const filteredHistoryWorkouts = useMemo(() => {
+    const workouts = historyResult?.workouts ?? [];
+    if (sport !== "run" || !shoeId) return workouts;
+    return workouts.filter((workout) => {
+      const normalizedShoeId =
+        shoeId === "unassigned"
+          ? !workout.shoeName || workout.shoeName === "ללא שיוך"
+          : (data?.runShoes ?? []).find((shoe) => shoe.id === shoeId)?.name === workout.shoeName;
+      return normalizedShoeId;
+    });
+  }, [data?.runShoes, historyResult?.workouts, shoeId, sport]);
 
   const sortedHistoryWorkouts = useMemo(() => {
-    const workouts = historyResult?.workouts ?? [];
     const dir = historySort.direction === "asc" ? 1 : -1;
-    return [...workouts].sort((a, b) => {
+    return [...filteredHistoryWorkouts].sort((a, b) => {
       const valA = historySortValue(a, historySort.field);
       const valB = historySortValue(b, historySort.field);
       if (valA === valB) return Date.parse(b.startAt) - Date.parse(a.startAt);
       return dir * (valA - valB);
     });
-  }, [historyResult?.workouts, historySort]);
+  }, [filteredHistoryWorkouts, historySort]);
+
+  const historySummary = useMemo(() => computeHistorySummary(filteredHistoryWorkouts), [filteredHistoryWorkouts]);
 
   function toggleHistorySort(field: HistorySortField) {
     setHistorySort((prev) =>
@@ -330,11 +437,6 @@ export default function AnalyticsPage() {
       ? Math.round(totalTimeSec / data!.rangeSummary.totalCount)
       : null;
 
-  const monthlyChartData = (data?.monthly ?? []).map((m) => ({
-    label: monthLabel(m.month),
-    km: m.km
-  }));
-
   const shoeDropdown =
     sport === "run" ? (
       <select
@@ -356,13 +458,23 @@ export default function AnalyticsPage() {
     [data?.runShoes]
   );
 
-  const availableYears = data?.availableYears ?? [new Date().getFullYear()];
+  const selectedMonthRange =
+    singleYearSelection && selectedMonths.length
+      ? {
+          fromMonth: Math.min(...selectedMonths),
+          toMonth: Math.max(...selectedMonths)
+        }
+      : null;
 
   const rangeLabel = allYears
     ? "כל השנים"
-    : fromYear === toYear
-    ? String(fromYear)
-    : `${Math.min(fromYear, toYear)}–${Math.max(fromYear, toYear)}`;
+    : selectedMonthRange
+    ? selectedMonthRange.fromMonth === selectedMonthRange.toMonth
+      ? `${monthLabel(selectedMonthRange.fromMonth)} ${selectedYears[0]}`
+      : `${monthLabel(selectedMonthRange.fromMonth)}–${monthLabel(selectedMonthRange.toMonth)} ${selectedYears[0]}`
+    : activeYearRange.fromYear === activeYearRange.toYear
+    ? String(activeYearRange.fromYear)
+    : `${activeYearRange.fromYear}–${activeYearRange.toYear}`;
 
   return (
     <div className="anl-page" dir="rtl">
@@ -375,7 +487,6 @@ export default function AnalyticsPage() {
 
       {/* Controls bar */}
       <div className="anl-controls">
-        {/* Sport chips */}
         <div className="anl-sport-chips">
           {SPORTS.map((s) => (
             <button
@@ -387,57 +498,79 @@ export default function AnalyticsPage() {
             </button>
           ))}
         </div>
-
-        {/* Year range selector */}
-        <div className="anl-year-range">
-          <label className="anl-year-range-label">מ:</label>
-          <select
-            className="anl-year-select"
-            value={allYears ? "" : fromYear}
-            disabled={allYears}
-            onChange={(e) => {
-              setFromYear(Number(e.target.value));
-              setAllYears(false);
-            }}
-          >
-            {availableYears.map((y) => (
-              <option key={y} value={y}>{y}</option>
-            ))}
-          </select>
-          <label className="anl-year-range-label">עד:</label>
-          <select
-            className="anl-year-select"
-            value={allYears ? "" : toYear}
-            disabled={allYears}
-            onChange={(e) => {
-              setToYear(Number(e.target.value));
-              setAllYears(false);
-            }}
-          >
-            {availableYears.map((y) => (
-              <option key={y} value={y}>{y}</option>
-            ))}
-          </select>
-          <button
-            className={`anl-chip ${allYears ? "active" : ""}`}
-            onClick={handleToggleAllYears}
-          >
-            {allYears ? "✓ הכל" : "כל השנים"}
-          </button>
-        </div>
-
         {shoeDropdown}
       </div>
 
-      {/* Range summary strip */}
-      <div className="anl-range-strip">
-        <span>טווח: <strong>{rangeLabel}</strong></span>
-        <span>· {data?.rangeSummary.totalKm ?? 0} ק&quot;מ</span>
-        <span>· קצב {data?.rangeSummary.avgPace ? formatPace(data.rangeSummary.avgPace) : "-"}</span>
-        <span>· {data?.rangeSummary.totalCount ?? 0} אימונים</span>
-      </div>
+      <section className="anl-card">
+        <div className="anl-timeboard">
+          <div className="anl-timeboard-head">
+            <div>
+              <h2 className="anl-card-title">טווח ניתוח</h2>
+              <p className="anl-timeboard-sub">בחר שנה אחת, כמה שנים רצופות, או חודש בתוך שנה אחת.</p>
+            </div>
+            <div className="anl-selection-meta">
+              <span className="anl-selection-badge">{rangeLabel}</span>
+              <span className="anl-selection-hint">
+                {data?.rangeSummary.totalCount ?? 0} אימונים · {data?.rangeSummary.totalKm ?? 0} ק&quot;מ
+              </span>
+            </div>
+          </div>
 
-      {/* Bento 4 metrics — shows range summary */}
+          <div className="anl-timeboard-row">
+            <button
+              className={`anl-time-chip anl-time-chip-strong ${allYears ? "active" : ""}`}
+              onClick={handleToggleAllYears}
+            >
+              ALL TIME
+            </button>
+            <div className="anl-time-chip-group">
+              {availableYears.map((year) => {
+                const isActive =
+                  allYears ||
+                  (selectedYears.length === 1
+                    ? selectedYears[0] === year
+                    : year >= activeYearRange.fromYear && year <= activeYearRange.toYear);
+                return (
+                  <button
+                    key={year}
+                    className={`anl-time-chip ${isActive ? "active" : ""}`}
+                    onClick={() => handleYearChipClick(year)}
+                  >
+                    {year}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="anl-timeboard-row anl-timeboard-row-months">
+            <div className="anl-time-chip-group">
+              {MONTH_LABELS.map((label, index) => {
+                const month = index + 1;
+                const isActive =
+                  singleYearSelection &&
+                  selectedMonthRange != null &&
+                  month >= selectedMonthRange.fromMonth &&
+                  month <= selectedMonthRange.toMonth;
+                return (
+                  <button
+                    key={label}
+                    className={`anl-time-chip anl-time-chip-month ${isActive ? "active" : ""}`}
+                    disabled={!singleYearSelection}
+                    onClick={() => handleMonthChipClick(month)}
+                  >
+                    {label}
+                  </button>
+                );
+              })}
+            </div>
+            {!singleYearSelection && (
+              <span className="anl-selection-hint">חודשים פעילים רק כשנבחרת שנה אחת.</span>
+            )}
+          </div>
+        </div>
+      </section>
+
       <div className="anl-bento">
         <div className="anl-metric">
           <span className="anl-metric-lbl">זמן כולל</span>
@@ -462,120 +595,28 @@ export default function AnalyticsPage() {
         </div>
       </div>
 
-      {/* Main 2-col: yearly chart + summary stack */}
-      <div className="anl-main-grid">
-        <section className="anl-card anl-yearly-card">
-          <h2 className="anl-card-title">
-            מבט על שנתי <span className="anl-card-sub">ק&quot;מ לפי שנה</span>
-          </h2>
-          <BarChart
-            data={(data?.yearly ?? []).map((y) => ({ year: String(y.year), km: y.km }))}
-            maxVal={yearlyMax}
-            labelKey="year"
-            valueKey="km"
-            highlightKey={String(toYear)}
-          />
-        </section>
-
-        <aside className="anl-summary-stack">
-          <div className="anl-summary-card">
-            <span>ק&quot;מ השנה ({data?.currentYear ?? new Date().getFullYear()})</span>
-            <strong className="anl-cyan">{data?.summary.currentYearKm ?? 0}</strong>
-          </div>
-          <div className="anl-summary-card">
-            <span>ק&quot;מ החודש</span>
-            <strong>{data?.summary.currentMonthKm ?? 0}</strong>
-          </div>
-          <div className="anl-summary-card">
-            <span>ק&quot;מ {rangeLabel}</span>
-            <strong>{data?.rangeSummary.totalKm ?? 0}</strong>
-          </div>
-        </aside>
-      </div>
-
-      {/* Monthly micro chart */}
-      <section className="anl-card">
-        <h2 className="anl-card-title">
-          מיקרו חודשי <span className="anl-card-sub">{displayYear} · לחץ על עמודה לסינון היסטוריה</span>
-        </h2>
-        <BarChart
-          data={monthlyChartData}
-          maxVal={monthlyMax}
-          labelKey="label"
-          valueKey="km"
-          height={140}
-          onBarClick={handleMonthBarClick}
-        />
-      </section>
-
       {/* History section */}
       {sport === "run" && (
         <section className="anl-card anl-hist-section">
           <h2 className="anl-card-title">
             היסטוריית אימונים{" "}
             <span className="anl-card-sub">
-              {historyFromDate && historyToDate
-                ? `${historyFromDate} → ${historyToDate}`
-                : "לחץ על עמודה בגרף לסינון"}
+              {activeDateRange.from} → {activeDateRange.to}
             </span>
           </h2>
 
-          <div className="anl-hist-controls">
-            <label className="anl-hist-label">
-              מ-
-              <input
-                type="date"
-                className="anl-date-input"
-                value={historyFromDate}
-                onChange={(e) => setHistoryFromDate(e.target.value)}
-              />
-            </label>
-            <label className="anl-hist-label">
-              עד
-              <input
-                type="date"
-                className="anl-date-input"
-                value={historyToDate}
-                onChange={(e) => setHistoryToDate(e.target.value)}
-              />
-            </label>
-            <button
-              className="anl-chip"
-              onClick={() => setHistoryRefreshToken((t) => t + 1)}
-              disabled={!historyFromDate || !historyToDate}
-            >
-              הצג
-            </button>
-            {historyResult && (
-              <button
-                className="anl-chip"
-                onClick={() => {
-                  setHistoryFromDate("");
-                  setHistoryToDate("");
-                  setHistoryResult(null);
-                }}
-              >
-                נקה
-              </button>
-            )}
-          </div>
-
           {historyLoading && <p className="anl-loading">טוען נתונים...</p>}
-
-          {!historyLoading && !historyFromDate && !historyResult && (
-            <p className="anl-loading">לחץ על עמודה בגרף החודשי או בחר טווח תאריכים ולחץ הצג.</p>
-          )}
 
           {!historyLoading && historyResult && (
             <>
               <div className="anl-hist-summary">
-                <span className="anl-hist-pill">אימונים {historyResult.summary.totalCount}</span>
-                <span className="anl-hist-pill">ק&quot;מ {historyResult.summary.totalKm}</span>
+                <span className="anl-hist-pill">אימונים {historySummary.totalCount}</span>
+                <span className="anl-hist-pill">ק&quot;מ {historySummary.totalKm}</span>
                 <span className="anl-hist-pill">
-                  קצב ממוצע {historyResult.summary.avgPace ? formatPace(historyResult.summary.avgPace) : "-"}
+                  קצב ממוצע {historySummary.avgPace ? formatPace(historySummary.avgPace) : "-"}
                 </span>
                 <span className="anl-hist-pill">
-                  קצב שיא {formatPace(historyResult.summary.bestPace)}
+                  קצב שיא {formatPace(historySummary.bestPace)}
                 </span>
               </div>
 

@@ -8,6 +8,8 @@ const schema = z.object({
   year: z.number().int().optional(),
   fromYear: z.number().int().optional(),
   toYear: z.number().int().optional(),
+  fromDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  toDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
   shoeId: z.string().optional(),
   allYears: z.union([z.literal("true"), z.literal("1")]).optional()
 });
@@ -19,6 +21,8 @@ export async function GET(request: Request) {
     year: url.searchParams.get("year") ? Number(url.searchParams.get("year")) : undefined,
     fromYear: url.searchParams.get("fromYear") ? Number(url.searchParams.get("fromYear")) : undefined,
     toYear: url.searchParams.get("toYear") ? Number(url.searchParams.get("toYear")) : undefined,
+    fromDate: url.searchParams.get("fromDate") ?? undefined,
+    toDate: url.searchParams.get("toDate") ?? undefined,
     shoeId: url.searchParams.get("shoeId") ?? undefined,
     allYears: url.searchParams.get("allYears") ?? undefined
   };
@@ -27,8 +31,17 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
   }
 
-  const { sport, year, shoeId, fromYear, toYear, allYears } = parsed.data;
+  const { sport, year, shoeId, fromYear, toYear, fromDate, toDate, allYears } = parsed.data;
   return NextResponse.json(
-    await buildAnalytics({ sport, year, shoeId: shoeId ?? null, fromYear, toYear, allYears: Boolean(allYears) })
+    await buildAnalytics({
+      sport,
+      year,
+      shoeId: shoeId ?? null,
+      fromYear,
+      toYear,
+      fromDate,
+      toDate,
+      allYears: Boolean(allYears)
+    })
   );
 }
