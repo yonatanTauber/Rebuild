@@ -1836,7 +1836,7 @@ export default function TodayPage() {
   const showMorningSideCard = showRecommendationPanel && !hasWorkoutOnDay && !showRestHistoricalCard;
   const topGridClassName = hasWorkoutOnDay || showMorningSideCard ? "today-top-grid split" : "today-top-grid";
   const restTimelineTitle = isHistoricalDay ? "יום מנוחה" : "עד כה ללא אימון";
-  const restTimelineSubtitle = isHistoricalDay ? "לא נרשם אימון ביום הזה." : "עדיין לא נקלט אימון להיום.";
+  const restTimelineSubtitle = isHistoricalDay ? "לא נרשם אימון ביום הזה." : "עדיין לא נקלט אימון במערכת.";
 
   useEffect(() => {
     setMobileWorkoutIndex(0);
@@ -2002,13 +2002,6 @@ export default function TodayPage() {
   const hydrationTargetMl = Math.max(1, journal?.nutrition.plan.hydrationMl ?? 2000);
   const waterTotalMl = Math.max(0, drinksSummary.totalMl + optimisticWaterMl);
   const waterProgressPct = Math.min((waterTotalMl / hydrationTargetMl) * 100, 100);
-  const restTimelineKcalActual = Math.round(journal?.nutrition.totals.kcal ?? 0);
-  const restTimelineKcalTarget = Math.max(1, Math.round(journal?.nutrition.target.kcal ?? 2000));
-  const restTimelineProteinActual = Math.round(journal?.nutrition.totals.proteinG ?? 0);
-  const restTimelineProteinTarget = Math.max(1, Math.round(journal?.nutrition.target.proteinG ?? 130));
-  const restTimelineWaterActual = Math.round(waterTotalMl);
-  const restTimelineWaterTarget = Math.max(1, Math.round(hydrationTargetMl));
-  const restTimelineWaterPct = Math.round(Math.min(100, Math.max(0, waterProgressPct)));
 
   useEffect(() => {
     setOptimisticWaterMl(0);
@@ -3690,29 +3683,13 @@ export default function TodayPage() {
                 <strong>{restTimelineTitle}</strong>
                 <small>{restTimelineSubtitle}</small>
               </div>
-              <div className="rest-timeline-grid">
-                <div className="rest-timeline-item">
-                  <span>תזונה</span>
-                  <strong>{restTimelineKcalActual} / {restTimelineKcalTarget} קק״ל</strong>
-                </div>
-                <div className="rest-timeline-item">
-                  <span>חלבון</span>
-                  <strong>{restTimelineProteinActual} / {restTimelineProteinTarget} ג׳</strong>
-                </div>
-                <div className="rest-timeline-item">
-                  <span>שתייה</span>
-                  <strong>{restTimelineWaterActual} / {restTimelineWaterTarget} מ״ל</strong>
-                </div>
-                <div className="rest-timeline-item">
-                  <span>עדכון בוקר</span>
-                  <strong>{morningDone ? "הוזן" : "לא הוזן"}</strong>
-                </div>
-              </div>
-              <div className="rest-timeline-water">
-                <div className="rest-timeline-water-track" role="presentation">
-                  <i style={{ width: `${restTimelineWaterPct}%` }} />
-                </div>
-                <span>{restTimelineWaterPct}% יעד שתייה</span>
+              <div className="rest-timeline-center">
+                <span className="rest-timeline-visual" aria-hidden>
+                  🏖️
+                </span>
+                <p className="rest-timeline-message">
+                  {isHistoricalDay ? "יום מנוחה נעים." : "מנוחה נעימה עד לקליטת אימון."}
+                </p>
               </div>
               <div className="rest-timeline-actions">
                 <button className="choice-btn icon-compact" onClick={triggerSync} disabled={syncing} title="רענון אימונים">
