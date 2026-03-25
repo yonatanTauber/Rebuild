@@ -5927,6 +5927,11 @@ button.alt {
   align-content: start;
 }
 
+.today-activity-side.no-workout {
+  align-content: stretch;
+  grid-auto-rows: min-content;
+}
+
 .today-workouts-desktop-list {
   display: grid;
   gap: 0.52rem;
@@ -6002,6 +6007,86 @@ button.alt {
 .today-workout-mini-link span {
   font-size: 0.74rem;
   color: var(--on-surface-variant);
+}
+
+.rest-timeline-card {
+  border-radius: 14px;
+  border: 1px solid var(--outline-variant);
+  background: var(--surface-container);
+  padding: 0.62rem;
+  display: grid;
+  gap: 0.48rem;
+  min-height: 148px;
+}
+
+.rest-timeline-head {
+  display: grid;
+  gap: 0.16rem;
+}
+
+.rest-timeline-head strong {
+  font-size: 0.9rem;
+}
+
+.rest-timeline-head small {
+  color: var(--on-surface-variant);
+  font-size: 0.76rem;
+}
+
+.rest-timeline-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.42rem;
+}
+
+.rest-timeline-item {
+  border: 1px solid var(--outline-variant);
+  border-radius: 10px;
+  background: var(--surface-container-high);
+  padding: 0.34rem 0.5rem;
+  display: grid;
+  gap: 0.1rem;
+}
+
+.rest-timeline-item span {
+  font-size: 0.72rem;
+  color: var(--on-surface-variant);
+}
+
+.rest-timeline-item strong {
+  font-size: 0.82rem;
+}
+
+.rest-timeline-water {
+  display: grid;
+  gap: 0.24rem;
+}
+
+.rest-timeline-water-track {
+  height: 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface-container-highest) 78%, var(--on-surface) 22%);
+  overflow: hidden;
+}
+
+.rest-timeline-water-track i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #72dcff 0%, #72dcff 100%);
+  border-radius: 999px;
+  transition: width 0.24s ease;
+}
+
+.rest-timeline-water span {
+  font-size: 0.74rem;
+  color: var(--on-surface-variant);
+}
+
+.rest-timeline-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.36rem;
 }
 
 .today-next-session-line {
@@ -8096,6 +8181,16 @@ button.alt {
   /* Workout banner full width */
   .today-activity-side {
     width: 100%;
+  }
+
+  .rest-timeline-card {
+    min-height: 0;
+    padding: 0.56rem;
+    gap: 0.44rem;
+  }
+
+  .rest-timeline-grid {
+    grid-template-columns: 1fr;
   }
 }
 

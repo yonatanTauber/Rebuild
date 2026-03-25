@@ -1512,6 +1512,18 @@ export default function TodayPage() {
   const activePendingWorkout = pendingFeedback[0] ?? null;
   const isRunFeedback = activePendingWorkout?.sport === "run";
   const isStrengthFeedback = activePendingWorkout?.sport === "strength";
+  const pendingWorkoutDateLabel = useMemo(() => {
+    if (!activePendingWorkout?.startAt) return "";
+    const date = new Date(activePendingWorkout.startAt);
+    if (Number.isNaN(date.getTime())) return "";
+    const weekday = date.toLocaleDateString("he-IL", { weekday: "long" });
+    const dateShort = date.toLocaleDateString("he-IL", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "2-digit"
+    });
+    return `${weekday} ה${dateShort}`;
+  }, [activePendingWorkout?.startAt]);
 
   function showToast(message: string) {
     setToast(message);
@@ -1823,6 +1835,8 @@ export default function TodayPage() {
   const showRestHistoricalCard = isHistoricalDay && !hasWorkoutOnDay;
   const showMorningSideCard = showRecommendationPanel && !hasWorkoutOnDay && !showRestHistoricalCard;
   const topGridClassName = hasWorkoutOnDay || showMorningSideCard ? "today-top-grid split" : "today-top-grid";
+  const restTimelineTitle = isHistoricalDay ? "יום מנוחה" : "עד כה ללא אימון";
+  const restTimelineSubtitle = isHistoricalDay ? "לא נרשם אימון ביום הזה." : "עדיין לא נקלט אימון להיום.";
 
   useEffect(() => {
     setMobileWorkoutIndex(0);
@@ -1988,6 +2002,13 @@ export default function TodayPage() {
   const hydrationTargetMl = Math.max(1, journal?.nutrition.plan.hydrationMl ?? 2000);
   const waterTotalMl = Math.max(0, drinksSummary.totalMl + optimisticWaterMl);
   const waterProgressPct = Math.min((waterTotalMl / hydrationTargetMl) * 100, 100);
+  const restTimelineKcalActual = Math.round(journal?.nutrition.totals.kcal ?? 0);
+  const restTimelineKcalTarget = Math.max(1, Math.round(journal?.nutrition.target.kcal ?? 2000));
+  const restTimelineProteinActual = Math.round(journal?.nutrition.totals.proteinG ?? 0);
+  const restTimelineProteinTarget = Math.max(1, Math.round(journal?.nutrition.target.proteinG ?? 130));
+  const restTimelineWaterActual = Math.round(waterTotalMl);
+  const restTimelineWaterTarget = Math.max(1, Math.round(hydrationTargetMl));
+  const restTimelineWaterPct = Math.round(Math.min(100, Math.max(0, waterProgressPct)));
 
   useEffect(() => {
     setOptimisticWaterMl(0);
@@ -3472,7 +3493,7 @@ export default function TodayPage() {
 
         </div>
 
-        <div className="today-activity-side" aria-label="האימון והמלצה">
+        <div className={`today-activity-side ${!hasWorkoutOnDay ? "no-workout" : ""}`} aria-label="האימון והמלצה">
           {hasWorkoutOnDay && primaryWorkout ? (
             <>
               <div className="today-workouts-desktop-list" aria-label="אימוני היום בדסקטופ">
@@ -3661,6 +3682,51 @@ export default function TodayPage() {
               </div>
               {rec?.dayStatusText ? <p className="note">{rec.dayStatusText}</p> : null}
             </div>
+          ) : null}
+
+          {!hasWorkoutOnDay ? (
+            <article className="rest-timeline-card" aria-label="מבט על היום ללא אימון">
+              <div className="rest-timeline-head">
+                <strong>{restTimelineTitle}</strong>
+                <small>{restTimelineSubtitle}</small>
+              </div>
+              <div className="rest-timeline-grid">
+                <div className="rest-timeline-item">
+                  <span>תזונה</span>
+                  <strong>{restTimelineKcalActual} / {restTimelineKcalTarget} קק״ל</strong>
+                </div>
+                <div className="rest-timeline-item">
+                  <span>חלבון</span>
+                  <strong>{restTimelineProteinActual} / {restTimelineProteinTarget} ג׳</strong>
+                </div>
+                <div className="rest-timeline-item">
+                  <span>שתייה</span>
+                  <strong>{restTimelineWaterActual} / {restTimelineWaterTarget} מ״ל</strong>
+                </div>
+                <div className="rest-timeline-item">
+                  <span>עדכון בוקר</span>
+                  <strong>{morningDone ? "הוזן" : "לא הוזן"}</strong>
+                </div>
+              </div>
+              <div className="rest-timeline-water">
+                <div className="rest-timeline-water-track" role="presentation">
+                  <i style={{ width: `${restTimelineWaterPct}%` }} />
+                </div>
+                <span>{restTimelineWaterPct}% יעד שתייה</span>
+              </div>
+              <div className="rest-timeline-actions">
+                <button className="choice-btn icon-compact" onClick={triggerSync} disabled={syncing} title="רענון אימונים">
+                  <span aria-hidden>↻</span>
+                </button>
+                <button
+                  className={morningDone ? "choice-btn icon-compact morning-done" : "choice-btn icon-compact morning-missing"}
+                  onClick={openMorningUpdate}
+                  title="עדכון בוקר"
+                >
+                  <span aria-hidden>{morningDone ? "✓" : "☀"}</span>
+                </button>
+              </div>
+            </article>
           ) : null}
 
           {!isHistoricalDay && rec?.dayStatusText ? (
@@ -4467,7 +4533,10 @@ export default function TodayPage() {
           <div className="modal-card">
             <h3>משוב אחרי אימון</h3>
             <p className="note">
-              {sportLabel(activePendingWorkout.sport)} · {activePendingWorkout.distanceM ? `${(activePendingWorkout.distanceM / 1000).toFixed(1)} ק"מ` : "-"} ·{" "}
+              {sportLabel(activePendingWorkout.sport)} מ{pendingWorkoutDateLabel}
+              {" · "}
+              {activePendingWorkout.distanceM ? `${(activePendingWorkout.distanceM / 1000).toFixed(1)} ק"מ` : "-"}
+              {" · "}
               {formatDuration(activePendingWorkout.durationSec)}
             </p>
             {isRunFeedback ? (
