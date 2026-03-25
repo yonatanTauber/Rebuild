@@ -167,6 +167,7 @@ function BarChart({
   valueKey,
   highlightKey,
   height = 160,
+  compact = false,
   onBarClick
 }: {
   data: Array<Record<string, unknown>>;
@@ -175,12 +176,15 @@ function BarChart({
   valueKey: string;
   highlightKey?: string | number;
   height?: number;
+  compact?: boolean;
   onBarClick?: (index: number, datum: Record<string, unknown>) => void;
 }) {
   const W = 600, H = height, BAR_GAP = 4;
   const TOP_PAD = 18; // space above bars for labels
   const n = data.length;
   const barW = n > 0 ? Math.floor((W - BAR_GAP * (n - 1)) / n) : 20;
+  const valueFontSize = compact ? 7 : 9;
+  const labelFontSize = compact ? 8 : 9;
   return (
     <svg
       viewBox={`0 0 ${W} ${H + TOP_PAD + 20}`}
@@ -211,12 +215,12 @@ function BarChart({
               fill="#72dcff"
               opacity={isHighlight ? 1 : 0.4}
             />
-            {val > 0 && (
+            {!compact && val > 0 && (
               <text
                 x={x + barW / 2}
                 y={labelY}
                 textAnchor="middle"
-                fontSize="9"
+                fontSize={valueFontSize}
                 fill="#72dcff"
                 opacity={isHighlight ? 1 : 0.55}
               >
@@ -227,7 +231,7 @@ function BarChart({
               x={x + barW / 2}
               y={TOP_PAD + H + 14}
               textAnchor="middle"
-              fontSize="9"
+              fontSize={labelFontSize}
               fill={isHighlight ? "#72dcff" : "#888"}
               fontWeight={isHighlight ? "700" : "400"}
             >
@@ -249,6 +253,7 @@ const SPORTS = [
 export default function AnalyticsPage() {
   const router = useRouter();
   const currentCalendarYear = new Date().getFullYear();
+  const [isCompactChart, setIsCompactChart] = useState(false);
 
   const [sport, setSport] = useState<Sport>("run");
   const [selectedYears, setSelectedYears] = useState<number[]>([currentCalendarYear]);
@@ -264,6 +269,14 @@ export default function AnalyticsPage() {
     field: "date",
     direction: "desc"
   });
+
+  useEffect(() => {
+    const media = window.matchMedia("(max-width: 430px)");
+    const sync = () => setIsCompactChart(media.matches);
+    sync();
+    media.addEventListener("change", sync);
+    return () => media.removeEventListener("change", sync);
+  }, []);
 
   const availableYears = data?.availableYears ?? [currentCalendarYear];
   const ascendingYears = useMemo(() => [...availableYears].sort((a, b) => a - b), [availableYears]);
@@ -672,7 +685,8 @@ export default function AnalyticsPage() {
           maxVal={chartMax}
           labelKey="label"
           valueKey="km"
-          height={160}
+          height={isCompactChart ? 128 : 160}
+          compact={isCompactChart}
           onBarClick={handleBarDrilldown}
         />
       </section>
